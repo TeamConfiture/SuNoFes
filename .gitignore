@@ -130,7 +130,10 @@ dmypy.json
 
 
 # Renp'y
-game/*.rpyc
-log.txt
+*.rpyc
+*.rpyb
+*.txt
+*.psd
 .vscode/
-game/cache/*
+game/cache
+game/saves
