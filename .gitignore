@@ -132,3 +132,5 @@ dmypy.json
 # Renp'y
 game/*.rpyc
 log.txt
+.vscode/
+game/cache/*
