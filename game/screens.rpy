@@ -320,6 +320,7 @@ style navigation_button:
     properties gui.button_properties("navigation_button")
     left_margin 30
     right_margin 30
+    hover_foreground Frame(["gui/button/mm_button_hover.png"])
 
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
