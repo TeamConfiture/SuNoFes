@@ -15,7 +15,7 @@
 ##
 ## La chaîne de caractère contenu dans _() est éligible à la traduction.
 
-define config.name = _("Colors")
+define config.name = _("Couleurs")
 
 
 ## Détermine si le titre renseigné plus haut est affiché sur l'écran du menu

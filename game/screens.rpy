@@ -287,48 +287,29 @@ style quick_button_text:
 
 screen navigation():
 
-    vbox:
+    hbox:
         style_prefix "navigation"
-
-        xpos gui.navigation_xpos
-        yalign 0.5
-
-        spacing gui.navigation_spacing
+        xalign 0.5
+        yalign 0.9
 
         if main_menu:
-
             textbutton _("Nouvelle partie") action Start()
 
         else:
-
             textbutton _("Historique") action ShowMenu("history")
-
             textbutton _("Sauvegarde") action ShowMenu("save")
 
         textbutton _("Charger") action ShowMenu("load")
-
         textbutton _("Préférences") action ShowMenu("preferences")
+        textbutton _("Extras") action ShowMenu("preferences")
+
 
         if _in_replay:
-
             textbutton _("Fin de la rediffusion") action EndReplay(confirm=True)
-
         elif not main_menu:
-
             textbutton _("Menu principal") action MainMenu()
 
-        textbutton _("À propos") action ShowMenu("about")
-
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-
-            ## L'aide n’est ni nécessaire ni pertinente sur les appareils
-            ## mobiles.
-            textbutton _("Aide") action ShowMenu("help")
-
         if renpy.variant("pc"):
-
-            ## Le bouton pour quitter est banni sur iOS et inutile sur Android
-            ## et sur le Web.
             textbutton _("Quitter") action Quit(confirm=not main_menu)
 
 
@@ -336,11 +317,14 @@ style navigation_button is gui_button
 style navigation_button_text is gui_button_text
 
 style navigation_button:
-    size_group "navigation"
     properties gui.button_properties("navigation_button")
+    left_margin 30
+    right_margin 30
 
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
+    color u"#000"
+    size 50
 
 
 ## Écran du menu principal #####################################################
@@ -356,53 +340,26 @@ screen main_menu():
 
     add gui.main_menu_background
 
-    ## Cette frame vide obscurcit le menu principal.
-    frame:
-        style "main_menu_frame"
-
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
     use navigation
 
     if gui.show_name:
+        text "[config.name!t]":
+            style "main_menu_title"
 
-        vbox:
-            style "main_menu_vbox"
-
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
-
-
-style main_menu_frame is empty
 style main_menu_vbox is vbox
 style main_menu_text is gui_text
 style main_menu_title is main_menu_text
-style main_menu_version is main_menu_text
-
-style main_menu_frame:
-    xsize 420
-    yfill True
-
-    background "gui/overlay/main_menu.png"
-
-style main_menu_vbox:
-    xalign 1.0
-    xoffset -30
-    xmaximum 1200
-    yalign 1.0
-    yoffset -30
 
 style main_menu_text:
     properties gui.text_properties("main_menu", accent=True)
 
 style main_menu_title:
     properties gui.text_properties("title")
-
-style main_menu_version:
-    properties gui.text_properties("version")
+    xalign 0.5
+    yalign 0.4
+    color u"#fff"
 
 
 ## Écran du menu de jeu ########################################################
@@ -528,49 +485,8 @@ style game_menu_label_text:
     yalign 0.5
 
 style return_button:
-    xpos gui.navigation_xpos
     yalign 1.0
     yoffset -45
-
-
-## Écran « À propos... » #######################################################
-##
-## Cet écran présente le générique, les crédits et les informations de copyright
-## relatives au jeu et à Ren’Py.
-##
-## Il n’y a rien de spécial sur cet écran. Par conséquent, il sert aussi
-## d’exemple pour créer un écran personnalisé.
-
-screen about():
-
-    tag menu
-
-    ## Cette déclaration concerne l’écran game_menu. L’élément vbox est ensuite
-    ## inclus dans la fenêtre de l'écran game_menu.
-    use game_menu(_("À propos"), scroll="viewport"):
-
-        style_prefix "about"
-
-        vbox:
-
-            label "[config.name!t]"
-            text _("Version [config.version!t]\n")
-
-            ## gui.about est généralement initialisé dans le fichier
-            ## options.rpy.
-            if gui.about:
-                text "[gui.about!t]\n"
-
-            text _("Conçu avec {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
-
-
-style about_label is gui_label
-style about_label_text is gui_label_text
-style about_text is gui_text
-
-style about_label_text:
-    size gui.label_text_size
-
 
 ## Écran de chargement et de sauvegarde ########################################
 ##
@@ -719,7 +635,6 @@ screen preferences():
     use game_menu(_("Préférences"), scroll="viewport"):
 
         vbox:
-
             hbox:
                 box_wrap True
 
@@ -730,6 +645,15 @@ screen preferences():
                         label _("Affichage")
                         textbutton _("Fenêtre") action Preference("display", "window")
                         textbutton _("Plein écran") action Preference("display", "fullscreen")
+
+                #
+                #if renpy.variant("pc"):
+                #    vbox:
+                #        null height (8 * gui.pref_spacing)
+                #        style_prefix "radio"
+                #        label _("Langue")
+                #       textbutton "English" action [Language("english"), SetVariable('persistent.lang', "english")]
+                #        textbutton "Français" action [Language(None), SetVariable('persistent.lang', None)]
 
                 vbox:
                     style_prefix "check"
@@ -957,170 +881,6 @@ style history_label:
 
 style history_label_text:
     xalign 0.5
-
-
-## Écran d'aide ################################################################
-##
-## Cet écran fournit des informations sur les touches et les boutons de souris.
-## En interne, il utilise d’autres écrans (keyboard_help, mouse_help et
-## gamepad_help) pour afficher une aide dédiée.
-
-screen help():
-
-    tag menu
-
-    default device = "keyboard"
-
-    use game_menu(_("Aide"), scroll="viewport"):
-
-        style_prefix "help"
-
-        vbox:
-            spacing 23
-
-            hbox:
-
-                textbutton _("Clavier") action SetScreenVariable("device", "keyboard")
-                textbutton _("Souris") action SetScreenVariable("device", "mouse")
-
-                if GamepadExists():
-                    textbutton _("Manette") action SetScreenVariable("device", "gamepad")
-
-            if device == "keyboard":
-                use keyboard_help
-            elif device == "mouse":
-                use mouse_help
-            elif device == "gamepad":
-                use gamepad_help
-
-
-screen keyboard_help():
-
-    hbox:
-        label _("Entrée")
-        text _("Avance dans les dialogues et active l’interface (effectue un choix).")
-
-    hbox:
-        label _("Espace")
-        text _("Avance dans les dialogues sans effectuer de choix.")
-
-    hbox:
-        label _("Flèches directionnelles")
-        text _("Permet de se déplacer dans l’interface.")
-
-    hbox:
-        label _("Echap.")
-        text _("Ouvre le menu du jeu.")
-
-    hbox:
-        label _("Ctrl")
-        text _("Fait défiler les dialogues tant que la touche est pressée.")
-
-    hbox:
-        label _("Tab")
-        text _("Active ou désactives les «sauts des dialogues».")
-
-    hbox:
-        label _("Page Haut")
-        text _("Retourne au précédent dialogue.")
-
-    hbox:
-        label _("Page Bas")
-        text _("Avance jusqu'au prochain dialogue.")
-
-    hbox:
-        label "H"
-        text _("Cache l’interface utilisateur.")
-
-    hbox:
-        label "S"
-        text _("Prend une capture d’écran.")
-
-    hbox:
-        label "V"
-        text _("Active la {a=https://www.renpy.org/l/voicing}{size=24}vocalisation automatique{/size}{/a}.")
-
-    hbox:
-        label "Shift+A"
-        text _("Ouvre le menu d'accessibilité.")
-
-
-screen mouse_help():
-
-    hbox:
-        label _("Bouton gauche")
-        text _("Avance dans les dialogues et active l’interface (effectue un choix).")
-
-    hbox:
-        label _("Bouton central")
-        text _("Cache l’interface utilisateur.")
-
-    hbox:
-        label _("Bouton droit")
-        text _("Ouvre le menu du jeu.")
-
-    hbox:
-        label _("Molette vers le haut\nClic sur le côté du Rollback")
-        text _("Retourne au précédent dialogue.")
-
-    hbox:
-        label _("Molette vers le bas")
-        text _("Avance jusqu'au prochain dialogue.")
-
-
-screen gamepad_help():
-
-    hbox:
-        label _("Bouton R1\nA/Bouton du bas")
-        text _("Avance dans les dialogues et active l’interface (effectue un choix).")
-
-    hbox:
-        label _("Gâchettes gauche")
-        text _("Retourne au précédent dialogue.")
-
-    hbox:
-        label _("Bouton R1")
-        text _("Avance jusqu'au prochain dialogue.")
-
-
-    hbox:
-        label _("Boutons directionnels, stick gauche")
-        text _("Permet de se déplacer dans l’interface.")
-
-    hbox:
-        label _("Start, Guide")
-        text _("Ouvre le menu du jeu.")
-
-    hbox:
-        label _("Y/Bouton du haut")
-        text _("Cache l’interface utilisateur.")
-
-    textbutton _("Calibrage") action GamepadCalibrate()
-
-
-style help_button is gui_button
-style help_button_text is gui_button_text
-style help_label is gui_label
-style help_label_text is gui_label_text
-style help_text is gui_text
-
-style help_button:
-    properties gui.button_properties("help_button")
-    xmargin 12
-
-style help_button_text:
-    properties gui.button_text_properties("help_button")
-
-style help_label:
-    xsize 375
-    right_padding 30
-
-style help_label_text:
-    size gui.text_size
-    xalign 1.0
-    text_align 1.0
-
-
 
 ################################################################################
 ## Écrans additionnels
@@ -1453,10 +1213,6 @@ style check_button:
 style nvl_window:
     variant "small"
     background "gui/phone/nvl.png"
-
-style main_menu_frame:
-    variant "small"
-    background "gui/phone/overlay/main_menu.png"
 
 style game_menu_outer_frame:
     variant "small"

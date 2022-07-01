@@ -66,7 +66,7 @@ define gui.text_font = "DejaVuSans.ttf"
 define gui.name_text_font = "DejaVuSans.ttf"
 
 ## Les polices utilisées pour les textes « hors du jeu ».
-define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "gui/font/augie.ttf"
 
 ## La taille normale pour les dialogues.
 define gui.text_size = 33
@@ -78,13 +78,13 @@ define gui.name_text_size = 45
 define gui.interface_text_size = 33
 
 ## La taille des libellés dans l’interface de jeu.
-define gui.label_text_size = 36
+define gui.label_text_size = 72
 
 ## La taille du texte dans la zone de notification.
 define gui.notify_text_size = 24
 
 ## La taille du titre du jeu.
-define gui.title_text_size = 75
+define gui.title_text_size = 180
 
 
 ## Menu du jeu et menu principal ###############################################
@@ -251,14 +251,13 @@ define gui.file_slot_cols = 3
 define gui.file_slot_rows = 2
 
 
+## Langue ################################################
+define config.default_language = "english"
+
 ## Positionnement et espacement ################################################
 ##
 ## Ces variables contrôlent l’espacement et le positionnement des différents
 ## éléments de l’interface utilisateur.
-
-## La position sur le côté gauche des boutons de navigation, relatif au côté
-## gauche de l'écran.
-define gui.navigation_xpos = 60
 
 ## La position vertical du l’indicateur de saut des dialogues.
 define gui.skip_ypos = 15
@@ -268,9 +267,6 @@ define gui.notify_ypos = 68
 
 ## L’espacement entre les différents choix du menu.
 define gui.choice_spacing = 33
-
-## Boutons dans la section de navigation du menu principal et du menu de jeu.
-define gui.navigation_spacing = 6
 
 ## Contrôle l’espacement entre les préférences.
 define gui.pref_spacing = 15
