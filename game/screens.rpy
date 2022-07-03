@@ -267,7 +267,7 @@ screen navigation():
 
         textbutton _("Charger") action ShowMenu("load")
         textbutton _("Préférences") action ShowMenu("preferences")
-        textbutton _("Extras") action ShowMenu("preferences")
+        textbutton _("Extra") action ShowMenu("extra")
         
         if _in_replay:
             textbutton _("Fin de la rediffusion") action EndReplay(confirm=True)
@@ -321,9 +321,6 @@ style main_menu_title:
     yalign 0.4
     color u"#fff"
 
-
-
-
 ## Écran du menu de jeu ########################################################
 ##
 ## This lays out the basic common structure of a game menu screen. It's called
@@ -337,10 +334,10 @@ screen game_menu(title, scroll=None, yinitial=0.0):
     if main_menu:
         add gui.main_menu_background
     else:
-        add gui.game_menu_background
+        add gui.secondary_menu_background
 
     frame:
-        style "game_menu_outer_frame"
+        # style "game_menu_outer_frame"
         hbox:
             ## Réserve de l'expace pour la section de navigation.
             frame:
@@ -355,8 +352,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
                         draggable True
                         pagekeys True
                         side_yfill True
-                        vbox:
-                            transclude
+                        transclude
                 elif scroll == "vpgrid":
                     vpgrid:
                         cols 1
@@ -374,60 +370,47 @@ screen game_menu(title, scroll=None, yinitial=0.0):
         style "return_button"
         action Return()
 
-    label title
-
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")
 
-
 style game_menu_outer_frame is empty
-style game_menu_navigation_frame is empty
-style game_menu_content_frame is empty
-style game_menu_viewport is gui_viewport
-style game_menu_side is gui_side
-style game_menu_scrollbar is gui_vscrollbar
-
-style game_menu_label is gui_label
-style game_menu_label_text is gui_label_text
-
-style return_button is navigation_button
-style return_button_text is navigation_button_text
-
 style game_menu_outer_frame:
-    bottom_padding 45
-    top_padding 180
+    bottom_padding 0
+    top_padding 0
     background "gui/overlay/game_menu.png"
-
+style game_menu_navigation_frame is empty
 style game_menu_navigation_frame:
-    xsize 420
+    xsize 0
     yfill True
-
+style game_menu_content_frame is empty
 style game_menu_content_frame:
-    left_margin 60
-    right_margin 30
-    top_margin 15
-
+    left_margin 0
+    right_margin 0
+    top_margin 0
+style game_menu_viewport is gui_viewport
 style game_menu_viewport:
     xsize 1380
-
+style game_menu_side is gui_side
+style game_menu_side:
+    spacing 0
+style game_menu_scrollbar is gui_vscrollbar
 style game_menu_vscrollbar:
     unscrollable gui.unscrollable
-
-style game_menu_side:
-    spacing 15
-
+style game_menu_label is gui_label
 style game_menu_label:
     xpos 75
     ysize 180
-
+style game_menu_label_text is gui_label_text
 style game_menu_label_text:
     size gui.title_text_size
     color gui.accent_color
     yalign 0.5
 
+style return_button is navigation_button
 style return_button:
     yalign 1.0
     yoffset -45
+style return_button_text is navigation_button_text
 
 ## Écran de chargement et de sauvegarde ########################################
 ##
@@ -442,7 +425,6 @@ style return_button:
 screen save():
     tag menu
     use file_slots(_("Sauvegarde"))
-
 
 screen load():
     tag menu
@@ -538,6 +520,9 @@ screen preferences():
     use game_menu(_("Préférences"), scroll="viewport"):
         vbox:
             hbox:
+                xalign 0.5
+                yalign 0.5
+                spacing 100
                 box_wrap True
                 if renpy.variant("pc") or renpy.variant("web"):
                     vbox:
@@ -545,7 +530,7 @@ screen preferences():
                         label _("Affichage")
                         textbutton _("Fenêtre") action Preference("display", "window")
                         textbutton _("Plein écran") action Preference("display", "fullscreen")
-                #
+
                 #if renpy.variant("pc"):
                 #    vbox:
                 #        null height (8 * gui.pref_spacing)
@@ -651,6 +636,90 @@ style mute_all_button is check_button
 style mute_all_button_text is check_button_text
 style slider_vbox:
     xsize 675
+
+## Écran des extras #######################################################
+##
+## Il s’agit d’un écran qui permet d'accéder aux musiques, images débloquées
+## et aux crédits
+style secondary_menu_title is secondary_menu_text
+style secondary_menu_title:
+    properties gui.text_properties("title")
+    font "gui/font/augie.ttf"
+    xalign 0.5
+    yalign 0.0
+    color u"#fff"
+
+screen extra():
+    tag menu
+    use game_menu(_("Extra")):
+        # Title of the screen
+        add gui.secondary_menu_background
+        text "Extra":
+            style "secondary_menu_title"
+        # Content of the screen
+        hbox xalign 0.5 yalign 0.7:
+            vbox:
+                imagebutton:
+                    auto "gui/extra/gui_gallery_btn_%s.png"
+                    action ShowMenu('gallery')
+            vbox:
+                imagebutton:
+                    auto "gui/extra/gui_music_btn_%s.png"
+                    action ShowMenu('music')
+            vbox:
+                imagebutton:
+                    auto "gui/extra/gui_credits_btn_%s.png"
+                    action ShowMenu('credits')
+
+screen gallery():
+    tag menu
+    use read_only_file_slots(_("Gallery"))
+screen music():
+    tag menu
+    use read_only_file_slots(_("Music"))
+screen credits():
+    tag menu
+    use read_only_file_slots(_("Credits"))
+
+screen read_only_file_slots(title):
+    use game_menu(title):
+        # Title of the screen
+        add gui.secondary_menu_background
+        text title:
+            style "secondary_menu_title"
+        fixed:
+            ## Cette instruction s’assure que l’évènement enter aura lieu avant
+            ## que l’un des boutons ne fonctionne.
+            order_reverse True
+
+            ## La grille des emplacements de fichiers.
+            grid gui.file_slot_cols gui.file_slot_rows:
+                style_prefix "slot"
+                xalign 0.5
+                yalign 0.5
+                spacing gui.slot_spacing
+                for i in range(gui.file_slot_cols * gui.file_slot_rows):
+                    $ slot = i + 1
+                    button:
+                        action FileAction(slot)
+                        has vbox
+                        add FileScreenshot(slot) xalign 0.5
+                        text FileTime(slot, format=_("{#file_time}%A %d %B %Y, %H:%M"), empty=_("emplacement vide")):
+                            style "slot_time_text"
+                        text FileSaveName(slot):
+                            style "slot_name_text"
+
+            ## Boutons pour accéder aux autres pages.
+            hbox:
+                style_prefix "page"
+                xalign 0.5
+                yalign 1.0
+                spacing gui.page_spacing
+                textbutton _("<") action FilePagePrevious()
+                ## range(1, 10) donne les nombres de 1 à 9.
+                for page in range(1, 10):
+                    textbutton "[page]" action FilePage(page)
+                textbutton _(">") action FilePageNext()
 
 ## Écran de l'historique #######################################################
 ##
