@@ -105,6 +105,14 @@ screen say(who, what):
 init python:
     config.character_id_prefixes.append('namebox')
 
+    # Gallery's initialisation
+    album = Gallery()
+    album.button("title")
+
+    # Music Room initialisation
+    musicroom = MusicRoom(fadeout=1.0)
+    # musicroom.add("track1.ogg", always_unlocked=True)
+
 style window is default
 style say_label is default
 style say_dialogue is default
@@ -329,64 +337,71 @@ style main_menu_title:
 ## The scroll parameter can be None, or one of "viewport" or "vpgrid". When
 ## this screen is intended to be used with one or more children, which are
 ## transcluded (placed) inside it.
-screen game_menu(title, scroll=None, yinitial=0.0):
+screen game_menu(title,returnTo, scroll=None, yinitial=0.0):
     style_prefix "game_menu"
-    if main_menu:
+    if title=="main_menu":
         add gui.main_menu_background
     else:
         add gui.secondary_menu_background
+        text title:
+            style "secondary_menu_title"
 
     frame:
-        # style "game_menu_outer_frame"
-        hbox:
-            ## Réserve de l'expace pour la section de navigation.
-            frame:
-                style "game_menu_navigation_frame"
-            frame:
-                style "game_menu_content_frame"
-                if scroll == "viewport":
-                    viewport:
-                        yinitial yinitial
-                        scrollbars "vertical"
-                        mousewheel True
-                        draggable True
-                        pagekeys True
-                        side_yfill True
-                        transclude
-                elif scroll == "vpgrid":
-                    vpgrid:
-                        cols 1
-                        yinitial yinitial
-                        scrollbars "vertical"
-                        mousewheel True
-                        draggable True
-                        pagekeys True
-                        side_yfill True
-                        transclude
-                else:
-                    transclude
+        style "game_menu_navigation_frame"
+    frame:
+        style "game_menu_content_frame"
+        if scroll == "viewport":
+            viewport:
+                yinitial yinitial
+                scrollbars "vertical"
+                mousewheel True
+                draggable True
+                pagekeys True
+                side_yfill True
+                transclude
+        elif scroll == "vpgrid":
+            vpgrid:
+                cols 1
+                yinitial yinitial
+                scrollbars "vertical"
+                mousewheel True
+                draggable True
+                pagekeys True
+                side_yfill True
+                transclude
+        else:
+            transclude
 
-    textbutton _("Retour"):
-        style "return_button"
-        action Return()
-
-    if main_menu:
+    if title=="main_menu":
         key "game_menu" action ShowMenu("main_menu")
+    else:
+        use return(returnTo)
+
+screen return(returnTo):
+    hbox:
+        xalign 0.5
+        yalign 1.0
+        textbutton _("Retour"):
+            style "return_button"
+            action ShowMenu(returnTo)
+        textbutton _("Menu principal"):
+            style "return_button"
+            action ShowMenu('main_menu')
+
 
 style game_menu_outer_frame is empty
 style game_menu_outer_frame:
     bottom_padding 0
     top_padding 0
-    background "gui/overlay/game_menu.png"
+    # background "gui/overlay/game_menu.png"
 style game_menu_navigation_frame is empty
 style game_menu_navigation_frame:
     xsize 0
     yfill True
 style game_menu_content_frame is empty
 style game_menu_content_frame:
-    left_margin 0
-    right_margin 0
-    top_margin 0
+    top_margin 300
+    xalign 0.5
 style game_menu_viewport is gui_viewport
 style game_menu_viewport:
     xsize 1380
@@ -408,9 +423,10 @@ style game_menu_label_text:
 
 style return_button is navigation_button
 style return_button:
-    yalign 1.0
-    yoffset -45
+    yoffset -75
 style return_button_text is navigation_button_text
+style return_button_text:
+    size 75
 
 ## Écran de chargement et de sauvegarde ########################################
 ##
@@ -431,8 +447,8 @@ screen load():
     use file_slots(_("Charger"))
 
 screen file_slots(title):
-    default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), auto=_("Sauvegardes automatiques"), quick=_("Sauvegardes rapides"))
-    use game_menu(title):
+    # default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), auto=_("Sauvegardes automatiques"), quick=_("Sauvegardes rapides"))
+    use game_menu(title,"main_menu"):
         fixed:
             ## Cette instruction s’assure que l’évènement enter aura lieu avant
             ## que l’un des boutons ne fonctionne.
@@ -440,22 +456,22 @@ screen file_slots(title):
 
             ## Le nom de la page, qui peut être modifié en cliquant sur un
             ## bouton.
-            button:
-                style "page_label"
-                key_events True
-                xalign 0.5
-                action page_name_value.Toggle()
-                input:
-                    style "page_label_text"
-                    value page_name_value
+            # button:
+            #     style "page_label"
+            #     key_events True
+            #     xalign 0.5
+            #     action page_name_value.Toggle()
+            #     input:
+            #         style "page_label_text"
+            #         value page_name_value
 
             ## La grille des emplacements de fichiers.
-            grid gui.file_slot_cols gui.file_slot_rows:
+            # grid gui.file_slot_cols gui.file_slot_rows:
+            grid 3 2 :
                 style_prefix "slot"
                 xalign 0.5
-                yalign 0.5
                 spacing gui.slot_spacing
-                for i in range(gui.file_slot_cols * gui.file_slot_rows):
+                for i in range(6):
                     $ slot = i + 1
                     button:
                         action FileAction(slot)
@@ -468,20 +484,20 @@ screen file_slots(title):
                         key "save_delete" action FileDelete(slot)
 
             ## Boutons pour accéder aux autres pages.
-            hbox:
-                style_prefix "page"
-                xalign 0.5
-                yalign 1.0
-                spacing gui.page_spacing
-                textbutton _("<") action FilePagePrevious()
-                if config.has_autosave:
-                    textbutton _("{#auto_page}A") action FilePage("auto")
-                if config.has_quicksave:
-                    textbutton _("{#quick_page}Q") action FilePage("quick")
-                ## range(1, 10) donne les nombres de 1 à 9.
-                for page in range(1, 10):
-                    textbutton "[page]" action FilePage(page)
-                textbutton _(">") action FilePageNext()
+            # hbox:
+            #     style_prefix "page"
+            #     xalign 0.5
+            #     yalign 1.0
+            #     spacing gui.page_spacing
+            #     textbutton _("<") action FilePagePrevious()
+            #     if config.has_autosave:
+            #         textbutton _("{#auto_page}A") action FilePage("auto")
+            #     if config.has_quicksave:
+            #         textbutton _("{#quick_page}Q") action FilePage("quick")
+            #     ## range(1, 10) donne les nombres de 1 à 9.
+            #     for page in range(1, 10):
+            #         textbutton "[page]" action FilePage(page)
+            #     textbutton _(">") action FilePageNext()
 
 
 style page_label is gui_label
@@ -506,7 +522,13 @@ style slot_button_text is gui_button_text
 style slot_button_text:
     properties gui.button_text_properties("slot_button")
 style slot_time_text is slot_button_text
+style slot_time_text:
+    font "gui/font/augie.ttf"
+    size 30
 style slot_name_text is slot_button_text
+style slot_name_text:
+    font "gui/font/augie.ttf"
+    size 30
 
 ## Écran des préférences #######################################################
 ##
@@ -517,7 +539,7 @@ style slot_name_text is slot_button_text
 
 screen preferences():
     tag menu
-    use game_menu(_("Préférences"), scroll="viewport"):
+    use game_menu(_("Préférences"), "main_menu", scroll="viewport"):
         vbox:
             hbox:
                 xalign 0.5
@@ -645,19 +667,17 @@ style secondary_menu_title is secondary_menu_text
 style secondary_menu_title:
     properties gui.text_properties("title")
     font "gui/font/augie.ttf"
+    size 128
     xalign 0.5
     yalign 0.0
     color u"#fff"
 
 screen extra():
     tag menu
-    use game_menu(_("Extra")):
-        # Title of the screen
-        add gui.secondary_menu_background
-        text "Extra":
-            style "secondary_menu_title"
+    use game_menu(_("Extra"), "main_menu"):
         # Content of the screen
-        hbox xalign 0.5 yalign 0.7:
+        hbox:
+            spacing 75
             vbox:
                 imagebutton:
                     auto "gui/extra/gui_gallery_btn_%s.png"
@@ -673,53 +693,42 @@ screen extra():
 
 screen gallery():
     tag menu
-    use read_only_file_slots(_("Gallery"))
+    use game_menu("Gallery", "extra"):
+        hbox:
+            grid 2 2:
+                add album.make_button(name="title", unlocked="gui/slot.png", locked="gui/slot.png", xalign=0.5, yalign=0.5)
+                add album.make_button(name="title", unlocked="gui/slot.png", locked="gui/slot.png", xalign=0.5, yalign=0.5)
+                add album.make_button(name="title", unlocked="gui/slot.png", locked="gui/slot.png", xalign=0.5, yalign=0.5)
+                add album.make_button(name="title", unlocked="gui/slot.png", locked="gui/slot.png", xalign=0.5, yalign=0.5)
+                spacing 100
+
 screen music():
     tag menu
-    use read_only_file_slots(_("Music"))
+    use game_menu("Music", "extra"):
+        frame:
+            has vbox
+            # The buttons that play each track.
+            # textbutton "Track 1" action musicroom.Play("track1.ogg")
+            # textbutton "Track 2" action musicroom.Play("track2.ogg")
+            # textbutton "Track 3" action musicroom.Play("track3.ogg")
+
+            # null height 20
+
+            # Buttons that let us advance tracks.
+            # textbutton "Next" action musicroom.Next()
+            # textbutton "Previous" action musicroom.Previous()
+
+            # null height 20
+
+    # Start the music playing on entry to the music room.
+    # on "replace" action musicroom.Play()
+
+    # Restore the main menu music upon leaving.
+    # on "replaced" action Play("music", "track.ogg")
+
 screen credits():
     tag menu
-    use read_only_file_slots(_("Credits"))
-
-screen read_only_file_slots(title):
-    use game_menu(title):
-        # Title of the screen
-        add gui.secondary_menu_background
-        text title:
-            style "secondary_menu_title"
-        fixed:
-            ## Cette instruction s’assure que l’évènement enter aura lieu avant
-            ## que l’un des boutons ne fonctionne.
-            order_reverse True
-
-            ## La grille des emplacements de fichiers.
-            grid gui.file_slot_cols gui.file_slot_rows:
-                style_prefix "slot"
-                xalign 0.5
-                yalign 0.5
-                spacing gui.slot_spacing
-                for i in range(gui.file_slot_cols * gui.file_slot_rows):
-                    $ slot = i + 1
-                    button:
-                        action FileAction(slot)
-                        has vbox
-                        add FileScreenshot(slot) xalign 0.5
-                        text FileTime(slot, format=_("{#file_time}%A %d %B %Y, %H:%M"), empty=_("emplacement vide")):
-                            style "slot_time_text"
-                        text FileSaveName(slot):
-                            style "slot_name_text"
-
-            ## Boutons pour accéder aux autres pages.
-            hbox:
-                style_prefix "page"
-                xalign 0.5
-                yalign 1.0
-                spacing gui.page_spacing
-                textbutton _("<") action FilePagePrevious()
-                ## range(1, 10) donne les nombres de 1 à 9.
-                for page in range(1, 10):
-                    textbutton "[page]" action FilePage(page)
-                textbutton _(">") action FilePageNext()
+    use game_menu("Credits", "extra")
 
 ## Écran de l'historique #######################################################
 ##
@@ -733,7 +742,7 @@ screen history():
     ## Cette instruction permet d’éviter de prédire cet écran, car il peut être
     ## très large
     predict False
-    use game_menu(_("Historique"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0):
+    use game_menu(_("Historique"), "main_menu", scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0):
         style_prefix "history"
         for h in _history_list:
             window:
