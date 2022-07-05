@@ -280,7 +280,7 @@ define gui.pref_button_spacing = 0
 define gui.page_spacing = 0
 
 ## L’espacement entre les emplacements de sauvegarde.
-define gui.slot_spacing = 15
+define gui.slot_spacing = 45
 
 ## La position du texte du menu principal.
 define gui.main_menu_text_xalign = 1.0

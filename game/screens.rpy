@@ -269,9 +269,6 @@ screen navigation():
 
         if main_menu:
             textbutton _("Nouvelle partie") action Start()
-        else:
-            textbutton _("Historique") action ShowMenu("history")
-            textbutton _("Sauvegarde") action ShowMenu("save")
 
         textbutton _("Charger") action ShowMenu("load")
         textbutton _("Préférences") action ShowMenu("preferences")
@@ -280,7 +277,7 @@ screen navigation():
         if _in_replay:
             textbutton _("Fin de la rediffusion") action EndReplay(confirm=True)
         elif not main_menu:
-            textbutton _("Menu principal") action MainMenu()
+            textbutton _("Menu") action MainMenu()
 
         if renpy.variant("pc"):
             textbutton _("Quitter") action Quit(confirm=not main_menu)
@@ -337,7 +334,7 @@ style main_menu_title:
 ## The scroll parameter can be None, or one of "viewport" or "vpgrid". When
 ## this screen is intended to be used with one or more children, which are
 ## transcluded (placed) inside it.
-screen game_menu(title,returnTo, scroll=None, yinitial=0.0):
+screen game_menu(title,returnFrom, scroll=None, yinitial=0.0):
     style_prefix "game_menu"
     if title=="main_menu":
         add gui.main_menu_background
@@ -375,16 +372,22 @@ screen game_menu(title,returnTo, scroll=None, yinitial=0.0):
     if title=="main_menu":
         key "game_menu" action ShowMenu("main_menu")
     else:
-        use return(returnTo)
+        use return(returnFrom)
 
-screen return(returnTo):
+screen return(returnFrom):
     hbox:
         xalign 0.5
         yalign 1.0
-        textbutton _("Retour"):
-            style "return_button"
-            action ShowMenu(returnTo)
-        textbutton _("Menu principal"):
+        spacing 50
+        if returnFrom == "history" or returnFrom == "game":
+            textbutton _("Retour"):
+                style "return_button"
+                action Return()
+        else:
+            textbutton _("Retour"):
+                style "return_button"
+                action ShowMenu(returnFrom)
+        textbutton _("Menu"):
             style "return_button"
             action ShowMenu('main_menu')
 
@@ -423,10 +426,10 @@ style game_menu_label_text:
 
 style return_button is navigation_button
 style return_button:
-    yoffset -75
+    yoffset -100
 style return_button_text is navigation_button_text
 style return_button_text:
-    size 75
+    size 50
 
 ## Écran de chargement et de sauvegarde ########################################
 ##
@@ -440,65 +443,41 @@ style return_button_text:
 
 screen save():
     tag menu
-    use file_slots(_("Sauvegarde"))
+    use file_slots(_("Sauvegarde"),"game")
 
 screen load():
     tag menu
     use file_slots(_("Charger"))
 
-screen file_slots(title):
+screen file_slots(title,returnFrom="main_menu"):
     # default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), auto=_("Sauvegardes automatiques"), quick=_("Sauvegardes rapides"))
-    use game_menu(title,"main_menu"):
+    use game_menu(title,returnFrom):
         fixed:
             ## Cette instruction s’assure que l’évènement enter aura lieu avant
             ## que l’un des boutons ne fonctionne.
             order_reverse True
-
-            ## Le nom de la page, qui peut être modifié en cliquant sur un
-            ## bouton.
-            # button:
-            #     style "page_label"
-            #     key_events True
-            #     xalign 0.5
-            #     action page_name_value.Toggle()
-            #     input:
-            #         style "page_label_text"
-            #         value page_name_value
-
-            ## La grille des emplacements de fichiers.
-            # grid gui.file_slot_cols gui.file_slot_rows:
             grid 3 2 :
                 style_prefix "slot"
                 xalign 0.5
-                spacing gui.slot_spacing
+                yoffset -25
+                xspacing 65
+                yspacing 15
                 for i in range(6):
                     $ slot = i + 1
                     button:
                         action FileAction(slot)
                         has vbox
-                        add FileScreenshot(slot) xalign 0.5
-                        text FileTime(slot, format=_("{#file_time}%A %d %B %Y, %H:%M"), empty=_("emplacement vide")):
-                            style "slot_time_text"
+                        add AlphaMask(FileScreenshot(slot), "gui/slot_mask.png")
+                        if FileTime(slot, format=_("{#file_time}%A %d %B %Y, %H:%M"), empty=_("emplacement vide")) == "emplacement vide":
+                            yalign 1.0
+                            text _("Emplacement vide"):
+                                style "slot_empty_text"
+                        else:
+                            text FileTime(slot, format=_("{#file_time}%A %d %B %Y, %H:%M"), empty=_("emplacement vide")):
+                                style "slot_time_text"
                         text FileSaveName(slot):
                             style "slot_name_text"
                         key "save_delete" action FileDelete(slot)
-
-            ## Boutons pour accéder aux autres pages.
-            # hbox:
-            #     style_prefix "page"
-            #     xalign 0.5
-            #     yalign 1.0
-            #     spacing gui.page_spacing
-            #     textbutton _("<") action FilePagePrevious()
-            #     if config.has_autosave:
-            #         textbutton _("{#auto_page}A") action FilePage("auto")
-            #     if config.has_quicksave:
-            #         textbutton _("{#quick_page}Q") action FilePage("quick")
-            #     ## range(1, 10) donne les nombres de 1 à 9.
-            #     for page in range(1, 10):
-            #         textbutton "[page]" action FilePage(page)
-            #     textbutton _(">") action FilePageNext()
-
 
 style page_label is gui_label
 style page_label:
@@ -524,11 +503,19 @@ style slot_button_text:
 style slot_time_text is slot_button_text
 style slot_time_text:
     font "gui/font/augie.ttf"
-    size 30
+    size 18
+    color u"#939393"
+style slot_empty_text is slot_button_text
+style slot_empty_text:
+    font "gui/font/augie.ttf"
+    size 48
+    color u"#fff"
+    yoffset -50
 style slot_name_text is slot_button_text
 style slot_name_text:
     font "gui/font/augie.ttf"
-    size 30
+    size 24
+    color u"#000000"
 
 ## Écran des préférences #######################################################
 ##
@@ -696,10 +683,10 @@ screen gallery():
     use game_menu("Gallery", "extra"):
         hbox:
             grid 2 2:
-                add album.make_button(name="title", unlocked="gui/slot.png", locked="gui/slot.png", xalign=0.5, yalign=0.5)
-                add album.make_button(name="title", unlocked="gui/slot.png", locked="gui/slot.png", xalign=0.5, yalign=0.5)
-                add album.make_button(name="title", unlocked="gui/slot.png", locked="gui/slot.png", xalign=0.5, yalign=0.5)
-                add album.make_button(name="title", unlocked="gui/slot.png", locked="gui/slot.png", xalign=0.5, yalign=0.5)
+                add album.make_button(name="title", unlocked="gui/slot.png", locked="gui/slot_lock.png", xalign=0.5, yalign=0.5)
+                add album.make_button(name="title", unlocked="gui/slot.png", locked="gui/slot_lock.png", xalign=0.5, yalign=0.5)
+                add album.make_button(name="title", unlocked="gui/slot.png", locked="gui/slot_lock.png", xalign=0.5, yalign=0.5)
+                add album.make_button(name="title", unlocked="gui/slot.png", locked="gui/slot_lock.png", xalign=0.5, yalign=0.5)
                 spacing 100
 
 screen music():
@@ -742,7 +729,7 @@ screen history():
     ## Cette instruction permet d’éviter de prédire cet écran, car il peut être
     ## très large
     predict False
-    use game_menu(_("Historique"), "main_menu", scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0):
+    use game_menu(_("Historique"), "history", scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0):
         style_prefix "history"
         for h in _history_list:
             window:
