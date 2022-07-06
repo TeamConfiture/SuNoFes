@@ -111,7 +111,8 @@ init python:
 
     # Music Room initialisation
     musicroom = MusicRoom(fadeout=1.0)
-    # musicroom.add("track1.ogg", always_unlocked=True)
+    musicroom.add("music/test1.mp3", always_unlocked=True)
+    musicroom.add("music/test2.ogg", always_unlocked=True)
 
 style window is default
 style say_label is default
@@ -692,26 +693,21 @@ screen gallery():
 screen music():
     tag menu
     use game_menu("Music", "extra"):
-        frame:
-            has vbox
-            # The buttons that play each track.
-            # textbutton "Track 1" action musicroom.Play("track1.ogg")
-            # textbutton "Track 2" action musicroom.Play("track2.ogg")
-            # textbutton "Track 3" action musicroom.Play("track3.ogg")
-
-            # null height 20
-
-            # Buttons that let us advance tracks.
-            # textbutton "Next" action musicroom.Next()
-            # textbutton "Previous" action musicroom.Previous()
-
-            # null height 20
-
-    # Start the music playing on entry to the music room.
-    # on "replace" action musicroom.Play()
-
-    # Restore the main menu music upon leaving.
-    # on "replaced" action Play("music", "track.ogg")
+        has vbox
+        # The buttons that play each track.
+        textbutton "Track 1" action musicroom.Play("music/test1.mp3")
+        textbutton "Track 2" action musicroom.Play("music/test2.ogg")
+        null height 20
+        # Buttons that let us advance tracks.
+        textbutton "Next" action musicroom.Next()
+        textbutton "Previous" action musicroom.Previous()
+        textbutton "Stop" action musicroom.Stop()
+        null height 20
+        # Start the music playing on entry to the music room.
+        # on "replace" action musicroom.Play()
+        # Restore the main menu music upon leaving.
+        # on "replaced" action Play("music", "music/test1.mp3")
+        # on "replaced" action musicroom.Stop()
 
 screen credits():
     tag menu
