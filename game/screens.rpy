@@ -17,6 +17,11 @@ style input:
 
 style hyperlink_text:
     properties gui.text_properties("hyperlink", accent=True)
+    font "gui/font/augie.ttf"
+    bold True
+    color "#666666"
+    hover_color "#666666"
+    underline False
     hover_underline True
 
 style gui_text:
@@ -709,9 +714,58 @@ screen music():
         # on "replaced" action Play("music", "music/test1.mp3")
         # on "replaced" action musicroom.Stop()
 
+style credits_text_name is gui_text:
+    size 75
+    color u"#F233A7"
+    xalign 0.5
+style credits_text_role is gui_text:
+    size 35
+    color u"#000000"
+    xalign 0.5
+style credits_text_link is gui_text:
+    size 25
+    color u"#666666"
+    xalign 0.5
+style credits_frame is gui_frame:
+    background None
+    xalign 0.5
+    yalign 0.5
+
 screen credits():
     tag menu
-    use game_menu("Credits", "extra")
+    use game_menu("Credits", "extra"):
+        grid 2 2:
+            spacing 50
+            xalign 0.5
+            yalign 0.5
+            frame:
+                style "credits_frame"
+                vbox:
+                    text _("Kimi"):
+                        style "credits_text_name"
+                    text _("Directeur, UI Designeur, et Développeuse"):
+                        style "credits_text_role"
+                    text _("{a=https://linktr.ee/KimiNako}https://linktr.ee/KimiNako{/a}"):
+                        style "credits_text_link"
+            frame:
+                style "credits_frame"
+                vbox:
+                    text _("Pepotrouille"):
+                        style "credits_text_name"
+                    text _("Développeuse et artiste des sprites"):
+                        style "credits_text_role"
+                    text _("{a=https://pepotrouille.itch.io}https://pepotrouille.itch.io{/a}"):
+                        style "credits_text_link"
+            frame:
+                style "credits_frame"
+                vbox:
+                    text _("yyyyj"):
+                        style "credits_text_name"
+                    text _("Développeur et scénariste"):
+                        style "credits_text_role"
+                    text _("{a=https://itch.io/profile/yyyyj}https://itch.io/profile/yyyyj{/a}"):
+                        style "credits_text_link"
+            null
 
 ## Écran de l'historique #######################################################
 ##
