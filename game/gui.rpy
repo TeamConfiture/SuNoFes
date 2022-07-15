@@ -319,7 +319,7 @@ define gui.frame_tile = False
 
 ## La hauteur des barres, des ascenseurs et des curseurs horizontaux. La largeur
 ## des barres, des ascenseurs et des curseurs verticaux.
-define gui.bar_size = 38
+define gui.bar_size = 32
 define gui.scrollbar_size = 18
 define gui.slider_size = 38
 
