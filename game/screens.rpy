@@ -41,10 +41,12 @@ style prompt_text is gui_text:
     properties gui.text_properties("prompt")
 
 style bar:
-    xsize 500
+    xsize 400
     ysize gui.bar_size
     left_bar Frame("gui/bar/left.png", gui.bar_borders, tile=gui.bar_tile)
     right_bar Frame("gui/bar/right.png", gui.bar_borders, tile=gui.bar_tile)
+    xalign 0.5
+    yalign 0.5
 
 style vbar:
     xsize gui.bar_size
@@ -294,7 +296,7 @@ screen navigation():
             textbutton _("Nouvelle partie") action Start()
 
         textbutton _("Charger") action ShowMenu("load")
-        textbutton _("Préférences") action ShowMenu("preferences")
+        textbutton _("Options") action ShowMenu("preferences")
         textbutton _("Extra") action ShowMenu("extra")
         
         if _in_replay:
@@ -397,6 +399,13 @@ screen game_menu(title,returnFrom, scroll=None, yinitial=0.0):
     else:
         use return(returnFrom)
 
+style return_button is navigation_button
+style return_button:
+    yoffset -100
+style return_button_text is navigation_button_text
+style return_button_text:
+    size 64
+
 screen return(returnFrom):
     hbox:
         xalign 0.5
@@ -447,12 +456,6 @@ style game_menu_label_text:
     color gui.accent_color
     yalign 0.5
 
-style return_button is navigation_button
-style return_button:
-    yoffset -100
-style return_button_text is navigation_button_text
-style return_button_text:
-    size 50
 
 ## Écran de chargement et de sauvegarde ########################################
 ##
@@ -547,70 +550,99 @@ style slot_name_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#preferences
 
+style preferences_text_option_name is gui_text:
+    size 75
+    color u"#F233A7"
+    xalign 0.5
+style preferences_text_suboption_name is gui_text:
+    size 48
+    color u"#666666"
+    xalign 1.0
+style preferences_radio_button_text is gui_button_text
+style preferences_radio_button_text:
+    properties gui.button_text_properties("radio_button")
+    size 48
+    color u"#666666"
+
 screen preferences():
     tag menu
-    use game_menu(_("Préférences"), "main_menu", scroll="viewport"):
-        vbox:
-            hbox:
-                xalign 0.5
-                yalign 0.5
-                spacing 100
-                box_wrap True
-                if renpy.variant("pc") or renpy.variant("web"):
-                    vbox:
-                        style_prefix "radio"
-                        label _("Affichage")
-                        textbutton _("Fenêtre") action Preference("display", "window")
-                        textbutton _("Plein écran") action Preference("display", "fullscreen")
-
-                #if renpy.variant("pc"):
-                #    vbox:
-                #        null height (8 * gui.pref_spacing)
-                #        style_prefix "radio"
-                #        label _("Langue")
-                #       textbutton "English" action [Language("english"), SetVariable('persistent.lang', "english")]
-                #        textbutton "Français" action [Language(None), SetVariable('persistent.lang', None)]
-                vbox:
-                    style_prefix "check"
-                    label _("Avance rapide")
-                    textbutton _("Texte non lu") action Preference("skip", "toggle")
-                    textbutton _("Après les choix") action Preference("after choices", "toggle")
-                    textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
-
-            ## Des boites vbox additionnelles de type "radio_pref" ou
-            ## "check_pref" peuvent être ajoutées ici pour ajouter des
-            ## préférences définies par le créateur du jeu.
-            null height (4 * gui.pref_spacing)
-            hbox:
-                style_prefix "slider"
-                box_wrap True
-                vbox:
-                    label _("Vitesse du texte")
-                    bar value Preference("text speed")
-                    label _("Avance automatique")
-                    bar value Preference("auto-forward time")
-                vbox:
+    use game_menu(_("Options"), "main_menu"):    
+        grid 2 2:
+            xspacing 100
+            yspacing 50
+            xpos 75
+            ypos -60
+            vbox:
+                hbox:
+                    xoffset 100
+                    text _("Volume du jeu"):
+                        style "preferences_text_option_name"
+                grid 2 2:
+                    xoffset -150
                     if config.has_music:
-                        label _("Volume de la musique")
-                        hbox:
-                            bar value Preference("music volume")
+                        text _("Musique"):
+                            style "preferences_text_suboption_name"
+                        bar value Preference("music volume"):
+                            xoffset 50
+                            style "bar"
                     if config.has_sound:
-                        label _("Volume des sons")
-                        hbox:
-                            bar value Preference("sound volume")
-                            if config.sample_sound:
-                                textbutton _("Test") action Play("sound", config.sample_sound)
-                    if config.has_voice:
-                        label _("Volume des voix")
-                        hbox:
-                            bar value Preference("voice volume")
-                            if config.sample_voice:
-                                textbutton _("Test") action Play("voice", config.sample_voice)
-                    if config.has_music or config.has_sound or config.has_voice:
-                        null height gui.pref_spacing
-                        textbutton _("Couper tous les sons"):
-                            action Preference("all mute", "toggle")
-                            style "mute_all_button"
+                        text _("Son"):
+                            style "preferences_text_suboption_name"
+                        bar value Preference("sound volume"):
+                            xoffset 50
+                            style "bar"
+            vbox:
+                hbox:
+                    text _("Mode de la fenêtre"):
+                        style "preferences_text_option_name"
+                grid 1 2:
+                    yspacing 25
+                    textbutton _("Fenêtre") action Preference("display", "window"):
+                        style "preferences_radio_button_text"
+                    textbutton _("Plein écran") action Preference("display", "fullscreen"):
+                        style "preferences_radio_button_text"
+            vbox:
+                hbox:
+                    xoffset 100
+                    text _("Vitesse de lecture"):
+                        style "preferences_text_option_name"
+                grid 2 2:
+                    xoffset -150
+                    text _("Manuelle"):
+                        style "preferences_text_suboption_name"
+                    bar value Preference("text speed"):
+                            xoffset 50
+                            style "bar"
+                    text _("Automatique"):
+                        style "preferences_text_suboption_name"
+                    bar value Preference("auto-forward time"):
+                            xoffset 50
+                            style "bar"
+            vbox:
+                hbox:
+                    text _("Langue"):
+                        style "preferences_text_option_name"
+                grid 1 2:
+                    yspacing 25
+                    textbutton "English" action [Language("english"), SetVariable('persistent.lang', "english")]:
+                        style "preferences_radio_button_text"
+                    textbutton "Français" action [Language(None), SetVariable('persistent.lang', None)]:
+                        style "preferences_radio_button_text"
+
+            # if renpy.variant("pc") or renpy.variant("web"):
+            #     vbox:
+            #         style_prefix "radio"
+            #         label _("Affichage")
+            #         textbutton _("Fenêtre") action Preference("display", "window")
+            #         textbutton _("Plein écran") action Preference("display", "fullscreen")
+
+            # if renpy.variant("pc"):
+            #    vbox:
+            #       null height (8 * gui.pref_spacing)
+            #       style_prefix "radio"
+            #       label _("Langue")
+            #       textbutton "English" action [Language("english"), SetVariable('persistent.lang', "english")]
+            #       textbutton "Français" action [Language(None), SetVariable('persistent.lang', None)]
 
 ### Preferences labels in preferences menu
 style pref_label is gui_label
@@ -1218,6 +1250,7 @@ style pref_vbox:
 
 style bar:
     variant "small"
+    xsize 500
     ysize gui.bar_size
     left_bar Frame("gui/phone/bar/left.png", gui.bar_borders, tile=gui.bar_tile)
     right_bar Frame("gui/phone/bar/right.png", gui.bar_borders, tile=gui.bar_tile)
@@ -1225,6 +1258,7 @@ style bar:
 style vbar:
     variant "small"
     xsize gui.bar_size
+    ysize 500
     top_bar Frame("gui/phone/bar/top.png", gui.vbar_borders, tile=gui.bar_tile)
     bottom_bar Frame("gui/phone/bar/bottom.png", gui.vbar_borders, tile=gui.bar_tile)
 
