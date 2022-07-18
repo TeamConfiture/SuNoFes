@@ -41,12 +41,14 @@ style prompt_text is gui_text:
     properties gui.text_properties("prompt")
 
 style bar:
+    xsize 500
     ysize gui.bar_size
     left_bar Frame("gui/bar/left.png", gui.bar_borders, tile=gui.bar_tile)
     right_bar Frame("gui/bar/right.png", gui.bar_borders, tile=gui.bar_tile)
 
 style vbar:
     xsize gui.bar_size
+    ysize 500
     top_bar Frame("gui/bar/top.png", gui.vbar_borders, tile=gui.bar_tile)
     bottom_bar Frame("gui/bar/bottom.png", gui.vbar_borders, tile=gui.bar_tile)
 
@@ -116,7 +118,7 @@ init python:
     album.button("title")
 
     # Music Room initialisation
-    musicroom = MusicRoom(fadeout=1.0)
+    musicroom = MusicRoom(fadeout=1.0,loop=True,single_track=True)
     musicroom.add("music/test1.mp3", always_unlocked=True)
     musicroom.add("music/test2.ogg", always_unlocked=True)
 
@@ -695,16 +697,20 @@ screen gallery():
 screen music():
     tag menu
     use game_menu("Music", "extra"):
-        has vbox
+        grid 2 1:
+            # spacing 50
+            xfill True
+            yfill True
+            xpos 100
         # The buttons that play each track.
-        textbutton "Track 1" action musicroom.Play("music/test1.mp3")
-        textbutton "Track 2" action musicroom.Play("music/test2.ogg")
-        null height 20
+            textbutton "Track 1" action musicroom.Play("music/test1.mp3")
+            textbutton "Track 2" action musicroom.Play("music/test2.ogg")
+        # null height 20
         # Buttons that let us advance tracks.
-        textbutton "Next" action musicroom.Next()
-        textbutton "Previous" action musicroom.Previous()
-        textbutton "Stop" action musicroom.Stop()
-        null height 20
+        vbox:
+            imagebutton auto "gui/button/left_%s.png" action musicroom.Previous()
+            imagebutton auto "gui/button/pause_%s.png" action musicroom.Stop()
+            imagebutton auto "gui/button/right_%s.png" action musicroom.Next()
         # Start the music playing on entry to the music room.
         # on "replace" action musicroom.Play()
         # Restore the main menu music upon leaving.
