@@ -101,6 +101,7 @@ screen say(who, what):
                 text who id "who"
 
         text what id "what"
+
     ## Si il y a une side image, l'afficher au-dessus du texte. Ne pas
     ## l'afficher sur la version téléphone - pas assez de place.
     if not renpy.variant("small"):
