@@ -3,10 +3,10 @@
 ################################################################################
 
 ## L'instruction init offset fait exécuter les instructions d'initialisation de
-## ce fichier tavant les instructions init des autres fichiers.
-init offset = -2
+## ce fichier avant les instructions init des autres fichiers.
+init offset = -1
 
-## Appelé gui.init réinitialise les styles à leurs valeurs par défaut et
+## Appeler gui.init réinitialise les styles à leurs valeurs par défaut et
 ## initialise la largeur et la hauteur du jeu.
 init python:
     gui.init(1920, 1080)
@@ -24,7 +24,7 @@ init python:
 
 ## Une couleur utilisée dans l’interface pour mettre l’accent sur un texte
 ## (surbrillance).
-define gui.accent_color = u'#0099ff'
+define gui.accent_color = u'#555555'
 
 ## La couleur utilisée pour le texte d’un bouton quand il n’a jamais été
 ## sélectionné ou survolé.
@@ -35,7 +35,7 @@ define gui.idle_color = u'#aaaaaa'
 define gui.idle_small_color = u'#888888'
 
 ## Cette couleur est utilisée pour les boutons et les barres qui sont survolées.
-define gui.hover_color = u'#0099ff'
+define gui.hover_color = u'#555555'
 
 ## Cette couleur est utilisé pour le texte d’un bouton sélectionné, mais qui n’a
 ## pas le focus. Un bouton est sélectionné s’il est sur l’écran actuel ou si
@@ -72,7 +72,7 @@ define gui.interface_text_font = "gui/font/augie.ttf"
 define gui.text_size = 33
 
 ## La taille pour le nom des personnages.
-define gui.name_text_size = 45
+define gui.name_text_size = 50
 
 ## La taille du texte dans l’interface de jeu.
 define gui.interface_text_size = 33
@@ -96,28 +96,28 @@ define gui.game_menu_background = "gui/game_menu.png"
 ## Les images utilisées pour les menus secondaires.
 define gui.secondary_menu_background = "gui/bg.png"
 
+
 ## Dialogue ####################################################################
 ##
 ## Ces variables contrôlent comment les dialogues sont affichés une ligne à la
 ## fois.
 
 ## La hauteur de la fenêtre contenant les dialogues.
-define gui.textbox_height = 278
+define gui.textbox_height = 385
 
 ## L’emplacement vertical de la zone de texte à l’écran. 0.0 pour le haut, 0.5
 ## pour le centre et 1.0 pour le bas.
-define gui.textbox_yalign = 1.0
-
+define gui.textbox_yalign = 0.92
 
 ## L’emplacement relatif à la zone de texte du nom du personnage en train de
 ## parler. La valeur peut être un nombre entier de pixels depuis la gauche ou le
 ## haut ou 0.5 pour le centre.
-define gui.name_xpos = 360
-define gui.name_ypos = 0
+define gui.name_xpos = 0.08
+define gui.name_ypos = 0.04
 
 ## L’alignement horizontal du nom du personnage. La valeur peut être 0.0 pour un
 ## alignement à gauche, 0.5 pour le centrer et 1.0 pour un alignement à droite.
-define gui.name_xalign = 0.0
+define gui.name_xalign = 0
 
 ## La largeur, profondeur et les bords de la zone contenant le nom du personnage
 ## ou « None » pour le dimensionner automatiquement.
@@ -135,11 +135,11 @@ define gui.namebox_tile = False
 
 ## L’emplacement du dialogue relatif à la zone de texte. La valeur peut être un
 ## nombre entier de pixels depuis la gauche ou le haut ou 0.5 pour le centre.
-define gui.dialogue_xpos = 402
-define gui.dialogue_ypos = 75
+define gui.dialogue_xpos = 0.05
+define gui.dialogue_ypos = 0.32
 
 ## La largeur maximale en pixels de la zone de dialogue.
-define gui.dialogue_width = 1116
+define gui.dialogue_width = 1706
 
 ## L’alignement horizontal de la zone de dialogue. La valeur peut être 0.0 pour
 ## un alignement à gauche, 0.5 pour le centrer et 1.0 pour un alignement à

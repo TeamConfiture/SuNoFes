@@ -101,6 +101,7 @@ screen say(who, what):
                 text who id "who"
 
         text what id "what"
+
     ## Si il y a une side image, l'afficher au-dessus du texte. Ne pas
     ## l'afficher sur la version téléphone - pas assez de place.
     if not renpy.variant("small"):
@@ -228,16 +229,14 @@ screen quick_menu():
     zorder 100
     if quick_menu:
         hbox:
-            style_prefix "quick"
-            xalign 0.5
-            yalign 1.0
+            xalign 0.95
+            yalign 0.65
+            spacing 30
             textbutton _("Retour") action Rollback()
             textbutton _("Historique") action ShowMenu('history')
             textbutton _("Avance rapide") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Sauvegarde") action ShowMenu('save')
-            textbutton _("Sauvegarde R.") action QuickSave()
-            textbutton _("Chargement R.") action QuickLoad()
             textbutton _("Préf.") action ShowMenu('preferences')
 
 
@@ -248,10 +247,8 @@ init python:
 
 default quick_menu = True
 
-style quick_button is default
-style quick_button_text is button_text
-
 style quick_button:
+    color '#000'
     properties gui.button_properties("quick_button")
 
 style quick_button_text:
