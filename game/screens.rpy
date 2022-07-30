@@ -106,7 +106,8 @@ screen say(who, what):
     ## l'afficher sur la version téléphone - pas assez de place.
     if not renpy.variant("small"):
         add SideImage() xalign 0.0 yalign 1.0
-
+    use quick_menu
+    
 ## Rendre la boîte du nom personnalisable à travers l'objet Character.
 init python:
     config.character_id_prefixes.append('namebox')
@@ -168,8 +169,10 @@ style say_dialogue:
 ## https://www.renpy.org/doc/html/screen_special.html#input
 
 screen input(prompt):
-    style_prefix "input"
     window:
+        xalign 0.5
+        yalign 0.5
+        background "gui/frame.png"
         vbox:
             xalign gui.dialogue_text_xalign
             xpos gui.dialogue_xpos
@@ -238,12 +241,6 @@ screen quick_menu():
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Sauvegarde") action ShowMenu('save')
             textbutton _("Préf.") action ShowMenu('preferences')
-
-
-## Ce code garantit que le menu d’accès rapide sera affiché dans le jeu, tant
-## que le joueur n’aura pas explicitement demandé à cacher l’interface.
-init python:
-    config.overlay_screens.append("quick_menu")
 
 default quick_menu = True
 

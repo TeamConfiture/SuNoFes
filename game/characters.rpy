@@ -4,8 +4,9 @@
 # ex: image eileen heureuse = "eileen_heureuse.png"
 
 # Déclarez les personnages utilisés dans le jeu.
+define narrator = Character(None, window_background="gui/textbox_noname.png", window_xsize=1803, window_ysize=388, what_xpos=38, what_ypos=126, what_italic=True)
 define x = Character('???', color="#ffffff")
-define blanche = Character('Blanche', color="#ffffff")
+define blanche = Character('[player_name]', color="#ffffff")
 define madame = Character('Madame Arc-En-Ciel', color="#ffffff")
 define grosso = Character('Grosso', color="#ffffff")
 define maigrichon = Character('Maigrichon', color="#ffffff")
