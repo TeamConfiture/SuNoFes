@@ -41,12 +41,14 @@ style prompt_text is gui_text:
     properties gui.text_properties("prompt")
 
 style bar:
+    xsize 500
     ysize gui.bar_size
     left_bar Frame("gui/bar/left.png", gui.bar_borders, tile=gui.bar_tile)
     right_bar Frame("gui/bar/right.png", gui.bar_borders, tile=gui.bar_tile)
 
 style vbar:
     xsize gui.bar_size
+    ysize 500
     top_bar Frame("gui/bar/top.png", gui.vbar_borders, tile=gui.bar_tile)
     bottom_bar Frame("gui/bar/bottom.png", gui.vbar_borders, tile=gui.bar_tile)
 
@@ -116,9 +118,13 @@ init python:
     album.button("title")
 
     # Music Room initialisation
-    musicroom = MusicRoom(fadeout=1.0)
-    musicroom.add("music/test1.mp3", always_unlocked=True)
-    musicroom.add("music/test2.ogg", always_unlocked=True)
+    musicroom = MusicRoom(fadeout=1.0,loop=True,single_track=True)
+    musicroom.add("music/You Make Me Back.mp3", always_unlocked=True)
+    musicroom.add("music/Diamond.mp3", always_unlocked=True)
+    musicroom.add("music/Yofukashino Uta.mp3", always_unlocked=True)
+    musicroom.add("music/Dorohedoro Zombie Slushi.mp3", always_unlocked=True)
+    musicroom.add("music/Eating food and fighting Wizards.mp3", always_unlocked=True)
+    musicroom.add("music/El Canto del Colibrí.mp3", always_unlocked=True)
 
 style window is default
 style say_label is default
@@ -681,6 +687,7 @@ screen extra():
                     auto "gui/extra/gui_credits_btn_%s.png"
                     action ShowMenu('credits')
 
+## Écran des images #######################################################
 screen gallery():
     tag menu
     use game_menu("Gallery", "extra"):
@@ -692,25 +699,48 @@ screen gallery():
                 add album.make_button(name="title", unlocked="gui/slot.png", locked="gui/slot_lock.png", xalign=0.5, yalign=0.5)
                 spacing 100
 
+## Écran des musiques #######################################################
+style music_button is button
+style music_button_text is text:
+    color "#666666"
+    hover_color "#F233A7"
+    selected_color "#F233A7"
+    size 72
+
 screen music():
     tag menu
     use game_menu("Music", "extra"):
-        has vbox
-        # The buttons that play each track.
-        textbutton "Track 1" action musicroom.Play("music/test1.mp3")
-        textbutton "Track 2" action musicroom.Play("music/test2.ogg")
-        null height 20
-        # Buttons that let us advance tracks.
-        textbutton "Next" action musicroom.Next()
-        textbutton "Previous" action musicroom.Previous()
-        textbutton "Stop" action musicroom.Stop()
-        null height 20
-        # Start the music playing on entry to the music room.
-        # on "replace" action musicroom.Play()
-        # Restore the main menu music upon leaving.
-        # on "replaced" action Play("music", "music/test1.mp3")
-        # on "replaced" action musicroom.Stop()
+        vbox:
+            xalign 0.5
+            ypos -25
+            spacing 50
+            hbox:
+                grid 2 3:
+                    xspacing 200
+                    yspacing 50
+                    # The buttons that play each track.
+                    textbutton "Track 1" action musicroom.Play("music/You Make Me Back.mp3"):
+                        style "music_button"
+                    textbutton "Track 2" action musicroom.Play("music/Diamond.mp3"):
+                        style "music_button"
+                    textbutton "Track 3" action musicroom.Play("music/Yofukashino Uta.mp3"):
+                        style "music_button"
+                    textbutton "Track 4" action musicroom.Play("music/Dorohedoro Zombie Slushi.mp3"):
+                        style "music_button"
+                    textbutton "Track 5" action musicroom.Play("music/Eating food and fighting Wizards.mp3"):
+                        style "music_button"
+                    textbutton "Track 6" action musicroom.Play("music/El Canto del Colibrí.mp3"):
+                        style "music_button"
+                    # null height 20
+            hbox:
+                xalign 0.5
+                spacing 25
+                # Buttons that let us advance tracks.
+                imagebutton auto "gui/button/left_%s.png" action musicroom.Previous()
+                imagebutton auto "gui/button/pause_%s.png" action musicroom.Stop()
+                imagebutton auto "gui/button/right_%s.png" action musicroom.Next()
 
+## Écran des crédits #######################################################
 style credits_text_name is gui_text:
     size 75
     color u"#F233A7"
