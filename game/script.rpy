@@ -2,21 +2,20 @@
     stop music fadeout 1.0
     scene black with dissolve
     define chap_label = "Chapitre "
-    image prologue = "images/bg/world.png"
-    image chap = "images/bg/world.png"
+    image background_image = "gui/main_menu.png"
 
     if chapNum == 0:
-        show prologue
-        show expression VBox(Text(_("Prologue"), size=125, yalign=0.5, xalign=0.5, color="#000")) as text:
-            yalign 0.25
+        show background_image
+        show expression VBox(Text(_("Prologue"), size=125, yalign=0.5, xalign=0.5, color="#fff")) as text:
+            yalign 0.42
             xalign 0.5
         with dissolve
     else:
         if persistent.lang is None:
             $ chap_label = "Chapter "
-        show chap
-        show expression VBox(Text(chap_label + str(chapNum), size=125, yalign=0.5, xalign=0.5, color="#000")) as text:
-            yalign 0.4
+        show background_image
+        show expression VBox(Text(chap_label + str(chapNum), size=125, yalign=0.5, xalign=0.5, color="#fff")) as text:
+            yalign 0.42
             xalign 0.25
         with dissolve
     $ renpy.pause (2.5)
