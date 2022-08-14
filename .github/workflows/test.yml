@@ -1,0 +1,20 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Lint VN project
+      uses: ProjectAliceDev/renpy-lint-action@v1.1.2
+      with:
+        sdk-version: '8.0.2'
+        project-dir: '.'
+      env:
+        SDL_AUDIODRIVER: dummy
+        SDL_VIDEODRIVER: dummy
