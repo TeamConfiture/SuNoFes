@@ -1,0 +1,33 @@
+name: Update translations
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        path: project
+    - name: "Prepare Ren'Py cache"
+      id: cache-renpy
+      uses: actions/cache@v3
+      with:
+        path: renpy
+        key: ${{ runner.os }}-renpy
+    - name: "Download Ren'Py"
+      if: steps.cache-renpy.outputs.cache-hit != 'true'
+      run: mkdir renpy && curl https://www.renpy.org/dl/8.0.2/renpy-8.0.2-sdk.tar.bz2 | tar -xjC renpy --strip-components 1
+    - name: Update translation files - English
+      run: ./renpy/renpy.sh project translate english
+    - name: Commit translation files changes
+      uses: EndBug/add-and-commit@v9
+      with:
+        add: game/tl
+        cwd: project
+        message: "autobot: Update translation files"
+
