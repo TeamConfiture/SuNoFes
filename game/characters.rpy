@@ -4,11 +4,12 @@
 # ex: image eileen heureuse = "eileen_heureuse.png"
 
 # Déclarez les personnages utilisés dans le jeu.
-define x = Character('???', color="#000000")
-define blanche = Character('Blanche', color="#000000")
-define madame = Character('Madame Arc-En-Ciel', color="#000000")
-define grosso = Character('Grosso', color="#000000")
-define maigrichon = Character('Maigrichon', color="#000000")
-define noir = Character('Père Noir', color="#000000")
-define violet = Character('Violet Evagaden', color="#000000")
-define indigo = Character('Indigo', color="#000000")
+define narrator = Character(None, window_background="gui/textbox_noname.png", window_xsize=1803, window_ysize=388, what_xpos=38, what_ypos=126, what_italic=True)
+define x = Character('???', color="#ffffff")
+define blanche = Character('[player_name]', color="#ffffff")
+define madame = Character('Madame Arc-En-Ciel', color="#ffffff")
+define grosso = Character('Grosso', color="#ffffff")
+define maigrichon = Character('Maigrichon', color="#ffffff")
+define noir = Character('Père Noir', color="#ffffff")
+define violet = Character('Violet Evagaden', color="#ffffff")
+define indigo = Character('Indigo', color="#ffffff")
