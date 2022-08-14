@@ -131,6 +131,7 @@ dmypy.json
 
 # Renp'y
 *.rpyc
+*.rpymc
 *.rpyb
 *.txt
 *.psd
