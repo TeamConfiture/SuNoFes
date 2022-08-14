@@ -170,14 +170,13 @@ style say_dialogue:
 
 screen input(prompt):
     window:
-        xalign 0.5
-        yalign 0.5
-        background "gui/frame.png"
+        xalign 0
+        yalign 0
+        background None
         vbox:
-            xalign gui.dialogue_text_xalign
-            xpos gui.dialogue_xpos
+            xpos 0.43
             xsize gui.dialogue_width
-            ypos gui.dialogue_ypos
+            ypos 0.48
             text prompt style "input_prompt"
             input id "input"
 
