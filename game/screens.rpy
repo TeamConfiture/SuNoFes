@@ -41,12 +41,14 @@ style prompt_text is gui_text:
     properties gui.text_properties("prompt")
 
 style bar:
+    xsize 500
     ysize gui.bar_size
     left_bar Frame("gui/bar/left.png", gui.bar_borders, tile=gui.bar_tile)
     right_bar Frame("gui/bar/right.png", gui.bar_borders, tile=gui.bar_tile)
 
 style vbar:
     xsize gui.bar_size
+    ysize 500
     top_bar Frame("gui/bar/top.png", gui.vbar_borders, tile=gui.bar_tile)
     bottom_bar Frame("gui/bar/bottom.png", gui.vbar_borders, tile=gui.bar_tile)
 
@@ -117,9 +119,13 @@ init python:
     album.button("title")
 
     # Music Room initialisation
-    musicroom = MusicRoom(fadeout=1.0)
-    musicroom.add("music/test1.mp3", always_unlocked=True)
-    musicroom.add("music/test2.ogg", always_unlocked=True)
+    musicroom = MusicRoom(fadeout=1.0,loop=True,single_track=True)
+    musicroom.add("music/You Make Me Back.mp3", always_unlocked=True)
+    musicroom.add("music/Diamond.mp3", always_unlocked=True)
+    musicroom.add("music/Yofukashino Uta.mp3", always_unlocked=True)
+    musicroom.add("music/Dorohedoro Zombie Slushi.mp3", always_unlocked=True)
+    musicroom.add("music/Eating food and fighting Wizards.mp3", always_unlocked=True)
+    musicroom.add("music/El Canto del Colibrí.mp3", always_unlocked=True)
 
 style window is default
 style say_label is default
@@ -677,6 +683,7 @@ screen extra():
                     auto "gui/extra/gui_credits_btn_%s.png"
                     action ShowMenu('credits')
 
+## Écran des images #######################################################
 screen gallery():
     tag menu
     use game_menu("Gallery", "extra"):
@@ -688,25 +695,48 @@ screen gallery():
                 add album.make_button(name="title", unlocked="gui/slot.png", locked="gui/slot_lock.png", xalign=0.5, yalign=0.5)
                 spacing 100
 
+## Écran des musiques #######################################################
+style music_button is button
+style music_button_text is text:
+    color "#666666"
+    hover_color "#F233A7"
+    selected_color "#F233A7"
+    size 72
+
 screen music():
     tag menu
     use game_menu("Music", "extra"):
-        has vbox
-        # The buttons that play each track.
-        textbutton "Track 1" action musicroom.Play("music/test1.mp3")
-        textbutton "Track 2" action musicroom.Play("music/test2.ogg")
-        null height 20
-        # Buttons that let us advance tracks.
-        textbutton "Next" action musicroom.Next()
-        textbutton "Previous" action musicroom.Previous()
-        textbutton "Stop" action musicroom.Stop()
-        null height 20
-        # Start the music playing on entry to the music room.
-        # on "replace" action musicroom.Play()
-        # Restore the main menu music upon leaving.
-        # on "replaced" action Play("music", "music/test1.mp3")
-        # on "replaced" action musicroom.Stop()
+        vbox:
+            xalign 0.5
+            ypos -25
+            spacing 50
+            hbox:
+                grid 2 3:
+                    xspacing 200
+                    yspacing 50
+                    # The buttons that play each track.
+                    textbutton "Track 1" action musicroom.Play("music/You Make Me Back.mp3"):
+                        style "music_button"
+                    textbutton "Track 2" action musicroom.Play("music/Diamond.mp3"):
+                        style "music_button"
+                    textbutton "Track 3" action musicroom.Play("music/Yofukashino Uta.mp3"):
+                        style "music_button"
+                    textbutton "Track 4" action musicroom.Play("music/Dorohedoro Zombie Slushi.mp3"):
+                        style "music_button"
+                    textbutton "Track 5" action musicroom.Play("music/Eating food and fighting Wizards.mp3"):
+                        style "music_button"
+                    textbutton "Track 6" action musicroom.Play("music/El Canto del Colibrí.mp3"):
+                        style "music_button"
+                    # null height 20
+            hbox:
+                xalign 0.5
+                spacing 25
+                # Buttons that let us advance tracks.
+                imagebutton auto "gui/button/left_%s.png" action musicroom.Previous()
+                imagebutton auto "gui/button/pause_%s.png" action musicroom.Stop()
+                imagebutton auto "gui/button/right_%s.png" action musicroom.Next()
 
+## Écran des crédits #######################################################
 style credits_text_name is gui_text:
     size 75
     color u"#F233A7"
@@ -767,62 +797,27 @@ screen credits():
 ## de dialogue stocké dans _history_list.
 ##
 ## https://www.renpy.org/doc/html/history.html
-screen history():
-    tag menu
-    ## Cette instruction permet d’éviter de prédire cet écran, car il peut être
-    ## très large
-    predict False
-    use game_menu(_("Historique"), "history", scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0):
-        style_prefix "history"
-        for h in _history_list:
-            window:
-                ## Cela positionne correctement l'écran si history_height est
-                ## initialisé à None.
-                has fixed:
-                    yfit True
-                if h.who:
-                    label h.who:
-                        style "history_name"
-                        substitute False
-                        ## Utilise pour la couleur du texte, la couleur par
-                        ## défaut des dialogues du personnage si elle a été
-                        ## initialisée.
-                        if "color" in h.who_args:
-                            text_color h.who_args["color"]
-                $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
-                text what:
-                    substitute False
-        if not _history_list:
-            label _("L'historique des dialogues est vide.")
-
 
 ## Ceci détermine quels tags peuvent être affichés sur le screen de
 ## l'historique.
 define gui.history_allow_tags = { "alt", "noalt" }
-
 style history_window is empty
-
-style history_name is gui_label
-style history_name_text is gui_label_text
-style history_text is gui_text
-
-style history_label is gui_label
-style history_label_text is gui_label_text
-
 style history_window:
     xfill True
     ysize gui.history_height
-
+    ypos -275
+style history_name is gui_label
 style history_name:
     xpos gui.history_name_xpos
     xanchor gui.history_name_xalign
     ypos gui.history_name_ypos
     xsize gui.history_name_width
-
+style history_name_text is gui_label_text
 style history_name_text:
     min_width gui.history_name_width
     text_align gui.history_name_xalign
-
+    size 48
+style history_text is gui_text
 style history_text:
     xpos gui.history_text_xpos
     ypos gui.history_text_ypos
@@ -831,12 +826,53 @@ style history_text:
     min_width gui.history_text_width
     text_align gui.history_text_xalign
     layout ("subtitle" if gui.history_text_xalign else "tex")
-
+    color "#666666"
+    size 48
+style history_label is gui_label
 style history_label:
     xfill True
-
+style history_label_text is gui_label_text
 style history_label_text:
     xalign 0.5
+
+screen history():
+    tag menu
+    ## Cette instruction permet d’éviter de prédire cet écran, car il peut être
+    ## très large
+    predict False
+    use game_menu(_("Historique"), "history"):
+        vpgrid:
+            area (-250, -50, 0.85, 0.85)
+            cols 1
+            yinitial 1.0 #0.0 pour commencer au début, 1.0 à la fin, de l'historique
+            scrollbars "vertical"
+            mousewheel True
+            draggable True
+            pagekeys True
+            arrowkeys True
+            vbox:
+                for h in _history_list:
+                    window:
+                        style "history_window"
+                        ## Cela positionne correctement l'écran si history_height est
+                        ## initialisé à None.
+                        has fixed:
+                            yfit True
+                        if h.who:
+                            label h.who:
+                                style "history_name"
+                                substitute False
+                                ## Utilise pour la couleur du texte, la couleur par
+                                ## défaut des dialogues du personnage si elle a été
+                                ## initialisée.
+                                if "color" in h.who_args:
+                                    text_color h.who_args["color"]
+                        $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
+                        text what:
+                            style "history_text"
+                            substitute False
+                if not _history_list:
+                    label _("L'historique des dialogues est vide.")
 
 ################################################################################
 ## Écrans additionnels

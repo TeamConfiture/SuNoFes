@@ -319,9 +319,9 @@ define gui.frame_tile = False
 
 ## La hauteur des barres, des ascenseurs et des curseurs horizontaux. La largeur
 ## des barres, des ascenseurs et des curseurs verticaux.
-define gui.bar_size = 38
-define gui.scrollbar_size = 18
-define gui.slider_size = 38
+define gui.bar_size = 32
+define gui.scrollbar_size = 32
+define gui.slider_size = 32
 
 ## « True » (Vrai)  si les images de barres doivent être en mosaïques.
 ## « False »(Faux) si elles doivent être mise à l'échelle (étirement).
@@ -353,19 +353,19 @@ define config.history_length = 250
 
 ## La hauteur de l’écran historique ou « None » pour calculer la hauteur au prix
 ## d’une légère perte de performance.
-define gui.history_height = 210
+define gui.history_height = 300
 
 ## La position, largeur et alignement du label donnant le nom du personnage en
 ## train de parler.
-define gui.history_name_xpos = 233
+define gui.history_name_xpos = 550
 define gui.history_name_ypos = 0
-define gui.history_name_width = 233
-define gui.history_name_xalign = 1.0
+define gui.history_name_width = 500
+define gui.history_name_xalign = 0.0
 
 ## La position, largeur et alignement de la zone de dialogue.
-define gui.history_text_xpos = 255
-define gui.history_text_ypos = 3
-define gui.history_text_width = 1110
+define gui.history_text_xpos = 550
+define gui.history_text_ypos = 55
+define gui.history_text_width = 1000
 define gui.history_text_xalign = 0.0
 
 
