@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2022-07-01 23:38
+﻿# TODO: Translation updated at 2022-08-15 15:14
 
 translate english strings:
 
@@ -303,6 +303,10 @@ translate english strings:
     new "File page [text]"
 
     # renpy/common/00action_file.rpy:639
+    old "Page {}"
+    new "Page {}"
+
+    # renpy/common/00action_file.rpy:639
     old "Automatic saves"
     new "Automatic saves"
 
@@ -334,7 +338,7 @@ translate english strings:
     old "Language [text]"
     new "Language [text]"
 
-    # renpy/common/00action_other.rpy:668
+    # renpy/common/00action_other.rpy:703
     old "Open [text] directory."
     new "Open [text] directory."
 
@@ -858,91 +862,91 @@ translate english strings:
     old "Contacting App Store\nPlease Wait..."
     new "Contacting App Store\nPlease Wait..."
 
-    # renpy/common/00updater.rpy:404
+    # renpy/common/00updater.rpy:419
     old "The Ren'Py Updater is not supported on mobile devices."
     new "The Ren'Py Updater is not supported on mobile devices."
 
-    # renpy/common/00updater.rpy:533
+    # renpy/common/00updater.rpy:548
     old "An error is being simulated."
     new "An error is being simulated."
 
-    # renpy/common/00updater.rpy:717
+    # renpy/common/00updater.rpy:738
     old "Either this project does not support updating, or the update status file was deleted."
     new "Either this project does not support updating, or the update status file was deleted."
 
-    # renpy/common/00updater.rpy:731
+    # renpy/common/00updater.rpy:752
     old "This account does not have permission to perform an update."
     new "This account does not have permission to perform an update."
 
-    # renpy/common/00updater.rpy:734
+    # renpy/common/00updater.rpy:755
     old "This account does not have permission to write the update log."
     new "This account does not have permission to write the update log."
 
-    # renpy/common/00updater.rpy:762
+    # renpy/common/00updater.rpy:783
     old "Could not verify update signature."
     new "Could not verify update signature."
 
-    # renpy/common/00updater.rpy:1063
+    # renpy/common/00updater.rpy:1084
     old "The update file was not downloaded."
     new "The update file was not downloaded."
 
-    # renpy/common/00updater.rpy:1081
+    # renpy/common/00updater.rpy:1102
     old "The update file does not have the correct digest - it may have been corrupted."
     new "The update file does not have the correct digest - it may have been corrupted."
 
-    # renpy/common/00updater.rpy:1231
+    # renpy/common/00updater.rpy:1252
     old "While unpacking {}, unknown type {}."
     new "While unpacking {}, unknown type {}."
 
-    # renpy/common/00updater.rpy:1603
+    # renpy/common/00updater.rpy:1624
     old "Updater"
     new "Updater"
 
-    # renpy/common/00updater.rpy:1610
+    # renpy/common/00updater.rpy:1631
     old "An error has occured:"
     new "An error has occured:"
 
-    # renpy/common/00updater.rpy:1612
+    # renpy/common/00updater.rpy:1633
     old "Checking for updates."
     new "Checking for updates."
 
-    # renpy/common/00updater.rpy:1614
+    # renpy/common/00updater.rpy:1635
     old "This program is up to date."
     new "This program is up to date."
 
-    # renpy/common/00updater.rpy:1616
+    # renpy/common/00updater.rpy:1637
     old "[u.version] is available. Do you want to install it?"
     new "[u.version] is available. Do you want to install it?"
 
-    # renpy/common/00updater.rpy:1618
+    # renpy/common/00updater.rpy:1639
     old "Preparing to download the updates."
     new "Preparing to download the updates."
 
-    # renpy/common/00updater.rpy:1620
+    # renpy/common/00updater.rpy:1641
     old "Downloading the updates."
     new "Downloading the updates."
 
-    # renpy/common/00updater.rpy:1622
+    # renpy/common/00updater.rpy:1643
     old "Unpacking the updates."
     new "Unpacking the updates."
 
-    # renpy/common/00updater.rpy:1624
+    # renpy/common/00updater.rpy:1645
     old "Finishing up."
     new "Finishing up."
 
-    # renpy/common/00updater.rpy:1626
+    # renpy/common/00updater.rpy:1647
     old "The updates have been installed. The program will restart."
     new "The updates have been installed. The program will restart."
 
-    # renpy/common/00updater.rpy:1628
+    # renpy/common/00updater.rpy:1649
     old "The updates have been installed."
     new "The updates have been installed."
 
-    # renpy/common/00updater.rpy:1630
+    # renpy/common/00updater.rpy:1651
     old "The updates were cancelled."
     new "The updates were cancelled."
 
-    # renpy/common/00updater.rpy:1645
+    # renpy/common/00updater.rpy:1666
     old "Proceed"
     new "Proceed"
 

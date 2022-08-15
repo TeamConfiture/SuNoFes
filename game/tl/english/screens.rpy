@@ -1,184 +1,122 @@
-﻿# TODO: Translation updated at 2022-07-01 23:38
+﻿# TODO: Translation updated at 2022-08-15 15:14
 
 translate english strings:
 
-    # game/screens.rpy:252
+    # game/screens.rpy:243
     old "Retour"
-    new "Back"
+    new "Retour"
 
-    # game/screens.rpy:253
+    # game/screens.rpy:244
     old "Historique"
-    new "History"
+    new "Historique"
 
-    # game/screens.rpy:254
+    # game/screens.rpy:245
     old "Avance rapide"
-    new "Skip"
+    new "Avance rapide"
 
-    # game/screens.rpy:255
+    # game/screens.rpy:246
     old "Auto"
     new "Auto"
 
-    # game/screens.rpy:256
+    # game/screens.rpy:247
     old "Sauvegarde"
-    new "Save"
+    new "Sauvegarde"
 
-    # game/screens.rpy:257
-    old "Sauvegarde R."
-    new "Fast save"
-
-    # game/screens.rpy:258
-    old "Chargement R."
-    new "Fast loading"
-
-    # game/screens.rpy:259
+    # game/screens.rpy:248
     old "Préf."
-    new "Settings"
+    new "Préf."
 
-    # game/screens.rpy:296
+    # game/screens.rpy:276
     old "Nouvelle partie"
-    new "New game"
+    new "Nouvelle partie"
 
-    # game/screens.rpy:302
+    # game/screens.rpy:278
     old "Charger"
-    new "Load"
+    new "Charger"
 
-    # game/screens.rpy:303
+    # game/screens.rpy:279
     old "Préférences"
-    new "Settings"
-
-    # game/screens.rpy:306
-    old "Fin de la rediffusion"
-    new "End of the replay"
-
-    # game/screens.rpy:308
-    old "Menu principal"
-    new "Menu"
-
-    # game/screens.rpy:311
-    old "Quitter"
-    new "Quit"
-
-    # game/screens.rpy:514
-    old "Page {}"
-    new "Page {}"
-
-    # game/screens.rpy:514
-    old "Sauvegardes automatiques"
-    new "Auto saves"
-
-    # game/screens.rpy:514
-    old "Sauvegardes rapides"
-    new "Fast saves"
-
-    # game/screens.rpy:557
-    old "{#file_time}%A %d %B %Y, %H:%M"
-    new "{#file_time}%A %d %B %Y, %H:%M"
-
-    # game/screens.rpy:557
-    old "emplacement vide"
-    new "empty slot"
-
-    # game/screens.rpy:574
-    old "<"
-    new "<"
-
-    # game/screens.rpy:577
-    old "{#auto_page}A"
-    new "{#auto_page}A"
-
-    # game/screens.rpy:580
-    old "{#quick_page}Q"
-    new "{#quick_page}Q"
-
-    # game/screens.rpy:586
-    old ">"
-    new ">"
-
-    # game/screens.rpy:643
-    old "Affichage"
-    new "Display"
-
-    # game/screens.rpy:644
-    old "Fenêtre"
-    new "Window"
-
-    # game/screens.rpy:645
-    old "Plein écran"
-    new "Full screen"
-
-    # game/screens.rpy:650
-    old "Texte non lu"
-    new "Unread text"
-
-    # game/screens.rpy:651
-    old "Après les choix"
-    new "After choices"
-
-    # game/screens.rpy:652
-    old "Transitions"
-    new "Transitions"
-
-    # game/screens.rpy:666
-    old "Vitesse du texte"
-    new "Text speed"
-
-    # game/screens.rpy:670
-    old "Avance automatique"
-    new "Automatic text speed"
-
-    # game/screens.rpy:677
-    old "Volume de la musique"
-    new "Music volume"
-
-    # game/screens.rpy:684
-    old "Volume des sons"
-    new "Sound volume"
-
-    # game/screens.rpy:690
-    old "Test"
-    new "Test"
-
-    # game/screens.rpy:694
-    old "Volume des voix"
-    new "Voice volume"
-
-    # game/screens.rpy:705
-    old "Couper tous les sons"
-    new "Mute the game"
-
-    # game/screens.rpy:827
-    old "L'historique des dialogues est vide."
-    new "The dialogue history is empty."
-
-    # game/screens.rpy:913
-    old "Oui"
-    new "Yes"
-
-    # game/screens.rpy:914
-    old "Non"
-    new "No"
-
-    # game/screens.rpy:1187
-    old "Menu"
-    new "Menu"
-
-translate english strings:
-
-    # game/screens.rpy:650
-    old "Langue"
-    new "Language"
-
-# TODO: Translation updated at 2022-08-15 08:30
-
-translate english strings:
+    new "Préférences"
 
     # game/screens.rpy:280
     old "Extra"
     new "Extra"
 
+    # game/screens.rpy:283
+    old "Fin de la rediffusion"
+    new "Fin de la rediffusion"
+
+    # game/screens.rpy:285
+    old "Menu"
+    new "Menu"
+
+    # game/screens.rpy:288
+    old "Quitter"
+    new "Quitter"
+
+    # game/screens.rpy:476
+    old "{#file_time}%A %d %B %Y, %H:%M"
+    new "{#file_time}%A %d %B %Y, %H:%M"
+
+    # game/screens.rpy:476
+    old "emplacement vide"
+    new "emplacement vide"
+
     # game/screens.rpy:478
     old "Emplacement vide"
     new "Emplacement vide"
+
+    # game/screens.rpy:544
+    old "Affichage"
+    new "Affichage"
+
+    # game/screens.rpy:545
+    old "Fenêtre"
+    new "Fenêtre"
+
+    # game/screens.rpy:546
+    old "Plein écran"
+    new "Plein écran"
+
+    # game/screens.rpy:558
+    old "Texte non lu"
+    new "Texte non lu"
+
+    # game/screens.rpy:559
+    old "Après les choix"
+    new "Après les choix"
+
+    # game/screens.rpy:560
+    old "Transitions"
+    new "Transitions"
+
+    # game/screens.rpy:570
+    old "Vitesse du texte"
+    new "Vitesse du texte"
+
+    # game/screens.rpy:572
+    old "Avance automatique"
+    new "Avance automatique"
+
+    # game/screens.rpy:576
+    old "Volume de la musique"
+    new "Volume de la musique"
+
+    # game/screens.rpy:580
+    old "Volume des sons"
+    new "Volume des sons"
+
+    # game/screens.rpy:584
+    old "Test"
+    new "Test"
+
+    # game/screens.rpy:586
+    old "Volume des voix"
+    new "Volume des voix"
+
+    # game/screens.rpy:593
+    old "Couper tous les sons"
+    new "Couper tous les sons"
 
     # game/screens.rpy:767
     old "Kimi"
@@ -215,4 +153,16 @@ translate english strings:
     # game/screens.rpy:789
     old "{a=https://itch.io/profile/yyyyj}https://itch.io/profile/yyyyj{/a}"
     new "{a=https://itch.io/profile/yyyyj}https://itch.io/profile/yyyyj{/a}"
+
+    # game/screens.rpy:878
+    old "L'historique des dialogues est vide."
+    new "L'historique des dialogues est vide."
+
+    # game/screens.rpy:910
+    old "Oui"
+    new "Oui"
+
+    # game/screens.rpy:911
+    old "Non"
+    new "Non"
 

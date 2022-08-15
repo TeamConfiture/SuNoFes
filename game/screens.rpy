@@ -866,7 +866,10 @@ screen history():
                                 ## défaut des dialogues du personnage si elle a été
                                 ## initialisée.
                                 if "color" in h.who_args:
-                                    text_color h.who_args["color"]
+                                    if h.who_args["color"] == "#ffffff":
+                                        text_color "#000000"
+                                    else:
+                                        text_color h.who_args["color"]
                         $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
                         text what:
                             style "history_text"
