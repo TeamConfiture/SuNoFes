@@ -512,3 +512,11 @@ translate english strings:
     old "Lui arracher la boule des mains."
     new "Lui arracher la boule des mains."
 
+# TODO: Translation updated at 2022-08-15 14:53
+
+# game/chap1.rpy:13
+translate english chap1_122facfe:
+
+    # blanche "Méchant ! Méchant chat ! Tu m'as fait mal !"
+    blanche "Méchant ! Méchant chat ! Tu m'as fait mal !"
+
