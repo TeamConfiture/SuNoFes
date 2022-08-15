@@ -166,3 +166,35 @@ translate english strings:
     old "Non"
     new "Non"
 
+# TODO: Translation updated at 2022-08-15 15:18
+
+translate english strings:
+
+    # game/screens.rpy:186
+    old "Nom :"
+    new "Nom :"
+
+    # game/screens.rpy:186
+    old "Gardin"
+    new "Gardin"
+
+    # game/screens.rpy:187
+    old "Prénom :"
+    new "Prénom :"
+
+    # game/screens.rpy:192
+    old "Lieu de naissance :"
+    new "Lieu de naissance :"
+
+    # game/screens.rpy:193
+    old "Quartier des Monochromes"
+    new "Quartier des Monochromes"
+
+    # game/screens.rpy:194
+    old "Adresse :"
+    new "Adresse :"
+
+    # game/screens.rpy:195
+    old "50 rue des nuances"
+    new "50 rue des nuances"
+
