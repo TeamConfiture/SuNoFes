@@ -174,6 +174,7 @@ style say_dialogue:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#input
 
+# Dans notre cas, cet écran est uniquement utilisé pour demander le nom du personnage principal
 screen input(prompt):
     window:
         xalign 0
@@ -181,20 +182,37 @@ screen input(prompt):
         background None
         vbox:
             xpos 0.43
-            xsize gui.dialogue_width
-            ypos 0.48
-            text prompt style "input_prompt"
-            input id "input"
+            ypos 0.56
+            text _("Nom :") + " " + _("Gardin") style "idcard_text_head"
+            text _("Prénom :") style "idcard_text_head"
+            input id "input" style "idcard_prompt"
+        vbox:
+            xpos 0.24
+            ypos 1.4
+            text _("Lieu de naissance :") style "idcard_text_body"
+            text _("Quartier des Monochromes") style "idcard_text_body_value"
+            text _("Adresse :") style "idcard_text_body"
+            text _("50 rue des nuances") style "idcard_text_body_value"
 
-style input_prompt is default
+style idcard_prompt:
+    min_width 600
+    color "#111"
+    size 72
+    text_align 0.5
 
-style input_prompt:
-    xalign gui.dialogue_text_xalign
-    properties gui.text_properties("input_prompt")
+style idcard_text_head:
+    size 50
+    color "#444"
+    line_spacing 20
 
-style input:
-    xalign gui.dialogue_text_xalign
-    xmaximum gui.dialogue_width
+style idcard_text_body:
+    size 50
+    color "#444"
+
+style idcard_text_body_value:
+    size 50
+    color "#444"
+    xoffset 120
 
 
 ## Écran des choix #############################################################
