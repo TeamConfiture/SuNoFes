@@ -48,7 +48,7 @@ label start:
                 player_name=None
 
     scene room with dissolve
-    #TODO: mettre les expressions de Blanche, position à gauche
+    show blanche neutral close at left with dissolve
     blanche "Mon nom est [player_name] et mon papa s'appelle Noir."
     blanche "Je n'ai jamais connu ma maman. Mais, ce n'est pas grave, car mon papa s'occupe bien de moi !"
     blanche "Aujourd'hui, pendant que mon papa dormait, j'ai décidé de fuguer et de faire un tour du royaume !"
@@ -58,3 +58,4 @@ label start:
     blanche "D'après la carte, la boule de cristal la plus proche est dans le jardin de violettes !"
     blanche "C'est parti !"
     jump chap1
+    return
