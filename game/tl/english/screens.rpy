@@ -168,3 +168,51 @@ translate english strings:
     old "Langue"
     new "Language"
 
+# TODO: Translation updated at 2022-08-15 08:30
+
+translate english strings:
+
+    # game/screens.rpy:280
+    old "Extra"
+    new "Extra"
+
+    # game/screens.rpy:478
+    old "Emplacement vide"
+    new "Emplacement vide"
+
+    # game/screens.rpy:767
+    old "Kimi"
+    new "Kimi"
+
+    # game/screens.rpy:769
+    old "Directeur, UI Designeur, et Développeuse"
+    new "Directeur, UI Designeur, et Développeuse"
+
+    # game/screens.rpy:771
+    old "{a=https://linktr.ee/KimiNako}https://linktr.ee/KimiNako{/a}"
+    new "{a=https://linktr.ee/KimiNako}https://linktr.ee/KimiNako{/a}"
+
+    # game/screens.rpy:776
+    old "Pepotrouille"
+    new "Pepotrouille"
+
+    # game/screens.rpy:778
+    old "Développeuse et artiste des sprites"
+    new "Développeuse et artiste des sprites"
+
+    # game/screens.rpy:780
+    old "{a=https://pepotrouille.itch.io}https://pepotrouille.itch.io{/a}"
+    new "{a=https://pepotrouille.itch.io}https://pepotrouille.itch.io{/a}"
+
+    # game/screens.rpy:785
+    old "yyyyj"
+    new "yyyyj"
+
+    # game/screens.rpy:787
+    old "Développeur et scénariste"
+    new "Développeur et scénariste"
+
+    # game/screens.rpy:789
+    old "{a=https://itch.io/profile/yyyyj}https://itch.io/profile/yyyyj{/a}"
+    new "{a=https://itch.io/profile/yyyyj}https://itch.io/profile/yyyyj{/a}"
+
