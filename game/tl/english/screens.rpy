@@ -170,33 +170,33 @@ translate english strings:
 
 translate english strings:
 
-    # game/screens.rpy:186
-    old "Nom :"
-    new "Nom :"
-
-    # game/screens.rpy:186
-    old "Gardin"
-    new "Gardin"
-
     # game/screens.rpy:187
     old "Prénom :"
-    new "Prénom :"
+    new "First Name:"
 
     # game/screens.rpy:192
     old "Lieu de naissance :"
-    new "Lieu de naissance :"
+    new "Birthplace:"
 
     # game/screens.rpy:193
     old "Quartier des Monochromes"
-    new "Quartier des Monochromes"
+    new "Monochromes' District"
 
     # game/screens.rpy:194
     old "Adresse :"
-    new "Adresse :"
+    new "Address:"
 
     # game/screens.rpy:195
     old "50 rue des nuances"
-    new "50 rue des nuances"
+    new "50 Shades Street"
+
+# TODO: Translation updated at 2022-08-15 18:59
+
+translate english strings:
+
+    # game/screens.rpy:186
+    old "Nom : Gardin"
+    new "Last Name: Gardin"
 
 # TODO: Translation updated at 2022-08-16 19:17
 
