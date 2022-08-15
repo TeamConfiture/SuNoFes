@@ -1,4 +1,4 @@
-name: Build
+name: Lint
 
 on:
   push:
@@ -23,10 +23,3 @@ jobs:
       run: mkdir renpy && curl https://www.renpy.org/dl/8.0.2/renpy-8.0.2-sdk.tar.bz2 | tar -xjC renpy --strip-components 1
     - name: Lint
       run: ./renpy/renpy.sh project lint --error-code
-    - name: Build distribution
-      run: ./renpy/renpy.sh "" distribute project --destination target
-    - name: Publish distribution files
-      uses: actions/upload-artifact@v3
-      with:
-        name: artefacts
-        path: target
