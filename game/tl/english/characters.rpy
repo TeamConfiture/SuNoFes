@@ -30,3 +30,11 @@ translate english strings:
     old "Grosso & Maigrichon"
     new "Grosso & Maigrichon"
 
+# TODO: Translation updated at 2022-08-15 18:57
+
+translate english strings:
+
+    # game/characters.rpy:40
+    old "Les deux"
+    new ""
+

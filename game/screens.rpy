@@ -183,7 +183,7 @@ screen input(prompt):
         vbox:
             xpos 0.43
             ypos 0.56
-            text _("Nom :") + " " + _("Gardin") style "idcard_text_head"
+            text _("Nom : Gardin") style "idcard_text_head"
             text _("Prénom :") style "idcard_text_head"
             input id "input" style "idcard_prompt"
         vbox:
