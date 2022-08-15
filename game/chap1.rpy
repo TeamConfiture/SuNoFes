@@ -73,15 +73,7 @@
     show blanche neutral close at left
     blanche "Mais, comment je vais la trouver ?!"
     violet "C'est une mûre qui brille de mille feux, tu ne vas pas la rater."
-    # TODO: rendre le chat cliquable et une mûre cliquable
-    # if found:
-    #     violet "C'est bien ça ! Bravo, tu as trouvé la mûre que je voulais !"
-    # else:
-    #     violet "Alors tu as trouvé ?"
-    #     show blanche pout close at left
-    #     blanche "Pas encore…"
-    #loop
-
+    call mulberry_search
     violet "Il faudra que tu me rendes la boule avant minuit ! Sinon, plus de violet…"
     show blanche smile close at left
     blanche "Plus de mûre, plus de manger pour toi ! Et Madame Arc-en-Ciel, pas contente !"
@@ -125,3 +117,52 @@
     grosso "Et prévenons Madame Arc-en-ciel !"
     "Les gardes parcourent le jardin des violettes. Ayant perdu Blanche de vue, ils disparaissent par le petit chemin du fond."
     return
+
+#####
+# Cette section est dédiée à la récupération d'UNE mûre
+# Si vous êtes capables de faire plus court, lâchez-vous
+# Je hais ren'py
+#
+# La mûre est affichée deux fois, une fois en fond pour persister
+# lors des dialogues, et une fois en tant que bouton.
+image mulberry = "images/items/mulberry.png"
+image mulberry_button = im.Alpha("images/items/mulberry.png", 0.1)
+transform mulberry_position:
+    xalign 0.97
+    yalign 0.2
+
+# Chasse à la mûre
+label mulberry_search:
+    if 'mulberry_found' in vars() and mulberry_found:
+        violet "C'est bien ça ! Bravo, tu as trouvé la mûre que je voulais !"
+        hide mulberry
+        return
+    else:
+        $ mulberry_found = False
+        scene mulberry_search
+        window hide 
+        # La position de cette mûre n'est pas modifiée avec l'autoreload,
+        # il faut faire un cycle de dialogue avant
+        show mulberry at mulberry_position
+        call screen wait_for_mulberry_click
+
+# Gestion du clic sur la mûre ici
+screen wait_for_mulberry_click():
+    button: # Button that covers the whle background
+        action Jump ("onclick_mulberry_background")
+    hbox at mulberry_position:
+        imagebutton:
+            idle "mulberry_button"
+            hover "mulberry_button"
+            focus_mask True
+            action Jump ("onclick_mulberry")
+    
+label onclick_mulberry:
+    $ mulberry_found = True
+    jump mulberry_search
+
+label onclick_mulberry_background:
+    violet "Alors tu as trouvé ?"
+    show blanche pout close at left
+    blanche "Pas encore…"
+    jump mulberry_search
