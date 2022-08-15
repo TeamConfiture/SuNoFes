@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2022-08-15 14:49
+﻿# TODO: Translation updated at 2022-08-15 15:14
 
 translate english strings:
 
@@ -25,4 +25,8 @@ translate english strings:
     # game/characters.rpy:15
     old "Indigo"
     new "Indigo"
+
+    # game/characters.rpy:16
+    old "Grosso & Maigrichon"
+    new "Grosso & Maigrichon"
 

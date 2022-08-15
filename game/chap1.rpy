@@ -62,7 +62,7 @@
     violet "C'est une mûre qui brille de mille feux, tu ne vas pas la rater."
     # TODO: rendre le chat cliquable et une mûre cliquable
     if found:
-        v  "C'est bien ça ! Bravo, tu as trouvé la mûre que je voulais !"
+        violet "C'est bien ça ! Bravo, tu as trouvé la mûre que je voulais !"
     else:
         violet "Alors tu as trouvé ?"
         blanche "Pas encore…"

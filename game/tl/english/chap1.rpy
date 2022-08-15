@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2022-08-15 14:49
+﻿# TODO: Translation updated at 2022-08-15 15:14
 
 # game/chap1.rpy:6
 translate english chap1_5558f977:
@@ -313,10 +313,10 @@ translate english chap1_25aceaaa:
     violet "C'est une mûre qui brille de mille feux, tu ne vas pas la rater."
 
 # game/chap1.rpy:65
-translate english chap1_a04658e3:
+translate english chap1_fd3fcb4a:
 
-    # v "C'est bien ça ! Bravo, tu as trouvé la mûre que je voulais !"
-    v "C'est bien ça ! Bravo, tu as trouvé la mûre que je voulais !"
+    # violet "C'est bien ça ! Bravo, tu as trouvé la mûre que je voulais !"
+    violet "C'est bien ça ! Bravo, tu as trouvé la mûre que je voulais !"
 
 # game/chap1.rpy:67
 translate english chap1_6d1ecaf7:
