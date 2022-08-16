@@ -198,3 +198,19 @@ translate english strings:
     old "50 rue des nuances"
     new "50 rue des nuances"
 
+# TODO: Translation updated at 2022-08-16 19:17
+
+translate english strings:
+
+    # game/screens.rpy:789
+    old "Directrice, UI Designer et Développeuse"
+    new "Directrice, UI Designer et Développeuse"
+
+    # game/screens.rpy:816
+    old "Développeur"
+    new "Développeur"
+
+    # game/screens.rpy:834
+    old "Sound Designer"
+    new "Sound Designer"
+
