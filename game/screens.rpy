@@ -925,8 +925,8 @@ screen confirm(message, yes_action, no_action):
                 xalign 0.5
                 spacing 150
 
-                textbutton _("Oui") action yes_action
-                textbutton _("Non") action no_action
+                textbutton _("Oui") action yes_action 
+                textbutton _("Non") action no_action 
     ## Le clic bouton droit et la touche Echap. correspondent à la réponse
     ## "non".
     key "game_menu" action no_action
