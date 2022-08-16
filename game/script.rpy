@@ -28,9 +28,11 @@ label start:
     scene world with dissolve
     $ renpy.pause (2.5)
     "Il était une fois, dans un royaume lointain nommé Couleurs, existaient sept boules de cristal."
+    show screen hidden_balls with dissolve
     "Chacune d'elle représentait une couleur de l'arc-en-ciel. Elles étaient les fondations du royaume."
     "Sans elles, il n'y aurait plus de couleurs dans le monde."
     "Bien gardées par Madame Arc-en-Ciel, le royaume vivait en parfaite harmonie."
+    hide screen hidden_balls with dissolve
     "Jusqu'au jour où un petit enfant décide de faire un voeu assez particulier..."
     scene voeu with dissolve
     x "Ô Madame Arc-en-ciel ! Faites que je puisse réaliser mon souhait."
@@ -59,3 +61,26 @@ label start:
     blanche "C'est parti !"
     jump chap1
     return
+
+screen hidden_balls():
+    add InvisibleImage("images/boules/Boules_1.png", 100, 300):
+        xalign 0.
+        yalign 0.6
+    add InvisibleImage("images/boules/Boules_2.png", 100, 300):
+        xalign 0.13
+        yalign 0.28
+    add InvisibleImage("images/boules/Boules_3.png", 100, 300):
+        xalign 0.32
+        yalign 0.1
+    add InvisibleImage("images/boules/Boules_4.png", 100, 300):
+        xalign 0.5
+        yalign 0.
+    add InvisibleImage("images/boules/Boules_5.png", 100, 300):
+        xalign 0.68
+        yalign 0.1
+    add InvisibleImage("images/boules/Boules_6.png", 100, 300):
+        xalign 0.85
+        yalign 0.28
+    add InvisibleImage("images/boules/Boules_7.png", 100, 300):
+        xalign 1.
+        yalign 0.6
