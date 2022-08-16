@@ -189,6 +189,9 @@ define gui.button_text_xalign = 0.0
 ## Ces personnalisations sont utilisées par l’interface par défaut :
 
 define gui.radio_button_borders = Borders(27, 6, 6, 6)
+define gui.radio_button_text_size = 48
+define gui.radio_button_text_idle_color = u"#666666"
+define gui.radio_button_text_selected_color = u"#333333"
 
 define gui.check_button_borders = Borders(27, 6, 6, 6)
 
