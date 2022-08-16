@@ -214,3 +214,43 @@ translate english strings:
     old "Sound Designer"
     new "Sound Designer"
 
+# TODO: Translation updated at 2022-08-16 22:45
+
+translate english strings:
+
+    # game/screens.rpy:299
+    old "Options"
+    new "Options"
+
+    # game/screens.rpy:577
+    old "Volume du jeu"
+    new "Volume du jeu"
+
+    # game/screens.rpy:582
+    old "Musique"
+    new "Musique"
+
+    # game/screens.rpy:588
+    old "Son"
+    new "Son"
+
+    # game/screens.rpy:595
+    old "Mode de la fenêtre"
+    new "Mode de la fenêtre"
+
+    # game/screens.rpy:606
+    old "Vitesse de lecture"
+    new "Vitesse de lecture"
+
+    # game/screens.rpy:610
+    old "Manuelle"
+    new "Manuelle"
+
+    # game/screens.rpy:615
+    old "Automatique"
+    new "Automatique"
+
+    # game/screens.rpy:622
+    old "Langue"
+    new "Langue"
+
