@@ -558,11 +558,10 @@ style preferences_text_suboption_name is gui_text:
     size 48
     color u"#666666"
     xalign 1.0
+style preferences_radio_button is gui_button
 style preferences_radio_button_text is gui_button_text
 style preferences_radio_button_text:
     properties gui.button_text_properties("radio_button")
-    size 48
-    color u"#666666"
 
 screen preferences():
     tag menu
@@ -574,7 +573,7 @@ screen preferences():
             ypos -60
             vbox:
                 hbox:
-                    xoffset 100
+                    xoffset 25
                     text _("Volume du jeu"):
                         style "preferences_text_option_name"
                 grid 2 2:
@@ -596,14 +595,14 @@ screen preferences():
                     text _("Mode de la fenêtre"):
                         style "preferences_text_option_name"
                 grid 1 2:
-                    yspacing 25
+                    yspacing -15
                     textbutton _("Fenêtre") action Preference("display", "window"):
-                        style "preferences_radio_button_text"
+                        style "preferences_radio_button"
                     textbutton _("Plein écran") action Preference("display", "fullscreen"):
-                        style "preferences_radio_button_text"
+                        style "preferences_radio_button"
             vbox:
                 hbox:
-                    xoffset 100
+                    xoffset 25
                     text _("Vitesse de lecture"):
                         style "preferences_text_option_name"
                 grid 2 2:
@@ -623,83 +622,11 @@ screen preferences():
                     text _("Langue"):
                         style "preferences_text_option_name"
                 grid 1 2:
-                    yspacing 25
+                    yspacing -15
                     textbutton "English" action [Language("english"), SetVariable('persistent.lang', "english")]:
-                        style "preferences_radio_button_text"
+                        style "preferences_radio_button"
                     textbutton "Français" action [Language(None), SetVariable('persistent.lang', None)]:
-                        style "preferences_radio_button_text"
-
-            # if renpy.variant("pc") or renpy.variant("web"):
-            #     vbox:
-            #         style_prefix "radio"
-            #         label _("Affichage")
-            #         textbutton _("Fenêtre") action Preference("display", "window")
-            #         textbutton _("Plein écran") action Preference("display", "fullscreen")
-
-            # if renpy.variant("pc"):
-            #    vbox:
-            #       null height (8 * gui.pref_spacing)
-            #       style_prefix "radio"
-            #       label _("Langue")
-            #       textbutton "English" action [Language("english"), SetVariable('persistent.lang', "english")]
-            #       textbutton "Français" action [Language(None), SetVariable('persistent.lang', None)]
-
-### Preferences labels in preferences menu
-style pref_label is gui_label
-style pref_label:
-    top_margin gui.pref_spacing
-    bottom_margin 3
-style pref_label_text is gui_label_text
-style pref_label_text:
-    yalign 1.0
-style pref_vbox is vbox
-style pref_vbox:
-    xsize 338
-
-### Radio settings in preferences menu
-style radio_label is pref_label
-style radio_label_text is pref_label_text
-style radio_button is gui_button
-style radio_button_text is gui_button_text
-style radio_button_text:
-    properties gui.button_text_properties("radio_button")
-style radio_vbox is pref_vbox
-style radio_vbox:
-    spacing gui.pref_button_spacing
-
-### Check settings in preferences menu
-style check_label is pref_label
-style check_label_text is pref_label_text
-style check_button is gui_button
-style check_button:
-    properties gui.button_properties("check_button")
-    foreground "gui/button/check_[prefix_]foreground.png"
-style check_button_text is gui_button_text
-style check_button_text:
-    properties gui.button_text_properties("check_button")
-style check_vbox is pref_vbox
-style check_vbox:
-    spacing gui.pref_button_spacing
-
-### Slider settings in preferences menu
-style slider_label is pref_label
-style slider_label_text is pref_label_text
-style slider_slider is gui_slider
-style slider_slider:
-    xsize 525
-style slider_button is gui_button
-style slider_button:
-    properties gui.button_properties("slider_button")
-    yalign 0.5
-    left_margin 15
-style slider_button_text is gui_button_text
-style slider_button_text:
-    properties gui.button_text_properties("slider_button")
-style slider_pref_vbox is pref_vbox
-style mute_all_button is check_button
-style mute_all_button_text is check_button_text
-style slider_vbox:
-    xsize 675
+                        style "preferences_radio_button"
 
 ## Écran des extras #######################################################
 ##
@@ -1195,10 +1122,6 @@ style nvl_button_text:
 ## Variantes pour les mobiles
 ################################################################################
 
-style pref_vbox:
-    variant "medium"
-    xsize 675
-
 ## Comme la souris peut ne pas être présente, nous remplaçons le menu rapide
 ## avec une version qui utilise des boutons plus gros et qui sont plus faciles à
 ## toucher du doigt.
@@ -1224,10 +1147,6 @@ style radio_button:
     variant "small"
     foreground "gui/phone/button/radio_[prefix_]foreground.png"
 
-style check_button:
-    variant "small"
-    foreground "gui/phone/button/check_[prefix_]foreground.png"
-
 style nvl_window:
     variant "small"
     background "gui/phone/nvl.png"
@@ -1243,10 +1162,6 @@ style game_menu_navigation_frame:
 style game_menu_content_frame:
     variant "small"
     top_margin 0
-
-style pref_vbox:
-    variant "small"
-    xsize 600
 
 style bar:
     variant "small"
@@ -1285,11 +1200,3 @@ style vslider:
     xsize gui.slider_size
     base_bar Frame("gui/phone/slider/vertical_[prefix_]bar.png", gui.vslider_borders, tile=gui.slider_tile)
     thumb "gui/phone/slider/vertical_[prefix_]thumb.png"
-
-style slider_vbox:
-    variant "small"
-    xsize None
-
-style slider_slider:
-    variant "small"
-    xsize 900
