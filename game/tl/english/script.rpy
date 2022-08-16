@@ -16,13 +16,13 @@ translate english start_6de55993:
 translate english start_691b2d7f:
 
     # "Sans elles, il n'y aurait plus de couleurs dans le monde."
-    "Without their existence, this world would be deprived of its colors."
+    "Should they disappear, this world would be deprived of its colors."
 
 # game/script.rpy:33
 translate english start_af422331:
 
     # "Bien gardées par Madame Arc-en-Ciel, le royaume vivait en parfaite harmonie."
-    "These balls were in the custody of Mrs. Rainbow. The inhabitants of Colors were able to live in perfect harmony."
+    "These balls were guarded by Lady Rainbow. The inhabitants of Colors were able to live in perfect harmony."
 
 # game/script.rpy:34
 translate english start_0f12e110:
@@ -34,7 +34,7 @@ translate english start_0f12e110:
 translate english start_e765cd42:
 
     # x "Ô Madame Arc-en-ciel ! Faites que je puisse réaliser mon souhait."
-    x "O Mrs. Rainbow! May my wish come true."
+    x "O Lady Rainbow! May my wish come true."
 
 # game/script.rpy:52
 translate english start_8d23455d:
@@ -46,13 +46,13 @@ translate english start_8d23455d:
 translate english start_9d55ebda:
 
     # blanche "Je n'ai jamais connu ma maman. Mais, ce n'est pas grave, car mon papa s'occupe bien de moi !"
-    blanche "I have never known my mom. But it'll be fine, because my dad takes good care of me!"
+    blanche "I never knew my mommy. But it'll be fine, because my daddy takes good care of me!"
 
 # game/script.rpy:54
 translate english start_0afc42c4:
 
     # blanche "Aujourd'hui, pendant que mon papa dormait, j'ai décidé de fuguer et de faire un tour du royaume !"
-    blanche "Today, while dad was sleeping, I decided to run away and explore the kingdom!"
+    blanche "Today, while Daddy was sleeping, I decided to run away and explore the kingdom!"
 
 # game/script.rpy:55
 translate english start_8a764600:
@@ -64,19 +64,13 @@ translate english start_8a764600:
 translate english start_56910000:
 
     # blanche "D'après mon papa, elles sont très jolies !"
-    blanche "According to dad, they are very beautiful!"
-
-# game/script.rpy:57
-translate english start_470c23f9:
-
-    # blanche "J'ai volé une carte de royaume sur le bureau de mon papa."
-    blanche "I stole a map of the kingdom from dad's desk."
+    blanche "Daddy told me they are very beautiful!"
 
 # game/script.rpy:58
 translate english start_6b6b620a:
 
     # blanche "D'après la carte, la boule de cristal la plus proche est dans le jardin de violettes !"
-    blanche "According to the map, the closest Crystal Ball lies in the garden of violets!"
+    blanche "The map shows that the closest Crystal Ball lies in the Garden of Violets!"
 
 # game/script.rpy:59
 translate english start_637de622:
@@ -100,7 +94,15 @@ translate english strings:
 
     # game/script.rpy:47
     old "Oh non, c'est le nom de mon père."
-    new "Shoot, it's daddy's name."
+    new "Oh no, it's Daddy's name."
+
+# TODO: Translation updated at 2022-08-17 01:24
+
+# game/script.rpy:57
+translate english start_51ea122b:
+
+    # blanche "J'ai volé une carte du royaume sur le bureau de mon papa."
+    blanche "I stole a map of the kingdom from Daddy's desk."
 
 # TODO: Translation updated at 2022-08-17 11:54
 

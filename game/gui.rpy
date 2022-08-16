@@ -69,10 +69,10 @@ define gui.name_text_font = "gui/font/augie.ttf"
 define gui.interface_text_font = "gui/font/augie.ttf"
 
 ## La taille normale pour les dialogues.
-define gui.text_size = 33
+define gui.text_size = 30
 
 ## La taille pour le nom des personnages.
-define gui.name_text_size = 50
+define gui.name_text_size = 55
 
 ## La taille du texte dans l’interface de jeu.
 define gui.interface_text_size = 33
@@ -112,12 +112,13 @@ define gui.textbox_yalign = 0.92
 ## L’emplacement relatif à la zone de texte du nom du personnage en train de
 ## parler. La valeur peut être un nombre entier de pixels depuis la gauche ou le
 ## haut ou 0.5 pour le centre.
-define gui.name_xpos = 0.14
-define gui.name_ypos = 0.04
+define gui.name_xpos = 0.135
+define gui.name_ypos = 0.015
 
 ## L’alignement horizontal du nom du personnage. La valeur peut être 0.0 pour un
 ## alignement à gauche, 0.5 pour le centrer et 1.0 pour un alignement à droite.
 define gui.name_xalign = 0.5
+define gui.name_yalign = 0.5
 
 ## La largeur, profondeur et les bords de la zone contenant le nom du personnage
 ## ou « None » pour le dimensionner automatiquement.

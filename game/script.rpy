@@ -42,7 +42,7 @@ label start:
     python:
         player_name = None
         while player_name == None:
-            player_name = renpy.input("", default='Blanche', length=15)
+            player_name = renpy.input("", default='Blanche', length=10)
             player_name = player_name.strip()
             if not player_name:
                 player_name="Blanche"
@@ -58,7 +58,7 @@ label start:
     blanche "Aujourd'hui, pendant que mon papa dormait, j'ai décidé de fuguer et de faire un tour du royaume !"
     blanche "Je vais aller récupérer toutes les boules de cristal ! Héhé !"
     blanche "D'après mon papa, elles sont très jolies !"
-    blanche "J'ai volé une carte de royaume sur le bureau de mon papa."
+    blanche "J'ai volé une carte du royaume sur le bureau de mon papa."
     blanche "D'après la carte, la boule de cristal la plus proche est dans le jardin de violettes !"
     blanche "C'est parti !"
     jump chap1
