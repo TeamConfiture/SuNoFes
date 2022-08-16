@@ -757,56 +757,84 @@ screen music():
 ## Écran des crédits #######################################################
 style credits_text_name is gui_text:
     size 75
-    color u"#F233A7"
     xalign 0.5
+    color u"#F233A7"
 style credits_text_role is gui_text:
     size 35
-    color u"#000000"
     xalign 0.5
+    color u"#000000"
 style credits_text_link is gui_text:
     size 25
-    color u"#666666"
     xalign 0.5
+    color u"#666666"
 style credits_frame is gui_frame:
     background None
+    xalign 0.5
+style credits_grid is gui_grid:
+    ypos 225
+    spacing 0
     xalign 0.5
     yalign 0.5
 
 screen credits():
     tag menu
     use game_menu("Credits", "extra"):
-        grid 2 2:
-            spacing 50
-            xalign 0.5
-            yalign 0.5
+        grid 2 3:
+            style "credits_grid"
             frame:
                 style "credits_frame"
                 vbox:
-                    text _("Kimi"):
+                    text "Kimi":
                         style "credits_text_name"
-                    text _("Directeur, UI Designeur, et Développeuse"):
+                    text _("Directrice, UI Designer et Développeuse"):
                         style "credits_text_role"
-                    text _("{a=https://linktr.ee/KimiNako}https://linktr.ee/KimiNako{/a}"):
+                    text "{a=https://linktr.ee/KimiNako}https://linktr.ee/KimiNako{/a}":
                         style "credits_text_link"
             frame:
                 style "credits_frame"
                 vbox:
-                    text _("Pepotrouille"):
+                    text "Pepotrouille":
                         style "credits_text_name"
                     text _("Développeuse et artiste des sprites"):
                         style "credits_text_role"
-                    text _("{a=https://pepotrouille.itch.io}https://pepotrouille.itch.io{/a}"):
+                    text "{a=https://pepotrouille.itch.io}https://pepotrouille.itch.io{/a}":
                         style "credits_text_link"
             frame:
                 style "credits_frame"
                 vbox:
-                    text _("yyyyj"):
+                    text "yyyyj":
                         style "credits_text_name"
                     text _("Développeur et scénariste"):
                         style "credits_text_role"
-                    text _("{a=https://itch.io/profile/yyyyj}https://itch.io/profile/yyyyj{/a}"):
+                    text "{a=https://itch.io/profile/yyyyj}https://itch.io/profile/yyyyj{/a}":
                         style "credits_text_link"
-            null
+            frame:
+                style "credits_frame"
+                vbox:
+                    text "Ayowel":
+                        style "credits_text_name"
+                    text _("Développeur"):
+                        style "credits_text_role"
+                    text "{a=https://github.com/Ayowel}https://github.com/Ayowel{/a}":
+                        style "credits_text_link"
+            frame:
+                style "credits_frame"
+                vbox:
+                    text "Griffin":
+                        style "credits_text_name"
+                    text _("Développeur"):
+                        style "credits_text_role"
+                    text "{a=https://github.com/Lushion}https://github.com/Lushion{/a}":
+                        style "credits_text_link"
+            frame:
+                style "credits_frame"
+                vbox:
+                    text "JohenSound":
+                        style "credits_text_name"
+                    text _("Sound Designer"):
+                        style "credits_text_role"
+                    text "{a=https://johensound.wixsite.com/website}https://johensound.wixsite.com/website{/a}":
+                        style "credits_text_link"
 
 ## Écran de l'historique #######################################################
 ##
