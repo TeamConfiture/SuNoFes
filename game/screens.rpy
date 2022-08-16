@@ -402,7 +402,7 @@ screen return(returnFrom):
         xalign 0.5
         yalign 1.0
         spacing 50
-        if returnFrom == "history" or returnFrom == "game":
+        if returnFrom == "history" or returnFrom == "game" or returnFrom == "preferences":
             textbutton _("Retour"):
                 style "return_button"
                 action Return()
@@ -549,7 +549,7 @@ style slot_name_text:
 
 screen preferences():
     tag menu
-    use game_menu(_("Préférences"), "main_menu", scroll="viewport"):
+    use game_menu(_("Préférences"), "preferences", scroll="viewport"):
         vbox:
             hbox:
                 xalign 0.5
