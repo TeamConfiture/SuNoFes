@@ -66,6 +66,12 @@ translate english start_56910000:
     # blanche "D'après mon papa, elles sont très jolies !"
     blanche "Daddy told me they are very beautiful!"
 
+# game/script.rpy:57
+translate english start_51ea122b:
+
+    # blanche "J'ai volé une carte du royaume sur le bureau de mon papa."
+    blanche "I stole a map of the kingdom from Daddy's desk."
+
 # game/script.rpy:58
 translate english start_6b6b620a:
 

@@ -425,7 +425,7 @@ screen return(returnFrom):
         xalign 0.5
         yalign 1.0
         spacing 50
-        if returnFrom == "history" or returnFrom == "game":
+        if returnFrom == "history" or returnFrom == "game" or returnFrom == "preferences":
             textbutton _("Retour"):
                 style "return_button"
                 action Return()
