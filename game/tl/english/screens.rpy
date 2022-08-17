@@ -198,3 +198,59 @@ translate english strings:
     old "Nom : Gardin"
     new "Last Name: Gardin"
 
+# TODO: Translation updated at 2022-08-16 19:17
+
+translate english strings:
+
+    # game/screens.rpy:789
+    old "Directrice, UI Designer et Développeuse"
+    new "Directrice, UI Designer et Développeuse"
+
+    # game/screens.rpy:816
+    old "Développeur"
+    new "Développeur"
+
+    # game/screens.rpy:834
+    old "Sound Designer"
+    new "Sound Designer"
+
+# TODO: Translation updated at 2022-08-16 22:45
+
+translate english strings:
+
+    # game/screens.rpy:299
+    old "Options"
+    new "Options"
+
+    # game/screens.rpy:577
+    old "Volume du jeu"
+    new "Volume du jeu"
+
+    # game/screens.rpy:582
+    old "Musique"
+    new "Musique"
+
+    # game/screens.rpy:588
+    old "Son"
+    new "Son"
+
+    # game/screens.rpy:595
+    old "Mode de la fenêtre"
+    new "Mode de la fenêtre"
+
+    # game/screens.rpy:606
+    old "Vitesse de lecture"
+    new "Vitesse de lecture"
+
+    # game/screens.rpy:610
+    old "Manuelle"
+    new "Manuelle"
+
+    # game/screens.rpy:615
+    old "Automatique"
+    new "Automatique"
+
+    # game/screens.rpy:622
+    old "Langue"
+    new "Langue"
+

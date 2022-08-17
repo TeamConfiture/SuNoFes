@@ -41,10 +41,12 @@ style prompt_text is gui_text:
     properties gui.text_properties("prompt")
 
 style bar:
-    xsize 500
+    xsize 400
     ysize gui.bar_size
     left_bar Frame("gui/bar/left.png", gui.bar_borders, tile=gui.bar_tile)
     right_bar Frame("gui/bar/right.png", gui.bar_borders, tile=gui.bar_tile)
+    xalign 0.5
+    yalign 0.5
 
 style vbar:
     xsize gui.bar_size
@@ -294,7 +296,7 @@ screen navigation():
             textbutton _("Nouvelle partie") action Start()
 
         textbutton _("Charger") action ShowMenu("load")
-        textbutton _("Préférences") action ShowMenu("preferences")
+        textbutton _("Options") action ShowMenu("preferences")
         textbutton _("Extra") action ShowMenu("extra")
         
         if _in_replay:
@@ -397,6 +399,13 @@ screen game_menu(title,returnFrom, scroll=None, yinitial=0.0):
     else:
         use return(returnFrom)
 
+style return_button is navigation_button
+style return_button:
+    yoffset -100
+style return_button_text is navigation_button_text
+style return_button_text:
+    size 64
+
 screen return(returnFrom):
     hbox:
         xalign 0.5
@@ -447,12 +456,6 @@ style game_menu_label_text:
     color gui.accent_color
     yalign 0.5
 
-style return_button is navigation_button
-style return_button:
-    yoffset -100
-style return_button_text is navigation_button_text
-style return_button_text:
-    size 50
 
 ## Écran de chargement et de sauvegarde ########################################
 ##
@@ -547,127 +550,83 @@ style slot_name_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#preferences
 
+style preferences_text_option_name is gui_text:
+    size 75
+    color u"#F233A7"
+    xalign 0.5
+style preferences_text_suboption_name is gui_text:
+    size 48
+    color u"#666666"
+    xalign 1.0
+style preferences_radio_button is gui_button
+style preferences_radio_button_text is gui_button_text
+style preferences_radio_button_text:
+    properties gui.button_text_properties("radio_button")
+
 screen preferences():
     tag menu
-    use game_menu(_("Préférences"), "preferences", scroll="viewport"):
-        vbox:
-            hbox:
-                xalign 0.5
-                yalign 0.5
-                spacing 100
-                box_wrap True
-                if renpy.variant("pc") or renpy.variant("web"):
-                    vbox:
-                        style_prefix "radio"
-                        label _("Affichage")
-                        textbutton _("Fenêtre") action Preference("display", "window")
-                        textbutton _("Plein écran") action Preference("display", "fullscreen")
-
-                #if renpy.variant("pc"):
-                #    vbox:
-                #        null height (8 * gui.pref_spacing)
-                #        style_prefix "radio"
-                #        label _("Langue")
-                #       textbutton "English" action [Language("english"), SetVariable('persistent.lang', "english")]
-                #        textbutton "Français" action [Language(None), SetVariable('persistent.lang', None)]
-                vbox:
-                    style_prefix "check"
-                    label _("Avance rapide")
-                    textbutton _("Texte non lu") action Preference("skip", "toggle")
-                    textbutton _("Après les choix") action Preference("after choices", "toggle")
-                    textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
-
-            ## Des boites vbox additionnelles de type "radio_pref" ou
-            ## "check_pref" peuvent être ajoutées ici pour ajouter des
-            ## préférences définies par le créateur du jeu.
-            null height (4 * gui.pref_spacing)
-            hbox:
-                style_prefix "slider"
-                box_wrap True
-                vbox:
-                    label _("Vitesse du texte")
-                    bar value Preference("text speed")
-                    label _("Avance automatique")
-                    bar value Preference("auto-forward time")
-                vbox:
+    use game_menu(_("Options"), "preferences"):    
+        grid 2 2:
+            xspacing 100
+            yspacing 50
+            xpos 75
+            ypos -60
+            vbox:
+                hbox:
+                    xoffset 25
+                    text _("Volume du jeu"):
+                        style "preferences_text_option_name"
+                grid 2 2:
+                    xoffset -150
                     if config.has_music:
-                        label _("Volume de la musique")
-                        hbox:
-                            bar value Preference("music volume")
+                        text _("Musique"):
+                            style "preferences_text_suboption_name"
+                        bar value Preference("music volume"):
+                            xoffset 50
+                            style "bar"
                     if config.has_sound:
-                        label _("Volume des sons")
-                        hbox:
-                            bar value Preference("sound volume")
-                            if config.sample_sound:
-                                textbutton _("Test") action Play("sound", config.sample_sound)
-                    if config.has_voice:
-                        label _("Volume des voix")
-                        hbox:
-                            bar value Preference("voice volume")
-                            if config.sample_voice:
-                                textbutton _("Test") action Play("voice", config.sample_voice)
-                    if config.has_music or config.has_sound or config.has_voice:
-                        null height gui.pref_spacing
-                        textbutton _("Couper tous les sons"):
-                            action Preference("all mute", "toggle")
-                            style "mute_all_button"
-
-### Preferences labels in preferences menu
-style pref_label is gui_label
-style pref_label:
-    top_margin gui.pref_spacing
-    bottom_margin 3
-style pref_label_text is gui_label_text
-style pref_label_text:
-    yalign 1.0
-style pref_vbox is vbox
-style pref_vbox:
-    xsize 338
-
-### Radio settings in preferences menu
-style radio_label is pref_label
-style radio_label_text is pref_label_text
-style radio_button is gui_button
-style radio_button_text is gui_button_text
-style radio_button_text:
-    properties gui.button_text_properties("radio_button")
-style radio_vbox is pref_vbox
-style radio_vbox:
-    spacing gui.pref_button_spacing
-
-### Check settings in preferences menu
-style check_label is pref_label
-style check_label_text is pref_label_text
-style check_button is gui_button
-style check_button:
-    properties gui.button_properties("check_button")
-    foreground "gui/button/check_[prefix_]foreground.png"
-style check_button_text is gui_button_text
-style check_button_text:
-    properties gui.button_text_properties("check_button")
-style check_vbox is pref_vbox
-style check_vbox:
-    spacing gui.pref_button_spacing
-
-### Slider settings in preferences menu
-style slider_label is pref_label
-style slider_label_text is pref_label_text
-style slider_slider is gui_slider
-style slider_slider:
-    xsize 525
-style slider_button is gui_button
-style slider_button:
-    properties gui.button_properties("slider_button")
-    yalign 0.5
-    left_margin 15
-style slider_button_text is gui_button_text
-style slider_button_text:
-    properties gui.button_text_properties("slider_button")
-style slider_pref_vbox is pref_vbox
-style mute_all_button is check_button
-style mute_all_button_text is check_button_text
-style slider_vbox:
-    xsize 675
+                        text _("Son"):
+                            style "preferences_text_suboption_name"
+                        bar value Preference("sound volume"):
+                            xoffset 50
+                            style "bar"
+            vbox:
+                hbox:
+                    text _("Mode de la fenêtre"):
+                        style "preferences_text_option_name"
+                grid 1 2:
+                    yspacing -15
+                    textbutton _("Fenêtre") action Preference("display", "window"):
+                        style "preferences_radio_button"
+                    textbutton _("Plein écran") action Preference("display", "fullscreen"):
+                        style "preferences_radio_button"
+            vbox:
+                hbox:
+                    xoffset 25
+                    text _("Vitesse de lecture"):
+                        style "preferences_text_option_name"
+                grid 2 2:
+                    xoffset -150
+                    text _("Manuelle"):
+                        style "preferences_text_suboption_name"
+                    bar value Preference("text speed"):
+                            xoffset 50
+                            style "bar"
+                    text _("Automatique"):
+                        style "preferences_text_suboption_name"
+                    bar value Preference("auto-forward time"):
+                            xoffset 50
+                            style "bar"
+            vbox:
+                hbox:
+                    text _("Langue"):
+                        style "preferences_text_option_name"
+                grid 1 2:
+                    yspacing -15
+                    textbutton "English" action [Language("english"), SetVariable('persistent.lang', "english")]:
+                        style "preferences_radio_button"
+                    textbutton "Français" action [Language(None), SetVariable('persistent.lang', None)]:
+                        style "preferences_radio_button"
 
 ## Écran des extras #######################################################
 ##
@@ -757,56 +716,84 @@ screen music():
 ## Écran des crédits #######################################################
 style credits_text_name is gui_text:
     size 75
-    color u"#F233A7"
     xalign 0.5
+    color u"#F233A7"
 style credits_text_role is gui_text:
     size 35
-    color u"#000000"
     xalign 0.5
+    color u"#000000"
 style credits_text_link is gui_text:
     size 25
-    color u"#666666"
     xalign 0.5
+    color u"#666666"
 style credits_frame is gui_frame:
     background None
+    xalign 0.5
+style credits_grid is gui_grid:
+    ypos 225
+    spacing 0
     xalign 0.5
     yalign 0.5
 
 screen credits():
     tag menu
     use game_menu("Credits", "extra"):
-        grid 2 2:
-            spacing 50
-            xalign 0.5
-            yalign 0.5
+        grid 2 3:
+            style "credits_grid"
             frame:
                 style "credits_frame"
                 vbox:
-                    text _("Kimi"):
+                    text "Kimi":
                         style "credits_text_name"
-                    text _("Directeur, UI Designeur, et Développeuse"):
+                    text _("Directrice, UI Designer et Développeuse"):
                         style "credits_text_role"
-                    text _("{a=https://linktr.ee/KimiNako}https://linktr.ee/KimiNako{/a}"):
+                    text "{a=https://linktr.ee/KimiNako}https://linktr.ee/KimiNako{/a}":
                         style "credits_text_link"
             frame:
                 style "credits_frame"
                 vbox:
-                    text _("Pepotrouille"):
+                    text "Pepotrouille":
                         style "credits_text_name"
                     text _("Développeuse et artiste des sprites"):
                         style "credits_text_role"
-                    text _("{a=https://pepotrouille.itch.io}https://pepotrouille.itch.io{/a}"):
+                    text "{a=https://pepotrouille.itch.io}https://pepotrouille.itch.io{/a}":
                         style "credits_text_link"
             frame:
                 style "credits_frame"
                 vbox:
-                    text _("yyyyj"):
+                    text "yyyyj":
                         style "credits_text_name"
                     text _("Développeur et scénariste"):
                         style "credits_text_role"
-                    text _("{a=https://itch.io/profile/yyyyj}https://itch.io/profile/yyyyj{/a}"):
+                    text "{a=https://itch.io/profile/yyyyj}https://itch.io/profile/yyyyj{/a}":
                         style "credits_text_link"
-            null
+            frame:
+                style "credits_frame"
+                vbox:
+                    text "Ayowel":
+                        style "credits_text_name"
+                    text _("Développeur"):
+                        style "credits_text_role"
+                    text "{a=https://github.com/Ayowel}https://github.com/Ayowel{/a}":
+                        style "credits_text_link"
+            frame:
+                style "credits_frame"
+                vbox:
+                    text "Griffin":
+                        style "credits_text_name"
+                    text _("Développeur"):
+                        style "credits_text_role"
+                    text "{a=https://github.com/Lushion}https://github.com/Lushion{/a}":
+                        style "credits_text_link"
+            frame:
+                style "credits_frame"
+                vbox:
+                    text "JohenSound":
+                        style "credits_text_name"
+                    text _("Sound Designer"):
+                        style "credits_text_role"
+                    text "{a=https://johensound.wixsite.com/website}https://johensound.wixsite.com/website{/a}":
+                        style "credits_text_link"
 
 ## Écran de l'historique #######################################################
 ##
@@ -1135,10 +1122,6 @@ style nvl_button_text:
 ## Variantes pour les mobiles
 ################################################################################
 
-style pref_vbox:
-    variant "medium"
-    xsize 675
-
 ## Comme la souris peut ne pas être présente, nous remplaçons le menu rapide
 ## avec une version qui utilise des boutons plus gros et qui sont plus faciles à
 ## toucher du doigt.
@@ -1164,10 +1147,6 @@ style radio_button:
     variant "small"
     foreground "gui/phone/button/radio_[prefix_]foreground.png"
 
-style check_button:
-    variant "small"
-    foreground "gui/phone/button/check_[prefix_]foreground.png"
-
 style nvl_window:
     variant "small"
     background "gui/phone/nvl.png"
@@ -1184,12 +1163,9 @@ style game_menu_content_frame:
     variant "small"
     top_margin 0
 
-style pref_vbox:
-    variant "small"
-    xsize 600
-
 style bar:
     variant "small"
+    xsize 500
     ysize gui.bar_size
     left_bar Frame("gui/phone/bar/left.png", gui.bar_borders, tile=gui.bar_tile)
     right_bar Frame("gui/phone/bar/right.png", gui.bar_borders, tile=gui.bar_tile)
@@ -1197,6 +1173,7 @@ style bar:
 style vbar:
     variant "small"
     xsize gui.bar_size
+    ysize 500
     top_bar Frame("gui/phone/bar/top.png", gui.vbar_borders, tile=gui.bar_tile)
     bottom_bar Frame("gui/phone/bar/bottom.png", gui.vbar_borders, tile=gui.bar_tile)
 
@@ -1223,11 +1200,3 @@ style vslider:
     xsize gui.slider_size
     base_bar Frame("gui/phone/slider/vertical_[prefix_]bar.png", gui.vslider_borders, tile=gui.slider_tile)
     thumb "gui/phone/slider/vertical_[prefix_]thumb.png"
-
-style slider_vbox:
-    variant "small"
-    xsize None
-
-style slider_slider:
-    variant "small"
-    xsize 900

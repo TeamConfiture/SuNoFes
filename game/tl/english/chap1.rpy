@@ -520,3 +520,23 @@ translate english chap1_122facfe:
     # blanche "Méchant ! Méchant chat ! Tu m'as fait mal !"
     blanche "Méchant ! Méchant chat ! Tu m'as fait mal !"
 
+# TODO: Translation updated at 2022-08-15 20:45
+
+# game/chap1.rpy:137
+translate english mulberry_search_fd3fcb4a:
+
+    # violet "C'est bien ça ! Bravo, tu as trouvé la mûre que je voulais !"
+    violet "C'est bien ça ! Bravo, tu as trouvé la mûre que je voulais !"
+
+# game/chap1.rpy:165
+translate english onclick_mulberry_background_6d1ecaf7:
+
+    # violet "Alors tu as trouvé ?"
+    violet "Alors tu as trouvé ?"
+
+# game/chap1.rpy:167
+translate english onclick_mulberry_background_dd72e6e7:
+
+    # blanche "Pas encore…"
+    blanche "Pas encore…"
+
