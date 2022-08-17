@@ -824,7 +824,6 @@ style history_window is empty
 style history_window:
     xfill True
     ysize gui.history_height
-    ypos -275
 style history_name is gui_label
 style history_name:
     xpos gui.history_name_xpos
@@ -853,6 +852,10 @@ style history_label:
 style history_label_text is gui_label_text
 style history_label_text:
     xalign 0.5
+style history_empty_label:
+    xalign 0.5
+    yoffset 200
+    yalign 0.5
 
 screen history():
     tag menu
@@ -860,41 +863,42 @@ screen history():
     ## très large
     predict False
     use game_menu(_("Historique"), "history"):
-        vpgrid:
-            area (-250, -50, 0.85, 0.85)
-            cols 1
-            yinitial 1.0 #0.0 pour commencer au début, 1.0 à la fin, de l'historique
-            scrollbars "vertical"
-            mousewheel True
-            draggable True
-            pagekeys True
-            arrowkeys True
-            vbox:
-                for h in _history_list:
-                    window:
-                        style "history_window"
-                        ## Cela positionne correctement l'écran si history_height est
-                        ## initialisé à None.
-                        has fixed:
-                            yfit True
-                        if h.who:
-                            label h.who:
-                                style "history_name"
+        if not _history_list:
+            label _("L'historique des dialogues est vide.") style "history_empty_label"
+        else:
+            vpgrid:
+                area (-250, 0, 0.85, 0.75)
+                cols 1
+                yinitial 1.0 #0.0 pour commencer au début, 1.0 à la fin, de l'historique
+                scrollbars "vertical"
+                mousewheel True
+                draggable True
+                pagekeys True
+                arrowkeys True
+                vbox:
+                    for h in _history_list:
+                        window:
+                            style "history_window"
+                            ## Cela positionne correctement l'écran si history_height est
+                            ## initialisé à None.
+                            has fixed:
+                                yfit True
+                            if h.who:
+                                label h.who:
+                                    style "history_name"
+                                    substitute False
+                                    ## Utilise pour la couleur du texte, la couleur par
+                                    ## défaut des dialogues du personnage si elle a été
+                                    ## initialisée.
+                                    if "color" in h.who_args:
+                                        if h.who_args["color"] == "#ffffff":
+                                            text_color "#000000"
+                                        else:
+                                            text_color h.who_args["color"]
+                            $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
+                            text what:
+                                style "history_text"
                                 substitute False
-                                ## Utilise pour la couleur du texte, la couleur par
-                                ## défaut des dialogues du personnage si elle a été
-                                ## initialisée.
-                                if "color" in h.who_args:
-                                    if h.who_args["color"] == "#ffffff":
-                                        text_color "#000000"
-                                    else:
-                                        text_color h.who_args["color"]
-                        $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
-                        text what:
-                            style "history_text"
-                            substitute False
-                if not _history_list:
-                    label _("L'historique des dialogues est vide.")
 
 ################################################################################
 ## Écrans additionnels
