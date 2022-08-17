@@ -1,7 +1,7 @@
 ﻿label titlepage(chapNum):
     stop music fadeout 1.0
     scene black with dissolve
-    define chap_label = "Chapitre "
+    define chap_label = "Chapter "
     image background_image = "gui/main_menu.png"
 
     if chapNum == 0:
@@ -12,13 +12,12 @@
         with dissolve
     else:
         if persistent.lang is None:
-            $ chap_label = "Chapter "
+            $ chap_label = "Chapitre "
         show background_image
         show expression VBox(Text(chap_label + str(chapNum), size=125, yalign=0.5, xalign=0.5, color="#fff")) as text:
             yalign 0.42
             xalign 0.5
         with dissolve
-        # TODO : put subtitle for chapter
     $ renpy.pause (2.5)
     return
 
