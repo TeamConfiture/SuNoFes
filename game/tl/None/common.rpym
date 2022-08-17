@@ -435,43 +435,43 @@ translate None strings:
 
     # renpy/common/00gui.rpy:435
     old "Are you sure?"
-    new "Êtes-vous sûr ?"
+    new "Êtes-vous sûr ?"
 
     # renpy/common/00gui.rpy:436
     old "Are you sure you want to delete this save?"
-    new "Êtes-vous sûr de vouloir supprimer cette sauvegarde ?"
+    new "Êtes-vous sûr de vouloir supprimer cette sauvegarde ?"
 
     # renpy/common/00gui.rpy:437
     old "Are you sure you want to overwrite your save?"
-    new "Êtes-vous sûr de vouloir écraser cette sauvegarde ?"
+    new "Êtes-vous sûr de vouloir écraser cette sauvegarde ?"
 
     # renpy/common/00gui.rpy:438
     old "Loading will lose unsaved progress.\nAre you sure you want to do this?"
-    new "Le chargement entraînera la perte de votre progression depuis la dernière sauvegarde.\nÊtes-vous sûr de vouloir faire cela ?"
+    new "Le chargement entraînera la perte de votre progression depuis la dernière sauvegarde.\nÊtes-vous sûr de vouloir faire cela ?"
 
     # renpy/common/00gui.rpy:439
     old "Are you sure you want to quit?"
-    new "Êtes-vous sûr de vouloir quitter ?"
+    new "Êtes-vous sûr de vouloir quitter ?"
 
     # renpy/common/00gui.rpy:440
     old "Are you sure you want to return to the main menu?\nThis will lose unsaved progress."
-    new "Êtes-vous sûr de vouloir retourner au menu principal ?\nVotre progression depuis la dernière sauvegarde sera perdue."
+    new "Êtes-vous sûr de vouloir retourner au menu principal ?\nVotre progression depuis la dernière sauvegarde sera perdue."
 
     # renpy/common/00gui.rpy:441
     old "Are you sure you want to end the replay?"
-    new "Êtes-vous sûr de vouloir arrêter la rediffusion ?"
+    new "Êtes-vous sûr de vouloir arrêter la rediffusion ?"
 
     # renpy/common/00gui.rpy:442
     old "Are you sure you want to begin skipping?"
-    new "Êtes-vous sûr de vouloir sauter les dialogues ?"
+    new "Êtes-vous sûr de vouloir sauter les dialogues ?"
 
     # renpy/common/00gui.rpy:443
     old "Are you sure you want to skip to the next choice?"
-    new "Êtes-vous sûr de vouloir sauter les dialogues jusqu’au prochain choix ?"
+    new "Êtes-vous sûr de vouloir sauter les dialogues jusqu’au prochain choix ?"
 
     # renpy/common/00gui.rpy:444
     old "Are you sure you want to skip unseen dialogue to the next choice?"
-    new "Êtes-vous sûr de vouloir sauter les dialogues non vus jusqu’au prochain choix ?"
+    new "Êtes-vous sûr de vouloir sauter les dialogues non vus jusqu’au prochain choix ?"
 
     # renpy/common/00keymap.rpy:310
     old "Failed to save screenshot as %s."
@@ -487,7 +487,7 @@ translate None strings:
 
     # renpy/common/00library.rpy:297
     old "This program contains free software under a number of licenses, including the MIT License and GNU Lesser General Public License. A complete list of software, including links to full source code, can be found {a=https://www.renpy.org/l/license}here{/a}."
-    new "Ce programme contient un logiciel libre soumis à de nombreuses licences incluant la licence « MIT » et la licence « GNU Lesser General Public License ». La liste complète des logiciels, incluant les liens vers le code source complet, peut-être trouvée {a=https://www.renpy.org/l/license}ici{/a}."
+    new "Ce programme contient un logiciel libre soumis à de nombreuses licences incluant la licence « MIT » et la licence « GNU Lesser General Public License ». La liste complète des logiciels, incluant les liens vers le code source complet, peut-être trouvée {a=https://www.renpy.org/l/license}ici{/a}."
 
     # renpy/common/00preferences.rpy:259
     old "display"
@@ -679,15 +679,15 @@ translate None strings:
 
     # renpy/common/00preferences.rpy:616
     old "Clipboard voicing enabled. Press 'shift+C' to disable."
-    new "Lecture vocale vers presse-papier activée. Pressez « Maj+C » pour la désactiver."
+    new "Lecture vocale vers presse-papier activée. Pressez « Maj+C » pour la désactiver."
 
     # renpy/common/00preferences.rpy:618
     old "Self-voicing would say \"[renpy.display.tts.last]\". Press 'alt+shift+V' to disable."
-    new "La lecture vocale veut dire « [renpy.display.tts.last] ». Pressez « Alt+Maj+V » pour la désactiver."
+    new "La lecture vocale veut dire « [renpy.display.tts.last] ». Pressez « Alt+Maj+V » pour la désactiver."
 
     # renpy/common/00preferences.rpy:620
     old "Self-voicing enabled. Press 'v' to disable."
-    new "Lecture vocale activée. Pressez « v » pour la désactiver."
+    new "Lecture vocale activée. Pressez « v » pour la désactiver."
 
     # renpy/common/_compat/gamemenu.rpym:198
     old "Empty Slot."
@@ -779,7 +779,7 @@ translate None strings:
 
     # renpy/common/_developer/developer.rpym:453
     old "Right-click or escape to quit."
-    new "Clic droit ou « Echap » pour quitter."
+    new "Clic droit ou « Echap » pour quitter."
 
     # renpy/common/_developer/developer.rpym:485
     old "Rectangle copied to clipboard."
@@ -915,7 +915,7 @@ translate None strings:
 
     # renpy/common/00updater.rpy:1616
     old "[u.version] is available. Do you want to install it?"
-    new "[u.version] est disponible. Voulez-vous l’installer ?"
+    new "[u.version] est disponible. Voulez-vous l’installer ?"
 
     # renpy/common/00updater.rpy:1618
     old "Preparing to download the updates."
@@ -1119,7 +1119,7 @@ translate None strings:
 
     # renpy/common/_errorhandling.rpym:557
     old "Opens the traceback.txt file in a text editor."
-    new "Ouvrir le fichier « traceback.txt » dans un éditeur de texte."
+    new "Ouvrir le fichier « traceback.txt » dans un éditeur de texte."
 
     # renpy/common/_errorhandling.rpym:559
     old "Copy BBCode"
