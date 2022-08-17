@@ -893,6 +893,11 @@ screen history():
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#confirm
 
+style popup_button is navigation_button
+style popup_button_text is navigation_button_text
+style popup_button_text:
+    size 40
+
 screen confirm(message, yes_action, no_action):
     ## Cette instruction s’assure que les autres écrans resteront en arrière
     ## plan tant que cet écran sera affiché.
@@ -912,8 +917,12 @@ screen confirm(message, yes_action, no_action):
                 xalign 0.5
                 spacing 150
 
-                textbutton _("Oui") action yes_action
-                textbutton _("Non") action no_action
+                textbutton _("Oui"):
+                    style "popup_button"
+                    action yes_action 
+                textbutton _("Non"):
+                    style "popup_button"
+                    action no_action 
     ## Le clic bouton droit et la touche Echap. correspondent à la réponse
     ## "non".
     key "game_menu" action no_action
@@ -925,7 +934,7 @@ style confirm_button is gui_medium_button
 style confirm_button_text is gui_medium_button_text
 
 style confirm_frame:
-    background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
+    background Frame(["gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
     padding gui.confirm_frame_borders.padding
     xalign .5
     yalign .5
