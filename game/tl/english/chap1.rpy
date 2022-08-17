@@ -540,3 +540,65 @@ translate english onclick_mulberry_background_dd72e6e7:
     # blanche "Pas encore…"
     blanche "Pas encore…"
 
+# TODO: Translation updated at 2022-08-17 19:16
+
+# game/chap1.rpy:8
+translate english chap1_0b5e7501:
+
+    # blanche "Woah ! Tout est violet ! Et il y a pleins de fleurs !!!" with vpunch
+    blanche "Woah ! Tout est violet ! Et il y a pleins de fleurs !!!" with vpunch
+
+# game/chap1.rpy:12
+translate english chap1_076031b0:
+
+    # x "MIAAOOOUUU !" with vpunch
+    x "MIAAOOOUUU !" with vpunch
+
+# game/chap1.rpy:14
+translate english chap1_23cbf469:
+
+    # blanche "Aïeeeuuuuhhh" with vpunch
+    blanche "Aïeeeuuuuhhh" with vpunch
+
+# game/chap1.rpy:29
+translate english chap1_1b099836:
+
+    # x "Eh tu m'écoutes ?!" with vpunch
+    x "Eh tu m'écoutes ?!" with vpunch
+
+# game/chap1.rpy:37
+translate english chap1_a59a3cd9:
+
+    # blanche "Tu es un gardien de Couleurs ?!" with vpunch
+    blanche "Tu es un gardien de Couleurs ?!" with vpunch
+
+# game/chap1.rpy:52
+translate english chap1_bf38d49b:
+
+    # blanche "Oh ! Mais ! C'est une des sept boules de cristal !" with vpunch
+    blanche "Oh ! Mais ! C'est une des sept boules de cristal !" with vpunch
+
+# game/chap1.rpy:87
+translate english chap1_a07294a0:
+
+    # violet "MIAAOOOUUU !" with vpunch
+    violet "MIAAOOOUUU !" with vpunch
+
+# game/chap1.rpy:92
+translate english chap1_4e1941d6:
+
+    # violet "Vilain enfant ! On ne t'a jamais appris les bonnes manières ?!" with vpunch
+    violet "Vilain enfant ! On ne t'a jamais appris les bonnes manières ?!" with vpunch
+
+# game/chap1.rpy:100
+translate english chap1_9b69aef9:
+
+    # blanche "C'est vrai ?!" with vpunch
+    blanche "C'est vrai ?!" with vpunch
+
+# game/chap1.rpy:124
+translate english chap1_e45d882f:
+
+    # blanche "Youpi !!! Encore six !" with vpunch
+    blanche "Youpi !!! Encore six !" with vpunch
+
