@@ -10,7 +10,7 @@ translate english start_9eadcb6c:
 translate english start_6de55993:
 
     # "Chacune d'elle représentait une couleur de l'arc-en-ciel. Elles étaient les fondations du royaume."
-    "Each of them used to represent one of the seven colors of the rainbow. They were the very foundation of the realm."
+    "Each of them represents one of the seven colors of the rainbow. They were the very foundation of the realm."
 
 # game/script.rpy:32
 translate english start_691b2d7f:
