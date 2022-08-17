@@ -102,3 +102,11 @@ translate english strings:
     old "Oh non, c'est le nom de mon père."
     new "Oh non, c'est le nom de mon père."
 
+# TODO: Translation updated at 2022-08-17 11:54
+
+translate english strings:
+
+    # game/script.rpy:109
+    old "Cheat - Voyage rapide"
+    new "Cheat - Voyage rapide"
+
