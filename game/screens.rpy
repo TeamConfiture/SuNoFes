@@ -415,6 +415,10 @@ screen return(returnFrom):
             textbutton _("Retour"):
                 style "return_button"
                 action Return()
+        elif returnFrom == "extra":
+            textbutton _("Retour"):
+                style "return_button"
+                action [Return(), musicroom.Stop()]
         else:
             textbutton _("Retour"):
                 style "return_button"
