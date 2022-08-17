@@ -254,3 +254,29 @@ translate english strings:
     old "Langue"
     new "Langue"
 
+translate english strings:
+
+    # game/screens.rpy:264
+    old "images/menu/fr_fr/back_%s.png"
+    new "images/menu/en_us/back_%s.png"
+
+    # game/screens.rpy:267
+    old "images/menu/fr_fr/history_%s.png"
+    new "images/menu/en_us/history_%s.png"
+
+    # game/screens.rpy:270
+    old "images/menu/fr_fr/skip_%s.png"
+    new "images/menu/en_us/skip_%s.png"
+
+    # game/screens.rpy:273
+    old "images/menu/fr_fr/auto_%s.png"
+    new "images/menu/en_us/auto_%s.png"
+
+    # game/screens.rpy:276
+    old "images/menu/fr_fr/save_%s.png"
+    new "images/menu/en_us/save_%s.png"
+
+    # game/screens.rpy:279
+    old "images/menu/fr_fr/settings_%s.png"
+    new "images/menu/en_us/settings_%s.png"
+

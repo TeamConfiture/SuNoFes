@@ -253,19 +253,33 @@ style choice_button_text is default:
 ## certaines fonctions.
 
 screen quick_menu():
-    ## Assure qu'il apparaît au-dessus des autres screens.
+    ## Assure qu'il apparaît au-dessus des autres écrans.
     zorder 100
     if quick_menu:
         hbox:
             xalign 0.95
             yalign 0.65
             spacing 30
-            textbutton _("Retour") action Rollback()
-            textbutton _("Historique") action ShowMenu('history')
-            textbutton _("Avance rapide") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Sauvegarde") action ShowMenu('save')
-            textbutton _("Préf.") action ShowMenu('preferences')
+            # Le _ sert uniquement à flagger pour la génération des fichiers de traduction,
+            # le vrai travail est effectué par renpy.substitutions.substitute
+            imagebutton:
+                auto renpy.substitutions.substitute(_("images/menu/fr_fr/back_%s.png"), None, True)[0]
+                action Rollback()
+            imagebutton:
+                auto renpy.substitutions.substitute(_("images/menu/fr_fr/history_%s.png"), None, True)[0]
+                action ShowMenu('history')
+            imagebutton:
+                auto renpy.substitutions.substitute(_("images/menu/fr_fr/skip_%s.png"), None, True)[0]
+                action Skip() alternate Skip(fast=True, confirm=True)
+            imagebutton:
+                auto renpy.substitutions.substitute(_("images/menu/fr_fr/auto_%s.png"), None, True)[0]
+                action Preference("auto-forward", "toggle")
+            imagebutton:
+                auto renpy.substitutions.substitute(_("images/menu/fr_fr/save_%s.png"), None, True)[0]
+                action ShowMenu('save')
+            imagebutton:
+                auto renpy.substitutions.substitute(_("images/menu/fr_fr/settings_%s.png"), None, True)[0]
+                action ShowMenu('preferences')
 
 default quick_menu = True
 
@@ -565,7 +579,7 @@ style preferences_radio_button_text:
 
 screen preferences():
     tag menu
-    use game_menu(_("Options"), "main_menu"):    
+    use game_menu(_("Options"), "main_menu"):
         grid 2 2:
             xspacing 100
             yspacing 50
@@ -1142,10 +1156,19 @@ screen quick_menu():
             style_prefix "quick"
             xalign 0.5
             yalign 1.0
-            textbutton _("Retour") action Rollback()
-            textbutton _("Avance rapide") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Menu") action ShowMenu()
+
+            imagebutton:
+                auto renpy.substitutions.substitute(_("images/menu/fr_fr/back_%s.png"), None, True)[0]
+                action Rollback()
+            imagebutton:
+                auto renpy.substitutions.substitute(_("images/menu/fr_fr/skip_%s.png"), None, True)[0]
+                action Skip() alternate Skip(fast=True, confirm=True)
+            imagebutton:
+                auto renpy.substitutions.substitute(_("images/menu/fr_fr/auto_%s.png"), None, True)[0]
+                action Preference("auto-forward", "toggle")
+            imagebutton:
+                auto renpy.substitutions.substitute(_("images/menu/fr_fr/settings_%s.png"), None, True)[0]
+                action ShowMenu('preferences')
 
 
 style window:
