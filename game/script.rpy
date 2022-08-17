@@ -51,14 +51,17 @@ label start:
                 player_name=None
 
     scene room with dissolve
-    show blanche neutral close at left with dissolve
+    show blanche neutral open at left with dissolve
     blanche "Mon nom est [player_name] et mon papa s'appelle Noir."
     blanche "Je n'ai jamais connu ma maman. Mais, ce n'est pas grave, car mon papa s'occupe bien de moi !"
     blanche "Aujourd'hui, pendant que mon papa dormait, j'ai décidé de fuguer et de faire un tour du royaume !"
+    show blanche smile open at left
     blanche "Je vais aller récupérer toutes les boules de cristal ! Héhé !"
+    show blanche neutral open at left
     blanche "D'après mon papa, elles sont très jolies !"
     blanche "J'ai volé une carte de royaume sur le bureau de mon papa."
     blanche "D'après la carte, la boule de cristal la plus proche est dans le jardin de violettes !"
+    show blanche smile open at left
     blanche "C'est parti !"
     jump chap1
     return
