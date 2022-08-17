@@ -96,8 +96,25 @@ translate english strings:
 
     # game/script.rpy:46
     old "noire"
-    new "noire"
+    new "noire" 
 
     # game/script.rpy:47
     old "Oh non, c'est le nom de mon père."
     new "Oh no, it's Daddy's name."
+
+# TODO: Translation updated at 2022-08-17 01:24
+
+# game/script.rpy:57
+translate english start_51ea122b:
+
+    # blanche "J'ai volé une carte du royaume sur le bureau de mon papa."
+    blanche "I stole a map of the kingdom from Daddy's desk."
+
+# TODO: Translation updated at 2022-08-17 11:54
+
+translate english strings:
+
+    # game/script.rpy:109
+    old "Cheat - Voyage rapide"
+    new "Cheat - Voyage rapide"
+
