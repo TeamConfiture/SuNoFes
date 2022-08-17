@@ -309,6 +309,9 @@ screen navigation():
         if main_menu:
             textbutton _("Nouvelle partie") action Start()
 
+        else:
+            textbutton _("Retour") action Return()
+
         textbutton _("Charger") action ShowMenu("load")
         textbutton _("Options") action ShowMenu("preferences")
         textbutton _("Extra") action ShowMenu("extra")
@@ -317,7 +320,7 @@ screen navigation():
             textbutton _("Fin de la rediffusion") action EndReplay(confirm=True)
 
         elif not main_menu:
-            textbutton _("Menu") action MainMenu()
+            textbutton _("Menu Principal") action MainMenu()
 
         if renpy.variant("pc"):
             textbutton _("Quitter") action Quit(confirm=not main_menu)
@@ -436,7 +439,7 @@ screen return(returnFrom):
         elif returnFrom == "extra":
             textbutton _("Retour"):
                 style "return_button"
-                action [Return(), musicroom.Stop()]
+                action [ShowMenu('main_menu'), musicroom.Stop()]
             textbutton _("Menu"):
                 style "return_button"
                 action [ShowMenu('main_menu'), musicroom.Stop()]
