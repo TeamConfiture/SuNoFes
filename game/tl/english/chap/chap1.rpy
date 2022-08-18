@@ -512,3 +512,17 @@ translate english strings:
     old "Lui arracher la boule des mains."
     new "Snitch the ball out of its paws."
 
+# TODO: Translation updated at 2022-08-18 18:17
+
+# game/chap/chap1.rpy:202
+translate english onclick_mulberry_background_6d1ecaf7:
+
+    # violet "Alors tu as trouvé ?"
+    violet "Alors tu as trouvé ?"
+
+# game/chap/chap1.rpy:205
+translate english onclick_mulberry_background_dd72e6e7:
+
+    # blanche "Pas encore…"
+    blanche "Pas encore…"
+

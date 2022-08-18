@@ -280,3 +280,11 @@ translate english strings:
     old "images/menu/fr_fr/settings_%s.png"
     new "images/menu/en_us/settings_%s.png"
 
+# TODO: Translation updated at 2022-08-18 18:17
+
+translate english strings:
+
+    # game/screens.rpy:323
+    old "Menu Principal"
+    new "Menu Principal"
+
