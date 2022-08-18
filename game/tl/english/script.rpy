@@ -10,7 +10,7 @@ translate english start_9eadcb6c:
 translate english start_6de55993:
 
     # "Chacune d'elle représentait une couleur de l'arc-en-ciel. Elles étaient les fondations du royaume."
-    "Each of them represents one of the seven colors of the rainbow. They were the very foundation of the realm."
+    "Each of them represented one of the seven colors of the rainbow. They were the very foundation of the kingdom."
 
 # game/script.rpy:32
 translate english start_691b2d7f:
@@ -58,7 +58,7 @@ translate english start_0afc42c4:
 translate english start_8a764600:
 
     # blanche "Je vais aller récupérer toutes les boules de cristal ! Héhé !"
-    blanche "I will fetch all the Crystal Balls! Hehe!"
+    blanche "I will get all the Crystal Balls! Hehe!"
 
 # game/script.rpy:56
 translate english start_56910000:
@@ -76,7 +76,7 @@ translate english start_51ea122b:
 translate english start_6b6b620a:
 
     # blanche "D'après la carte, la boule de cristal la plus proche est dans le jardin de violettes !"
-    blanche "The map shows that the closest Crystal Ball lies in the Garden of Violets!"
+    blanche "The map shows that the closest Crystal Ball lies in the garden of violets!"
 
 # game/script.rpy:59
 translate english start_637de622:
@@ -101,14 +101,6 @@ translate english strings:
     # game/script.rpy:47
     old "Oh non, c'est le nom de mon père."
     new "Oh no, it's Daddy's name."
-
-# TODO: Translation updated at 2022-08-17 01:24
-
-# game/script.rpy:57
-translate english start_51ea122b:
-
-    # blanche "J'ai volé une carte du royaume sur le bureau de mon papa."
-    blanche "I stole a map of the kingdom from Daddy's desk."
 
 # TODO: Translation updated at 2022-08-17 11:54
 
