@@ -110,3 +110,11 @@ translate english strings:
     old "Cheat - Voyage rapide"
     new "Cheat - Voyage rapide"
 
+# TODO: Translation updated at 2022-08-18 18:22
+
+translate english strings:
+
+    # game/chap/chap0.rpy:1
+    old "Chapitre {}"
+    new "Chapter {}"
+
