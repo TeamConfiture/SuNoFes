@@ -24,7 +24,7 @@
 # Le jeu commence ici
 label start:
     show screen konami_trigger
-    call titlepage(chap)
+    call titlepage(0)
     scene world with dissolve
     $ renpy.pause (2.5)
     "Il était une fois, dans un royaume lointain nommé Couleurs, existaient sept boules de cristal."

@@ -1,6 +1,5 @@
 ﻿label chap1:
-    $ chap += 1
-    call titlepage(chap)
+    call titlepage(1)
     scene mulberry_search
     show mulberry at mulberry_position
     show blanche surprised open at left
@@ -160,7 +159,7 @@
     hide grosso
     with dissolve
     "Les gardes parcourent le jardin des violettes. Ayant perdu Blanche de vue, ils disparaissent par le petit chemin du fond."
-    return
+    jump chap2
 
 #####
 # Cette section est dédiée à la récupération d'UNE mûre

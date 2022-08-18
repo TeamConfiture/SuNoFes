@@ -27,6 +27,7 @@ image grosso = im.FactorScale("images/gardes/grosso.png", guardSpriteSize)
 image maigrichon = im.FactorScale("images/gardes/maigrichon.png", guardSpriteSize)
 
 image violet = im.FactorScale("images/chats/violet.png", catSpriteSize)
+image indigo = im.FactorScale("images/chats/indigo.png", catSpriteSize)
 
 # Déclarez les personnages utilisés dans le jeu.
 define narrator = Character(None, window_background="gui/textbox_noname.png", window_xsize=1803, window_ysize=388, what_xpos=38, what_ypos=126, what_italic=True)

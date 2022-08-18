@@ -1,4 +1,3 @@
-define chap = 0
 define player_name = "Blanche"
 
 transform mulberry_position:
