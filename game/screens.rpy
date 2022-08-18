@@ -261,24 +261,24 @@ screen quick_menu():
             yalign 0.65
             spacing 30
             # Le _ sert uniquement à flagger pour la génération des fichiers de traduction,
-            # le vrai travail est effectué par renpy.substitutions.substitute
+            # le vrai travail est effectué par __
             imagebutton:
-                auto renpy.substitutions.substitute(_("images/menu/fr_fr/back_%s.png"), None, True)[0]
+                auto __(_("images/menu/fr_fr/back_%s.png"))
                 action Rollback()
             imagebutton:
-                auto renpy.substitutions.substitute(_("images/menu/fr_fr/history_%s.png"), None, True)[0]
+                auto __(_("images/menu/fr_fr/history_%s.png"))
                 action ShowMenu('history')
             imagebutton:
-                auto renpy.substitutions.substitute(_("images/menu/fr_fr/skip_%s.png"), None, True)[0]
+                auto __(_("images/menu/fr_fr/skip_%s.png"))
                 action Skip() alternate Skip(fast=True, confirm=True)
             imagebutton:
-                auto renpy.substitutions.substitute(_("images/menu/fr_fr/auto_%s.png"), None, True)[0]
+                auto __(_("images/menu/fr_fr/auto_%s.png"))
                 action Preference("auto-forward", "toggle")
             imagebutton:
-                auto renpy.substitutions.substitute(_("images/menu/fr_fr/save_%s.png"), None, True)[0]
+                auto __(_("images/menu/fr_fr/save_%s.png"))
                 action ShowMenu('save')
             imagebutton:
-                auto renpy.substitutions.substitute(_("images/menu/fr_fr/settings_%s.png"), None, True)[0]
+                auto __(_("images/menu/fr_fr/settings_%s.png"))
                 action ShowMenu('preferences')
 
 default quick_menu = True
@@ -839,7 +839,6 @@ style history_window is empty
 style history_window:
     xfill True
     ysize gui.history_height
-    ypos -275
 style history_name is gui_label
 style history_name:
     xpos gui.history_name_xpos
@@ -868,6 +867,10 @@ style history_label:
 style history_label_text is gui_label_text
 style history_label_text:
     xalign 0.5
+style history_empty_label:
+    xalign 0.5
+    yoffset 200
+    yalign 0.5
 
 screen history():
     tag menu
@@ -875,41 +878,42 @@ screen history():
     ## très large
     predict False
     use game_menu(_("Historique"), "history"):
-        vpgrid:
-            area (-250, -50, 0.85, 0.85)
-            cols 1
-            yinitial 1.0 #0.0 pour commencer au début, 1.0 à la fin, de l'historique
-            scrollbars "vertical"
-            mousewheel True
-            draggable True
-            pagekeys True
-            arrowkeys True
-            vbox:
-                for h in _history_list:
-                    window:
-                        style "history_window"
-                        ## Cela positionne correctement l'écran si history_height est
-                        ## initialisé à None.
-                        has fixed:
-                            yfit True
-                        if h.who:
-                            label h.who:
-                                style "history_name"
+        if not _history_list:
+            label _("L'historique des dialogues est vide.") style "history_empty_label"
+        else:
+            vpgrid:
+                area (-250, 0, 0.85, 0.75)
+                cols 1
+                yinitial 1.0 #0.0 pour commencer au début, 1.0 à la fin, de l'historique
+                scrollbars "vertical"
+                mousewheel True
+                draggable True
+                pagekeys True
+                arrowkeys True
+                vbox:
+                    for h in _history_list:
+                        window:
+                            style "history_window"
+                            ## Cela positionne correctement l'écran si history_height est
+                            ## initialisé à None.
+                            has fixed:
+                                yfit True
+                            if h.who:
+                                label h.who:
+                                    style "history_name"
+                                    substitute False
+                                    ## Utilise pour la couleur du texte, la couleur par
+                                    ## défaut des dialogues du personnage si elle a été
+                                    ## initialisée.
+                                    if "color" in h.who_args:
+                                        if h.who_args["color"] == "#ffffff":
+                                            text_color "#000000"
+                                        else:
+                                            text_color h.who_args["color"]
+                            $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
+                            text what:
+                                style "history_text"
                                 substitute False
-                                ## Utilise pour la couleur du texte, la couleur par
-                                ## défaut des dialogues du personnage si elle a été
-                                ## initialisée.
-                                if "color" in h.who_args:
-                                    if h.who_args["color"] == "#ffffff":
-                                        text_color "#000000"
-                                    else:
-                                        text_color h.who_args["color"]
-                        $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
-                        text what:
-                            style "history_text"
-                            substitute False
-                if not _history_list:
-                    label _("L'historique des dialogues est vide.")
 
 ################################################################################
 ## Écrans additionnels
@@ -1173,16 +1177,16 @@ screen quick_menu():
             yalign 1.0
 
             imagebutton:
-                auto renpy.substitutions.substitute(_("images/menu/fr_fr/back_%s.png"), None, True)[0]
+                auto __(_("images/menu/fr_fr/back_%s.png"))
                 action Rollback()
             imagebutton:
-                auto renpy.substitutions.substitute(_("images/menu/fr_fr/skip_%s.png"), None, True)[0]
+                auto __(_("images/menu/fr_fr/skip_%s.png"))
                 action Skip() alternate Skip(fast=True, confirm=True)
             imagebutton:
-                auto renpy.substitutions.substitute(_("images/menu/fr_fr/auto_%s.png"), None, True)[0]
+                auto __(_("images/menu/fr_fr/auto_%s.png"))
                 action Preference("auto-forward", "toggle")
             imagebutton:
-                auto renpy.substitutions.substitute(_("images/menu/fr_fr/settings_%s.png"), None, True)[0]
+                auto __(_("images/menu/fr_fr/settings_%s.png"))
                 action ShowMenu('preferences')
 
 

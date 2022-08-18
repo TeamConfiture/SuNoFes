@@ -1,31 +1,20 @@
-﻿label titlepage(chapNum):
+﻿label titlepage(chapNum, chap_label = _("Chapitre {}")):
     stop music fadeout 1.0
     scene black with dissolve
-    define chap_label = "Chapitre "
     image background_image = "gui/main_menu.png"
 
-    if chapNum == 0:
-        show background_image
-        show expression VBox(Text(_("Prologue"), size=125, yalign=0.5, xalign=0.5, color="#fff")) as text:
-            yalign 0.42
-            xalign 0.5
-        with dissolve
-    else:
-        if persistent.lang is None:
-            $ chap_label = "Chapter "
-        show background_image
-        show expression VBox(Text(chap_label + str(chapNum), size=125, yalign=0.5, xalign=0.5, color="#fff")) as text:
-            yalign 0.42
-            xalign 0.5
-        with dissolve
-        # TODO : put subtitle for chapter
+    show background_image
+    show expression VBox(Text(__(chap_label).format(chapNum), substitute = False, size=125, yalign=0.5, xalign=0.5, color="#fff")) as text:
+        yalign 0.42
+        xalign 0.5
+    with dissolve
     $ renpy.pause (2.5)
     return
 
 # Le jeu commence ici
 label start:
     show screen konami_trigger
-    call titlepage(chap)
+    call titlepage("", _("Prologue"))
     scene world with dissolve
     $ renpy.pause (2.5)
     "Il était une fois, dans un royaume lointain nommé Couleurs, existaient sept boules de cristal."
@@ -52,14 +41,17 @@ label start:
                 player_name=None
 
     scene room with dissolve
-    show blanche neutral close at left with dissolve
+    show blanche neutral open at left with dissolve
     blanche "Mon nom est [player_name] et mon papa s'appelle Noir."
     blanche "Je n'ai jamais connu ma maman. Mais, ce n'est pas grave, car mon papa s'occupe bien de moi !"
     blanche "Aujourd'hui, pendant que mon papa dormait, j'ai décidé de fuguer et de faire un tour du royaume !"
+    show blanche smile open at left
     blanche "Je vais aller récupérer toutes les boules de cristal ! Héhé !"
+    show blanche neutral open at left
     blanche "D'après mon papa, elles sont très jolies !"
     blanche "J'ai volé une carte du royaume sur le bureau de mon papa."
     blanche "D'après la carte, la boule de cristal la plus proche est dans le jardin de violettes !"
+    show blanche smile open at left
     blanche "C'est parti !"
     jump chap1
     return
