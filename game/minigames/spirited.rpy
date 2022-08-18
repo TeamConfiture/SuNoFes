@@ -4,8 +4,7 @@ init python:
     import time
     import math
 
-    # Container class for Spirited, should not be used directly is the scene is to last more than one screen
-    # 
+    # Container class for Spirited, should not be used directly
     class SpiritedSpriteInfo():
         def __init__(self, rid, sprite, speed, direction, roll, roll_offset, duration):
             # base image id for use by Spirited upon opacity change
@@ -35,7 +34,7 @@ init python:
     # renewal_rate: On average, how many sprites should be generated per second while the minimum rate is not reached
     # initial_count: How many sprites should be generated at the start
     # minimum_pool: Minimum number of sprites that must exist at the same time
-    # minimum_pool: Minimum number of sprites that may exist at the same time
+    # maximum_pool: Maximum number of sprites that may exist at the same time
     # speed_range: how slow/fast a sprite may move
     # direction_range: Valid direction angle for a sprite (in radians)
     # roll_range: How far from its base direction line a sprite may "wobble"
@@ -46,6 +45,9 @@ init python:
     # spawn_box:
     #     If != None, screen-relative limits within which a sprite will be created in the format (left, top, right, bottom)
     #     The calculation is performed relative to the top left corner of the sprites
+    # repulsor_strength: how fast sprites should run away from the mouse' cursos
+    # repulsor_radius: how far the mouse's position affects sprites
+    # repulsor_hardness: how strong the repulsor is at the max distance compared to on the cursor (as a multiplicator)
     #
     # # Examples
     #
@@ -63,16 +65,20 @@ init python:
     #     add SpiritedInstance(
     #         instance_name = "forest",
     #         spirited_args = {
-    #             "sprite_list": ["images/sprites/light1.png", "images/sprites/light2.png"],
+    #             "sprite_list": ["images/sprites/small_firefly.png", "images/sprites/big_firefly.png", "images/sprites/medium_firefly.png"],
+    #             "renewal_rate": 500,
     #             "direction_range": (1.2, 1.9),
+    #             "repulsor_strength": 400,
+    #             "repulsor_radius": 300,
     #         }, xsize = 1., ysize = 1.,
     #         )
     # ```
     class Spirited(renpy.Displayable):
         def __init__(self,
-                sprite_list, renewal_rate = 30, initial_count = 100, minimum_pool = 0, maximum_pool = 300,
+                sprite_list, renewal_rate = 30, initial_count = 100, minimum_pool = 0, maximum_pool = None,
                 speed_range = (0, 300), direction_range = (0, math.pi*2), roll_range = (0, 40), ttl_range = (1, 10),
                 bounding_box = (-260, -280, 60, 300), spawn_box = (-20, 50, -80, 300),
+                repulsor_strength = 0, repulsor_radius = 0, repulsor_hardness = 0,
                 **kwargs,
                 ):
             super(Spirited, self).__init__(**kwargs)
@@ -89,16 +95,23 @@ init python:
             self.bounding_box = bounding_box
             self.spawn_box = spawn_box
             self.base_image_list = sprite_list
+            self.repulsor_strength = repulsor_strength
+            self.repulsor_radius = repulsor_radius
+            self.repulsor_radius_squared = repulsor_radius ** 2
+            self.repulsor_hardness = repulsor_hardness
 
             # Initialize internal Displayable library with alpha levels
             # All displayables are based on sprite_list images
             self.image_collection = []
-            for i in range(0, len(self.base_image_list)):
+            for i in range(len(self.base_image_list)):
                 displayable = renpy.displayable(self.base_image_list[i])
                 self.image_collection.append([Transform(child = displayable, alpha = j/100) for j in range(0, 101, 10)])
+            self.image_sizes = [renpy.render(d[0], 0, 0, 0, 0).get_size() for d in self.image_collection]
+            # Cursor position to compute repulsor attributes
+            self.cursor_pos = pygame.mouse.get_pos()
             # Handle the graphical part with a sprite manager
             self.manager = SpriteManager()
-            # 
+            # Set of rendered sprites
             self.render_set = set() 
             # last render timer
             self.last_update = None
@@ -152,7 +165,7 @@ init python:
             if self.first_render_time is None:
                 # Create the initial sprite
                 # If we create it at init we don't get the initial "pop" effect when using a SpiritedInstance
-                for i in range(0, self.initial_count):
+                for i in range(self.initial_count):
                     self.new_sprite()
                 self.last_update = time.time()
                 self.first_render_time = self.last_update
@@ -164,6 +177,12 @@ init python:
                 self.accumulated_spawn_odds = self.accumulated_spawn_odds - 1
                 self.new_sprite()
 
+            # Recalculate cursor position to project onto virtual render area
+            physical_render_size = renpy.get_physical_size()
+            cursor_pos = (
+                self.cursor_pos[0] / physical_render_size[0] * config.screen_width,
+                self.cursor_pos[1] / physical_render_size[1] * config.screen_height,
+            )
             # What does this loop cost ? everything
             scheduled_deletions = []
             for sprite in self.render_set:
@@ -196,10 +215,23 @@ init python:
                     sprite.opacity = sprite.opacity - 10
                     sprite.sprite.set_child(self.image_collection[sprite.rid][math.floor(sprite.opacity / 10)])
                 # Update sprite position
-                speed = sprite.speed * (current_time - sprite.birth_time)
-                roll = math.sin(current_time - sprite.birth_time + sprite.roll_offset) * sprite.roll
-                sprite.sprite.y = sprite.start_pos[1] - speed * math.sin(sprite.direction) + roll * math.cos(sprite.direction)
-                sprite.sprite.x = sprite.start_pos[0] + speed * math.cos(sprite.direction) + roll * math.sin(sprite.direction)
+                speed = sprite.speed * time_diff
+                roll = (math.sin(current_time + sprite.roll_offset) - math.sin(current_time - time_diff + sprite.roll_offset)) * sprite.roll
+                repulsor = (0, 0)
+                # Compute reaction to mouse cursor position
+                if self.repulsor_strength != 0 and self.repulsor_radius != 0:
+                    sprite_center = (sprite.sprite.x + self.image_sizes[sprite.rid][0]/2, sprite.sprite.y + self.image_sizes[sprite.rid][1]/2)
+                    dist_vec = (sprite_center[0]-cursor_pos[0], sprite_center[1]-cursor_pos[1])
+                    dist_squared = dist_vec[0] ** 2 + dist_vec[1] ** 2
+                    # If within repulsor range, apply force in the direction of the mouse -> sprite cursor
+                    # Note that the repulsor's strength evolves proportionnally to the square of the distance as it feels better
+                    if self.repulsor_radius_squared > dist_squared:
+                        dist = math.sqrt(dist_squared)
+                        local_repulsor = -(self.repulsor_strength + (self.repulsor_hardness - self.repulsor_strength) * dist_squared / self.repulsor_radius_squared) * time_diff
+                        repulsor = (local_repulsor * dist_vec[0] / dist_vec[1], local_repulsor * dist_vec[1] / dist_vec[0])
+
+                sprite.sprite.y = sprite.sprite.y - speed * math.sin(sprite.direction) + roll * math.cos(sprite.direction) + repulsor[0]
+                sprite.sprite.x = sprite.sprite.x + speed * math.cos(sprite.direction) + roll * math.sin(sprite.direction) + repulsor[1]
 
             # Delete obsolete sprites
             for sprite in scheduled_deletions:
@@ -208,12 +240,18 @@ init python:
             
             # Ensure we have at least the minimum number of sprites
             if len(self.render_set) < self.minimum_pool:
-                for _ in range(0, self.minimum_pool - len(self.render_set)):
+                for _ in range(self.minimum_pool - len(self.render_set)):
                     self.new_sprite()
 
             # Schedule next update and return rendered view
             renpy.redraw(self, 0.05)
             return self.manager.render(width, height, st, at)
+
+        # Listen for mouve move events
+        def event(self, ev, x, y, st):
+            if ev.type == 1024: # cursor move event
+                if ev.pos != self.cursor_pos:
+                    self.cursor_pos = ev.pos
 
         def visit(self):
             return [ self.manager ]
@@ -242,6 +280,10 @@ init python:
             # Redraw here is required as ren'py does not honor the child's scheduling
             renpy.redraw(self, 0.05)
             return self.instance.render(width, height, st, at)
+
+        def event(self, ev, x, y, st):
+            # event must be passed-down manually
+            self.instance.event(ev, x, y, st)
 
         def visit(self):
             return [ self.instance ]
