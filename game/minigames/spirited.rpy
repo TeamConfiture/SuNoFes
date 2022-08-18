@@ -48,6 +48,15 @@ init python:
     # repulsor_strength: how fast sprites should run away from the mouse' cursos
     # repulsor_radius: how far the mouse's position affects sprites
     # repulsor_hardness: how strong the repulsor is at the max distance compared to on the cursor (as a multiplicator)
+    # repulsor_mode: 0 to have a simple repulsor, 1 to have a tornado that goes woosh, anything else and nothing happens
+    # guideline:
+    #     A custom lambda function that takes four parameters and returns a displacement tuple:
+    #       param1: A SpiritedSpriteInfo instance
+    #       param2: The time ellapsed since the last update in milliseconds
+    #       param3: A tuple that contains the displacement calculated based on Spirited's parameters
+    #               This displacement must be part of the tuple returned by the function to be applied to the sprite
+    #       param4: A tuple that contains the displacement that would be caused by the mouse's cursor's position
+    #               This displacement must be part of the tuple returned by the function to be applied to the sprite
     #
     # # Examples
     #
@@ -78,7 +87,8 @@ init python:
                 sprite_list, renewal_rate = 30, initial_count = 100, minimum_pool = 0, maximum_pool = None,
                 speed_range = (0, 300), direction_range = (0, math.pi*2), roll_range = (0, 40), ttl_range = (1, 10),
                 bounding_box = (-260, -280, 60, 300), spawn_box = (-20, 50, -80, 300),
-                repulsor_strength = 0, repulsor_radius = 0, repulsor_hardness = 0,
+                repulsor_strength = 0, repulsor_radius = 0, repulsor_hardness = 0, repulsor_mode = 0,
+                guideline = None,
                 **kwargs,
                 ):
             super(Spirited, self).__init__(**kwargs)
@@ -99,6 +109,8 @@ init python:
             self.repulsor_radius = repulsor_radius
             self.repulsor_radius_squared = repulsor_radius ** 2
             self.repulsor_hardness = repulsor_hardness
+            self.repulsor_mode = repulsor_mode
+            self.guideline = guideline
 
             # Initialize internal Displayable library with alpha levels
             # All displayables are based on sprite_list images
@@ -195,10 +207,9 @@ init python:
                             ):
                         scheduled_deletions.append(sprite)
                         continue
-
+                # Start disappearance for sprites that have reached their TTL
                 if sprite.duration < current_time - sprite.birth_time:
                     sprite.cycle = 2
-
                 # FIXME: at the moment the opacity changes as fast as the view is rendered/updated instead of being tied to the clock
                 # In most cases it should not make a difference though
                 if sprite.cycle == 0:
@@ -214,11 +225,8 @@ init python:
                         continue
                     sprite.opacity = sprite.opacity - 10
                     sprite.sprite.set_child(self.image_collection[sprite.rid][math.floor(sprite.opacity / 10)])
-                # Update sprite position
-                speed = sprite.speed * time_diff
-                roll = (math.sin(current_time + sprite.roll_offset) - math.sin(current_time - time_diff + sprite.roll_offset)) * sprite.roll
-                repulsor = (0, 0)
                 # Compute reaction to mouse cursor position
+                repulsor = (0, 0)
                 if self.repulsor_strength != 0 and self.repulsor_radius != 0:
                     sprite_center = (sprite.sprite.x + self.image_sizes[sprite.rid][0]/2, sprite.sprite.y + self.image_sizes[sprite.rid][1]/2)
                     dist_vec = (sprite_center[0]-cursor_pos[0], sprite_center[1]-cursor_pos[1])
@@ -227,11 +235,27 @@ init python:
                     # Note that the repulsor's strength evolves proportionnally to the square of the distance as it feels better
                     if self.repulsor_radius_squared > dist_squared:
                         dist = math.sqrt(dist_squared)
-                        local_repulsor = -(self.repulsor_strength + (self.repulsor_hardness - self.repulsor_strength) * dist_squared / self.repulsor_radius_squared) * time_diff
-                        repulsor = (local_repulsor * dist_vec[0] / dist_vec[1], local_repulsor * dist_vec[1] / dist_vec[0])
+                        local_repulsor = (self.repulsor_strength + (self.repulsor_hardness - self.repulsor_strength) * dist_squared / self.repulsor_radius_squared) * time_diff
+                        if self.repulsor_mode == 0:
+                            repulsor = (local_repulsor * dist_vec[1] / dist, local_repulsor * dist_vec[0] / dist)
+                        elif self.repulsor_mode == 1:
+                            repulsor = (local_repulsor * dist_vec[0] / dist, -local_repulsor * dist_vec[1] / dist)
 
-                sprite.sprite.y = sprite.sprite.y - speed * math.sin(sprite.direction) + roll * math.cos(sprite.direction) + repulsor[0]
-                sprite.sprite.x = sprite.sprite.x + speed * math.cos(sprite.direction) + roll * math.sin(sprite.direction) + repulsor[1]
+                # Calculate sprite position change
+                speed = sprite.speed * time_diff
+                roll = (math.sin(current_time + sprite.roll_offset) - math.sin(current_time - time_diff + sprite.roll_offset)) * sprite.roll
+                displacement = (
+                    speed * math.cos(sprite.direction) + roll * math.sin(sprite.direction),
+                    - speed * math.sin(sprite.direction) + roll * math.cos(sprite.direction)
+                    )
+                if self.guideline:
+                    calculated_displacement = self.guideline(sprite, time_diff, displacement, repulsor)
+                else:
+                    calculated_displacement = (displacement[0] + repulsor[0], displacement[1] + repulsor[1])
+
+                # Update sprite position
+                sprite.sprite.y = sprite.sprite.y + calculated_displacement[0]
+                sprite.sprite.x = sprite.sprite.x + calculated_displacement[1]
 
             # Delete obsolete sprites
             for sprite in scheduled_deletions:
