@@ -1,30 +1,20 @@
-﻿label titlepage(chapNum):
+﻿label titlepage(chapNum, chap_label = _("Chapitre {}")):
     stop music fadeout 1.0
     scene black with dissolve
-    define chap_label = "Chapter "
     image background_image = "gui/main_menu.png"
 
-    if chapNum == 0:
-        show background_image
-        show expression VBox(Text(_("Prologue"), size=125, yalign=0.5, xalign=0.5, color="#fff")) as text:
-            yalign 0.42
-            xalign 0.5
-        with dissolve
-    else:
-        if persistent.lang is None:
-            $ chap_label = "Chapitre "
-        show background_image
-        show expression VBox(Text(chap_label + str(chapNum), size=125, yalign=0.5, xalign=0.5, color="#fff")) as text:
-            yalign 0.42
-            xalign 0.5
-        with dissolve
+    show background_image
+    show expression VBox(Text(__(chap_label).format(chapNum), substitute = False, size=125, yalign=0.5, xalign=0.5, color="#fff")) as text:
+        yalign 0.42
+        xalign 0.5
+    with dissolve
     $ renpy.pause (2.5)
     return
 
 # Le jeu commence ici
 label start:
     show screen konami_trigger
-    call titlepage(0)
+    call titlepage("", _("Prologue"))
     scene world with dissolve
     $ renpy.pause (2.5)
     "Il était une fois, dans un royaume lointain nommé Couleurs, existaient sept boules de cristal."
