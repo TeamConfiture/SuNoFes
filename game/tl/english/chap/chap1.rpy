@@ -1,5 +1,3 @@
-# TODO: Translation updated at 2022-08-18 12:35
-
 # game/chap/chap1.rpy:8
 translate english chap1_0b5e7501:
 
@@ -318,14 +316,14 @@ translate english chap1_fd3fcb4a:
     # violet "C'est bien ça ! Bravo, tu as trouvé la mûre que je voulais !"
     violet "C'est bien ça ! Bravo, tu as trouvé la mûre que je voulais !"
 
-# game/chap1.rpy:67
-translate english chap1_6d1ecaf7:
+# game/chap/chap1.rpy:202
+translate english onclick_mulberry_background_6d1ecaf7:
 
     # violet "Alors tu as trouvé ?"
     violet "Did you find it?"
 
-# game/chap1.rpy:68
-translate english chap1_dd72e6e7:
+# game/chap/chap1.rpy:205
+translate english onclick_mulberry_background_dd72e6e7:
 
     # blanche "Pas encore…"
     blanche "Not yet…"
@@ -370,13 +368,13 @@ translate english chap1_9a5c1998:
 translate english chap1_ab02b979:
 
     # blanche "Bah oui ? Pourquoi ? Elles sont si jolies."
-    blanche "Sure! Why not? They are so shiny."
+    blanche "Yeah! Why not? They are so shiny."
 
 # game/chap/chap1.rpy:130
 translate english chap1_cced1866:
 
     # violet "Erf… Petit enfant, fais attention. C'est dangereux ce que tu fais. Si Madame Arc-en-Ciel l'apprend, c'en est fini de toi… Et pour nous les gardiens aussi…"
-    violet "Erf… Child, beware. What you are attempting is very dangereous. If Lady Rainbow learns about this, you are finished… And so are we, the Guardians…"
+    violet "Erf… My little dear, please be careful. What you are attempting is very dangereous. If Lady Rainbow finds out, you are finished… And so are we, the Guardians…"
 
 # game/chap/chap1.rpy:131
 translate english chap1_fde1ecc7:
@@ -394,13 +392,13 @@ translate english chap1_09cbb8ce:
 translate english chap1_a0f7088e:
 
     # blanche "N'aies pas peur ! Pas de problème pour moi ! Je cours vite ! Elle ne saura rien !"
-    blanche "Don't be scared! I'll be fine! I run fast! She'll never learn about this!"
+    blanche "Don't be scared! I'll be fine! I run fast! She won't know anything!"
 
 # game/chap/chap1.rpy:136
 translate english chap1_62a5eda5:
 
     # violet "Si tu le dis…"
-    violet "So you say…"
+    violet "If you say so…"
 
 # game/chap/chap1.rpy:137
 translate english chap1_3f1606fa:
@@ -418,19 +416,19 @@ translate english chap1_c9d45cdd:
 translate english chap1_0e3d8f37:
 
     # violet "Bon, prends soin de toi."
-    violet "Alright, take care, child."
+    violet "Alright, take care."
 
 # game/chap/chap1.rpy:143
 translate english chap1_2c2cc7a2:
 
     # "Violet me fait un signe d'au revoir."
-    "Violet waves me goodbye."
+    "Violet is waving goodbye to me."
 
 # game/chap/chap1.rpy:144
 translate english chap1_e54a3996:
 
     # blanche "Oui ! Merci Violet ! Je te promets que je te rendrai la boule !"
-    blanche "Yes! Thanks Violet! I will return the ball, promised!"
+    blanche "Yes! Thanks Violet! I'll give you the ball back, I promise!"
 
 # game/chap/chap1.rpy:146
 translate english chap1_cf5c5267:
@@ -442,7 +440,7 @@ translate english chap1_cf5c5267:
 translate english chap1_eac58e0d:
 
     # x "Maigrichon, j'en ai marre de ces patrouilles nocturnes… Il ne se passe jamais rien."
-    x "Slimmy, I am bored of this nightly patrols… Nothing ever happens."
+    x "Slimmy, I am bored of these nightly patrols… Nothing ever happens."
 
 # game/chap/chap1.rpy:151
 translate english chap1_057df1c8:
@@ -484,7 +482,7 @@ translate english chap1_0577fc21:
 translate english chap1_08d0eca4:
 
     # maigrichon "Vite, suivons-le !!!"
-    maigrichon "Quick, after him!!!"
+    maigrichon "Quick, after them!!!"
 
 # game/chap/chap1.rpy:158
 translate english chap1_4a84607d:
@@ -496,7 +494,7 @@ translate english chap1_4a84607d:
 translate english chap1_216968c0:
 
     # "Les gardes parcourent le jardin des violettes. Ayant perdu Blanche de vue, ils disparaissent par le petit chemin du fond."
-    "The Guard are rushing through the Garden of Violets. With Blanche out of sight, they vanished in a tiny back alley."
+    "The Guard are rushing through the Garden of Violets. With Blanche out of sight, they vanish in a tiny back alley."
 
 translate english strings:
 
@@ -510,19 +508,7 @@ translate english strings:
 
     # game/chap/chap1.rpy:68
     old "Lui arracher la boule des mains."
-    new "Snitch the ball out of its paws."
+    new "Snatch the ball from its paws."
 
-# TODO: Translation updated at 2022-08-18 18:17
 
-# game/chap/chap1.rpy:202
-translate english onclick_mulberry_background_6d1ecaf7:
-
-    # violet "Alors tu as trouvé ?"
-    violet "Alors tu as trouvé ?"
-
-# game/chap/chap1.rpy:205
-translate english onclick_mulberry_background_dd72e6e7:
-
-    # blanche "Pas encore…"
-    blanche "Pas encore…"
 
