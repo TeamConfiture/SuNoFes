@@ -1,6 +1,4 @@
-﻿# TODO: Translation updated at 2022-08-15 15:14
-
-# game/script.rpy:30
+﻿# game/script.rpy:30
 translate english start_9eadcb6c:
 
     # "Il était une fois, dans un royaume lointain nommé Couleurs, existaient sept boules de cristal."
@@ -102,17 +100,9 @@ translate english strings:
     old "Oh non, c'est le nom de mon père."
     new "Oh no, it's Daddy's name."
 
-# TODO: Translation updated at 2022-08-17 11:54
-
-translate english strings:
-
     # game/script.rpy:109
     old "Cheat - Voyage rapide"
-    new "Cheat - Voyage rapide"
-
-# TODO: Translation updated at 2022-08-18 18:22
-
-translate english strings:
+    new "Cheat - Fast journey"
 
     # game/chap/chap0.rpy:1
     old "Chapitre {}"

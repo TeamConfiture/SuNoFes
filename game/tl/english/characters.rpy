@@ -1,6 +1,4 @@
-﻿# TODO: Translation updated at 2022-08-15 15:14
-
-translate english strings:
+﻿translate english strings:
 
     # game/characters.rpy:10
     old "Madame Arc-En-Ciel"
@@ -25,11 +23,6 @@ translate english strings:
     # game/characters.rpy:15
     old "Indigo"
     new "Indigo"
-
-
-# TODO: Translation updated at 2022-08-15 18:57
-
-translate english strings:
 
     # game/characters.rpy:40
     old "Les deux"
