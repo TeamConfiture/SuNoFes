@@ -261,24 +261,24 @@ screen quick_menu():
             yalign 0.65
             spacing 30
             # Le _ sert uniquement à flagger pour la génération des fichiers de traduction,
-            # le vrai travail est effectué par renpy.substitutions.substitute
+            # le vrai travail est effectué par __
             imagebutton:
-                auto renpy.substitutions.substitute(_("images/menu/fr_fr/back_%s.png"), None, True)[0]
+                auto __(_("images/menu/fr_fr/back_%s.png"))
                 action Rollback()
             imagebutton:
-                auto renpy.substitutions.substitute(_("images/menu/fr_fr/history_%s.png"), None, True)[0]
+                auto __(_("images/menu/fr_fr/history_%s.png"))
                 action ShowMenu('history')
             imagebutton:
-                auto renpy.substitutions.substitute(_("images/menu/fr_fr/skip_%s.png"), None, True)[0]
+                auto __(_("images/menu/fr_fr/skip_%s.png"))
                 action Skip() alternate Skip(fast=True, confirm=True)
             imagebutton:
-                auto renpy.substitutions.substitute(_("images/menu/fr_fr/auto_%s.png"), None, True)[0]
+                auto __(_("images/menu/fr_fr/auto_%s.png"))
                 action Preference("auto-forward", "toggle")
             imagebutton:
-                auto renpy.substitutions.substitute(_("images/menu/fr_fr/save_%s.png"), None, True)[0]
+                auto __(_("images/menu/fr_fr/save_%s.png"))
                 action ShowMenu('save')
             imagebutton:
-                auto renpy.substitutions.substitute(_("images/menu/fr_fr/settings_%s.png"), None, True)[0]
+                auto __(_("images/menu/fr_fr/settings_%s.png"))
                 action ShowMenu('preferences')
 
 default quick_menu = True
@@ -1162,16 +1162,16 @@ screen quick_menu():
             yalign 1.0
 
             imagebutton:
-                auto renpy.substitutions.substitute(_("images/menu/fr_fr/back_%s.png"), None, True)[0]
+                auto __(_("images/menu/fr_fr/back_%s.png"))
                 action Rollback()
             imagebutton:
-                auto renpy.substitutions.substitute(_("images/menu/fr_fr/skip_%s.png"), None, True)[0]
+                auto __(_("images/menu/fr_fr/skip_%s.png"))
                 action Skip() alternate Skip(fast=True, confirm=True)
             imagebutton:
-                auto renpy.substitutions.substitute(_("images/menu/fr_fr/auto_%s.png"), None, True)[0]
+                auto __(_("images/menu/fr_fr/auto_%s.png"))
                 action Preference("auto-forward", "toggle")
             imagebutton:
-                auto renpy.substitutions.substitute(_("images/menu/fr_fr/settings_%s.png"), None, True)[0]
+                auto __(_("images/menu/fr_fr/settings_%s.png"))
                 action ShowMenu('preferences')
 
 
