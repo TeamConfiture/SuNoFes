@@ -128,8 +128,6 @@
 ##  .'   `._.'   `._.'   `._.'   `._.'   `._.'   `._.'   `._.'   `._.'   `.
 
 
-import random
-
 ##define config.default_music_volume = 1     --
 ##define config.default_sound_volume = 1        |===> Partie à enlever du commentaire une fois l'audio posé et intégré.
 ##define config.default_voice_volume = 1        |
