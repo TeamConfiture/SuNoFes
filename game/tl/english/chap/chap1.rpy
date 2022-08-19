@@ -1,14 +1,4 @@
-# game/chap/chap1.rpy:8
-translate english chap1_0b5e7501:
 
-    # "Woah ! Tout est violet ! Et il y a pleins de fleurs !!!"
-    "Woah! Everything is purple! So many flowers!!!" with vpunch
-
-# game/chap/chap1.rpy:10
-translate english chap1_6627c31d:
-
-    # "Je vais en cueillir une pour mon papa."
-    "I will pick one for Daddy."
 
 # game/chap/chap1.rpy:12
 translate english chap1_076031b0:
@@ -314,13 +304,13 @@ translate english chap1_25aceaaa:
 translate english chap1_fd3fcb4a:
 
     # violet "C'est bien ça ! Bravo, tu as trouvé la mûre que je voulais !"
-    violet "C'est bien ça ! Bravo, tu as trouvé la mûre que je voulais !"
+    violet "That is the one! Congratulations, you found the mulberry I wanted !"
 
 # game/chap/chap1.rpy:202
 translate english onclick_mulberry_background_6d1ecaf7:
 
     # violet "Alors tu as trouvé ?"
-    violet "Did you find it?"
+    violet "Have you find it?"
 
 # game/chap/chap1.rpy:205
 translate english onclick_mulberry_background_dd72e6e7:
@@ -328,7 +318,7 @@ translate english onclick_mulberry_background_dd72e6e7:
     # blanche "Pas encore…"
     blanche "Not yet…"
 
-# game/chap1.rpy:71
+# game/chap1.rpy:115
 translate english chap1_119fd160:
 
     # violet "Il faudra que tu me rendes la boule avant minuit ! Sinon, plus de violet…"
@@ -494,7 +484,7 @@ translate english chap1_4a84607d:
 translate english chap1_216968c0:
 
     # "Les gardes parcourent le jardin des violettes. Ayant perdu Blanche de vue, ils disparaissent par le petit chemin du fond."
-    "The Guard are rushing through the Garden of Violets. With Blanche out of sight, they vanish in a tiny back alley."
+    "The guards rushes through the Garden of Violets. With Blanche out of sight, they vanish in a tiny back alley."
 
 translate english strings:
 
@@ -511,4 +501,104 @@ translate english strings:
     new "Snatch the ball from its paws."
 
 
+
+# TODO: Translation updated at 2022-08-18 23:24
+
+# game/chap/chap1.rpy:7
+translate english chap1_3ee1c5e0:
+
+    # "Woah ! Tout est violet ! Il y a pleins de fleurs !!!" with vpunch
+    blanche "Woah! Everything is purple! So many flowers!!!" with vpunch
+
+# game/chap/chap1.rpy:9
+translate english chap1_7e100132:
+
+    # blanche "Je vais en cueillir une pour mon papa."
+    "I will pick one for Daddy."
+
+# game/chap/chap1.rpy:15
+translate english chap1_87bf5d96:
+
+    # "Un chat vient de me griffer au moment où j'allais cueillir une fleur."
+    "A cat scratched me as I was about to pick one."
+
+# game/chap/chap1.rpy:38
+translate english chap1_d647caa3:
+
+    # violet "En effet. Je suis le gardien de Violet"
+    violet "Indeed. I am the Guardian of Purple"
+
+# game/chap/chap1.rpy:43
+translate english chap1_ba173263:
+
+    # violet "Un gardien de Couleurs ? Il y en a que sept et ce sont tous des chats !"
+    violet "A Guardian of Colors, you say? There are only seven of Guardian of Colors, and all of them are cats."
+
+# game/chap/chap1.rpy:53
+translate english chap1_a7d86947:
+
+    # violet "En effet ! Elle est jolie, hein ?"
+    violet "Indeed! It is beautiful, is it not?"
+
+# game/chap/chap1.rpy:58
+translate english chap1_8b4fd862:
+
+    # violet "Sapristi ! Tu es malade ?!! Si je la perds, pouf, plus violet !"
+    violet "Crivens! Are you out of your mind?!! If I lose it, poof, no more purple!"
+
+# game/chap/chap1.rpy:59
+translate english chap1_fec8d0b8:
+
+    # violet "Plus de violet, plus de mûres, plus de manger pour moi…"
+    violet "No more purple, no more mulberries, no more food for me…"
+
+# game/chap/chap1.rpy:60
+translate english chap1_91f4d3e3:
+
+    # violet "Et Madame Arc-en-Ciel va me gronder."
+    violet "And… Lady Raindow will scold me…"
+
+# game/chap/chap1.rpy:63
+translate english chap1_ae86d047:
+
+    # blanche "Mais ! Je suis venu ici pour récupérer cette boule de cristal."
+    blanche "B-But I came here to get that Crystal Ball."
+
+# game/chap/chap1.rpy:70
+translate english chap1_24e33e87:
+
+    # violet "Oh nooooooooooon pas ces yeeeuuxxx. Ils sont trop mignons."
+    violet "Oh nooooooooooo, not these eyes. They are too powerful."
+
+# game/chap/chap1.rpy:103
+translate english chap1_298d066c:
+
+    # blanche "Mais comment je vais la trouver ?!"
+    blanche "How will I find it?!"
+
+# game/chap/chap1.rpy:114
+translate english chap1_ea0183cb:
+
+    # violet "C'est bien ça ! Félicitations, tu as trouvé la mûre que je voulais !"
+    violet "That is the one! Congratulations, you found the mulberry I was looking for!"
+
+# game/chap/chap1.rpy:117
+translate english chap1_1881e55c:
+
+    # blanche "Plus de mûre, plus de manger pour toi… et Madame Arc-en-Ciel, pas contente !"
+    blanche "No more mulberries, no more food for you, and Lady Rainbow will get angry!"
+
+# game/chap/chap1.rpy:119
+translate english chap1_35b98ec0:
+
+    # violet "En effet !"
+    violet "Indeed!"
+
+# TODO: Translation updated at 2022-08-18 23:50
+
+# game/chap/chap1.rpy:119
+translate english chap1_3b462c0e:
+
+    # violet "En effet !"
+    violet ""
 
