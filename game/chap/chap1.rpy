@@ -4,9 +4,9 @@
     show mulberry at mulberry_position
     show blanche surprised open at left
     with dissolve 
-    blanche "Woah ! Tout est violet ! Et il y a pleins de fleurs !!!" with vpunch
+    blanche "Woah ! Tout est violet ! Il y a pleins de fleurs !!!" with vpunch
     show blanche smile close at left 
-    "Je vais en cueillir une pour mon papa."
+    blanche "Je vais en cueillir une pour mon papa."
     show violet at right with dissolve
     x "MIAAOOOUUU !" with vpunch
     show blanche cry open at left 
@@ -35,12 +35,12 @@
     show blanche surprised open at left
     blanche "Tu es un gardien de Couleurs ?!" with vpunch
     show blanche surprised close at left
-    violet "Affirmatif. Je suis le gardien de Violet"
+    violet "En effet. Je suis le gardien de Violet"
     show blanche neutral open at left
     blanche "Trop bien ! Moi aussi ! Je suis le gardien de [player_name] !"
     show blanche neutral close at left
     violet "Non, mais j'hallucine ! C'est que cet enfant se moque de moi, ma parole !"
-    violet "Un gardien de Couleurs, il y en a que sept ! Et ce ne sont que des chats !"
+    violet "Un gardien de Couleurs ? Il y en a que sept et ce sont tous des chats !"
     violet "Tu ne peux pas être un gardien, c'est impossible !"
     show blanche cry open at left
     blanche "Oh, vraiment ? C'est dommage. Je voulais aussi être gardien…"
@@ -50,24 +50,24 @@
     show blanche surprised open at left
     blanche "Oh ! Mais ! C'est une des sept boules de cristal !" with vpunch
     show blanche surprised close at left
-    violet "Affirmatif ! Elle est jolie, hein ?"
+    violet "En effet ! Elle est jolie, hein ?"
     show blanche smile open at left
     hide crystal_purple at crystal_position with dissolve
     blanche "Je peux l'avoiiiiirrr ????"
     show blanche smile close at left
-    violet "Sapristi ! T'es malade ?!! Si je la perds, pouf, plus violet !"
-    violet "Plus de violet, plus de mûres, plus de manger pour moi !"
-    violet "Et… Madame Arc-en-Ciel va me gronder…"
+    violet "Sapristi ! Tu es malade ?!! Si je la perds, pouf, plus violet !"
+    violet "Plus de violet, plus de mûres, plus de manger pour moi…"
+    violet "Et Madame Arc-en-Ciel va me gronder."
     violet "Brrr, j'imagine déjà sa colère."
     show blanche cry open at left
-    blanche "Mais, je suis venu ici récupérer cette boule de cristal."
+    blanche "Mais ! Je suis venu ici pour récupérer cette boule de cristal."
     show blanche cry close at left
     violet "Non, je n'ai pas le droit de te la donner."
 
     menu:
         "Faire les yeux du chat potté":
             "Je lui fais les yeux du chat potté."
-            violet "Oh nooooooooooon pas ces yeeeuuxxx. Ils sont terribles."
+            violet "Oh nooooooooooon pas ces yeeeuuxxx. Ils sont trop mignons."
             show blanche cry open at left
             blanche "S'il te plaaaîîîîîîît !"
             show blanche cry close at left
@@ -100,7 +100,7 @@
     show blanche surprised close at left
     violet "J'ai besoin que tu me cueilles une mûre spéciale ! Elle est quelque part dans le jardin. J'en ai besoin pour écrire des lettres."
     show blanche surprised open at left
-    blanche "Mais, comment je vais la trouver ?!"
+    blanche "Mais comment je vais la trouver ?!"
     show blanche surprised close at left
     violet "C'est une mûre qui brille de mille feux, tu ne vas pas la rater."
     hide blanche
@@ -111,12 +111,12 @@
     show violet at right
     show blanche smile close at left
     with dissolve
-    violet "C'est bien ça ! Bravo, tu as trouvé la mûre que je voulais !"
+    violet "C'est bien ça ! Félicitations, tu as trouvé la mûre que je voulais !"
     violet "Il faudra que tu me rendes la boule avant minuit ! Sinon, plus de violet…"
     show blanche neutral open at left
-    blanche "Plus de mûre, plus de manger pour toi ! Et Madame Arc-en-Ciel, pas contente !"
+    blanche "Plus de mûre, plus de manger pour toi… et Madame Arc-en-Ciel, pas contente !"
     show blanche neutral close at left
-    violet "Affirmatif !"
+    violet "En effet !"
     violet "Tiens, voilà la boule !"
     # TODO : <anime boule + Noir gagne une couleur>
     show blanche smile open at left
