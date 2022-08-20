@@ -16,7 +16,7 @@ translate english chap1_23cbf469:
 translate english chap1_dd7bcb82:
 
     # "Un chat vient de me griffer au moment où j'allais cueillir une fleur."
-    "A cat scratched me as I was about to pick one."
+    "A cat scratched me as I was about to pick a flower."
 
 # game/chap/chap1.rpy:18
 translate english chap1_122facfe:
@@ -192,11 +192,6 @@ translate english chap1_cea8b2b5:
     # "Je lui fais les yeux du chat potté."
     "I mimic Puss in Boots' eyes."
 
-# game/chap/chap1.rpy:71
-translate english chap1_55e4756c:
-
-    # violet "Oh nooooooooooon pas ces yeeeuuxxx. Ils sont terribles."
-    violet "Oh nooooooooooo, not these eyes. They are too powerful."
 
 # game/chap/chap1.rpy:73
 translate english chap1_b7b859bf:
@@ -226,7 +221,7 @@ translate english chap1_83276d5a:
 translate english chap1_13bd8b82:
 
     # "Je commence à pleurer."
-    "I start crying"
+    "I start crying."
 
 # game/chap/chap1.rpy:86
 translate english chap1_a093f653:
@@ -310,7 +305,7 @@ translate english chap1_fd3fcb4a:
 translate english onclick_mulberry_background_6d1ecaf7:
 
     # violet "Alors tu as trouvé ?"
-    violet "Have you find it?"
+    violet "Have you found it?"
 
 # game/chap/chap1.rpy:205
 translate english onclick_mulberry_background_dd72e6e7:
@@ -484,7 +479,7 @@ translate english chap1_4a84607d:
 translate english chap1_216968c0:
 
     # "Les gardes parcourent le jardin des violettes. Ayant perdu Blanche de vue, ils disparaissent par le petit chemin du fond."
-    "The guards rushes through the Garden of Violets. With Blanche out of sight, they vanish in a tiny back alley."
+    "The guards rush through the Garden of Violets. After losing sight of Blanche, they vanish in a tiny back alley."
 
 translate english strings:
 
@@ -507,14 +502,14 @@ translate english strings:
 # game/chap/chap1.rpy:7
 translate english chap1_3ee1c5e0:
 
-    # "Woah ! Tout est violet ! Il y a pleins de fleurs !!!" with vpunch
+    # blanche "Woah ! Tout est violet ! Il y a pleins de fleurs !!!" with vpunch
     blanche "Woah! Everything is purple! So many flowers!!!" with vpunch
 
 # game/chap/chap1.rpy:9
 translate english chap1_7e100132:
 
     # blanche "Je vais en cueillir une pour mon papa."
-    "I will pick one for Daddy."
+    blanche "I will pick one for Daddy."
 
 # game/chap/chap1.rpy:15
 translate english chap1_87bf5d96:
@@ -525,14 +520,14 @@ translate english chap1_87bf5d96:
 # game/chap/chap1.rpy:38
 translate english chap1_d647caa3:
 
-    # violet "En effet. Je suis le gardien de Violet"
-    violet "Indeed. I am the Guardian of Purple"
+    # violet "En effet. Je suis le gardien du Violet."
+    violet "Indeed. I am the Guardian of Purple."
 
 # game/chap/chap1.rpy:43
 translate english chap1_ba173263:
 
-    # violet "Un gardien de Couleurs ? Il y en a que sept et ce sont tous des chats !"
-    violet "A Guardian of Colors, you say? There are only seven of Guardian of Colors, and all of them are cats."
+    # violet "Toi, un Gardien de Couleurs ? Il y en a que sept et ce sont tous des chats !"
+    violet "You, a Guardian of Colors, you say? There are only seven of Guardian of Colors, and all of them are cats."
 
 # game/chap/chap1.rpy:53
 translate english chap1_a7d86947:
@@ -568,7 +563,7 @@ translate english chap1_ae86d047:
 translate english chap1_24e33e87:
 
     # violet "Oh nooooooooooon pas ces yeeeuuxxx. Ils sont trop mignons."
-    violet "Oh nooooooooooo, not these eyes. They are too powerful."
+    violet "Oh nooooooooooo, not these eyes. They are too cute."
 
 # game/chap/chap1.rpy:103
 translate english chap1_298d066c:
@@ -588,17 +583,32 @@ translate english chap1_1881e55c:
     # blanche "Plus de mûre, plus de manger pour toi… et Madame Arc-en-Ciel, pas contente !"
     blanche "No more mulberries, no more food for you, and Lady Rainbow will get angry!"
 
-# game/chap/chap1.rpy:119
-translate english chap1_35b98ec0:
-
-    # violet "En effet !"
-    violet "Indeed!"
 
 # TODO: Translation updated at 2022-08-18 23:50
 
 # game/chap/chap1.rpy:119
 translate english chap1_3b462c0e:
 
-    # violet "En effet !"
+    # violet "Tout à fait !"
+    violet "Exactly!"
+
+# TODO: Translation updated at 2022-08-20 10:43
+
+# game/chap/chap1.rpy:38
+translate english chap1_196ed286:
+
+    # violet "En effet. Je suis le gardien du Violet."
+    violet ""
+
+# game/chap/chap1.rpy:43
+translate english chap1_0fb7d032:
+
+    # violet "Toi, un Gardien de Couleurs ? Il y en a que sept et ce sont tous des chats !"
+    violet ""
+
+# game/chap/chap1.rpy:119
+translate english chap1_cee12c10:
+
+    # violet "Tout à fait !"
     violet ""
 

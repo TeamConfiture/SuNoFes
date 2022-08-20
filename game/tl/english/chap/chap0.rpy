@@ -114,7 +114,7 @@ translate english strings:
 translate english start_6e79fe01:
 
     # "Il était une fois, dans un royaume lointain nommé Couleurs, sept boules de cristal."
-    "Once upon a time, in a faraway land, lies a kingdom named Colors, where seven Crystal Balls existed."
+    "Once upon a time, in a faraway land, lied a kingdom named Colors, where seven Crystal Balls existed."
 
 # game/chap/chap0.rpy:23
 translate english start_7a4e3e6b:

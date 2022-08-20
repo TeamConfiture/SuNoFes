@@ -26,7 +26,7 @@
 
     # game/screens.rpy:789
     old "Directrice, UI Designer et Développeuse"
-    new "Director, UI Designer et Developer"
+    new "Director, UI Designer and Developer"
 
     # game/screens.rpy:816
     old "Développeur"
@@ -42,7 +42,7 @@
 
     # game/screens.rpy:577
     old "Volume du jeu"
-    new "Game sound volume"
+    new "Game volume"
 
     # game/screens.rpy:582
     old "Musique"
@@ -158,11 +158,11 @@ translate english strings:
 
     # game/screens.rpy:786
     old "Développeuse et artiste des sprites"
-    new "Developer et sprite artist"
+    new "Developer and sprite artist"
 
     # game/screens.rpy:795
     old "Développeur et scénariste"
-    new "Developer et scenarist"
+    new "Developer and scenarist"
 
     # game/screens.rpy:880
     old "Historique"

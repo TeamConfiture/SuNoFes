@@ -23,7 +23,7 @@ label chap2:
             indigo "Ma foi, comme tu es ici, il est de mon devoir de t'expliquer tout ce qu'il y a à savoir sur ce lieu. "
         "Se confondre platement en excuses":
             show blanche pout open at left
-            blanche "Non mais j'ai cru que c'était des petits sapins, je pensais en ramener un pour Noël…"
+            blanche "Non mais j'ai cru que c'étaient des petits sapins, je pensais en ramener un pour Noël…"
             show blanche pout close at left
             indigo "Tu pourrais éviter de me prendre pour une courge, s'il te plaît ?"
             indigo "Ce lieu est connu pour son lac incontournable. Tous les voyageurs qui me rendent visite sont là pour admirer cette vue sublime. Il est donc proscrit de prendre quoi que ce soit de ce paysage."
@@ -50,7 +50,7 @@ label chap2:
     show blanche surprised open at left
     blanche "Pardon ! Je ne voulais pas vous froisser ! Mais…"
     show blanche cry open at left
-    blanche "Il me faut absolument cette boule. Il en va de la vie de mon père ! Je veux lui montrer à quoi ressemble les couleurs de l'Arc-en-Ciel !"
+    blanche "Il me faut absolument cette boule. Il en va de la vie de mon père ! Je veux lui montrer à quoi ressemblent les couleurs de l'Arc-en-Ciel !"
     show blanche cry close at left
     indigo "Bien qu'elle ne me soit d'aucune utilité et que ton intention soit louable, je ne peux faire d'écart au serment que j'ai prêté à Madame Arc-En-Ciel le jour où elle m'a confié ce poste de gardiennage."
     show blanche cry open at left
@@ -105,5 +105,5 @@ label chap2:
     grosso "On nous a signalé un vol de boule, on vient voir ce qu’il en est."
     maigrichon "Eh, mais elle est passée où ta boule à toi ? T’es vraiment pas doué… L’enfant est parti par où ?"
     grosso "Je vois ses traces de pas, allons-y !"
-    maigrichon "Et toi, Indigo, pour l’amour de Mme Arc-En-Ciel, tiens-toi à carreau, ça suffit les bêtises."
+    maigrichon "Et toi, Indigo, pour l’amour de Madame Arc-En-Ciel, tiens-toi à carreau, ça suffit les bêtises."
 

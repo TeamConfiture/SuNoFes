@@ -28,3 +28,11 @@
     old "Les deux"
     new "Both"
 
+# TODO: Translation updated at 2022-08-20 10:43
+
+translate english strings:
+
+    # game/characters.rpy:36
+    old "Arc-En-Ciel"
+    new ""
+
