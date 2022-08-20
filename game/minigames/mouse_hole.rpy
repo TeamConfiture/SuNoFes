@@ -29,7 +29,7 @@ init python:
             self.base_image = renpy.displayable(base_image)
             self.alpha_image = filter_image and renpy.displayable(filter_image)
             # Used to get mouse center, we use pygame to preshot the actual position
-            self.cursor_pos = pygame.mouse.get_pos()
+            self.cursor_pos = (0, 0)
             # Final rendered image
             self.filtered_image = None
             self.redraw_filtered_image = True
@@ -39,23 +39,15 @@ init python:
         def render(self, width, height, st, at):
             render = renpy.Render(width,height)
             if self.redraw_filtered_image:
-                # Normalize position, for some reason the pos we receive uses the physical location
-                # instead of the projected location on the virtual render area
-                physical_render_size = renpy.get_physical_size()
-                light_pos = (
-                    self.cursor_pos[0] / physical_render_size[0] * config.screen_width,
-                    self.cursor_pos[1] / physical_render_size[1] * config.screen_height,
-                )
                 # If an alpha image was provided, track the mouse with it before applying to background
                 # If no alpha image was provided, track the mouse with the base image instead
                 if self.alpha_image:
                     lamp_size = self.alpha_image.render(width, height, st, at).get_size()
-                    night_alpha = Transform(self.alpha_image, xoffset = light_pos[0]-lamp_size[0]/2, yoffset = light_pos[1]-lamp_size[1]/2)
+                    night_alpha = Transform(self.alpha_image, xoffset = self.cursor_pos[0]-lamp_size[0]/2, yoffset = self.cursor_pos[1]-lamp_size[1]/2)
                     self.filtered_image = AlphaMask(self.base_image, night_alpha)
                 else:
-                    print ("Alternative")
                     bg_size = self.base_image.render(width, height, st, at).get_size()
-                    self.blit_pos = (light_pos[0]-bg_size[0]/2, light_pos[1]-bg_size[1]/2)
+                    self.blit_pos = (self.cursor_pos[0]-bg_size[0]/2, self.cursor_pos[1]-bg_size[1]/2)
                     self.filtered_image = Transform(self.base_image)
                 self.redraw_filtered_image = False
             render.blit(self.filtered_image.render(width, height, st, at), self.blit_pos)
@@ -64,11 +56,10 @@ init python:
 
         # Listen for mouve move events
         def event(self, ev, x, y, st):
-            if ev.type == 1024: # cursor move event
-                if ev.pos != self.cursor_pos:
-                    self.cursor_pos = ev.pos
-                    self.redraw_filtered_image = True
-                    renpy.redraw(self, 0)
+            if self.cursor_pos[0] != x or self.cursor_pos[1] != y:
+                self.cursor_pos = (x, y)
+                self.redraw_filtered_image = True
+                renpy.redraw(self, 0)
 
         # Un visiteur ! Venu d'ailleurs !
         # Ooooooooohhhhhhhh
