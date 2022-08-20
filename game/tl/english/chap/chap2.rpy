@@ -60,17 +60,11 @@ translate english chap2_23dfe8d4:
     # indigo "Ma foi, comme tu es ici, il est de mon devoir de t'expliquer tout ce qu'il y a à savoir sur ce lieu. "
     indigo "My, my, since you are here, it is my duty to enlighten you about all and everything regarding this place."
 
-# game/chap/chap2.rpy:26
-translate english chap2_0f2c3201:
-
-    # blanche "Non mais j'ai cru que c'étaient des petits sapins, je pensais en ramener un pour Noël…"
-    blanche "Hey, I just thought they were tiny firs, maybe I can carry one back home for Christmas… "
-
 # game/chap/chap2.rpy:28
 translate english chap2_e3880251:
 
     # indigo "Tu pourrais éviter de me prendre pour une courge, s'il te plaît ?"
-    indigo "Can you not "
+    indigo "Could you not take me for a fool, my little friend?"
 
 # game/chap/chap2.rpy:29
 translate english chap2_84e73b0a:
@@ -268,7 +262,7 @@ translate english chap2_d5ad3e6c:
 translate english chap2_7d32411b:
 
     # maigrichon "Et toi, Indigo, pour l’amour de Madame Arc-En-Ciel, tiens-toi à carreau, ça suffit les bêtises."
-    maigrichon "You, Indigo, for the love of Lady Rainbow, get yourself together, no more messing around"
+    maigrichon "You, Indigo, for the love of Lady Rainbow, get yourself together, no more messing around."
 
 translate english strings:
 
@@ -298,17 +292,17 @@ translate english strings:
 translate english chap2_034b5ba1:
 
     # blanche "Non mais j'ai cru que c'étaient des petits sapins, je pensais en ramener un pour Noël…"
-    blanche ""
+    blanche "Hey, I just thought they were tiny firs, maybe I can carry one back home for Christmas… "
 
 # game/chap/chap2.rpy:53
 translate english chap2_03e88170:
 
     # blanche "Il me faut absolument cette boule. Il en va de la vie de mon père ! Je veux lui montrer à quoi ressemblent les couleurs de l'Arc-en-Ciel !"
-    blanche ""
+    blanche "I need this ball. My father's life is at stake! I must show him the colors of the Rainbow!"
 
 # game/chap/chap2.rpy:108
 translate english chap2_b8016921:
 
     # maigrichon "Et toi, Indigo, pour l’amour de Madame Arc-En-Ciel, tiens-toi à carreau, ça suffit les bêtises."
-    maigrichon ""
+    maigrichon "You, Indigo, for the love of Lady Rainbow, get yourself together, no more messing around."
 

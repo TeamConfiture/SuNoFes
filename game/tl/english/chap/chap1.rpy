@@ -88,19 +88,14 @@ translate english chap1_6933cfcf:
 translate english chap1_a59a3cd9:
 
     # blanche "Tu es un gardien de Couleurs ?"
-    blanche "You are a Guardian of the Colors?" with vpunch
+    blanche "You are a guardian of the Colors?" with vpunch
 
-# game/chap/chap1.rpy:39
-translate english chap1_d41636cf:
-
-    # violet "Affirmatif. Je suis le gardien de Violet"
-    violet "Affirmative. I am the Guardian of Purple"
 
 # game/chap/chap1.rpy:41
 translate english chap1_399a1a58:
 
     # blanche "Trop bien ! Moi aussi ! Je suis le gardien de [player_name] !"
-    blanche "Awesome! Me too! I am the Guardian of [player_name]!"
+    blanche "Awesome! Me too! I am the guardian of [player_name]!"
 
 # game/chap/chap1.rpy:43
 translate english chap1_64c8a96c:
@@ -112,19 +107,19 @@ translate english chap1_64c8a96c:
 translate english chap1_b366f191:
 
     # violet "Un gardien de Couleurs, il y en a que sept ! Et ce ne sont que des chats !"
-    violet "There are only seven of Guardian of Colors, and all of them are cats."
+    violet "There are only seven of guardian of Colors, and all of them are cats."
 
 # game/chap/chap1.rpy:45
 translate english chap1_1ba18ebf:
 
     # violet "Tu ne peux pas être un gardien, c'est impossible !"
-    violet "You cannot be a Guardian. It is impossible!"
+    violet "You cannot be a guardian. It is impossible!"
 
 # game/chap/chap1.rpy:47
 translate english chap1_e80bb007:
 
     # blanche "Oh, vraiment ? C'est dommage. Je voulais aussi être gardien…"
-    blanche "Oh, really? What a shame. I wanted to be a Guardian too…"
+    blanche "Oh, really? What a shame. I wanted to be a guardian too…"
 
 # game/chap/chap1.rpy:49
 translate english chap1_03f2efdd:
@@ -359,7 +354,7 @@ translate english chap1_ab02b979:
 translate english chap1_cced1866:
 
     # violet "Erf… Petit enfant, fais attention. C'est dangereux ce que tu fais. Si Madame Arc-en-Ciel l'apprend, c'en est fini de toi… Et pour nous les gardiens aussi…"
-    violet "Erf… My little dear, please be careful. What you are attempting is very dangereous. If Lady Rainbow finds out, you are finished… And so are we, the Guardians…"
+    violet "Erf… My little dear, please be careful. What you are attempting is very dangereous. If Lady Rainbow finds out, you are finished… And so are we, the guardians…"
 
 # game/chap/chap1.rpy:131
 translate english chap1_fde1ecc7:
@@ -517,18 +512,6 @@ translate english chap1_87bf5d96:
     # "Un chat vient de me griffer au moment où j'allais cueillir une fleur."
     "A cat scratched me as I was about to pick one."
 
-# game/chap/chap1.rpy:38
-translate english chap1_d647caa3:
-
-    # violet "En effet. Je suis le gardien du Violet."
-    violet "Indeed. I am the Guardian of Purple."
-
-# game/chap/chap1.rpy:43
-translate english chap1_ba173263:
-
-    # violet "Toi, un Gardien de Couleurs ? Il y en a que sept et ce sont tous des chats !"
-    violet "You, a Guardian of Colors, you say? There are only seven of Guardian of Colors, and all of them are cats."
-
 # game/chap/chap1.rpy:53
 translate english chap1_a7d86947:
 
@@ -584,31 +567,24 @@ translate english chap1_1881e55c:
     blanche "No more mulberries, no more food for you, and Lady Rainbow will get angry!"
 
 
-# TODO: Translation updated at 2022-08-18 23:50
-
-# game/chap/chap1.rpy:119
-translate english chap1_3b462c0e:
-
-    # violet "Tout à fait !"
-    violet "Exactly!"
-
-# TODO: Translation updated at 2022-08-20 10:43
-
 # game/chap/chap1.rpy:38
 translate english chap1_196ed286:
 
     # violet "En effet. Je suis le gardien du Violet."
-    violet ""
+    violet "Indeed. I am the guardian of Purple."
 
-# game/chap/chap1.rpy:43
-translate english chap1_0fb7d032:
-
-    # violet "Toi, un Gardien de Couleurs ? Il y en a que sept et ce sont tous des chats !"
-    violet ""
 
 # game/chap/chap1.rpy:119
 translate english chap1_cee12c10:
 
     # violet "Tout à fait !"
-    violet ""
+    violet "Exactly!"
+
+# TODO: Translation updated at 2022-08-20 10:53
+
+# game/chap/chap1.rpy:43
+translate english chap1_cdc6c448:
+
+    # violet "Toi, un gardien de Couleurs ? Il y en a que sept et ce sont tous des chats !"
+    violet "You, a guardian of Colors? There are only seven of them, and they are all cats!"
 
