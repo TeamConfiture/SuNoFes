@@ -64,17 +64,17 @@ init python:
             self.start_pos = start_pos
             self.end_pos = end_pos
             self.rope_displayable = rope and renpy.displayable(rope)
-            if self.rope_displayable is not None:
+            if self.rope_displayable:
                 self.rope_displayable_size = self.rope_displayable.render(0, 0, 0, 0).get_size()
             else:
                 self.rope_displayable_size = (0, 0)
             self.start_displayable = start_token and renpy.displayable(start_token)
-            if self.start_displayable is not None:
+            if self.start_displayable:
                 self.start_displayable_size = self.start_displayable.render(0, 0, 0, 0).get_size()
             else:
                 self.start_displayable_size = (0, 0)
             self.end_displayable = end_token and renpy.displayable(end_token)
-            if self.end_displayable is not None:
+            if self.end_displayable:
                 self.end_displayable_size = self.end_displayable.render(0, 0, 0, 0).get_size()
             else:
                 self.end_displayable_size = (0, 0)
@@ -129,7 +129,7 @@ init python:
                 renpy.redraw(self, 0)
 
         def render(self, width, height, st, at):
-            if self.is_render_up_to_date == False:
+            if not self.is_render_up_to_date:
                 self.update_render()
                 self.is_render_up_to_date = True
             render = renpy.Render(width,height)
@@ -187,30 +187,30 @@ init python:
     #
     # ```rpy
     # add CardMatcher(
-    #    anchor_definitions = {
-    #        1: {"group": 1, "xpos": 300, "ypos": 0},
-    #        4: {"group": 1, "xpos": 800, "ypos": 400},
-    #        5: {"group": 1, "xpos": 500, "ypos": 400},
-    #        6: {"group": 1, "xpos": 600, "ypos": 0},
-    #        2: {"group": 2, "xpos": 1500, "ypos": 900},
-    #        3: {"group": 2, "xpos": 400, "ypos": 200},
-    #        7: {"group": 2, "xpos": 300, "ypos": 200},
-    #        8: {"group": 2, "xpos": 500, "ypos": 200},
-    #    },
-    #    anchor_rules = [(1,2), (4,3), (5, 7), (6, 8)],
-    #    auto_base_button = "images/sprites/buzzer_%s.png",
-    #    linked_base_button = Null(),
-    #    rope_collection = [
-    #        {"rope": "images/sprites/line_pull.png", "start_token": "images/sprites/buzzer_disabled.png", "end_token": "images/sprites/buzzer_disabled.png"},
-    #        {"rope": "images/sprites/line_pull.png", "start_token": "images/sprites/buzzer_disabled.png"},
-    #        ],
-    #    rule_groups = {
-    #        1: { "is_receiver": False },
-    #        2: { "is_emitter": False },
-    #    },
-    #    rope_transforms = {1: 0},
-    #    rope_pull_list = [1],
-    #    completion_actions = [Jump("chap1")]
+    #     anchor_definitions = {
+    #         1: {"group": 1, "xpos": 300, "ypos": 0},
+    #         4: {"group": 1, "xpos": 800, "ypos": 400},
+    #         5: {"group": 1, "xpos": 500, "ypos": 400},
+    #         6: {"group": 1, "xpos": 600, "ypos": 0},
+    #         2: {"group": 2, "xpos": 1500, "ypos": 900},
+    #         3: {"group": 2, "xpos": 400, "ypos": 200},
+    #         7: {"group": 2, "xpos": 300, "ypos": 200},
+    #         8: {"group": 2, "xpos": 500, "ypos": 200},
+    #     },
+    #     anchor_rules = [(1,2), (4,3), (5, 7), (6, 8)],
+    #     auto_base_button = "images/sprites/buzzer_%s.png",
+    #     linked_base_button = Null(),
+    #     rope_collection = [
+    #         {"rope": "images/sprites/line_pull.png", "start_token": "images/sprites/buzzer_disabled.png", "end_token": "images/sprites/buzzer_disabled.png"},
+    #         {"rope": "images/sprites/line_pull.png", "start_token": "images/sprites/buzzer_disabled.png"},
+    #         ],
+    #     rule_groups = {
+    #         1: { "is_receiver": False },
+    #         2: { "is_emitter": False },
+    #     },
+    #     rope_transforms = {1: 0},
+    #     rope_pull_list = [1],
+    #     completion_actions = [Jump("chap1")]
     # )
     # ```
     class CardMatcher(renpy.Displayable):
@@ -267,14 +267,13 @@ init python:
         # Returns a dict of default values to use for an anchor of a specific group
         # If group_label is None, no group-specific default is injected
         def get_group_defaults(self, group_label):
-            if self.base_group_rules.get(group_label) is None:
-                return self.base_defaults
-            else:
+            defaults = self.base_defaults
+            if self.base_group_rules.get(group_label):
                 defaults = self.base_defaults.copy()
                 group_defaults = self.base_group_rules[group_label]
                 for k in group_defaults:
                     defaults[k] = group_defaults[k]
-                return defaults
+            return defaults
 
         def render(self, width, height, st, at):
             render = renpy.Render(width,height)
@@ -289,7 +288,7 @@ init python:
             self.update_cursor_rope()
             for rope in self.static_ropes:
                 render.blit(rope.render(width, height, st, at), (0, 0))
-            if self.mouse_rope is not None:
+            if self.mouse_rope:
                 render.blit(self.mouse_rope.render(width, height, st, at), (0, 0))
 
             self.first_render = False
@@ -305,7 +304,7 @@ init python:
             return (
                 (
                     (self.dragged_anchor is None and anchor.is_emitter) or
-                    (self.dragged_anchor is not None and anchor.is_receiver and self.dragged_anchor != anchor.name)
+                    (self.dragged_anchor is not None and self.dragged_anchor != anchor.name and anchor.is_receiver)
                 ) and anchor.state != 3
             )
 
@@ -320,7 +319,7 @@ init python:
         # Update the informations of the rope dragged by the user
         def update_cursor_rope(self):
             if self.dragged_anchor is not None:
-                if self.mouse_rope is None:
+                if not self.mouse_rope:
                     if self.rope_pull_list:
                         self.mouse_rope_index = self.rope_pull_list[renpy.random.randint(0, len(self.rope_pull_list) - 1)]
                     else:
