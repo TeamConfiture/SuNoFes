@@ -171,7 +171,7 @@ init python:
     # Minimal example
     #
     # ```rpy
-    # add CardMatcher(
+    # image matcher = CardMatcher(
     #     anchor_definitions = {
     #         1: {"xpos": 300, "ypos": 0},
     #         2: {"xpos": 1500, "ypos": 900},
@@ -181,12 +181,15 @@ init python:
     #     rope_collection = ["images/sprites/line_pull.png"],
     #     completion_actions = [Jump("chap1")]
     # )
+    #
+    # scene match_scene:
+    #     add 'matcher'
     # ```
     #
     # More fluff
     #
     # ```rpy
-    # add CardMatcher(
+    # image matcher = CardMatcher(
     #     anchor_definitions = {
     #         1: {"group": 1, "xpos": 300, "ypos": 0},
     #         4: {"group": 1, "xpos": 800, "ypos": 400},
@@ -212,6 +215,9 @@ init python:
     #     rope_pull_list = [1],
     #     completion_actions = [Jump("chap1")]
     # )
+    #
+    # scene match_scene:
+    #     add 'matcher'
     # ```
     class CardMatcher(renpy.Displayable):
         def __init__(self, anchor_definitions = {}, anchor_rules = [],
