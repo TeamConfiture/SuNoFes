@@ -35,12 +35,12 @@
     show blanche surprised open at left
     blanche "Tu es un gardien de Couleurs ?!" with vpunch
     show blanche surprised close at left
-    violet "En effet. Je suis le gardien de Violet"
+    violet "En effet. Je suis le gardien du Violet."
     show blanche neutral open at left
     blanche "Trop bien ! Moi aussi ! Je suis le gardien de [player_name] !"
     show blanche neutral close at left
     violet "Non, mais j'hallucine ! C'est que cet enfant se moque de moi, ma parole !"
-    violet "Un gardien de Couleurs ? Il y en a que sept et ce sont tous des chats !"
+    violet "Toi, un gardien de Couleurs ? Il y en a que sept et ce sont tous des chats !"
     violet "Tu ne peux pas être un gardien, c'est impossible !"
     show blanche cry open at left
     blanche "Oh, vraiment ? C'est dommage. Je voulais aussi être gardien…"
@@ -116,7 +116,7 @@
     show blanche neutral open at left
     blanche "Plus de mûre, plus de manger pour toi… et Madame Arc-en-Ciel, pas contente !"
     show blanche neutral close at left
-    violet "En effet !"
+    violet "Tout à fait !"
     violet "Tiens, voilà la boule !"
     # TODO : <anime boule + Noir gagne une couleur>
     show blanche smile open at left
