@@ -15,12 +15,14 @@ init python:
     # # Examples
     #
     # ```rpy
-    # screen make_a_hole():
-    #     add MouseHole(
+    # image mousehole = MouseHole(
     #         base_image = "images/bg/room.png",
     #         filter_image = "images/items/hole_alpha.png",
     #         xsize = 1., ysize=1., xalign=0., yalign=0.
     #         )
+    #
+    # screen make_a_hole():
+    #     add 'mousehole'
     # ````
     class MouseHole(renpy.Displayable):
         def __init__(self, base_image, filter_image = None, **kwargs):
