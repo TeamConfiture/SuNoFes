@@ -61,16 +61,16 @@ init python:
     #
     # ```rpy
     # # This screen will be called
-    # screen spirited():
-    #     add Spirited(
+    # image spirited = Spirited(
     #         sprite_list = ["images/sprites/light1.png", "images/sprites/light2.png"],
     #         xsize = 1., ysize = 1.,
     #         )
+    # screen spirited():
+    #     add 'spirited'
     #```
     # ```rpy
     # # This screen will be shown
-    # screen spirited():
-    #     add SpiritedInstance(
+    # image spirited = Spirited(
     #         instance_name = "forest",
     #         spirited_args = {
     #             "sprite_list": ["images/sprites/small_firefly.png", "images/sprites/big_firefly.png", "images/sprites/medium_firefly.png"],
@@ -80,6 +80,8 @@ init python:
     #             "repulsor_radius": 300,
     #         }, xsize = 1., ysize = 1.,
     #         )
+    # screen spirited():
+    #     add 'spirited'
     # ```
     class Spirited(renpy.Displayable):
         def __init__(self,
@@ -114,10 +116,7 @@ init python:
             # Initialize internal Displayable library with alpha levels
             # All displayables are based on sprite_list images
             self.image_collection = []
-            for i in range(len(self.base_image_list)):
-                displayable = renpy.displayable(self.base_image_list[i])
-                self.image_collection.append([Transform(child = displayable, alpha = j/100) for j in range(0, 101, 10)])
-            self.image_sizes = [renpy.render(d[0], 0, 0, 0, 0).get_size() for d in self.image_collection]
+            self.image_sizes = []
             # Cursor position to compute repulsor attributes
             self.cursor_pos = (0, 0)
             # Handle the graphical part with a sprite manager
@@ -172,8 +171,15 @@ init python:
                 )
             )
 
+        def first_render(self):
+            for i in range(len(self.base_image_list)):
+                displayable = renpy.displayable(self.base_image_list[i])
+                self.image_collection.append([Transform(child = displayable, alpha = j/100) for j in range(0, 101, 10)])
+            self.image_sizes = [renpy.render(d[0], 0, 0, 0, 0).get_size() for d in self.image_collection]
+
         def render(self, width, height, st, at):
             if self.first_render_time is None:
+                self.first_render()
                 # Create the initial sprite
                 # If we create it at init we don't get the initial "pop" effect when using a SpiritedInstance
                 for i in range(self.initial_count):
@@ -238,8 +244,8 @@ init python:
                 speed = sprite.speed * time_diff
                 roll = (math.sin(current_time + sprite.roll_offset) - math.sin(current_time - time_diff + sprite.roll_offset)) * sprite.roll
                 displacement = (
-                    speed * math.cos(sprite.direction) + roll * math.sin(sprite.direction),
-                    - speed * math.sin(sprite.direction) + roll * math.cos(sprite.direction)
+                    -speed * math.sin(sprite.direction) + roll * math.cos(sprite.direction),
+                    speed * math.cos(sprite.direction) + roll * math.sin(sprite.direction)
                     )
                 if self.guideline:
                     calculated_displacement = self.guideline(sprite, time_diff, displacement, repulsor)
@@ -270,35 +276,3 @@ init python:
 
         def visit(self):
             return [ self.manager ]
-
-    spirited_dict = {}
-
-    # A proxy for the Spirited class that reuses any existing instance
-    # This is only usefull if a Spirited effect should last more than a few seconds
-    class SpiritedInstance(renpy.Displayable):
-        def __init__(self,
-                instance_name = None,
-                spirited_args = {},
-                **kwargs,
-                ):
-            super(SpiritedInstance, self).__init__(**kwargs)
-            self.instance_name = instance_name
-            self.instance = None
-            if self.instance_name is not None and spirited_dict.has_key(self.instance_name):
-                self.instance = spirited_dict[self.instance_name]
-            if self.instance is None:
-                self.instance = Spirited(**spirited_args, **kwargs)
-            if self.instance_name is not None:
-                spirited_dict[self.instance_name] = self.instance
-
-        def render(self, width, height, st, at):
-            # Redraw here is required as ren'py does not honor the child's scheduling
-            renpy.redraw(self, 0.05)
-            return self.instance.render(width, height, st, at)
-
-        def event(self, ev, x, y, st):
-            # event must be passed-down manually
-            self.instance.event(ev, x, y, st)
-
-        def visit(self):
-            return [ self.instance ]
