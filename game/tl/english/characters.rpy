@@ -34,5 +34,5 @@ translate english strings:
 
     # game/characters.rpy:36
     old "Arc-En-Ciel"
-    new ""
+    new "Lady Rainbow"
 
