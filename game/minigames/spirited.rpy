@@ -1,6 +1,5 @@
 # @Author Ayowel
 init python:
-    import random
     import time
     import math
 
@@ -120,7 +119,7 @@ init python:
                 self.image_collection.append([Transform(child = displayable, alpha = j/100) for j in range(0, 101, 10)])
             self.image_sizes = [renpy.render(d[0], 0, 0, 0, 0).get_size() for d in self.image_collection]
             # Cursor position to compute repulsor attributes
-            self.cursor_pos = pygame.mouse.get_pos()
+            self.cursor_pos = (0, 0)
             # Handle the graphical part with a sprite manager
             self.manager = SpriteManager()
             # Set of rendered sprites
@@ -137,28 +136,28 @@ init python:
             if self.maximum_pool is not None and self.maximum_pool <= len(self.render_set):
                 return
             # Pick a reference sprite to use
-            rid = random.randint(0, len(self.image_collection)-1)
+            rid = renpy.random.randint(0, len(self.image_collection)-1)
             # Pick a spawn location
             if self.spawn_box:
                 pos = (
-                    random.randint(self.spawn_box[0], config.screen_width + self.spawn_box[2]),
-                    random.randint(self.spawn_box[1], config.screen_height + self.spawn_box[3]),
+                    renpy.random.randint(self.spawn_box[0], config.screen_width + self.spawn_box[2]),
+                    renpy.random.randint(self.spawn_box[1], config.screen_height + self.spawn_box[3]),
                     )
             else:
                 pos = (
-                    random.randint(0, config.screen_width),
-                    random.randint(0, config.screen_height),
+                    renpy.random.randint(0, config.screen_width),
+                    renpy.random.randint(0, config.screen_height),
                 )
             # Instanciate a new transparent sprite
             sprite = self.manager.create(self.image_collection[rid][0])
             sprite.x = pos[0]
             sprite.y = pos[1]
             # Initialize other attribute according to configuration
-            speed = random.randint(self.speed_range[0], self.speed_range[1])
-            direction = random.random() * (self.direction_range[1] - self.direction_range[0]) + self.direction_range[0]
-            roll = random.randint(self.roll_range[0], self.roll_range[1])
-            roll_offset = random.random() * math.pi * 2
-            ttl = random.random() * (self.ttl_range[1] - self.ttl_range[0]) + self.ttl_range[0]
+            speed = renpy.random.randint(self.speed_range[0], self.speed_range[1])
+            direction = renpy.random.random() * (self.direction_range[1] - self.direction_range[0]) + self.direction_range[0]
+            roll = renpy.random.randint(self.roll_range[0], self.roll_range[1])
+            roll_offset = renpy.random.random() * math.pi * 2
+            ttl = renpy.random.random() * (self.ttl_range[1] - self.ttl_range[0]) + self.ttl_range[0]
 
             # Instanciate and add the new sprite
             self.render_set.add(
@@ -184,17 +183,11 @@ init python:
             current_time = time.time()
             time_diff = current_time - self.last_update
             self.last_update = current_time
-            self.accumulated_spawn_odds = self.accumulated_spawn_odds + random.random() * self.renewal_rate * time_diff
+            self.accumulated_spawn_odds = self.accumulated_spawn_odds + renpy.random.random() * self.renewal_rate * time_diff
             while self.accumulated_spawn_odds > 1:
                 self.accumulated_spawn_odds = self.accumulated_spawn_odds - 1
                 self.new_sprite()
 
-            # Recalculate cursor position to project onto virtual render area
-            physical_render_size = renpy.get_physical_size()
-            cursor_pos = (
-                self.cursor_pos[0] / physical_render_size[0] * config.screen_width,
-                self.cursor_pos[1] / physical_render_size[1] * config.screen_height,
-            )
             # What does this loop cost ? everything
             scheduled_deletions = []
             for sprite in self.render_set:
@@ -229,7 +222,7 @@ init python:
                 repulsor = (0, 0)
                 if self.repulsor_strength != 0 and self.repulsor_radius != 0:
                     sprite_center = (sprite.sprite.x + self.image_sizes[sprite.rid][0]/2, sprite.sprite.y + self.image_sizes[sprite.rid][1]/2)
-                    dist_vec = (sprite_center[0]-cursor_pos[0], sprite_center[1]-cursor_pos[1])
+                    dist_vec = (sprite_center[0]-self.cursor_pos[0], sprite_center[1]-self.cursor_pos[1])
                     dist_squared = dist_vec[0] ** 2 + dist_vec[1] ** 2
                     # If within repulsor range, apply force in the direction of the mouse -> sprite cursor
                     # Note that the repulsor's strength evolves proportionnally to the square of the distance as it feels better
@@ -273,9 +266,7 @@ init python:
 
         # Listen for mouve move events
         def event(self, ev, x, y, st):
-            if ev.type == 1024: # cursor move event
-                if ev.pos != self.cursor_pos:
-                    self.cursor_pos = ev.pos
+            self.cursor_pos = (x, y)
 
         def visit(self):
             return [ self.manager ]
