@@ -155,7 +155,7 @@ translate english chap1_9a57724c:
 translate english chap1_f56a4da0:
 
     # violet "Et… Madame Arc-en-Ciel va me gronder…"
-    violet "And… Lady Raindow will scold me…"
+    violet "And… Lady Rainbow will scold me…"
 
 # game/chap/chap1.rpy:62
 translate english chap1_1499c5f1:
@@ -528,7 +528,7 @@ translate english chap1_fec8d0b8:
 translate english chap1_91f4d3e3:
 
     # violet "Et Madame Arc-en-Ciel va me gronder."
-    violet "And… Lady Raindow will scold me…"
+    violet "And… Lady Rainbow will scold me…"
 
 # game/chap/chap1.rpy:63
 translate english chap1_ae86d047:
