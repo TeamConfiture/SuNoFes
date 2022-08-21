@@ -27,7 +27,7 @@ label chap2:
             show blanche pout close at left
             indigo "Tu pourrais éviter de me prendre pour une courge, s'il te plaît ?"
             indigo "Ce lieu est connu pour son lac incontournable. Tous les voyageurs qui me rendent visite sont là pour admirer cette vue sublime. Il est donc proscrit de prendre quoi que ce soit de ce paysage."
-            indigo "En parlant de ça, il est coutume ici de repartir de mon lac en ayant découvert quelque chose alors suis-moi. Regarde ! On peut apercevoir un cygne devant et là, des canards…"
+            indigo "En parlant de ça, il est coutume ici de repartir de mon lac en ayant au moins découvert quelque chose, alors suis-moi. Regarde ! On peut apercevoir un cygne devant et là, des canards… "
         "Admettre son erreur":
             show blanche cry open at left
             blanche "Je suis désolé, je n'avais jamais vu de ronces de ma vie."
