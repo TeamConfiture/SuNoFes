@@ -306,3 +306,53 @@ translate english chap2_b8016921:
     # maigrichon "Et toi, Indigo, pour l’amour de Madame Arc-En-Ciel, tiens-toi à carreau, ça suffit les bêtises."
     maigrichon "You, Indigo, for the love of Lady Rainbow, get yourself together, no more messing around."
 
+# TODO: Translation updated at 2022-08-21 12:49
+
+# game/chap/chap2.rpy:107
+translate english chap2_0107fd82:
+
+    # grosso "Nous sommes à la poursuite d’un enfant ayant volé la boule Violet, tu ne l’aurais pas vu par hasard ?"
+    grosso "We are chasing a child who stole the Violet Ball. Would you happen to have seen them, perhaps?"
+
+# game/chap/chap2.rpy:108
+translate english chap2_9b4217bf:
+
+    # indigo "Les voyageurs ont bien changé… Vous n’êtes donc pas venu ici pour voir le paysage et les constellations ?"
+    indigo "Travelers sure have changed… So I presume you did not come here to see the landscape and the constellations either?"
+
+# game/chap/chap2.rpy:109
+translate english chap2_92641beb:
+
+    # maigrichon "Grosso ! La boule Indigo a disparu de l’autel aussi !"
+    maigrichon "Biggy! The Indigo Ball disappeared from the altar too!"
+
+# game/chap/chap2.rpy:110
+translate english chap2_b23f6d40:
+
+    # indigo "Oh non… J’ai perdu ma boule, comme c’est étrange."
+    indigo "Oh no… I lost the ball, how strange."
+
+# game/chap/chap2.rpy:111
+translate english chap2_1d967f46:
+
+    # "Indigo feint l’ignorance."
+    "Indigo feigns ignorance"
+
+# game/chap/chap2.rpy:112
+translate english chap2_6e7a0450:
+
+    # indigo "Les constellations ont détourné mon attention pendant un instant."
+    indigo "I have been distracted by the constellations for a moment."
+
+# game/chap/chap2.rpy:113
+translate english chap2_0b66754d:
+
+    # maigrichon "T’es vraiment pas doué… L’enfant est parti par où ?"
+    maigrichon "What an airhead… Where did the child go?"
+
+# game/chap/chap2.rpy:114
+translate english chap2_19b30ce1:
+
+    # grosso "Ah ! Ses traces de pas sont là, allons-y !"
+    grosso "Ah! Footprints over there, let's go!"
+
