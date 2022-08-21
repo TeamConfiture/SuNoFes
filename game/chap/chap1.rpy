@@ -5,8 +5,9 @@
     show blanche surprised open at left
     with dissolve 
     blanche "Woah ! Tout est violet ! Il y a pleins de fleurs !!!" with vpunch
-    show blanche smile close at left 
+    show blanche smile open at left 
     blanche "Je vais en cueillir une pour mon papa."
+    show blanche smile close at left 
     show violet at right with dissolve
     x "MIAAOOOUUU !" with vpunch
     show blanche cry open at left 
@@ -152,7 +153,7 @@
     maigrichon "Que ? Quoi ?! Ça ne va pas de crier comme ça ?!!!"
     grosso "Là-bas ! Au vol !"
     maigrichon "Quoi ?! Un enfant ? Avec…"
-    grosso_maigrichon "UNE BOULE DE CRISTAL ???!!!"
+    grosso_maigrichon "UNE BOULE DE CRISTAL ???!!!" with vpunch
     maigrichon "Vite, suivons-le !!!"
     grosso "Et prévenons Madame Arc-en-ciel !"
     hide maigrichon

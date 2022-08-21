@@ -2,6 +2,8 @@
 
 # Déclarez sous cette ligne les positions
 define left = Position(xpos=0.30)
+define farLeft = Position(xpos=0.20)
+define nearLeft = Position(xpos=0.40)
 define center = Position(xpos=0.5)
 define right = Position(xpos=0.70)
 
@@ -33,7 +35,7 @@ image indigo = im.FactorScale("images/chats/indigo.png", catSpriteSize)
 define narrator = Character(None, window_background="gui/textbox_noname.png", window_xsize=1803, window_ysize=388, what_xpos=38, what_ypos=126, what_italic=True)
 define x = Character('???', who_color="#ffffff")
 define blanche = Character('[player_name]', who_color="#ffffff")
-define madame = Character(_('Arc-En-Ciel'), who_color="#ff90ec")
+define madame = Character(_('Arc-En-Ciel'), who_color="#ffffff")
 define grosso = Character(_('Grosso'), who_color="#ffffff")
 define maigrichon = Character(_('Maigrichon'), who_color="#ffffff")
 define noir = Character(_('Père Noir'), who_color="#000000")
