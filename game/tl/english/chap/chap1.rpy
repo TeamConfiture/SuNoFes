@@ -103,12 +103,6 @@ translate english chap1_64c8a96c:
     # violet "Non, mais j'hallucine ! C'est que cet enfant se moque de moi, ma parole !"
     violet "Are you kidding me?! Crivens, this child is clearly mocking me!"
 
-# game/chap/chap1.rpy:44
-translate english chap1_b366f191:
-
-    # violet "Un gardien de Couleurs, il y en a que sept ! Et ce ne sont que des chats !"
-    violet "There are only seven of guardian of Colors, and all of them are cats."
-
 # game/chap/chap1.rpy:45
 translate english chap1_1ba18ebf:
 
