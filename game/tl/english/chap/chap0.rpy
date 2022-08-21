@@ -74,7 +74,7 @@ translate english start_51ea122b:
 translate english start_6b6b620a:
 
     # blanche "D'après la carte, la boule de cristal la plus proche est dans le jardin de violettes !"
-    blanche "The map shows that the closest Crystal Ball lies in the garden of violets!"
+    blanche "The map shows that the closest Crystal Ball lies in the Garden of Violets!"
 
 # game/script.rpy:59
 translate english start_637de622:

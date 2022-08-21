@@ -9,8 +9,8 @@ translate english chap1_076031b0:
 # game/chap/chap1.rpy:14
 translate english chap1_23cbf469:
 
-    # "Aïeeeuuuuhhh"
-    "Ouuuuuuuuuch" with vpunch
+    # blanche "Aïeeeuuuuhhh" with vpunch
+    blanche "Ouuuuuuuuuch" with vpunch
 
 # game/chap/chap1.rpy:16
 translate english chap1_dd7bcb82:
@@ -21,8 +21,8 @@ translate english chap1_dd7bcb82:
 # game/chap/chap1.rpy:18
 translate english chap1_122facfe:
 
-    # "Méchant ! Méchant chat ! Tu m'as fait mal !"
-    "Nasty! Nasty cat! You hurt me!"
+    # blanche "Méchant ! Méchant chat ! Tu m'as fait mal !"
+    blanche "Nasty! Nasty cat! You hurt me!"
 
 # game/chap/chap1.rpy:20
 translate english chap1_5702b632:
@@ -52,7 +52,7 @@ translate english chap1_b9a235cd:
 translate english chap1_d2a28415:
 
     # blanche "Oh ! Il y a de la lavande ici ! Oh ! Il y a des lilas là-bas !"
-    blanche "Oh! Lavenders here! Oh! And lilacs over there!"
+    blanche "Oh! Lavenders here! Oh! There are lilacs over there!"
 
 # game/chap/chap1.rpy:29
 translate english chap1_1b099836:
@@ -76,7 +76,7 @@ translate english chap1_3e75d1bb:
 translate english chap1_b5bc1d71:
 
     # x "Tss, la jeunesse n'a plus aucun respect envers les gardiens de Couleurs. Ça donne des surnoms à tout va, maintenant."
-    x "Tsk, younguns these days have no respect towards the guardians of the Colors. They throw pet names at you now."
+    x "Tsk, younguns these days have no respect towards the guardians of Colors. They throw pet names at you now."
 
 # game/chap/chap1.rpy:35
 translate english chap1_6933cfcf:
@@ -88,7 +88,7 @@ translate english chap1_6933cfcf:
 translate english chap1_a59a3cd9:
 
     # blanche "Tu es un gardien de Couleurs ?"
-    blanche "You are a guardian of the Colors?" with vpunch
+    blanche "You are a guardian of Colors?" with vpunch
 
 
 # game/chap/chap1.rpy:41
@@ -119,7 +119,7 @@ translate english chap1_e80bb007:
 translate english chap1_03f2efdd:
 
     # violet "Eh… Ne pleure pas ! Tu sais, c'est une vraie corvée ce métier. On doit constamment surveiller cette boule en mousse que tu vois là."
-    violet "Hey… Don't cry! You know, this work is quite a chore. We must keep watch on this foam ball right here."
+    violet "Hey… Do not cry! You know, this work is quite a chore. We must keep watch on this foam ball right here."
 
 # game/chap/chap1.rpy:52
 translate english chap1_bf38d49b:
@@ -167,7 +167,7 @@ translate english chap1_1499c5f1:
 translate english chap1_a2c2530e:
 
     # blanche "Mais, je suis venu ici récupérer cette boule de cristal."
-    blanche "But, I came here to get that Crystal Ball."
+    blanche "But I came here to get that Crystal Ball."
 
 # game/chap/chap1.rpy:66
 translate english chap1_c1d3c15a:
@@ -216,7 +216,7 @@ translate english chap1_13bd8b82:
 translate english chap1_a093f653:
 
     # "J'essaye de lui arracher la boule des mains."
-    "I snitch the ball out of its paws."
+    "I snatch the ball from its paws."
 
 # game/chap/chap1.rpy:87
 translate english chap1_a07294a0:
@@ -224,17 +224,11 @@ translate english chap1_a07294a0:
     # violet "MIAAOOOUUU !"
     violet "MEOOOOOOOOW!" with vpunch
 
-# game/chap/chap1.rpy:89
-translate english chap1_5037a8d7:
-
-    # blanche "Aïeeeuuuuhhh"
-    blanche "Ouuuuuuuuchie"
-
 # game/chap/chap1.rpy:91
 translate english chap1_ce88acd6:
 
     # "Mais, Violet me griffe."
-    "But, Violet scratched me."
+    "But Violet scratched me."
 
 # game/chap/chap1.rpy:92
 translate english chap1_4e1941d6:
@@ -447,10 +441,10 @@ translate english chap1_5d673e2b:
     maigrichon "What?! A child? With…"
 
 # game/chap/chap1.rpy:156
-translate english chap1_0577fc21:
+translate english chap1_20f224c9:
 
-    # grosso_maigrichon "UNE BOULE DE CRISTAL ???!!!"
-    grosso_maigrichon "A CRYSTAL BALL???!!!"
+    # grosso_maigrichon "UNE BOULE DE CRISTAL ???!!!" with vpunch
+    grosso_maigrichon "A CRYSTAL BALL???!!!" with vpunch
 
 # game/chap/chap1.rpy:157
 translate english chap1_08d0eca4:
@@ -567,18 +561,20 @@ translate english chap1_196ed286:
     # violet "En effet. Je suis le gardien du Violet."
     violet "Indeed. I am the guardian of Purple."
 
-
 # game/chap/chap1.rpy:119
 translate english chap1_cee12c10:
 
     # violet "Tout à fait !"
     violet "Exactly!"
 
-# TODO: Translation updated at 2022-08-20 10:53
-
 # game/chap/chap1.rpy:43
 translate english chap1_cdc6c448:
 
     # violet "Toi, un gardien de Couleurs ? Il y en a que sept et ce sont tous des chats !"
     violet "You, a guardian of Colors? There are only seven of them, and they are all cats!"
+
+translate english chap1_5037a8d7:
+
+    # blanche "Aïeeeuuuuhhh"
+    blanche "Ouuuuuuuuuch"
 

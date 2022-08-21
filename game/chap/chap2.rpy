@@ -21,7 +21,7 @@ label chap2:
             show blanche pout close at left
             indigo "Ce n'est pas l'impression que tu me donnais quand tu courais il y a 5 minutes…"
             indigo "Ma foi, comme tu es ici, il est de mon devoir de t'expliquer tout ce qu'il y a à savoir sur ce lieu. "
-        "Se confondre platement en excuses":
+        "Chercher une excuse":
             show blanche pout open at left
             blanche "Non mais j'ai cru que c'étaient des petits sapins, je pensais en ramener un pour Noël…"
             show blanche pout close at left
@@ -101,9 +101,11 @@ label chap2:
     # TODO: Apparaît le souvenir de Mme Arc-en-ciel (en mode hologramme)
     madame "Quoi ?! On me vole mes 7 boules de cristal et vous ne faites rien ??! Vous n'êtes qu'une bande d'incapables ! Vous, comme les autres chats gardiens, je vous ai confié une mission et vous n'êtes même pas capables de la tenir !"
     madame "Récupérez mes boules avant minuit sinon vous finirez dans les oubliettes de mon château jusqu'à la fin de vos jours !!!!"
+    show maigrichon at farLeft
+    show grosso at nearLeft
+    show indigo at right
+    with dissolve
     indigo "Messieurs, bien le bonsoir, que me vaut votre visite impromptue à cette heure aussi tardive ?"
-    grosso "On nous a signalé un vol de boule, on vient voir ce qu’il en est."
-
     grosso "Nous sommes à la poursuite d’un enfant ayant volé la boule Violet, tu ne l’aurais pas vu par hasard ?"
     indigo "Les voyageurs ont bien changé… Vous n’êtes donc pas venu ici pour voir le paysage et les constellations ?"
     maigrichon "Grosso ! La boule Indigo a disparu de l’autel aussi !"
@@ -111,6 +113,5 @@ label chap2:
     "Indigo feint l’ignorance."
     indigo "Les constellations ont détourné mon attention pendant un instant."
     maigrichon "T’es vraiment pas doué… L’enfant est parti par où ?"
-    grosso "Ah ! Ses traces de pas sont là, allons-y !"
+    grosso "Ah ! Ses traces de pas sont là, allons-y !" with vpunch
     maigrichon "Et toi, Indigo, pour l’amour de Madame Arc-En-Ciel, tiens-toi à carreau, ça suffit les bêtises."
-
