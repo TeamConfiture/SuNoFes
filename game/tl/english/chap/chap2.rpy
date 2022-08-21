@@ -52,7 +52,7 @@ translate english chap2_e59d851c:
 translate english chap2_858539e0:
 
     # indigo "Ce n'est pas l'impression que tu me donnais quand tu courais il y a 5 minutes…"
-    indigo "It did not seem like it as you were running around just a few minutes ago..."
+    indigo "That was not the impression you were giving off when you ran just a few minutes ago..."
 
 # game/chap/chap2.rpy:23
 translate english chap2_23dfe8d4:
@@ -70,13 +70,12 @@ translate english chap2_e3880251:
 translate english chap2_84e73b0a:
 
     # indigo "Ce lieu est connu pour son lac incontournable. Tous les voyageurs qui me rendent visite sont là pour admirer cette vue sublime. Il est donc proscrit de prendre quoi que ce soit de ce paysage."
-    indigo "This place is notorious for its iconic lake. All travelers who visit me are coming to admire this sublime scenery. It is naturally prohibited to take anything away from this landscape."
-
+    indigo "This place is notorious for its iconic lake. All travelers who visit me come to admire this sublime scenery. It is naturally prohibited to take anything away from this landscape."
 # game/chap/chap2.rpy:30
-translate english chap2_15d59bbc:
+translate english chap2_3abb7623:
 
-    # indigo "En parlant de ça, il est coutume ici de repartir de mon lac en ayant découvert quelque chose alors suis-moi. Regarde ! On peut apercevoir un cygne devant et là, des canards…"
-    indigo "Speaking of which, it is customary to leave this place after having discovered few things, so follow me. Look! A swan right here, and ducks over there… "
+    # indigo "En parlant de ça, il est coutume ici de repartir de mon lac en ayant au moins découvert quelque chose, alors suis-moi. Regarde ! On peut apercevoir un cygne devant et là, des canards… "
+    indigo "Speaking of which, it is customary to leave this place after having at least discovered something, so follow me. Look! A swan right here, and ducks over there… "
 
 # game/chap/chap2.rpy:33
 translate english chap2_449ea698:
@@ -130,7 +129,7 @@ translate english chap2_ac79fab6:
 translate english chap2_1f4dfc89:
 
     # indigo "Mmmmh, et à quoi te servirait-elle cette boule ? Au demeurant, étant le gardien du lac Indigo, je ne peux te laisser outrager notre grande maîtresse Madame Arc-En-Ciel ! Ce n'est pas un simple bleu, mais le plus noble d'entre eux : l'indigo. Pour ce qui est de la boule, je ne peux pas te la céder."
-    indigo "Mmmh… What use can you make out of it? In addition, as the guardian of Lake Indigo, I cannot let you outrage our venerable mistress Lady Rainbow! It is not a mere blue, it is the more noble of them all: Indigo. Regarding this ball, I cannot hand it to you."
+    indigo "Mmmh… What use can you make out of it? In addition, as the guardian of Lake Indigo, I cannot let you outrage our venerable mistress Lady Rainbow! It is not a mere blue, it is the most noble of them all: Indigo. Regarding this ball, I cannot hand it to you."
 
 # game/chap/chap2.rpy:51
 translate english chap2_c3c605be:
@@ -226,7 +225,7 @@ translate english chap2_5bf820df:
 translate english chap2_9ea19181:
 
     # madame "Quoi ?! On me vole mes 7 boules de cristal et vous ne faites rien ??! Vous n'êtes qu'une bande d'incapables ! Vous, comme les autres chats gardiens, je vous ai confié une mission et vous n'êtes même pas capables de la tenir !"
-    madame "What?! Someone is stealing my seven crystal balls and yet you do nothing??! What a bunch of incompetents! You two, and all you guardian cat friends, you had one job but you can't even carry it!"
+    madame "What?! Someone is stealing my seven crystal balls and yet you do nothing??! What a bunch of incompetents! You two, and all the guardian cat friends, you had but one job, and you can't even carry it!"
 
 # game/chap/chap2.rpy:103
 translate english chap2_8df6eb9b:
@@ -342,4 +341,3 @@ translate english strings:
     # game/chap/chap2.rpy:17
     old "Chercher une excuse"
     new "Find an excuse"
-

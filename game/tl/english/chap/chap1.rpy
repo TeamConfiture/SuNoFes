@@ -216,7 +216,7 @@ translate english chap1_13bd8b82:
 translate english chap1_a093f653:
 
     # "J'essaye de lui arracher la boule des mains."
-    "I snatch the ball from its paws."
+    "I try to snatch the ball from its paws."
 
 # game/chap/chap1.rpy:87
 translate english chap1_a07294a0:
