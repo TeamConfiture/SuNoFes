@@ -48,6 +48,25 @@ init python:
             )
             add simon
         ```
+
+        * Add a button in the scene to redo the demo and let the ruleset be automatically generated
+
+        ```rpy
+        screen simon():
+            default simon = SimonGame(
+                buttons = [
+                    {"auto": "images/sprites/buzzer_%s.png", "xpos": 100},
+                    {"auto": "images/sprites/buzzer_%s.png", "xpos": 200},
+                    {"auto": "images/sprites/buzzer_%s.png", "xpos": 300},
+                ],
+                completion_action = Jump("label_after_simon"),
+                failure_action = Jump("label_you_noob")
+            )
+            add simon
+            textbutton "Show again":
+                ypos 100
+                action Function(SimonGame.update_simon_demonstration, simon)
+        ```
         """
         # Flag used to know if post_init was called already or not
         is_fully_initialized = False
@@ -70,7 +89,6 @@ init python:
                 **kwargs,
             ):
             super(SimonGame, self).__init__(**kwargs)
-            # TODO: Add optional button to show sequence again
 
             self.base_buttons = buttons
             self.downtime_duration = downtime_duration
@@ -233,7 +251,6 @@ init python:
             Set transform event override to run post_init
             """
             if not self.is_fully_initialized:
-                # TODO: move to per_interact
                 self.is_fully_initialized = True
                 self.post_init()
             return super(SimonGame, self).set_transform_event(event)
