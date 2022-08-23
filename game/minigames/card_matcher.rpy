@@ -2,9 +2,11 @@
 init python:
     import math
 
-    # Helper class for CardMatcher. Its __init__ function's parameters
-    # are valid attributes for CardMatcher::__init__'s anchor_definitions parameter
     class CardMatcherAnchor:
+        """
+        Helper class for CardMatcher. Its __init__ function's parameters
+        are valid attributes for CardMatcher::__init__'s anchor_definitions parameter
+        """
         def __init__(self, name, xpos, ypos, group = None, target_groups = [],
                 idle_button = None, hover_button = None, disabled_button = None, linked_button = None,
                 is_receiver = None, is_emitter = None,
@@ -29,8 +31,10 @@ init python:
             else:
                 self.is_emitter = is_emitter
 
-        # Returns the address of the center of the sprite
         def center(self):
+            """
+            Returns the address of the center of the sprite
+            """
             return (self.pos[0] + self.size[0]/2, self.pos[1] + self.size[1]/2)
 
         def render(self, width, height, st, at):
@@ -43,16 +47,21 @@ init python:
             elif self.state == 3:
                 return self.linked_button.render(width, height, st, at)
 
-    # Helper class for CardMatcher
-    #
-    # # Parameters
-    #
-    # start_pos: Provided by CardMatcher and contains the Rope's starting point
-    # end_pos: Provided by CardMatcher and contains the Rope's ending point
-    # rope: An image-like displayable used to render the rope
-    # start_token: An image-like displayable used as an overlay at the rope's starting point
-    # end_token: An image-like displayable used as an overlay at the rope's ending point
     class CardMatcherRope(renpy.Displayable):
+        """
+        Helper class for CardMatcher
+
+        `start_pos`
+            Provided by CardMatcher and contains the Rope's starting point
+        `end_pos`
+            Provided by CardMatcher and contains the Rope's ending point
+        `rope`
+            An image-like displayable used to render the rope
+        `start_token`
+            An image-like displayable used as an overlay at the rope's starting point
+        `end_token`
+            An image-like displayable used as an overlay at the rope's ending point
+        """
         def __init__(self,
                 start_pos = (0, 0), end_pos = (0, 0), rope = None,
                 start_token = None, end_token = None, **kwargs):
@@ -148,78 +157,91 @@ init python:
                     )
             return render
 
-    # This is an object that allows to create an association game by defining anchor images, ropes to link them, and the permitted associations
-    #
-    # # Parameters
-    #
-    # anchor_definitions: dict of anchor definitions. Valid attributes are those supported by CardMatcherAnchor's init function
-    # anchor_rules: Array of anchor_definitions key pair listing the valid associations
-    # auto_base_button: Defaut file name pattern to use for a button if more specific options are not set. "%s" will be replaced by "idle", "hover", "disabled", or "linked" depending on requirement
-    # idle_base_button: Default displayable to use for buttons that are not interacted with
-    # hover_base_button: Default displayable to use for buttons that are hovered
-    # disabled_base_button: Default displayable to use for buttons that are not active
-    # linked_base_button: Displayable to use for buttons that are linked to another
-    # rope_collection: Array of ropes. They may either be standalone images or valid arguments for CardMatcherRope's init function (with the exception of start_pos and end_pos)
-    # rule_groups: alternative group-specific defaults (groups are part of an anchor's definition)
-    # rope_transforms: Maps a rope_collection index's item to its linked version
-    # rope_pull_list: Lists the rope indexes to use when pulling a rope (if None, all ropes may be used)
-    # binding_callback: unused at this point
-    # completion_actions: Renpy actions to run upon puzzle completion
-    #
-    # # Examples
-    #
-    # Minimal example
-    #
-    # ```rpy
-    # image matcher = CardMatcher(
-    #     anchor_definitions = {
-    #         1: {"xpos": 300, "ypos": 0},
-    #         2: {"xpos": 1500, "ypos": 900},
-    #     },
-    #     anchor_rules = [(1,2)],
-    #     auto_base_button = "images/sprites/buzzer_%s.png",
-    #     rope_collection = ["images/sprites/line_pull.png"],
-    #     completion_actions = [Jump("chap1")]
-    # )
-    #
-    # scene match_scene:
-    #     add 'matcher'
-    # ```
-    #
-    # More fluff
-    #
-    # ```rpy
-    # image matcher = CardMatcher(
-    #     anchor_definitions = {
-    #         1: {"group": 1, "xpos": 300, "ypos": 0},
-    #         4: {"group": 1, "xpos": 800, "ypos": 400},
-    #         5: {"group": 1, "xpos": 500, "ypos": 400},
-    #         6: {"group": 1, "xpos": 600, "ypos": 0},
-    #         2: {"group": 2, "xpos": 1500, "ypos": 900},
-    #         3: {"group": 2, "xpos": 400, "ypos": 200},
-    #         7: {"group": 2, "xpos": 300, "ypos": 200},
-    #         8: {"group": 2, "xpos": 500, "ypos": 200},
-    #     },
-    #     anchor_rules = [(1,2), (4,3), (5, 7), (6, 8)],
-    #     auto_base_button = "images/sprites/buzzer_%s.png",
-    #     linked_base_button = Null(),
-    #     rope_collection = [
-    #         {"rope": "images/sprites/line_pull.png", "start_token": "images/sprites/buzzer_disabled.png", "end_token": "images/sprites/buzzer_disabled.png"},
-    #         {"rope": "images/sprites/line_pull.png", "start_token": "images/sprites/buzzer_disabled.png"},
-    #         ],
-    #     rule_groups = {
-    #         1: { "is_receiver": False },
-    #         2: { "is_emitter": False },
-    #     },
-    #     rope_transforms = {1: 0},
-    #     rope_pull_list = [1],
-    #     completion_actions = [Jump("chap1")]
-    # )
-    #
-    # scene match_scene:
-    #     add 'matcher'
-    # ```
     class CardMatcher(renpy.Displayable):
+        """
+        This is an object that allows to create an association game by defining anchor images, ropes to link them, and the permitted associations
+
+        # Arguments
+
+        `anchor_definitions`
+            Dict of anchor definitions. Valid attributes are those supported by CardMatcherAnchor's init function
+        `anchor_rules`
+            Array of anchor_definitions key pair listing the valid associations
+        `auto_base_button`
+            Defaut file name pattern to use for a button if more specific options are not set. "%s" will be replaced by "idle", "hover", "disabled", or "linked" depending on requirement
+        `idle_base_button`
+            Default displayable to use for buttons that are not interacted with
+        `hover_base_button`
+            Default displayable to use for buttons that are hovered
+        `disabled_base_button`
+            Default displayable to use for buttons that are not active
+        `linked_base_button`
+            Displayable to use for buttons that are linked to another
+        `rope_collection`
+            Array of ropes. They may either be standalone images or valid arguments for CardMatcherRope's init function (with the exception of start_pos and end_pos)
+        `rule_groups`
+            alternative group-specific defaults (groups are part of an anchor's definition)
+        `rope_transforms`
+            Maps a rope_collection index's item to its linked version
+        `rope_pull_list`
+            Lists the rope indexes to use when pulling a rope (if None, all ropes may be used)
+        `binding_callback`
+            unused at this point
+        `completion_actions`
+            Renpy actions to run upon puzzle completion
+
+        # Examples
+
+        Minimal example
+
+        ```rpy
+        screen match_screen():
+            default matcher = CardMatcher(
+                anchor_definitions = {
+                    1: {"xpos": 300, "ypos": 0},
+                    2: {"xpos": 1500, "ypos": 900},
+                },
+                anchor_rules = [(1,2)],
+                auto_base_button = "images/sprites/buzzer_%s.png",
+                rope_collection = ["images/sprites/line_pull.png"],
+                completion_actions = [Jump("chap1")]
+            )
+            add matcher
+        ```
+
+        More fluff
+
+        ```rpy
+        screen match_screen():
+            default matcher = CardMatcher(
+                anchor_definitions = {
+                    1: {"group": 1, "xpos": 300, "ypos": 0},
+                    4: {"group": 1, "xpos": 800, "ypos": 400},
+                    5: {"group": 1, "xpos": 500, "ypos": 400},
+                    6: {"group": 1, "xpos": 600, "ypos": 0},
+                    2: {"group": 2, "xpos": 1500, "ypos": 900},
+                    3: {"group": 2, "xpos": 400, "ypos": 200},
+                    7: {"group": 2, "xpos": 300, "ypos": 200},
+                    8: {"group": 2, "xpos": 500, "ypos": 200},
+                },
+                anchor_rules = [(1,2), (4,3), (5, 7), (6, 8)],
+                auto_base_button = "images/sprites/buzzer_%s.png",
+                linked_base_button = Null(),
+                rope_collection = [
+                    {"rope": "images/sprites/line_pull.png", "start_token": "images/sprites/buzzer_disabled.png", "end_token": "images/sprites/buzzer_disabled.png"},
+                    {"rope": "images/sprites/line_pull.png", "start_token": "images/sprites/buzzer_disabled.png"},
+                    ],
+                rule_groups = {
+                    1: { "is_receiver": False },
+                    2: { "is_emitter": False },
+                },
+                rope_transforms = {1: 0},
+                rope_pull_list = [1],
+                completion_actions = [Jump("chap1")]
+            )
+            add matcher
+        ```
+        """
         def __init__(self, anchor_definitions = {}, anchor_rules = [],
                 auto_base_button = None, idle_base_button = None, hover_base_button = None, disabled_base_button = None, linked_base_button = None,
                 rope_collection = [], rule_groups = {}, rope_transforms = {}, rope_pull_list = None,
@@ -300,13 +322,17 @@ init python:
             self.first_render = False
             return render
 
-        # Returns whether a specific anchor is under the cursor
         def is_cursor_on_anchor(self, anchor):
+            """
+            Returns whether a specific anchor is under the cursor
+            """
             return (anchor.pos[0] <= self.cursor_pos[0] <= anchor.pos[0] + anchor.size[0] and
                     anchor.pos[1] <= self.cursor_pos[1] <= anchor.pos[1] + anchor.size[1])
 
-        # Returns whether a specific anchor should be interractible
         def is_anchor_hoverable(self, anchor):
+            """
+            Returns whether a specific anchor should be interractible
+            """
             return (
                 (
                     (self.dragged_anchor is None and anchor.is_emitter) or
@@ -314,16 +340,20 @@ init python:
                 ) and anchor.state != 3
             )
 
-        # Add a rope to render and keep around
         def add_static_rope(self, start, end, index = 0):
+            """
+            Add a rope to render and keep around
+            """
             self.static_ropes.append(CardMatcherRope(
                 **self.rope_collection[index],
                 start_pos = start,
                 end_pos = end,
                 ))
 
-        # Update the informations of the rope dragged by the user
         def update_cursor_rope(self):
+            """
+            Update the informations of the rope dragged by the user
+            """
             if self.dragged_anchor is not None:
                 if not self.mouse_rope:
                     if self.rope_pull_list:
