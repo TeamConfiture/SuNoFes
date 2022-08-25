@@ -118,7 +118,7 @@ init python:
         image spirited = Spirited(
             sprite_list = ["images/sprites/small_firefly.png", "images/sprites/big_firefly.png", "images/sprites/medium_firefly.png"],
             renewal_rate = 500,
-            direction_range = (1.2, 1.9),
+            direction_range = (70, 110),
             repulsor_strength = 400,
             repulsor_radius = 300,
             )
@@ -134,7 +134,7 @@ init python:
             initial_count = 500,
             renewal_rate = 500,
             speed_range = (10, 150),
-            direction_range = (4.3, 5),
+            direction_range = (250, 290),
             ttl_range = (1, 3),
             spawn_box = (0, -100, 0, -config.screen_height),
             )
@@ -157,7 +157,7 @@ init python:
 
         def __init__(self,
                 sprite_list, renewal_rate = 30, initial_count = 100, minimum_pool = 0, maximum_pool = None,
-                speed_range = (0, 300), direction_range = (0, math.pi*2), roll_range = (0, 40), ttl_range = (1, 10),
+                speed_range = (0, 300), direction_range = (0, 360), roll_range = (0, 40), ttl_range = (1, 10),
                 bounding_box = (-260, -280, 60, 300), spawn_box = (-20, 50, -80, 300),
                 repulsor_strength = 0, repulsor_radius = 0, repulsor_hardness = 0, repulsor_mode = 0,
                 fadein_range = (0.7, 1.5), fadeout_range = (1, 2), guideline = None,
@@ -170,7 +170,7 @@ init python:
             self.renewal_rate = renewal_rate
             self.minimum_pool = minimum_pool
             self.maximum_pool = maximum_pool
-            self.direction_range = direction_range
+            self.direction_range = (math.radians(direction_range[0]), math.radians(direction_range[1]))
             self.speed_range = speed_range
             self.roll_range = roll_range
             self.ttl_range = ttl_range
