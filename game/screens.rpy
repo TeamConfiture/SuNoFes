@@ -11,6 +11,7 @@ style default:
     properties gui.text_properties()
     language gui.language
 
+
 style input:
     properties gui.text_properties("input", accent=True)
     adjust_spacing False
@@ -111,7 +112,7 @@ screen say(who, what):
     if not renpy.variant("small"):
         add SideImage() xalign 0.0 yalign 1.0
     use quick_menu
-    
+
 ## Rendre la boîte du nom personnalisable à travers l'objet Character.
 init python:
     config.character_id_prefixes.append('namebox')
@@ -232,6 +233,7 @@ screen choice(items):
             textbutton i.caption action i.action
 
 
+
 style choice_vbox is vbox
 style choice_vbox:
     xalign 0.5
@@ -307,23 +309,22 @@ screen navigation():
         yalign 0.9
 
         if main_menu:
-            textbutton _("Nouvelle partie") action Start()
+            textbutton _("Nouvelle partie") action Start() activate_sound audio.StartButton hover_sound renpy.random.choice(audio.HoverButton)
 
         else:
-            textbutton _("Retour") action Return()
+            textbutton _("Retour") action Return() activate_sound audio.ClickButton hover_sound renpy.random.choice(audio.HoverButton)
 
-        textbutton _("Charger") action ShowMenu("load")
-        textbutton _("Options") action ShowMenu("preferences")
-        textbutton _("Extra") action ShowMenu("extra")
-        
+        textbutton _("Charger") action ShowMenu("load") activate_sound audio.ClickButton hover_sound renpy.random.choice(audio.HoverButton)
+        textbutton _("Options") action ShowMenu("preferences") activate_sound audio.ClickButton hover_sound renpy.random.choice(audio.HoverButton)
+        textbutton _("Extra") action ShowMenu("extra") activate_sound audio.ClickButton hover_sound renpy.random.choice(audio.HoverButton)
+
         if _in_replay:
             textbutton _("Fin de la rediffusion") action EndReplay(confirm=True)
 
         elif not main_menu:
-            textbutton _("Menu Principal") action MainMenu()
-
+            textbutton _("Menu Principal") action MainMenu() activate_sound audio.ClickButton hover_sound renpy.random.choice(audio.HoverButton)
         if renpy.variant("pc"):
-            textbutton _("Quitter") action Quit(confirm=not main_menu)
+            textbutton _("Quitter") action Quit(confirm=not main_menu) hover_sound renpy.random.choice(audio.HoverButton)
 
 
 style navigation_button is gui_button
@@ -396,7 +397,7 @@ screen game_menu(title,returnFrom, scroll=None, yinitial=0.0):
                 scrollbars "vertical"
                 mousewheel True
                 draggable True
-                pagekeys True 
+                pagekeys True
                 side_yfill True
                 transclude
         elif scroll == "vpgrid":
@@ -432,25 +433,25 @@ screen return(returnFrom):
         if returnFrom == "history" or returnFrom == "game" or returnFrom == "preferences":
             textbutton _("Retour"):
                 style "return_button"
-                action Return()
+                action Return() activate_sound audio.ReturnButton
             textbutton _("Menu"):
                 style "return_button"
-                action ShowMenu('main_menu')
+                action ShowMenu('main_menu') activate_sound audio.ReturnButton
         elif returnFrom == "extra":
             textbutton _("Retour"):
                 style "return_button"
-                action [ShowMenu('main_menu'), musicroom.Stop()]
+                action [ShowMenu('main_menu'), musicroom.Stop()] activate_sound audio.ReturnButton
             textbutton _("Menu"):
                 style "return_button"
-                action [ShowMenu('main_menu'), musicroom.Stop()]
+                action [ShowMenu('main_menu'), musicroom.Stop()] activate_sound audio.ReturnButton
         else:
             textbutton _("Retour"):
                 style "return_button"
-                action ShowMenu(returnFrom)
+                action ShowMenu(returnFrom) activate_sound audio.ReturnButton
             textbutton _("Menu"):
                 style "return_button"
-                action ShowMenu('main_menu')
-                
+                action ShowMenu('main_menu') activate_sound audio.ReturnButton
+
 
 
 style game_menu_outer_frame is empty
@@ -594,7 +595,7 @@ style preferences_radio_button_text:
 
 screen preferences():
     tag menu
-    use game_menu(_("Options"), "preferences"):    
+    use game_menu(_("Options"), "preferences"):
         grid 2 2:
             xspacing 100
             yspacing 50
@@ -952,10 +953,10 @@ screen confirm(message, yes_action, no_action):
 
                 textbutton _("Oui"):
                     style "popup_button"
-                    action yes_action 
+                    action yes_action
                 textbutton _("Non"):
                     style "popup_button"
-                    action no_action 
+                    action no_action
     ## Le clic bouton droit et la touche Echap. correspondent à la réponse
     ## "non".
     key "game_menu" action no_action
