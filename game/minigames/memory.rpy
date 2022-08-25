@@ -165,6 +165,7 @@ init python:
             Else reschedule a redraw to guarantee we will be notified when we want to run it
             """
             if self.scheduled_cleanup:
+                # Timeout for card turning if player made a mistake
                 if self.scheduled_cleanup <= self.st:
                     for i in self.revealed_cards:
                         self.children[i].selected = False
@@ -178,6 +179,7 @@ init python:
                 else:
                     renpy.redraw(self, self.scheduled_cleanup - self.st)
             if self.scheduled_overtime:
+                # Timeout for allowing user to select a card again after hiding cards after a mistake
                 if self.scheduled_overtime <= self.st:
                     self.active = True
                     self.scheduled_overtime = None
