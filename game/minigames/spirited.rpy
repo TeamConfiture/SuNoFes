@@ -151,7 +151,7 @@ init python:
         # Set of rendered sprites
         render_set = set()
         # last render timer
-        last_update = None
+        last_update = 0
         # Accumulator used to know when to spawn a new sprite
         accumulated_spawn_odds = 0
 

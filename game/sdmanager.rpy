@@ -202,6 +202,14 @@ define audio.ArcEnCielAngry = "audio/Characters/ArcEnCiel/.ogg"
 define audio.ArcEnCielHappy = "audio/Characters/ArcEnCiel/.ogg"
 define audio.ArcEnCielCry = "audio/Characters/ArcEnCiel/.ogg"
 
+## Axo
+define audio.Axo_Full_Angry = ["audio/Characters/Axo/Axo_Full_Angry_01.wav"]
+define audio.Axo_Full_Attack = ["audio/Characters/Axo/Axo_Full_Attack_01.wav", "audio/Characters/Axo/Axo_Full_Attack_02.wav"]
+define audio.Axo_Full_Happy = ["audio/Characters/Axo/Axo_Full_Happy_01.wav"]
+define audio.Axo_Full_Question = ["audio/Characters/Axo/Axo_Full_Question_01.wav"]
+define audio.Axo_Partial_Happy = ["audio/Characters/Axo/Axo_Partial_Happy_01.wav"]
+define audio.Axo_Partial_Question = ["audio/Characters/Axo/Axo_Partial_Question_01.wav"]
+
 ## Guards
 define audio.GuardsSpeak = "audio/Characters/Guards/.ogg"
 define audio.GuardsAngry = "audio/Characters/Guards/.ogg"

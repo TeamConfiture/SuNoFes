@@ -10,7 +10,7 @@ label chap3:
     cyan "Nous voici donc dans la forêt Arc-En-Ciel, très connue pour sa rivière, mais surtout pour ses truites."
     cyan "Admirez donc ces magnifiques chênes centenaires, ces hêtres majestueux et ces petits sapins."
     cyan "Tous sont le fruit d'une collaboration entre l'être humain et la nature. Observons maintenant les truites."
-    cameraman "Je suis désolé chaton, mais nous n'avons pas réussi à trouver de truites arc-en-ciel dans la rivière, nous avons seulement quelques truites fario."
+    cameraman "Je suis désolé chaton, mais nous n'avons pas réussi à trouver de truites Arc-En-Ciel dans la rivière, nous avons seulement quelques truites fario."
     cameraman "Un simple amateur de poisson verra la différence. Je coupe la bande vidéo le temps de trouver une solution."
     cyan "Mais c'est horrible, qu'allons-nous dire à nos téléspectateurs ?!"
     cyan "Nous ne pouvons pas les décevoir."
@@ -36,7 +36,7 @@ label chap3:
             blanche "Merci."
 
     cyan "De quoi s'agit-il ?"
-    blanche "Je souhaitais te proposer un marché : je te pêche une truite arc-en-ciel et tu me cèdes ta boule cyan pour une nuit, ça vous va ?"
+    blanche "Je souhaitais te proposer un marché : je te pêche une truite Arc-En-Ciel et tu me cèdes ta boule cyan pour une nuit, ça vous va ?"
     cyan "Pourquoi je devrais te croire ?"
     cyan "En plus, je ne suis pas censé me séparer de ma boule, cela fait partie des clauses de mon contrat et Cyanmois ne faillit à rien !"
     blanche "Je suis un expert de la pêche : mon père m'a appris quand j'étais minaud."
@@ -60,16 +60,16 @@ label chap3:
     cyan "Je te fournis la canne à pêche et je te souhaite bonne chance."
     cyan "J'aimerais reprendre le tournage dans un quart d'heure maximum."
     cyan "Ne traîne pas trop."
+    scene lake_shallow with dissolve
+    call screen chap3_lake_phishing
 
-    # TODO: Afficher le mini-jeu du lac
-    # if all_completed:
-    #     blanche "Voilà ta truite arc-en-ciel, ça faisait longtemps que je n'en avais pas pêché d'aussi grosse."
-    #     cyan "Mais c'est extraordinaire ! Je ne m'attendais pas à présenter une perle rare dans mon émission ! Tu as bien mérité ta récompense, voici la boule cyan. Je compte sur toi pour me la rendre au plus vite car Mme Arc-En-Ciel ne voit pas toujours d'un très bon oeil ce genre d'arrangement."
-    #     blanche "Ne t'inquiète pas, je fais au plus vite, merci encore"
-
+label chap3_2:
+    scene forest with dissolve 
+    blanche "Voilà ta truite Arc-En-Ciel, ça faisait longtemps que je n'en avais pas pêché d'aussi grosse."
+    cyan "Mais c'est extraordinaire ! Je ne m'attendais pas à présenter une perle rare dans mon émission ! Tu as bien mérité ta récompense, voici la boule cyan. Je compte sur toi pour me la rendre au plus vite car Mme Arc-En-Ciel ne voit pas toujours d'un très bon oeil ce genre d'arrangement."
+    blanche "Ne t'inquiète pas, je fais au plus vite, merci encore"
     "Blanche s'en va en courant le longrosso de la rivière."
     "La prise de vue de Cyanmois peut alors reprendre."
-
     cyan "Voyez donc chers téléspectateurs !"
     cyan "Un admirateur exceptionnel de l'émission nous a donné cette truite Arc-En-Ciel fraîchement pêchée dans la rivière."
     cyan "Un véritable exemple…"
