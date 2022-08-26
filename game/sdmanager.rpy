@@ -32,6 +32,8 @@
 # - audio permet de jouer plusieurs sons à la fois ( attention à ne pas en jouer plus d'une dizaine, saturation du son tout ça... )
 # J'indiquerai entre parenthèse le cannal à utiliser lors de l'appel de variable pour faire jouer le son.
 # Ou au mieux je le fais.
+# Du coup, lors de la déclaration d'une variable, lorsque l'on écrit define audio.MonSon, cela veut dire
+# qu'on définit sur le cannal "audio" le fait que mon son va être joué.
 
 ##===============Gérer les volumes par groupes via des mixers============##
 
@@ -127,11 +129,21 @@
 ##    .-.     .-.     .-.     .-.     .-.     .-.     .-.     .-.     .-.
 ##  .'   `._.'   `._.'   `._.'   `._.'   `._.'   `._.'   `._.'   `._.'   `.
 
+##=========================================================================##
+##                       Initialisation de l'audio                         ##
+##=========================================================================##
 
-##define config.default_music_volume = 1     --
-##define config.default_sound_volume = 1        |===> Partie à enlever du commentaire une fois l'audio posé et intégré.
-##define config.default_voice_volume = 1        |
-##define config.default_audio_volume = 1     --
+## Définit les volumes par défaut de l'ensemble des canaux existants :
+
+# define config.default_music_volume = 1
+# define config.default_sound_volume = 1
+# define config.default_voice_volume = 1
+# define config.default_audio_volume = 1
+
+##=========================================================================##
+##                       Gestion du Random list                            ##
+##=========================================================================##
+
 
 
 
@@ -151,8 +163,10 @@
 
 ##===============Sons Menu (Interface/UI)============##
 
-define audio.UI_Hover = "audio/Menu/Hover_01.ogg"
-define audio.UI_Click = "audio/Menu/Click_01.ogg"
+define audio.HoverButton = ["audio/UI/HoverButton_01.ogg","audio/UI/HoverButton_02.ogg","audio/UI/HoverButton_03.ogg","audio/UI/HoverButton_04.ogg"]
+define audio.StartButton = "audio/UI/StartButton.ogg"
+define audio.ClickButton = "audio/UI/ClickButton.ogg"
+define audio.ReturnButton = "audio/UI/ReturnButton.ogg"
 
 ##=============Sons des boules de cristales===============##
 
@@ -190,11 +204,15 @@ define audio.BlancheAngry = "audio/Characters/Blanche/.ogg"
 define audio.BlancheHappy = "audio/Characters/Blanche/.ogg"
 define audio.BlancheCry = "audio/Characters/Blanche/.ogg"
 
-## Noire
-define audio.NoireSpeak = "audio/Characters/Noire/.ogg"
-define audio.NoireAngry = "audio/Characters/Noire/.ogg"
-define audio.NoireHappy = "audio/Characters/Noire/.ogg"
-define audio.NoireCry = "audio/Characters/Noire/.ogg"
+## Noir
+define audio.NoirSpeak = "audio/Characters/Noir/Noir_Reflexion.ogg"
+define audio.NoirAngry = ["audio/Characters/Noire/Noir_Angry_01.ogg","Noir_Angry_02.ogg","Noir_annoying_01.ogg"]
+define audio.NoirHappy = "audio/Characters/Noir/.ogg"
+define audio.NoirCry = "audio/Characters/Noir/.ogg"
+define audio.NoirYes = ["audio/Characters/Noir/Noir_DoubleYes_01.ogg", "audio/Characters/Noir/ShortYes_01.ogg" , "audio/Characters/Noir/Noir_ShortYes_02.ogg","audio/Characters/Noir/NoirShortYes_03.ogg","audio/Characters/Noir/NoirShortYes_04.ogg"]
+define audio.NoirNo = "audio/Characters/Noir/NoirNo_01.ogg"
+define audio.NoirGasp = "audio/Characters/Noir/NoirGaps_01.ogg"
+define audio.NoirExlamation = "audio/Characters/Noir/NoirExclamation_01.ogg"
 
 ## Arc-En-Ciel
 define audio.ArcEnCielSpeak = "audio/Characters/ArcEnCiel/.ogg"
@@ -217,7 +235,7 @@ define audio.GuardsHappy = "audio/Characters/Guards/.ogg"
 define audio.GuardsCry = "audio/Characters/Guards/.ogg"
 
 ## Chicks
-define audio.ChicksSpeak = renpy.random.choice( ("audio/Birds/Chick_1.ogg", "audio/Birds/Chick_2.ogg", "audio/Birds/Chick_3.ogg", "audio/Birds/Chick_4.ogg") )
+define audio.ChicksSpeak = ["audio/Birds/Chick_1.ogg", "audio/Birds/Chick_2.ogg", "audio/Birds/Chick_3.ogg", "audio/Birds/Chick_4.ogg"]
 
 ##=============Sons des chats===============##
 
@@ -240,7 +258,6 @@ define audio.GreenHappy = "audio/Purr/CatPurr_2.ogg"
 define audio.RedSpeak = "audio/Meow/CatMeow_2.ogg"
 define audio.RedAngry = "audio/Hiss/CatHiss_2.ogg"
 define audio.RedHappy = "audio/Purr/CatPurr_5.ogg"
-
 
 
 ##    .-.     .-.     .-.     .-.     .-.     .-.     .-.     .-.     .-.
