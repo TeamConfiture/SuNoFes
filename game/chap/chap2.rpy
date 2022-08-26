@@ -115,3 +115,4 @@ label chap2:
     maigrichon "T’es vraiment pas doué… L’enfant est parti par où ?"
     grosso "Ah ! Ses traces de pas sont là, allons-y !" with vpunch
     maigrichon "Et toi, Indigo, pour l’amour de Madame Arc-En-Ciel, tiens-toi à carreau, ça suffit les bêtises."
+    jump chap3
