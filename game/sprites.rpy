@@ -9,7 +9,16 @@ image garden = "images/bg/garden.png"
 image mulberry = "images/items/mulberry_base.png"
 image mulberry_button = "images/items/mulberry.png"
 
+image star_card = "images/items/star_card.png"
+image star_leo = "images/items/star_leo.png"
+image star_pisces = "images/items/star_pisces.png"
+image star_piscis_austrinus = "images/items/star_piscis_austrinus.png"
+image star_volans = "images/items/star_volans.png"
+
+image boat = "images/items/boat.png"
+
 image crystal_purple = "images/boules/Boules_1.png"
+image crystal_indigo = "images/boules/Boules_2.png"
 
 # CG
 python:

@@ -74,7 +74,7 @@ translate english chap2_84e73b0a:
 # game/chap/chap2.rpy:30
 translate english chap2_3abb7623:
 
-    # indigo "En parlant de ça, il est coutume ici de repartir de mon lac en ayant au moins découvert quelque chose, alors suis-moi. Regarde ! On peut apercevoir un cygne devant et là, des canards… "
+    # indigo "En parlant de ça, il est coutume ici de repartir de mon lac en ayant au moins découvert quelque chose, alors suis-moi. Regarde ! On peut apercevoir un cygne devant et là, des canards…"
     indigo "Speaking of which, it is customary to leave this place after having at least discovered something, so follow me. Look! A swan right here, and ducks over there… "
 
 # game/chap/chap2.rpy:33

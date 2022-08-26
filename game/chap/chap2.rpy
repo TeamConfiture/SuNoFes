@@ -1,6 +1,7 @@
 label chap2:
     call titlepage(2)
     scene star with dissolve 
+    show chap2_spirited
     "Le soleil se couche… Au loin, un chat observe le crépuscule avec attention."
     show indigo at right with dissolve
     indigo "Aaaah… Ces étoiles sont si belles ! Un voyageur m'a autrefois dit que chacun de ces ensembles de points lumineux avaient des noms dans la langue de Molière."
@@ -44,9 +45,11 @@ label chap2:
     "Le chat a l'air renfrogné."
     indigo "Vraiment ? Si tu n'es pas là pour admirer la beauté du paysage, alors que veux-tu exactement ?! Sache que sur mon chemin, nul n'est venu avec un autre objectif !"
     show blanche cry open at left
+    show crystal_indigo at crystal_position with dissolve
     blanche "Ne te… Ne vous fâchez pas, je suis seulement venu récupérer la boule bleue qui est sur l'autel de l'autre côté du lac."
     show blanche cry close at left
     indigo "Mmmmh, et à quoi te servirait-elle cette boule ? Au demeurant, étant le gardien du lac Indigo, je ne peux te laisser outrager notre grande maîtresse Madame Arc-En-Ciel ! Ce n'est pas un simple bleu, mais le plus noble d'entre eux : l'indigo. Pour ce qui est de la boule, je ne peux pas te la céder."
+    hide crystal_indigo at crystal_position with dissolve
     show blanche surprised open at left
     blanche "Pardon ! Je ne voulais pas vous froisser ! Mais…"
     show blanche cry open at left
@@ -76,19 +79,29 @@ label chap2:
     blanche "Je peux t'aider ! Je les connais tous !"
     show blanche smile close at left
     indigo "Vraiment ? Montre moi donc."
-
-    # TODO: Mini-jeu afficher les constellations + les noms /  associer le nom à la bonne constallation
-    # if all_completed:
-    #    indigo "Génial, merci ! Bon, je vais réfléchir ..."
-    #    blanche "S'il vous plaîîîîîîîîîît !"
-    #    indigo "Bon, bon, ok c'est d'accord. Motus et bouche cousue et je veux revoir la boule sur son autel au plus vite. Si les gardes l'apprennent s'en est fini de moi !"
-    #    blanche "Youpi ! Merci beaucoup ! Je vous en serai éternellement reconnaissant !"
+    hide blanche at left
+    hide indigo at right
+    with dissolve
+    call screen match_screen
     # TODO: <illu chat qui fait signe d'adieu et blanche qui tient la boule>
     # TODO: <Noir gagne une couleur>
-    hide blanche
-    hide indigo
+label chap2_completed:
+    scene star with dissolve 
+    show blanche smile close at left
+    show indigo at right
     with dissolve
-    "Un bateau apparaît sur le lac"
+    indigo "Génial, merci ! Bon, je vais réfléchir ..."
+    show blanche cry open at left
+    blanche "S'il vous plaîîîîîîîîîît !"
+    show blanche cry close at left
+    indigo "Bon, bon, ok c'est d'accord. Motus et bouche cousue et je veux revoir la boule sur son autel au plus vite. Si les gardes l'apprennent s'en est fini de moi !"
+    show blanche smile open at left
+    blanche "Youpi ! Merci beaucoup ! Je vous en serai éternellement reconnaissant !"
+    hide blanche smile open at left
+    hide indigo at right
+    show boat at Position(xpos=0.5, ypos=0.7)
+    with dissolve
+    "Un bateau apparaît sur le lac."
     show maigrichon at left
     show grosso at right
     with dissolve
@@ -97,10 +110,11 @@ label chap2:
     grosso "Si tu ne veux pas finir aux oubliettes avec moi, je te conseille de te dépêcher."
     hide maigrichon at left
     hide grosso at right
+    show mme hologramme
     with dissolve
-    # TODO: Apparaît le souvenir de Mme Arc-en-ciel (en mode hologramme)
-    madame "Quoi ?! On me vole mes 7 boules de cristal et vous ne faites rien ??! Vous n'êtes qu'une bande d'incapables ! Vous, comme les autres chats gardiens, je vous ai confié une mission et vous n'êtes même pas capables de la tenir !"
+    madame "Quoi ?! On me vole mes 7 boules de cristal et vous ne faites rien ??! Vous n'êtes qu'une bande d'incapables ! Vous, comme les autres chats gardiens, je vous ai confié une mission et vous n'êtes même pas capables de la tenir !" with vpunch
     madame "Récupérez mes boules avant minuit sinon vous finirez dans les oubliettes de mon château jusqu'à la fin de vos jours !!!!"
+    hide mme hologramme
     show maigrichon at farLeft
     show grosso at nearLeft
     show indigo at right
@@ -116,3 +130,58 @@ label chap2:
     grosso "Ah ! Ses traces de pas sont là, allons-y !" with vpunch
     maigrichon "Et toi, Indigo, pour l’amour de Madame Arc-En-Ciel, tiens-toi à carreau, ça suffit les bêtises."
     jump chap3
+
+image chap2_spirited = Spirited(
+    sprite_list = ["images/sprites/small_firefly.png", "images/sprites/medium_firefly.png"],
+    initial_count = 10,
+    renewal_rate = 30,
+    speed_range = (2, 10),
+    direction_range = (80, 100),
+    ttl_range = (1, 3),
+)
+
+screen match_screen():
+    for i in range(len(stars)):
+        add 'star_card':
+            yalign 0.9
+            xpos (i + 1)/(len(stars) + 1)
+            xanchor 0.5
+        text stars[i]:
+            color '#fff'
+            yalign 0.81
+            xpos (i + 1)/(len(stars) + 1) 
+            xanchor 0.5
+
+    for i in range(len(stars_sprites)):
+        add stars_sprites[i]:
+            yalign 0.1
+            xpos (i + 1)/(len(stars_sprites) + 1)
+            xanchor 0.5
+
+    default matcher = CardMatcher(
+        anchor_definitions = {
+            1: {"group": 1, "xpos": 1920/5-12, "ypos": 370},
+            2: {"group": 1, "xpos": 1920*2/5-12, "ypos": 370},
+            3: {"group": 1, "xpos": 1920*3/5-12, "ypos": 370},
+            4: {"group": 1, "xpos": 1920*4/5-12, "ypos": 370},
+            5: {"group": 2, "xpos": 1920/5-12, "ypos": 660},
+            6: {"group": 2, "xpos": 1920*2/5-12, "ypos": 660},
+            7: {"group": 2, "xpos": 1920*3/5-12, "ypos": 660},
+            8: {"group": 2, "xpos": 1920*4/5-12, "ypos": 660},
+        },
+        anchor_rules = [(1,7), (2,5), (3, 8), (4, 6)],
+        auto_base_button = "images/sprites/buzzer_%s.png",
+        linked_base_button = Null(),
+        rope_collection = [
+            {"rope": "images/sprites/line_pull.png", "start_token": "images/sprites/buzzer_disabled.png", "end_token": "images/sprites/buzzer_disabled.png"},
+            {"rope": "images/sprites/line_pull.png", "start_token": "images/sprites/buzzer_disabled.png"},
+            ],
+        rule_groups = {
+            1: { "is_receiver": False },
+            2: { "is_emitter": False },
+        },
+        rope_transforms = {1: 0},
+        rope_pull_list = [1],
+        completion_actions = [Jump("chap2_completed")]
+    )
+    add matcher
