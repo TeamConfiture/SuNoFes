@@ -52,3 +52,11 @@ translate english strings:
     old "Emeraude"
     new "Emeraude"
 
+# TODO: Translation updated at 2022-08-26 22:54
+
+translate english strings:
+
+    # game/characters.rpy:48
+    old "Picaru"
+    new "Picaru"
+

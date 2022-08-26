@@ -428,3 +428,131 @@ translate english strings:
     old "Lui répondre poliment"
     new "Lui répondre poliment"
 
+# TODO: Translation updated at 2022-08-26 22:54
+
+# game/chap/chap3.rpy:13
+translate english chap3_0a122bbe:
+
+    # cameraman "Je suis désolé chaton, mais nous n'avons pas réussi à trouver de truites Arc-En-Ciel dans la rivière, nous avons seulement quelques truites fario."
+    cameraman "Je suis désolé chaton, mais nous n'avons pas réussi à trouver de truites Arc-En-Ciel dans la rivière, nous avons seulement quelques truites fario."
+
+# game/chap/chap3.rpy:39
+translate english chap3_fcb43ecd:
+
+    # blanche "Je souhaitais te proposer un marché : je te pêche une truite Arc-En-Ciel et tu me cèdes ta boule cyan pour une nuit, ça vous va ?"
+    blanche "Je souhaitais te proposer un marché : je te pêche une truite Arc-En-Ciel et tu me cèdes ta boule cyan pour une nuit, ça vous va ?"
+
+# game/chap/chap3.rpy:68
+translate english chap3_2_34e9209a:
+
+    # blanche "Voilà ta truite Arc-En-Ciel, ça faisait longtemps que je n'en avais pas pêché d'aussi grosse."
+    blanche "Voilà ta truite Arc-En-Ciel, ça faisait longtemps que je n'en avais pas pêché d'aussi grosse."
+
+# game/chap/chap3.rpy:69
+translate english chap3_2_00a7f9b2:
+
+    # cyan "Mais c'est extraordinaire ! Je ne m'attendais pas à présenter une perle rare dans mon émission ! Tu as bien mérité ta récompense, voici la boule cyan. Je compte sur toi pour me la rendre au plus vite car Mme Arc-En-Ciel ne voit pas toujours d'un très bon oeil ce genre d'arrangement."
+    cyan "Mais c'est extraordinaire ! Je ne m'attendais pas à présenter une perle rare dans mon émission ! Tu as bien mérité ta récompense, voici la boule cyan. Je compte sur toi pour me la rendre au plus vite car Mme Arc-En-Ciel ne voit pas toujours d'un très bon oeil ce genre d'arrangement."
+
+# game/chap/chap3.rpy:70
+translate english chap3_2_15f2b2a6:
+
+    # blanche "Ne t'inquiète pas, je fais au plus vite, merci encore"
+    blanche "Ne t'inquiète pas, je fais au plus vite, merci encore"
+
+# game/chap/chap3.rpy:71
+translate english chap3_2_3462b1b4:
+
+    # "Blanche s'en va en courant le longrosso de la rivière."
+    "Blanche s'en va en courant le longrosso de la rivière."
+
+# game/chap/chap3.rpy:72
+translate english chap3_2_485074d3:
+
+    # "La prise de vue de Cyanmois peut alors reprendre."
+    "La prise de vue de Cyanmois peut alors reprendre."
+
+# game/chap/chap3.rpy:73
+translate english chap3_2_771f4f70:
+
+    # cyan "Voyez donc chers téléspectateurs !"
+    cyan "Voyez donc chers téléspectateurs !"
+
+# game/chap/chap3.rpy:74
+translate english chap3_2_e4b7db6d:
+
+    # cyan "Un admirateur exceptionnel de l'émission nous a donné cette truite Arc-En-Ciel fraîchement pêchée dans la rivière."
+    cyan "Un admirateur exceptionnel de l'émission nous a donné cette truite Arc-En-Ciel fraîchement pêchée dans la rivière."
+
+# game/chap/chap3.rpy:75
+translate english chap3_2_3791524a:
+
+    # cyan "Un véritable exemple…"
+    cyan "Un véritable exemple…"
+
+# game/chap/chap3.rpy:76
+translate english chap3_2_d441559b:
+
+    # grosso "Coupe cette caméra, s'il te plaît."
+    grosso "Coupe cette caméra, s'il te plaît."
+
+# game/chap/chap3.rpy:77
+translate english chap3_2_2c961c93:
+
+    # cameraman "Mais…"
+    cameraman "Mais…"
+
+# game/chap/chap3.rpy:78
+translate english chap3_2_03519786:
+
+    # maigrichon "Ne discute pas. On a quelques mots à vous dire à tous les deux."
+    maigrichon "Ne discute pas. On a quelques mots à vous dire à tous les deux."
+
+# game/chap/chap3.rpy:79
+translate english chap3_2_400f779c:
+
+    # cyan "Je suppose que vous venez de nous voir remettre la boule cyan à cet enfant et que vous désapprouvez cette démarche."
+    cyan "Je suppose que vous venez de nous voir remettre la boule cyan à cet enfant et que vous désapprouvez cette démarche."
+
+# game/chap/chap3.rpy:80
+translate english chap3_2_7cfb8e01:
+
+    # cyan "Je ne prendrai même pas la peine de vous expliquer, vous ne comprendriez pas."
+    cyan "Je ne prendrai même pas la peine de vous expliquer, vous ne comprendriez pas."
+
+# game/chap/chap3.rpy:81
+translate english chap3_2_ddc0005b:
+
+    # cyan "Je sais également ce que je risque et j'en suis tout à fait conscient."
+    cyan "Je sais également ce que je risque et j'en suis tout à fait conscient."
+
+# game/chap/chap3.rpy:82
+translate english chap3_2_8628b92a:
+
+    # grosso "Pfff… pathétique."
+    grosso "Pfff… pathétique."
+
+# game/chap/chap3.rpy:83
+translate english chap3_2_254bdc1d:
+
+    # grosso "Dis-nous au moins où il est parti, ça nous facilitera la tâche et ça permettra peut-être d'alléger ta peine."
+    grosso "Dis-nous au moins où il est parti, ça nous facilitera la tâche et ça permettra peut-être d'alléger ta peine."
+
+# game/chap/chap3.rpy:84
+translate english chap3_2_621e5953:
+
+    # cyan "N'y comptez pas."
+    cyan "N'y comptez pas."
+
+# game/chap/chap3.rpy:85
+translate english chap3_2_38e37f93:
+
+    # maigrichon "Je l'ai vu remonter le cours de la rivière de toute façon. Dépêchez-nous !"
+    maigrichon "Je l'ai vu remonter le cours de la rivière de toute façon. Dépêchez-nous !"
+
+# game/chap/chap3.rpy:86
+translate english chap3_2_111227c4:
+
+    # "Grosso et maigrichon partent à sa poursuite à travers les hautes herbes"
+    "Grosso et maigrichon partent à sa poursuite à travers les hautes herbes"
+
