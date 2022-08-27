@@ -87,7 +87,7 @@ label lake_phishing_boot:
         show axolotl at axolotl_position
     $ lake_phishing_fished_boot = True
     cyan "Oh merveilleux ! Je ne voulais pas me mouiller pour aller la récupérer."
-    cyan "Picaru l'avait soutirée à Maigrichon pendant qu'il marchait un peut trop près du bassin pendant une ronde."
+    cyan "Picaru l'avait soutirée à Maigrichon pendant qu'il marchait un peu trop près du bassin pendant une ronde."
     call screen chap3_lake_phishing
 
 label lake_fishing_axolotl:
