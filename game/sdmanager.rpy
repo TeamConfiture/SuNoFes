@@ -35,7 +35,7 @@
 
 define sound.Hover_Button = ["audio/UI/Hover_Button_01.ogg","audio/UI/Hover_Button_02.ogg","audio/UI/Hover_Button_03.ogg","audio/UI/Hover_Button_04.ogg"]
 define sound.Start_Button = ["audio/UI/Start_Button_01.ogg"]
-define sound.Click_Button = ["audio/UI/Click_Button_01.ogg"]
+define sound.Click_Button = ["audio/UI/Click_Button_01.ogg","audio/UI/Click_Button_02.ogg","audio/UI/Click_Button_03.ogg"]
 define sound.Return_Button = ["audio/UI/Return_Button_01.ogg"]
 
 ##=============Sons des boules de cristales===============##
