@@ -25,6 +25,8 @@ image blanche smile open = im.FactorScale("images/blanche/Blanche_smile_open.png
 image blanche surprised close = im.FactorScale("images/blanche/Blanche_surprised_close.png", blancheSpriteSize)
 image blanche surprised open = im.FactorScale("images/blanche/Blanche_surprised_open.png", blancheSpriteSize)
 
+image mme hologramme = im.FactorScale("images/mmeaec/MME_AEC_3_B4.png", blancheSpriteSize)
+
 image grosso = im.FactorScale("images/gardes/grosso.png", guardSpriteSize)
 image maigrichon = im.FactorScale("images/gardes/maigrichon.png", guardSpriteSize)
 

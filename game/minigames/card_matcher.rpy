@@ -249,6 +249,7 @@ init python:
                 **kwargs,
                 ):
             super(CardMatcher, self).__init__(**kwargs)
+            self.anchor_definitions = anchor_definitions
             self.anchor_rules = anchor_rules
             self.base_group_rules = rule_groups
             self.rope_transforms = rope_transforms

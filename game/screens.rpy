@@ -345,11 +345,20 @@ style navigation_button_text:
 ## Utilisé pour afficher le menu principal quand Ren'Py démarre.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
+image spirited = Spirited(
+    sprite_list = ["images/sprites/small_firefly.png", "images/sprites/big_firefly.png", "images/sprites/medium_firefly.png"],
+    initial_count = 30,
+    renewal_rate = 50,
+    speed_range = (10, 150),
+    direction_range = (80, 100),
+    ttl_range = (1, 3),
+)
 
 screen main_menu():
     ## Ceci assure que tout autre screen de menu est remplacé.
     tag menu
     add gui.main_menu_background
+    add 'spirited'
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
     use navigation
