@@ -309,22 +309,22 @@ screen navigation():
         yalign 0.9
 
         if main_menu:
-            textbutton _("Nouvelle partie") action Start() activate_sound audio.StartButton hover_sound renpy.random.choice(audio.HoverButton)
+            textbutton _("Nouvelle partie") action Start() activate_sound renpy.random.choice(sound.Start_Button) hover_sound renpy.random.choice(sound.Hover_Button)
 
         else:
-            textbutton _("Retour") action Return() activate_sound audio.ClickButton hover_sound renpy.random.choice(audio.HoverButton)
+            textbutton _("Retour") action Return() activate_sound renpy.random.choice(sound.Return_Button) hover_sound renpy.random.choice(sound.Hover_Button)
 
-        textbutton _("Charger") action ShowMenu("load") activate_sound audio.ClickButton hover_sound renpy.random.choice(audio.HoverButton)
-        textbutton _("Options") action ShowMenu("preferences") activate_sound audio.ClickButton hover_sound renpy.random.choice(audio.HoverButton)
-        textbutton _("Extra") action ShowMenu("extra") activate_sound audio.ClickButton hover_sound renpy.random.choice(audio.HoverButton)
+        textbutton _("Charger") action ShowMenu("load") activate_sound renpy.random.choice(sound.Click_Button) hover_sound renpy.random.choice(sound.Hover_Button)
+        textbutton _("Options") action ShowMenu("preferences") activate_sound renpy.random.choice(sound.Click_Button) hover_sound renpy.random.choice(sound.Hover_Button)
+        textbutton _("Extra") action ShowMenu("extra") activate_sound renpy.random.choice(sound.Click_Button) hover_sound renpy.random.choice(sound.Hover_Button)
 
         if _in_replay:
             textbutton _("Fin de la rediffusion") action EndReplay(confirm=True)
 
         elif not main_menu:
-            textbutton _("Menu Principal") action MainMenu() activate_sound audio.ClickButton hover_sound renpy.random.choice(audio.HoverButton)
+            textbutton _("Menu Principal") action MainMenu() activate_sound renpy.random.choice(sound.Click_Button) hover_sound renpy.random.choice(sound.Hover_Button)
         if renpy.variant("pc"):
-            textbutton _("Quitter") action Quit(confirm=not main_menu) hover_sound renpy.random.choice(audio.HoverButton)
+            textbutton _("Quitter") action Quit(confirm=not main_menu) hover_sound renpy.random.choice(sound.Hover_Button)
 
 
 style navigation_button is gui_button
@@ -433,24 +433,24 @@ screen return(returnFrom):
         if returnFrom == "history" or returnFrom == "game" or returnFrom == "preferences":
             textbutton _("Retour"):
                 style "return_button"
-                action Return() activate_sound audio.ReturnButton
+                action Return() activate_sound renpy.random.choice(sound.Return_Button)
             textbutton _("Menu"):
                 style "return_button"
-                action ShowMenu('main_menu') activate_sound audio.ReturnButton
+                action ShowMenu('main_menu') activate_sound renpy.random.choice(sound.Return_Button)
         elif returnFrom == "extra":
             textbutton _("Retour"):
                 style "return_button"
-                action [ShowMenu('main_menu'), musicroom.Stop()] activate_sound audio.ReturnButton
+                action [ShowMenu('main_menu'), musicroom.Stop()] activate_sound renpy.random.choice(sound.Return_Button)
             textbutton _("Menu"):
                 style "return_button"
-                action [ShowMenu('main_menu'), musicroom.Stop()] activate_sound audio.ReturnButton
+                action [ShowMenu('main_menu'), musicroom.Stop()] activate_sound renpy.random.choice(sound.Return_Button)
         else:
             textbutton _("Retour"):
                 style "return_button"
-                action ShowMenu(returnFrom) activate_sound audio.ReturnButton
+                action ShowMenu(returnFrom) activate_sound renpy.random.choice(sound.Return_Button)
             textbutton _("Menu"):
                 style "return_button"
-                action ShowMenu('main_menu') activate_sound audio.ReturnButton
+                action ShowMenu('main_menu') activate_sound renpy.random.choice(sound.Return_Button)
 
 
 
