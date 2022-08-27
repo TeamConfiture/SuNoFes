@@ -536,3 +536,191 @@ translate english strings:
     old "Demander en chantant"
     new "Demander en chantant"
 
+# TODO: Translation updated at 2022-08-27 11:33
+
+# game/chap/chap4.rpy:6
+translate english chap4_277ea68a:
+
+    # blanche "C'est… C'est si joli ! Ça brille de partout ! C'est si vert !"
+    blanche "C'est… C'est si joli ! Ça brille de partout ! C'est si vert !"
+
+# game/chap/chap4.rpy:10
+translate english chap4_fcab55d1:
+
+    # "Le chat tournoie sur lui-même, faisant répandre l'eau autour de lui."
+    "Le chat tournoie sur lui-même, faisant répandre l'eau autour de lui."
+
+# game/chap/chap4.rpy:13
+translate english chap4_f458b6d7:
+
+    # blanche "Moi, je m'appelle Blanche !"
+    blanche "Moi, je m'appelle Blanche !"
+
+# game/chap/chap4.rpy:16
+translate english chap4_1aefcfb6:
+
+    # emeraude "Dis-moi, c'est quoi ton problèèème ?"
+    emeraude "Dis-moi, c'est quoi ton problèèème ?"
+
+# game/chap/chap4.rpy:17
+translate english chap4_ab4245ec:
+
+    # blanche "Je viens pour récupérer la boule Vert… C'est pour mon papa…"
+    blanche "Je viens pour récupérer la boule Vert… C'est pour mon papa…"
+
+# game/chap/chap4.rpy:20
+translate english chap4_b90de8dd:
+
+    # emeraude "Moi, je m'appelle Émeraude, gardien de Couleurs."
+    emeraude "Moi, je m'appelle Émeraude, gardien de Couleurs."
+
+# game/chap/chap4.rpy:22
+translate english chap4_b90de8dd_1:
+
+    # emeraude "Moi, je m'appelle Émeraude, gardien de Couleurs."
+    emeraude "Moi, je m'appelle Émeraude, gardien de Couleurs."
+
+# game/chap/chap4.rpy:24
+translate english chap4_3a29f2a2:
+
+    # blanche "J'ai l'impression que tout ce que tu dis, ce sont des paroles de différentes chansons."
+    blanche "J'ai l'impression que tout ce que tu dis, ce sont des paroles de différentes chansons."
+
+# game/chap/chap4.rpy:30
+translate english chap4_57146cec:
+
+    # blanche "Mais, s'il te plaît, juste pour une nuit, pour mon papa. C'est ma mission."
+    blanche "Mais, s'il te plaît, juste pour une nuit, pour mon papa. C'est ma mission."
+
+# game/chap/chap4.rpy:32
+translate english chap4_8b92d494:
+
+    # blanche "S'il te plaît, aide-moi !"
+    blanche "S'il te plaît, aide-moi !"
+
+# game/chap/chap4.rpy:34
+translate english chap4_f3ef737b:
+
+    # blanche "Il m'a dit qu'il est très important comme Madame Arc-en-Ciel !"
+    blanche "Il m'a dit qu'il est très important comme Madame Arc-en-Ciel !"
+
+# game/chap/chap4.rpy:36
+translate english chap4_53ecc192:
+
+    # blanche "C'est pour ça que je veux lui remonter le moral ! Une dernière fois…"
+    blanche "C'est pour ça que je veux lui remonter le moral ! Une dernière fois…"
+
+# game/chap/chap4.rpy:43
+translate english chap4_65acc5bf:
+
+    # emeraude "Est-ce que tu m'entends ? Hé ho !"
+    emeraude "Est-ce que tu m'entends ? Hé ho !"
+
+# game/chap/chap4.rpy:46
+translate english chap4_3b72ba6a:
+
+    # blanche "Je n'ai pas le temps de discuter avec toi !"
+    blanche "Je n'ai pas le temps de discuter avec toi !"
+
+# game/chap/chap4.rpy:47
+translate english chap4_1ca58c57:
+
+    # emeraude "J'ai pas le teeemps !!! Mon espriiiiiit glisse ailleurs !"
+    emeraude "J'ai pas le teeemps !!! Mon espriiiiiit glisse ailleurs !"
+
+# game/chap/chap4.rpy:48
+translate english chap4_629ff71e:
+
+    # blanche "S'il te plaît…"
+    blanche "S'il te plaît…"
+
+# game/chap/chap4.rpy:55
+translate english chap4_3ec82f10:
+
+    # emeraude "M'a touché, c'est foutu."
+    emeraude "M'a touché, c'est foutu."
+
+# game/chap/chap4.rpy:60
+translate english chap4_5321fb41:
+
+    # blanche "Et qu'on… Hmpf. AÏÏÏeeeuhhh."
+    blanche "Et qu'on… Hmpf. AÏÏÏeeeuhhh."
+
+# game/chap/chap4.rpy:61
+translate english chap4_d59b9402:
+
+    # "J'ai mordu ma langue."
+    "J'ai mordu ma langue."
+
+# game/chap/chap4.rpy:62
+translate english chap4_d3e90d4e:
+
+    # emeraude "Ho ho. Je… Je t'aime comme une chanson d'amour, baby. Ho ho."
+    emeraude "Ho ho. Je… Je t'aime comme une chanson d'amour, baby. Ho ho."
+
+# game/chap/chap4.rpy:64
+translate english chap4_1204fdde:
+
+    # emeraude "À l'aide ! J'ai besoin de quelqu'un ! À l'aide ! Pas n'importe qui ! À l'aide ! Tu sais, j'ai besoin de Blanche ! "
+    emeraude "À l'aide ! J'ai besoin de quelqu'un ! À l'aide ! Pas n'importe qui ! À l'aide ! Tu sais, j'ai besoin de Blanche ! "
+
+# game/chap/chap4.rpy:65
+translate english chap4_ccfade29:
+
+    # blanche "Que ? Quoi ?! Qu'est-ce qui se passe ?!"
+    blanche "Que ? Quoi ?! Qu'est-ce qui se passe ?!"
+
+# game/chap/chap4.rpy:82
+translate english chap4_4d0f44f9:
+
+    # emeraude "Et si mon heure sonne, oh oh. Pleure pas rigole, oh oh. On m'appelle l'Émeraude."
+    emeraude "Et si mon heure sonne, oh oh. Pleure pas rigole, oh oh. On m'appelle l'Émeraude."
+
+# game/chap/chap4.rpy:86
+translate english chap4_5a6a190b:
+
+    # emeraude "Libérée, délivrée, je n'ai plus de boules à m'occuper, libérée, délivrée, c'est décidé, c'est fini !"
+    emeraude "Libérée, délivrée, je n'ai plus de boules à m'occuper, libérée, délivrée, c'est décidé, c'est fini !"
+
+# game/chap/chap4.rpy:87
+translate english chap4_3a83f181:
+
+    # emeraude "J'ai laissé mon contrat en été, perdu avec Blanche !"
+    emeraude "J'ai laissé mon contrat en été, perdu avec Blanche !"
+
+# game/chap/chap4.rpy:95
+translate english chap4_78d3a781:
+
+    # emeraude "J'aurai peur de tout foutre en l'air !"
+    emeraude "J'aurai peur de tout foutre en l'air !"
+
+# game/chap/chap4.rpy:97
+translate english chap4_dff29c9c:
+
+    # grosso "C'est vrai qu'il faut chanter…"
+    grosso "C'est vrai qu'il faut chanter…"
+
+# game/chap/chap4.rpy:98
+translate english chap4_158304b1:
+
+    # grosso "C'est oui ou bien c'est non ?"
+    grosso "C'est oui ou bien c'est non ?"
+
+# game/chap/chap4.rpy:100
+translate english chap4_e4849caf:
+
+    # maigrichon "La boule Vert n'est plus là !"
+    maigrichon "La boule Vert n'est plus là !"
+
+# game/chap/chap4.rpy:103
+translate english chap4_3c0ebba9:
+
+    # "Emeraude les voit s'en aller."
+    "Emeraude les voit s'en aller."
+
+translate english strings:
+
+    # game/chap/chap4.rpy:40
+    old "Tirer une de ses oreilles et lui crier de dessus d'arrêter de chanter"
+    new "Tirer une de ses oreilles et lui crier de dessus d'arrêter de chanter"
+
