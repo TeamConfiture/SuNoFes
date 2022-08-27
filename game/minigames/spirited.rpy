@@ -151,7 +151,7 @@ init python:
         # Set of rendered sprites
         render_set = set()
         # last render timer
-        last_update = None
+        last_update = 0
         # Accumulator used to know when to spawn a new sprite
         accumulated_spawn_odds = 0
 
@@ -202,6 +202,9 @@ init python:
             """
             if self.maximum_pool is not None and self.maximum_pool <= len(self.render_set):
                 return
+            if len(self.image_collection) == 0:
+                # There appears to be a reload-time issue that makes image_collection empty in dev
+                return
             # Pick a reference sprite to use
             rid = renpy.random.randint(0, len(self.image_collection)-1)
             # Pick a spawn location
@@ -251,8 +254,14 @@ init python:
             Provided to SpriteManager to handle sprites updates
             """
             current_time = st
-            time_diff = current_time - self.last_update
+            time_diff = abs(current_time - self.last_update)
             self.last_update = current_time
+            if time_diff > 1:
+                # Screen was frozen or the same spirited is used twice on different timebases
+                # This mostly happens on scene changes if both use the same spirited instance
+                return
+            # FIXME: this updates so often it actually linearises the spawn odds instead of being truly random
+            # Create scheduled generation batches instead
             self.accumulated_spawn_odds = self.accumulated_spawn_odds + renpy.random.random() * self.renewal_rate * time_diff
             while self.accumulated_spawn_odds > 1:
                 self.accumulated_spawn_odds = self.accumulated_spawn_odds - 1
