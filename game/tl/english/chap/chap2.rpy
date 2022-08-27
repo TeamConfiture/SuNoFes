@@ -341,3 +341,125 @@ translate english strings:
     # game/chap/chap2.rpy:17
     old "Chercher une excuse"
     new "Find an excuse"
+# TODO: Translation updated at 2022-08-27 12:18
+
+# game/chap/chap2.rpy:94
+translate english chap2_completed_4ca33d7d:
+
+    # indigo "Génial, merci ! Bon, je vais réfléchir ..."
+    indigo "Génial, merci ! Bon, je vais réfléchir ..."
+
+# game/chap/chap2.rpy:96
+translate english chap2_completed_8e3c2138:
+
+    # blanche "S'il vous plaîîîîîîîîîît !"
+    blanche "S'il vous plaîîîîîîîîîît !"
+
+# game/chap/chap2.rpy:98
+translate english chap2_completed_63639e82:
+
+    # indigo "Bon, bon, ok c'est d'accord. Motus et bouche cousue et je veux revoir la boule sur son autel au plus vite. Si les gardes l'apprennent s'en est fini de moi !"
+    indigo "Bon, bon, ok c'est d'accord. Motus et bouche cousue et je veux revoir la boule sur son autel au plus vite. Si les gardes l'apprennent s'en est fini de moi !"
+
+# game/chap/chap2.rpy:100
+translate english chap2_completed_2bc26d8a:
+
+    # blanche "Youpi ! Merci beaucoup ! Je vous en serai éternellement reconnaissant !"
+    blanche "Youpi ! Merci beaucoup ! Je vous en serai éternellement reconnaissant !"
+
+# game/chap/chap2.rpy:105
+translate english chap2_completed_8ea73656:
+
+    # "Un bateau apparaît sur le lac."
+    "Un bateau apparaît sur le lac."
+
+# game/chap/chap2.rpy:109
+translate english chap2_completed_66502b36:
+
+    # grosso "Il s'enfuit, il s'enfuit ! Rame plus vite, Maigrichon !" with vpunch
+    grosso "Il s'enfuit, il s'enfuit ! Rame plus vite, Maigrichon !" with vpunch
+
+# game/chap/chap2.rpy:110
+translate english chap2_completed_1bffa12d:
+
+    # maigrichon "T'es drôle toi, aide-moi plutôt !"
+    maigrichon "T'es drôle toi, aide-moi plutôt !"
+
+# game/chap/chap2.rpy:111
+translate english chap2_completed_5bf820df:
+
+    # grosso "Si tu ne veux pas finir aux oubliettes avec moi, je te conseille de te dépêcher."
+    grosso "Si tu ne veux pas finir aux oubliettes avec moi, je te conseille de te dépêcher."
+
+# game/chap/chap2.rpy:116
+translate english chap2_completed_e4dba20d:
+
+    # madame "Quoi ?! On me vole mes 7 boules de cristal et vous ne faites rien ??! Vous n'êtes qu'une bande d'incapables ! Vous, comme les autres chats gardiens, je vous ai confié une mission et vous n'êtes même pas capables de la tenir !" with vpunch
+    madame "Quoi ?! On me vole mes 7 boules de cristal et vous ne faites rien ??! Vous n'êtes qu'une bande d'incapables ! Vous, comme les autres chats gardiens, je vous ai confié une mission et vous n'êtes même pas capables de la tenir !" with vpunch
+
+# game/chap/chap2.rpy:117
+translate english chap2_completed_8df6eb9b:
+
+    # madame "Récupérez mes boules avant minuit sinon vous finirez dans les oubliettes de mon château jusqu'à la fin de vos jours !!!!"
+    madame "Récupérez mes boules avant minuit sinon vous finirez dans les oubliettes de mon château jusqu'à la fin de vos jours !!!!"
+
+# game/chap/chap2.rpy:123
+translate english chap2_completed_e67b97c6:
+
+    # indigo "Messieurs, bien le bonsoir, que me vaut votre visite impromptue à cette heure aussi tardive ?"
+    indigo "Messieurs, bien le bonsoir, que me vaut votre visite impromptue à cette heure aussi tardive ?"
+
+# game/chap/chap2.rpy:124
+translate english chap2_completed_0107fd82:
+
+    # grosso "Nous sommes à la poursuite d’un enfant ayant volé la boule Violet, tu ne l’aurais pas vu par hasard ?"
+    grosso "Nous sommes à la poursuite d’un enfant ayant volé la boule Violet, tu ne l’aurais pas vu par hasard ?"
+
+# game/chap/chap2.rpy:125
+translate english chap2_completed_9b4217bf:
+
+    # indigo "Les voyageurs ont bien changé… Vous n’êtes donc pas venu ici pour voir le paysage et les constellations ?"
+    indigo "Les voyageurs ont bien changé… Vous n’êtes donc pas venu ici pour voir le paysage et les constellations ?"
+
+# game/chap/chap2.rpy:126
+translate english chap2_completed_92641beb:
+
+    # maigrichon "Grosso ! La boule Indigo a disparu de l’autel aussi !"
+    maigrichon "Grosso ! La boule Indigo a disparu de l’autel aussi !"
+
+# game/chap/chap2.rpy:127
+translate english chap2_completed_b23f6d40:
+
+    # indigo "Oh non… J’ai perdu ma boule, comme c’est étrange."
+    indigo "Oh non… J’ai perdu ma boule, comme c’est étrange."
+
+# game/chap/chap2.rpy:128
+translate english chap2_completed_1d967f46:
+
+    # "Indigo feint l’ignorance."
+    "Indigo feint l’ignorance."
+
+# game/chap/chap2.rpy:129
+translate english chap2_completed_6e7a0450:
+
+    # indigo "Les constellations ont détourné mon attention pendant un instant."
+    indigo "Les constellations ont détourné mon attention pendant un instant."
+
+# game/chap/chap2.rpy:130
+translate english chap2_completed_0b66754d:
+
+    # maigrichon "T’es vraiment pas doué… L’enfant est parti par où ?"
+    maigrichon "T’es vraiment pas doué… L’enfant est parti par où ?"
+
+# game/chap/chap2.rpy:131
+translate english chap2_completed_79ffd5d2:
+
+    # grosso "Ah ! Ses traces de pas sont là, allons-y !" with vpunch
+    grosso "Ah ! Ses traces de pas sont là, allons-y !" with vpunch
+
+# game/chap/chap2.rpy:132
+translate english chap2_completed_b8016921:
+
+    # maigrichon "Et toi, Indigo, pour l’amour de Madame Arc-En-Ciel, tiens-toi à carreau, ça suffit les bêtises."
+    maigrichon "Et toi, Indigo, pour l’amour de Madame Arc-En-Ciel, tiens-toi à carreau, ça suffit les bêtises."
+
