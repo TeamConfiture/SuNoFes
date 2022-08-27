@@ -86,7 +86,8 @@ label chap2:
     # TODO: <illu chat qui fait signe d'adieu et blanche qui tient la boule>
     # TODO: <Noir gagne une couleur>
 label chap2_completed:
-    scene star with dissolve 
+    scene star
+    show chap2_spirited
     show blanche smile close at left
     show indigo at right
     with dissolve
@@ -141,35 +142,22 @@ image chap2_spirited = Spirited(
 )
 
 screen match_screen():
-    for i in range(len(stars)):
-        add 'star_card':
-            yalign 0.9
-            xpos (i + 1)/(len(stars) + 1)
-            xanchor 0.5
-        text stars[i]:
-            color '#fff'
-            yalign 0.81
-            xpos (i + 1)/(len(stars) + 1) 
-            xanchor 0.5
-
-    for i in range(len(stars_sprites)):
-        add stars_sprites[i]:
-            yalign 0.1
-            xpos (i + 1)/(len(stars_sprites) + 1)
-            xanchor 0.5
-
+    python:
+        chap2_stars_mapping = ([i for i in range(len(chap2_stars))], [i for i in range(len(chap2_stars))])
+        renpy.random.shuffle(chap2_stars_mapping[0])
+        renpy.random.shuffle(chap2_stars_mapping[1])
     default matcher = CardMatcher(
         anchor_definitions = {
-            1: {"group": 1, "xpos": 1920/5-12, "ypos": 370},
-            2: {"group": 1, "xpos": 1920*2/5-12, "ypos": 370},
-            3: {"group": 1, "xpos": 1920*3/5-12, "ypos": 370},
-            4: {"group": 1, "xpos": 1920*4/5-12, "ypos": 370},
-            5: {"group": 2, "xpos": 1920/5-12, "ypos": 660},
-            6: {"group": 2, "xpos": 1920*2/5-12, "ypos": 660},
-            7: {"group": 2, "xpos": 1920*3/5-12, "ypos": 660},
-            8: {"group": 2, "xpos": 1920*4/5-12, "ypos": 660},
+            1: {"group": 1, "xpos": config.screen_width*(chap2_stars_mapping[1][0]+1)/5-12, "ypos": 370},
+            2: {"group": 1, "xpos": config.screen_width*(chap2_stars_mapping[1][1]+1)/5-12, "ypos": 370},
+            3: {"group": 1, "xpos": config.screen_width*(chap2_stars_mapping[1][2]+1)/5-12, "ypos": 370},
+            4: {"group": 1, "xpos": config.screen_width*(chap2_stars_mapping[1][3]+1)/5-12, "ypos": 370},
+            5: {"group": 2, "xpos": config.screen_width*(chap2_stars_mapping[0][0]+1)/5-12, "ypos": 660},
+            6: {"group": 2, "xpos": config.screen_width*(chap2_stars_mapping[0][1]+1)/5-12, "ypos": 660},
+            7: {"group": 2, "xpos": config.screen_width*(chap2_stars_mapping[0][2]+1)/5-12, "ypos": 660},
+            8: {"group": 2, "xpos": config.screen_width*(chap2_stars_mapping[0][3]+1)/5-12, "ypos": 660},
         },
-        anchor_rules = [(1,7), (2,5), (3, 8), (4, 6)],
+        anchor_rules = [(1,5), (2,6), (3, 7), (4, 8)],
         auto_base_button = "images/sprites/buzzer_%s.png",
         linked_base_button = Null(),
         rope_collection = [
@@ -185,3 +173,20 @@ screen match_screen():
         completion_actions = [Jump("chap2_completed")]
     )
     add matcher
+    # We have to reuse matcher's attribute here as it is default-instanciated and is the only stable source of truth post-init
+    for k in matcher.anchor_definitions:
+        if k <= 4:
+            add chap2_stars[k - 1][0]:
+                yalign 0.1
+                xpos (matcher.anchor_definitions[k]['xpos'] + 12) / config.screen_width
+                xanchor 0.5
+        else:
+            add 'star_card':
+                yalign 0.9
+                xpos (matcher.anchor_definitions[k]['xpos'] + 12) / config.screen_width
+                xanchor 0.5
+            text chap2_stars[k - 5][1]:
+                color '#fff'
+                yalign 0.81
+                xpos (matcher.anchor_definitions[k]['xpos'] + 12) / config.screen_width
+                xanchor 0.5
