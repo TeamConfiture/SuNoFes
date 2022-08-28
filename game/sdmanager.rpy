@@ -140,7 +140,7 @@ define sound.Red_Happy = ["audio/Purr/CatPurr_05.ogg"]
 
 ##=============Musique Menu===============##
 
-define music.Theme_Menu = ["music/.ogg"]
+define music.Theme_Menu = ["music/Theme_Menu.ogg"]
 
 ##=============Musique InGame===============##
 
