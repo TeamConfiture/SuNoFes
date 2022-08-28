@@ -154,7 +154,8 @@ default preferences.afm_time = 15
 ## toujours une chaîne de caractères littéraux, pas une expression.
 
 define config.save_directory = "Colors-1656705232"
-
+define config.has_quicksave = False
+define config.has_autosave = False
 
 ## Icône #######################################################################
 ##
