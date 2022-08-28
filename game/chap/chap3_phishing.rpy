@@ -67,7 +67,7 @@ label lake_phishing_fish1:
         show axolotl at axolotl_position
     if not lake_phishing_fished_fish1:
         $ lake_phishing_fished_fish1 = True
-        cyan "Ça ressemble à une truite Arc-en-Ciel d'après-toi ? Remets-le à l'eau et plus vite que ça."
+        cyan "Ça ressemble à une truite Arc-en-Ciel d'après-toi ? Remets-le à l'eau et plus vite que ça !"
     else:
         cyan "*Soupire*"
     call screen chap3_lake_phishing

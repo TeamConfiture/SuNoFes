@@ -27,21 +27,17 @@
     old "Arc-en-Ciel"
     new "Lady Rainbow"
 
-# TODO: Translation updated at 2022-08-26 22:11
-
-translate english strings:
-
     # game/characters.rpy:45
     old "Caméraman"
-    new "Caméraman"
+    new "Cameraman"
 
     # game/characters.rpy:46
     old "Cyan"
     new "Cyan"
 
-    # game/characters.rpy:47
-    old "Emeraude"
-    new "Emeraude"
+    # game/characters.rpy:49
+    old "Émeraude"
+    new "Emerald"
 
     # game/characters.rpy:48
     old "Picaru"

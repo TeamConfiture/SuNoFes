@@ -143,10 +143,10 @@ translate english chap2_c3c605be:
     blanche "Sorry! I didn't want to anger you, but… "
 
 # game/chap/chap2.rpy:56
-translate english chap2_85e1d2f5:
+translate english chap2_fe550b7d:
 
-    # blanche "Il me faut absolument cette boule. Il en va de la vie de mon papa ! Je veux lui montrer à quoi ressemblent les couleurs de l'Arc-en-Ciel !"
-    blanche "I need this ball. My father's life is at stake! I must show him the colors of the Rainbow!"
+    # blanche "Il me faut absolument cette boule. Il en va de la vie de mon papa ! Je veux lui montrer à quoi ressemblent les couleurs de l'arc-en-ciel !"
+    blanche "I need this ball. My father's life is at stake! I must show him the colors of the rainbow!"
 
 # game/chap/chap2.rpy:58
 translate english chap2_8da92ceb:
@@ -250,10 +250,10 @@ translate english chap2_completed_5bf820df:
     grosso "If you don't want to end up in the dungeon with me, I suggest you to hurry up."
 
 # game/chap/chap2.rpy:116
-translate english chap2_completed_e4dba20d:
+translate english chap2_completed_30a8a253:
 
-    # madame "Quoi ?! On me vole mes 7 boules de cristal et vous ne faites rien ??! Vous n'êtes qu'une bande d'incapables ! Vous, comme les autres chats gardiens, je vous ai confié une mission et vous n'êtes même pas capables de la tenir !" with vpunch
-    madame "What?! Someone is stealing my seven crystal balls and yet you do nothing??! What a bunch of incompetents! You two, and all the guardian cat friends, you had but one job, and you can't even carry it!"
+    # madame "Quoi ?! On me vole mes sept boules de cristal et vous ne faites rien ??! Vous n'êtes qu'une bande d'incapables ! Vous, comme les autres chats gardiens, je vous ai confié une mission et vous n'êtes même pas capables de la tenir !" with vpunch
+    madame "What?! Someone is stealing my seven crystal balls and yet you do nothing??! What a bunch of incompetents! You two, and all the guardian cat friends, you had but one job, and you can't even carry it!" with vpunch
 
 # game/chap/chap2.rpy:117
 translate english chap2_completed_8df6eb9b:
