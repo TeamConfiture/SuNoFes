@@ -53,7 +53,7 @@ label chap2:
     show blanche surprised open at left
     blanche "Pardon ! Je ne voulais pas vous froisser ! Mais…"
     show blanche cry open at left
-    blanche "Il me faut absolument cette boule. Il en va de la vie de mon papa ! Je veux lui montrer à quoi ressemblent les couleurs de l'Arc-en-Ciel !"
+    blanche "Il me faut absolument cette boule. Il en va de la vie de mon papa ! Je veux lui montrer à quoi ressemblent les couleurs de l'arc-en-ciel !"
     show blanche cry close at left
     indigo "Bien qu'elle ne me soit d'aucune utilité et que ton intention soit louable, je ne peux faire d'écart au serment que j'ai prêté à Madame Arc-en-Ciel le jour où elle m'a confié ce poste de gardiennage."
     show blanche cry open at left
@@ -83,18 +83,18 @@ label chap2:
     hide indigo at right
     with dissolve
     call screen match_screen
-    # TODO: <illu chat qui fait signe d'adieu et blanche qui tient la boule>
-    # TODO: <Noir gagne une couleur>
 label chap2_completed:
     scene star
     show chap2_spirited
     show blanche smile close at left
     show indigo at right
     with dissolve
+    # TODO: <illu de blanche qui montre des constellations au chat>
     indigo "Génial, merci ! Bon, je vais réfléchir..."
     show blanche cry open at left
     blanche "S'il vous plaîîîîîîîîîît !"
     show blanche cry close at left
+    # TODO : <anime boule + Noir gagne une couleur>
     indigo "Bon, bon, ok c'est d'accord. Motus et bouche cousue et je veux revoir la boule sur son autel au plus vite. Si les gardes l'apprennent s'en est fini de moi !"
     show blanche smile open at left
     blanche "Youpi ! Merci beaucoup ! Je vous en serai éternellement reconnaissant !"
@@ -113,7 +113,7 @@ label chap2_completed:
     hide grosso at right
     show mme hologramme
     with dissolve
-    madame "Quoi ?! On me vole mes 7 boules de cristal et vous ne faites rien ??! Vous n'êtes qu'une bande d'incapables ! Vous, comme les autres chats gardiens, je vous ai confié une mission et vous n'êtes même pas capables de la tenir !" with vpunch
+    madame "Quoi ?! On me vole mes sept boules de cristal et vous ne faites rien ??! Vous n'êtes qu'une bande d'incapables ! Vous, comme les autres chats gardiens, je vous ai confié une mission et vous n'êtes même pas capables de la tenir !" with vpunch
     madame "Récupérez mes boules avant minuit sinon vous finirez dans les oubliettes de mon château jusqu'à la fin de vos jours !!!!"
     hide mme hologramme
     show maigrichon at farLeft

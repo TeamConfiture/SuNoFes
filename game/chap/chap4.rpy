@@ -41,7 +41,7 @@ label chap4:
     menu:
         "Tirer une de ses oreilles et lui crier de dessus d'arrêter de chanter":
             blanche "Arrête de chanter et écoute-moi !!!"
-            emeraude "Est-ce que tu m'entends ? Hé ho !"
+            emeraude "Est-ce que tu m'entends ? Hé ho !"
             blanche "ARRÊTE DE CHANTER !"
             blanche "Il faut que je récupère cette boule de cristal rapidement !"
             blanche "Je n'ai pas le temps de discuter avec toi !"

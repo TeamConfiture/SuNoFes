@@ -28,10 +28,10 @@ translate english start_0f12e110:
     # "Jusqu'au jour où un petit enfant décide de faire un voeu assez particulier..."
     "Until one day, a young child chose to make a very peculiar wish..."
 
-# game/script.rpy:36
-translate english start_e765cd42:
+# game/chap/chap0.rpy:29
+translate english start_e0f12ba0:
 
-    # x "Ô Madame Arc-en-ciel ! Faites que je puisse réaliser mon souhait."
+    # x "Ô Madame Arc-en-Ciel ! Faites que je puisse réaliser mon souhait."
     x "O Lady Rainbow! May my wish come true."
 
 # game/script.rpy:52
@@ -107,8 +107,6 @@ translate english strings:
     # game/chap/chap0.rpy:1
     old "Chapitre {}"
     new "Chapter {}"
-
-# TODO: Translation updated at 2022-08-18 23:24
 
 # game/chap/chap0.rpy:20
 translate english start_6e79fe01:

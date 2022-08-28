@@ -155,7 +155,7 @@
     maigrichon "Quoi ?! Un enfant ? Avec…"
     grosso_maigrichon "UNE BOULE DE CRISTAL ???!!!" with vpunch
     maigrichon "Vite, suivons-le !!!"
-    grosso "Et prévenons Madame Arc-en-ciel !"
+    grosso "Et prévenons Madame Arc-en-Ciel !"
     hide maigrichon
     hide grosso
     with dissolve

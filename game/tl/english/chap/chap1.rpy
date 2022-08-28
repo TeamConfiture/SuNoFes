@@ -453,9 +453,9 @@ translate english chap1_08d0eca4:
     maigrichon "Quick, after them!!!"
 
 # game/chap/chap1.rpy:158
-translate english chap1_4a84607d:
+translate english chap1_60c944a4:
 
-    # grosso "Et prévenons Madame Arc-en-ciel !"
+    # grosso "Et prévenons Madame Arc-en-Ciel !"
     grosso "Let's inform Lady Rainbow of this incident!"
 
 # game/chap/chap1.rpy:162

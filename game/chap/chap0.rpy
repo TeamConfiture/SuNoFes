@@ -26,7 +26,7 @@ label start:
     hide screen hidden_balls
     "Jusqu'au jour où un petit enfant décide de faire un voeu assez particulier…"
     scene voeu with dissolve
-    x "Ô Madame Arc-en-ciel ! Faites que je puisse réaliser mon souhait."
+    x "Ô Madame Arc-en-Ciel ! Faites que je puisse réaliser mon souhait."
     scene identite with dissolve
     python:
         player_name = None
