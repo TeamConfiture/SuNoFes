@@ -36,6 +36,7 @@ image violet = im.FactorScale("images/chats/violet.png", catSpriteSize)
 image indigo = im.FactorScale("images/chats/indigo.png", catSpriteSize)
 image cyan = im.FactorScale("images/chats/cyan.png", catSpriteSize)
 image cyan2 = im.FactorScale("images/chats/cyan2.png", catSpriteSize)
+image emeraude = im.FactorScale("images/chats/emeraude.png", catSpriteSize)
 
 # Déclarez les personnages utilisés dans le jeu.
 define narrator = Character(None, window_background="gui/textbox_noname.png", window_xsize=1803, window_ysize=388, what_xpos=38, what_ypos=126, what_italic=True)
