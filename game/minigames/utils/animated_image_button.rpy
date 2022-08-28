@@ -18,7 +18,7 @@ init python:
             self.last_render = super(PoorMansAnimatedImageButton, self).render(width, height, st, at)
             return self.last_render
         def event(self, ev, x, y, st):
-            if self.last_render and self.action and ev.type == pygame.MOUSEBUTTONDOWN:
+            if self.last_render and self.action and ev.type == pygame.MOUSEBUTTONUP:
                 if self.last_render.is_pixel_opaque(x, y):
                     renpy.run(self.action)
             return super(PoorMansAnimatedImageButton, self).event(ev, x, y, st)
