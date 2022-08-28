@@ -6,6 +6,8 @@ define farLeft = Position(xpos=0.20)
 define nearLeft = Position(xpos=0.40)
 define center = Position(xpos=0.5)
 define right = Position(xpos=0.70)
+define farRight = Position(xpos=0.80)
+define nearRight = Position(xpos=0.60)
 
 # Déclarez sous cette ligne les images, avec l'instruction 'image'
 # ex: image eileen heureuse = "eileen_heureuse.png"
@@ -32,12 +34,14 @@ image maigrichon = im.FactorScale("images/gardes/maigrichon.png", guardSpriteSiz
 
 image violet = im.FactorScale("images/chats/violet.png", catSpriteSize)
 image indigo = im.FactorScale("images/chats/indigo.png", catSpriteSize)
+image cyan = im.FactorScale("images/chats/cyan.png", catSpriteSize)
+image cyan2 = im.FactorScale("images/chats/cyan2.png", catSpriteSize)
 
 # Déclarez les personnages utilisés dans le jeu.
 define narrator = Character(None, window_background="gui/textbox_noname.png", window_xsize=1803, window_ysize=388, what_xpos=38, what_ypos=126, what_italic=True)
 define x = Character('???', who_color="#ffffff")
 define blanche = Character('[player_name]', who_color="#ffffff")
-define madame = Character(_('Arc-En-Ciel'), who_color="#ffffff")
+define madame = Character(_('Arc-en-Ciel'), who_color="#ffffff")
 define grosso = Character(_('Grosso'), who_color="#ffffff")
 define maigrichon = Character(_('Maigrichon'), who_color="#ffffff")
 define noir = Character(_('Père Noir'), who_color="#000000")
@@ -45,6 +49,6 @@ define violet = Character(_('Violet'), who_color="#753799")
 define indigo = Character(_('Indigo'), who_color="#202A7F")
 define grosso_maigrichon = Character(_('Les deux'), who_color="#ffffff")
 define cameraman = Character(_('Caméraman'), who_color="#ffffff")
-define cyan = Character(_('Cyan'), who_color="#ffffff")
+define cyan = Character(_('Cyan'), who_color="#216d77")
 define emeraude = Character(_('Emeraude'), who_color="#ffffff")
 define axolotl = Character(_('Picaru'), who_color="#dab6ca")

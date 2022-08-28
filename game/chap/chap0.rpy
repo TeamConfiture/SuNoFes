@@ -37,7 +37,7 @@ label start:
                 player_name="Blanche"
             # Small easter egg
             if player_name.lower() == _("noir") or player_name.lower() == _("noire"):
-                renpy.say(None, _("Oh non, c'est le nom de mon père."))
+                renpy.say(None, _("Oh non, c'est le nom de mon papa."))
                 player_name=None
 
     scene room with dissolve

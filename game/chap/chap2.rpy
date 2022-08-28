@@ -48,14 +48,14 @@ label chap2:
     show crystal_indigo at crystal_position with dissolve
     blanche "Ne te… Ne vous fâchez pas, je suis seulement venu récupérer la boule bleue qui est sur l'autel de l'autre côté du lac."
     show blanche cry close at left
-    indigo "Mmmmh, et à quoi te servirait-elle cette boule ? Au demeurant, étant le gardien du lac Indigo, je ne peux te laisser outrager notre grande maîtresse Madame Arc-En-Ciel ! Ce n'est pas un simple bleu, mais le plus noble d'entre eux : l'indigo. Pour ce qui est de la boule, je ne peux pas te la céder."
+    indigo "Mmmmh, et à quoi te servirait-elle cette boule ? Au demeurant, étant le gardien du lac Indigo, je ne peux te laisser outrager notre grande maîtresse Madame Arc-en-Ciel ! Ce n'est pas un simple bleu, mais le plus noble d'entre eux : l'indigo. Pour ce qui est de la boule, je ne peux pas te la céder."
     hide crystal_indigo at crystal_position with dissolve
     show blanche surprised open at left
     blanche "Pardon ! Je ne voulais pas vous froisser ! Mais…"
     show blanche cry open at left
-    blanche "Il me faut absolument cette boule. Il en va de la vie de mon père ! Je veux lui montrer à quoi ressemblent les couleurs de l'Arc-en-Ciel !"
+    blanche "Il me faut absolument cette boule. Il en va de la vie de mon papa ! Je veux lui montrer à quoi ressemblent les couleurs de l'Arc-en-Ciel !"
     show blanche cry close at left
-    indigo "Bien qu'elle ne me soit d'aucune utilité et que ton intention soit louable, je ne peux faire d'écart au serment que j'ai prêté à Madame Arc-En-Ciel le jour où elle m'a confié ce poste de gardiennage."
+    indigo "Bien qu'elle ne me soit d'aucune utilité et que ton intention soit louable, je ne peux faire d'écart au serment que j'ai prêté à Madame Arc-en-Ciel le jour où elle m'a confié ce poste de gardiennage."
     show blanche cry open at left
     blanche "Vous ne pourriez pas faire une toute petite exception pour moi ?"
     show blanche cry close at left
@@ -91,7 +91,7 @@ label chap2_completed:
     show blanche smile close at left
     show indigo at right
     with dissolve
-    indigo "Génial, merci ! Bon, je vais réfléchir ..."
+    indigo "Génial, merci ! Bon, je vais réfléchir..."
     show blanche cry open at left
     blanche "S'il vous plaîîîîîîîîîît !"
     show blanche cry close at left
@@ -129,7 +129,7 @@ label chap2_completed:
     indigo "Les constellations ont détourné mon attention pendant un instant."
     maigrichon "T’es vraiment pas doué… L’enfant est parti par où ?"
     grosso "Ah ! Ses traces de pas sont là, allons-y !" with vpunch
-    maigrichon "Et toi, Indigo, pour l’amour de Madame Arc-En-Ciel, tiens-toi à carreau, ça suffit les bêtises."
+    maigrichon "Et toi, Indigo, pour l’amour de Madame Arc-en-Ciel, tiens-toi à carreau, ça suffit les bêtises."
     jump chap3
 
 image chap2_spirited = Spirited(

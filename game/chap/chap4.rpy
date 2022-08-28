@@ -1,6 +1,7 @@
 label chap4:
     call titlepage(4)
-    scene garden with dissolve 
+    scene garden
+    with dissolve
     x "Colchiques dans les prés ! Fleurissent, fleurissent. Colchiques dans les prés ! C'est la fin de l'été."
     "Un chat chantonne tout en arrosant joyeusement de magnifiques fleurs."
     blanche "C'est… C'est si joli ! Ça brille de partout ! C'est si vert !"
