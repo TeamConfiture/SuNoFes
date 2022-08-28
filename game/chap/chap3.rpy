@@ -1,62 +1,123 @@
 label chap3:
     call titlepage(3)
-    scene forest with dissolve 
-    "Le présentateur Cyan est très connu du grand public pour son émission Jean Racine et des Saules."
-    "Il va, avec ses équipes, à travers les forêts du monde présenter aux autres chats les beautés de la nature."
+    scene forest 
+    show blanche surprised open at left
+    with dissolve
+    blanche "Oh ! C'est... C'est le duo des Cyanmois que je vois au loin !" with vpunch
+    show blanche neutral open at left
+    blanche "Le présentateur Cyan est très connu du grand public pour son émission Jean Racine et des Saules."
+    show blanche smile open at left
+    blanche "D'après mon papa, lui et son frère vont à travers les forêts du monde présenter aux autres chats les beautés de la nature."
+    show blanche neutral open at left
+    blanche "Il faut que j'aille leur parler !"
+    show blanche neutral close at left
+    show cyan at right with dissolve
     cyan "Bonjour à toutes et tous !"
-    cyan "Bienvenue dans Jean Racine et des Saules, l'émission d'Art et Culture la plus connue de Monde 2 ! "
-    blanche "Bonjour, désolé de te déranger, je voudrais savoir…"
-    cameraman "Chuuuuuuuuuut !"
-    cyan "Nous voici donc dans la forêt Arc-En-Ciel, très connue pour sa rivière, mais surtout pour ses truites."
+    cyan "Bienvenue dans Jean Racine et des Saules, l'émission d'Art et Culture la plus connue du Monde 2 ! "
+    show blanche neutral open at left
+    blanche "Bonjour. Désolé de te déranger, je voudrais savoir…"
+    hide blanche neutral close at left
+    hide cyan at right
+    show cyan2
+    cameraman "Chuuuuuuuuuut !" with vpunch
+    show cyan2 at right with move
+    show cyan at left with dissolve
+    cyan "Nous voici donc dans la forêt Arc-en-Ciel, très connue pour sa rivière, mais surtout pour ses truites."
     cyan "Admirez donc ces magnifiques chênes centenaires, ces hêtres majestueux et ces petits sapins."
-    cyan "Tous sont le fruit d'une collaboration entre l'être humain et la nature. Observons maintenant les truites."
-    cameraman "Je suis désolé chaton, mais nous n'avons pas réussi à trouver de truites Arc-En-Ciel dans la rivière, nous avons seulement quelques truites fario."
+    cyan "Tous sont le fruit d'une collaboration entre l'être humain et la nature."
+    cyan "Observons maintenant les truites."
+    cameraman "Je suis désolé chaton, mais nous n'avons pas réussi à trouver de truites Arc-en-Ciel dans la rivière. Nous avons seulement quelques truites farios."
     cameraman "Un simple amateur de poisson verra la différence. Je coupe la bande vidéo le temps de trouver une solution."
-    cyan "Mais c'est horrible, qu'allons-nous dire à nos téléspectateurs ?!"
+    cyan "Mais c'est horrible ! Qu'allons-nous dire à nos téléspectateurs ?!" with vpunch
     cyan "Nous ne pouvons pas les décevoir."
-    cyan "Présenter la forêt Arc-En-Ciel sans ses truites, c'est comme présenter des crêpes sans oeufs."
-    cyan "C'est impensable ! Inimaginable !"
-    cameraman "Cela peut prendre plusieurs heures, les truites Arc-En-Ciel se font de plus en plus rares dans la rivière depuis les sécheresses de 2022 et la pêche intensive de truites."
-    blanche "Excuse-moi, j'ai une question à te poser."
-    cameraman "Ça suffit comme ça, on est en plein tournage, ouste !"
+    cyan "Présenter la forêt Arc-en-Ciel sans ses truites, c'est comme présenter des crêpes sans oeufs."
+    cyan "C'est impensable ! Inimaginable !" with vpunch
+    cameraman "Cela peut prendre plusieurs heures : les truites Arc-en-Ciel se font de plus en plus rares dans la rivière depuis les sécheresses des dernières années et leur pêche intensive."
+    show cyan2 at farRight
+    show cyan at center
+    with move
+    show blanche neutral open at farLeft with dissolve
+    blanche "Excuse-moi, j'ai une question à te poser : je cherche la bou..."
+    show blanche neutral close at farLeft
+    cameraman "Ça suffit comme ça ! On est en plein tournage, ouste !" with vpunch
 
     menu:
-        "Le traiter de rustre":
-            blanche "Espèce de rustre, t'es trop méchant avec les enfants, je boude."
-            cameraman "C'est pas ce que j'ai voulu dire, mais tu m'as compris, tu nous gênes petit."
-            blanche "Mais pourquoi tu avais besoin d'être aussi méchant qu'est-ce que j'ai fait ?"
-            cameraman "Je n'aime pas les enfants c'est tout."
-            blanche "Je ne peux vraiment pas essayer de vous aider ?"
-        "Tourner les talons":
-            cyan "Attends, attends, ne t'en va pas, j'ai tout mon temps de toute façon maintenant, vas-y pose ta question"
-            blanche "C'est que c'est un peu compliqué, vous n'allez sans doute pas me comprendre."
+        "Le traiter de méchant":
+            show blanche pout open at farLeft
+            blanche "Méchant ! T'es trop méchant ! Je boude."
+            show blanche pout close at farLeft
+            cameraman "Ce n'est pas ce que j'ai voulu dire, mais tu m'as compris. Tu nous gênes."
+            show blanche cry open at farLeft
+            blanche "Pourquoi t'es aussi méchant ? Qu'est-ce que j'ai fait ?"
+            show blanche cry close at farLeft
+            cameraman "Je n'aime pas les enfants, c'est tout."
+            show blanche neutral open at farLeft
+            blanche "Ne sous-estime pas les enfants ! On est capable de faire pleins de choses !"
+            show blanche neutral close at farLeft
+            cyan "Ah oui ? Comment pourrais-tu nous aider ?"
+        "Partir chercher la boule ailleurs":
+            cyan "Oh que vois-je ? Un visiteur venu d'ailleurs ! Ne t'en va pas !"
+            cyan "Que viens-tu faire ici ?"
+            show blanche cry open at farLeft
+            blanche "C'est que... C'est un peu compliqué, vous n'allez sans doute pas me comprendre."
+            show blanche cry close at farLeft
+            cyan "De quoi s'agit-il ?"
         "Lui répondre poliment":
-            blanche "Excuse-moi, mais j'ai l'impression que je ne gêne plus tant que ça, poser une simple question ne devrait pas être un problème."
-            cameraman "Bon, OK, mais pas longtemps alors"
+            show blanche pout open at farLeft
+            blanche "Excuse-moi, mais j'ai l'impression que je ne gêne plus tant que ça."
+            blanche "Poser une simple question ne devrait pas être un problème."
+            show blanche pout close at farLeft
+            cameraman "Bon, OK, mais pas longtemps alors."
+            show blanche neutral open at farLeft
             blanche "Merci."
+            show blanche neutral close at farLeft
+            cyan "Hum ? Qu'y a-t-il ?"
 
-    cyan "De quoi s'agit-il ?"
-    blanche "Je souhaitais te proposer un marché : je te pêche une truite Arc-En-Ciel et tu me cèdes ta boule cyan pour une nuit, ça vous va ?"
-    cyan "Pourquoi je devrais te croire ?"
-    cyan "En plus, je ne suis pas censé me séparer de ma boule, cela fait partie des clauses de mon contrat et Cyanmois ne faillit à rien !"
-    blanche "Je suis un expert de la pêche : mon père m'a appris quand j'étais minaud."
-    blanche "Mais maintenant, il est très malade et dans son état, il ne peut plus se lever."
-    blanche "Il m'a raconté qu'il aimerait voir une dernière fois les couleurs de l'arc-en-ciel."
-    blanche "Ce serait pour lui l'ultime cadeau. Celui sur lequel se repose ses dernières forces."
-    cyan "Tu ne serais pas l'enfant de Noir ?"
+    show blanche neutral open at farLeft
+    blanche "Je recherche actuellement la boule Cyan."
+    blanche "Je vous propose un marché : je vous pêche une truite Arc-en-Ciel et en échange vous m'aidez à trouver la boule Cyan. Ça vous va ?"
+    show blanche neutral close at farLeft
+    cameraman "Mais, c'est que ce gosse est cinglé ?!" with vpunch
+    cyan "Hum... Pourquoi je devrais te croire ?"
+    show blanche cry open at farLeft
+    blanche "C'est... C'est que..."
+    show blanche cry close at farLeft
+    show crystal_cyan at Position(xalign=0.30, yalign=0.5) with dissolve
+    cyan "Cette boule Cyan que tu cherches est en ma possession."
+    cyan "Nous ne sommes pas censés nous en séparer. Cela fait partie des clauses de notre contrat et le duo Cyanmois ne saurait faillir !"
+    hide crystal_cyan at Position(xalign=0.30, yalign=0.5) with dissolve
+    show blanche smile open at farLeft
+    blanche "Croyez-moi ! Je suis un expert de la pêche ! Mon papa Noir m'a appris quand j'étais jeune !" with vpunch
+    show blanche cry open at farLeft
+    blanche "Mais maintenant il est très malade, il ne peut plus se lever..."
+    show blanche neutral open at farLeft
+    blanche "Il m'a raconté qu'il aimerait voir les couleurs de l'arc-en-ciel une dernière fois."
+    show blanche smile open at farLeft
+    blanche "C'est pour ça que j'aimerais lui faire une surprise !"
+    show blanche neutral close at farLeft
+    cyan "L'enfant de Noir ?!" with vpunch
     cyan "C'est une légende vivante en matière de pêche !"
-    blanche "Si, bien sûr ! Je ne pensais pas que mon père était si connu !"
-    blanche "À la maison, tout est noir ou blanc. Aucun souvenir de couleur ne persiste."
-    blanche "Je suppose que c'est pour ça que je n'ai jamais rien su de sa notoriété."
-    cyan "Noir était un grand pêcheur, j'avais fait un de mes tout premiers reportages sur la rivière Dark Quidor, une rivière très sombre qui apporte le malheur autour d'elle."
+    show blanche smile open at farLeft
+    blanche "Oui ! Noir est mon papa ! Je ne pensais pas que mon papa était si connu !"
+    show blanche cry open at farLeft
+    blanche "À la maison, tout est noir et blanc. Il n'y a pas beaucoup de couleur."
+    blanche "C'est peut-être pour ça que je n'ai jamais rien su de sa notoriété."
+    show blanche cry close at farLeft
+    cyan "Noir était un grand pêcheur. J'avais fait un de mes tout premiers reportages sur la rivière Dark Quidor, une rivière très sombre qui absorbe tous les malheurs du monde."
     cyan "À cette époque, ton père espérait attraper le brochet doré, une légende locale."
     cyan "Malheureusement, le malheur est venu auprès de ton père. Son amour de la pêche l'aura aveuglé à jamais."
     cyan "Je me souviens que tous les journaux de l'époque en avaient parlé, c'est une véritable tragédie."
-    blanche "Oui, et depuis quelque temps, son état se dégrade."
-    blanche "Je n'ai peur qu'il ne décède avant que j'eusse pu réaliser son dernier voeu : voir les sept vraies couleurs de l'arc-en-ciel."
+    show blanche cry open at farLeft
+    blanche "Oui, je le sais..."
+    blanche "Depuis quelque temps, son état se dégrade. J'espère que j'aurai le temps de lui montrer les sept couleurs de l'arc-en-ciel."
+    show blanche cry close at farLeft
     cyan "Bon, dans ce cas, c'est d'accord."
-    cyan "Je n'ai pas trop le choix sinon mon reportage est foutu. Alors si ça peut faire plaisir à Noir, je peux bien te faire ce geste."
-    cyan "Tu vois ce lac d'où démarre la rivière, c'est là qu'il y avait plein de truites par le passé."
+    show blanche neutral open at farLeft
+    blanche "C'est vrai ?!" with vpunch
+    show blanche neutral close at farLeft
+    cameraman "Mais, Cyan, c'est de la folie !" with vpunch
+    cyan "On n'a pas trop le choix sinon le reportage est foutu. Alors si ça peut faire plaisir à Noir, je veux bien faire ce geste."
+    cyan "Tu vois ce lac d'où démarre la rivière ? C'est là que se trouvait plein de truites Arc-en-Ciel par le passé."
     cyan "Je te fournis la canne à pêche et je te souhaite bonne chance."
     cyan "J'aimerais reprendre le tournage dans un quart d'heure maximum."
     cyan "Ne traîne pas trop."
@@ -64,24 +125,46 @@ label chap3:
     call screen chap3_lake_phishing
 
 label chap3_2:
-    scene forest with dissolve 
-    blanche "Voilà ta truite Arc-En-Ciel, ça faisait longtemps que je n'en avais pas pêché d'aussi grosse."
-    cyan "Mais c'est extraordinaire ! Je ne m'attendais pas à présenter une perle rare dans mon émission ! Tu as bien mérité ta récompense, voici la boule cyan. Je compte sur toi pour me la rendre au plus vite car Mme Arc-En-Ciel ne voit pas toujours d'un très bon oeil ce genre d'arrangement."
-    blanche "Ne t'inquiète pas, je fais au plus vite, merci encore"
-    "Blanche s'en va en courant le longrosso de la rivière."
-    "La prise de vue de Cyanmois peut alors reprendre."
+    scene forest
+    show blanche smile open at farLeft
+    show cyan2 at farRight
+    show cyan at center
+    with dissolve 
+    # TODO : illu pêche
+    blanche "Voilà ta truite Arc-en-Ciel !"
+    show blanche neutral open at farLeft
+    blanche "Ça faisait longtemps que je n'en avais pas pêché d'aussi grosse."
+    show blanche neutral close at farLeft
+    cyan "Mais, c'est extraordinaire !" with vpunch
+    cyan "Je ne m'attendais pas à présenter une perle rare dans mon émission !"
+    cyan "Tu as bien mérité ta récompense, voici la boule Cyan. Je compte sur toi pour me la rendre au plus vite car Madame Arc-en-Ciel ne voit pas toujours d'un très bon oeil ce genre d'arrangement."
+    # TODO : <anime boule + Noir gagne une couleur>
+    show blanche smile open at farLeft
+    blanche "Ne t'inquiète pas, je fais au plus vite, merci encore !"
+    hide blanche smile close at farLeft with dissolve
+    "Je m'éloigne et cours le long de la rivière."
+    "Pendant ce temps, la prise de vue des Cyanmois reprend."
+    show cyan2 at right
+    show cyan at left
+    with move 
     cyan "Voyez donc chers téléspectateurs !"
-    cyan "Un admirateur exceptionnel de l'émission nous a donné cette truite Arc-En-Ciel fraîchement pêchée dans la rivière."
+    cyan "Un admirateur exceptionnel de l'émission nous a donné cette truite Arc-en-Ciel fraîchement pêchée dans la rivière."
     cyan "Un véritable exemple…"
-    grosso "Coupe cette caméra, s'il te plaît."
+    x "Coupe cette caméra, s'il te plaît." with vpunch
+    show cyan2 at farRight
+    show cyan at nearRight
+    with move
+    show grosso at nearLeft behind cyan
+    show maigrichon at farLeft behind grosso
+    with dissolve
     cameraman "Mais…"
     maigrichon "Ne discute pas. On a quelques mots à vous dire à tous les deux."
-    cyan "Je suppose que vous venez de nous voir remettre la boule cyan à cet enfant et que vous désapprouvez cette démarche."
+    cyan "Je suppose que vous venez de nous voir remettre la boule Cyan à cet enfant et que vous désapprouvez cette démarche."
     cyan "Je ne prendrai même pas la peine de vous expliquer, vous ne comprendriez pas."
     cyan "Je sais également ce que je risque et j'en suis tout à fait conscient."
-    grosso "Pfff… pathétique."
-    grosso "Dis-nous au moins où il est parti, ça nous facilitera la tâche et ça permettra peut-être d'alléger ta peine."
+    grosso "Pfff… Pathétique."
+    grosso "Dis-nous au moins où cet enfant est parti, cela nous facilitera la tâche et permettra peut-être d'alléger ta peine."
     cyan "N'y comptez pas."
-    maigrichon "Je l'ai vu remonter le cours de la rivière de toute façon. Dépêchez-nous !"
-    "Grosso et maigrichon partent à sa poursuite à travers les hautes herbes"
+    maigrichon "Je l'ai vu remonter le cours de la rivière de toute façon. Dépêchons-nous !"
+    "Grosso et maigrichon partent en direction des hautes herbes."
     jump chap4

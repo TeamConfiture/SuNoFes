@@ -1,9 +1,4 @@
 ﻿translate english strings:
-
-    # game/characters.rpy:10
-    old "Madame Arc-En-Ciel"
-    new "Lady Rainbow"
-
     # game/characters.rpy:11
     old "Grosso"
     new "Biggy"
@@ -28,12 +23,8 @@
     old "Les deux"
     new "Both"
 
-# TODO: Translation updated at 2022-08-20 10:43
-
-translate english strings:
-
-    # game/characters.rpy:36
-    old "Arc-En-Ciel"
+    # game/characters.rpy:44
+    old "Arc-en-Ciel"
     new "Lady Rainbow"
 
 # TODO: Translation updated at 2022-08-26 22:11
@@ -52,11 +43,6 @@ translate english strings:
     old "Emeraude"
     new "Emeraude"
 
-# TODO: Translation updated at 2022-08-26 22:54
-
-translate english strings:
-
     # game/characters.rpy:48
     old "Picaru"
     new "Picaru"
-

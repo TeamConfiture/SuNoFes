@@ -1,8 +1,8 @@
 ﻿# game/chap/chap3_phishing.rpy:70
-translate english lake_phishing_fish1_8593f474:
+translate english lake_phishing_fish1_3233f1b0:
 
-    # cyan "Ça ressemble à une truite Arc-En-Ciel d'après-toi ? Remets-le à l'eau et plus vite que ça."
-    cyan "Does it look like a Rainbow Trout to you? Put in back in the water and faster that that."
+    # cyan "Ça ressemble à une truite Arc-en-Ciel d'après-toi ? Remets-le à l'eau et plus vite que ça."
+    cyan "Does it look like a Rainbow trout to you? Put in back in the water and faster that that."
 
 # game/chap/chap3_phishing.rpy:72
 translate english lake_phishing_fish1_6ff2ddf7:

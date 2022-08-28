@@ -84,7 +84,7 @@ define sound.Noir_No = ["audio/Characters/Noir/NoirNo_01.ogg"]
 define sound.Noir_Gasp = ["audio/Characters/Noir/NoirGaps_01.ogg"]
 define sound.Noir_Exlamation = ["audio/Characters/Noir/NoirExclamation_01.ogg"]
 
-## Arc-En-Ciel
+## Arc-en-Ciel
 define sound.ArcEnCiel_Speak = ["audio/Characters/ArcEnCiel/.ogg"]
 define sound.ArcEnCiel_Angry = ["audio/Characters/ArcEnCiel/.ogg"]
 define sound.ArcEnCiel_Happy = ["audio/Characters/ArcEnCiel/.ogg"]

@@ -1,558 +1,544 @@
-﻿# TODO: Translation updated at 2022-08-26 22:11
-
-# game/chap/chap3.rpy:4
-translate english chap3_bb0cd45d:
-
-    # "Le présentateur Cyan est très connu du grand public pour son émission Jean Racine et des Saules."
-    "Le présentateur Cyan est très connu du grand public pour son émission Jean Racine et des Saules."
-
-# game/chap/chap3.rpy:5
-translate english chap3_c9544657:
-
-    # "Il va, avec ses équipes, à travers les forêts du monde présenter aux autres chats les beautés de la nature."
-    "Il va, avec ses équipes, à travers les forêts du monde présenter aux autres chats les beautés de la nature."
+﻿# TODO: Translation updated at 2022-08-28 16:53
 
 # game/chap/chap3.rpy:6
+translate english chap3_d309fc3a:
+
+    # blanche "Oh ! C'est... C'est le duo des Cyanmois que je vois au loin !" with vpunch
+    blanche "Oh ! C'est... C'est le duo des Cyanmois que je vois au loin !" with vpunch
+
+# game/chap/chap3.rpy:8
+translate english chap3_57fec416:
+
+    # blanche "Le présentateur Cyan est très connu du grand public pour son émission Jean Racine et des Saules."
+    blanche "Le présentateur Cyan est très connu du grand public pour son émission Jean Racine et des Saules."
+
+# game/chap/chap3.rpy:10
+translate english chap3_5ea786c4:
+
+    # blanche "D'après mon papa, lui et son frère vont à travers les forêts du monde présenter aux autres chats les beautés de la nature."
+    blanche "D'après mon papa, lui et son frère vont à travers les forêts du monde présenter aux autres chats les beautés de la nature."
+
+# game/chap/chap3.rpy:12
+translate english chap3_f26b5140:
+
+    # blanche "Il faut que j'aille leur parler !"
+    blanche "Il faut que j'aille leur parler !"
+
+# game/chap/chap3.rpy:15
 translate english chap3_d27ac3e2:
 
     # cyan "Bonjour à toutes et tous !"
     cyan "Bonjour à toutes et tous !"
 
-# game/chap/chap3.rpy:7
-translate english chap3_e4071701:
+# game/chap/chap3.rpy:16
+translate english chap3_3b46c6b2:
 
-    # cyan "Bienvenue dans Jean Racine et des Saules, l'émission d'Art et Culture la plus connue de Monde 2 ! "
-    cyan "Bienvenue dans Jean Racine et des Saules, l'émission d'Art et Culture la plus connue de Monde 2 ! "
+    # cyan "Bienvenue dans Jean Racine et des Saules, l'émission d'Art et Culture la plus connue du Monde 2 ! "
+    cyan "Bienvenue dans Jean Racine et des Saules, l'émission d'Art et Culture la plus connue du Monde 2 ! "
 
-# game/chap/chap3.rpy:8
-translate english chap3_30439d40:
+# game/chap/chap3.rpy:18
+translate english chap3_2afd8ad9:
 
-    # blanche "Bonjour, désolé de te déranger, je voudrais savoir…"
-    blanche "Bonjour, désolé de te déranger, je voudrais savoir…"
+    # blanche "Bonjour. Désolé de te déranger, je voudrais savoir…"
+    blanche "Bonjour. Désolé de te déranger, je voudrais savoir…"
 
-# game/chap/chap3.rpy:9
-translate english chap3_38464b2e:
+# game/chap/chap3.rpy:22
+translate english chap3_c2a52b84:
 
-    # cameraman "Chuuuuuuuuuut !"
-    cameraman "Chuuuuuuuuuut !"
+    # cameraman "Chuuuuuuuuuut !" with vpunch
+    cameraman "Chuuuuuuuuuut !" with vpunch
 
-# game/chap/chap3.rpy:10
-translate english chap3_bf69a84b:
+# game/chap/chap3.rpy:25
+translate english chap3_e4ef5c48:
 
-    # cyan "Nous voici donc dans la forêt Arc-En-Ciel, très connue pour sa rivière, mais surtout pour ses truites."
-    cyan "Nous voici donc dans la forêt Arc-En-Ciel, très connue pour sa rivière, mais surtout pour ses truites."
+    # cyan "Nous voici donc dans la forêt Arc-en-Ciel, très connue pour sa rivière, mais surtout pour ses truites."
+    cyan "Nous voici donc dans la forêt Arc-en-Ciel, très connue pour sa rivière, mais surtout pour ses truites."
 
-# game/chap/chap3.rpy:11
+# game/chap/chap3.rpy:26
 translate english chap3_2d44a6ea:
 
     # cyan "Admirez donc ces magnifiques chênes centenaires, ces hêtres majestueux et ces petits sapins."
     cyan "Admirez donc ces magnifiques chênes centenaires, ces hêtres majestueux et ces petits sapins."
 
-# game/chap/chap3.rpy:12
-translate english chap3_0d4b1b46:
+# game/chap/chap3.rpy:27
+translate english chap3_9ee4f5d2:
 
-    # cyan "Tous sont le fruit d'une collaboration entre l'être humain et la nature. Observons maintenant les truites."
-    cyan "Tous sont le fruit d'une collaboration entre l'être humain et la nature. Observons maintenant les truites."
+    # cyan "Tous sont le fruit d'une collaboration entre l'être humain et la nature."
+    cyan "Tous sont le fruit d'une collaboration entre l'être humain et la nature."
 
-# game/chap/chap3.rpy:13
-translate english chap3_65caa93f:
+# game/chap/chap3.rpy:28
+translate english chap3_6d2c793e:
 
-    # cameraman "Je suis désolé chaton, mais nous n'avons pas réussi à trouver de truites arc-en-ciel dans la rivière, nous avons seulement quelques truites fario."
-    cameraman "Je suis désolé chaton, mais nous n'avons pas réussi à trouver de truites arc-en-ciel dans la rivière, nous avons seulement quelques truites fario."
+    # cyan "Observons maintenant les truites."
+    cyan "Observons maintenant les truites."
 
-# game/chap/chap3.rpy:14
+# game/chap/chap3.rpy:29
+translate english chap3_f9b512c6:
+
+    # cameraman "Je suis désolé chaton, mais nous n'avons pas réussi à trouver de truites Arc-en-Ciel dans la rivière. Nous avons seulement quelques truites farios."
+    cameraman "Je suis désolé chaton, mais nous n'avons pas réussi à trouver de truites Arc-en-Ciel dans la rivière. Nous avons seulement quelques truites farios."
+
+# game/chap/chap3.rpy:30
 translate english chap3_ff4cfe3b:
 
     # cameraman "Un simple amateur de poisson verra la différence. Je coupe la bande vidéo le temps de trouver une solution."
     cameraman "Un simple amateur de poisson verra la différence. Je coupe la bande vidéo le temps de trouver une solution."
 
-# game/chap/chap3.rpy:15
-translate english chap3_9faa862e:
+# game/chap/chap3.rpy:31
+translate english chap3_8e25d14c:
 
-    # cyan "Mais c'est horrible, qu'allons-nous dire à nos téléspectateurs ?!"
-    cyan "Mais c'est horrible, qu'allons-nous dire à nos téléspectateurs ?!"
+    # cyan "Mais c'est horrible ! Qu'allons-nous dire à nos téléspectateurs ?!" with vpunch
+    cyan "Mais c'est horrible ! Qu'allons-nous dire à nos téléspectateurs ?!" with vpunch
 
-# game/chap/chap3.rpy:16
+# game/chap/chap3.rpy:32
 translate english chap3_5f43274a:
 
     # cyan "Nous ne pouvons pas les décevoir."
     cyan "Nous ne pouvons pas les décevoir."
 
-# game/chap/chap3.rpy:17
-translate english chap3_e11acde9:
+# game/chap/chap3.rpy:33
+translate english chap3_8699d679:
 
-    # cyan "Présenter la forêt Arc-En-Ciel sans ses truites, c'est comme présenter des crêpes sans oeufs."
-    cyan "Présenter la forêt Arc-En-Ciel sans ses truites, c'est comme présenter des crêpes sans oeufs."
-
-# game/chap/chap3.rpy:18
-translate english chap3_1c9b4e22:
-
-    # cyan "C'est impensable ! Inimaginable !"
-    cyan "C'est impensable ! Inimaginable !"
-
-# game/chap/chap3.rpy:19
-translate english chap3_e3b5c12b:
-
-    # cameraman "Cela peut prendre plusieurs heures, les truites Arc-En-Ciel se font de plus en plus rares dans la rivière depuis les sécheresses de 2022 et la pêche intensive de truites."
-    cameraman "Cela peut prendre plusieurs heures, les truites Arc-En-Ciel se font de plus en plus rares dans la rivière depuis les sécheresses de 2022 et la pêche intensive de truites."
-
-# game/chap/chap3.rpy:20
-translate english chap3_69794f56:
-
-    # blanche "Excuse-moi, j'ai une question à te poser."
-    blanche "Excuse-moi, j'ai une question à te poser."
-
-# game/chap/chap3.rpy:21
-translate english chap3_e4c8c532:
-
-    # cameraman "Ça suffit comme ça, on est en plein tournage, ouste !"
-    cameraman "Ça suffit comme ça, on est en plein tournage, ouste !"
-
-# game/chap/chap3.rpy:25
-translate english chap3_b7cfe4f4:
-
-    # blanche "Espèce de rustre, t'es trop méchant avec les enfants, je boude."
-    blanche "Espèce de rustre, t'es trop méchant avec les enfants, je boude."
-
-# game/chap/chap3.rpy:26
-translate english chap3_8b1d7bde:
-
-    # cameraman "C'est pas ce que j'ai voulu dire, mais tu m'as compris, tu nous gênes petit."
-    cameraman "C'est pas ce que j'ai voulu dire, mais tu m'as compris, tu nous gênes petit."
-
-# game/chap/chap3.rpy:27
-translate english chap3_22d5570d:
-
-    # blanche "Mais pourquoi tu avais besoin d'être aussi méchant qu'est-ce que j'ai fait ?"
-    blanche "Mais pourquoi tu avais besoin d'être aussi méchant qu'est-ce que j'ai fait ?"
-
-# game/chap/chap3.rpy:28
-translate english chap3_ac5ac177:
-
-    # cameraman "Je n'aime pas les enfants c'est tout."
-    cameraman "Je n'aime pas les enfants c'est tout."
-
-# game/chap/chap3.rpy:29
-translate english chap3_9ac05401:
-
-    # blanche "Je ne peux vraiment pas essayer de vous aider ?"
-    blanche "Je ne peux vraiment pas essayer de vous aider ?"
-
-# game/chap/chap3.rpy:31
-translate english chap3_015e0ea6:
-
-    # cyan "Attends, attends, ne t'en va pas, j'ai tout mon temps de toute façon maintenant, vas-y pose ta question"
-    cyan "Attends, attends, ne t'en va pas, j'ai tout mon temps de toute façon maintenant, vas-y pose ta question"
-
-# game/chap/chap3.rpy:32
-translate english chap3_7380f46d:
-
-    # blanche "C'est que c'est un peu compliqué, vous n'allez sans doute pas me comprendre."
-    blanche "C'est que c'est un peu compliqué, vous n'allez sans doute pas me comprendre."
+    # cyan "Présenter la forêt Arc-en-Ciel sans ses truites, c'est comme présenter des crêpes sans oeufs."
+    cyan "Présenter la forêt Arc-en-Ciel sans ses truites, c'est comme présenter des crêpes sans oeufs."
 
 # game/chap/chap3.rpy:34
-translate english chap3_ec817b55:
+translate english chap3_931fc708:
 
-    # blanche "Excuse-moi, mais j'ai l'impression que je ne gêne plus tant que ça, poser une simple question ne devrait pas être un problème."
-    blanche "Excuse-moi, mais j'ai l'impression que je ne gêne plus tant que ça, poser une simple question ne devrait pas être un problème."
+    # cyan "C'est impensable ! Inimaginable !" with vpunch
+    cyan "C'est impensable ! Inimaginable !" with vpunch
 
 # game/chap/chap3.rpy:35
-translate english chap3_833cc141:
+translate english chap3_71adbde4:
 
-    # cameraman "Bon, OK, mais pas longtemps alors"
-    cameraman "Bon, OK, mais pas longtemps alors"
+    # cameraman "Cela peut prendre plusieurs heures : les truites Arc-en-Ciel se font de plus en plus rares dans la rivière depuis les sécheresses des dernières années et leur pêche intensive."
+    cameraman "Cela peut prendre plusieurs heures : les truites Arc-en-Ciel se font de plus en plus rares dans la rivière depuis les sécheresses des dernières années et leur pêche intensive."
 
-# game/chap/chap3.rpy:36
-translate english chap3_9ce47b0a:
+# game/chap/chap3.rpy:40
+translate english chap3_e9afb690:
 
-    # blanche "Merci."
-    blanche "Merci."
+    # blanche "Excuse-moi, j'ai une question à te poser : je cherche la bou..."
+    blanche "Excuse-moi, j'ai une question à te poser : je cherche la bou..."
 
-# game/chap/chap3.rpy:38
+# game/chap/chap3.rpy:42
+translate english chap3_4df03fc1:
+
+    # cameraman "Ça suffit comme ça ! On est en plein tournage, ouste !" with vpunch
+    cameraman "Ça suffit comme ça ! On est en plein tournage, ouste !" with vpunch
+
+# game/chap/chap3.rpy:47
+translate english chap3_effad0a2:
+
+    # blanche "Méchant ! T'es trop méchant ! Je boude."
+    blanche "Méchant ! T'es trop méchant ! Je boude."
+
+# game/chap/chap3.rpy:49
+translate english chap3_5993763d:
+
+    # cameraman "Ce n'est pas ce que j'ai voulu dire, mais tu m'as compris. Tu nous gênes."
+    cameraman "Ce n'est pas ce que j'ai voulu dire, mais tu m'as compris. Tu nous gênes."
+
+# game/chap/chap3.rpy:51
+translate english chap3_94a00593:
+
+    # blanche "Pourquoi t'es aussi méchant ? Qu'est-ce que j'ai fait ?"
+    blanche "Pourquoi t'es aussi méchant ? Qu'est-ce que j'ai fait ?"
+
+# game/chap/chap3.rpy:53
+translate english chap3_7fb6f6ca:
+
+    # cameraman "Je n'aime pas les enfants, c'est tout."
+    cameraman "Je n'aime pas les enfants, c'est tout."
+
+# game/chap/chap3.rpy:55
+translate english chap3_1c9ad485:
+
+    # blanche "Ne sous-estime pas les enfants ! On est capable de faire pleins de choses !"
+    blanche "Ne sous-estime pas les enfants ! On est capable de faire pleins de choses !"
+
+# game/chap/chap3.rpy:57
+translate english chap3_1a6de707:
+
+    # cyan "Ah oui ? Comment pourrais-tu nous aider ?"
+    cyan "Ah oui ? Comment pourrais-tu nous aider ?"
+
+# game/chap/chap3.rpy:59
+translate english chap3_51939b64:
+
+    # cyan "Oh que vois-je ? Un visiteur venu d'ailleurs ! Ne t'en va pas !"
+    cyan "Oh que vois-je ? Un visiteur venu d'ailleurs ! Ne t'en va pas !"
+
+# game/chap/chap3.rpy:60
+translate english chap3_0d57d0cb:
+
+    # cyan "Que viens-tu faire ici ?"
+    cyan "Que viens-tu faire ici ?"
+
+# game/chap/chap3.rpy:62
+translate english chap3_454b7ee6:
+
+    # blanche "C'est que... C'est un peu compliqué, vous n'allez sans doute pas me comprendre."
+    blanche "C'est que... C'est un peu compliqué, vous n'allez sans doute pas me comprendre."
+
+# game/chap/chap3.rpy:64
 translate english chap3_06a56fd5:
 
     # cyan "De quoi s'agit-il ?"
     cyan "De quoi s'agit-il ?"
 
-# game/chap/chap3.rpy:39
-translate english chap3_2828d71e:
+# game/chap/chap3.rpy:67
+translate english chap3_c298e0df:
 
-    # blanche "Je souhaitais te proposer un marché : je te pêche une truite arc-en-ciel et tu me cèdes ta boule cyan pour une nuit, ça vous va ?"
-    blanche "Je souhaitais te proposer un marché : je te pêche une truite arc-en-ciel et tu me cèdes ta boule cyan pour une nuit, ça vous va ?"
+    # blanche "Excuse-moi, mais j'ai l'impression que je ne gêne plus tant que ça."
+    blanche "Excuse-moi, mais j'ai l'impression que je ne gêne plus tant que ça."
 
-# game/chap/chap3.rpy:40
-translate english chap3_9d6ebef3:
+# game/chap/chap3.rpy:68
+translate english chap3_39c31e59:
 
-    # cyan "Pourquoi je devrais te croire ?"
-    cyan "Pourquoi je devrais te croire ?"
+    # blanche "Poser une simple question ne devrait pas être un problème."
+    blanche "Poser une simple question ne devrait pas être un problème."
 
-# game/chap/chap3.rpy:41
-translate english chap3_3965fb88:
+# game/chap/chap3.rpy:70
+translate english chap3_a186b4e5:
 
-    # cyan "En plus, je ne suis pas censé me séparer de ma boule, cela fait partie des clauses de mon contrat et Cyanmois ne faillit à rien !"
-    cyan "En plus, je ne suis pas censé me séparer de ma boule, cela fait partie des clauses de mon contrat et Cyanmois ne faillit à rien !"
+    # cameraman "Bon, OK, mais pas longtemps alors."
+    cameraman "Bon, OK, mais pas longtemps alors."
 
-# game/chap/chap3.rpy:42
-translate english chap3_4dbe5852:
+# game/chap/chap3.rpy:72
+translate english chap3_9ce47b0a:
 
-    # blanche "Je suis un expert de la pêche : mon père m'a appris quand j'étais minaud."
-    blanche "Je suis un expert de la pêche : mon père m'a appris quand j'étais minaud."
+    # blanche "Merci."
+    blanche "Merci."
 
-# game/chap/chap3.rpy:43
-translate english chap3_e39a070f:
+# game/chap/chap3.rpy:74
+translate english chap3_7de3fb88:
 
-    # blanche "Mais maintenant, il est très malade et dans son état, il ne peut plus se lever."
-    blanche "Mais maintenant, il est très malade et dans son état, il ne peut plus se lever."
+    # cyan "Hum ? Qu'y a-t-il ?"
+    cyan "Hum ? Qu'y a-t-il ?"
 
-# game/chap/chap3.rpy:44
-translate english chap3_dc8e2c32:
+# game/chap/chap3.rpy:77
+translate english chap3_e5dd8db0:
 
-    # blanche "Il m'a raconté qu'il aimerait voir une dernière fois les couleurs de l'arc-en-ciel."
-    blanche "Il m'a raconté qu'il aimerait voir une dernière fois les couleurs de l'arc-en-ciel."
+    # blanche "Je recherche actuellement la boule Cyan."
+    blanche "Je recherche actuellement la boule Cyan."
 
-# game/chap/chap3.rpy:45
-translate english chap3_a688d26e:
+# game/chap/chap3.rpy:78
+translate english chap3_69f6de9b:
 
-    # blanche "Ce serait pour lui l'ultime cadeau. Celui sur lequel se repose ses dernières forces."
-    blanche "Ce serait pour lui l'ultime cadeau. Celui sur lequel se repose ses dernières forces."
+    # blanche "Je vous propose un marché : je vous pêche une truite Arc-en-Ciel et en échange vous m'aidez à trouver la boule Cyan. Ça vous va ?"
+    blanche "Je vous propose un marché : je vous pêche une truite Arc-en-Ciel et en échange vous m'aidez à trouver la boule Cyan. Ça vous va ?"
 
-# game/chap/chap3.rpy:46
-translate english chap3_66667da8:
+# game/chap/chap3.rpy:80
+translate english chap3_64d3e968:
 
-    # cyan "Tu ne serais pas l'enfant de Noir ?"
-    cyan "Tu ne serais pas l'enfant de Noir ?"
+    # cameraman "Mais, c'est que ce gosse est cinglé ?!" with vpunch
+    cameraman "Mais, c'est que ce gosse est cinglé ?!" with vpunch
 
-# game/chap/chap3.rpy:47
+# game/chap/chap3.rpy:81
+translate english chap3_b1a3a023:
+
+    # cyan "Hum... Pourquoi je devrais te croire ?"
+    cyan "Hum... Pourquoi je devrais te croire ?"
+
+# game/chap/chap3.rpy:83
+translate english chap3_c1137466:
+
+    # blanche "C'est... C'est que..."
+    blanche "C'est... C'est que..."
+
+# game/chap/chap3.rpy:86
+translate english chap3_e0a578ee:
+
+    # cyan "Cette boule Cyan que tu cherches est en ma possession."
+    cyan "Cette boule Cyan que tu cherches est en ma possession."
+
+# game/chap/chap3.rpy:87
+translate english chap3_424eed34:
+
+    # cyan "Nous ne sommes pas censés nous en séparer. Cela fait partie des clauses de notre contrat et le duo Cyanmois ne saurait faillir !"
+    cyan "Nous ne sommes pas censés nous en séparer. Cela fait partie des clauses de notre contrat et le duo Cyanmois ne saurait faillir !"
+
+# game/chap/chap3.rpy:90
+translate english chap3_0fcfe736:
+
+    # blanche "Croyez-moi ! Je suis un expert de la pêche ! Mon papa Noir m'a appris quand j'étais jeune !" with vpunch
+    blanche "Croyez-moi ! Je suis un expert de la pêche ! Mon papa Noir m'a appris quand j'étais jeune !" with vpunch
+
+# game/chap/chap3.rpy:92
+translate english chap3_729427a7:
+
+    # blanche "Mais maintenant il est très malade, il ne peut plus se lever..."
+    blanche "Mais maintenant il est très malade, il ne peut plus se lever..."
+
+# game/chap/chap3.rpy:94
+translate english chap3_e75e21a4:
+
+    # blanche "Il m'a raconté qu'il aimerait voir les couleurs de l'arc-en-ciel une dernière fois."
+    blanche "Il m'a raconté qu'il aimerait voir les couleurs de l'arc-en-ciel une dernière fois."
+
+# game/chap/chap3.rpy:96
+translate english chap3_4180ef9e:
+
+    # blanche "C'est pour ça que j'aimerais lui faire une surprise !"
+    blanche "C'est pour ça que j'aimerais lui faire une surprise !"
+
+# game/chap/chap3.rpy:98
+translate english chap3_40070de9:
+
+    # cyan "L'enfant de Noir ?!" with vpunch
+    cyan "L'enfant de Noir ?!" with vpunch
+
+# game/chap/chap3.rpy:99
 translate english chap3_60fe9eff:
 
     # cyan "C'est une légende vivante en matière de pêche !"
     cyan "C'est une légende vivante en matière de pêche !"
 
-# game/chap/chap3.rpy:48
-translate english chap3_564d07cb:
+# game/chap/chap3.rpy:101
+translate english chap3_ee114534:
 
-    # blanche "Si, bien sûr ! Je ne pensais pas que mon père était si connu !"
-    blanche "Si, bien sûr ! Je ne pensais pas que mon père était si connu !"
+    # blanche "Oui ! Noir est mon papa ! Je ne pensais pas que mon papa était si connu !"
+    blanche "Oui ! Noir est mon papa ! Je ne pensais pas que mon papa était si connu !"
 
-# game/chap/chap3.rpy:49
-translate english chap3_aa366b2e:
+# game/chap/chap3.rpy:103
+translate english chap3_aa5a25bb:
 
-    # blanche "À la maison, tout est noir ou blanc. Aucun souvenir de couleur ne persiste."
-    blanche "À la maison, tout est noir ou blanc. Aucun souvenir de couleur ne persiste."
+    # blanche "À la maison, tout est noir et blanc. Il n'y a pas beaucoup de couleur."
+    blanche "À la maison, tout est noir et blanc. Il n'y a pas beaucoup de couleur."
 
-# game/chap/chap3.rpy:50
-translate english chap3_7b96d91c:
+# game/chap/chap3.rpy:104
+translate english chap3_7d9e022a:
 
-    # blanche "Je suppose que c'est pour ça que je n'ai jamais rien su de sa notoriété."
-    blanche "Je suppose que c'est pour ça que je n'ai jamais rien su de sa notoriété."
+    # blanche "C'est peut-être pour ça que je n'ai jamais rien su de sa notoriété."
+    blanche "C'est peut-être pour ça que je n'ai jamais rien su de sa notoriété."
 
-# game/chap/chap3.rpy:51
-translate english chap3_c87600c3:
+# game/chap/chap3.rpy:106
+translate english chap3_33de6278:
 
-    # cyan "Noir était un grand pêcheur, j'avais fait un de mes tout premiers reportages sur la rivière Dark Quidor, une rivière très sombre qui apporte le malheur autour d'elle."
-    cyan "Noir était un grand pêcheur, j'avais fait un de mes tout premiers reportages sur la rivière Dark Quidor, une rivière très sombre qui apporte le malheur autour d'elle."
+    # cyan "Noir était un grand pêcheur. J'avais fait un de mes tout premiers reportages sur la rivière Dark Quidor, une rivière très sombre qui absorbe tous les malheurs du monde."
+    cyan "Noir était un grand pêcheur. J'avais fait un de mes tout premiers reportages sur la rivière Dark Quidor, une rivière très sombre qui absorbe tous les malheurs du monde."
 
-# game/chap/chap3.rpy:52
+# game/chap/chap3.rpy:107
 translate english chap3_e79959d1:
 
     # cyan "À cette époque, ton père espérait attraper le brochet doré, une légende locale."
     cyan "À cette époque, ton père espérait attraper le brochet doré, une légende locale."
 
-# game/chap/chap3.rpy:53
+# game/chap/chap3.rpy:108
 translate english chap3_e9d312f8:
 
     # cyan "Malheureusement, le malheur est venu auprès de ton père. Son amour de la pêche l'aura aveuglé à jamais."
     cyan "Malheureusement, le malheur est venu auprès de ton père. Son amour de la pêche l'aura aveuglé à jamais."
 
-# game/chap/chap3.rpy:54
+# game/chap/chap3.rpy:109
 translate english chap3_78c6b0d2:
 
     # cyan "Je me souviens que tous les journaux de l'époque en avaient parlé, c'est une véritable tragédie."
     cyan "Je me souviens que tous les journaux de l'époque en avaient parlé, c'est une véritable tragédie."
 
-# game/chap/chap3.rpy:55
-translate english chap3_ee56b03c:
+# game/chap/chap3.rpy:111
+translate english chap3_3f2638b6:
 
-    # blanche "Oui, et depuis quelque temps, son état se dégrade."
-    blanche "Oui, et depuis quelque temps, son état se dégrade."
+    # blanche "Oui, je le sais..."
+    blanche "Oui, je le sais..."
 
-# game/chap/chap3.rpy:56
-translate english chap3_1dd041ee:
+# game/chap/chap3.rpy:112
+translate english chap3_aff62ef9:
 
-    # blanche "Je n'ai peur qu'il ne décède avant que j'eusse pu réaliser son dernier voeu : voir les sept vraies couleurs de l'arc-en-ciel."
-    blanche "Je n'ai peur qu'il ne décède avant que j'eusse pu réaliser son dernier voeu : voir les sept vraies couleurs de l'arc-en-ciel."
+    # blanche "Depuis quelque temps, son état se dégrade. J'espère que j'aurai le temps de lui montrer les sept couleurs de l'arc-en-ciel."
+    blanche "Depuis quelque temps, son état se dégrade. J'espère que j'aurai le temps de lui montrer les sept couleurs de l'arc-en-ciel."
 
-# game/chap/chap3.rpy:57
+# game/chap/chap3.rpy:114
 translate english chap3_c50050fd:
 
     # cyan "Bon, dans ce cas, c'est d'accord."
     cyan "Bon, dans ce cas, c'est d'accord."
 
-# game/chap/chap3.rpy:58
-translate english chap3_8630a590:
+# game/chap/chap3.rpy:116
+translate english chap3_9b69aef9:
 
-    # cyan "Je n'ai pas trop le choix sinon mon reportage est foutu. Alors si ça peut faire plaisir à Noir, je peux bien te faire ce geste."
-    cyan "Je n'ai pas trop le choix sinon mon reportage est foutu. Alors si ça peut faire plaisir à Noir, je peux bien te faire ce geste."
+    # blanche "C'est vrai ?!" with vpunch
+    blanche "C'est vrai ?!" with vpunch
 
-# game/chap/chap3.rpy:59
-translate english chap3_e1805c2c:
+# game/chap/chap3.rpy:118
+translate english chap3_889728bc:
 
-    # cyan "Tu vois ce lac d'où démarre la rivière, c'est là qu'il y avait plein de truites par le passé."
-    cyan "Tu vois ce lac d'où démarre la rivière, c'est là qu'il y avait plein de truites par le passé."
+    # cameraman "Mais, Cyan, c'est de la folie !" with vpunch
+    cameraman "Mais, Cyan, c'est de la folie !" with vpunch
 
-# game/chap/chap3.rpy:60
+# game/chap/chap3.rpy:119
+translate english chap3_2a2ba8f9:
+
+    # cyan "On n'a pas trop le choix sinon le reportage est foutu. Alors si ça peut faire plaisir à Noir, je veux bien faire ce geste."
+    cyan "On n'a pas trop le choix sinon le reportage est foutu. Alors si ça peut faire plaisir à Noir, je veux bien faire ce geste."
+
+# game/chap/chap3.rpy:120
+translate english chap3_b5b28b3f:
+
+    # cyan "Tu vois ce lac d'où démarre la rivière ? C'est là que se trouvait plein de truites Arc-en-Ciel par le passé."
+    cyan "Tu vois ce lac d'où démarre la rivière ? C'est là que se trouvait plein de truites Arc-en-Ciel par le passé."
+
+# game/chap/chap3.rpy:121
 translate english chap3_3ccb7a85:
 
     # cyan "Je te fournis la canne à pêche et je te souhaite bonne chance."
     cyan "Je te fournis la canne à pêche et je te souhaite bonne chance."
 
-# game/chap/chap3.rpy:61
+# game/chap/chap3.rpy:122
 translate english chap3_ebe03865:
 
     # cyan "J'aimerais reprendre le tournage dans un quart d'heure maximum."
     cyan "J'aimerais reprendre le tournage dans un quart d'heure maximum."
 
-# game/chap/chap3.rpy:62
+# game/chap/chap3.rpy:123
 translate english chap3_12de5b20:
 
     # cyan "Ne traîne pas trop."
     cyan "Ne traîne pas trop."
 
-# game/chap/chap3.rpy:70
-translate english chap3_3462b1b4:
+# game/chap/chap3.rpy:134
+translate english chap3_2_62f8d2bc:
 
-    # "Blanche s'en va en courant le longrosso de la rivière."
-    "Blanche s'en va en courant le longrosso de la rivière."
+    # blanche "Voilà ta truite Arc-en-Ciel !"
+    blanche "Voilà ta truite Arc-en-Ciel !"
 
-# game/chap/chap3.rpy:71
-translate english chap3_485074d3:
+# game/chap/chap3.rpy:136
+translate english chap3_2_3fcfc0bb:
 
-    # "La prise de vue de Cyanmois peut alors reprendre."
-    "La prise de vue de Cyanmois peut alors reprendre."
+    # blanche "Ça faisait longtemps que je n'en avais pas pêché d'aussi grosse."
+    blanche "Ça faisait longtemps que je n'en avais pas pêché d'aussi grosse."
 
-# game/chap/chap3.rpy:73
-translate english chap3_771f4f70:
+# game/chap/chap3.rpy:138
+translate english chap3_2_84629a10:
 
-    # cyan "Voyez donc chers téléspectateurs !"
-    cyan "Voyez donc chers téléspectateurs !"
+    # cyan "Mais, c'est extraordinaire !" with vpunch
+    cyan "Mais, c'est extraordinaire !" with vpunch
 
-# game/chap/chap3.rpy:74
-translate english chap3_e4b7db6d:
+# game/chap/chap3.rpy:139
+translate english chap3_2_ce9c4c50:
 
-    # cyan "Un admirateur exceptionnel de l'émission nous a donné cette truite Arc-En-Ciel fraîchement pêchée dans la rivière."
-    cyan "Un admirateur exceptionnel de l'émission nous a donné cette truite Arc-En-Ciel fraîchement pêchée dans la rivière."
+    # cyan "Je ne m'attendais pas à présenter une perle rare dans mon émission !"
+    cyan "Je ne m'attendais pas à présenter une perle rare dans mon émission !"
 
-# game/chap/chap3.rpy:75
-translate english chap3_3791524a:
+# game/chap/chap3.rpy:140
+translate english chap3_2_c9d85a94:
 
-    # cyan "Un véritable exemple…"
-    cyan "Un véritable exemple…"
+    # cyan "Tu as bien mérité ta récompense, voici la boule Cyan. Je compte sur toi pour me la rendre au plus vite car Madame Arc-en-Ciel ne voit pas toujours d'un très bon oeil ce genre d'arrangement."
+    cyan "Tu as bien mérité ta récompense, voici la boule Cyan. Je compte sur toi pour me la rendre au plus vite car Madame Arc-en-Ciel ne voit pas toujours d'un très bon oeil ce genre d'arrangement."
 
-# game/chap/chap3.rpy:76
-translate english chap3_d441559b:
+# game/chap/chap3.rpy:143
+translate english chap3_2_928e0a87:
 
-    # grosso "Coupe cette caméra, s'il te plaît."
-    grosso "Coupe cette caméra, s'il te plaît."
+    # blanche "Ne t'inquiète pas, je fais au plus vite, merci encore !"
+    blanche "Ne t'inquiète pas, je fais au plus vite, merci encore !"
 
-# game/chap/chap3.rpy:77
-translate english chap3_2c961c93:
+# game/chap/chap3.rpy:145
+translate english chap3_2_dfc7f83a:
 
-    # cameraman "Mais…"
-    cameraman "Mais…"
+    # "Je m'éloigne et cours le long de la rivière."
+    "Je m'éloigne et cours le long de la rivière."
 
-# game/chap/chap3.rpy:78
-translate english chap3_03519786:
+# game/chap/chap3.rpy:146
+translate english chap3_2_09952507:
 
-    # maigrichon "Ne discute pas. On a quelques mots à vous dire à tous les deux."
-    maigrichon "Ne discute pas. On a quelques mots à vous dire à tous les deux."
+    # "Pendant ce temps, la prise de vue des Cyanmois reprend."
+    "Pendant ce temps, la prise de vue des Cyanmois reprend."
 
-# game/chap/chap3.rpy:79
-translate english chap3_400f779c:
-
-    # cyan "Je suppose que vous venez de nous voir remettre la boule cyan à cet enfant et que vous désapprouvez cette démarche."
-    cyan "Je suppose que vous venez de nous voir remettre la boule cyan à cet enfant et que vous désapprouvez cette démarche."
-
-# game/chap/chap3.rpy:80
-translate english chap3_7cfb8e01:
-
-    # cyan "Je ne prendrai même pas la peine de vous expliquer, vous ne comprendriez pas."
-    cyan "Je ne prendrai même pas la peine de vous expliquer, vous ne comprendriez pas."
-
-# game/chap/chap3.rpy:81
-translate english chap3_ddc0005b:
-
-    # cyan "Je sais également ce que je risque et j'en suis tout à fait conscient."
-    cyan "Je sais également ce que je risque et j'en suis tout à fait conscient."
-
-# game/chap/chap3.rpy:82
-translate english chap3_8628b92a:
-
-    # grosso "Pfff… pathétique."
-    grosso "Pfff… pathétique."
-
-# game/chap/chap3.rpy:83
-translate english chap3_254bdc1d:
-
-    # grosso "Dis-nous au moins où il est parti, ça nous facilitera la tâche et ça permettra peut-être d'alléger ta peine."
-    grosso "Dis-nous au moins où il est parti, ça nous facilitera la tâche et ça permettra peut-être d'alléger ta peine."
-
-# game/chap/chap3.rpy:84
-translate english chap3_621e5953:
-
-    # cyan "N'y comptez pas."
-    cyan "N'y comptez pas."
-
-# game/chap/chap3.rpy:85
-translate english chap3_38e37f93:
-
-    # maigrichon "Je l'ai vu remonter le cours de la rivière de toute façon. Dépêchez-nous !"
-    maigrichon "Je l'ai vu remonter le cours de la rivière de toute façon. Dépêchez-nous !"
-
-# game/chap/chap3.rpy:86
-translate english chap3_111227c4:
-
-    # "Grosso et maigrichon partent à sa poursuite à travers les hautes herbes"
-    "Grosso et maigrichon partent à sa poursuite à travers les hautes herbes"
-
-translate english strings:
-
-    # game/chap/chap3.rpy:23
-    old "Le traiter de rustre"
-    new "Le traiter de rustre"
-
-    # game/chap/chap3.rpy:23
-    old "Tourner les talons"
-    new "Tourner les talons"
-
-    # game/chap/chap3.rpy:23
-    old "Lui répondre poliment"
-    new "Lui répondre poliment"
-
-# TODO: Translation updated at 2022-08-26 22:54
-
-# game/chap/chap3.rpy:13
-translate english chap3_0a122bbe:
-
-    # cameraman "Je suis désolé chaton, mais nous n'avons pas réussi à trouver de truites Arc-En-Ciel dans la rivière, nous avons seulement quelques truites fario."
-    cameraman "Je suis désolé chaton, mais nous n'avons pas réussi à trouver de truites Arc-En-Ciel dans la rivière, nous avons seulement quelques truites fario."
-
-# game/chap/chap3.rpy:39
-translate english chap3_fcb43ecd:
-
-    # blanche "Je souhaitais te proposer un marché : je te pêche une truite Arc-En-Ciel et tu me cèdes ta boule cyan pour une nuit, ça vous va ?"
-    blanche "Je souhaitais te proposer un marché : je te pêche une truite Arc-En-Ciel et tu me cèdes ta boule cyan pour une nuit, ça vous va ?"
-
-# game/chap/chap3.rpy:68
-translate english chap3_2_34e9209a:
-
-    # blanche "Voilà ta truite Arc-En-Ciel, ça faisait longtemps que je n'en avais pas pêché d'aussi grosse."
-    blanche "Voilà ta truite Arc-En-Ciel, ça faisait longtemps que je n'en avais pas pêché d'aussi grosse."
-
-# game/chap/chap3.rpy:69
-translate english chap3_2_00a7f9b2:
-
-    # cyan "Mais c'est extraordinaire ! Je ne m'attendais pas à présenter une perle rare dans mon émission ! Tu as bien mérité ta récompense, voici la boule cyan. Je compte sur toi pour me la rendre au plus vite car Mme Arc-En-Ciel ne voit pas toujours d'un très bon oeil ce genre d'arrangement."
-    cyan "Mais c'est extraordinaire ! Je ne m'attendais pas à présenter une perle rare dans mon émission ! Tu as bien mérité ta récompense, voici la boule cyan. Je compte sur toi pour me la rendre au plus vite car Mme Arc-En-Ciel ne voit pas toujours d'un très bon oeil ce genre d'arrangement."
-
-# game/chap/chap3.rpy:70
-translate english chap3_2_15f2b2a6:
-
-    # blanche "Ne t'inquiète pas, je fais au plus vite, merci encore"
-    blanche "Ne t'inquiète pas, je fais au plus vite, merci encore"
-
-# game/chap/chap3.rpy:71
-translate english chap3_2_3462b1b4:
-
-    # "Blanche s'en va en courant le longrosso de la rivière."
-    "Blanche s'en va en courant le longrosso de la rivière."
-
-# game/chap/chap3.rpy:72
-translate english chap3_2_485074d3:
-
-    # "La prise de vue de Cyanmois peut alors reprendre."
-    "La prise de vue de Cyanmois peut alors reprendre."
-
-# game/chap/chap3.rpy:73
+# game/chap/chap3.rpy:150
 translate english chap3_2_771f4f70:
 
     # cyan "Voyez donc chers téléspectateurs !"
     cyan "Voyez donc chers téléspectateurs !"
 
-# game/chap/chap3.rpy:74
-translate english chap3_2_e4b7db6d:
+# game/chap/chap3.rpy:151
+translate english chap3_2_d2cd7ff2:
 
-    # cyan "Un admirateur exceptionnel de l'émission nous a donné cette truite Arc-En-Ciel fraîchement pêchée dans la rivière."
-    cyan "Un admirateur exceptionnel de l'émission nous a donné cette truite Arc-En-Ciel fraîchement pêchée dans la rivière."
+    # cyan "Un admirateur exceptionnel de l'émission nous a donné cette truite Arc-en-Ciel fraîchement pêchée dans la rivière."
+    cyan "Un admirateur exceptionnel de l'émission nous a donné cette truite Arc-en-Ciel fraîchement pêchée dans la rivière."
 
-# game/chap/chap3.rpy:75
+# game/chap/chap3.rpy:152
 translate english chap3_2_3791524a:
 
     # cyan "Un véritable exemple…"
     cyan "Un véritable exemple…"
 
-# game/chap/chap3.rpy:76
-translate english chap3_2_d441559b:
+# game/chap/chap3.rpy:153
+translate english chap3_2_57388cfd:
 
-    # grosso "Coupe cette caméra, s'il te plaît."
-    grosso "Coupe cette caméra, s'il te plaît."
+    # x "Coupe cette caméra, s'il te plaît." with vpunch
+    x "Coupe cette caméra, s'il te plaît." with vpunch
 
-# game/chap/chap3.rpy:77
+# game/chap/chap3.rpy:160
 translate english chap3_2_2c961c93:
 
     # cameraman "Mais…"
     cameraman "Mais…"
 
-# game/chap/chap3.rpy:78
+# game/chap/chap3.rpy:161
 translate english chap3_2_03519786:
 
     # maigrichon "Ne discute pas. On a quelques mots à vous dire à tous les deux."
     maigrichon "Ne discute pas. On a quelques mots à vous dire à tous les deux."
 
-# game/chap/chap3.rpy:79
-translate english chap3_2_400f779c:
+# game/chap/chap3.rpy:162
+translate english chap3_2_3467e263:
 
-    # cyan "Je suppose que vous venez de nous voir remettre la boule cyan à cet enfant et que vous désapprouvez cette démarche."
-    cyan "Je suppose que vous venez de nous voir remettre la boule cyan à cet enfant et que vous désapprouvez cette démarche."
+    # cyan "Je suppose que vous venez de nous voir remettre la boule Cyan à cet enfant et que vous désapprouvez cette démarche."
+    cyan "Je suppose que vous venez de nous voir remettre la boule Cyan à cet enfant et que vous désapprouvez cette démarche."
 
-# game/chap/chap3.rpy:80
+# game/chap/chap3.rpy:163
 translate english chap3_2_7cfb8e01:
 
     # cyan "Je ne prendrai même pas la peine de vous expliquer, vous ne comprendriez pas."
     cyan "Je ne prendrai même pas la peine de vous expliquer, vous ne comprendriez pas."
 
-# game/chap/chap3.rpy:81
+# game/chap/chap3.rpy:164
 translate english chap3_2_ddc0005b:
 
     # cyan "Je sais également ce que je risque et j'en suis tout à fait conscient."
     cyan "Je sais également ce que je risque et j'en suis tout à fait conscient."
 
-# game/chap/chap3.rpy:82
-translate english chap3_2_8628b92a:
+# game/chap/chap3.rpy:165
+translate english chap3_2_6eae29e2:
 
-    # grosso "Pfff… pathétique."
-    grosso "Pfff… pathétique."
+    # grosso "Pfff… Pathétique."
+    grosso "Pfff… Pathétique."
 
-# game/chap/chap3.rpy:83
-translate english chap3_2_254bdc1d:
+# game/chap/chap3.rpy:166
+translate english chap3_2_2761b796:
 
-    # grosso "Dis-nous au moins où il est parti, ça nous facilitera la tâche et ça permettra peut-être d'alléger ta peine."
-    grosso "Dis-nous au moins où il est parti, ça nous facilitera la tâche et ça permettra peut-être d'alléger ta peine."
+    # grosso "Dis-nous au moins où cet enfant est parti, cela nous facilitera la tâche et permettra peut-être d'alléger ta peine."
+    grosso "Dis-nous au moins où cet enfant est parti, cela nous facilitera la tâche et permettra peut-être d'alléger ta peine."
 
-# game/chap/chap3.rpy:84
+# game/chap/chap3.rpy:167
 translate english chap3_2_621e5953:
 
     # cyan "N'y comptez pas."
     cyan "N'y comptez pas."
 
-# game/chap/chap3.rpy:85
-translate english chap3_2_38e37f93:
+# game/chap/chap3.rpy:168
+translate english chap3_2_621c7eba:
 
-    # maigrichon "Je l'ai vu remonter le cours de la rivière de toute façon. Dépêchez-nous !"
-    maigrichon "Je l'ai vu remonter le cours de la rivière de toute façon. Dépêchez-nous !"
+    # maigrichon "Je l'ai vu remonter le cours de la rivière de toute façon. Dépêchons-nous !"
+    maigrichon "Je l'ai vu remonter le cours de la rivière de toute façon. Dépêchons-nous !"
 
-# game/chap/chap3.rpy:86
-translate english chap3_2_111227c4:
+# game/chap/chap3.rpy:169
+translate english chap3_2_2d63e8f8:
 
-    # "Grosso et maigrichon partent à sa poursuite à travers les hautes herbes"
-    "Grosso et maigrichon partent à sa poursuite à travers les hautes herbes"
+    # "Grosso et maigrichon partent en direction des hautes herbes."
+    "Grosso et maigrichon partent en direction des hautes herbes."
+
+translate english strings:
+
+    # game/chap/chap3.rpy:44
+    old "Le traiter de méchant"
+    new "Le traiter de méchant"
+
+    # game/chap/chap3.rpy:44
+    old "Partir chercher la boule ailleurs"
+    new "Partir chercher la boule ailleurs"
+
+    # game/chap/chap3.rpy:44
+    old "Lui répondre poliment"
+    new "Lui répondre poliment"
 

@@ -94,10 +94,10 @@ translate english strings:
 
     # game/script.rpy:46
     old "noire"
-    new "noire" 
+    new "noire"
 
-    # game/script.rpy:47
-    old "Oh non, c'est le nom de mon père."
+    # game/chap/chap0.rpy:40
+    old "Oh non, c'est le nom de mon papa."
     new "Oh no, it's Daddy's name."
 
     # game/script.rpy:109

@@ -22,6 +22,7 @@ image boat = "images/items/boat.png"
 
 image crystal_purple = "images/boules/Boules_1.png"
 image crystal_indigo = "images/boules/Boules_2.png"
+image crystal_cyan = "images/boules/Boules_3.png"
 
 # Lake images
 image lake_mousehole = "images/items/hole_alpha.png"
