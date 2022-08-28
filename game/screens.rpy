@@ -447,12 +447,19 @@ screen return(returnFrom):
                 style "return_button"
                 action ShowMenu('main_menu') activate_sound renpy.random.choice(sound.Return_Button)
         elif returnFrom == "extra":
+            python:
+                if renpy.music.get_playing() not in music.Theme_Menu:
+                    music_action = [musicroom.Stop(), Play('music', renpy.random.choice(music.Theme_Menu), fadein = 1.0)]
+                else:
+                    music_action = []
             textbutton _("Retour"):
                 style "return_button"
-                action [ShowMenu('main_menu'), musicroom.Stop()] activate_sound renpy.random.choice(sound.Return_Button)
+                action [ShowMenu('main_menu'), *music_action]
+                activate_sound renpy.random.choice(sound.Return_Button)
             textbutton _("Menu"):
                 style "return_button"
-                action [ShowMenu('main_menu'), musicroom.Stop()] activate_sound renpy.random.choice(sound.Return_Button)
+                action [ShowMenu('main_menu'), *music_action]
+                activate_sound renpy.random.choice(sound.Return_Button)
         else:
             textbutton _("Retour"):
                 style "return_button"
