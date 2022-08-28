@@ -160,7 +160,7 @@ define config.save_directory = "Colors-1656705232"
 ##
 ## L'icone affichée dans la barre des tâches ou sur le dock.
 
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "gui/logo.png"
 
 
 ## Configuration de la compilation #############################################
