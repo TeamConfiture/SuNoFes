@@ -578,3 +578,10 @@ translate english chap1_5037a8d7:
     # blanche "Aïeeeuuuuhhh"
     blanche "Ouuuuuuuuuch"
 
+
+translate english strings:
+
+    # game/chap/chap1.rpy:70
+    old "(encore)"
+    new "(again)"
+

@@ -1,26 +1,27 @@
 label chap4:
     call titlepage(4)
     scene garden
-    show emeraude at right
     with dissolve
     x "Colchiques dans les prés ! Fleurissent, fleurissent. Colchiques dans les prés ! C'est la fin de l'été."
     "Un chat chantonne tout en arrosant joyeusement de magnifiques fleurs."
-    show blanche surprised open at left with dissolve
+    show emeraude at right
+    show blanche surprised open at left
+    with dissolve
     blanche "C'est… C'est si joli ! Ça brille de partout ! C'est si vert !" with vpunch
     show blanche surprised close at left
     x "Ho, ho, il en faut peu pour être heureux, vraiment très peu pour être heureux."
-    x "Émeraude est satisfait du nécessaire !"
+    x "Émeraude est satisfaite du nécessaire !"
     emeraude "Un peu d'eau fraîche et de verdure !"
     "Le chat tournoie sur lui-même, faisant répandre l'eau autour de lui."
     emeraude "Que nous prodigue la nature. Quelques rayons de miel et de soleil."
     show blanche smile open at left
-    blanche "Haha, tu es marrant, Émeraude !"
+    blanche "Haha, tu es marrante, Émeraude !"
     show blanche neutral open at left
     blanche "Moi, je m'appelle Blanche !"
     show blanche neutral close at left
     emeraude "Blanche ! Vas-y secoue-toi et danse ! "
     show blanche surprised open at left
-    blanche "Oh non, je suis désolé. Je viens pour autre chose…"
+    blanche "Oh non, je m'excuse. Je viens pour autre chose…"
     show blanche surprised close at left
     emeraude "Dis-moi, c'est quoi ton problèèème ?"
     show blanche neutral open at left
@@ -80,12 +81,12 @@ label chap4:
             show blanche cry close at left
             "Je commence à pleurer."
             emeraude "..."
-        "Faire les yeux du Chat Potté (encore)":
+        "Faire les yeux du Chat Potté [encore]":
             show blanche cry close at left
             "Cela a marché avec Violet, peut-être que ça marchera aussi avec Émeraude."
             "Je lui fais les yeux du Chat Potté."
-            emeraude "Blanche a les yeux revolver. Blanche a le regard qui tue. Blanche a tiré en premier."
-            emeraude "M'a touché, c'est foutu."
+            emeraude "Blanche a les yeux revolver. Blanche a le regard qui tue."
+            emeraude "Blanche m'a touchée, c'est foutu."
         "Demander en chantant":
             show blanche neutral open at left
             blanche "Comment puis-je oublier ce coin de paradis ?"
@@ -99,7 +100,7 @@ label chap4:
             "J'ai mordu ma langue."
             emeraude "Ho ho. Je… Je t'aime comme une chanson d'amour, baby. Ho ho."
 
-    emeraude "À l'aide ! J'ai besoin de quelqu'un ! À l'aide ! Pas n'importe qui ! À l'aide ! Tu sais, j'ai besoin de Blanche ! "
+    emeraude "À l'aide ! J'ai besoin de quelqu'un ! À l'aide ! Pas n'importe qui ! À l'aide ! Tu sais, j'ai besoin de Blanche !"
     show blanche surprised open at left
     blanche "Que ? Quoi ?! Qu'est-ce qui se passe ?!"
     show blanche surprised close at left
@@ -144,7 +145,7 @@ label chap4:
     grosso "Dis-moi as-tu vu un enfant de cette taille ?"
     emeraude "Je ne sais pas."
     emeraude "Comment te dire ?"
-    emeraude "J'aurai peur de tout foutre en l'air !"
+    emeraude "J'aurais peur de tout foutre en l'air !"
     grosso "Ah oui…"
     grosso "C'est vrai qu'il faut chanter…"
     grosso "C'est oui ou bien c'est non ?"
@@ -157,4 +158,4 @@ label chap4:
     with dissolve
     "Emeraude les voit s'en aller."
     emeraude "Minuit se lève, en haut des tours, les voix se taisent et tout devient aveugle et sourd, la nuit camoufle, pour quelques heures, la zone Blanche de ces nuisibles visiteurs !"
-
+    # jump chap5
