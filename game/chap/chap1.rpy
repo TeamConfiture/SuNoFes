@@ -67,6 +67,7 @@
 
     menu:
         "Faire les yeux du chat potté":
+            $ encore =_("(encore)")
             "Je lui fais les yeux du chat potté."
             violet "Oh nooooooooooon pas ces yeeeuuxxx. Ils sont trop mignons."
             show blanche cry open at left
