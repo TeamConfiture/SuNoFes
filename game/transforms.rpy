@@ -124,3 +124,44 @@ transform lake_rainbow_patrol(child, speed_factor = 1):
             ease 3 xoffset -50
         pause 0.5
         repeat
+
+# Cheese cupboard transform
+# Used to rotate sprites by an arbitrary angle
+transform cheese_cupboard_angle(child, angle):
+    child
+    rotate angle
+
+# Used to show the current expected cheese and animate it
+transform cheese_cupboard_entrance(child, scale = 1., xalign = 0.5, yalign = 0.5):
+    child
+    xalign xalign
+    yalign yalign
+    xzoom scale
+    yzoom scale
+    yoffset -200
+    easein 1 yoffset 0
+    pause 6
+    parallel: # animate every once in a while
+        linear 0.2 rotate 15
+        linear 0.2 rotate -15
+        linear 0.2 rotate 15
+        linear 0.2 rotate -15
+        linear 0.2 rotate 15
+        linear 0.2 rotate -15
+        linear 0.2 rotate 15
+        easein 0.2 rotate 0
+        pause renpy.random.randint(8, 12)
+        repeat
+
+# Used to make a validated cheese disappear
+transform cheese_cupboard_exit(child, scale = 1., xalign = 0.5, yalign = 0.5):
+    child
+    xalign xalign
+    yalign yalign
+    xzoom scale
+    yzoom scale
+    parallel:
+        linear 1:
+            alpha 0
+            zoom 0
+            rotate 1000
