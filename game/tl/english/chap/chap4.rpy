@@ -724,3 +724,95 @@ translate english strings:
     old "Tirer une de ses oreilles et lui crier de dessus d'arrêter de chanter"
     new "Tirer une de ses oreilles et lui crier de dessus d'arrêter de chanter"
 
+# TODO: Translation updated at 2022-08-30 11:21
+
+# game/chap/chap4.rpy:10
+translate english chap4_e62a0abd:
+
+    # blanche "C'est… C'est si joli ! Ça brille de partout ! C'est si vert !" with vpunch
+    blanche "C'est… C'est si joli ! Ça brille de partout ! C'est si vert !" with vpunch
+
+# game/chap/chap4.rpy:13
+translate english chap4_993f52b4:
+
+    # x "Émeraude est satisfaite du nécessaire !"
+    x "Émeraude est satisfaite du nécessaire !"
+
+# game/chap/chap4.rpy:18
+translate english chap4_81f39c0c:
+
+    # blanche "Haha, tu es marrante, Émeraude !"
+    blanche "Haha, tu es marrante, Émeraude !"
+
+# game/chap/chap4.rpy:24
+translate english chap4_2c55e9f5:
+
+    # blanche "Oh non, je m'excuse. Je viens pour autre chose…"
+    blanche "Oh non, je m'excuse. Je viens pour autre chose…"
+
+# game/chap/chap4.rpy:70
+translate english chap4_59d421ec:
+
+    # blanche "Arrête de chanter et écoute-moi !!!" with vpunch
+    blanche "Arrête de chanter et écoute-moi !!!" with vpunch
+
+# game/chap/chap4.rpy:74
+translate english chap4_e7a24442:
+
+    # blanche "ARRÊTE DE CHANTER !" with vpunch
+    blanche "ARRÊTE DE CHANTER !" with vpunch
+
+# game/chap/chap4.rpy:87
+translate english chap4_1b891cba:
+
+    # "Je lui fais les yeux du Chat Potté."
+    "Je lui fais les yeux du Chat Potté."
+
+# game/chap/chap4.rpy:88
+translate english chap4_fe07c72c:
+
+    # emeraude "Blanche a les yeux revolver. Blanche a le regard qui tue."
+    emeraude "Blanche a les yeux revolver. Blanche a le regard qui tue."
+
+# game/chap/chap4.rpy:89
+translate english chap4_2fd47590:
+
+    # emeraude "Blanche m'a touchée, c'est foutu."
+    emeraude "Blanche m'a touchée, c'est foutu."
+
+# game/chap/chap4.rpy:103
+translate english chap4_d3728720:
+
+    # emeraude "À l'aide ! J'ai besoin de quelqu'un ! À l'aide ! Pas n'importe qui ! À l'aide ! Tu sais, j'ai besoin de Blanche !"
+    emeraude "À l'aide ! J'ai besoin de quelqu'un ! À l'aide ! Pas n'importe qui ! À l'aide ! Tu sais, j'ai besoin de Blanche !"
+
+# game/chap/chap4.rpy:136
+translate english chap4_3e845d78:
+
+    # emeraude "La boule Vert est pour moi le prix de la liberté !"
+    emeraude "La boule Vert est pour moi le prix de la liberté !"
+
+# game/chap/chap4.rpy:144
+translate english chap4_fc46bafc:
+
+    # grosso "Émeraude !" with vpunch
+    grosso "Émeraude !" with vpunch
+
+# game/chap/chap4.rpy:148
+translate english chap4_ac94386b:
+
+    # emeraude "J'aurais peur de tout foutre en l'air !"
+    emeraude "J'aurais peur de tout foutre en l'air !"
+
+# game/chap/chap4.rpy:152
+translate english chap4_07d7a2e4:
+
+    # maigrichon "Ah !" with vpunch
+    maigrichon "Ah !" with vpunch
+
+translate english strings:
+
+    # game/chap/chap4.rpy:67
+    old "Faire les yeux du Chat Potté [encore]"
+    new "Faire les yeux du Chat Potté [encore]"
+
