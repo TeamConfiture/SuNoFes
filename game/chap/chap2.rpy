@@ -31,7 +31,7 @@ label chap2:
             indigo "En parlant de ça, il est coutume ici de repartir de mon lac en ayant au moins découvert quelque chose, alors suis-moi. Regarde ! On peut apercevoir un cygne devant et là, des canards… "
         "Admettre son erreur":
             show blanche cry open at left
-            blanche "Je suis désolé, je n'avais jamais vu de ronces de ma vie."
+            blanche "Pardon, je n'avais jamais vu de ronces."
             show blanche cry close at left
             indigo "Ce n'est pas grave. Viens avec moi, je vais t'expliquer tout ce qu'il y a à savoir sur ce lieu."
             show blanche surprised open at left
@@ -46,7 +46,7 @@ label chap2:
     indigo "Vraiment ? Si tu n'es pas là pour admirer la beauté du paysage, alors que veux-tu exactement ?! Sache que sur mon chemin, nul n'est venu avec un autre objectif !"
     show blanche cry open at left
     show crystal_indigo at crystal_position with dissolve
-    blanche "Ne te… Ne vous fâchez pas, je suis seulement venu récupérer la boule bleue qui est sur l'autel de l'autre côté du lac."
+    blanche "Ne te… Ne vous fâchez pas, je viens seulement pour récupérer la boule bleue qui est sur l'autel de l'autre côté du lac."
     show blanche cry close at left
     indigo "Mmmmh, et à quoi te servirait-elle cette boule ? Au demeurant, étant le gardien du lac Indigo, je ne peux te laisser outrager notre grande maîtresse Madame Arc-en-Ciel ! Ce n'est pas un simple bleu, mais le plus noble d'entre eux : l'indigo. Pour ce qui est de la boule, je ne peux pas te la céder."
     hide crystal_indigo at crystal_position with dissolve
