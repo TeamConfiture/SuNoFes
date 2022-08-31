@@ -816,3 +816,161 @@ translate english strings:
     old "Faire les yeux du Chat Potté [encore]"
     new "Faire les yeux du Chat Potté [encore]"
 
+# TODO: Translation updated at 2022-08-31 18:39
+
+# game/chap/chap4.rpy:119
+translate english memory_game_timeout_c039232f:
+
+    # emeraude "Oh non ! Encore une fois !"
+    emeraude "Oh non ! Encore une fois !"
+
+# game/chap/chap4.rpy:124
+translate english chap4_2_3654fa1b:
+
+    # emeraude "Yeah ! Bravo ! Oui, viens danser ! Oui, c'est la vie, la la la la la !"
+    emeraude "Yeah ! Bravo ! Oui, viens danser ! Oui, c'est la vie, la la la la la !"
+
+# game/chap/chap4.rpy:125
+translate english chap4_2_a293dd4f:
+
+    # emeraude "Voilà, voilà, voilà, voilà la boule de cristal."
+    emeraude "Voilà, voilà, voilà, voilà la boule de cristal."
+
+# game/chap/chap4.rpy:126
+translate english chap4_2_4d0f44f9:
+
+    # emeraude "Et si mon heure sonne, oh oh. Pleure pas rigole, oh oh. On m'appelle l'Émeraude."
+    emeraude "Et si mon heure sonne, oh oh. Pleure pas rigole, oh oh. On m'appelle l'Émeraude."
+
+# game/chap/chap4.rpy:128
+translate english chap4_2_a4ad2b8d:
+
+    # blanche "Merci ! Merci Émeraude ! Tu me sauves !"
+    blanche "Merci ! Merci Émeraude ! Tu me sauves !"
+
+# game/chap/chap4.rpy:130
+translate english chap4_2_6f8ca0c4:
+
+    # blanche "Zut, il ne me reste plus beaucoup de temps."
+    blanche "Zut, il ne me reste plus beaucoup de temps."
+
+# game/chap/chap4.rpy:132
+translate english chap4_2_5af5a027:
+
+    # blanche "Il faut que je me dépêche."
+    blanche "Il faut que je me dépêche."
+
+# game/chap/chap4.rpy:134
+translate english chap4_2_5a6a190b:
+
+    # emeraude "Libérée, délivrée, je n'ai plus de boules à m'occuper, libérée, délivrée, c'est décidé, c'est fini !"
+    emeraude "Libérée, délivrée, je n'ai plus de boules à m'occuper, libérée, délivrée, c'est décidé, c'est fini !"
+
+# game/chap/chap4.rpy:135
+translate english chap4_2_3a83f181:
+
+    # emeraude "J'ai laissé mon contrat en été, perdu avec Blanche !"
+    emeraude "J'ai laissé mon contrat en été, perdu avec Blanche !"
+
+# game/chap/chap4.rpy:136
+translate english chap4_2_3e845d78:
+
+    # emeraude "La boule Vert est pour moi le prix de la liberté !"
+    emeraude "La boule Vert est pour moi le prix de la liberté !"
+
+# game/chap/chap4.rpy:138
+translate english chap4_2_79aebb2e:
+
+    # "Quelques minutes plus tard…"
+    "Quelques minutes plus tard…"
+
+# game/chap/chap4.rpy:140
+translate english chap4_2_68f164fa:
+
+    # emeraude "Poum, poum, poum, poum !"
+    emeraude "Poum, poum, poum, poum !"
+
+# game/chap/chap4.rpy:144
+translate english chap4_2_fc46bafc:
+
+    # grosso "Émeraude !" with vpunch
+    grosso "Émeraude !" with vpunch
+
+# game/chap/chap4.rpy:145
+translate english chap4_2_6635341d:
+
+    # grosso "Dis-moi as-tu vu un enfant de cette taille ?"
+    grosso "Dis-moi as-tu vu un enfant de cette taille ?"
+
+# game/chap/chap4.rpy:146
+translate english chap4_2_1f750b4c:
+
+    # emeraude "Je ne sais pas."
+    emeraude "Je ne sais pas."
+
+# game/chap/chap4.rpy:147
+translate english chap4_2_00aa4294:
+
+    # emeraude "Comment te dire ?"
+    emeraude "Comment te dire ?"
+
+# game/chap/chap4.rpy:148
+translate english chap4_2_ac94386b:
+
+    # emeraude "J'aurais peur de tout foutre en l'air !"
+    emeraude "J'aurais peur de tout foutre en l'air !"
+
+# game/chap/chap4.rpy:149
+translate english chap4_2_35ca7d07:
+
+    # grosso "Ah oui…"
+    grosso "Ah oui…"
+
+# game/chap/chap4.rpy:150
+translate english chap4_2_dff29c9c:
+
+    # grosso "C'est vrai qu'il faut chanter…"
+    grosso "C'est vrai qu'il faut chanter…"
+
+# game/chap/chap4.rpy:151
+translate english chap4_2_158304b1:
+
+    # grosso "C'est oui ou bien c'est non ?"
+    grosso "C'est oui ou bien c'est non ?"
+
+# game/chap/chap4.rpy:152
+translate english chap4_2_07d7a2e4:
+
+    # maigrichon "Ah !" with vpunch
+    maigrichon "Ah !" with vpunch
+
+# game/chap/chap4.rpy:153
+translate english chap4_2_e4849caf:
+
+    # maigrichon "La boule Vert n'est plus là !"
+    maigrichon "La boule Vert n'est plus là !"
+
+# game/chap/chap4.rpy:154
+translate english chap4_2_b5573687:
+
+    # grosso "Encore une de perdue ?!"
+    grosso "Encore une de perdue ?!"
+
+# game/chap/chap4.rpy:155
+translate english chap4_2_b0c08729:
+
+    # grosso "Aaah… Où est-ce que cet enfant a-t-il bien pu aller ?"
+    grosso "Aaah… Où est-ce que cet enfant a-t-il bien pu aller ?"
+
+# game/chap/chap4.rpy:159
+translate english chap4_2_3c0ebba9:
+
+    # "Emeraude les voit s'en aller."
+    "Emeraude les voit s'en aller."
+
+# game/chap/chap4.rpy:160
+translate english chap4_2_23de261a:
+
+    # emeraude "Minuit se lève, en haut des tours, les voix se taisent et tout devient aveugle et sourd, la nuit camoufle, pour quelques heures, la zone Blanche de ces nuisibles visiteurs !"
+    emeraude "Minuit se lève, en haut des tours, les voix se taisent et tout devient aveugle et sourd, la nuit camoufle, pour quelques heures, la zone Blanche de ces nuisibles visiteurs !"
+
