@@ -69,10 +69,19 @@ define sound.Red_Ball = ["audio/CristalsBall/.ogg"]
 ##=============Sons des personnages===============##
 
 ## Blanche
-define sound.Blanche_Speak = ["audio/Characters/Blanche/.ogg"]
-define sound.Blanche_Angry = ["audio/Characters/Blanche/.ogg"]
-define sound.Blanche_Happy = ["audio/Characters/Blanche/.ogg"]
-define sound.Blanche_Cry = ["audio/Characters/Blanche/.ogg"]
+define sound.Blanche_Amazement = ["audio/Characters/Blanche/Blanche_Amazement_01.ogg","audio/Characters/Blanche/Blanche_Amazement_02.ogg","audio/Characters/Blanche/Blanche_Amazement_03.ogg","audio/Characters/Blanche/Blanche_Amazement_04.ogg","audio/Characters/Blanche/Blanche_Amazement_05.ogg"]
+define sound.Blanche_Angry = ["audio/Characters/Blanche/Blanche_Angry_01.ogg","audio/Characters/Blanche/Blanche_Angry_02.ogg"]
+define sound.Blanche_Cry = ["audio/Characters/Blanche/Blanche_Cry_01.ogg"]
+define sound.Blanche_Exclamation = ["audio/Characters/Blanche/Blanche_Exclamation_01.ogg","audio/Characters/Blanche/Blanche_Exclamation_02.ogg","audio/Characters/Blanche/Blanche_Exclamation_03.ogg","audio/Characters/Blanche/Blanche_Exclamation_04.ogg"]
+define sound.Blanche_Gasp = ["audio/Characters/Blanche/Blanche_Gasp_01.ogg","audio/Characters/Blanche/Blanche_Gasp_02.ogg"]
+define sound.Blanche_Laugh = ["audio/Characters/Blanche/Blanche_Laugh_01.ogg","audio/Characters/Blanche/Blanche_Laugh_02.ogg","audio/Characters/Blanche/Blanche_Laugh_03.ogg"]
+define sound.Blanche_Moan = ["audio/Characters/Blanche/Blanche_Moan_01.ogg","audio/Characters/Blanche/Blanche_Moan_02.ogg"]
+define sound.Blanche_No = ["audio/Characters/Blanche/Blanche_No_01.ogg","audio/Characters/Blanche/Blanche_No_02.ogg"]
+define sound.Blanche_Question = ["audio/Characters/Blanche/Blanche_Question_01.ogg","audio/Characters/Blanche/Blanche_Question_02.ogg","audio/Characters/Blanche/Blanche_Question_03.ogg"]
+define sound.Blanche_Sigh = ["audio/Characters/Blanche/Blanche_Sigh_01.ogg","audio/Characters/Blanche/Blanche_Sigh_02.ogg","audio/Characters/Blanche/Blanche_Sigh_03.ogg","audio/Characters/Blanche/Blanche_Sigh_04.ogg"]
+define sound.Blanche_Sniffing = ["audio/Characters/Blanche/Blanche_Sniffing_01.ogg","audio/Characters/Blanche/Blanche_Sniffing_02.ogg","audio/Characters/Blanche/Blanche_Sniffing_03.ogg"]
+define sound.Blanche_Yes = ["audio/Characters/Blanche/Blanche_Yes_01.ogg","audio/Characters/Blanche/Blanche_Yes_02.ogg"]
+define sound.Blanche_Yes_Haughty = ["audio/Characters/Blanche/Blanche_YesHaughty_01.ogg","audio/Characters/Blanche/Blanche_YesHaughty_02.ogg","audio/Characters/Blanche/Blanche_YesHaughty_03.ogg","audio/Characters/Blanche/Blanche_YesHaughty_04.ogg"]
 
 ## Noir
 define sound.Noir_Speak = ["audio/Characters/Noir/Noir_Reflexion.ogg"]
