@@ -113,15 +113,15 @@ label chap4:
     blanche "Un memory…"
     show blanche neutral open at left
     blanche "Bon, on y va et on saura ce que je dois faire."
+    call screen chap4_memory_game('chap4_2', 'memory_game_timeout')
 
-    # TODO: Afficher le mini-jeu de memory
-    # si echec (time out) : 
-    # emeraude "Oh non ! Encore une fois !"
-    #     loop
-    # si réussi
-    # emeraude "Yeah ! Bravo ! Oui, viens danser ! Oui, c'est la vie, la la la la la !"
+label memory_game_timeout:
+    emeraude "Oh non ! Encore une fois !"
+    call screen chap4_memory_game('chap4_2', 'memory_game_timeout')
 
+label chap4_2:
     # TODO : <anime boule + Noir gagne une couleur>
+    emeraude "Yeah ! Bravo ! Oui, viens danser ! Oui, c'est la vie, la la la la la !"
     emeraude "Voilà, voilà, voilà, voilà la boule de cristal."
     emeraude "Et si mon heure sonne, oh oh. Pleure pas rigole, oh oh. On m'appelle l'Émeraude."
     show blanche neutral open at left
