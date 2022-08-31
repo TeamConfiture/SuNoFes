@@ -94,10 +94,17 @@ define sound.Noir_Gasp = ["audio/Characters/Noir/NoirGaps_01.ogg"]
 define sound.Noir_Exlamation = ["audio/Characters/Noir/NoirExclamation_01.ogg"]
 
 ## Arc-en-Ciel
-define sound.ArcEnCiel_Speak = ["audio/Characters/ArcEnCiel/.ogg"]
-define sound.ArcEnCiel_Angry = ["audio/Characters/ArcEnCiel/.ogg"]
-define sound.ArcEnCiel_Happy = ["audio/Characters/ArcEnCiel/.ogg"]
-define sound.ArcEnCiel_Cry = ["audio/Characters/ArcEnCiel/.ogg"]
+define sound.ArcEnCiel_Angry = ["audio/Characters/ArcEnCiel/ArcEnCiel_Angry_01.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Angry_02.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Angry_03.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Angry_04.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Angry_05.ogg"]
+define sound.ArcEnCiel_Cry = ["audio/Characters/ArcEnCiel/ArcEnCiel_Cry_01.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Cry_02.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Cry_03.ogg"]
+define sound.ArcEnCiel_Exasperate = ["audio/Characters/ArcEnCiel/ArcEnCiel_Exasperate_01.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Exasperate_02.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Exasperate_03.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Exasperate_04.ogg"]
+define sound.ArcEnCiel_Exclamation = ["audio/Characters/ArcEnCiel/ArcEnCiel_Exclamation_01.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Exclamation_02.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Exclamation_03.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Exclamation_04.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Exclamation_05.ogg"]
+define sound.ArcEnCiel_Gasp = ["audio/Characters/ArcEnCiel/ArcEnCiel_Gasp_01.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Gasp_02.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Gasp_03.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Gasp_04.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Gasp_05.ogg"]
+define sound.ArcEnCiel_Hey = ["audio/Characters/ArcEnCiel/ArcEnCiel_Hey_01.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Hey_02.ogg"]
+define sound.ArcEnCiel_No = ["audio/Characters/ArcEnCiel/ArcEnCiel_No_01.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_No_02.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_No_03.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_No_04.ogg"]
+define sound.ArcEnCiel_Question = ["audio/Characters/ArcEnCiel/ArcEnCiel_Question_01.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Question_02.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Question_03.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Question_04.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Question_05.ogg"]
+define sound.ArcEnCiel_Sigh = ["audio/Characters/ArcEnCiel/ArcEnCiel_Sigh_01.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Sigh_02.ogg"]
+define sound.ArcEnCiel_Sniffing = ["audio/Characters/ArcEnCiel/ArcEnCiel_Sniffing_01.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Sniffing_02.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Sniffing_03.ogg"]
+define sound.ArcEnCiel_Yes = ["audio/Characters/ArcEnCiel/ArcEnCiel_Yes_01.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Yes_02.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Yes_03.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Yes_04.ogg"]
 
 ## Axo
 define sound.Axo_Full_Angry = ["audio/Characters/Axo/Axo_Full_Angry_01.ogg"]
