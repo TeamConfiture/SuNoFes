@@ -82,7 +82,8 @@ label chap2:
     hide blanche at left
     hide indigo at right
     with dissolve
-    call screen match_screen
+    call screen chap2_match_screen
+
 label chap2_completed:
     scene star
     show chap2_spirited
@@ -131,62 +132,3 @@ label chap2_completed:
     grosso "Ah ! Ses traces de pas sont là, allons-y !" with vpunch
     maigrichon "Et toi, Indigo, pour l’amour de Madame Arc-en-Ciel, tiens-toi à carreau, ça suffit les bêtises."
     jump chap3
-
-image chap2_spirited = Spirited(
-    sprite_list = ["images/sprites/small_firefly.png", "images/sprites/medium_firefly.png"],
-    initial_count = 10,
-    renewal_rate = 30,
-    speed_range = (2, 10),
-    direction_range = (80, 100),
-    ttl_range = (1, 3),
-)
-
-screen match_screen():
-    python:
-        chap2_stars_mapping = ([i for i in range(len(chap2_stars))], [i for i in range(len(chap2_stars))])
-        renpy.random.shuffle(chap2_stars_mapping[0])
-        renpy.random.shuffle(chap2_stars_mapping[1])
-    default matcher = CardMatcher(
-        anchor_definitions = {
-            1: {"group": 1, "xpos": config.screen_width*(chap2_stars_mapping[1][0]+1)/5-12, "ypos": 370},
-            2: {"group": 1, "xpos": config.screen_width*(chap2_stars_mapping[1][1]+1)/5-12, "ypos": 370},
-            3: {"group": 1, "xpos": config.screen_width*(chap2_stars_mapping[1][2]+1)/5-12, "ypos": 370},
-            4: {"group": 1, "xpos": config.screen_width*(chap2_stars_mapping[1][3]+1)/5-12, "ypos": 370},
-            5: {"group": 2, "xpos": config.screen_width*(chap2_stars_mapping[0][0]+1)/5-12, "ypos": 660},
-            6: {"group": 2, "xpos": config.screen_width*(chap2_stars_mapping[0][1]+1)/5-12, "ypos": 660},
-            7: {"group": 2, "xpos": config.screen_width*(chap2_stars_mapping[0][2]+1)/5-12, "ypos": 660},
-            8: {"group": 2, "xpos": config.screen_width*(chap2_stars_mapping[0][3]+1)/5-12, "ypos": 660},
-        },
-        anchor_rules = [(1,5), (2,6), (3, 7), (4, 8)],
-        auto_base_button = "images/sprites/buzzer_%s.png",
-        linked_base_button = Null(),
-        rope_collection = [
-            {"rope": "images/sprites/line_pull.png", "start_token": "images/sprites/buzzer_disabled.png", "end_token": "images/sprites/buzzer_disabled.png"},
-            {"rope": "images/sprites/line_pull.png", "start_token": "images/sprites/buzzer_disabled.png"},
-            ],
-        rule_groups = {
-            1: { "is_receiver": False },
-            2: { "is_emitter": False },
-        },
-        rope_transforms = {1: 0},
-        rope_pull_list = [1],
-        completion_actions = [Jump("chap2_completed")]
-    )
-    add matcher
-    # We have to reuse matcher's attribute here as it is default-instanciated and is the only stable source of truth post-init
-    for k in matcher.anchor_definitions:
-        if k <= 4:
-            add chap2_stars[k - 1][0]:
-                yalign 0.1
-                xpos (matcher.anchor_definitions[k]['xpos'] + 12) / config.screen_width
-                xanchor 0.5
-        else:
-            add 'star_card':
-                yalign 0.9
-                xpos (matcher.anchor_definitions[k]['xpos'] + 12) / config.screen_width
-                xanchor 0.5
-            text chap2_stars[k - 5][1]:
-                color '#fff'
-                yalign 0.81
-                xpos (matcher.anchor_definitions[k]['xpos'] + 12) / config.screen_width
-                xanchor 0.5

@@ -26,6 +26,17 @@ image crystal_indigo = "images/boules/Boules_2.png"
 image crystal_cyan = "images/boules/Boules_3.png"
 image crystal_green = "images/boules/Boules_4.png"
 
+# Chap 2 - Sky images
+
+image chap2_spirited = Spirited(
+    sprite_list = ["images/sprites/small_firefly.png", "images/sprites/medium_firefly.png"],
+    initial_count = 10,
+    renewal_rate = 30,
+    speed_range = (2, 10),
+    direction_range = (80, 100),
+    ttl_range = (1, 3),
+)
+
 # Lake images
 image lake_mousehole = "images/items/hole_alpha.png"
 image lake_axolotl = "images/fish/Axolotl.png"
