@@ -48,17 +48,16 @@ translate english strings:
 
     # game/characters.rpy:55
     old "Piou"
-    new "Piou"
+    new "Chirp"
 
     # game/characters.rpy:56
     old "Jaune"
-    new "Jaune"
+    new "Yellow"
 
     # game/characters.rpy:57
     old "Orange"
     new "Orange"
 
     # game/characters.rpy:58
-    old "red"
-    new "red"
-
+    old "Red"
+    new "Rouge"

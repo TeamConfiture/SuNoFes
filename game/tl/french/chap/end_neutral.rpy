@@ -129,8 +129,8 @@ translate french end_neutral_c81cf004:
 # game/chap/end_neutral.rpy:24
 translate french end_neutral_5a6c6927:
 
-    # "Des particules lumineuses noires apparaissent autour de Noire."
-    "Des particules lumineuses noires apparaissent autour de Noire."
+    # "Des particules lumineuses noires apparaissent autour de Noir."
+    "Des particules lumineuses noires apparaissent autour de Noir."
 
 # game/chap/end_neutral.rpy:25
 translate french end_neutral_25f47655:
