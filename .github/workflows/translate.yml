@@ -24,6 +24,8 @@ jobs:
       run: mkdir renpy && curl https://www.renpy.org/dl/8.0.2/renpy-8.0.2-sdk.tar.bz2 | tar -xjC renpy --strip-components 1
     - name: Update translation files - English
       run: ./renpy/renpy.sh project translate english
+    - name: Update translation files - French
+      run: ./renpy/renpy.sh project translate french
     - name: Commit translation files changes
       uses: EndBug/add-and-commit@v9
       with:

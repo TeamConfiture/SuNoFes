@@ -672,7 +672,7 @@ screen preferences():
                     yspacing -15
                     textbutton "English" action [Language("english"), SetVariable('persistent.lang', "english")]:
                         style "preferences_radio_button"
-                    textbutton "Français" action [Language(None), SetVariable('persistent.lang', None)]:
+                    textbutton "Français" action [Language('french'), SetVariable('persistent.lang', 'french')]:
                         style "preferences_radio_button"
 
 ## Écran des extras #######################################################
