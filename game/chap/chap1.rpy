@@ -61,7 +61,7 @@
     violet "Et Madame Arc-en-Ciel va me gronder."
     violet "Brrr, j'imagine déjà sa colère."
     show blanche cry open at left
-    blanche "Mais ! Je suis venu ici pour récupérer cette boule de cristal."
+    blanche "Mais ! Je suis là pour récupérer cette boule de cristal."
     show blanche cry close at left
     violet "Non, je n'ai pas le droit de te la donner."
 
@@ -140,11 +140,12 @@
     blanche "Oui !"
     show blanche neutral close at left
     violet "Bon, prends soin de toi."
-    scene cg1 with dissolve
+    # scene cg1 with dissolve
     "Violet me fait un signe d'au revoir."
+    show blanche neutral open at left
     blanche "Oui ! Merci Violet ! Je te promets que je te rendrai la boule !"
     scene mulberry_search with dissolve
-    "Quelques parts dans le jardin des violettes…"
+    "Quelque part dans le jardin des violettes…"
     x "Maigrichon, j'en ai marre de ces patrouilles nocturnes… Il ne se passe jamais rien."
     show maigrichon at left
     show grosso at right
@@ -160,7 +161,7 @@
     hide maigrichon
     hide grosso
     with dissolve
-    "Les gardes parcourent le jardin des violettes. Ayant perdu Blanche de vue, ils disparaissent par le petit chemin du fond."
+    "Les gardes parcourent le jardin des violettes et disparaissent par le petit chemin du fond."
     jump chap2
 
 #####

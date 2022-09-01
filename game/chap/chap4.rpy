@@ -17,9 +17,9 @@ label chap4:
     show blanche smile open at left
     blanche "Haha, tu es marrante, Émeraude !"
     show blanche neutral open at left
-    blanche "Moi, je m'appelle Blanche !"
+    blanche "Moi, je m'appelle [player_name] !"
     show blanche neutral close at left
-    emeraude "Blanche ! Vas-y secoue-toi et danse ! "
+    emeraude "[player_name] ! Vas-y secoue-toi et danse ! "
     show blanche surprised open at left
     blanche "Oh non, je m'excuse. Je viens pour autre chose…"
     show blanche surprised close at left
@@ -85,8 +85,8 @@ label chap4:
             show blanche cry close at left
             "Cela a marché avec Violet, peut-être que ça marchera aussi avec Émeraude."
             "Je lui fais les yeux du Chat Potté."
-            emeraude "Blanche a les yeux revolver. Blanche a le regard qui tue."
-            emeraude "Blanche m'a touchée, c'est foutu."
+            emeraude "[player_name] a les yeux revolver. [player_name] a le regard qui tue."
+            emeraude "[player_name] m'a touchée, c'est foutu."
         "Demander en chantant":
             show blanche neutral open at left
             blanche "Comment puis-je oublier ce coin de paradis ?"
@@ -100,7 +100,7 @@ label chap4:
             "J'ai mordu ma langue."
             emeraude "Ho ho. Je… Je t'aime comme une chanson d'amour, baby. Ho ho."
 
-    emeraude "À l'aide ! J'ai besoin de quelqu'un ! À l'aide ! Pas n'importe qui ! À l'aide ! Tu sais, j'ai besoin de Blanche !"
+    emeraude "À l'aide ! J'ai besoin de quelqu'un ! À l'aide ! Pas n'importe qui ! À l'aide ! Tu sais, j'ai besoin de [player_name] !"
     show blanche surprised open at left
     blanche "Que ? Quoi ?! Qu'est-ce qui se passe ?!"
     show blanche surprised close at left
@@ -132,7 +132,7 @@ label chap4_2:
     blanche "Il faut que je me dépêche."
     hide blanche neutral close at left with dissolve
     emeraude "Libérée, délivrée, je n'ai plus de boules à m'occuper, libérée, délivrée, c'est décidé, c'est fini !"
-    emeraude "J'ai laissé mon contrat en été, perdu avec Blanche !"
+    emeraude "J'ai laissé mon contrat en été, perdu avec [player_name] !"
     emeraude "La boule Vert est pour moi le prix de la liberté !" 
     hide emeraude at right with dissolve
     "Quelques minutes plus tard…"
@@ -157,5 +157,5 @@ label chap4_2:
     hide grosso at nearLeft
     with dissolve
     "Emeraude les voit s'en aller."
-    emeraude "Minuit se lève, en haut des tours, les voix se taisent et tout devient aveugle et sourd, la nuit camoufle, pour quelques heures, la zone Blanche de ces nuisibles visiteurs !"
+    emeraude "Minuit se lève, en haut des tours, les voix se taisent et tout devient aveugle et sourd, la nuit camoufle, pour quelques heures, la zone [player_name] de ces nuisibles visiteurs !"
     # jump chap5
