@@ -46,5 +46,5 @@ label end_neutral:
     noir "Merci de m'avoir fait voir l'arc-en-ciel une dernière fois…"
     "C'est ainsi que Noir, mon père, disparut dans l'obscurité…"
     "Quant aux boules de cristal..."
-    "Les gardes de Madame Arc-en-Ciel les récupérèrent et me guidèrent vers elle."
-    "Par chance, après avoir expliqué ma situation, Madame Arc-en-Ciel me prit dans ses bras et me pardonna pour tout ce que j'avais fait pour mon père..."
+    "Les gardes de Madame Arc-en-Ciel les récupérèrent et m'amenèrent devant elle."
+    "Par chance, après avoir expliqué ma situation, Madame Arc-en-Ciel me pardonna pour tout ce que j'avais fait pour mon père..."

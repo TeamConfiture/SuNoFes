@@ -86,8 +86,8 @@ label fast_chapter_jump:
     call screen fast_chapter_jump_screen
 
 screen fast_chapter_jump_screen():
-    $ labels = sorted([l for l in renpy.get_all_labels() if l.startswith("start") or l.startswith("chap")])
-    $ lines_count = 3
+    $ labels = sorted([l for l in renpy.get_all_labels() if l.startswith("start") or l.startswith("chap") or l.startswith("end")])
+    $ lines_count = 5
     $ columns_count = math.floor((len(labels)+lines_count-1)/lines_count)
     modal True
     frame:

@@ -47,7 +47,7 @@ label chap7:
             blanche "Bon, c'était plus facile que je le pensais."
             blanche "J'espère que mon papa sera content. Être dans le noir, c'est triste. Lui montrer les couleurs de l'arc-en-ciel va sûrement lui remonter le moral."
             blanche "Il a toujours les yeux bandés… Tout ça pour s'habituer à voir la couleur noire le plus tôt possible, c'est triste."
-            blanche "De ce qu'il m'a dit, c'est parce que ses yeux lui refont penser à ma maman, mais le fait d'être \"Noir\" fait qu'il finira par ne voir que du noir… C'est triste."
+            blanche "De ce qu'il m'a dit, c'est parce que ses yeux le refont penser à ma maman, mais le fait d'être \"Noir\" fait qu'il finira par ne voir que du noir… C'est triste."
             blanche "Il doit voir ces jolies couleurs une dernière fois."
 
         "Troquer une technique inventée contre sa boule":

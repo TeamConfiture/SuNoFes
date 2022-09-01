@@ -1,6 +1,6 @@
 label chap6:
     call titlepage(6)
-    "On entend au loin du Mozart. Un clavier couleur d'agrumes est posé là, bien au centre de l'orangeraie."
+    "On entend au loin du Mozart. Un clavier couleur d'orange est posé là, bien au centre de l'orangeraie."
     "Un chat est en train de jouer."
     blanche "Oh ! On dirait les quatre saisons de Vivaldi !"
     blanche "À moins que ça ne soit le Menuet de Bach ?"
@@ -12,7 +12,7 @@ label chap6:
     orange "Ton père venait souvent ici après sa rupture..."
     orange "Il disait que sa vie n'avait plus aucun sens, mais que, dans ce lieu, cela n'avait plus d'importance."
     orange "Il restait là, allongé, pendant des heures à écouter votre bon vieux serviteur pester contre ses fausses notes."
-    orange "Mais ce qui lui redonna véritablement le sourire, c'est quand je m'arrêtais, triomphant, après avoir réussi à jouer le Requiem sans aucune erreur."
+    orange "Mais ce qui lui a véritablement redonné le sourire, c'est quand je me suis arrêté, triomphant, après avoir réussi à jouer le Requiem sans aucune erreur."
     orange "Paradoxalement, cela a été aussi la dernière fois que je l'ai vu dans mon antre d'agrumes..."
     blanche "Mon papa a toujours été comme ça, très empathique."
     blanche "En fait, ce qui compte le plus pour lui, c'est le bonheur des autres, pas son propre bonheur."

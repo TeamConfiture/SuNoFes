@@ -11,12 +11,12 @@ label chap5:
     blanche "Je peux te prendre dans mes bras ?"
     piou "Eh oh, t'es qui toi d'abord ?"
     piou "On ne me prend pas dans les bras comme ça !"
-    piou "Je suis le septième poussin fromager d'Arc-Boutant !"
-    blanche "Ça existe les poussins fromagers maintenant ? Après les chats qui parlent, les poussins fromagers ?"
-    "Un poussin fromager... J'en reste bouche-bée. Ce monde cache pleins de surprises !"
+    piou "Je suis l'un des super fromagers de Couleurs !"
+    blanche "Un poussin qui parle et qui fait du fromage ?! Après les chats qui parlent, les poussins fromagers ?"
+    blanche "Ce monde cache pleins de surprises !"
     piou "Bien sûr, nous sommes fromagers de père en fils depuis 1848. Je suis accompagné par mon fidèle lieutenant Jaune !"
     "Le poussin fromager désigne le chat endormi au fond de la grange."
-    piou "Le pauvre, il a déjà pratiquement usé sept de ses neuf vies..."
+    piou "Le pauvre, il arrive bientôt à la fin de sa neuvième vie..."
     piou "Maintenant, il passe son temps à dormir. Je dois me débrouiller tout seul pour traire les vaches, fabriquer les fromages, chasser les souris et tenir la fromagerie."
     piou "Je parle, je parle mais, qu'est-ce qui t'amène ici ?"
     piou "Tu veux nous acheter un fromage ?"
@@ -25,7 +25,7 @@ label chap5:
     piou "Hum... Et que comptes-tu faire ?"
     menu:
         "Lui lancer un regard méprisant":
-            blanche "T'es nul ! Qu'est-ce que ça pourrait bien être à ton avis ?"
+            blanche "Lui ramener la boule de Jaune, tu crois vraiment que je viendrais pour un bête fromage ?"
             piou "Non, mais tu te prends pour qui ?! C'est toi l'étranger et tu te permets de me critiquer sur mes propres terres ?! Tu vas le regretter !"
             blanche "Je dois vraiment récupérer cette boule pour mon papa ! C'est important !"
         "Lui répondre simplement":
@@ -56,10 +56,10 @@ label chap5:
     piou "C'est le privilège d'avoir la responsabilité de la fromagerie !"
     piou "Alors, voyons voir qu'avons-nous là…"
     jaune "AAAA... AAATTTTTTCHOUM ! AAAATTTTCHOUM ! J'ai faim… ZZZzzzz" 
-    piou "Nooooooon ! Mes fromages se sont tous mélangés !"
+    piou "Zut, Jaune n'est pas prêt de se réveiller..."
     piou "Comment vais-je faire pour cuisiner mon aligot maintenant ?"
     "Piou me regarde."
-    piou "Dis... Tu ne veux pas m'aider ? Je ne suis pas capable de faire la différence entre du Comté, du Gruyère, du Cantal, du Salers, du Beaufort ou de l'Abondance."
+    piou "Dis... Tu ne veux pas m'aider ? Je ne suis pas capable de faire la différence entre du Comté, du Gruyère, du Cantal, du Salers, du Beaufort ou de l'Abondance, d'habitude c'est Jaune qui s'en occupe."
     blanche "Je..."
     piou "S'il te plaît."
     blanche "Bon... D'accord."
@@ -71,7 +71,7 @@ label chap5:
     #     piou "Génial, merci ! On va pouvoir manger un bon repas grâce à toi !"
     blanche "Avec plaisir. À propos de la boule..."
     piou "Bon, c'est pas tout ça mais il faut se remettre au boulot !"
-    piou "J'ai des vaches à traire, des veaux à nourrir et quelques vieilles poules à m'occuper."
+    piou "J'ai des vaches à traire, des veaux à nourrir, et quelques vieilles poules à m'occuper."
     menu:
         "Lui rappeler qu'il doit donner sa boule":
             blanche "C'est quand que tu vas me donner ta boule ?"
@@ -81,8 +81,9 @@ label chap5:
             blanche "Mais... Mon papa est très malade. Il ne va pas bien du tout..." 
             piou "..."
             piou "Je comprends mieux..."
-        "Lui demander gentiment une faveur":
-            blanche "Puis-je réitérer ma requête ? Est-ce que je peux emprunter ta boule de cristal ?"
+            piou "Mon père est mort, je sais ce que ça signifie."
+        "Lui redemander gentiment sa boule":
+            blanche "Est-ce que je peux emprunter ta boule de cristal ?"
             piou "J'ai bien peur que ça soit impossible pour le moment."
             piou "Je te l'ai déjà dit. Il vaut mieux attendre le réveil de Jaune."
             piou "Je ne peux rien dire sans son accord, sinon il rentrerait dans une colère noire. J'espère que tu me comprends..."
@@ -92,14 +93,15 @@ label chap5:
             blanche "Il ne pourrait pas faire une exception ?"
             piou "..."
             piou "Tout s'explique..."
+            piou "Mon père est mort, je sais ce que ça signifie."
         "Broder pour attendre un moment plus propice":
             blanche "Tu pourrais me dire où tu as appris tout ça sur les fromages ?"
             piou "J'ai appris ça sur le tas, avec l'aide de Jaune."
             piou "Mon père était trop vieux pour m'enseigner les rudiments de cet art."
-            blanche "Il est toujours vivant ?"
-            piou "Ne me rappelle pas cette tragédie, veux-tu ?"
-    
-    piou "Mon père est mort, lui, je sais ce que ça signifie."
+            blanche "Comment il va maintenant ?"
+            piou "Comment dire..."
+            piou "Mon père est mort."
+
     "Piou se met à pleurer."
     piou "On ne va pas en faire tout un fromage mais... Je l'ai vu s'évaporer dans sa poussière jaune..."
     piou "Je veux dire... Il s'est petit à petit transformé en poussière jaune avant de rejoindre les étoiles..."
@@ -125,7 +127,7 @@ label chap5:
     maigrichon "Eh oh, je te parle !"
     jaune "..."
     jaune "ROAR !"
-    grosso "Gloups..."
+    grosso "Gloups... Pardon ! Pardon ! Pardon ! Pardon cher Gardien de Couleur !"
     jaune "Zzzzz"
     grosso "Je crois qu'on ferait mieux d'y aller... Bonne journée à vous, fromagers !" 
     "Grosso et Maigrichon s'éloignent de la ferme et partent en direction du royaume Agrume..."
