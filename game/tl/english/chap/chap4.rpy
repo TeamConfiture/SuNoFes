@@ -974,3 +974,47 @@ translate english chap4_2_23de261a:
     # emeraude "Minuit se lève, en haut des tours, les voix se taisent et tout devient aveugle et sourd, la nuit camoufle, pour quelques heures, la zone Blanche de ces nuisibles visiteurs !"
     emeraude "Minuit se lève, en haut des tours, les voix se taisent et tout devient aveugle et sourd, la nuit camoufle, pour quelques heures, la zone Blanche de ces nuisibles visiteurs !"
 
+# TODO: Translation updated at 2022-09-01 20:25
+
+# game/chap/chap4.rpy:20
+translate english chap4_a085f544:
+
+    # blanche "Moi, je m'appelle [player_name] !"
+    blanche "Moi, je m'appelle [player_name] !"
+
+# game/chap/chap4.rpy:22
+translate english chap4_1d3eb7f9:
+
+    # emeraude "[player_name] ! Vas-y secoue-toi et danse ! "
+    emeraude "[player_name] ! Vas-y secoue-toi et danse ! "
+
+# game/chap/chap4.rpy:88
+translate english chap4_617e10f6:
+
+    # emeraude "[player_name] a les yeux revolver. [player_name] a le regard qui tue."
+    emeraude "[player_name] a les yeux revolver. [player_name] a le regard qui tue."
+
+# game/chap/chap4.rpy:89
+translate english chap4_b4852d3c:
+
+    # emeraude "[player_name] m'a touchée, c'est foutu."
+    emeraude "[player_name] m'a touchée, c'est foutu."
+
+# game/chap/chap4.rpy:103
+translate english chap4_8596a4d0:
+
+    # emeraude "À l'aide ! J'ai besoin de quelqu'un ! À l'aide ! Pas n'importe qui ! À l'aide ! Tu sais, j'ai besoin de [player_name] !"
+    emeraude "À l'aide ! J'ai besoin de quelqu'un ! À l'aide ! Pas n'importe qui ! À l'aide ! Tu sais, j'ai besoin de [player_name] !"
+
+# game/chap/chap4.rpy:135
+translate english chap4_2_6c2a6b6a:
+
+    # emeraude "J'ai laissé mon contrat en été, perdu avec [player_name] !"
+    emeraude "J'ai laissé mon contrat en été, perdu avec [player_name] !"
+
+# game/chap/chap4.rpy:160
+translate english chap4_2_36adda2c:
+
+    # emeraude "Minuit se lève, en haut des tours, les voix se taisent et tout devient aveugle et sourd, la nuit camoufle, pour quelques heures, la zone [player_name] de ces nuisibles visiteurs !"
+    emeraude "Minuit se lève, en haut des tours, les voix se taisent et tout devient aveugle et sourd, la nuit camoufle, pour quelques heures, la zone [player_name] de ces nuisibles visiteurs !"
+

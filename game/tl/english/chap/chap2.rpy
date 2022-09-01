@@ -344,3 +344,17 @@ translate english strings:
     new "Should I beat you at chess?"
 
 
+# TODO: Translation updated at 2022-09-01 20:25
+
+# game/chap/chap2.rpy:34
+translate english chap2_d10b40fe:
+
+    # blanche "Pardon, je n'avais jamais vu de ronces."
+    blanche "Pardon, je n'avais jamais vu de ronces."
+
+# game/chap/chap2.rpy:49
+translate english chap2_3c6eac15:
+
+    # blanche "Ne te… Ne vous fâchez pas, je viens seulement pour récupérer la boule bleue qui est sur l'autel de l'autre côté du lac."
+    blanche "Ne te… Ne vous fâchez pas, je viens seulement pour récupérer la boule bleue qui est sur l'autel de l'autre côté du lac."
+

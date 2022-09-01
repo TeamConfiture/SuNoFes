@@ -585,3 +585,185 @@ translate english strings:
     old "(encore)"
     new "(again)"
 
+# TODO: Translation updated at 2022-09-01 20:25
+
+# game/chap/chap1.rpy:64
+translate english chap1_55811a33:
+
+    # blanche "Mais ! Je suis là pour récupérer cette boule de cristal."
+    blanche "Mais ! Je suis là pour récupérer cette boule de cristal."
+
+# game/chap/chap1.rpy:127
+translate english chap1_2_ea0183cb:
+
+    # violet "C'est bien ça ! Félicitations, tu as trouvé la mûre que je voulais !"
+    violet "C'est bien ça ! Félicitations, tu as trouvé la mûre que je voulais !"
+
+# game/chap/chap1.rpy:128
+translate english chap1_2_119fd160:
+
+    # violet "Il faudra que tu me rendes la boule avant minuit ! Sinon, plus de violet…"
+    violet "Il faudra que tu me rendes la boule avant minuit ! Sinon, plus de violet…"
+
+# game/chap/chap1.rpy:130
+translate english chap1_2_1881e55c:
+
+    # blanche "Plus de mûre, plus de manger pour toi… et Madame Arc-en-Ciel, pas contente !"
+    blanche "Plus de mûre, plus de manger pour toi… et Madame Arc-en-Ciel, pas contente !"
+
+# game/chap/chap1.rpy:132
+translate english chap1_2_cee12c10:
+
+    # violet "Tout à fait !"
+    violet "Tout à fait !"
+
+# game/chap/chap1.rpy:133
+translate english chap1_2_d87cd5bc:
+
+    # violet "Tiens, voilà la boule !"
+    violet "Tiens, voilà la boule !"
+
+# game/chap/chap1.rpy:136
+translate english chap1_2_e45d882f:
+
+    # blanche "Youpi !!! Encore six !" with vpunch
+    blanche "Youpi !!! Encore six !" with vpunch
+
+# game/chap/chap1.rpy:138
+translate english chap1_2_9a5c1998:
+
+    # violet "Six ? Attends ?! Ne me dis pas que tu veuilles récupérer toutes les boules ?!"
+    violet "Six ? Attends ?! Ne me dis pas que tu veuilles récupérer toutes les boules ?!"
+
+# game/chap/chap1.rpy:140
+translate english chap1_2_ab02b979:
+
+    # blanche "Bah oui ? Pourquoi ? Elles sont si jolies."
+    blanche "Bah oui ? Pourquoi ? Elles sont si jolies."
+
+# game/chap/chap1.rpy:142
+translate english chap1_2_cced1866:
+
+    # violet "Erf… Petit enfant, fais attention. C'est dangereux ce que tu fais. Si Madame Arc-en-Ciel l'apprend, c'en est fini de toi… Et pour nous les gardiens aussi…"
+    violet "Erf… Petit enfant, fais attention. C'est dangereux ce que tu fais. Si Madame Arc-en-Ciel l'apprend, c'en est fini de toi… Et pour nous les gardiens aussi…"
+
+# game/chap/chap1.rpy:143
+translate english chap1_2_fde1ecc7:
+
+    # violet "Erf… Je regrette déjà de te prêter ma boule."
+    violet "Erf… Je regrette déjà de te prêter ma boule."
+
+# game/chap/chap1.rpy:144
+translate english chap1_2_09cbb8ce:
+
+    # "Je lui tapote la tête."
+    "Je lui tapote la tête."
+
+# game/chap/chap1.rpy:146
+translate english chap1_2_a0f7088e:
+
+    # blanche "N'aies pas peur ! Pas de problème pour moi ! Je cours vite ! Elle ne saura rien !"
+    blanche "N'aies pas peur ! Pas de problème pour moi ! Je cours vite ! Elle ne saura rien !"
+
+# game/chap/chap1.rpy:148
+translate english chap1_2_62a5eda5:
+
+    # violet "Si tu le dis…"
+    violet "Si tu le dis…"
+
+# game/chap/chap1.rpy:149
+translate english chap1_2_3f1606fa:
+
+    # violet "J'imagine que tu vas au Lac Indigo maintenant ?"
+    violet "J'imagine que tu vas au Lac Indigo maintenant ?"
+
+# game/chap/chap1.rpy:151
+translate english chap1_2_c9d45cdd:
+
+    # blanche "Oui !"
+    blanche "Oui !"
+
+# game/chap/chap1.rpy:153
+translate english chap1_2_0e3d8f37:
+
+    # violet "Bon, prends soin de toi."
+    violet "Bon, prends soin de toi."
+
+# game/chap/chap1.rpy:155
+translate english chap1_2_2c2cc7a2:
+
+    # "Violet me fait un signe d'au revoir."
+    "Violet me fait un signe d'au revoir."
+
+# game/chap/chap1.rpy:157
+translate english chap1_2_e54a3996:
+
+    # blanche "Oui ! Merci Violet ! Je te promets que je te rendrai la boule !"
+    blanche "Oui ! Merci Violet ! Je te promets que je te rendrai la boule !"
+
+# game/chap/chap1.rpy:159
+translate english chap1_2_8be0c7d3:
+
+    # "Quelque part dans le jardin des violettes…"
+    "Quelque part dans le jardin des violettes…"
+
+# game/chap/chap1.rpy:160
+translate english chap1_2_eac58e0d:
+
+    # x "Maigrichon, j'en ai marre de ces patrouilles nocturnes… Il ne se passe jamais rien."
+    x "Maigrichon, j'en ai marre de ces patrouilles nocturnes… Il ne se passe jamais rien."
+
+# game/chap/chap1.rpy:164
+translate english chap1_2_057df1c8:
+
+    # maigrichon "Grosso, ne m'en parle pas, j'ai tellement sommeil… zzzz"
+    maigrichon "Grosso, ne m'en parle pas, j'ai tellement sommeil… zzzz"
+
+# game/chap/chap1.rpy:165
+translate english chap1_2_ed4b9a83:
+
+    # grosso "AAAHHH" with vpunch
+    grosso "AAAHHH" with vpunch
+
+# game/chap/chap1.rpy:166
+translate english chap1_2_ff10e77d:
+
+    # maigrichon "Que ? Quoi ?! Ça ne va pas de crier comme ça ?!!!"
+    maigrichon "Que ? Quoi ?! Ça ne va pas de crier comme ça ?!!!"
+
+# game/chap/chap1.rpy:167
+translate english chap1_2_4217014a:
+
+    # grosso "Là-bas ! Au vol !"
+    grosso "Là-bas ! Au vol !"
+
+# game/chap/chap1.rpy:168
+translate english chap1_2_5d673e2b:
+
+    # maigrichon "Quoi ?! Un enfant ? Avec…"
+    maigrichon "Quoi ?! Un enfant ? Avec…"
+
+# game/chap/chap1.rpy:169
+translate english chap1_2_20f224c9:
+
+    # grosso_maigrichon "UNE BOULE DE CRISTAL ???!!!" with vpunch
+    grosso_maigrichon "UNE BOULE DE CRISTAL ???!!!" with vpunch
+
+# game/chap/chap1.rpy:170
+translate english chap1_2_08d0eca4:
+
+    # maigrichon "Vite, suivons-le !!!"
+    maigrichon "Vite, suivons-le !!!"
+
+# game/chap/chap1.rpy:171
+translate english chap1_2_60c944a4:
+
+    # grosso "Et prévenons Madame Arc-en-Ciel !"
+    grosso "Et prévenons Madame Arc-en-Ciel !"
+
+# game/chap/chap1.rpy:175
+translate english chap1_2_a56099e1:
+
+    # "Les gardes parcourent le jardin des violettes et disparaissent par le petit chemin du fond."
+    "Les gardes parcourent le jardin des violettes et disparaissent par le petit chemin du fond."
+
