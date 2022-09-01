@@ -1,7 +1,7 @@
 ﻿label chap1:
     call titlepage(1)
     scene mulberry_search
-    show mulberry at mulberry_position
+    show screen chap1_mulberry_search()
     show blanche surprised open at left
     with dissolve 
     blanche "Woah ! Tout est violet ! Il y a pleins de fleurs !!!" with vpunch
@@ -108,8 +108,19 @@
     hide blanche
     hide violet
     with dissolve
-    call mulberry_search
-    hide mulberry
+    call screen chap1_mulberry_search("chap1_2", "onclick_mulberry_background")
+
+label onclick_mulberry_background:
+    show screen chap1_mulberry_search()
+    show violet at right
+    violet "Alors tu as trouvé ?"
+    show blanche pout close at left
+    blanche "Pas encore…"
+    hide blanche
+    hide violet
+    call screen  chap1_mulberry_search("chap1_2", "onclick_mulberry_background")
+
+label chap1_2:
     show violet at right
     show blanche smile close at left
     with dissolve
@@ -163,48 +174,3 @@
     with dissolve
     "Les gardes parcourent le jardin des violettes et disparaissent par le petit chemin du fond."
     jump chap2
-
-#####
-# Cette section est dédiée à la récupération d'UNE mûre
-# Si vous êtes capables de faire plus court, lâchez-vous
-# Je hais ren'py
-#
-# La mûre est affichée deux fois, une fois en fond pour persister
-# lors des dialogues, et une fois en tant que bouton.
-
-# Chasse à la mûre
-label mulberry_search:
-    if 'mulberry_found' in vars() and mulberry_found:
-        return
-    else:
-        $ mulberry_found = False
-        window hide
-        # La position de cette mûre n'est pas modifiée avec l'autoreload,
-        # il faut faire un cycle de dialogue avant
-        hide mulberry
-        call screen wait_for_mulberry_click
-
-# Gestion du clic sur la mûre ici
-screen wait_for_mulberry_click():
-    button: # Button that covers the whle background
-        action Jump ("onclick_mulberry_background")
-    hbox at mulberry_position:
-        imagebutton:
-            idle "mulberry"
-            hover "mulberry_button"
-            focus_mask True
-            action Jump ("onclick_mulberry")
-    
-label onclick_mulberry:
-    $ mulberry_found = True
-    jump mulberry_search
-
-label onclick_mulberry_background:
-    show mulberry at mulberry_position
-    show violet at right
-    violet "Alors tu as trouvé ?"
-    hide violet
-    show blanche pout close at left
-    blanche "Pas encore…"
-    hide blanche
-    jump mulberry_search
