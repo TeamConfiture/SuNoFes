@@ -17,6 +17,12 @@ init python:
         `cols`
             The number of columns to use for the game
 
+        `rows`
+            The number of rows to use for the game (automatically calculated if cols is provided)
+
+        `null_entries`
+            Which Grid items should be left empty. Adding more entries than the Grid can provide is undefined behavior
+
         `reveal_count`
             How many times a card should be duplicated and how many cards a player should have to reveal at once
 
@@ -91,11 +97,12 @@ init python:
         scheduled_cleanup = None
         scheduled_overtime = None
 
-        def __init__(self, cards = [], cols = 3, rows = None,
+        def __init__(self, cards = [], cols = 3, rows = None, null_entries = [],
                 reveal_count = 2, failure_reveal_time = 1., failure_overtime = 0.3, turn_time = 0.5,
                 failure_actions = None, play_actions = None, completion_actions = None, **kwargs):
             rows = rows or math.ceil(len(cards)*reveal_count/cols)
             super(Memory, self).__init__(cols = cols, rows = rows, allow_underfull = True, **kwargs)
+            self.null_entries = null_entries
             self.cards_info = cards
             self.reveal_count = reveal_count
             self.reveal_time = failure_reveal_time
@@ -114,9 +121,23 @@ init python:
             Initialize the deck, in the future this will also shuffle it if required
             """
             renpy.random.shuffle(self.cards_map)
+            j = 0
             for i in range(len(self.cards_map)):
+                while i+j in self.null_entries:
+                    self.add(Null())
+                    j += 1
                 self.add(self.new_card(i))
-        
+
+        def get_child_by_index(self, index):
+            """
+            Get a child image object by its index, this is used to abstract the presence of null_entries in code
+            """
+            acc = 0
+            while len([*filter(lambda j: j <= index, self.null_entries)]) - acc > 0:
+                acc += 1
+                index += 1
+            return self.children[index]
+
         def new_card(self, pos):
             """
             Internal function used to generate a new card instance
@@ -131,7 +152,7 @@ init python:
                 card_info[key] = card_info.get(key, selected)
             return ManageableImageButton(
                 **card_info,
-                action = Function(Memory.on_card_click, self, pos),
+                action = Function(self.on_card_click, pos),
                 animator = SelectedCardAnimator(self.turn_time),
                 )
 
@@ -142,13 +163,14 @@ init python:
             `i`
                 Index of the card in the internal card map
             """
-            if self.active and len(self.revealed_cards) < self.reveal_count and not self.children[i].selected:
-                self.children[i].selected = not self.children[i].selected
+            card = self.get_child_by_index(i)
+            if self.active and len(self.revealed_cards) < self.reveal_count and not card.selected:
+                card.selected = not card.selected
                 self.revealed_cards.append(i)
                 if len(self.revealed_cards) >= self.reveal_count:
                     if len(set([self.cards_map[i] for i in self.revealed_cards])) == 1:
                         self.revealed_cards = []
-                        if len(set([c.selected for c in self.children])) == 1:
+                        if len(set([isinstance(c, Null) or c.selected for c in self.children])) == 1:
                             # If all cards are selected, we win
                             renpy.run(self.completion_actions)
                     else:
@@ -156,7 +178,7 @@ init python:
                         self.scheduled_cleanup = self.st + self.reveal_time
                         renpy.redraw(self, 0)
                     renpy.run(self.play_actions)
-                        
+
         def verify_pending_processings(self):
             """
             Ensure that we're not waiting for a future event.
@@ -168,8 +190,9 @@ init python:
                 # Timeout for card turning if player made a mistake
                 if self.scheduled_cleanup <= self.st:
                     for i in self.revealed_cards:
-                        self.children[i].selected = False
-                        self.children[i].per_interact()
+                        card = self.get_child_by_index(i)
+                        card.selected = False
+                        card.per_interact()
                     self.revealed_cards = []
                     self.scheduled_cleanup = None
                     if self.failure_overtime:
@@ -193,9 +216,10 @@ init python:
             self.active = True
             self.revealed_cards = []
             for c in self.children:
-                if c.selected:
-                    renpy.redraw(c, 0)
-                c.selected = False
+                if not isinstance(c, Null):
+                    if c.selected:
+                        renpy.redraw(c, 0)
+                    c.selected = False
 
         def render(self, width, height, st, at):
             if st == 0:

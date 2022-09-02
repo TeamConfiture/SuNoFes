@@ -1,23 +1,23 @@
 screen chap4_memory_game(next_chapter_label, timeout_label):
-    default play_timer = 30
+    default play_timer = 60
+    default succeeded = 0
+    timer 0.1: # Game timer, frozen if we succeed
+        repeat True
+        action If(play_timer > 0, true = If(succeeded == 0, true = SetScreenVariable('play_timer', play_timer - 0.1)), false = Jump(timeout_label))
+    timer 0.5: # Delay before screen change on success
+        repeat True
+        action If(succeeded > 0, true = If(succeeded > 6, Jump(next_chapter_label), false = SetScreenVariable('succeeded', succeeded + 1)))
     python:
-        card_bg = { "auto": "images/cards/back_%s.jpg", }
+        card_bg = { "auto": "images/items/cards/Carte_dos_%s.png", }
 
     default memory = Memory(
-        cards = [
-            { "selected_image": "images/cards/rick_resized.jpg", **card_bg },
-            { "selected_image": "images/cards/griffin_card.png", **card_bg },
-            { "selected_image": "images/cards/kimi_card.png", **card_bg, },
-        ],
-        completion_actions = Jump(next_chapter_label),
+        cards = [ { "selected_image": "images/items/cards/Carte" + str(i+1) + ".png", **card_bg } for i in range(5) ],
+        completion_actions = SetScreenVariable('succeeded', 1),
+        cols = 4, spacing = 20, null_entries = [6, 7],
         xalign = 0.5, yalign = 0.5,
-        spacing = 20,
         )
-    timer 0.1:
-        repeat True
-        action If(play_timer > 0, true=SetScreenVariable('play_timer', play_timer - 0.1), false=Jump(timeout_label))
     add memory
     text (format(play_timer, '.0f') if play_timer > 0 else "0"):
-        xalign 0.9 yalign 0.5
+        xalign 0.8 yalign 0.5
         size 200
         color "#34f"
