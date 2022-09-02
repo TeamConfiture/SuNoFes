@@ -95,7 +95,9 @@ init python:
             """
             Internal function of ImageButton overloaded to provide the expected capabilities of this button
             """
-            child = self.style.child
+            child = self.style.child or self.state_children[self.style.prefix]
+            if self.enforced_state:
+                child = self.state_children.get(self.enforced_state + '_', child)
 
             if self.style.prefix != self.last_prefix and self.animator:
                 self.animator.new_transition(self.last_prefix, self.style.prefix, self.st, child)
@@ -106,4 +108,4 @@ init python:
                 if anim:
                     child = anim
 
-            return child or self.state_children[self.style.prefix]
+            return child
