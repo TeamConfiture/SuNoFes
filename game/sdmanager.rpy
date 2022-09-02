@@ -61,6 +61,53 @@ define sound.Orange_Ball = ["audio/CristalsBall/.ogg"]
 ## RedWorld
 define sound.Red_Ball = ["audio/CristalsBall/.ogg"]
 
+##=========================================================================##
+##                 Sons d'interaction (Channel Sound)                      ##
+##=========================================================================##
+
+##=============Quand on sélectionne une carte===============##
+
+define sound.Card_Select = ["audio/Interactions/Card_Select_01.ogg","audio/Interactions/Card_Select_02.ogg"]
+
+##=============Quand les cartes se rassemblent===============##
+
+define sound.Card_Together = ["audio/Interactions/Cards_Together_01.ogg"]
+
+##=============Quand on attrape un objet===============##
+
+define sound.Grab = ["audio/Interactions/Grab_01.ogg"]
+
+##=============Quand on attrape un fromage===============##
+
+define sound.Grab_Cheese = ["audio/Interactions/Grab_Cheese_01.ogg"]
+
+##=============Quand on trouve la mûr===============##
+
+define sound.Paillete = ["audio/Interactions/Paillette_01.ogg"]
+
+##=============Quand on débloque un morceau de vitrail===============##
+
+define sound.Unlock_Puzzle = ["audio/Interactions/Unlock_Puzzle_01.ogg"]
+
+##=============Mini-Jeu les flèches===============##
+
+define sound.Arrow = ["audio/Interactions/Arrow_01.ogg","audio/Interactions/Arrow_02.ogg"]
+
+##============Mini-jeu coupure de fruit================##
+
+define sound.Cut_Fruit = ["audio/Interactions/Cut_Fruit_01.ogg"]
+
+##============Dépot du fromage dans le panier en osier================##
+
+define sound.Cheese_Depot = ["audio/Interactions/Cheese_Depot_01.ogg"]
+
+##============Dépot d'un objet dans une boite en bois================##
+
+define sound.Wood_Depot = ["audio/Interactions/Wood_Depot_01.ogg"]
+
+##============Mini-Jeu de Pêche================##
+
+define sound.Fishing = ["audio/Interactions/Fishing_01.ogg"]
 
 ##=========================================================================##
 ##                     Voice acting (Channel Voice)                        ##
