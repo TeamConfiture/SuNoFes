@@ -129,13 +129,13 @@ label chap2_completed:
     show indigo at right
     with dissolve
     indigo "Messieurs, bien le bonsoir, que me vaut votre visite impromptue à cette heure aussi tardive ?"
-    grosso "Nous sommes à la poursuite d’un enfant ayant volé la boule Violet, tu ne l’aurais pas vu par hasard ?"
-    indigo "Les voyageurs ont bien changé… Vous n’êtes donc pas venu ici pour voir le paysage et les constellations ?"
-    maigrichon "Grosso ! La boule Indigo a disparu de l’autel aussi !"
-    indigo "Oh non… J’ai perdu ma boule, comme c’est étrange."
-    "Indigo feint l’ignorance."
+    grosso "Nous sommes à la poursuite d'un enfant ayant volé la boule Violet, tu ne l'aurais pas vu par hasard ?"
+    indigo "Les voyageurs ont bien changé… Vous n'êtes donc pas venu ici pour voir le paysage et les constellations ?"
+    maigrichon "Grosso ! La boule Indigo a disparu de l'autel aussi !"
+    indigo "Oh non… J'ai perdu ma boule, comme c'est étrange."
+    "Indigo feint l'ignorance."
     indigo "Les constellations ont détourné mon attention pendant un instant."
-    maigrichon "T’es vraiment pas doué… L’enfant est parti par où ?"
+    maigrichon "T'es vraiment pas doué… L'enfant est parti par où ?"
     grosso "Ah ! Ses traces de pas sont là, allons-y !" with vpunch
-    maigrichon "Et toi, Indigo, pour l’amour de Madame Arc-en-Ciel, tiens-toi à carreau, ça suffit les bêtises."
+    maigrichon "Et toi, Indigo, pour l'amour de Madame Arc-en-Ciel, tiens-toi à carreau, ça suffit les bêtises."
     jump chap3

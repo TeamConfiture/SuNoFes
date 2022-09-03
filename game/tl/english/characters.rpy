@@ -42,9 +42,6 @@
     # game/characters.rpy:48
     old "Picaru"
     new "Picaru"
-# TODO: Translation updated at 2022-09-01 20:25
-
-translate english strings:
 
     # game/characters.rpy:55
     old "Piou"

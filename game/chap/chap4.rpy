@@ -168,4 +168,4 @@ label chap4_2:
     with dissolve
     "Emeraude les voit s'en aller."
     emeraude "Minuit se lève, en haut des tours, les voix se taisent et tout devient aveugle et sourd, la nuit camoufle, pour quelques heures, la zone [player_name] de ces nuisibles visiteurs !"
-    # jump chap5
+    jump chap5

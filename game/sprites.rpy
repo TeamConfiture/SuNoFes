@@ -25,6 +25,9 @@ image crystal_purple = "images/boules/Boules_1.png"
 image crystal_indigo = "images/boules/Boules_2.png"
 image crystal_cyan = "images/boules/Boules_3.png"
 image crystal_green = "images/boules/Boules_4.png"
+image crystal_yellow = "images/boules/Boules_5.png"
+image crystal_orange = "images/boules/Boules_6.png"
+image crystal_red = "images/boules/Boules_7.png"
 
 # Chap 2 - Sky images
 

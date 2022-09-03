@@ -27,7 +27,17 @@ image blanche smile open = im.FactorScale("images/blanche/Blanche_smile_open.png
 image blanche surprised close = im.FactorScale("images/blanche/Blanche_surprised_close.png", blancheSpriteSize)
 image blanche surprised open = im.FactorScale("images/blanche/Blanche_surprised_open.png", blancheSpriteSize)
 
-image mme hologramme = im.FactorScale("images/mmeaec/MME_AEC_3_B4.png", blancheSpriteSize)
+image mme hologramme = im.FactorScale("images/mmeaec/mme_hologramme.png", blancheSpriteSize)
+image mme angry close = im.FactorScale("images/mmeaec/mme_angry_close.png", blancheSpriteSize)
+image mme angry open = im.FactorScale("images/mmeaec/mme_angry_open.png", blancheSpriteSize)
+image mme blush close = im.FactorScale("images/mmeaec/mme_blush_close.png", blancheSpriteSize)
+image mme blush open = im.FactorScale("images/mmeaec/mme_blush_open.png", blancheSpriteSize)
+image mme ignore close = im.FactorScale("images/mmeaec/mme_ignore_close.png", blancheSpriteSize)
+image mme ignore open = im.FactorScale("images/mmeaec/mme_ignore_open.png", blancheSpriteSize)
+image mme neutral close = im.FactorScale("images/mmeaec/mme_neutral_close.png", blancheSpriteSize)
+image mme neutral open = im.FactorScale("images/mmeaec/mme_neutral_open.png", blancheSpriteSize)
+image mme sad close = im.FactorScale("images/mmeaec/mme_sad_close.png", blancheSpriteSize)
+image mme sad open = im.FactorScale("images/mmeaec/mme_sad_open.png", blancheSpriteSize)
 
 image grosso = im.FactorScale("images/gardes/grosso.png", guardSpriteSize)
 image maigrichon = im.FactorScale("images/gardes/maigrichon.png", guardSpriteSize)
@@ -37,6 +47,9 @@ image indigo = im.FactorScale("images/chats/indigo.png", catSpriteSize)
 image cyan = im.FactorScale("images/chats/cyan.png", catSpriteSize)
 image cyan2 = im.FactorScale("images/chats/cyan2.png", catSpriteSize)
 image emeraude = im.FactorScale("images/chats/emeraude.png", catSpriteSize)
+image jaune = im.FactorScale("images/chats/jaune.png", catSpriteSize)
+image orange = im.FactorScale("images/chats/orange.png", catSpriteSize)
+image rouge = im.FactorScale("images/chats/red.png", catSpriteSize)
 
 # Déclarez les personnages utilisés dans le jeu.
 define narrator = Character(None, window_background="gui/textbox_noname.png", window_xsize=1803, window_ysize=388, what_xpos=38, what_ypos=126, what_italic=True)
