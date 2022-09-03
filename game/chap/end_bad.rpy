@@ -80,3 +80,6 @@ label end_bad:
     scene bad with dissolve
     "Quant à moi, j'ai fini dans les geôles du palais Arc-en-Ciel sans jamais avoir pu m'expliquer."
     "FIN"
+    python:
+        persistent.reached_end_bad = True
+        renpy.save_persistent()

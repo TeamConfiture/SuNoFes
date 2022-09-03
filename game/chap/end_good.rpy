@@ -213,3 +213,6 @@ label end_good:
     "C'est ainsi que je pars en direction de Papa et Mam... Madame Arc-en-Ciel."
     scene good with dissolve
     "FIN"
+    python:
+        persistent.reached_end_good = True
+        renpy.save_persistent()

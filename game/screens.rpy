@@ -119,7 +119,10 @@ init python:
 
     # Gallery's initialisation
     album = Gallery()
-    album.button("title")
+    for cg in ['good', 'neutral', 'bad']:
+        album.button(cg)
+        album.condition("persistent.reached_end_" + cg)
+        album.image("images/cg/" + cg + ".png")
 
     # Music Room initialisation
     musicroom = MusicRoom(fadeout=1.0,loop=True,single_track=True)
@@ -714,10 +717,9 @@ screen gallery():
     use game_menu("Gallery", "extra"):
         hbox:
             grid 2 2:
-                add album.make_button(name="title", unlocked="gui/slot.png", locked="gui/slot_lock.png", xalign=0.5, yalign=0.5)
-                add album.make_button(name="title", unlocked="gui/slot.png", locked="gui/slot_lock.png", xalign=0.5, yalign=0.5)
-                add album.make_button(name="title", unlocked="gui/slot.png", locked="gui/slot_lock.png", xalign=0.5, yalign=0.5)
-                add album.make_button(name="title", unlocked="gui/slot.png", locked="gui/slot_lock.png", xalign=0.5, yalign=0.5)
+                allow_underfull True
+                for cg in ['good', 'neutral', 'bad']:
+                    add album.make_button(name=cg, unlocked="gui/slot.png", locked="gui/slot_lock.png", xalign=0.5, yalign=0.5)
                 spacing 100
 
 ## Écran des musiques #######################################################

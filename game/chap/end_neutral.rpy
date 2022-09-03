@@ -105,3 +105,6 @@ label end_neutral:
     "Les gardes de Madame Arc-en-Ciel les récupérèrent et m'amenèrent devant elle."
     "Par chance, après avoir expliqué ma situation, Madame Arc-en-Ciel me pardonna pour tout ce que j'avais fait pour mon père..."
     "FIN"
+    python:
+        persistent.reached_end_neutral = True
+        renpy.save_persistent()
