@@ -259,6 +259,7 @@ define gui.file_slot_rows = 2
 
 ## Langue ################################################
 define config.default_language = "english"
+define config.enable_language_autodetect = True
 
 ## Positionnement et espacement ################################################
 ##
