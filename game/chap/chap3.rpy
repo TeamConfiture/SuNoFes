@@ -138,8 +138,15 @@ label chap3_2:
     cyan "Mais, c'est extraordinaire !" with vpunch
     cyan "Je ne m'attendais pas à présenter une perle rare dans mon émission !"
     cyan "Tu as bien mérité ta récompense, voici la boule Cyan. Je compte sur toi pour me la rendre au plus vite car Madame Arc-en-Ciel ne voit pas toujours d'un très bon oeil ce genre d'arrangement."
-    # TODO : <anime boule + Noir gagne une couleur>
+    scene noir_colors_2 with dissolve
+    pause 2
+    scene noir_colors_3 with dissolve
+    pause 2
+    scene forest
+    show cyan2 at farRight
+    show cyan at center
     show blanche smile open at farLeft
+    with dissolve
     blanche "Ne t'inquiète pas, je fais au plus vite, merci encore !"
     hide blanche smile close at farLeft with dissolve
     "Je m'éloigne et cours le long de la rivière."

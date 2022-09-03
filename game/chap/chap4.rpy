@@ -120,9 +120,19 @@ label memory_game_timeout:
     call screen chap4_memory_game('chap4_2', 'memory_game_timeout')
 
 label chap4_2:
-    # TODO : <anime boule + Noir gagne une couleur>
+    scene garden
+    show emeraude at right
+    show blanche surprised open at left
     emeraude "Yeah ! Bravo ! Oui, viens danser ! Oui, c'est la vie, la la la la la !"
     emeraude "Voilà, voilà, voilà, voilà la boule de cristal."
+    scene noir_colors_3 with dissolve
+    pause 2
+    scene noir_colors_4 with dissolve
+    pause 2
+    scene garden
+    show emeraude at right
+    show blanche surprised open at left
+    with dissolve
     emeraude "Et si mon heure sonne, oh oh. Pleure pas rigole, oh oh. On m'appelle l'Émeraude."
     show blanche neutral open at left
     blanche "Merci ! Merci Émeraude ! Tu me sauves !"
