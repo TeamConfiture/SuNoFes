@@ -311,9 +311,6 @@ init python:
         `cutting_action`
             What to do when a fruit is cut
 
-        `cutting_sound`
-            Sound to play when a sprite is cut
-
         `min_opaque_pixels`
             The number of pixels that should be cut in a fruit for the cut to be 'valid'
 
@@ -344,8 +341,9 @@ init python:
         current_pattern_index = -1
         current_pattern_schedule = None
         pattern_start = 0
+        finalized = False
 
-        def __init__(self, images, cutting_action = None, completion_action = None, missed_action = None, cutting_sound = None, min_opaque_pixels = 40, cut_frequency = 0.1, patterns = None, **kwargs):
+        def __init__(self, images, cutting_action = None, completion_action = None, missed_action = None, min_opaque_pixels = 40, cut_frequency = 0.1, patterns = None, **kwargs):
             super(ImageCutter, self).__init__(**kwargs)
             self.image_info = []
             for v in images:
@@ -356,7 +354,6 @@ init python:
             self.cutting_actions = cutting_action
             self.completion_action = completion_action
             self.missed_cutable_actions = missed_action
-            self.cutting_sound = cutting_sound
             self.min_opaque_pixels = min_opaque_pixels
             self.cut_frequency = cut_frequency
             self.cursor_pos = renpy.get_mouse_pos()
@@ -383,12 +380,15 @@ init python:
             if (self.current_pattern_index == len(self.patterns) - 1
                     and (self.current_pattern_schedule is None or len(self.current_pattern_schedule.keys()) == 0)
                     and len(self.cutables) == 0
+                    and not self.finalized
                     ):
                 renpy.run(self.completion_action)
+                self.finalized = True
 
         def update_cycle(self, st):
             if st == 0:
                 # Implicitly restart on new display cycle
+                self.finalized = False
                 self.current_pattern_index = -1
                 self.cutables = []
                 self.expired_cutables = []
@@ -510,8 +510,6 @@ init python:
                         c.timeout = self.st + 0.5
                         addition_list += c.split((start[0] - c.pos[0], start[1] - c.pos[1]), (end[0] - c.pos[0], end[1] - c.pos[1]))
                         renpy.run(self.cutting_actions)
-                        if self.cutting_sound:
-                            renpy.play(self.cutting_sound)
                         deletion_list.append(c) # We're going to split this, it's ok it'll survive... somewhat
             for c in deletion_list:
                 # TODO: remove by index with pop instead of by value
