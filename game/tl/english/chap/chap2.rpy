@@ -1,20 +1,20 @@
 ﻿# game/chap/chap2.rpy:5
 translate english chap2_540cb439:
 
-    # "Le soleil se couche… Au loin, un chat observe le crépuscule avec attention."
-    "The sun is setting… In the distance, a cat is observing the twilight with attention."
+    # "Le soleil se couche... Au loin, un chat observe le crépuscule avec attention."
+    "The sun is setting... In the distance, a cat is observing the twilight with attention."
 
 # game/chap/chap2.rpy:7
 translate english chap2_2c360a55:
 
-    # indigo "Aaaah… Ces étoiles sont si belles ! Un voyageur m'a autrefois dit que chacun de ces ensembles de points lumineux avaient des noms dans la langue de Molière."
-    indigo "Aaaah… The stars are so pretty! A traveler once told me each of these sets of shiny dots had a name in the language of Shakespeare."
+    # indigo "Aaaah... Ces étoiles sont si belles ! Un voyageur m'a autrefois dit que chacun de ces ensembles de points lumineux avaient des noms dans la langue de Molière."
+    indigo "Aaaah... The stars are so pretty! A traveler once told me each of these sets of shiny dots had a name in the language of Shakespeare."
 
 # game/chap/chap2.rpy:8
 translate english chap2_2a27a3f7:
 
-    # indigo "Si seulement je pouvais les connaître… Je serais alors en mesure de décrire le ciel que je vois et de pouvoir transmettre ces formidables connaissances aux futurs voyageurs qui s'arrêteront près de mon lac !"
-    indigo "If only I could learn their names… I would be able to describe the sky and to pass on this incredible knowledge to future travelers that will stop by my lake!"
+    # indigo "Si seulement je pouvais les connaître... Je serais alors en mesure de décrire le ciel que je vois et de pouvoir transmettre ces formidables connaissances aux futurs voyageurs qui s'arrêteront près de mon lac !"
+    indigo "If only I could learn their names... I would be able to describe the sky and to pass on this incredible knowledge to future travelers that will stop by my lake!"
 
 # game/chap/chap2.rpy:10
 translate english chap2_64ee83b5:
@@ -49,7 +49,7 @@ translate english chap2_e59d851c:
 # game/chap/chap2.rpy:23
 translate english chap2_858539e0:
 
-    # indigo "Ce n'est pas l'impression que tu me donnais quand tu courais il y a 5 minutes…"
+    # indigo "Ce n'est pas l'impression que tu me donnais quand tu courais il y a 5 minutes..."
     indigo "That was not the impression you were giving off when you ran just a few minutes ago..."
 
 # game/chap/chap2.rpy:24
@@ -61,8 +61,8 @@ translate english chap2_23dfe8d4:
 # game/chap/chap2.rpy:27
 translate english chap2_034b5ba1:
 
-    # blanche "Non mais j'ai cru que c'étaient des petits sapins, je pensais en ramener un pour Noël…"
-    blanche "Hey, I just thought they were tiny firs, maybe I can carry one back home for Christmas… "
+    # blanche "Non mais j'ai cru que c'étaient des petits sapins, je pensais en ramener un pour Noël..."
+    blanche "Hey, I just thought they were tiny firs, maybe I can carry one back home for Christmas... "
 
 # game/chap/chap2.rpy:29
 translate english chap2_e3880251:
@@ -79,8 +79,8 @@ translate english chap2_84e73b0a:
 # game/chap/chap2.rpy:31
 translate english chap2_3abb7623:
 
-    # indigo "En parlant de ça, il est coutume ici de repartir de mon lac en ayant au moins découvert quelque chose, alors suis-moi. Regarde ! On peut apercevoir un cygne devant et là, des canards… "
-    indigo "Speaking of which, it is customary to leave this place after having at least discovered something, so follow me. Look! A swan right here, and ducks over there… "
+    # indigo "En parlant de ça, il est coutume ici de repartir de mon lac en ayant au moins découvert quelque chose, alors suis-moi. Regarde ! On peut apercevoir un cygne devant et là, des canards... "
+    indigo "Speaking of which, it is customary to leave this place after having at least discovered something, so follow me. Look! A swan right here, and ducks over there... "
 
 # game/chap/chap2.rpy:34
 translate english chap2_449ea698:
@@ -97,19 +97,19 @@ translate english chap2_83bafb63:
 # game/chap/chap2.rpy:38
 translate english chap2_17093498:
 
-    # blanche "Mais…"
+    # blanche "Mais..."
     blanche "But-"
 
 # game/chap/chap2.rpy:40
 translate english chap2_d7193d22:
 
-    # indigo "Ne discute pas, c'est la coutume de repartir de mon lac en ayant découvert quelque chose. Tu vois là-bas ? Ce sont des roseaux ! On peut apercevoir un cygne devant et là, ce sont des canards, tu te rends compte de tout ce qui peut vivre ici ? Sans oublier les…"
-    indigo "No talking back, it is customary to leave this lake having learned a thing or two. Look over there. These are reeds! You can see a swan in front of it and right there, these are ducks, do you realize how many creatures can inhabit this place? Not to mention… "
+    # indigo "Ne discute pas, c'est la coutume de repartir de mon lac en ayant découvert quelque chose. Tu vois là-bas ? Ce sont des roseaux ! On peut apercevoir un cygne devant et là, ce sont des canards, tu te rends compte de tout ce qui peut vivre ici ? Sans oublier les..."
+    indigo "No talking back, it is customary to leave this lake having learned a thing or two. Look over there. These are reeds! You can see a swan in front of it and right there, these are ducks, do you realize how many creatures can inhabit this place? Not to mention... "
 
 # game/chap/chap2.rpy:43
 translate english chap2_1a58c2bc:
 
-    # blanche "Ah ! Je… Je ne suis pas venu ici pour visiter le lac."
+    # blanche "Ah ! Je... Je ne suis pas venu ici pour visiter le lac."
     blanche "Ah! I- I didn't come here to visit the lake."
 
 # game/chap/chap2.rpy:45
@@ -125,22 +125,28 @@ translate english chap2_7c6f0156:
     indigo "Really? If you did not come here to witness the beauty of this landscape, then what are you looking for?! Know that no one crossed my path with another objective!"
 
 # game/chap/chap2.rpy:49
-translate english chap2_ac79fab6:
+translate english chap2_3c6eac15:
 
-    # blanche "Ne te… Ne vous fâchez pas, je suis seulement venu récupérer la boule bleue qui est sur l'autel de l'autre côté du lac."
+    # blanche "Ne te... Ne vous fâchez pas, je viens seulement pour récupérer la boule bleue qui est sur l'autel de l'autre côté du lac."
     blanche "Don't... Please don't be angry, I only come here to get the blue ball that lies on the altar across the lake."
 
 # game/chap/chap2.rpy:51
 translate english chap2_2e90ac49:
 
     # indigo "Mmmmh, et à quoi te servirait-elle cette boule ? Au demeurant, étant le gardien du lac Indigo, je ne peux te laisser outrager notre grande maîtresse Madame Arc-en-Ciel ! Ce n'est pas un simple bleu, mais le plus noble d'entre eux : l'indigo. Pour ce qui est de la boule, je ne peux pas te la céder."
-    indigo "Mmmh… What use can you make out of it? In addition, as the guardian of Lake Indigo, I cannot let you outrage our venerable mistress Lady Rainbow! It is not a mere blue, it is the most noble of them all: Indigo. Regarding this ball, I cannot hand it to you."
+    indigo "Mmmh... What use can you make out of it? In addition, as the guardian of Lake Indigo, I cannot let you outrage our venerable mistress Lady Rainbow! It is not a mere blue, it is the most noble of them all: Indigo. Regarding this ball, I cannot hand it to you."
+
+# game/chap/chap2.rpy:34
+translate english chap2_d10b40fe:
+
+    # blanche "Pardon, je n'avais jamais vu de ronces."
+    blanche "Sorry! I never saw thorns in my life yet. "
 
 # game/chap/chap2.rpy:54
 translate english chap2_c3c605be:
 
     # blanche "Pardon ! Je ne voulais pas vous froisser ! Mais…"
-    blanche "Sorry! I didn't want to anger you, but… "
+    blanche "Sorry! I didn't want to anger you! But..."
 
 # game/chap/chap2.rpy:56
 translate english chap2_fe550b7d:
@@ -276,8 +282,8 @@ translate english chap2_completed_0107fd82:
 # game/chap/chap2.rpy:125
 translate english chap2_completed_9b4217bf:
 
-    # indigo "Les voyageurs ont bien changé… Vous n’êtes donc pas venu ici pour voir le paysage et les constellations ?"
-    indigo "Travelers sure have changed… So I presume you do not come here to see the landscape and the constellations."
+    # indigo "Les voyageurs ont bien changé... Vous n’êtes donc pas venu ici pour voir le paysage et les constellations ?"
+    indigo "Travelers sure have changed... So I presume you do not come here to see the landscape and the constellations."
 
 # game/chap/chap2.rpy:126
 translate english chap2_completed_92641beb:
@@ -288,8 +294,8 @@ translate english chap2_completed_92641beb:
 # game/chap/chap2.rpy:127
 translate english chap2_completed_b23f6d40:
 
-    # indigo "Oh non… J’ai perdu ma boule, comme c’est étrange."
-    indigo "Oh no… I lost the ball, how strange."
+    # indigo "Oh non... J’ai perdu ma boule, comme c’est étrange."
+    indigo "Oh no... I lost the ball, how strange."
 
 # game/chap/chap2.rpy:128
 translate english chap2_completed_1d967f46:
@@ -306,8 +312,8 @@ translate english chap2_completed_6e7a0450:
 # game/chap/chap2.rpy:130
 translate english chap2_completed_0b66754d:
 
-    # maigrichon "T’es vraiment pas doué… L’enfant est parti par où ?"
-    maigrichon "What an airhead… Where did the child go?"
+    # maigrichon "T’es vraiment pas doué... L’enfant est parti par où ?"
+    maigrichon "What an airhead... Where did the child go?"
 
 # game/chap/chap2.rpy:131
 translate english chap2_completed_79ffd5d2:
@@ -342,19 +348,3 @@ translate english strings:
     # game/chap/chap2.rpy:67
     old "Je vous bats aux échecs ?"
     new "Should I beat you at chess?"
-
-
-# TODO: Translation updated at 2022-09-01 20:25
-
-# game/chap/chap2.rpy:34
-translate english chap2_d10b40fe:
-
-    # blanche "Pardon, je n'avais jamais vu de ronces."
-    blanche "Pardon, je n'avais jamais vu de ronces."
-
-# game/chap/chap2.rpy:49
-translate english chap2_3c6eac15:
-
-    # blanche "Ne te… Ne vous fâchez pas, je viens seulement pour récupérer la boule bleue qui est sur l'autel de l'autre côté du lac."
-    blanche "Ne te… Ne vous fâchez pas, je viens seulement pour récupérer la boule bleue qui est sur l'autel de l'autre côté du lac."
-

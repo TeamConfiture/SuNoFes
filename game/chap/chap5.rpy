@@ -118,7 +118,7 @@ label chap5:
     grosso "Mais quel pleurnichard celui-là !" with vpunch
     grosso "Tu veux bien arrêter de chouiner et nous expliquer ce qui te prend de lui donner ta boule ?!"
     maigrichon "Et justifie ça bien, sinon tu auras affaire à Madame Arc-en-Ciel !"
-    piou "Il… Il… Il faire plaisir à son père une dernière fois... Sniff... Sniff..."
+    piou "Il… Il… Il veut faire plaisir à son père une dernière fois... Sniff... Sniff..."
     grosso "Bon, on tirera rien de lui."
     grosso "Il est trop sous le choc, va réveiller le chat !"
     maigrichon "Eh oh toi ! Réveille-toi ! Grosso t'a parlé !"

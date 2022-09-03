@@ -55,8 +55,8 @@ translate french strings:
     new "Orange"
 
     # game/characters.rpy:58
-    old "red"
-    new "red"
+    old "Rouge"
+    new "Red"
 
     # game/characters.rpy:59
     old "Picaru"

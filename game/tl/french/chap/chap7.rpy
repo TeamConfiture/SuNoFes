@@ -28,7 +28,7 @@ translate french chap7_f48afdd1:
 translate french chap7_20b2f0d9:
 
     # x "MIAOU ! Par le pouvoir du prisme Rouge, transforme-moi !"
-    x "MIAOU ! Par le pouvoir du prisme Rouge, transforme-moi !"
+    x "MIAOU ! Par le pouvoir du prisme Red, transforme-moi !"
 
 # game/chap/chap7.rpy:8
 translate french chap7_8a2b04fb:
@@ -94,7 +94,7 @@ translate french chap7_d0df9958:
 translate french chap7_1f6ad9e1:
 
     # blanche "Mais, je ne veux pas me battre ! Je viens juste ici pour récupérer la dernière boule de cristal : le Rouge ardent !"
-    blanche "Mais, je ne veux pas me battre ! Je viens juste ici pour récupérer la dernière boule de cristal : le Rouge ardent !"
+    blanche "Mais, je ne veux pas me battre ! Je viens juste ici pour récupérer la dernière boule de cristal : le Red ardent !"
 
 # game/chap/chap7.rpy:19
 translate french chap7_38e0c12d:
