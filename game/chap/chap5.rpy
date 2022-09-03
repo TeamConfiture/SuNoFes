@@ -181,7 +181,14 @@ label chap5_2:
     piou "J'ai déjà fait tout mon possible pour rendre leur fin de vie plus agréable !"
     piou "Il faudrait que je me saigne aux quatre veines pour les autres ?!" with vpunch
     piou "Tiens, prends cette boule, fais honneur à ton père et reviens vite."
+    scene noir_colors_4 with dissolve
+    pause 2
+    scene noir_colors_5 with dissolve
+    pause 2
+    scene country
+    show jaune at right
     show blanche neutral open at left
+    with dissolve
     blanche "Merci Piou !"
     show blanche neutral close at left
     piou "Maintenant, laisse-moi tranquille ! J'ai besoin de prendre l'air."

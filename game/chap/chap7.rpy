@@ -1,3 +1,15 @@
+label win_noir_color_7(red = True):
+    scene noir_colors_6 with dissolve
+    pause 2
+    scene noir_colors_7 with dissolve
+    pause 2
+    scene dojo
+    if red:
+        show rouge at right
+    show blanche neutral open at left
+    with dissolve
+    return
+
 label chap7:
     call titlepage(7)
     scene dojo
@@ -65,6 +77,7 @@ label chap7_2:
             "Le chat a perdu connaissance."
             show blanche neutral open at left
             blanche "Bon, c'était plus facile que je le pensais."
+            call win_noir_color_7(red = False)
             blanche "J'espère que mon papa sera content. Être dans le noir, c'est triste. Lui montrer les couleurs de l'arc-en-ciel va sûrement lui remonter le moral."
             show blanche cry open at left
             blanche "Il a toujours les yeux bandés… Tout ça pour s'habituer à voir la couleur noire le plus tôt possible, c'est triste."
@@ -89,6 +102,7 @@ label chap7_2:
             show blanche neutral close at left
             red "Sacrilège, qui aurait cru que boire du lait te faisait grandir et devenir plus fort."
             red "Merci pour cette technique. Voilà ma boule."
+            call win_noir_color_7()
             show blanche neutral open at left
             blanche "Merci ! Merci Red ! J'en prendrai soin ! Ne t'en fais pas je te la rendrai en temps et en heure !"
             show blanche neutral close at left
@@ -130,6 +144,7 @@ label chap7_2:
             blanche "C'est vrai ?! Je peux ?!" with vpunch
             show blanche surprised close at left
             red "Tu m'as aidé. Je te rends la pareil, camarade."
+            call win_noir_color_7()
             show blanche neutral open at left
             blanche "Merci ! Merci Red ! J'en prendrai soin !"
             hide rouge at right with dissolve

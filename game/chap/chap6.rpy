@@ -122,7 +122,14 @@ label chap6_2:
     orange "Je suis persuadé que tu vas y arriver."
     show blanche smile open at left
     blanche "Oh ! C'est incroyable, j'ai réussi à l'attraper !"
+    scene noir_colors_5 with dissolve
+    pause 2
+    scene noir_colors_6 with dissolve
+    pause 2
+    scene piano
+    show orange at right
     show blanche smile close at left
+    with dissolve
     orange "Tu vois ! Je te l'avais dit !"
     orange "Que vas-tu donc faire de cette boule maintenant qu'elle est entre tes mains ?"
     show blanche neutral open at left
