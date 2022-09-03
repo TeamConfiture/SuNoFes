@@ -210,3 +210,83 @@ translate english end_bad_556604e3:
     # "Quant à moi, j'ai fini dans les geôles du palais Arc-en-Ciel sans jamais avoir pu m'expliquer."
     "As for me, I ended up in Lady Rainbow's cells, beneath her palace, without ever having the opportunity to explain myself."
 
+# TODO: Translation updated at 2022-09-03 21:49
+
+# game/chap/end_bad.rpy:8
+translate english end_bad_bde69e8d:
+
+    # grosso "On te tient maintenant ! Rends-nous les boules tout de suite !" with vpunch
+    grosso "On te tient maintenant ! Rends-nous les boules tout de suite !" with vpunch
+
+# game/chap/end_bad.rpy:10
+translate english end_bad_6cd5cedd:
+
+    # blanche "Oh non ! Les gardes de Madame Arc-en-Ciel ! Fuyons !" with vpunch
+    blanche "Oh non ! Les gardes de Madame Arc-en-Ciel ! Fuyons !" with vpunch
+
+# game/chap/end_bad.rpy:13
+translate english end_bad_a210f80d:
+
+    # grosso "Pas si vite !"
+    grosso "Pas si vite !"
+
+# game/chap/end_bad.rpy:19
+translate english end_bad_9c1645bb:
+
+    # blanche "Ah !" with vpunch
+    blanche "Ah !" with vpunch
+
+# game/chap/end_bad.rpy:24
+translate english end_bad_877d90bd:
+
+    # grosso "Ha ha ! Tu ne peux plus t'échapper maintenant, hein ?"
+    grosso "Ha ha ! Tu ne peux plus t'échapper maintenant, hein ?"
+
+# game/chap/end_bad.rpy:25
+translate english end_bad_0c372b5f:
+
+    # grosso "Viens là !"
+    grosso "Viens là !"
+
+# game/chap/end_bad.rpy:29
+translate english end_bad_b33b0b82:
+
+    # blanche "Ah ! Aïe !" with vpunch
+    blanche "Ah ! Aïe !" with vpunch
+
+# game/chap/end_bad.rpy:33
+translate english end_bad_83df20c6:
+
+    # blanche "Non ! Non ! Pas les boules de cristal !" with vpunch
+    blanche "Non ! Non ! Pas les boules de cristal !" with vpunch
+
+# game/chap/end_bad.rpy:41
+translate english end_bad_b33b0b82_1:
+
+    # blanche "Ah ! Aïe !" with vpunch
+    blanche "Ah ! Aïe !" with vpunch
+
+# game/chap/end_bad.rpy:61
+translate english end_bad_a7255b8d:
+
+    # noir "Kof, kof…" with vpunch
+    noir "Kof, kof…" with vpunch
+
+# game/chap/end_bad.rpy:69
+translate english end_bad_256c18aa:
+
+    # noir "Kof, kof... On dirait qu'il y a de l'agitation dehors..." with vpunch
+    noir "Kof, kof... On dirait qu'il y a de l'agitation dehors..." with vpunch
+
+# game/chap/end_bad.rpy:82
+translate english end_bad_0c052b1f:
+
+    # "FIN"
+    "FIN"
+
+translate english strings:
+
+    # game/chap/end_bad.rpy:2
+    old "Fin triste"
+    new "Fin triste"
+
