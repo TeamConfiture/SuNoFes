@@ -62,3 +62,11 @@ translate french strings:
     old "Picaru"
     new "Picaru"
 
+# TODO: Translation updated at 2022-09-03 19:33
+
+translate french strings:
+
+    # game/characters.rpy:58
+    old "Red"
+    new "Red"
+

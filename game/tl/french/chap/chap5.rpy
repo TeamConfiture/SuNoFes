@@ -724,3 +724,11 @@ translate french strings:
     old "Broder pour attendre un moment plus propice"
     new "Broder pour attendre un moment plus propice"
 
+# TODO: Translation updated at 2022-09-03 19:33
+
+# game/chap/chap5.rpy:121
+translate french chap5_0b9e216f:
+
+    # piou "Il… Il… Il veut faire plaisir à son père une dernière fois... Sniff... Sniff..."
+    piou "Il… Il… Il veut faire plaisir à son père une dernière fois... Sniff... Sniff..."
+
