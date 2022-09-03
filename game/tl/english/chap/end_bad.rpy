@@ -22,7 +22,7 @@ translate english end_bad_c2a54efe:
 translate english end_bad_19fdf556:
 
     # maigrichon "Pas si vite !"
-    maigrichon "No so fast!"
+    maigrichon "Not so fast!"
 
 # game/chap/end_bad.rpy:6
 translate english end_bad_acd81b5a:
@@ -100,7 +100,7 @@ translate english end_bad_77984f98:
 translate english end_bad_15f9e161:
 
     # grosso "Finie la rigolade ! Tu vas voir ce qu'il en coûte de s'opposer aux représentants de Madame Arc-en-Ciel !"
-    grosso "No more childplay! You'll see what happens when going against Lady Rainbow's representatives!"
+    grosso "No more games! You'll see what happens when going against Lady Rainbow's representatives!"
 
 # game/chap/end_bad.rpy:19
 translate english end_bad_226c6585_1:
@@ -148,7 +148,7 @@ translate english end_bad_e8337523:
 translate english end_bad_5e294c01:
 
     # blanche "Oh non, Papa !"
-    blanche "Oh no, Daddy !"
+    blanche "Oh no, Daddy!"
 
 # game/chap/end_bad.rpy:27
 translate english end_bad_dfe8cbd1:
@@ -160,13 +160,13 @@ translate english end_bad_dfe8cbd1:
 translate english end_bad_c75677f0:
 
     # "Mon papa tourne la tête au-dehors."
-    "Daddy turns his head toward outdoors."
+    "Daddy turns his head to the outside of house."
 
 # game/chap/end_bad.rpy:29
 translate english end_bad_584c3d8c:
 
     # blanche "Pardon, Papa ! Je m'excuse... Pardon. J'ai fait une grosse bêtise."
-    blanche "Sorry, Daddy ! I'm sorry... Sorry. I made a huge mistake."
+    blanche "Sorry, Daddy! I'm sorry... Sorry. I made a huge mistake."
 
 # game/chap/end_bad.rpy:30
 translate english end_bad_295a0065:
@@ -202,7 +202,7 @@ translate english end_bad_76890dd2:
 translate english end_bad_b461fff8:
 
     # "Tels furent les derniers mots de mon papa avant de se transformer en un nuage de poussière noire..."
-    "Those were daddy's lasts words before going up in a cloud of black dust..."
+    "Those were Daddy's lasts words before going up in a cloud of black dust..."
 
 # game/chap/end_bad.rpy:36
 translate english end_bad_556604e3:

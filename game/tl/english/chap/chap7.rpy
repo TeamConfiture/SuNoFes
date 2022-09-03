@@ -52,7 +52,7 @@ translate english chap7_4a260ee1:
 translate english chap7_d30869b1:
 
     # x "Qui va là ?! Qui ose perturber l'entraînement de Red ?!"
-    x "Who's there?! Who dares disrupt Rouge's training?!"
+    x "Who's there?! Who dares interrupt Rouge's training?!"
 
 # game/chap/chap7.rpy:12
 translate english chap7_91c6bf5e:
@@ -70,7 +70,7 @@ translate english chap7_07ecb731:
 translate english chap7_33b644c0:
 
     # red "MIAOU ! Oui, la guerre !"
-    red "MEOW! In your rear!"
+    red "MEOW! That's right!"
 
 # game/chap/chap7.rpy:15
 translate english chap7_2ec37fd6:
@@ -112,13 +112,13 @@ translate english chap7_531f3153:
 translate english chap7_71c4f23b:
 
     # blanche "Non ! Non ! Calme-toi ! Je viens en paix ! Je veux juste t'emprunter pour une nuit ta boule de cristal. C'est pour mon papa !"
-    blanche "No! No! Calm down! I come in peace! I just want to borrow your crystal ball for a night. It's for daddy!"
+    blanche "No! No! Calm down! I come in peace! I just want to borrow your crystal ball for a night. It's for Daddy!"
 
 # game/chap/chap7.rpy:22
 translate english chap7_48bc45e5:
 
     # red "Bats-toi ! Vile être qui veut piller mes terres !"
-    red "Fight! Vile being who wants to plunder my land!"
+    red "Fight! Vile one who wants to plunder my land!"
 
 # game/chap/chap7.rpy:23
 translate english chap7_c792b9aa:
@@ -160,7 +160,7 @@ translate english chap7_f6619920:
 translate english chap7_7a05e509:
 
     # blanche "J'espère que mon papa sera content. Être dans le noir, c'est triste. Lui montrer les couleurs de l'arc-en-ciel va sûrement lui remonter le moral."
-    blanche "I hope daddy will be happy. Being in the dark, it is sad. Showing him the rainbow's colors will surely cheer him up."
+    blanche "I hope Daddy will be happy. Being in the dark, it is sad. Showing him the rainbow's colors will surely cheer him up."
 
 # game/chap/chap7.rpy:49
 translate english chap7_ca794cd1:
@@ -184,7 +184,7 @@ translate english chap7_1e45870f:
 translate english chap7_ade583a9:
 
     # blanche "J'ai une idée ! Si je te donne une technique, tu me prêtes ta boule pour une nuit ?"
-    blanche "I have an idea! If I give you a technique, you lend me your ball for a night?"
+    blanche "I have an idea! If I give you a technique, would you lend me your ball for a night?"
 
 # game/chap/chap7.rpy:55
 translate english chap7_08e29f1c:
@@ -250,19 +250,19 @@ translate english chap7_2c5a27d0:
 translate english chap7_cfa44a2a:
 
     # blanche "C'est pour mon papa ! Il ne va pas bien du tout… Il est tout le temps dans le noir et être dans le noir, c'est triste."
-    blanche "It's for daddy! He's not fine at all... He's always in the dark and being in the dark, it's sad."
+    blanche "It's for Daddy! He's not doing fine at all... He's always in the dark and being in the dark, it's sad."
 
 # game/chap/chap7.rpy:66
 translate english chap7_38b59a26:
 
     # blanche "De ce qu'il m'a dit, c'est parce que ses yeux lui refont penser à ma maman, mais le fait d'être \"Noir\" fait qu'il finira par ne voir que du noir. Il veut s'habituer à voir la couleur noire le plus tôt possible…"
-    blanche "From what he said to me, it's because his eyes remind him of mommy. But being \"Noir\" means that he will end up only seeing dark. He wants to get used to seeing the color black as soon as possible..."
+    blanche "From what he told me, it's because his eyes remind him of Mommy. But by being \"Noir\", he will end up only seeing dark. He wants to get used to seeing the color black as soon as possible..."
 
 # game/chap/chap7.rpy:67
 translate english chap7_b9842d57:
 
     # blanche "Voir mon papa dans cet état me rend triste. C'est pour ça que je veux lui montrer les couleurs de l'arc-en-ciel. Juste une dernière fois…"
-    blanche "To see my daddy in this state makes me sad. That is why I want to show him the colors of the rainbow. Just one last time..."
+    blanche "To see my Daddy in this state makes me sad. That is why I want to show him the colors of the rainbow. Just one last time..."
 
 # game/chap/chap7.rpy:68
 translate english chap7_1d4547f8:
@@ -280,7 +280,7 @@ translate english chap7_cabf0bbc:
 translate english chap7_4f3ed553:
 
     # red "Vaillant camarade, bon courage pour ta quête."
-    red "Brave comrade, good luck in your quest."
+    red "Brave comrade, good luck on your quest."
 
 # game/chap/chap7.rpy:71
 translate english chap7_abe0fec9:
@@ -292,13 +292,13 @@ translate english chap7_abe0fec9:
 translate english chap7_cda2f9cd:
 
     # blanche "Ah ! Je sais ! Tu n'as qu'à te bander les yeux comme mon papa ! Il arrive à voir partout sans ouvrir les yeux !"
-    blanche "Oh! I have an idea! You just have to blindfold yourself just like my daddy! He can see everywhere without opening his eyes!"
+    blanche "Oh! I have an idea! You just have to blindfold yourself just like my Daddy! He can see everywhere without opening his eyes!"
 
 # game/chap/chap7.rpy:75
 translate english chap7_413a27e9:
 
     # red "Est-ce une de tes techniques secrètes ?! Mais, je ne verrai rien, moi !"
-    red "Is that one of your secrets techniques?! But I won't be seeing anything!"
+    red "Is that one of your secret techniques?! But I won't be seeing anything!"
 
 # game/chap/chap7.rpy:76
 translate english chap7_76e2c92f:
@@ -322,7 +322,7 @@ translate english chap7_6a5f1594:
 translate english chap7_b33031e8:
 
     # blanche "Non du tout ! De ce qu'il m'a dit, c'est parce que ses yeux lui refont penser à ma maman, mais le fait d'être \"Noir\" fait qu'il finira par ne voir que du noir. Il veut s'habituer à voir la couleur noire le plus tôt possible…"
-    blanche "Not at all! From what he told me, it's because his eyes remind him of mommy, but by being \"Noir\" he's vowed to only see black. He want to get used to seeing the color black as soon as possible..."
+    blanche "Not at all! From what he told me, it's because his eyes remind him of Mommy, but by being \"Noir\" he's vowed to see only black. He wants to get used to seeing the color black as soon as possible..."
 
 # game/chap/chap7.rpy:80
 translate english chap7_0217aa70:
@@ -382,7 +382,7 @@ translate english chap7_96f2d969:
 translate english chap7_6b4c136d:
 
     # x "Décidément, il faut tout régler par soi-même."
-    x "Truly, one must do everything themself."
+    x "Truly, one must do everything by themselves."
 
 # game/chap/chap7.rpy:93
 translate english chap7_81b520b7:
@@ -440,9 +440,9 @@ translate english strings:
 
     # game/chap/chap7.rpy:41
     old "Troquer une technique inventée contre sa boule"
-    new "Trade a made up technique for his ball"
+    new "Trade a made-up technique for his ball"
 
     # game/chap/chap7.rpy:41
     old "Réfléchir avec lui pour combattre Jaune et demander sa boule"
-    new "Think with him to fight Yellow and ask his ball"
+    new "Think with him about a way to fight Yellow and ask for his ball"
 

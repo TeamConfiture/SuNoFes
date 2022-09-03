@@ -40,7 +40,7 @@ translate english end_neutral_3d4e0344:
 translate english end_neutral_04560722:
 
     # blanche "Je voulais te faire une surprise et te montrer l'Arc-en-Ciel ! Comme tu es tout le temps malade, j'ai décidé de t'amener les sept boules de l'Arc-en-Ciel ! Regarde ! Tada !"
-    blanche "I wanted to make you a surprise and show you the Rainbow! As you're always sick, I decided to bring you the Raibow's seven balls! Look! Tada!"
+    blanche "I wanted to surprise you and show you the Rainbow! Because you're always sick, I decided to bring you the Raibow's seven balls! Look! Tada!"
 
 # game/chap/end_neutral.rpy:9
 translate english end_neutral_47d2125f:
@@ -82,7 +82,7 @@ translate english end_neutral_47806ce0:
 translate english end_neutral_13bd8b82:
 
     # "Je commence à pleurer."
-    "I start tearing up."
+    "I start to cry."
 
 # game/chap/end_neutral.rpy:16
 translate english end_neutral_488b87e4:
@@ -220,7 +220,7 @@ translate english end_neutral_50f2bf2b:
 translate english end_neutral_de0672d1:
 
     # noir "Je serai toujours là à tes côtés dans cette petite place au fond de ton coeur."
-    noir "I will always be there, by your side, in a cozy place in the deep of your heart."
+    noir "I will always be there, by your side, in a small and deep corner of your heart."
 
 # game/chap/end_neutral.rpy:40
 translate english end_neutral_32d8e3c1:
@@ -268,7 +268,7 @@ translate english end_neutral_8162cbaf:
 translate english end_neutral_79521967:
 
     # "C'est ainsi que Noir, mon père, disparut dans l'obscurité…"
-    "That is how Noir, my dad, disappeared in the darkness"
+    "That is how Noir, my dad, disappeared in the darkness..."
 
 # game/chap/end_neutral.rpy:48
 translate english end_neutral_73411fc9:

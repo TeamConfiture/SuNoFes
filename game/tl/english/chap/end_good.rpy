@@ -2,7 +2,7 @@
 translate english end_good_27e286e1:
 
     # blanche "Héhé ! J'ai réussi à avoir les sept boules de cristal ! J'espère que Papa sera content."
-    blanche "Hehe! I finally managed to gather the seven crytal balls! I hope daddy will be happy."
+    blanche "Hehe! I finally managed to gather the seven crytal balls! I hope Daddy will be happy."
 
 # game/chap/end_good.rpy:3
 translate english end_good_8b36e3a0:
@@ -14,7 +14,7 @@ translate english end_good_8b36e3a0:
 translate english end_good_d57ca607:
 
     # madame "Que fais-tu ? Rends-moi mes boules ! Pourquoi les avoir prises ?!"
-    madame "What are you doing? Give me back my balls! Why did you take them?!"
+    madame "What are you doing? Give my balls back to me! Why did you take them?!"
 
 # game/chap/end_good.rpy:5
 translate english end_good_eb1a98af:
@@ -44,13 +44,13 @@ translate english end_good_da10c51b:
 translate english end_good_8fd8c82a:
 
     # "Mais, à peine ai-je pu faire un pas, que Madame Arc-en-Ciel m'attrape."
-    "But, I could not take two steps, that Lady Rainbow grabbed me."
+    "But Lady Rainbow grabbed me before I could even make a step."
 
 # game/chap/end_good.rpy:10
 translate english end_good_a7d01946:
 
     # blanche "Ne me faites pas de mal. C'est… C'est que mon papa… Mon papa Noir… Il… Il est malade et je voulais lui montrer les couleurs pour le voir sourire."
-    blanche "Don't hurt me. It's... It's daddy... My daddy Noir... He... He is sick and I wanted to show him the colors to see him smile."
+    blanche "Don't hurt me. It's... It's Daddy... My daddy Noir... He... He is sick and I wanted to show him the colors to see him smile."
 
 # game/chap/end_good.rpy:11
 translate english end_good_51c9c514:
@@ -80,7 +80,7 @@ translate english end_good_e2d88b28:
 translate english end_good_1673e4d3:
 
     # blanche "Je vous promets, Madame Arc-en-Ciel, je vous emprunte les boules juste pour un instant ! Après, je vous les rendrai !"
-    blanche "I promise you, Lady Rainbow, I'm only borrowing you the balls for an short moment! I'll give them back after!"
+    blanche "I promise you, Lady Rainbow, I'm only borrowing you these balls for a short moment! I'll give them back afterwards!"
 
 # game/chap/end_good.rpy:16
 translate english end_good_a24145b6:
@@ -128,7 +128,7 @@ translate english end_good_115725c7:
 translate english end_good_e18bb43b:
 
     # "Le constat était sans appel. Mon papa allait bientôt s'éteindre."
-    "There was no way arount it. Daddy was going to pass away."
+    "There was no way around it. Daddy was going to pass away."
 
 # game/chap/end_good.rpy:24
 translate english end_good_4d09c5aa:
@@ -266,7 +266,7 @@ translate english end_good_82472746:
 translate english end_good_ec2e8b57:
 
     # "J'imagine qu'ils ont des choses à se dire..."
-    "I guess they have things to say to each other ..."
+    "I guess they have things to say to each other..."
 
 # game/chap/end_good.rpy:47
 translate english end_good_18bf4824:
@@ -392,7 +392,7 @@ translate english end_good_95b4ce95:
 translate english end_good_3cf358fd:
 
     # madame "Mais, [player_name] a besoin de toi."
-    madame "But, [player_name] need you."
+    madame "But, [player_name] needs you."
 
 # game/chap/end_good.rpy:68
 translate english end_good_455b889f:
@@ -464,13 +464,13 @@ translate english end_good_38c56ff0_1:
 translate english end_good_cfc0efc8:
 
     # "Madame Arc-en-Ciel et Noir se regardent les yeux dans les yeux."
-    "Lady Rainbow and Noir look in each others eyes."
+    "Lady Rainbow and Noir look at each other in the eyes."
 
 # game/chap/end_good.rpy:80
 translate english end_good_f62de42d:
 
     # madame "Disons que pour Couleurs, je suis peut-être quelqu'un, mais sans toi, je ne suis rien."
-    madame "Let's say that for Colors, I may be of some importance, but without you, I am nothing."
+    madame "Let's say that for the people of Colors, I may be of some importance, but without you, I am nothing."
 
 # game/chap/end_good.rpy:81
 translate english end_good_aa5393fa:

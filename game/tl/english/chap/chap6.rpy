@@ -16,7 +16,7 @@ translate english chap6_4343dab1:
 translate english chap6_f387f0f6:
 
     # blanche "Oh ! On dirait les quatre saisons de Vivaldi !"
-    blanche "Oh! It sounds like Four Seasons by Vivaldi!"
+    blanche "Oh! It sounds like the Four Seasons by Vivaldi!"
 
 # game/chap/chap6.rpy:6
 translate english chap6_84b17eab:
@@ -28,13 +28,13 @@ translate english chap6_84b17eab:
 translate english chap6_2678fb8e:
 
     # x "Mais de qui oses-tu donc te moquer ? Moi, Orange, votre serviteur, j'étais en train de jouer le Requiem de herr Wolfgang Amadeus Mozart, cette oeuvre à jamais incomplète, mais qui représente tout le génie du grand maître !"
-    x "Whom do you dare to make fun of? I, Orange, your humble servant, was playing Requiem by herr Wolfgang Amadeus Mozart, a forever incomplete artwork, that still showcase the grand master's genius!"
+    x "Whom do you dare to make fun of? I, Orange, your humble servant, was playing Requiem by Herr Wolfgang Amadeus Mozart, a forever incomplete artwork, that still showcase the grand master's genius!"
 
 # game/chap/chap6.rpy:8
 translate english chap6_af21402c:
 
     # blanche "Excuse-moi, je ne m'y connais pas trop dans l'art musical."
-    blanche "Excuse-me, I don't know much in music arts."
+    blanche "Excuse me, I don't know much in music arts."
 
 # game/chap/chap6.rpy:9
 translate english chap6_8fe10935:
@@ -70,7 +70,7 @@ translate english chap6_35efb4ec:
 translate english chap6_8623552d:
 
     # orange "Il restait là, allongé, pendant des heures à écouter votre bon vieux serviteur pester contre ses fausses notes."
-    orange "He stayed here, laying down for hours, listening to your good old humble servant grumble with his wrong tones."
+    orange "He would stay there, laying down for hours, listening to your good old humble servant grumble with his off-key notes."
 
 # game/chap/chap6.rpy:15
 translate english chap6_6b38f421:
@@ -82,7 +82,7 @@ translate english chap6_6b38f421:
 translate english chap6_6e925f64:
 
     # orange "Paradoxalement, cela a été aussi la dernière fois que je l'ai vu dans mon antre d'agrumes..."
-    orange "Ironically, it also was the last time I saw him in my orange grove..."
+    orange "Ironically, it was also the last time I saw him in my orange grove..."
 
 # game/chap/chap6.rpy:17
 translate english chap6_cf2548f4:
@@ -100,7 +100,7 @@ translate english chap6_3c97ad3b:
 translate english chap6_ce541b5b:
 
     # blanche "Le bien-être des gens lui redonne la santé. C'est comme si le soleil dans la vie des autres, lui rendait le sien !"
-    blanche "People's wellbeing give him strength. As if people's flame lights up his own!"
+    blanche "People's wellbeing give him strength. As if their passion lights up his own!"
 
 # game/chap/chap6.rpy:20
 translate english chap6_adee7a45:
@@ -118,7 +118,7 @@ translate english chap6_0cd413e4:
 translate english chap6_e5135320:
 
     # blanche "Là, mon papa n'est pas bien du tout ! Il est encore plus mal en point que d'habitude."
-    blanche "Now, Daddy isn't feeling well at all! He's in even worse shape than usual."
+    blanche "Now, Daddy isn't feeling well at all! He's in an even worse shape than usual."
 
 # game/chap/chap6.rpy:23
 translate english chap6_595a64e8:
@@ -154,7 +154,7 @@ translate english chap6_8632bc58:
 translate english chap6_e159292b:
 
     # blanche "Ah bon ?"
-    blanche "Oh ?"
+    blanche "Oh?"
 
 # game/chap/chap6.rpy:29
 translate english chap6_29d91b3f:
@@ -178,7 +178,7 @@ translate english chap6_0f9e419a:
 translate english chap6_03f87a72:
 
     # orange "Il faut maîtriser la musique des agrumes. Il faut sentir ton corps vibrer en entendant le jus s'écouler."
-    orange "One must master the agrumes' music. You have to feel your body vibrating when hearing the juice flow."
+    orange "One must master the citrus fruits' music. You have to feel your body vibrate when hearing the juice flow."
 
 # game/chap/chap6.rpy:33
 translate english chap6_845f32c3:
@@ -190,7 +190,7 @@ translate english chap6_845f32c3:
 translate english chap6_1d1e3997:
 
     # orange "Moi par exemple, j'utilise une baguette. Avec ça, les agrumes se coupent, se déchirent et chantent selon ma volonté."
-    orange "I, for example, use a wand. With it, the agrumes cut themselves, tear themselves and sing according to my will."
+    orange "I, for example, use a wand. With it, the citrus fruits cut themselves, tear themselves and sing according to my will."
 
 # game/chap/chap6.rpy:35
 translate english chap6_a5801d2f:
@@ -214,19 +214,19 @@ translate english chap6_0c991ed6:
 translate english chap6_6d01a69c:
 
     # blanche "Comment des agrumes peuvent produire du son ? Comment est-ce que ça va me permettre de prendre la boule ?"
-    blanche "How can agrumes make sound? How will this make me able to take the ball?"
+    blanche "How can citrus fruits make sounds? How will this let me get the ball?"
 
 # game/chap/chap6.rpy:42
 translate english chap6_a3edc109:
 
     # orange "Eh bien, vas-y, essaye donc puisque tu as tellement confiance en toi !"
-    orange "Oh well, go on then, try it as you have so much confidence in yourself!"
+    orange "Oh well, go on then, try it since you have so much confidence in yourself!"
 
 # game/chap/chap6.rpy:43
 translate english chap6_6e99d735:
 
     # orange "Mais je te garantis qu'après ça, tu reviendras me supplier de t'apprendre."
-    orange "But I guarantee you that after that, you will beg me to teach you."
+    orange "But I can guarantee that, afterwards, you will beg me to teach you instead."
 
 # game/chap/chap6.rpy:44
 translate english chap6_8d2a1ae5:
@@ -256,7 +256,7 @@ translate english chap6_0abac118:
 translate english chap6_e2478f70:
 
     # blanche "Aaaaaaah !"
-    blanche "Haaaaaaa !"
+    blanche "Haaaaaaa!"
 
 # game/chap/chap6.rpy:49
 translate english chap6_6db7071f:
@@ -292,7 +292,7 @@ translate english chap6_7568e3e3:
 translate english chap6_ccc09b2a:
 
     # orange "Navré, je ne traite que les agrumes."
-    orange "Sorry, I only deal with agrumes."
+    orange "Sorry, I only deal with citrus fruits."
 
 # game/chap/chap6.rpy:56
 translate english chap6_9d9f6eb2:
@@ -328,13 +328,13 @@ translate english chap6_cbaef7f3:
 translate english chap6_6bc4121e:
 
     # orange "Doucement, doucement, si tu t'excites trop tu ne vas pas pouvoir ressentir les émotions des fruits et des fluides."
-    orange "Easy, easy, if you get too excited you will not be able to feels the fruits' and fluids' emotions."
+    orange "Easy, easy, if you get too excited you will not feel the fruits' and fluids' emotions."
 
 # game/chap/chap6.rpy:63
 translate english chap6_aa78a3fa:
 
     # orange "Tu n'écouteras que ta frustration."
-    orange "You will only feel your frustration."
+    orange "You will only feel your own frustration."
 
 # game/chap/chap6.rpy:64
 translate english chap6_88b26d38:
@@ -358,7 +358,7 @@ translate english chap6_7c78d8d7:
 translate english chap6_a75c9c82:
 
     # orange "Tout d'abord il faut couper les agrumes."
-    orange "For starters, you need to cut the agrumes."
+    orange "For starters, you need to cut the citrus fruits."
 
 # game/chap/chap6.rpy:69
 translate english chap6_0b40d30a:
@@ -430,7 +430,7 @@ translate english chap6_5e41ac38:
 translate english chap6_063dda80:
 
     # "Grosso et Maigrichon arrivent essouflés devant Orange."
-    "Biggy and Slimmy arrive breathless before Orange."
+    "Biggy and Slimmy arrive short of breath before Orange."
 
 # game/chap/chap6.rpy:92
 translate english chap6_a677ff8a:
@@ -454,7 +454,7 @@ translate english chap6_fd70f745:
 translate english chap6_da1beb31:
 
     # orange "J'ai un de ces jus d'agrumes dont vous me direz des nouvelles."
-    orange "I have an agrumes juice which you will tell me about."
+    orange "I have a citrus juice which you will tell me about."
 
 # game/chap/chap6.rpy:96
 translate english chap6_3756b010:
@@ -492,5 +492,5 @@ translate english strings:
 
     # game/chap/chap6.rpy:37
     old "Exiger qu'il démarre l'entraînement"
-    new "Demand that he start the training"
+    new "Demand that he starts the training"
 

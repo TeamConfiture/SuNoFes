@@ -22,13 +22,13 @@ translate english chap5_25390352:
 translate english chap5_ed9f3123:
 
     # piou "Quel vieux celui-là alors... Je vais encore devoir traire les vaches tout seul."
-    piou "What an olden this one... I'll have to milk the cows alone again."
+    piou "What an old cat this one... I'll have to milk the cows alone again."
 
 # game/chap/chap5.rpy:7
 translate english chap5_1608f31e:
 
     # piou "Bon... Commençons maintenant, je finirai peut-être ma journée plus tôt !"
-    piou "Well... Let's start now, maybe I'll finish early today!"
+    piou "Well... Let's get started now, and maybe I'll be able to rest early today!"
 
 # game/chap/chap5.rpy:8
 translate english chap5_06b4618c:
@@ -76,7 +76,7 @@ translate english chap5_155730d2:
 translate english chap5_9ff1dd05:
 
     # blanche "Un poussin qui parle et qui fait du fromage ?! Après les chats qui parlent, les poussins fromagers ?"
-    blanche "A talking chick that makes cheese?! After the talking cats, the cheesemongers chicks?"
+    blanche "A talking chick that makes cheese?! First talking cats, now a cheese making chick?"
 
 # game/chap/chap5.rpy:16
 translate english chap5_7a4e3a22:
@@ -106,7 +106,7 @@ translate english chap5_95f0905a:
 translate english chap5_ed303f99:
 
     # piou "Maintenant, il passe son temps à dormir. Je dois me débrouiller tout seul pour traire les vaches, fabriquer les fromages, chasser les souris et tenir la fromagerie."
-    piou "Now, he spends all his time sleeping. I have to get by myself to milk the cows, make cheese, scare off the rats and take care of the cheese factory."
+    piou "Now, he spends all his time sleeping. I have to milk the cows by myself, make cheese, scare off the rats and take care of the cheese factory."
 
 # game/chap/chap5.rpy:21
 translate english chap5_33276fb1:
@@ -220,7 +220,7 @@ translate english chap5_d482aac3:
 translate english chap5_c468ad03:
 
     # blanche "Mais, ce n'est pas grave car mon papa m'aime beaucoup !"
-    blanche "But no matters because Daddy loves me very much!"
+    blanche "But it's no big deal because Daddy loves me very much!"
 
 # game/chap/chap5.rpy:43
 translate english chap5_06fbc2c2:
@@ -232,7 +232,7 @@ translate english chap5_06fbc2c2:
 translate english chap5_ff08d967:
 
     # blanche "Même si parfois, il me dit qu'il rêverait de revoir Maman et qu'ils s'occupent de moi tous les deux comme une vraie famille."
-    blanche "Even if sometimes, he told me he dreamed to see Mommy and that they would both raise me together like a family."
+    blanche "Even if sometimes, he told me he would love to see Mommy again and that they would both raise me together like a family."
 
 # game/chap/chap5.rpy:45
 translate english chap5_29bab917:
@@ -292,7 +292,7 @@ translate english chap5_cbc3d15c:
 translate english chap5_5a51ec6b:
 
     # piou "C'est là que je conserve les fromages qui seront mis sur l'étalage cet après-midi."
-    piou "It's where I keep the cheese which will be put on sales this afternon."
+    piou "This is where I keep the cheese which will be put on sale this afternoon."
 
 # game/chap/chap5.rpy:55
 translate english chap5_e46b1b89:
@@ -388,7 +388,7 @@ translate english chap5_5bcab5a7:
 translate english chap5_030daf5b:
 
     # piou "Tu vas un peu vite en affaires, je ne te dois rien du tout. Tu es libre de partir quand tu veux, je ne lâcherai pas cette boule."
-    piou "You're going a little fast in business, I don't owe you anything. You're free to leave and go whenever you want, I'll not let this ball go."
+    piou "Hold your horses, I don't owe you anything. You're free to leave and go whenever you want, I will not let this ball go."
 
 # game/chap/chap5.rpy:79
 translate english chap5_92297768:
@@ -442,7 +442,7 @@ translate english chap5_b6631087:
 translate english chap5_6456a0f5:
 
     # piou "Je te l'ai déjà dit. Il vaut mieux attendre le réveil de Jaune."
-    piou "I already told you. You better wait Yellow's wake."
+    piou "I already told you. You'd better wait for Yellow to wake up."
 
 # game/chap/chap5.rpy:89
 translate english chap5_924e38da:
@@ -520,7 +520,7 @@ translate english chap5_47ebd9a0:
 translate english chap5_eaff58f1:
 
     # piou "Comment dire..."
-    piou "How to say..."
+    piou "How to say that..."
 
 # game/chap/chap5.rpy:103
 translate english chap5_7bc367c8:
@@ -532,7 +532,7 @@ translate english chap5_7bc367c8:
 translate english chap5_f9a7de44:
 
     # "Piou se met à pleurer."
-    "Chirp starts tearing up."
+    "Chirp starts to shed tears."
 
 # game/chap/chap5.rpy:106
 translate english chap5_eb5fc50b:
@@ -574,7 +574,7 @@ translate english chap5_6cf143ad:
 translate english chap5_350341be:
 
     # piou "Tiens, prends cette boule, fais honneur à ton père et reviens vite."
-    piou "Here, take this ball, honor you dad and come back quickly."
+    piou "Here, take this ball, honor your dad and come back quickly."
 
 # game/chap/chap5.rpy:113
 translate english chap5_4d1c0175:
@@ -616,7 +616,7 @@ translate english chap5_6df74938:
 translate english chap5_ad656f06:
 
     # grosso "Tu veux bien arrêter de chouiner et nous expliquer ce qui te prend de lui donner ta boule ?!"
-    grosso "Could you please stop whining and explain why the rainbow did you give them your ball?!"
+    grosso "Could you please stop whining and explain why in the rainbow did you give them your ball?!"
 
 # game/chap/chap5.rpy:120
 translate english chap5_6a2b5c4b:
@@ -628,7 +628,7 @@ translate english chap5_6a2b5c4b:
 translate english chap5_0b9e216f:
 
     # piou "Il… Il… Il veut faire plaisir à son père une dernière fois... Sniff... Sniff..."
-    piou "They... They... They want to please their dad one last time... Sob... Sob..."
+    piou "They... They... They want to make their dad happy one last time... Sob... Sob..."
 
 # game/chap/chap5.rpy:122
 translate english chap5_636a4f97:
@@ -706,11 +706,11 @@ translate english strings:
 
     # game/chap/chap5.rpy:26
     old "Lui lancer un regard méprisant"
-    new "Give him a disdainuous stare"
+    new "Stare at him with disdain"
 
     # game/chap/chap5.rpy:26
     old "Lui répondre simplement"
-    new "Answer him simply"
+    new "Simply answer him"
 
     # game/chap/chap5.rpy:75
     old "Lui rappeler qu'il doit donner sa boule"
@@ -718,7 +718,7 @@ translate english strings:
 
     # game/chap/chap5.rpy:75
     old "Lui redemander gentiment sa boule"
-    new "Ask him again his ball"
+    new "Nicely ask him again for his ball"
 
     # game/chap/chap5.rpy:75
     old "Broder pour attendre un moment plus propice"

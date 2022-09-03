@@ -202,7 +202,7 @@ translate english chap4_53ecc192:
 translate english chap4_cdc5d5d5:
 
     # emeraude "Non, non, non, non ! Je ne peux pas m'en passer ! Non, non, non, non !"
-    emeraude "No, no, no, no! I can't do without it! No, no, no, no!"
+    emeraude "No, no, no, no! I can't live without it! No, no, no, no!"
 
 # game/chap/chap4.rpy:65
 translate english chap4_35266203:
@@ -268,7 +268,7 @@ translate english chap4_a9cce52f:
 translate english chap4_8fdc833b:
 
     # "Cela a marché avec Violet, peut-être que ça marchera aussi avec Émeraude."
-    "It worked with Violet, maybe it would work with Emerald too."
+    "It worked with Violet, maybe it could work with Emerald too."
 
 # game/chap/chap4.rpy:87
 translate english chap4_1b891cba:
