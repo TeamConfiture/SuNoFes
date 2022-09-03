@@ -494,3 +494,155 @@ translate french strings:
     old "Exiger qu'il démarre l'entraînement"
     new "Exiger qu'il démarre l'entraînement"
 
+# TODO: Translation updated at 2022-09-03 19:41
+
+# game/chap/chap6.rpy:73
+translate french sprite_cutter_failed_8970d02c:
+
+    # orange "Non, pas comme ça ! Essaye encore !"
+    orange "Non, pas comme ça ! Essaye encore !"
+
+# game/chap/chap6.rpy:74
+translate french sprite_cutter_failed_85d94354:
+
+    # blanche "Mais, c'est long !"
+    blanche "Mais, c'est long !"
+
+# game/chap/chap6.rpy:75
+translate french sprite_cutter_failed_f145d35c:
+
+    # orange "Mais, non ! Je t'assure ! Tu vas y arriver !"
+    orange "Mais, non ! Je t'assure ! Tu vas y arriver !"
+
+# game/chap/chap6.rpy:79
+translate french chap6_2_d3d190d3:
+
+    # blanche "Oh ! Je m'attendais pas du tout à obtenir un son si parfait."
+    blanche "Oh ! Je m'attendais pas du tout à obtenir un son si parfait."
+
+# game/chap/chap6.rpy:80
+translate french chap6_2_de6011f7:
+
+    # orange "C'est la magie des agrumes, mon enfant. Maintenant, tu devrais tenter de prendre la boule."
+    orange "C'est la magie des agrumes, mon enfant. Maintenant, tu devrais tenter de prendre la boule."
+
+# game/chap/chap6.rpy:81
+translate french chap6_2_e46715f1:
+
+    # orange "Je suis persuadé que tu vas y arriver."
+    orange "Je suis persuadé que tu vas y arriver."
+
+# game/chap/chap6.rpy:82
+translate french chap6_2_e19d258a:
+
+    # blanche "Oh ! C'est incroyable, j'ai réussi à l'attraper !"
+    blanche "Oh ! C'est incroyable, j'ai réussi à l'attraper !"
+
+# game/chap/chap6.rpy:83
+translate french chap6_2_e42f8bfe:
+
+    # orange "Tu vois ! Je te l'avais dit !"
+    orange "Tu vois ! Je te l'avais dit !"
+
+# game/chap/chap6.rpy:84
+translate french chap6_2_7a7798e7:
+
+    # orange "Que vas-tu donc faire de cette boule maintenant qu'elle est entre tes mains ?"
+    orange "Que vas-tu donc faire de cette boule maintenant qu'elle est entre tes mains ?"
+
+# game/chap/chap6.rpy:85
+translate french chap6_2_81d0431d:
+
+    # blanche "Je vais repartir pour récupérer la dernière boule de couleur et retrouver mon papa !"
+    blanche "Je vais repartir pour récupérer la dernière boule de couleur et retrouver mon papa !"
+
+# game/chap/chap6.rpy:86
+translate french chap6_2_cbfd2a83:
+
+    # orange "Avant ça, tiens. Je te donne une brique de jus d'orange."
+    orange "Avant ça, tiens. Je te donne une brique de jus d'orange."
+
+# game/chap/chap6.rpy:87
+translate french chap6_2_4215f1f9:
+
+    # orange "Tu pourras la donner à ton père, je suis sûr que ça lui remontera le moral."
+    orange "Tu pourras la donner à ton père, je suis sûr que ça lui remontera le moral."
+
+# game/chap/chap6.rpy:88
+translate french chap6_2_e4a7a253:
+
+    # blanche "Merci ! Je n'oublierai pas ton aide !"
+    blanche "Merci ! Je n'oublierai pas ton aide !"
+
+# game/chap/chap6.rpy:89
+translate french chap6_2_554b8dc4:
+
+    # blanche "À bientôt !"
+    blanche "À bientôt !"
+
+# game/chap/chap6.rpy:90
+translate french chap6_2_5e6b397c:
+
+    # "Quelques minutes plus tard..."
+    "Quelques minutes plus tard..."
+
+# game/chap/chap6.rpy:91
+translate french chap6_2_5e41ac38:
+
+    # x "Hmpf, Hmpf..."
+    x "Hmpf, Hmpf..."
+
+# game/chap/chap6.rpy:92
+translate french chap6_2_063dda80:
+
+    # "Grosso et Maigrichon arrivent essouflés devant Orange."
+    "Grosso et Maigrichon arrivent essouflés devant Orange."
+
+# game/chap/chap6.rpy:93
+translate french chap6_2_a677ff8a:
+
+    # grosso "Hmpf, Hmpf... Arrête cet enf... Hmpf, Hmpf..."
+    grosso "Hmpf, Hmpf... Arrête cet enf... Hmpf, Hmpf..."
+
+# game/chap/chap6.rpy:94
+translate french chap6_2_dfb0191c:
+
+    # maigrichon "Oui ! Cet enfant ne doit pas s'échapper ! Hmpf, Hmpf..."
+    maigrichon "Oui ! Cet enfant ne doit pas s'échapper ! Hmpf, Hmpf..."
+
+# game/chap/chap6.rpy:95
+translate french chap6_2_fd70f745:
+
+    # orange "Un petit remontant messieurs ?"
+    orange "Un petit remontant messieurs ?"
+
+# game/chap/chap6.rpy:96
+translate french chap6_2_da1beb31:
+
+    # orange "J'ai un de ces jus d'agrumes dont vous me direz des nouvelles."
+    orange "J'ai un de ces jus d'agrumes dont vous me direz des nouvelles."
+
+# game/chap/chap6.rpy:97
+translate french chap6_2_3756b010:
+
+    # grosso "Pourquoi pas... J'ai la gorge sèche."
+    grosso "Pourquoi pas... J'ai la gorge sèche."
+
+# game/chap/chap6.rpy:98
+translate french chap6_2_b52575d7:
+
+    # maigrichon "Grosso !"
+    maigrichon "Grosso !"
+
+# game/chap/chap6.rpy:99
+translate french chap6_2_3a7738b1:
+
+    # grosso "Bon, bon, plus tard alors, allons-y !"
+    grosso "Bon, bon, plus tard alors, allons-y !"
+
+# game/chap/chap6.rpy:100
+translate french chap6_2_4e41fbe5:
+
+    # "Grosso et Maigrichon quittent Orange, le laissant seul devant son piano."
+    "Grosso et Maigrichon quittent Orange, le laissant seul devant son piano."
+

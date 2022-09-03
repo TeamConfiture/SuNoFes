@@ -732,3 +732,359 @@ translate french chap5_0b9e216f:
     # piou "Il… Il… Il veut faire plaisir à son père une dernière fois... Sniff... Sniff..."
     piou "Il… Il… Il veut faire plaisir à son père une dernière fois... Sniff... Sniff..."
 
+# TODO: Translation updated at 2022-09-03 19:41
+
+# game/chap/chap5.rpy:69
+translate french cheese_market_fail_d0ddc8d7:
+
+    # piou "Ca ne ressemble clairement pas à ceux que j'ai déjà en vitrine ! Recommence."
+    piou "Ca ne ressemble clairement pas à ceux que j'ai déjà en vitrine ! Recommence."
+
+# game/chap/chap5.rpy:73
+translate french chap5_2_e3a16681:
+
+    # piou "Génial, merci ! On va pouvoir manger un bon repas grâce à toi !"
+    piou "Génial, merci ! On va pouvoir manger un bon repas grâce à toi !"
+
+# game/chap/chap5.rpy:74
+translate french chap5_2_30e28ff5:
+
+    # blanche "Avec plaisir. À propos de la boule..."
+    blanche "Avec plaisir. À propos de la boule..."
+
+# game/chap/chap5.rpy:75
+translate french chap5_2_ce0afd58:
+
+    # piou "Bon, c'est pas tout ça mais il faut se remettre au boulot !"
+    piou "Bon, c'est pas tout ça mais il faut se remettre au boulot !"
+
+# game/chap/chap5.rpy:76
+translate french chap5_2_862ad5e5:
+
+    # piou "J'ai des vaches à traire, des veaux à nourrir, et quelques vieilles poules à m'occuper."
+    piou "J'ai des vaches à traire, des veaux à nourrir, et quelques vieilles poules à m'occuper."
+
+# game/chap/chap5.rpy:79
+translate french chap5_2_5bcab5a7:
+
+    # blanche "C'est quand que tu vas me donner ta boule ?"
+    blanche "C'est quand que tu vas me donner ta boule ?"
+
+# game/chap/chap5.rpy:80
+translate french chap5_2_030daf5b:
+
+    # piou "Tu vas un peu vite en affaires, je ne te dois rien du tout. Tu es libre de partir quand tu veux, je ne lâcherai pas cette boule."
+    piou "Tu vas un peu vite en affaires, je ne te dois rien du tout. Tu es libre de partir quand tu veux, je ne lâcherai pas cette boule."
+
+# game/chap/chap5.rpy:81
+translate french chap5_2_92297768:
+
+    # blanche "Mais, Piou…"
+    blanche "Mais, Piou…"
+
+# game/chap/chap5.rpy:82
+translate french chap5_2_ca5f2fd8:
+
+    # piou "Ce n'est pas la peine, ma décision est définitive."
+    piou "Ce n'est pas la peine, ma décision est définitive."
+
+# game/chap/chap5.rpy:83
+translate french chap5_2_4257a23e:
+
+    # blanche "Mais... Mon papa est très malade. Il ne va pas bien du tout..."
+    blanche "Mais... Mon papa est très malade. Il ne va pas bien du tout..."
+
+# game/chap/chap5.rpy:84
+translate french chap5_2_35a3c8e4:
+
+    # piou "..."
+    piou "..."
+
+# game/chap/chap5.rpy:85
+translate french chap5_2_980e6698:
+
+    # piou "Je comprends mieux..."
+    piou "Je comprends mieux..."
+
+# game/chap/chap5.rpy:86
+translate french chap5_2_81dd3c33:
+
+    # piou "Mon père est mort, je sais ce que ça signifie."
+    piou "Mon père est mort, je sais ce que ça signifie."
+
+# game/chap/chap5.rpy:88
+translate french chap5_2_6b52fcd3:
+
+    # blanche "Est-ce que je peux emprunter ta boule de cristal ?"
+    blanche "Est-ce que je peux emprunter ta boule de cristal ?"
+
+# game/chap/chap5.rpy:89
+translate french chap5_2_b6631087:
+
+    # piou "J'ai bien peur que ça soit impossible pour le moment."
+    piou "J'ai bien peur que ça soit impossible pour le moment."
+
+# game/chap/chap5.rpy:90
+translate french chap5_2_6456a0f5:
+
+    # piou "Je te l'ai déjà dit. Il vaut mieux attendre le réveil de Jaune."
+    piou "Je te l'ai déjà dit. Il vaut mieux attendre le réveil de Jaune."
+
+# game/chap/chap5.rpy:91
+translate french chap5_2_924e38da:
+
+    # piou "Je ne peux rien dire sans son accord, sinon il rentrerait dans une colère noire. J'espère que tu me comprends..."
+    piou "Je ne peux rien dire sans son accord, sinon il rentrerait dans une colère noire. J'espère que tu me comprends..."
+
+# game/chap/chap5.rpy:92
+translate french chap5_2_38aad055:
+
+    # blanche "On ne peut vraiment pas le réveiller maintenant ?"
+    blanche "On ne peut vraiment pas le réveiller maintenant ?"
+
+# game/chap/chap5.rpy:93
+translate french chap5_2_75a85096:
+
+    # piou "Non, c'est très risqué pour ta vie, il est capable de n'importe quoi quand on le dérange dans son sommeil."
+    piou "Non, c'est très risqué pour ta vie, il est capable de n'importe quoi quand on le dérange dans son sommeil."
+
+# game/chap/chap5.rpy:94
+translate french chap5_2_4257a23e_1:
+
+    # blanche "Mais... Mon papa est très malade. Il ne va pas bien du tout..."
+    blanche "Mais... Mon papa est très malade. Il ne va pas bien du tout..."
+
+# game/chap/chap5.rpy:95
+translate french chap5_2_716a07b7:
+
+    # blanche "Il ne pourrait pas faire une exception ?"
+    blanche "Il ne pourrait pas faire une exception ?"
+
+# game/chap/chap5.rpy:96
+translate french chap5_2_35a3c8e4_1:
+
+    # piou "..."
+    piou "..."
+
+# game/chap/chap5.rpy:97
+translate french chap5_2_bf7035c5:
+
+    # piou "Tout s'explique..."
+    piou "Tout s'explique..."
+
+# game/chap/chap5.rpy:98
+translate french chap5_2_81dd3c33_1:
+
+    # piou "Mon père est mort, je sais ce que ça signifie."
+    piou "Mon père est mort, je sais ce que ça signifie."
+
+# game/chap/chap5.rpy:100
+translate french chap5_2_892c4d0e:
+
+    # blanche "Tu pourrais me dire où tu as appris tout ça sur les fromages ?"
+    blanche "Tu pourrais me dire où tu as appris tout ça sur les fromages ?"
+
+# game/chap/chap5.rpy:101
+translate french chap5_2_b7bc554d:
+
+    # piou "J'ai appris ça sur le tas, avec l'aide de Jaune."
+    piou "J'ai appris ça sur le tas, avec l'aide de Jaune."
+
+# game/chap/chap5.rpy:102
+translate french chap5_2_8081b29f:
+
+    # piou "Mon père était trop vieux pour m'enseigner les rudiments de cet art."
+    piou "Mon père était trop vieux pour m'enseigner les rudiments de cet art."
+
+# game/chap/chap5.rpy:103
+translate french chap5_2_47ebd9a0:
+
+    # blanche "Comment il va maintenant ?"
+    blanche "Comment il va maintenant ?"
+
+# game/chap/chap5.rpy:104
+translate french chap5_2_eaff58f1:
+
+    # piou "Comment dire..."
+    piou "Comment dire..."
+
+# game/chap/chap5.rpy:105
+translate french chap5_2_7bc367c8:
+
+    # piou "Mon père est mort."
+    piou "Mon père est mort."
+
+# game/chap/chap5.rpy:107
+translate french chap5_2_f9a7de44:
+
+    # "Piou se met à pleurer."
+    "Piou se met à pleurer."
+
+# game/chap/chap5.rpy:108
+translate french chap5_2_eb5fc50b:
+
+    # piou "On ne va pas en faire tout un fromage mais... Je l'ai vu s'évaporer dans sa poussière jaune..."
+    piou "On ne va pas en faire tout un fromage mais... Je l'ai vu s'évaporer dans sa poussière jaune..."
+
+# game/chap/chap5.rpy:109
+translate french chap5_2_b858fc8f:
+
+    # piou "Je veux dire... Il s'est petit à petit transformé en poussière jaune avant de rejoindre les étoiles..."
+    piou "Je veux dire... Il s'est petit à petit transformé en poussière jaune avant de rejoindre les étoiles..."
+
+# game/chap/chap5.rpy:110
+translate french chap5_2_21345011:
+
+    # piou "Je sais qu'il en sera de même pour tout le monde et même pour Jaune d'ici peu de temps."
+    piou "Je sais qu'il en sera de même pour tout le monde et même pour Jaune d'ici peu de temps."
+
+# game/chap/chap5.rpy:111
+translate french chap5_2_5cc95096:
+
+    # piou "Mais que puis-je y faire ?"
+    piou "Mais que puis-je y faire ?"
+
+# game/chap/chap5.rpy:112
+translate french chap5_2_79d26530:
+
+    # piou "J'ai déjà fait tout mon possible pour rendre leur fin de vie plus agréable !"
+    piou "J'ai déjà fait tout mon possible pour rendre leur fin de vie plus agréable !"
+
+# game/chap/chap5.rpy:113
+translate french chap5_2_6cf143ad:
+
+    # piou "Il faudrait que je me saigne aux quatre veines pour les autres ?!"
+    piou "Il faudrait que je me saigne aux quatre veines pour les autres ?!"
+
+# game/chap/chap5.rpy:114
+translate french chap5_2_350341be:
+
+    # piou "Tiens, prends cette boule, fais honneur à ton père et reviens vite."
+    piou "Tiens, prends cette boule, fais honneur à ton père et reviens vite."
+
+# game/chap/chap5.rpy:115
+translate french chap5_2_4d1c0175:
+
+    # blanche "Merci Piou !"
+    blanche "Merci Piou !"
+
+# game/chap/chap5.rpy:116
+translate french chap5_2_3b76b5ab:
+
+    # piou "Maintenant, laisse-moi tranquille ! J'ai besoin de prendre l'air."
+    piou "Maintenant, laisse-moi tranquille ! J'ai besoin de prendre l'air."
+
+# game/chap/chap5.rpy:117
+translate french chap5_2_77eaf77c:
+
+    # "Je m'éloigne rapidement de la ferme pour laisser Piou en paix."
+    "Je m'éloigne rapidement de la ferme pour laisser Piou en paix."
+
+# game/chap/chap5.rpy:118
+translate french chap5_2_5e6b397c:
+
+    # "Quelques minutes plus tard..."
+    "Quelques minutes plus tard..."
+
+# game/chap/chap5.rpy:119
+translate french chap5_2_c8aa5633:
+
+    # "Grosso et Maigrichon qui n'ont pas perdu de temps arrivent avec des chapeaux de paille."
+    "Grosso et Maigrichon qui n'ont pas perdu de temps arrivent avec des chapeaux de paille."
+
+# game/chap/chap5.rpy:120
+translate french chap5_2_6df74938:
+
+    # grosso "Mais quel pleurnichard celui-là !" with vpunch
+    grosso "Mais quel pleurnichard celui-là !" with vpunch
+
+# game/chap/chap5.rpy:121
+translate french chap5_2_ad656f06:
+
+    # grosso "Tu veux bien arrêter de chouiner et nous expliquer ce qui te prend de lui donner ta boule ?!"
+    grosso "Tu veux bien arrêter de chouiner et nous expliquer ce qui te prend de lui donner ta boule ?!"
+
+# game/chap/chap5.rpy:122
+translate french chap5_2_6a2b5c4b:
+
+    # maigrichon "Et justifie ça bien, sinon tu auras affaire à Madame Arc-en-Ciel !"
+    maigrichon "Et justifie ça bien, sinon tu auras affaire à Madame Arc-en-Ciel !"
+
+# game/chap/chap5.rpy:123
+translate french chap5_2_0b9e216f:
+
+    # piou "Il… Il… Il veut faire plaisir à son père une dernière fois... Sniff... Sniff..."
+    piou "Il… Il… Il veut faire plaisir à son père une dernière fois... Sniff... Sniff..."
+
+# game/chap/chap5.rpy:124
+translate french chap5_2_636a4f97:
+
+    # grosso "Bon, on tirera rien de lui."
+    grosso "Bon, on tirera rien de lui."
+
+# game/chap/chap5.rpy:125
+translate french chap5_2_25048ada:
+
+    # grosso "Il est trop sous le choc, va réveiller le chat !"
+    grosso "Il est trop sous le choc, va réveiller le chat !"
+
+# game/chap/chap5.rpy:126
+translate french chap5_2_2f085819:
+
+    # maigrichon "Eh oh toi ! Réveille-toi ! Grosso t'a parlé !"
+    maigrichon "Eh oh toi ! Réveille-toi ! Grosso t'a parlé !"
+
+# game/chap/chap5.rpy:127
+translate french chap5_2_6f865754:
+
+    # maigrichon "Tu sais où est parti l'enfant ?!"
+    maigrichon "Tu sais où est parti l'enfant ?!"
+
+# game/chap/chap5.rpy:128
+translate french chap5_2_f392fb14:
+
+    # jaune "..."
+    jaune "..."
+
+# game/chap/chap5.rpy:129
+translate french chap5_2_9948cf71:
+
+    # maigrichon "Eh oh, je te parle !"
+    maigrichon "Eh oh, je te parle !"
+
+# game/chap/chap5.rpy:130
+translate french chap5_2_f392fb14_1:
+
+    # jaune "..."
+    jaune "..."
+
+# game/chap/chap5.rpy:131
+translate french chap5_2_a596fa4e:
+
+    # jaune "ROAR !"
+    jaune "ROAR !"
+
+# game/chap/chap5.rpy:132
+translate french chap5_2_aab12c28:
+
+    # grosso "Gloups... Pardon ! Pardon ! Pardon ! Pardon cher Gardien de Couleur !"
+    grosso "Gloups... Pardon ! Pardon ! Pardon ! Pardon cher Gardien de Couleur !"
+
+# game/chap/chap5.rpy:133
+translate french chap5_2_d0f93133:
+
+    # jaune "Zzzzz"
+    jaune "Zzzzz"
+
+# game/chap/chap5.rpy:134
+translate french chap5_2_d838483a:
+
+    # grosso "Je crois qu'on ferait mieux d'y aller... Bonne journée à vous, fromagers !"
+    grosso "Je crois qu'on ferait mieux d'y aller... Bonne journée à vous, fromagers !"
+
+# game/chap/chap5.rpy:135
+translate french chap5_2_399fa703:
+
+    # "Grosso et Maigrichon s'éloignent de la ferme et partent en direction du royaume Agrume..."
+    "Grosso et Maigrichon s'éloignent de la ferme et partent en direction du royaume Agrume..."
+

@@ -446,3 +446,371 @@ translate english strings:
     old "Réfléchir avec lui pour combattre Jaune et demander sa boule"
     new "Think with him about a way to fight Yellow and ask for his ball"
 
+# TODO: Translation updated at 2022-09-03 19:40
+
+# game/chap/chap7.rpy:27
+translate english simon_game_defeat_d3b17c61:
+
+    # red "Hmpf… Hmpf… Pas mal, pas mal pour un intrus. Mais, Red a gagné ! Il en faut plus que ça pour me battre"
+    red "Hmpf… Hmpf… Pas mal, pas mal pour un intrus. Mais, Red a gagné ! Il en faut plus que ça pour me battre"
+
+# game/chap/chap7.rpy:31
+translate english chap7_2_87ad9eea:
+
+    # red "Hmpf… Hmpf… Etranger, je reconnais ma défaite. D'où vient ta puissance ? Aucun être n'a battu Red en dehors de Jaune. Qui est ton maître ?"
+    red "Hmpf… Hmpf… Etranger, je reconnais ma défaite. D'où vient ta puissance ? Aucun être n'a battu Red en dehors de Jaune. Qui est ton maître ?"
+
+# game/chap/chap7.rpy:32
+translate english chap7_2_abc1e85a:
+
+    # blanche "Je n'ai rien fait ! Rien appris ! Je suis juste rapide."
+    blanche "Je n'ai rien fait ! Rien appris ! Je suis juste rapide."
+
+# game/chap/chap7.rpy:33
+translate english chap7_2_d56bb7ca:
+
+    # red "Sacre bleu ! Ainsi, tu es comme Jaune ! Quel est ton secret ? Apprends-moi ! Il faut que je sois le plus fort pour défendre ma boule de cristal !"
+    red "Sacre bleu ! Ainsi, tu es comme Jaune ! Quel est ton secret ? Apprends-moi ! Il faut que je sois le plus fort pour défendre ma boule de cristal !"
+
+# game/chap/chap7.rpy:34
+translate english chap7_2_13552d6b:
+
+    # blanche "Jaune ? Le chat avec son poussin ? Il t'a battu ? Mais, il ne fait que dormir !"
+    blanche "Jaune ? Le chat avec son poussin ? Il t'a battu ? Mais, il ne fait que dormir !"
+
+# game/chap/chap7.rpy:35
+translate english chap7_2_7b481984:
+
+    # red "La fourrure ne fait pas le chat. Les apparences sont parfois trompeuses. C'est un Gardien de Couleurs très puissant !"
+    red "La fourrure ne fait pas le chat. Les apparences sont parfois trompeuses. C'est un Gardien de Couleurs très puissant !"
+
+# game/chap/chap7.rpy:36
+translate english chap7_2_fca1feac:
+
+    # red "Alors, vas-tu m'apprendre tes techniques ?!"
+    red "Alors, vas-tu m'apprendre tes techniques ?!"
+
+# game/chap/chap7.rpy:37
+translate english chap7_2_9db7d7a9:
+
+    # blanche "Je n'ai aucune technique ! Je suis juste là pour ta boule de cristal…"
+    blanche "Je n'ai aucune technique ! Je suis juste là pour ta boule de cristal…"
+
+# game/chap/chap7.rpy:38
+translate english chap7_2_d28563dd:
+
+    # red "Mensonge ! Cela ne peut pas être un talent inné ! Je refuse d'y croire !"
+    red "Mensonge ! Cela ne peut pas être un talent inné ! Je refuse d'y croire !"
+
+# game/chap/chap7.rpy:39
+translate english chap7_2_b888a649:
+
+    # blanche "Il ne veut rien savoir… Que faire… Je veux juste récupérer sa boule…"
+    blanche "Il ne veut rien savoir… Que faire… Je veux juste récupérer sa boule…"
+
+# game/chap/chap7.rpy:42
+translate english chap7_2_af4285b6:
+
+    # blanche "Je sais ! Red ferme les yeux !"
+    blanche "Je sais ! Red ferme les yeux !"
+
+# game/chap/chap7.rpy:43
+translate english chap7_2_c0553376:
+
+    # red "Oh ! Tu vas m'apprendre une technique ? D'accord, je ferme les yeux."
+    red "Oh ! Tu vas m'apprendre une technique ? D'accord, je ferme les yeux."
+
+# game/chap/chap7.rpy:44
+translate english chap7_2_d8e12c75:
+
+    # "BOUM"
+    "BOUM"
+
+# game/chap/chap7.rpy:45
+translate english chap7_2_e9ea8008:
+
+    # "Le chat a perdu connaissance."
+    "Le chat a perdu connaissance."
+
+# game/chap/chap7.rpy:46
+translate english chap7_2_f6619920:
+
+    # blanche "Bon, c'était plus facile que je le pensais."
+    blanche "Bon, c'était plus facile que je le pensais."
+
+# game/chap/chap7.rpy:47
+translate english chap7_2_7a05e509:
+
+    # blanche "J'espère que mon papa sera content. Être dans le noir, c'est triste. Lui montrer les couleurs de l'arc-en-ciel va sûrement lui remonter le moral."
+    blanche "J'espère que mon papa sera content. Être dans le noir, c'est triste. Lui montrer les couleurs de l'arc-en-ciel va sûrement lui remonter le moral."
+
+# game/chap/chap7.rpy:48
+translate english chap7_2_ca794cd1:
+
+    # blanche "Il a toujours les yeux bandés… Tout ça pour s'habituer à voir la couleur noire le plus tôt possible, c'est triste."
+    blanche "Il a toujours les yeux bandés… Tout ça pour s'habituer à voir la couleur noire le plus tôt possible, c'est triste."
+
+# game/chap/chap7.rpy:49
+translate english chap7_2_3ec512b6:
+
+    # blanche "De ce qu'il m'a dit, c'est parce que ses yeux le refont penser à ma maman, mais le fait d'être \"Noir\" fait qu'il finira par ne voir que du noir… C'est triste."
+    blanche "De ce qu'il m'a dit, c'est parce que ses yeux le refont penser à ma maman, mais le fait d'être \"Noir\" fait qu'il finira par ne voir que du noir… C'est triste."
+
+# game/chap/chap7.rpy:50
+translate english chap7_2_1e45870f:
+
+    # blanche "Il doit voir ces jolies couleurs une dernière fois."
+    blanche "Il doit voir ces jolies couleurs une dernière fois."
+
+# game/chap/chap7.rpy:53
+translate english chap7_2_ade583a9:
+
+    # blanche "J'ai une idée ! Si je te donne une technique, tu me prêtes ta boule pour une nuit ?"
+    blanche "J'ai une idée ! Si je te donne une technique, tu me prêtes ta boule pour une nuit ?"
+
+# game/chap/chap7.rpy:54
+translate english chap7_2_08e29f1c:
+
+    # red "Ah ! Quel choix cornélien ! Je ne peux rompre ma promesse avec Maîtresse Arc-en-Ciel…"
+    red "Ah ! Quel choix cornélien ! Je ne peux rompre ma promesse avec Maîtresse Arc-en-Ciel…"
+
+# game/chap/chap7.rpy:55
+translate english chap7_2_7975484c:
+
+    # red "Mais, si c'est pour une nuit pour ensuite être meilleur et lui faire honneur. J'accepte. Dis-moi tout, étranger."
+    red "Mais, si c'est pour une nuit pour ensuite être meilleur et lui faire honneur. J'accepte. Dis-moi tout, étranger."
+
+# game/chap/chap7.rpy:56
+translate english chap7_2_fa144a32:
+
+    # "Je lui explique une technique inventée de toutes pièces."
+    "Je lui explique une technique inventée de toutes pièces."
+
+# game/chap/chap7.rpy:57
+translate english chap7_2_f034381d:
+
+    # "Quelques minutes plus tard."
+    "Quelques minutes plus tard."
+
+# game/chap/chap7.rpy:58
+translate english chap7_2_7213c32f:
+
+    # blanche "Voilà ! Tu sais tout maintenant !"
+    blanche "Voilà ! Tu sais tout maintenant !"
+
+# game/chap/chap7.rpy:59
+translate english chap7_2_d640d792:
+
+    # red "Sacrilège, qui aurait cru que boire du lait te faisait grandir et devenir plus fort."
+    red "Sacrilège, qui aurait cru que boire du lait te faisait grandir et devenir plus fort."
+
+# game/chap/chap7.rpy:60
+translate english chap7_2_8161e88c:
+
+    # red "Merci pour cette technique. Voilà ma boule."
+    red "Merci pour cette technique. Voilà ma boule."
+
+# game/chap/chap7.rpy:61
+translate english chap7_2_05717ae6:
+
+    # blanche "Merci ! Merci Red ! J'en prendrai soin ! Ne t'en fais pas je te la rendrai en temps et en heure !"
+    blanche "Merci ! Merci Red ! J'en prendrai soin ! Ne t'en fais pas je te la rendrai en temps et en heure !"
+
+# game/chap/chap7.rpy:62
+translate english chap7_2_f5370875:
+
+    # red "Très bien, camarade."
+    red "Très bien, camarade."
+
+# game/chap/chap7.rpy:63
+translate english chap7_2_2c5a27d0:
+
+    # red "Cela dit, pourquoi en as-tu besoin ?"
+    red "Cela dit, pourquoi en as-tu besoin ?"
+
+# game/chap/chap7.rpy:64
+translate english chap7_2_cfa44a2a:
+
+    # blanche "C'est pour mon papa ! Il ne va pas bien du tout… Il est tout le temps dans le noir et être dans le noir, c'est triste."
+    blanche "C'est pour mon papa ! Il ne va pas bien du tout… Il est tout le temps dans le noir et être dans le noir, c'est triste."
+
+# game/chap/chap7.rpy:65
+translate english chap7_2_38b59a26:
+
+    # blanche "De ce qu'il m'a dit, c'est parce que ses yeux lui refont penser à ma maman, mais le fait d'être \"Noir\" fait qu'il finira par ne voir que du noir. Il veut s'habituer à voir la couleur noire le plus tôt possible…"
+    blanche "De ce qu'il m'a dit, c'est parce que ses yeux lui refont penser à ma maman, mais le fait d'être \"Noir\" fait qu'il finira par ne voir que du noir. Il veut s'habituer à voir la couleur noire le plus tôt possible…"
+
+# game/chap/chap7.rpy:66
+translate english chap7_2_b9842d57:
+
+    # blanche "Voir mon papa dans cet état me rend triste. C'est pour ça que je veux lui montrer les couleurs de l'arc-en-ciel. Juste une dernière fois…"
+    blanche "Voir mon papa dans cet état me rend triste. C'est pour ça que je veux lui montrer les couleurs de l'arc-en-ciel. Juste une dernière fois…"
+
+# game/chap/chap7.rpy:67
+translate english chap7_2_1d4547f8:
+
+    # red "..."
+    red "..."
+
+# game/chap/chap7.rpy:68
+translate english chap7_2_cabf0bbc:
+
+    # "Red me tapote la tête."
+    "Red me tapote la tête."
+
+# game/chap/chap7.rpy:69
+translate english chap7_2_4f3ed553:
+
+    # red "Vaillant camarade, bon courage pour ta quête."
+    red "Vaillant camarade, bon courage pour ta quête."
+
+# game/chap/chap7.rpy:70
+translate english chap7_2_abe0fec9:
+
+    # blanche "Haha ! Merci Red !"
+    blanche "Haha ! Merci Red !"
+
+# game/chap/chap7.rpy:73
+translate english chap7_2_cda2f9cd:
+
+    # blanche "Ah ! Je sais ! Tu n'as qu'à te bander les yeux comme mon papa ! Il arrive à voir partout sans ouvrir les yeux !"
+    blanche "Ah ! Je sais ! Tu n'as qu'à te bander les yeux comme mon papa ! Il arrive à voir partout sans ouvrir les yeux !"
+
+# game/chap/chap7.rpy:74
+translate english chap7_2_413a27e9:
+
+    # red "Est-ce une de tes techniques secrètes ?! Mais, je ne verrai rien, moi !"
+    red "Est-ce une de tes techniques secrètes ?! Mais, je ne verrai rien, moi !"
+
+# game/chap/chap7.rpy:75
+translate english chap7_2_76e2c92f:
+
+    # blanche "Jaune dort tout le temps. Il doit aussi avoir tout le temps les yeux fermés pour te battre, non ?"
+    blanche "Jaune dort tout le temps. Il doit aussi avoir tout le temps les yeux fermés pour te battre, non ?"
+
+# game/chap/chap7.rpy:76
+translate english chap7_2_91d345c6:
+
+    # red "Maintenant que tu le dis… C'est décidé ! Prochain entraînement, on fait tout ça les yeux bandés !"
+    red "Maintenant que tu le dis… C'est décidé ! Prochain entraînement, on fait tout ça les yeux bandés !"
+
+# game/chap/chap7.rpy:77
+translate english chap7_2_6a5f1594:
+
+    # red "Cela dit… Pourquoi ton papa a toujours les yeux bandés ? Il a aussi un ennemi puissant à combattre ?"
+    red "Cela dit… Pourquoi ton papa a toujours les yeux bandés ? Il a aussi un ennemi puissant à combattre ?"
+
+# game/chap/chap7.rpy:78
+translate english chap7_2_b33031e8:
+
+    # blanche "Non du tout ! De ce qu'il m'a dit, c'est parce que ses yeux lui refont penser à ma maman, mais le fait d'être \"Noir\" fait qu'il finira par ne voir que du noir. Il veut s'habituer à voir la couleur noire le plus tôt possible…"
+    blanche "Non du tout ! De ce qu'il m'a dit, c'est parce que ses yeux lui refont penser à ma maman, mais le fait d'être \"Noir\" fait qu'il finira par ne voir que du noir. Il veut s'habituer à voir la couleur noire le plus tôt possible…"
+
+# game/chap/chap7.rpy:79
+translate english chap7_2_0217aa70:
+
+    # blanche "Mais, là, il ne va pas bien du tout, et être dans le noir, c'est triste. C'est pour ça que je veux lui montrer les couleurs de l'arc-en-ciel. Juste une dernière fois…"
+    blanche "Mais, là, il ne va pas bien du tout, et être dans le noir, c'est triste. C'est pour ça que je veux lui montrer les couleurs de l'arc-en-ciel. Juste une dernière fois…"
+
+# game/chap/chap7.rpy:80
+translate english chap7_2_81d89fde:
+
+    # blanche "C'est pour ça que j'aurai besoin de ta boule de cristal. C'est important."
+    blanche "C'est pour ça que j'aurai besoin de ta boule de cristal. C'est important."
+
+# game/chap/chap7.rpy:81
+translate english chap7_2_1d4547f8_1:
+
+    # red "..."
+    red "..."
+
+# game/chap/chap7.rpy:82
+translate english chap7_2_0b30a507:
+
+    # red "Prends la et rends-la moi après avoir réaliser ton souhait."
+    red "Prends la et rends-la moi après avoir réaliser ton souhait."
+
+# game/chap/chap7.rpy:83
+translate english chap7_2_7f5ded8c:
+
+    # blanche "C'est vrai ?! Je peux ?!"
+    blanche "C'est vrai ?! Je peux ?!"
+
+# game/chap/chap7.rpy:84
+translate english chap7_2_50c64d9f:
+
+    # red "Tu m'as aidé. Je te rends la pareil, camarade."
+    red "Tu m'as aidé. Je te rends la pareil, camarade."
+
+# game/chap/chap7.rpy:85
+translate english chap7_2_42da407b:
+
+    # blanche "Merci ! Merci Red ! J'en prendrai soin !"
+    blanche "Merci ! Merci Red ! J'en prendrai soin !"
+
+# game/chap/chap7.rpy:87
+translate english chap7_2_3acc916f:
+
+    # blanche "Bon... Direction le Quartier des Monochromes ! Papa m'attend !"
+    blanche "Bon... Direction le Quartier des Monochromes ! Papa m'attend !"
+
+# game/chap/chap7.rpy:90
+translate english chap7_2_96f2d969:
+
+    # maigrichon "Dans cette direction ! J'ai vu l'enfant partir par là !"
+    maigrichon "Dans cette direction ! J'ai vu l'enfant partir par là !"
+
+# game/chap/chap7.rpy:91
+translate english chap7_2_6b4c136d:
+
+    # x "Décidément, il faut tout régler par soi-même."
+    x "Décidément, il faut tout régler par soi-même."
+
+# game/chap/chap7.rpy:92
+translate english chap7_2_81b520b7:
+
+    # grosso "Ma… Madame Arc-en-Ciel !"
+    grosso "Ma… Madame Arc-en-Ciel !"
+
+# game/chap/chap7.rpy:95
+translate english chap7_2_96f2d969_1:
+
+    # maigrichon "Dans cette direction ! J'ai vu l'enfant partir par là !"
+    maigrichon "Dans cette direction ! J'ai vu l'enfant partir par là !"
+
+# game/chap/chap7.rpy:96
+translate english chap7_2_0ed0c56b:
+
+    # grosso "Non, je l'ai vu partir par ici !"
+    grosso "Non, je l'ai vu partir par ici !"
+
+# game/chap/chap7.rpy:97
+translate english chap7_2_dcd43c77:
+
+    # grosso_maigrichon "..."
+    grosso_maigrichon "..."
+
+# game/chap/chap7.rpy:98
+translate english chap7_2_5234b4c4:
+
+    # grosso_maigrichon "Oh nooon… On l'a encore perdu de vue…"
+    grosso_maigrichon "Oh nooon… On l'a encore perdu de vue…"
+
+# game/chap/chap7.rpy:101
+translate english chap7_2_b7aeb73a:
+
+    # maigrichon "Dans cette direction ! J'ai vu l'enfant partir vers le Quartier des Monochromes !"
+    maigrichon "Dans cette direction ! J'ai vu l'enfant partir vers le Quartier des Monochromes !"
+
+# game/chap/chap7.rpy:102
+translate english chap7_2_410c53fe:
+
+    # grosso "À ses trousses !"
+    grosso "À ses trousses !"
+
+# game/chap/chap7.rpy:103
+translate english chap7_2_b2f7d320:
+
+    # maigrichon "Tu ne nous échapperas pas cette fois !"
+    maigrichon "Tu ne nous échapperas pas cette fois !"
+
