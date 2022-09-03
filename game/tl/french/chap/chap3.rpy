@@ -542,3 +542,11 @@ translate french strings:
     old "Lui répondre poliment"
     new "Lui répondre poliment"
 
+# TODO: Translation updated at 2022-09-03 23:38
+
+# game/chap/chap3.rpy:179
+translate french chap3_2_82ab1efc:
+
+    # "Grosso et Maigrichon partent en direction des hautes herbes."
+    "Grosso et Maigrichon partent en direction des hautes herbes."
+

@@ -814,3 +814,95 @@ translate french chap7_2_b2f7d320:
     # maigrichon "Tu ne nous échapperas pas cette fois !"
     maigrichon "Tu ne nous échapperas pas cette fois !"
 
+# TODO: Translation updated at 2022-09-03 23:38
+
+# game/chap/chap7.rpy:19
+translate french chap7_30aa429f:
+
+    # x "Woosh ! Comme un chat ! Sois plus violent que le cours du torrent !" with vpunch
+    x "Woosh ! Comme un chat ! Sois plus violent que le cours du torrent !" with vpunch
+
+# game/chap/chap7.rpy:20
+translate french chap7_50662b9a:
+
+    # x "Woosh ! Comme un chat ! Sois plus puissant que les ouragans !" with vpunch
+    x "Woosh ! Comme un chat ! Sois plus puissant que les ouragans !" with vpunch
+
+# game/chap/chap7.rpy:21
+translate french chap7_95eed5a0:
+
+    # x "Woosh ! Comme un chat ! Sois plus ardent que le feu des volcans !" with vpunch
+    x "Woosh ! Comme un chat ! Sois plus ardent que le feu des volcans !" with vpunch
+
+# game/chap/chap7.rpy:22
+translate french chap7_f20271dd:
+
+    # x "MIAOU ! Par le pouvoir du prisme Rouge, transforme-moi !" with vpunch
+    x "MIAOU ! Par le pouvoir du prisme Rouge, transforme-moi !" with vpunch
+
+# game/chap/chap7.rpy:28
+translate french chap7_40f8e882:
+
+    # x "Qui va là ?! Qui ose perturber l'entraînement de Red ?!" with vpunch
+    x "Qui va là ?! Qui ose perturber l'entraînement de Red ?!" with vpunch
+
+# game/chap/chap7.rpy:31
+translate french chap7_48820959:
+
+    # blanche " Oh ! Un chat ?! Il se rue vers moi ! Aaaah !" with vpunch
+    blanche " Oh ! Un chat ?! Il se rue vers moi ! Aaaah !" with vpunch
+
+# game/chap/chap7.rpy:35
+translate french chap7_a98534d7:
+
+    # blanche "Aïe ! Aïe ! Mais euh ! Je n'ai rien fait ! Pourquoi tu m'attaques ?" with vpunch
+    blanche "Aïe ! Aïe ! Mais euh ! Je n'ai rien fait ! Pourquoi tu m'attaques ?" with vpunch
+
+# game/chap/chap7.rpy:46
+translate french chap7_bcdadb16:
+
+    # blanche "Non ! Non ! Calme-toi ! Je viens en paix ! Je veux juste t'emprunter pour une nuit ta boule de cristal. C'est pour mon papa !" with vpunch
+    blanche "Non ! Non ! Calme-toi ! Je viens en paix ! Je veux juste t'emprunter pour une nuit ta boule de cristal. C'est pour mon papa !" with vpunch
+
+# game/chap/chap7.rpy:58
+translate french simon_game_defeat_132b86a7:
+
+    # red "Hmpf… Hmpf… Pas mal, pas mal pour un intrus. Mais, Red a gagné ! Il en faut plus que ça pour me battre."
+    red "Hmpf… Hmpf… Pas mal, pas mal pour un intrus. Mais, Red a gagné ! Il en faut plus que ça pour me battre."
+
+# game/chap/chap7.rpy:145
+translate french chap7_2_3f1904e1:
+
+    # blanche "Ah ! Je sais ! Tu n'as qu'à te bander les yeux comme mon papa ! Il arrive à voir partout sans ouvrir les yeux !" with vpunch
+    blanche "Ah ! Je sais ! Tu n'as qu'à te bander les yeux comme mon papa ! Il arrive à voir partout sans ouvrir les yeux !" with vpunch
+
+# game/chap/chap7.rpy:162
+translate french chap7_2_97f57ea2:
+
+    # blanche "C'est vrai ?! Je peux ?!" with vpunch
+    blanche "C'est vrai ?! Je peux ?!" with vpunch
+
+# game/chap/chap7.rpy:178
+translate french chap7_2_20f9f75f:
+
+    # maigrichon "Dans cette direction ! J'ai vu l'enfant partir par là !" with vpunch
+    maigrichon "Dans cette direction ! J'ai vu l'enfant partir par là !" with vpunch
+
+# game/chap/chap7.rpy:184
+translate french chap7_2_1f4fb57d:
+
+    # grosso_maigrichon "Ma… Madame Arc-en-Ciel !" with vpunch
+    grosso_maigrichon "Ma… Madame Arc-en-Ciel !" with vpunch
+
+# game/chap/chap7.rpy:190
+translate french chap7_2_20f9f75f_1:
+
+    # maigrichon "Dans cette direction ! J'ai vu l'enfant partir par là !" with vpunch
+    maigrichon "Dans cette direction ! J'ai vu l'enfant partir par là !" with vpunch
+
+# game/chap/chap7.rpy:199
+translate french chap7_2_d1f6a9f3:
+
+    # maigrichon "Dans cette direction ! J'ai vu l'enfant partir vers le Quartier des Monochromes !" with vpunch
+    maigrichon "Dans cette direction ! J'ai vu l'enfant partir vers le Quartier des Monochromes !" with vpunch
+

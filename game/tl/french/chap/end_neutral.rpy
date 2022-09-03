@@ -288,3 +288,35 @@ translate french end_neutral_53604991:
     # "Par chance, après avoir expliqué ma situation, Madame Arc-en-Ciel me pardonna pour tout ce que j'avais fait pour mon père..."
     "Par chance, après avoir expliqué ma situation, Madame Arc-en-Ciel me pardonna pour tout ce que j'avais fait pour mon père..."
 
+# TODO: Translation updated at 2022-09-03 23:38
+
+# game/chap/end_neutral.rpy:6
+translate french end_neutral_d467efef:
+
+    # noir "Urgh… Aaahh !!!" with vpunch
+    noir "Urgh… Aaahh !!!" with vpunch
+
+# game/chap/end_neutral.rpy:51
+translate french end_neutral_9b60448d:
+
+    # "Des particules lumineuses noires apparaissent autour de Noir."
+    "Des particules lumineuses noires apparaissent autour de Noir."
+
+# game/chap/end_neutral.rpy:55
+translate french end_neutral_6aff9db3:
+
+    # noir "…"
+    noir "…"
+
+# game/chap/end_neutral.rpy:107
+translate french end_neutral_0c052b1f:
+
+    # "FIN"
+    "FIN"
+
+translate french strings:
+
+    # game/chap/end_neutral.rpy:2
+    old "Fin neutre"
+    new "Fin neutre"
+
