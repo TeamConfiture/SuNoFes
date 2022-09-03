@@ -1,10 +1,10 @@
 ﻿# TODO: Translation updated at 2022-09-01 22:37
 
-# game/chap/end_neutral.rpy:2
-translate english end_neutral_2e7cecd0:
+# game/chap/end_neutral.rpy:6
+translate english end_neutral_d467efef:
 
-    # noir "Urgh… Aaahh !!!"
-    noir "Urgh… Aaahh!!!"
+    # noir "Urgh… Aaahh !!!" with vpunch
+    noir "Urgh… Aaahh !!!" with vpunch
 
 # game/chap/end_neutral.rpy:3
 translate english end_neutral_b872bdfa:
@@ -126,8 +126,9 @@ translate english end_neutral_c81cf004:
     # noir "Je vais mieux merci…"
     noir "I feel better, thank you..."
 
-# game/chap/end_neutral.rpy:24
-translate english end_neutral_5a6c6927:
+
+# game/chap/end_neutral.rpy:51
+translate english end_neutral_9b60448d:
 
     # "Des particules lumineuses noires apparaissent autour de Noir."
     "Black particles appear around Noir."
@@ -288,20 +289,6 @@ translate english end_neutral_53604991:
     # "Par chance, après avoir expliqué ma situation, Madame Arc-en-Ciel me pardonna pour tout ce que j'avais fait pour mon père..."
     "Fortunately, after explaining my situation, Lady Rainbow forgave me for all I had done for my dad..."
 
-# TODO: Translation updated at 2022-09-03 21:49
-
-# game/chap/end_neutral.rpy:6
-translate english end_neutral_d467efef:
-
-    # noir "Urgh… Aaahh !!!" with vpunch
-    noir "Urgh… Aaahh !!!" with vpunch
-
-# game/chap/end_neutral.rpy:51
-translate english end_neutral_9b60448d:
-
-    # "Des particules lumineuses noires apparaissent autour de Noir."
-    "Des particules lumineuses noires apparaissent autour de Noir."
-
 # game/chap/end_neutral.rpy:55
 translate english end_neutral_6aff9db3:
 
@@ -312,11 +299,11 @@ translate english end_neutral_6aff9db3:
 translate english end_neutral_0c052b1f:
 
     # "FIN"
-    "FIN"
+    "THE END"
 
 translate english strings:
 
     # game/chap/end_neutral.rpy:2
     old "Fin neutre"
-    new "Fin neutre"
+    new "Neutral end"
 

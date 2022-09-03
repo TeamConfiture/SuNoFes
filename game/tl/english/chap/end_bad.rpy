@@ -1,16 +1,14 @@
-﻿# TODO: Translation updated at 2022-09-01 22:37
+﻿# game/chap/end_bad.rpy:8
+translate english end_bad_bde69e8d:
 
-# game/chap/end_bad.rpy:2
-translate english end_bad_7853f260:
+    # grosso "On te tient maintenant ! Rends-nous les boules tout de suite !" with vpunch
+    grosso "We got you now! Give us back the balls right this instant!" with vpunch
 
-    # grosso "On te tient maintenant ! Rends-nous les boules tout de suite !"
-    grosso "We got you now! Give us back the balls right this instant!"
+# game/chap/end_bad.rpy:10
+translate english end_bad_6cd5cedd:
 
-# game/chap/end_bad.rpy:3
-translate english end_bad_500dd71d:
-
-    # blanche "Oh non ! Les gardes de Madame Arc-en-Ciel ! Fuyons !"
-    blanche "Oh no! Lady Rainbow's guards! Let's run!"
+    # blanche "Oh non ! Les gardes de Madame Arc-en-Ciel ! Fuyons !" with vpunch
+    blanche "Oh no! Lady Rainbow's guards! Let's run!" with vpunch
 
 # game/chap/end_bad.rpy:4
 translate english end_bad_c2a54efe:
@@ -18,11 +16,11 @@ translate english end_bad_c2a54efe:
     # "Je cours de toutes mes forces."
     "I run with all my might."
 
-# game/chap/end_bad.rpy:5
-translate english end_bad_19fdf556:
+# game/chap/end_bad.rpy:13
+translate english end_bad_a210f80d:
 
-    # maigrichon "Pas si vite !"
-    maigrichon "Not so fast!"
+    # grosso "Pas si vite !"
+    grosso "Not so fast!"
 
 # game/chap/end_bad.rpy:6
 translate english end_bad_acd81b5a:
@@ -30,11 +28,11 @@ translate english end_bad_acd81b5a:
     # blanche "Hmpf... Hmpf..."
     blanche "Huff... Huff..."
 
-# game/chap/end_bad.rpy:7
-translate english end_bad_736b8ca9:
+# game/chap/end_bad.rpy:19
+translate english end_bad_9c1645bb:
 
-    # blanche "Ah !"
-    blanche "Ah!"
+    # blanche "Ah !" with vpunch
+    blanche "Ah!" with vpunch
 
 # game/chap/end_bad.rpy:8
 translate english end_bad_afd2d15c:
@@ -42,23 +40,23 @@ translate english end_bad_afd2d15c:
     # blanche "Oh non ! Une impasse !"
     blanche "Oh no! A dead end!"
 
-# game/chap/end_bad.rpy:9
-translate english end_bad_da8a1587:
+# game/chap/end_bad.rpy:24
+translate english end_bad_877d90bd:
 
-    # maigrichon "Ha ha ! Tu ne peux plus t'échapper maintenant, hein ?"
-    maigrichon "Ha ha! You can't escape anymore, can you ?"
+    # grosso "Ha ha ! Tu ne peux plus t'échapper maintenant, hein ?"
+    grosso "Ha ha! You can't escape anymore, can you ?"
 
-# game/chap/end_bad.rpy:10
-translate english end_bad_0f372d6b:
+# game/chap/end_bad.rpy:25
+translate english end_bad_0c372b5f:
 
-    # maigrichon "Viens là !"
-    maigrichon "Come here!"
+    # grosso "Viens là !"
+    grosso "Come here!"
 
-# game/chap/end_bad.rpy:11
-translate english end_bad_226c6585:
+# game/chap/end_bad.rpy:29
+translate english end_bad_b33b0b82:
 
-    # blanche "Ah ! Aïe !"
-    blanche "Ah! Ouch!"
+    # blanche "Ah ! Aïe !" with vpunch
+    blanche "Ah! Ouch!" with vpunch
 
 # game/chap/end_bad.rpy:12
 translate english end_bad_611bbeba:
@@ -66,11 +64,11 @@ translate english end_bad_611bbeba:
     # "Le garde m'attrape une main et m'arrache les boules de cristal."
     "The guard grabs one of my hands and takes the crystal balls from me."
 
-# game/chap/end_bad.rpy:13
-translate english end_bad_37985346:
+# game/chap/end_bad.rpy:33
+translate english end_bad_83df20c6:
 
-    # blanche "Non ! Non ! Pas les boules de cristal !"
-    blanche "No! No! Not the crystal balls!"
+    # blanche "Non ! Non ! Pas les boules de cristal !" with vpunch
+    blanche "No! No! Not the crystal balls!" with vpunch
 
 # game/chap/end_bad.rpy:14
 translate english end_bad_7d019cb2:
@@ -102,11 +100,11 @@ translate english end_bad_15f9e161:
     # grosso "Finie la rigolade ! Tu vas voir ce qu'il en coûte de s'opposer aux représentants de Madame Arc-en-Ciel !"
     grosso "No more games! You'll see what happens when going against Lady Rainbow's representatives!"
 
-# game/chap/end_bad.rpy:19
-translate english end_bad_226c6585_1:
+# game/chap/end_bad.rpy:41
+translate english end_bad_b33b0b82_1:
 
-    # blanche "Ah ! Aïe !"
-    blanche "Ah! Ouch!"
+    # blanche "Ah ! Aïe !" with vpunch
+    blanche "Ah! Ouch!" with vpunch
 
 # game/chap/end_bad.rpy:20
 translate english end_bad_28f31557:
@@ -150,11 +148,11 @@ translate english end_bad_5e294c01:
     # blanche "Oh non, Papa !"
     blanche "Oh no, Daddy!"
 
-# game/chap/end_bad.rpy:27
-translate english end_bad_dfe8cbd1:
+# game/chap/end_bad.rpy:61
+translate english end_bad_a7255b8d:
 
-    # noir "Kof, kof…"
-    noir "Kof, kof…"
+    # noir "Kof, kof…" with vpunch
+    noir "Kof, kof…" with vpunch
 
 # game/chap/end_bad.rpy:28
 translate english end_bad_c75677f0:
@@ -168,11 +166,11 @@ translate english end_bad_584c3d8c:
     # blanche "Pardon, Papa ! Je m'excuse... Pardon. J'ai fait une grosse bêtise."
     blanche "Sorry, Daddy! I'm sorry... Sorry. I made a huge mistake."
 
-# game/chap/end_bad.rpy:30
-translate english end_bad_295a0065:
+# game/chap/end_bad.rpy:69
+translate english end_bad_256c18aa:
 
-    # noir "Kof, kof... On dirait qu'il y a de l'agitation dehors..."
-    noir "Kof, kof... Seems like there is some unrest outside..."
+    # noir "Kof, kof... On dirait qu'il y a de l'agitation dehors..." with vpunch
+    noir "Kof, kof... Seems like there is some unrest outside..." with vpunch
 
 # game/chap/end_bad.rpy:31
 translate english end_bad_c2d28289:
@@ -210,83 +208,15 @@ translate english end_bad_556604e3:
     # "Quant à moi, j'ai fini dans les geôles du palais Arc-en-Ciel sans jamais avoir pu m'expliquer."
     "As for me, I ended up in Lady Rainbow's cells, beneath her palace, without ever having the opportunity to explain myself."
 
-# TODO: Translation updated at 2022-09-03 21:49
-
-# game/chap/end_bad.rpy:8
-translate english end_bad_bde69e8d:
-
-    # grosso "On te tient maintenant ! Rends-nous les boules tout de suite !" with vpunch
-    grosso "On te tient maintenant ! Rends-nous les boules tout de suite !" with vpunch
-
-# game/chap/end_bad.rpy:10
-translate english end_bad_6cd5cedd:
-
-    # blanche "Oh non ! Les gardes de Madame Arc-en-Ciel ! Fuyons !" with vpunch
-    blanche "Oh non ! Les gardes de Madame Arc-en-Ciel ! Fuyons !" with vpunch
-
-# game/chap/end_bad.rpy:13
-translate english end_bad_a210f80d:
-
-    # grosso "Pas si vite !"
-    grosso "Pas si vite !"
-
-# game/chap/end_bad.rpy:19
-translate english end_bad_9c1645bb:
-
-    # blanche "Ah !" with vpunch
-    blanche "Ah !" with vpunch
-
-# game/chap/end_bad.rpy:24
-translate english end_bad_877d90bd:
-
-    # grosso "Ha ha ! Tu ne peux plus t'échapper maintenant, hein ?"
-    grosso "Ha ha ! Tu ne peux plus t'échapper maintenant, hein ?"
-
-# game/chap/end_bad.rpy:25
-translate english end_bad_0c372b5f:
-
-    # grosso "Viens là !"
-    grosso "Viens là !"
-
-# game/chap/end_bad.rpy:29
-translate english end_bad_b33b0b82:
-
-    # blanche "Ah ! Aïe !" with vpunch
-    blanche "Ah ! Aïe !" with vpunch
-
-# game/chap/end_bad.rpy:33
-translate english end_bad_83df20c6:
-
-    # blanche "Non ! Non ! Pas les boules de cristal !" with vpunch
-    blanche "Non ! Non ! Pas les boules de cristal !" with vpunch
-
-# game/chap/end_bad.rpy:41
-translate english end_bad_b33b0b82_1:
-
-    # blanche "Ah ! Aïe !" with vpunch
-    blanche "Ah ! Aïe !" with vpunch
-
-# game/chap/end_bad.rpy:61
-translate english end_bad_a7255b8d:
-
-    # noir "Kof, kof…" with vpunch
-    noir "Kof, kof…" with vpunch
-
-# game/chap/end_bad.rpy:69
-translate english end_bad_256c18aa:
-
-    # noir "Kof, kof... On dirait qu'il y a de l'agitation dehors..." with vpunch
-    noir "Kof, kof... On dirait qu'il y a de l'agitation dehors..." with vpunch
-
 # game/chap/end_bad.rpy:82
 translate english end_bad_0c052b1f:
 
     # "FIN"
-    "FIN"
+    "THE END"
 
 translate english strings:
 
     # game/chap/end_bad.rpy:2
     old "Fin triste"
-    new "Fin triste"
+    new "Bad end"
 
