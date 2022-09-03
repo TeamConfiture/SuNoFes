@@ -185,8 +185,12 @@ init python:
             Maps a rope_collection index's item to its linked version
         `rope_pull_list`
             Lists the rope indexes to use when pulling a rope (if None, all ropes may be used)
-        `binding_callback`
-            unused at this point
+        `pull_callback`
+            Called when the player starts pulling an anchor
+        `bind_callback`
+            Called when the player succesfully links two points
+        `release_callback`
+            Called when the player unsuccessfully links two points
         `completion_actions`
             Renpy actions to run upon puzzle completion
 
@@ -245,7 +249,7 @@ init python:
         def __init__(self, anchor_definitions = {}, anchor_rules = [],
                 auto_base_button = None, idle_base_button = None, hover_base_button = None, disabled_base_button = None, linked_base_button = None,
                 rope_collection = [], rule_groups = {}, rope_transforms = {}, rope_pull_list = None,
-                binding_callback = None, completion_actions = None,
+                bind_callback = None, pull_callback = None, release_callback = None, completion_actions = None,
                 **kwargs,
                 ):
             super(CardMatcher, self).__init__(**kwargs)
@@ -254,7 +258,9 @@ init python:
             self.base_group_rules = rule_groups
             self.rope_transforms = rope_transforms
             self.rope_pull_list = rope_pull_list
-            self.binding_callback = binding_callback
+            self.pull_callback = pull_callback
+            self.bind_callback = bind_callback
+            self.release_callback = release_callback
             self.completion_actions = completion_actions
             # Set defaults
             self.base_defaults = {
@@ -371,6 +377,8 @@ init python:
         def on_mousedown(self):
             # Start dragging from the hovered anchor
             if self.hovered_anchor:
+                if self.pull_callback:
+                    self.pull_callback(self.hovered_anchor)
                 if self.dragged_anchor: # For some reason we receive mousedown without receiving mouseup
                     self.anchors[self.dragged_anchor].state = 0
                 self.dragged_anchor = self.hovered_anchor
@@ -391,6 +399,8 @@ init python:
                         self.anchors[self.dragged_anchor].center(), self.anchors[self.hovered_anchor].center(),
                         self.mouse_rope_index,
                         )
+                    if self.bind_callback:
+                        self.bind_callback(self.dragged_anchor, self.hovered_anchor)
                     self.dragged_anchor = None
                     renpy.redraw(self, 0)
                     # Check if all links were created, if so terminate processing
@@ -403,6 +413,8 @@ init python:
                     return
             if self.dragged_anchor:
                 # remove dragging status if we could not create a link
+                if self.release_callback:
+                    self.release_callback(self.dragged_anchor, self.hovered_anchor)
                 self.anchors[self.dragged_anchor].state = 0
                 self.dragged_anchor = None
                 renpy.redraw(self, 0)

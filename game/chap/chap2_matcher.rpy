@@ -27,7 +27,9 @@ screen chap2_match_screen():
         },
         rope_transforms = {1: 0},
         rope_pull_list = [1],
-        completion_actions = [Jump("chap2_completed")]
+        pull_callback = lambda _: renpy.run(Play('sound', renpy.random.choice(sound.Grab))),
+        bind_callback = lambda _, __: renpy.run(Play('sound', renpy.random.choice(sound.Wood_Depot))),
+        completion_actions = [Jump("chap2_completed")],
     )
     add matcher
     for k, v in enumerate(mapping[0]):
