@@ -14,6 +14,7 @@ label chap7:
     call titlepage(7)
     scene dojo
     with dissolve
+    play music music.Theme_Red fadein 1.0
     "Un chat en position de combat semble s'entraîner avec acharnement."
     show rouge at right with dissolve
     x "Woosh ! Comme un chat ! Sois plus violent que le cours du torrent !" with vpunch
@@ -182,6 +183,7 @@ label chap7_2:
         hide grosso at right
         with dissolve
         grosso_maigrichon "Ma… Madame Arc-en-Ciel !" with vpunch
+        stop music fadeout 2.0
         jump end_good
     elif neutral > bad: 
         show maigrichon at left
@@ -191,6 +193,7 @@ label chap7_2:
         grosso "Non, je l'ai vu partir par ici !"
         grosso_maigrichon "..."
         grosso_maigrichon "Oh nooon… On l'a encore perdu de vue…"
+        stop music fadeout 2.0
         jump end_neutral
     else: 
         show maigrichon at left
@@ -199,4 +202,5 @@ label chap7_2:
         maigrichon "Dans cette direction ! J'ai vu l'enfant partir vers le Quartier des Monochromes !" with vpunch
         grosso "À ses trousses !"
         maigrichon "Tu ne nous échapperas pas cette fois !"
+        stop music fadeout 2.0
         jump end_bad

@@ -1,6 +1,7 @@
 ﻿label chap1:
     call titlepage(1)
     scene mulberry_search
+    play music music.Theme_Violet fadein 1.0
     show screen chap1_mulberry_search()
     show blanche surprised open at left
     with dissolve 
@@ -181,4 +182,5 @@ label chap1_2:
     hide grosso
     with dissolve
     "Les gardes parcourent le jardin des violettes et disparaissent par le petit chemin du fond."
+    stop music fadeout 2.0
     jump chap2

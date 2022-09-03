@@ -2,6 +2,7 @@ label chap6:
     call titlepage(6)
     scene piano
     with dissolve
+    play music music.Theme_Orange fadein 1.0
     "On entend au loin du Mozart. Un clavier couleur d'orange est posé là, bien au centre de l'orangeraie."
     "Un chat est en train de jouer."
     show blanche surprised open at left
@@ -177,4 +178,5 @@ label chap6_2:
     maigrichon "Grosso !" with vpunch
     grosso "Bon, bon, plus tard alors, allons-y !"
     "Grosso et Maigrichon quittent Orange, le laissant seul devant son piano."
+    stop music fadeout 2.0
     jump chap7

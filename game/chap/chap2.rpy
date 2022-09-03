@@ -1,6 +1,7 @@
 label chap2:
     call titlepage(2)
-    scene star with dissolve 
+    scene star with dissolve
+    play music music.Theme_Indigo fadein 1.0
     show chap2_spirited
     "Le soleil se couche… Au loin, un chat observe le crépuscule avec attention."
     show indigo at right with dissolve
@@ -141,4 +142,5 @@ label chap2_completed:
     maigrichon "T'es vraiment pas doué… L'enfant est parti par où ?"
     grosso "Ah ! Ses traces de pas sont là, allons-y !" with vpunch
     maigrichon "Et toi, Indigo, pour l'amour de Madame Arc-en-Ciel, tiens-toi à carreau, ça suffit les bêtises."
+    stop music fadeout 2.0
     jump chap3
