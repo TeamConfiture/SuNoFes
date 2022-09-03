@@ -67,6 +67,7 @@
 
     menu:
         "Faire les yeux du chat potté":
+            $ good +=1
             $ encore =_("(encore)")
             "Je lui fais les yeux du chat potté."
             violet "Oh nooooooooooon pas ces yeeeuuxxx. Ils sont trop mignons."
@@ -74,6 +75,7 @@
             blanche "S'il te plaaaîîîîîîît !"
             show blanche cry close at left
         "Demander poliment.":
+            $ neutral +=1
             show blanche neutral open at left
             blanche "Est-ce que je peux récupérer ta boule de cristal, s'il te plaît ?"
             show blanche neutral close at left
@@ -83,6 +85,7 @@
             show blanche cry close at left
             "Je commence à pleurer."
         "Lui arracher la boule des mains.":
+            $ bad +=1
             show blanche pout close at left
             "J'essaye de lui arracher la boule des mains."
             violet "MIAAOOOUUU !" with vpunch

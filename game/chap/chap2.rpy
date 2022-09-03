@@ -17,12 +17,14 @@ label chap2:
 
     menu:
         "Le prendre de haut":
+            $ bad +=1
             show blanche pout open at left
             blanche "Bien sûr que si je connais, tu me prends pour qui ?"
             show blanche pout close at left
             indigo "Ce n'est pas l'impression que tu me donnais quand tu courais il y a 5 minutes…"
             indigo "Ma foi, comme tu es ici, il est de mon devoir de t'expliquer tout ce qu'il y a à savoir sur ce lieu. "
         "Chercher une excuse":
+            $ neutral +=1
             show blanche pout open at left
             blanche "Non mais j'ai cru que c'étaient des petits sapins, je pensais en ramener un pour Noël…"
             show blanche pout close at left
@@ -30,6 +32,7 @@ label chap2:
             indigo "Ce lieu est connu pour son lac incontournable. Tous les voyageurs qui me rendent visite sont là pour admirer cette vue sublime. Il est donc proscrit de prendre quoi que ce soit de ce paysage."
             indigo "En parlant de ça, il est coutume ici de repartir de mon lac en ayant au moins découvert quelque chose, alors suis-moi. Regarde ! On peut apercevoir un cygne devant et là, des canards… "
         "Admettre son erreur":
+            $ good +=1
             show blanche cry open at left
             blanche "Pardon, je n'avais jamais vu de ronces."
             show blanche cry close at left

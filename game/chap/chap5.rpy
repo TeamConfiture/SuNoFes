@@ -39,6 +39,7 @@ label chap5:
     piou "Hum... Et que comptes-tu faire ?"
     menu:
         "Lui lancer un regard méprisant":
+            $ bad +=1
             show blanche pout open at left
             show crystal_yellow at crystal_position with dissolve
             blanche "Lui ramener la boule de Jaune, tu crois vraiment que je viendrais pour un bête fromage ?"
@@ -117,9 +118,7 @@ label cheese_market_fail:
     call screen cheese_market('chap5_2', 'cheese_market_fail')
 
 label chap5_2:
-    show jaune at right
-    show blanche neutral open at left
-    with dissolve
+    show blanche neutral close at left
     piou "Génial, merci ! On va pouvoir manger un bon repas grâce à toi !"
     show blanche neutral open at left
     blanche "Avec plaisir. À propos de la boule..."
@@ -128,6 +127,7 @@ label chap5_2:
     piou "J'ai des vaches à traire, des veaux à nourrir, et quelques vieilles poules à m'occuper."
     menu:
         "Lui rappeler qu'il doit donner sa boule":
+            $ neutral +=1
             show blanche neutral open at left
             blanche "C'est quand que tu vas me donner ta boule ?"
             show blanche neutral close at left
@@ -143,6 +143,7 @@ label chap5_2:
             piou "Je comprends mieux..."
             piou "Mon père est mort, je sais ce que ça signifie."
         "Lui redemander gentiment sa boule":
+            $ good +=1
             show blanche neutral open at left
             blanche "Est-ce que je peux emprunter ta boule de cristal ?"
             show blanche neutral close at left
@@ -162,6 +163,7 @@ label chap5_2:
             piou "Tout s'explique..."
             piou "Mon père est mort, je sais ce que ça signifie."
         "Broder pour attendre un moment plus propice":
+            $ bad +=1
             show blanche neutral open at left
             blanche "Tu pourrais me dire où tu as appris tout ça sur les fromages ?"
             show blanche neutral close at left

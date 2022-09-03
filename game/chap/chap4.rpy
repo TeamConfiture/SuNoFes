@@ -66,6 +66,7 @@ label chap4:
 
     menu:
         "Tirer une de ses oreilles et lui crier de dessus d'arrêter de chanter":
+            $ bad +=1
             show blanche pout open at left
             blanche "Arrête de chanter et écoute-moi !!!" with vpunch
             show blanche pout close at left
@@ -82,12 +83,14 @@ label chap4:
             "Je commence à pleurer."
             emeraude "..."
         "Faire les yeux du Chat Potté [encore]":
+            $ neutral +=1
             show blanche cry close at left
             "Cela a marché avec Violet, peut-être que ça marchera aussi avec Émeraude."
             "Je lui fais les yeux du Chat Potté."
             emeraude "[player_name] a les yeux revolver. [player_name] a le regard qui tue."
             emeraude "[player_name] m'a touchée, c'est foutu."
         "Demander en chantant":
+            $ good +=1
             show blanche neutral open at left
             blanche "Comment puis-je oublier ce coin de paradis ?"
             show blanche smile open at left
@@ -113,16 +116,22 @@ label chap4:
     blanche "Un memory…"
     show blanche neutral open at left
     blanche "Bon, on y va et on saura ce que je dois faire."
+    hide emeraude at right
+    hide blanche neutral open at left
+    with dissolve
     call screen chap4_memory_game('chap4_2', 'memory_game_timeout')
 
 label memory_game_timeout:
+    show emeraude at right with dissolve
     emeraude "Oh non ! Encore une fois !"
+    hide emeraude at right with dissolve
     call screen chap4_memory_game('chap4_2', 'memory_game_timeout')
 
 label chap4_2:
     scene garden
     show emeraude at right
-    show blanche surprised open at left
+    show blanche neutral close at left
+    with dissolve
     emeraude "Yeah ! Bravo ! Oui, viens danser ! Oui, c'est la vie, la la la la la !"
     emeraude "Voilà, voilà, voilà, voilà la boule de cristal."
     scene noir_colors_3 with dissolve
@@ -131,7 +140,7 @@ label chap4_2:
     pause 2
     scene garden
     show emeraude at right
-    show blanche surprised open at left
+    show blanche neutral close at left
     with dissolve
     emeraude "Et si mon heure sonne, oh oh. Pleure pas rigole, oh oh. On m'appelle l'Émeraude."
     show blanche neutral open at left

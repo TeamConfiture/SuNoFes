@@ -58,6 +58,7 @@ label chap6:
 
     menu: 
         "Le prendre pour un fou":
+            $ bad +=1
             show blanche pout open at left
             blanche "Tu... Tu es fou ?!" with vpunch
             blanche "Tu crois vraiment ce que tu es en train de me raconter ?!"
@@ -79,6 +80,7 @@ label chap6:
             orange "Je viens de te le dire, mais tu ne veux pas m'écouter."
             orange "Tu manques de doigté."
         "Le prendre au sérieux":
+            $ good +=1
             show blanche surprised open at left
             blanche "Vraiment ? Tu peux m'apprendre ?" with vpunch
             show blanche neutral open at left
@@ -91,6 +93,7 @@ label chap6:
             show blanche surprised close at left
             orange "Pour sûr, allons-y."
         "Exiger qu'il démarre l'entraînement":
+            $ neutral +=1
             show blanche neutral open at left
             blanche "Est-ce qu'on peut commencer l'entraînement ?"
             show blanche cry open at left
@@ -108,16 +111,31 @@ label chap6:
 
     orange "Tout d'abord il faut couper les agrumes."
     orange "Montre-moi comment tu te dépatouilles. 1... 2... 3..."
+    hide blanche neutral close at left
+    hide orange at right
+    with dissolve
     call screen chap6_sprite_cutter('chap6_2', 'sprite_cutter_failed')
 
 label sprite_cutter_failed:
+    show blanche neutral close at left
+    show orange at right
+    with dissolve
     orange "Non, pas comme ça ! Essaye encore !"
+    show blanche cry open at left
     blanche "Mais, c'est long !"
+    show blanche cry close at left
     orange "Mais, non ! Je t'assure ! Tu vas y arriver !"
+    hide blanche neutral close at left
+    hide orange at right
+    with dissolve
     call screen chap6_sprite_cutter('chap6_2', 'sprite_cutter_failed')
 
 label chap6_2:
-    blanche "Oh ! Je m'attendais pas du tout à obtenir un son si parfait."
+    show blanche surprised open at left
+    show orange at right
+    with dissolve
+    blanche "Oh ! Je m'attendais pas du tout à obtenir un son si parfait." with vpunch
+    show blanche surprised close at left
     orange "C'est la magie des agrumes, mon enfant. Maintenant, tu devrais tenter de prendre la boule."
     orange "Je suis persuadé que tu vas y arriver."
     show blanche smile open at left

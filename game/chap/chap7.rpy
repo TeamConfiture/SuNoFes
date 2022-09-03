@@ -48,24 +48,40 @@ label chap7:
     red "Bats-toi ! Vile être qui veut piller mes terres !"
     show blanche cry open at left
     blanche "Zut, il ne m'écoute pas. Je vais devoir essayer de me défendre…"
+    hide blanche cry close at left
+    hide rouge at right
+    with dissolve
     call screen chap7_simon_says('chap7_2', 'simon_game_defeat')
 
 label simon_game_defeat:
-    red "Hmpf… Hmpf… Pas mal, pas mal pour un intrus. Mais, Red a gagné ! Il en faut plus que ça pour me battre"
+    show rouge at right with dissolve
+    red "Hmpf… Hmpf… Pas mal, pas mal pour un intrus. Mais, Red a gagné ! Il en faut plus que ça pour me battre."
+    hide rouge at right with dissolve
     call screen chap7_simon_says('chap7_2', 'simon_game_defeat')
 
 label chap7_2:
+    show rouge at right
+    show blanche neutral close at left
+    with dissolve
     red "Hmpf… Hmpf… Etranger, je reconnais ma défaite. D'où vient ta puissance ? Aucun être n'a battu Red en dehors de Jaune. Qui est ton maître ?"
+    show blanche surprised open at left
     blanche "Je n'ai rien fait ! Rien appris ! Je suis juste rapide."
+    show blanche surprised close at left
     red "Sacre bleu ! Ainsi, tu es comme Jaune ! Quel est ton secret ? Apprends-moi ! Il faut que je sois le plus fort pour défendre ma boule de cristal !"
+    show blanche surprised open at left
     blanche "Jaune ? Le chat avec son poussin ? Il t'a battu ? Mais, il ne fait que dormir !"
+    show blanche surprised close at left
     red "La fourrure ne fait pas le chat. Les apparences sont parfois trompeuses. C'est un Gardien de Couleurs très puissant !"
     red "Alors, vas-tu m'apprendre tes techniques ?!"
+    show blanche surprised open at left
     blanche "Je n'ai aucune technique ! Je suis juste là pour ta boule de cristal…"
+    show blanche surprised close at left
     red "Mensonge ! Cela ne peut pas être un talent inné ! Je refuse d'y croire !"
+    show blanche cry open at left
     blanche "Il ne veut rien savoir… Que faire… Je veux juste récupérer sa boule…"
     menu:
         "L'assommer et prendre sa boule":
+            $ bad +=1
             show blanche neutral open at left
             blanche "Je sais ! Red ferme les yeux !"
             show blanche neutral close at left
@@ -85,6 +101,7 @@ label chap7_2:
             blanche "Il doit voir ces jolies couleurs une dernière fois."
 
         "Troquer une technique inventée contre sa boule":
+            $ neutral +=1
             show blanche neutral open at left
             blanche "J'ai une idée ! Si je te donne une technique, tu me prêtes ta boule pour une nuit ?"
             show blanche neutral close at left
@@ -123,6 +140,7 @@ label chap7_2:
             show blanche neutral close at left
 
         "Réfléchir avec lui pour combattre Jaune et demander sa boule":
+            $ good +=1
             show blanche surprised open at left
             blanche "Ah ! Je sais ! Tu n'as qu'à te bander les yeux comme mon papa ! Il arrive à voir partout sans ouvrir les yeux !" with vpunch
             show blanche surprised close at left
@@ -153,7 +171,7 @@ label chap7_2:
     show blanche neutral open at left
     blanche "Bon... Direction le Quartier des Monochromes ! Papa m'attend !"
     hide blanche neutral open at left with dissolve
-    if good > neutre and good > bad: 
+    if good > neutral and good > bad: 
         show maigrichon at left
         show grosso at right
         with dissolve
@@ -165,7 +183,7 @@ label chap7_2:
         with dissolve
         grosso_maigrichon "Ma… Madame Arc-en-Ciel !" with vpunch
         jump end_good
-    elif neutre > bad: 
+    elif neutral > bad: 
         show maigrichon at left
         show grosso at right
         with dissolve

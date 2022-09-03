@@ -43,6 +43,7 @@ label chap3:
 
     menu:
         "Le traiter de méchant":
+            $ bad +=1
             show blanche pout open at farLeft
             blanche "Méchant ! T'es trop méchant ! Je boude."
             show blanche pout close at farLeft
@@ -56,6 +57,7 @@ label chap3:
             show blanche neutral close at farLeft
             cyan "Ah oui ? Comment pourrais-tu nous aider ?"
         "Partir chercher la boule ailleurs":
+            $ neutral +=1
             cyan "Oh que vois-je ? Un visiteur venu d'ailleurs ! Ne t'en va pas !"
             cyan "Que viens-tu faire ici ?"
             show blanche cry open at farLeft
@@ -63,6 +65,7 @@ label chap3:
             show blanche cry close at farLeft
             cyan "De quoi s'agit-il ?"
         "Lui répondre poliment":
+            $ good +=1
             show blanche pout open at farLeft
             blanche "Excuse-moi, mais j'ai l'impression que je ne gêne plus tant que ça."
             blanche "Poser une simple question ne devrait pas être un problème."
