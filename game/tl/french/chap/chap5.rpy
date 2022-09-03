@@ -738,7 +738,7 @@ translate french chap5_0b9e216f:
 translate french cheese_market_fail_d0ddc8d7:
 
     # piou "Ca ne ressemble clairement pas à ceux que j'ai déjà en vitrine ! Recommence."
-    piou "Ca ne ressemble clairement pas à ceux que j'ai déjà en vitrine ! Recommence."
+    piou "Ça ne ressemble clairement pas à ceux que j'ai déjà en vitrine ! Recommence."
 
 # game/chap/chap5.rpy:73
 translate french chap5_2_e3a16681:
