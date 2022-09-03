@@ -4,19 +4,19 @@
 translate english chap3_d309fc3a:
 
     # blanche "Oh ! C'est... C'est le duo des Cyanmois que je vois au loin !" with vpunch
-    blanche "Oh! It's... It's the Cyanmese I see afar!" with vpunch
+    blanche "Oh! It's... It's the Cyanmese duo I see afar!" with vpunch
 
 # game/chap/chap3.rpy:8
 translate english chap3_57fec416:
 
     # blanche "Le présentateur Cyan est très connu du grand public pour son émission Jean Racine et des Saules."
-    blanche "The animator Cyan is very well known from the masses for his emission Jean Racine and Saules."
+    blanche "The animator Cyan is very well known from the audience for his emission Jean Racine and Saules."
 
 # game/chap/chap3.rpy:10
 translate english chap3_5ea786c4:
 
     # blanche "D'après mon papa, lui et son frère vont à travers les forêts du monde présenter aux autres chats les beautés de la nature."
-    blanche "According to daddy, he and his brother go through the forests of the world to present to others cats the beauty of nature."
+    blanche "According to Daddy, he and his brother go through the forests of the world to present to others cats the beauty of nature."
 
 # game/chap/chap3.rpy:12
 translate english chap3_f26b5140:
@@ -52,7 +52,7 @@ translate english chap3_c2a52b84:
 translate english chap3_e4ef5c48:
 
     # cyan "Nous voici donc dans la forêt Arc-en-Ciel, très connue pour sa rivière, mais surtout pour ses truites."
-    cyan "We are here and Rainbow's forest, very well known for its river, but mostly for its trouts."
+    cyan "We are here in the Rainbow's forest, very well known for its river, but mostly for its trouts."
 
 # game/chap/chap3.rpy:26
 translate english chap3_2d44a6ea:
@@ -70,19 +70,19 @@ translate english chap3_9ee4f5d2:
 translate english chap3_6d2c793e:
 
     # cyan "Observons maintenant les truites."
-    cyan "Lets now observe the trouts."
+    cyan "Let's now observe the trouts."
 
 # game/chap/chap3.rpy:29
 translate english chap3_f9b512c6:
 
     # cameraman "Je suis désolé chaton, mais nous n'avons pas réussi à trouver de truites Arc-en-Ciel dans la rivière. Nous avons seulement quelques truites farios."
-    cameraman "I'm sorry kitten, but we didn't manage to find rainbow trouts in the river. We only found a few brown trouts."
+    cameraman "I'm sorry kitty, but we didn't manage to find Rainbow trouts in the river. We only found a few brown trouts."
 
 # game/chap/chap3.rpy:30
 translate english chap3_ff4cfe3b:
 
     # cameraman "Un simple amateur de poisson verra la différence. Je coupe la bande vidéo le temps de trouver une solution."
-    cameraman "A simple fishes amateur would see the difference. I'm pausing the video until I find a solution."
+    cameraman "A simple fishing amateur would see the difference. I'm pausing the recording until we find a solution."
 
 # game/chap/chap3.rpy:31
 translate english chap3_8e25d14c:
@@ -100,13 +100,13 @@ translate english chap3_5f43274a:
 translate english chap3_8699d679:
 
     # cyan "Présenter la forêt Arc-en-Ciel sans ses truites, c'est comme présenter des crêpes sans oeufs."
-    cyan "Present the Rainbow Forest without trouts, is like present a crepe recipe without eggs."
+    cyan "Showing the Rainbow Forest without trouts, is like showing a crepe recipe without eggs."
 
 # game/chap/chap3.rpy:34
 translate english chap3_931fc708:
 
     # cyan "C'est impensable ! Inimaginable !" with vpunch
-    cyan "It's unthinkable! Uninimaginable!" with vpunch
+    cyan "It's unbelievable! Uninimaginable!" with vpunch
 
 # game/chap/chap3.rpy:35
 translate english chap3_71adbde4:
@@ -118,13 +118,13 @@ translate english chap3_71adbde4:
 translate english chap3_e9afb690:
 
     # blanche "Excuse-moi, j'ai une question à te poser : je cherche la bou..."
-    blanche "Excuse-me, I have a question to ask: I'm looking for the ba..."
+    blanche "Excuse-me, I have a question: I'm looking for the bal..."
 
 # game/chap/chap3.rpy:42
 translate english chap3_4df03fc1:
 
     # cameraman "Ça suffit comme ça ! On est en plein tournage, ouste !" with vpunch
-    cameraman "Enough! We're in the middle of a shoot, woosh!" with vpunch
+    cameraman "Enough! We're in the middle of a shoot, woosh, woosh!" with vpunch
 
 # game/chap/chap3.rpy:47
 translate english chap3_effad0a2:
@@ -136,7 +136,7 @@ translate english chap3_effad0a2:
 translate english chap3_5993763d:
 
     # cameraman "Ce n'est pas ce que j'ai voulu dire, mais tu m'as compris. Tu nous gênes."
-    cameraman "That's not what I meant, but you the gist of it. You're in the way."
+    cameraman "That's not what I meant, but you got the gist of it. You're in the way."
 
 # game/chap/chap3.rpy:51
 translate english chap3_94a00593:
@@ -166,7 +166,7 @@ translate english chap3_1a6de707:
 translate english chap3_51939b64:
 
     # cyan "Oh que vois-je ? Un visiteur venu d'ailleurs ! Ne t'en va pas !"
-    cyan "Oh what do I see? A visitor from somewhere else! Don't go!"
+    cyan "Oh what do I see? A stranger from the outside! Don't go!"
 
 # game/chap/chap3.rpy:60
 translate english chap3_0d57d0cb:
@@ -202,7 +202,7 @@ translate english chap3_39c31e59:
 translate english chap3_a186b4e5:
 
     # cameraman "Bon, OK, mais pas longtemps alors."
-    cameraman "Well, OK, but not for long then."
+    cameraman "Well, OK, don't take too long."
 
 # game/chap/chap3.rpy:72
 translate english chap3_9ce47b0a:
@@ -226,13 +226,13 @@ translate english chap3_e5dd8db0:
 translate english chap3_69f6de9b:
 
     # blanche "Je vous propose un marché : je vous pêche une truite Arc-en-Ciel et en échange vous m'aidez à trouver la boule Cyan. Ça vous va ?"
-    blanche "I'll make you a deal : I'll catch you a Rainbow trout and in exchange you help me find the Cyan ball. Is that okay with you?"
+    blanche "I'll make you a deal: I'll catch you a Rainbow trout and in exchange you help me to find the Cyan ball. Is that okay with you?"
 
 # game/chap/chap3.rpy:80
 translate english chap3_64d3e968:
 
     # cameraman "Mais, c'est que ce gosse est cinglé ?!" with vpunch
-    cameraman "But, is this kid crazy?!" with vpunch
+    cameraman "Is this kid crazy?!" with vpunch
 
 # game/chap/chap3.rpy:81
 translate english chap3_b1a3a023:
@@ -298,7 +298,7 @@ translate english chap3_60fe9eff:
 translate english chap3_ee114534:
 
     # blanche "Oui ! Noir est mon papa ! Je ne pensais pas que mon papa était si connu !"
-    blanche "Yes! Noir is my daddy! I didn't know daddy was so famous!"
+    blanche "Yes! Noir is Daddy! I didn't know Daddy was so famous!"
 
 # game/chap/chap3.rpy:103
 translate english chap3_aa5a25bb:
@@ -358,13 +358,13 @@ translate english chap3_c50050fd:
 translate english chap3_9b69aef9:
 
     # blanche "C'est vrai ?!" with vpunch
-    blanche "For real?!" with vpunch
+    blanche "Really?!" with vpunch
 
 # game/chap/chap3.rpy:118
 translate english chap3_889728bc:
 
     # cameraman "Mais, Cyan, c'est de la folie !" with vpunch
-    cameraman "But, Cyan, this is madness!" with vpunch
+    cameraman "Cyan, this is madness!" with vpunch
 
 # game/chap/chap3.rpy:119
 translate english chap3_2a2ba8f9:
@@ -412,19 +412,19 @@ translate english chap3_2_3fcfc0bb:
 translate english chap3_2_84629a10:
 
     # cyan "Mais, c'est extraordinaire !" with vpunch
-    cyan "But, it is extraordinary!" with vpunch
+    cyan "It's extraordinary!" with vpunch
 
 # game/chap/chap3.rpy:139
 translate english chap3_2_ce9c4c50:
 
     # cyan "Je ne m'attendais pas à présenter une perle rare dans mon émission !"
-    cyan "I didn't expect to present such a rare gem on my show!"
+    cyan "I didn't expect to show such a rare gem on my show!"
 
 # game/chap/chap3.rpy:140
 translate english chap3_2_c9d85a94:
 
     # cyan "Tu as bien mérité ta récompense, voici la boule Cyan. Je compte sur toi pour me la rendre au plus vite car Madame Arc-en-Ciel ne voit pas toujours d'un très bon oeil ce genre d'arrangement."
-    cyan "You have earned your reward, here is the Cyan ball. I trust you to give it back to me as soon as possible, because Lady Rainbow doesn't always look favourably on this kind of arrangement."
+    cyan "You've earned your reward, here is the Cyan ball. I trust you to give it back to me as soon as possible, because Lady Rainbow doesn't always look favourably on this kind of arrangement."
 
 # game/chap/chap3.rpy:143
 translate english chap3_2_928e0a87:
@@ -484,7 +484,7 @@ translate english chap3_2_03519786:
 translate english chap3_2_3467e263:
 
     # cyan "Je suppose que vous venez de nous voir remettre la boule Cyan à cet enfant et que vous désapprouvez cette démarche."
-    cyan "I assume that you have just seen us hand the Cyan ball to this child and that you disapprove of this approach."
+    cyan "I assume that you have just seen us hand the Cyan ball to this child and that you're disapproving this approach."
 
 # game/chap/chap3.rpy:163
 translate english chap3_2_7cfb8e01:

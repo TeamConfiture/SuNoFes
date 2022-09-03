@@ -8,7 +8,7 @@ translate english end_good_27e286e1:
 translate english end_good_8b36e3a0:
 
     # madame "Un instant ! C'est donc toi, le petit enfant qui sème la zizanie dans ce royaume."
-    madame "Wait a minute! So it is you, the little kid who broke havoc in the kingdom."
+    madame "Wait a minute! So it is you, the little kid who caused havoc in the kingdom."
 
 # game/chap/end_good.rpy:4
 translate english end_good_d57ca607:
@@ -122,7 +122,7 @@ translate english end_good_e04c13da:
 translate english end_good_115725c7:
 
     # "Une fois entrés dans la maison, Madame Arc-en-Ciel découvre mon papa allongé sur le lit  ."
-    "Once inside the house, Lady Rainbow discover daddy, laying on his back, without any strength."
+    "Once inside the house, Lady Rainbow sees daddy, laying on his back, without any strength."
 
 # game/chap/end_good.rpy:23
 translate english end_good_e18bb43b:
@@ -134,19 +134,19 @@ translate english end_good_e18bb43b:
 translate english end_good_4d09c5aa:
 
     # "En voyant la scène, Madame Arc-en-Ciel, qui était connue pour n'exprimer aucun sentiment, autre que la colère, s'effondre et commence à murmurer."
-    "Upon seeing the scene, Lady Rainbow, whom were known to express no emotions, except anger, break down and start whispering."
+    "Upon seeing the scene, Lady Rainbow, whom was known to express no emotions, except anger, breaks down and starts whispering."
 
 # game/chap/end_good.rpy:25
 translate english end_good_8a7152c2:
 
     # madame "Mon vieil ami, Noir… Que s'est-il passé depuis tout ce temps…"
-    madame "My old friend, Noir... What happened all this time..."
+    madame "My old friend, Noir... What was going on all this time..."
 
 # game/chap/end_good.rpy:26
 translate english end_good_b1c6d5e1:
 
     # madame "Est-ce le poids de la noirceur de ce monde qui t'a mis dans cet état-là ?"
-    madame "Was it the weight of the darkness of this world who rendered you in this state?"
+    madame "Was it the weight of the darkness of this world that rendered you in this state?"
 
 # game/chap/end_good.rpy:27
 translate english end_good_b2643785:
@@ -218,7 +218,7 @@ translate english end_good_a284c48d:
 translate english end_good_1237cd71:
 
     # "Noir se tait un instant puis sourit."
-    "Noir stay silent for a moment, then smile."
+    "Noir stays silent for a moment, then smiles."
 
 # game/chap/end_good.rpy:39
 translate english end_good_fe84faf8:
@@ -242,13 +242,13 @@ translate english end_good_6027705d:
 translate english end_good_9c867868:
 
     # noir "Peux-tu me laisser un instant avec Madame Arc-en-Ciel ? J'aimerais discuter avec elle."
-    noir "Can you give me an instant with Lady Rainbow? I would like to exchange with her."
+    noir "Can you give me an instant with Lady Rainbow? I would like to talk with her."
 
 # game/chap/end_good.rpy:43
 translate english end_good_730522ba:
 
     # noir "En attendant, tu pourrais me ramener des fleurs ?"
-    noir "Meanwhile, can you bring me some flowers?"
+    noir "In the meantime, can you fetch me some flowers?"
 
 # game/chap/end_good.rpy:44
 translate english end_good_74769f65:
@@ -260,7 +260,7 @@ translate english end_good_74769f65:
 translate english end_good_82472746:
 
     # "Je m'éloigne de lui et de Madame Arc-en-Ciel."
-    "I move away from him Lady Rainbow."
+    "I move away from him and Lady Rainbow."
 
 # game/chap/end_good.rpy:46
 translate english end_good_ec2e8b57:
@@ -290,19 +290,19 @@ translate english end_good_38c56ff0:
 translate english end_good_3e26da1f:
 
     # noir "Ne lui en tiens pas rigueur. L'enfant est encore jeune…"
-    noir "Don't hold it against him. He is still young..."
+    noir "Don't be angry. The kid is still young..."
 
 # game/chap/end_good.rpy:51
 translate english end_good_53f7de0f:
 
     # madame "Montrez mes boules de cristal à quelqu'un qui ne peut voir… C'est insensé."
-    madame "Show my crystal balls to someone that can not see... It is nonsense."
+    madame "Showing my crystal balls to someone that can not see... It is nonsense."
 
 # game/chap/end_good.rpy:52
 translate english end_good_365b2c1a:
 
     # "Madame Arc-en-Ciel pose sa main au niveau des yeux de Noir."
-    "Lady Rainbow put her hand on Noir's eyes."
+    "Lady Rainbow puts her hand on Noir's eyes."
 
 # game/chap/end_good.rpy:53
 translate english end_good_4b02e1ec:
@@ -320,7 +320,7 @@ translate english end_good_4d079eed:
 translate english end_good_b151c6b8:
 
     # "Madame Arc-en-Ciel émet une lumière et concentre cette énergie sur Noir."
-    "Lady Rainbow emit a light and focus this energy on Noir."
+    "Lady Rainbow emits a light and focuses this energy on Noir."
 
 # game/chap/end_good.rpy:56
 translate english end_good_8f94ed5f:
@@ -332,7 +332,7 @@ translate english end_good_8f94ed5f:
 translate english end_good_894a5c6c:
 
     # noir "Que… Que se passe-t-il ? Je sens comme une force revenir en moi."
-    noir "What... What is happeing? I feel as if strenght is coming back to me."
+    noir "What... What is happeing? I feel as if strength is coming back to me."
 
 # game/chap/end_good.rpy:58
 translate english end_good_177dfd4c:
@@ -344,19 +344,19 @@ translate english end_good_177dfd4c:
 translate english end_good_39963c7b:
 
     # "Son bandeau tombe et révèle ses yeux… arc-en-ciel."
-    "His blindfold fall and reveal his eyes... his rainbow eyes."
+    "His blindfold falls and reveals his eyes... his rainbow eyes."
 
 # game/chap/end_good.rpy:60
 translate english end_good_450563ab:
 
     # "Noir se lève."
-    "Noir stand up."
+    "Noir stands up."
 
 # game/chap/end_good.rpy:61
 translate english end_good_c78fe4aa:
 
     # noir "Je… Merci… Merci de m'avoir guéri."
-    noir "I... Thanks you... Thanks you for healing me."
+    noir "I... Thank you... Thank you for healing me."
 
 # game/chap/end_good.rpy:62
 translate english end_good_e2d88b28_2:
@@ -368,7 +368,7 @@ translate english end_good_e2d88b28_2:
 translate english end_good_0b7449b7:
 
     # noir "Je croyais… Je croyais que tu me haïssais… C'est pour cette raison que tu ne voulais plus me voir."
-    noir "I thought... I thought you hated me... That is was why you did not wanted to see me."
+    noir "I thought... I thought you hated me... That it was the reason why you did not want to see me."
 
 # game/chap/end_good.rpy:64
 translate english end_good_3da0af64:
@@ -380,13 +380,13 @@ translate english end_good_3da0af64:
 translate english end_good_1f511048:
 
     # madame "Je ne t'ai guéri que pour le bien de Couleurs."
-    madame "I only heal you for the wellbeing of Colors."
+    madame "I only healed you for the wellbeing of Colors."
 
 # game/chap/end_good.rpy:66
 translate english end_good_95b4ce95:
 
     # noir "Couleurs n'a pas besoin d'un moins que rien comme moi."
-    noir "Colors do not need a good for nothing like me."
+    noir "Colors does not need a good for nothing like me."
 
 # game/chap/end_good.rpy:67
 translate english end_good_3cf358fd:
@@ -410,7 +410,7 @@ translate english end_good_ef3682c3:
 translate english end_good_e863ce86:
 
     # madame "Et moi aussi…"
-    madame "And me too..."
+    madame "And so do I..."
 
 # game/chap/end_good.rpy:71
 translate english end_good_922dbe41:
@@ -434,13 +434,13 @@ translate english end_good_df487e82:
 translate english end_good_ab60b624:
 
     # madame "Tss… Ce n'est pas ce que tu crois. Je suis le soleil qui illumine ce monde et toi, tu es la lune qui le protège de l'obscurité..."
-    madame "Tss... This is not what you think. I am the sun who shine on this world and you, you are the moon that protect it from the darkness..."
+    madame "Tss... This is not what you think. I am the sun that shines on this world and you, you are the moon that protects it from the darkness..."
 
 # game/chap/end_good.rpy:75
 translate english end_good_d48c3636:
 
     # madame "Il était évident qu'il fallait que je te sauve. C'est tout ce que je voulais dire."
-    madame "It was obvious I had to save you. That is all I wanted to say."
+    madame "It is obvious I have to save you. That is all I wanted to say."
 
 # game/chap/end_good.rpy:76
 translate english end_good_49c8734d:
@@ -470,7 +470,7 @@ translate english end_good_cfc0efc8:
 translate english end_good_f62de42d:
 
     # madame "Disons que pour Couleurs, je suis peut-être quelqu'un, mais sans toi, je ne suis rien."
-    madame "Let say that for Colors, I may of some importance, but without you, I am nothing."
+    madame "Let's say that for Colors, I may be of some importance, but without you, I am nothing."
 
 # game/chap/end_good.rpy:81
 translate english end_good_aa5393fa:
@@ -488,7 +488,7 @@ translate english end_good_a42215ad:
 translate english end_good_97ec4305:
 
     # "Noir rit et prend dans ses bras Madame Arc-en-Ciel."
-    "Noir laugh and take Lady Rainbow in his arms."
+    "Noir laughs and takes Lady Rainbow in his arms."
 
 # game/chap/end_good.rpy:84
 translate english end_good_7f295093:

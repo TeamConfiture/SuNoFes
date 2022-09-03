@@ -4,7 +4,7 @@
 translate english chap4_b66fb7fb:
 
     # x "Colchiques dans les prés ! Fleurissent, fleurissent. Colchiques dans les prés ! C'est la fin de l'été."
-    x "Colchicums in the meadows! Blossom, blossom. Colchicums in the meadows! It is the end of summer."
+    x "Crocuses in meadows! Flower, flower. Crocuses in meadows! It's the end of summer."
 
 # game/chap/chap4.rpy:6
 translate english chap4_ffcd45e7:
@@ -22,31 +22,31 @@ translate english chap4_e62a0abd:
 translate english chap4_d15bd2fd:
 
     # x "Ho, ho, il en faut peu pour être heureux, vraiment très peu pour être heureux."
-    x "Ho, ho, Look for the bare necessities, the simple bare necessities."
+    x "Ho, ho, look for the bare necessities, the simple bare necessities."
 
 # game/chap/chap4.rpy:13
 translate english chap4_993f52b4:
 
     # x "Émeraude est satisfaite du nécessaire !"
-    x "Emerald is satisfied with the necessary!"
+    x "Emerald forgets about her worries and her strife!"
 
 # game/chap/chap4.rpy:14
 translate english chap4_3676c636:
 
     # emeraude "Un peu d'eau fraîche et de verdure !"
-    emeraude "Some fresh water and greenery!"
+    emeraude "I mean the bare necessities!"
 
 # game/chap/chap4.rpy:15
 translate english chap4_fcab55d1:
 
     # "Le chat tournoie sur lui-même, faisant répandre l'eau autour de lui."
-    "The cat spins around, throwing water around him."
+    "The cat spins around, throwing water around her."
 
 # game/chap/chap4.rpy:16
 translate english chap4_dffb72f5:
 
     # emeraude "Que nous prodigue la nature. Quelques rayons de miel et de soleil."
-    emeraude "That nature lavishes on us. A few rays of honey and sunshine."
+    emeraude "Old Mother Nature's recipes. That brings the bare necessities of life."
 
 # game/chap/chap4.rpy:18
 translate english chap4_81f39c0c:
@@ -64,7 +64,7 @@ translate english chap4_a085f544:
 translate english chap4_1d3eb7f9:
 
     # emeraude "[player_name] ! Vas-y secoue-toi et danse ! "
-    emeraude "[player_name]! Shake it up and dance! "
+    emeraude "[player_name]! Shut up and dance with me! "
 
 # game/chap/chap4.rpy:24
 translate english chap4_2c55e9f5:
@@ -82,7 +82,7 @@ translate english chap4_1aefcfb6:
 translate english chap4_ab4245ec:
 
     # blanche "Je viens pour récupérer la boule Vert... C'est pour mon papa..."
-    blanche "I've come to get the Green ball... It's for daddy..."
+    blanche "I've come to get the Green ball... It's for Daddy..."
 
 # game/chap/chap4.rpy:30
 translate english chap4_89c74f6c:
@@ -100,37 +100,37 @@ translate english chap4_b44dc52d:
 translate english chap4_b90de8dd:
 
     # emeraude "Moi, je m'appelle Émeraude, gardien de Couleurs."
-    emeraude "Me, my name is Emerald, keeper of Colors."
+    emeraude "Me, my name is Emerald, guardian of Colors."
 
 # game/chap/chap4.rpy:33
 translate english chap4_c1ad824d:
 
     # emeraude "Boule de Cristal, du pareil au même."
-    emeraude "Crystal Ball, same old, same old."
+    emeraude "Crystal Ball, it's all the same."
 
 # game/chap/chap4.rpy:34
 translate english chap4_b90de8dd_1:
 
     # emeraude "Moi, je m'appelle Émeraude, gardien de Couleurs."
-    emeraude "Me, my name is Emerald, keeper of Colors."
+    emeraude "Me, my name is Emerald, guardian of Colors."
 
 # game/chap/chap4.rpy:35
 translate english chap4_963d7b0c:
 
     # emeraude "Quand je rêve de Madame Arc-en-Ciel, c'est Émeraude qui saigne."
-    emeraude "When I dream of Lady Rainbow, it is Emerald that bleeds."
+    emeraude "When I dream of Lady Rainbow, it's Emerald who has to bleed."
 
 # game/chap/chap4.rpy:37
 translate english chap4_3a29f2a2:
 
     # blanche "J'ai l'impression que tout ce que tu dis, ce sont des paroles de différentes chansons."
-    blanche "I feel like everything you say is a lyric from different songs."
+    blanche "I feel like everything you say is lyrics from different songs."
 
 # game/chap/chap4.rpy:39
 translate english chap4_c0fb0c7c:
 
     # emeraude "C'est pas ma faute, et quand je donne ma langue au chat, je vois les autres..."
-    emeraude "It's not my fault, and when I give my tongue to the cat, I see the others..."
+    emeraude "It's not my fault, and when I'm ready to give up, I see the others..."
 
 # game/chap/chap4.rpy:40
 translate english chap4_08bae53c:
@@ -160,25 +160,25 @@ translate english chap4_8e3c7cc5:
 translate english chap4_57146cec:
 
     # blanche "Mais, s'il te plaît, juste pour une nuit, pour mon papa. C'est ma mission."
-    blanche "But please, just for one night, for daddy. This is my mission."
+    blanche "But please, just for one night, for Daddy. This is my mission."
 
 # game/chap/chap4.rpy:51
 translate english chap4_2b2217b5:
 
     # emeraude "Ma mission n'a qu'une seule façon ! De tourner le monde ! De le changer !"
-    emeraude "My mission has only one way! To turn the world! To change it!"
+    emeraude "My mission does not have just one way! To change the world! To change it!"
 
 # game/chap/chap4.rpy:53
 translate english chap4_8b92d494:
 
     # blanche "S'il te plaît, aide-moi !"
-    blanche "Please, help me !"
+    blanche "Please, help me!"
 
 # game/chap/chap4.rpy:54
 translate english chap4_f5479c4c:
 
     # blanche "Mon papa a aussi une mission de la part de Madame Arc-en-Ciel !"
-    blanche "Daddy also has a mission from Lady Rainbow !"
+    blanche "Daddy also has a mission from Lady Rainbow!"
 
 # game/chap/chap4.rpy:56
 translate english chap4_f3ef737b:
@@ -208,7 +208,7 @@ translate english chap4_cdc5d5d5:
 translate english chap4_35266203:
 
     # blanche "Zut, comment je peux convaincre Émeraude..."
-    blanche "Damn, how can I convince Emerald..."
+    blanche "Shoot, how can I convince Emerald..."
 
 # game/chap/chap4.rpy:70
 translate english chap4_59d421ec:
@@ -220,7 +220,7 @@ translate english chap4_59d421ec:
 translate english chap4_65acc5bf:
 
     # emeraude "Est-ce que tu m'entends ? Hé ho !"
-    emeraude "Can you hear me? Hello!"
+    emeraude "Do you hear me? Hey ho!"
 
 # game/chap/chap4.rpy:74
 translate english chap4_e7a24442:
@@ -232,7 +232,7 @@ translate english chap4_e7a24442:
 translate english chap4_7f51f874:
 
     # blanche "Il faut que je récupère cette boule de cristal rapidement !"
-    blanche "I need to get that crystal ball back quickly!"
+    blanche "I need to get that crystal ball quickly!"
 
 # game/chap/chap4.rpy:76
 translate english chap4_3b72ba6a:
@@ -244,7 +244,7 @@ translate english chap4_3b72ba6a:
 translate english chap4_1ca58c57:
 
     # emeraude "J'ai pas le teeemps !!! Mon espriiiiiit glisse ailleurs !"
-    emeraude "I don't have the tiiime!!! My miiiiiind goes elsewhere!"
+    emeraude "I have no tiiime!!! My miiiiiind is slipping away!"
 
 # game/chap/chap4.rpy:80
 translate english chap4_629ff71e:
@@ -268,7 +268,7 @@ translate english chap4_a9cce52f:
 translate english chap4_8fdc833b:
 
     # "Cela a marché avec Violet, peut-être que ça marchera aussi avec Émeraude."
-    "It worked with Violet, maybe it will work with Emerald too."
+    "It worked with Violet, maybe it would work with Emerald too."
 
 # game/chap/chap4.rpy:87
 translate english chap4_1b891cba:
@@ -280,13 +280,13 @@ translate english chap4_1b891cba:
 translate english chap4_617e10f6:
 
     # emeraude "[player_name] a les yeux revolver. [player_name] a le regard qui tue."
-    emeraude "[player_name] has gunshot eyes. [player_name] has the killer look."
+    emeraude "[player_name] has eyes like revolver. [player_name] has a look that kill."
 
 # game/chap/chap4.rpy:89
 translate english chap4_b4852d3c:
 
     # emeraude "[player_name] m'a touchée, c'est foutu."
-    emeraude "[player_name] hit me, it's over."
+    emeraude "[player_name] has hit me, it's over."
 
 # game/chap/chap4.rpy:92
 translate english chap4_efc974dc:
@@ -298,13 +298,13 @@ translate english chap4_efc974dc:
 translate english chap4_4e75c91a:
 
     # blanche "Ce petit bout de terre où vit encore mon père ?"
-    blanche "This little piece of land where my father still lives?"
+    blanche "This little piece of land where my dad live?"
 
 # game/chap/chap4.rpy:96
 translate english chap4_ca506be7:
 
     # blanche "Comment pourrais-je faire pour récupérer la boule de cristal ?"
-    blanche "How can I get the crystal ball back?"
+    blanche "How can I get the crystal ball?"
 
 # game/chap/chap4.rpy:98
 translate english chap4_5321fb41:
@@ -328,7 +328,7 @@ translate english chap4_d3e90d4e:
 translate english chap4_8596a4d0:
 
     # emeraude "À l'aide ! J'ai besoin de quelqu'un ! À l'aide ! Pas n'importe qui ! À l'aide ! Tu sais, j'ai besoin de [player_name] !"
-    emeraude "Help me! I need someone! Help me! Not just anyone! Help me! You know, I need [player_name]!"
+    emeraude "Help! I need somebody! Help! Not just anybody! Help! You know, I need [player_name]!"
 
 # game/chap/chap4.rpy:105
 translate english chap4_ccfade29:
@@ -352,25 +352,25 @@ translate english chap4_f190bacf:
 translate english chap4_02170526:
 
     # emeraude "Il existe un memory virtuel et différent."
-    emeraude "There is a virtual and different mémoire."
+    emeraude "There is a memory, that is virtual and different."
 
 # game/chap/chap4.rpy:110
 translate english chap4_4cea7a09:
 
     # emeraude "Où chaque seconde fait de nous des combattants."
-    emeraude "Where every second makes us fighters."
+    emeraude "It can be so cold, make us stand up for what's right."
 
 # game/chap/chap4.rpy:111
 translate english chap4_5a976fa2:
 
     # emeraude "Notre seul espoir est de tout réassocier..."
-    emeraude "Our only hope is to reassociate everything..."
+    emeraude "Our hopes through our life, is if we reassociate everything..."
 
 # game/chap/chap4.rpy:113
 translate english chap4_11694c01:
 
     # blanche "Un memory..."
-    blanche "A mémoire..."
+    blanche "A memory..."
 
 # game/chap/chap4.rpy:115
 translate english chap4_2e30cc58:
@@ -388,7 +388,7 @@ translate english memory_game_timeout_c039232f:
 translate english chap4_2_3654fa1b:
 
     # emeraude "Yeah ! Bravo ! Oui, viens danser ! Oui, c'est la vie, la la la la la !"
-    emeraude "Yeah! Bravo! Yes, come and dance! Yes, that's life, la la la la la !"
+    emeraude "Yeah! Bravo! We're gonna laugh, we're gonna dance! Live our life, la la la la la !"
 
 # game/chap/chap4.rpy:125
 translate english chap4_2_a293dd4f:
@@ -424,19 +424,19 @@ translate english chap4_2_5af5a027:
 translate english chap4_2_5a6a190b:
 
     # emeraude "Libérée, délivrée, je n'ai plus de boules à m'occuper, libérée, délivrée, c'est décidé, c'est fini !"
-    emeraude "Liberated, delivered, I have no more balls to worry about, liberated, delivered, it's decided, it's over!"
+    emeraude "Let it go, let it go, can't hold this ball back anymore, let it go, let it go, turn away and slam the door!"
 
 # game/chap/chap4.rpy:135
 translate english chap4_2_6c2a6b6a:
 
     # emeraude "J'ai laissé mon contrat en été, perdu avec [player_name] !"
-    emeraude "I left my contract in the summer, lost with [player_name]!"
+    emeraude "I don't care what Lady Rainbow is going to say, let [player_name] go!"
 
 # game/chap/chap4.rpy:136
 translate english chap4_2_3e845d78:
 
     # emeraude "La boule Vert est pour moi le prix de la liberté !"
-    emeraude "The Green ball is for me the price of freedom!"
+    emeraude "The Green ball never bothered me anyway!"
 
 # game/chap/chap4.rpy:138
 translate english chap4_2_79aebb2e:
@@ -526,19 +526,19 @@ translate english chap4_2_b0c08729:
 translate english chap4_2_3c0ebba9:
 
     # "Emeraude les voit s'en aller."
-    "Emerald watches them go."
+    "Emerald sees them go away."
 
 # game/chap/chap4.rpy:160
 translate english chap4_2_36adda2c:
 
     # emeraude "Minuit se lève, en haut des tours, les voix se taisent et tout devient aveugle et sourd, la nuit camoufle, pour quelques heures, la zone [player_name] de ces nuisibles visiteurs !"
-    emeraude "Midnight dawns, on top of the towers, the voices fall silent and everything becomes blind and deaf, the night camouflages, for a few hours, the area [player_name] of these nuisance visitors!"
+    emeraude "As midnight dawns, and kills the day, the make believe becomes a hush and fades away, it's now so dark, that no one sees, [player_name] goes far from them, the misery!"
 
 translate english strings:
 
     # game/chap/chap4.rpy:67
     old "Tirer une de ses oreilles et lui crier de dessus d'arrêter de chanter"
-    new "Pull one of his ears and shout at him to stop singing"
+    new "Pull one of her ears and shout at her to stop singing"
 
     # game/chap/chap4.rpy:67
     old "Faire les yeux du Chat Potté [encore]"

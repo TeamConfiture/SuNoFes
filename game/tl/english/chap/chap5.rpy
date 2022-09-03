@@ -16,13 +16,13 @@ translate english chap5_b7a1fd16:
 translate english chap5_25390352:
 
     # jaune "Zzzzz. Mais Piou, tu vois bien que je dors ! Zzzzz."
-    jaune "Zzzzz. But Chirp, I'm sleeping you see! Zzzzz."
+    jaune "Zzzzz. But Chirp, I'm sleeping! Zzzzz."
 
 # game/chap/chap5.rpy:6
 translate english chap5_ed9f3123:
 
     # piou "Quel vieux celui-là alors... Je vais encore devoir traire les vaches tout seul."
-    piou "What an olden ths one... Je vais encore devoir traire les vaches tout seul."
+    piou "What an olden this one... I'll have to milk the cows alone again."
 
 # game/chap/chap5.rpy:7
 translate english chap5_1608f31e:
@@ -52,31 +52,31 @@ translate english chap5_07e273d5:
 translate english chap5_13a2a18b:
 
     # blanche "Je peux te prendre dans mes bras ?"
-    blanche "Can I lift you up?"
+    blanche "Can I hug you?"
 
 # game/chap/chap5.rpy:12
 translate english chap5_8398b0af:
 
     # piou "Eh oh, t'es qui toi d'abord ?"
-    piou "Hey ho, for starters, who are you?"
+    piou "Hey ho, first, who are you?"
 
 # game/chap/chap5.rpy:13
 translate english chap5_5111f0fe:
 
     # piou "On ne me prend pas dans les bras comme ça !"
-    piou "Nobody lift me in such manner!"
+    piou "Nobody hugs me in such manner!"
 
 # game/chap/chap5.rpy:14
 translate english chap5_155730d2:
 
     # piou "Je suis l'un des super fromagers de Couleurs !"
-    piou "I'm one of the cheesemonger of Colors!"
+    piou "I'm one of the super cheesemongers of Colors!"
 
 # game/chap/chap5.rpy:15
 translate english chap5_9ff1dd05:
 
     # blanche "Un poussin qui parle et qui fait du fromage ?! Après les chats qui parlent, les poussins fromagers ?"
-    blanche "A talking chick that make cheese?! After the talking cats, the cheesemongers chicks?"
+    blanche "A talking chick that makes cheese?! After the talking cats, the cheesemongers chicks?"
 
 # game/chap/chap5.rpy:16
 translate english chap5_7a4e3a22:
@@ -88,43 +88,43 @@ translate english chap5_7a4e3a22:
 translate english chap5_ef207bfd:
 
     # piou "Bien sûr, nous sommes fromagers de père en fils depuis 1848. Je suis accompagné par mon fidèle lieutenant Jaune !"
-    piou "Of course! We are cheesemongers from generations since 1848. And I'm supported by my faithful lieutenant Yellow!"
+    piou "Of course! We are cheesemongers from generations since 1848. I'm supported by my faithful lieutenant Yellow!"
 
 # game/chap/chap5.rpy:18
 translate english chap5_d5cbc989:
 
     # "Le poussin fromager désigne le chat endormi au fond de la grange."
-    "The cheesemonger chick point at the sleeping cat in the back of the barn."
+    "The cheesemonger chick points at the sleeping cat in the back of the barn."
 
 # game/chap/chap5.rpy:19
 translate english chap5_95f0905a:
 
     # piou "Le pauvre, il arrive bientôt à la fin de sa neuvième vie..."
-    piou "Poor one, he's almost at the end of his ninth live..."
+    piou "Poor one, he's almost at the end of his ninth life..."
 
 # game/chap/chap5.rpy:20
 translate english chap5_ed303f99:
 
     # piou "Maintenant, il passe son temps à dormir. Je dois me débrouiller tout seul pour traire les vaches, fabriquer les fromages, chasser les souris et tenir la fromagerie."
-    piou "Now, he spend all his time sleeping. I have to get by myself to milk the cows, make cheese, scare off the bats and take care of the cheese factory."
+    piou "Now, he spends all his time sleeping. I have to get by myself to milk the cows, make cheese, scare off the rats and take care of the cheese factory."
 
 # game/chap/chap5.rpy:21
 translate english chap5_33276fb1:
 
     # piou "Je parle, je parle mais, qu'est-ce qui t'amène ici ?"
-    piou "I talk and I talk, but what bring you here?"
+    piou "I talk and I talk, but what brings you here?"
 
 # game/chap/chap5.rpy:22
 translate english chap5_782f4d83:
 
     # piou "Tu veux nous acheter un fromage ?"
-    piou "Do you want to buy us some cheese?"
+    piou "Do you want to buy some cheese?"
 
 # game/chap/chap5.rpy:23
 translate english chap5_9af012d3:
 
     # blanche "Oh non, non du tout ! Je viens ici pour mon papa."
-    blanche "Oh no, no at all! I came here for daddy."
+    blanche "Oh no, no at all! I came here for Daddy."
 
 # game/chap/chap5.rpy:24
 translate english chap5_e8f86753:
@@ -136,7 +136,7 @@ translate english chap5_e8f86753:
 translate english chap5_0d41aee7:
 
     # piou "Hum... Et que comptes-tu faire ?"
-    piou "Hum... What do you intend to do?"
+    piou "Hum... What are you going to do?"
 
 # game/chap/chap5.rpy:28
 translate english chap5_10c9a2d0:
@@ -148,13 +148,13 @@ translate english chap5_10c9a2d0:
 translate english chap5_48dfa6c7:
 
     # piou "Non, mais tu te prends pour qui ?! C'est toi l'étranger et tu te permets de me critiquer sur mes propres terres ?! Tu vas le regretter !"
-    piou "Who do you think you are?! You're the stranger and you dare question me on own land?! You will regret it!"
+    piou "Who do you think you are?! You're the stranger and you dare question me on my own land?! You will regret it!"
 
 # game/chap/chap5.rpy:30
 translate english chap5_989a411a:
 
     # blanche "Je dois vraiment récupérer cette boule pour mon papa ! C'est important !"
-    blanche "I really need to get this ball for daddy! It's important!"
+    blanche "I really need to get this ball for Daddy! It's important!"
 
 # game/chap/chap5.rpy:32
 translate english chap5_53c1e93c:
@@ -196,7 +196,7 @@ translate english chap5_6f1b65aa:
 translate english chap5_b4923cdb:
 
     # piou "D'abord, il faut mon accord mais aussi celui de Jaune et ce n'est pas chose aisée."
-    piou "First, you'll need my accord but also Yellow's and it is not an easy task to get him's."
+    piou "First, you'll need my agreement but also Yellow's and it is not an easy task to get him's."
 
 # game/chap/chap5.rpy:39
 translate english chap5_daba463c:
@@ -208,19 +208,19 @@ translate english chap5_daba463c:
 translate english chap5_5287aac5:
 
     # piou "Alors si d'aventure j'envisageais de donner mon autorisation, Jaune ne céderait pas un seul morceau de cette boule, tu m'entends ?"
-    piou "So, even if I were to give my permission, Yellow would not yield a single piece of this ball, do you hear me?"
+    piou "So, even if I were to give my permission, Yellow would not yield a single piece of this ball, understood?"
 
 # game/chap/chap5.rpy:41
 translate english chap5_d482aac3:
 
     # blanche "Moi aussi, je n'ai pas connu ma mère !"
-    blanche "I too, I didn't know my mommy!"
+    blanche "Me too, I didn't know Mommy!"
 
 # game/chap/chap5.rpy:42
 translate english chap5_c468ad03:
 
     # blanche "Mais, ce n'est pas grave car mon papa m'aime beaucoup !"
-    blanche "But, but no matters because daddy love me very much!"
+    blanche "But no matters because Daddy loves me very much!"
 
 # game/chap/chap5.rpy:43
 translate english chap5_06fbc2c2:
@@ -232,13 +232,13 @@ translate english chap5_06fbc2c2:
 translate english chap5_ff08d967:
 
     # blanche "Même si parfois, il me dit qu'il rêverait de revoir Maman et qu'ils s'occupent de moi tous les deux comme une vraie famille."
-    blanche "Even if sometimes, he told me he dreams to see mommy and that they would both raise me together like a true family."
+    blanche "Even if sometimes, he told me he dreamed to see Mommy and that they would both raise me together like a family."
 
 # game/chap/chap5.rpy:45
 translate english chap5_29bab917:
 
     # blanche "Je sais juste qu'elle s'appelle Ciel et que mon papa pense souvent à elle."
-    blanche "I only know that she's called Sky and that daddy often think of her."
+    blanche "I only know that her name is Sky and that Daddy often thinks of her."
 
 # game/chap/chap5.rpy:46
 translate english chap5_e3e7448d:
@@ -250,7 +250,7 @@ translate english chap5_e3e7448d:
 translate english chap5_ee437499:
 
     # blanche "Moi, j'aimerais juste faire une surprise à mon papa !"
-    blanche "Me, I only wish to surprise daddy!"
+    blanche "My only wish is to surprise Daddy!"
 
 # game/chap/chap5.rpy:48
 translate english chap5_31efcec5:
@@ -286,7 +286,7 @@ translate english chap5_4cca165d:
 translate english chap5_cbc3d15c:
 
     # piou "Ici, c'est le coin cuisine."
-    piou "Here, is the kitchen."
+    piou "Here is the kitchen."
 
 # game/chap/chap5.rpy:54
 translate english chap5_5a51ec6b:
@@ -304,7 +304,7 @@ translate english chap5_e46b1b89:
 translate english chap5_b0e7d0a0:
 
     # piou "C'est le privilège d'avoir la responsabilité de la fromagerie !"
-    piou "It's the perks of being responsible of the cheese factory!"
+    piou "It's the perks of being in charge of the cheese factory!"
 
 # game/chap/chap5.rpy:57
 translate english chap5_b7694d24:
@@ -334,13 +334,13 @@ translate english chap5_c367278c:
 translate english chap5_07ce355a:
 
     # "Piou me regarde."
-    "Chirp look at me."
+    "Chirp is looking at me."
 
 # game/chap/chap5.rpy:62
 translate english chap5_8529bab5:
 
     # piou "Dis... Tu ne veux pas m'aider ? Je ne suis pas capable de faire la différence entre du Comté, du Gruyère, du Cantal, du Salers, du Beaufort ou de l'Abondance, d'habitude c'est Jaune qui s'en occupe."
-    piou "Say... Don't you want to help me? I can't make up the differences between Comté, Gruyère, Cantal, Salers, Beaufort or Abondance. Yellow usually take care of it."
+    piou "Tell me... Can you help me? I can't make up the differences between Comté, Gruyère, Cantal, Salers, Beaufort or Abondance. Yellow usually takes care of it."
 
 # game/chap/chap5.rpy:63
 translate english chap5_5464dfa5:
@@ -364,7 +364,7 @@ translate english chap5_88b26d38:
 translate english chap5_30e28ff5:
 
     # blanche "Avec plaisir. À propos de la boule..."
-    blanche "With pleasure. About the ball..."
+    blanche "You're welcome. About the ball..."
 
 # game/chap/chap5.rpy:73
 translate english chap5_ce0afd58:
@@ -388,25 +388,25 @@ translate english chap5_5bcab5a7:
 translate english chap5_030daf5b:
 
     # piou "Tu vas un peu vite en affaires, je ne te dois rien du tout. Tu es libre de partir quand tu veux, je ne lâcherai pas cette boule."
-    piou "You're going about your business a bit fast, I don't owe you anything. You're free to leave and go whenever you want, I'll not let this ball go."
+    piou "You're going a little fast in business, I don't owe you anything. You're free to leave and go whenever you want, I'll not let this ball go."
 
 # game/chap/chap5.rpy:79
 translate english chap5_92297768:
 
     # blanche "Mais, Piou…"
-    blanche "But, Chirp..."
+    blanche "But Chirp..."
 
 # game/chap/chap5.rpy:80
 translate english chap5_ca5f2fd8:
 
     # piou "Ce n'est pas la peine, ma décision est définitive."
-    piou "Don't bother, my decision is final."
+    piou "Don't bother me, my decision is final."
 
 # game/chap/chap5.rpy:81
 translate english chap5_4257a23e:
 
     # blanche "Mais... Mon papa est très malade. Il ne va pas bien du tout..."
-    blanche "But... My daddy is very sick. He's not fine at all..."
+    blanche "But... Daddy is very sick. He's not fine at all..."
 
 # game/chap/chap5.rpy:82
 translate english chap5_35a3c8e4:
@@ -418,7 +418,7 @@ translate english chap5_35a3c8e4:
 translate english chap5_980e6698:
 
     # piou "Je comprends mieux..."
-    piou "I get it..."
+    piou "I get it now..."
 
 # game/chap/chap5.rpy:84
 translate english chap5_81dd3c33:
@@ -436,7 +436,7 @@ translate english chap5_6b52fcd3:
 translate english chap5_b6631087:
 
     # piou "J'ai bien peur que ça soit impossible pour le moment."
-    piou "I'm afraid that is impossible right now."
+    piou "I'm afraid that's impossible right now."
 
 # game/chap/chap5.rpy:88
 translate english chap5_6456a0f5:
@@ -448,13 +448,13 @@ translate english chap5_6456a0f5:
 translate english chap5_924e38da:
 
     # piou "Je ne peux rien dire sans son accord, sinon il rentrerait dans une colère noire. J'espère que tu me comprends..."
-    piou "I can't say anything without his accord, or else he'll be enraged. I hope you understand..."
+    piou "I can't say anything without his agreement, otherwise he'll be enraged. I hope you understand..."
 
 # game/chap/chap5.rpy:90
 translate english chap5_38aad055:
 
     # blanche "On ne peut vraiment pas le réveiller maintenant ?"
-    blanche "We really can not wake him up now?"
+    blanche "We really can't wake him up now?"
 
 # game/chap/chap5.rpy:91
 translate english chap5_75a85096:
@@ -532,25 +532,25 @@ translate english chap5_7bc367c8:
 translate english chap5_f9a7de44:
 
     # "Piou se met à pleurer."
-    "Chrip start tearing up."
+    "Chirp starts tearing up."
 
 # game/chap/chap5.rpy:106
 translate english chap5_eb5fc50b:
 
     # piou "On ne va pas en faire tout un fromage mais... Je l'ai vu s'évaporer dans sa poussière jaune..."
-    piou "No need to make a big cheese about it but... I saw him disappear in a cloud of yellow dust..."
+    piou "We won't make a big deal out of it but... I saw him disappear in a cloud of yellow dust..."
 
 # game/chap/chap5.rpy:107
 translate english chap5_b858fc8f:
 
     # piou "Je veux dire... Il s'est petit à petit transformé en poussière jaune avant de rejoindre les étoiles..."
-    piou "I mean... He transformed little by little in yellow dust before going up to the stars..."
+    piou "I mean... He slowly turned into yellow dust before going up to the stars..."
 
 # game/chap/chap5.rpy:108
 translate english chap5_21345011:
 
     # piou "Je sais qu'il en sera de même pour tout le monde et même pour Jaune d'ici peu de temps."
-    piou "I know it will be the same for everyone and for Yellow too soon enough."
+    piou "I know it will be the same for everyone and for Yellow too before long."
 
 # game/chap/chap5.rpy:109
 translate english chap5_5cc95096:
@@ -574,7 +574,7 @@ translate english chap5_6cf143ad:
 translate english chap5_350341be:
 
     # piou "Tiens, prends cette boule, fais honneur à ton père et reviens vite."
-    piou "Here, take  this ball, honor you dad and come back quickly."
+    piou "Here, take this ball, honor you dad and come back quickly."
 
 # game/chap/chap5.rpy:113
 translate english chap5_4d1c0175:
@@ -586,7 +586,7 @@ translate english chap5_4d1c0175:
 translate english chap5_3b76b5ab:
 
     # piou "Maintenant, laisse-moi tranquille ! J'ai besoin de prendre l'air."
-    piou "Leave me alone now! I need to take a breather."
+    piou "Leave me alone now! I need to take a breath."
 
 # game/chap/chap5.rpy:115
 translate english chap5_77eaf77c:
@@ -616,7 +616,7 @@ translate english chap5_6df74938:
 translate english chap5_ad656f06:
 
     # grosso "Tu veux bien arrêter de chouiner et nous expliquer ce qui te prend de lui donner ta boule ?!"
-    grosso "Could you please stop whining and explain why the rainbow did you give him your ball?!"
+    grosso "Could you please stop whining and explain why the rainbow did you give them your ball?!"
 
 # game/chap/chap5.rpy:120
 translate english chap5_6a2b5c4b:
@@ -628,7 +628,7 @@ translate english chap5_6a2b5c4b:
 translate english chap5_0b9e216f:
 
     # piou "Il… Il… Il veut faire plaisir à son père une dernière fois... Sniff... Sniff..."
-    piou "He... He... He want to please his dad one last time... Sniff... Sniff..."
+    piou "They... They... They want to please their dad one last time... Sob... Sob..."
 
 # game/chap/chap5.rpy:122
 translate english chap5_636a4f97:
@@ -652,7 +652,7 @@ translate english chap5_2f085819:
 translate english chap5_6f865754:
 
     # maigrichon "Tu sais où est parti l'enfant ?!"
-    maigrichon "Do you know where the kid went ?!"
+    maigrichon "Do you know where the kid went?!"
 
 # game/chap/chap5.rpy:126
 translate english chap5_f392fb14:
@@ -664,7 +664,7 @@ translate english chap5_f392fb14:
 translate english chap5_9948cf71:
 
     # maigrichon "Eh oh, je te parle !"
-    maigrichon "Hey ho, I'm talking!"
+    maigrichon "Hey ho, I'm talking to you!"
 
 # game/chap/chap5.rpy:128
 translate english chap5_f392fb14_1:
@@ -714,7 +714,7 @@ translate english strings:
 
     # game/chap/chap5.rpy:75
     old "Lui rappeler qu'il doit donner sa boule"
-    new "Remind him he have to give his ball"
+    new "Remind him he has to give his ball"
 
     # game/chap/chap5.rpy:75
     old "Lui redemander gentiment sa boule"

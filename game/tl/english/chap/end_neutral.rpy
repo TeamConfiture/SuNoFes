@@ -22,7 +22,7 @@ translate english end_neutral_72120596:
 translate english end_neutral_40218d66:
 
     # "J'ai couru comme j'ai pu à la maison."
-    "I ran as fight as I can toward the house."
+    "I ran as fast as I could toward the house."
 
 # game/chap/end_neutral.rpy:6
 translate english end_neutral_20de3f42:
@@ -52,7 +52,7 @@ translate english end_neutral_47d2125f:
 translate english end_neutral_95a09ff6:
 
     # noir "Cela va perturber l'équilibre du royaume. Madame Arc-en-Ciel ne sera pas contente."
-    noir "This will disrupt balance in the kingdom. Lady Rainbow will no be happy about it."
+    noir "This will disrupt the balance of the kingdom. Lady Rainbow will not be happy about it."
 
 # game/chap/end_neutral.rpy:11
 translate english end_neutral_025f2de6:
@@ -70,13 +70,13 @@ translate english end_neutral_f8484d27:
 translate english end_neutral_1dfae5f9:
 
     # noir "On risque d'avoir des ennuis si Madame Arc-en-Ciel découvre que tu as volé ses boules."
-    noir "We risk trouble if Lady Rainbow discover that you stole these balls."
+    noir "We risk trouble if Lady Rainbow discovers that you stole these balls."
 
 # game/chap/end_neutral.rpy:14
 translate english end_neutral_47806ce0:
 
     # blanche "Mais, regarde Papa ! Ces couleurs sont jolies, non ? Tu… Tu n'aimes pas mon cadeau ?"
-    blanche "But, look Daddy! These colors are prety, aren't they? Don't... Dont' you like my present?"
+    blanche "But, look Daddy! These colors are pretty, aren't they? Don't... Don't you like my present?"
 
 # game/chap/end_neutral.rpy:15
 translate english end_neutral_13bd8b82:
@@ -94,25 +94,25 @@ translate english end_neutral_488b87e4:
 translate english end_neutral_bc33fed0:
 
     # blanche "Je voulais seulement que tu ailles mieux en voyant ces jolies couleurs !!!"
-    blanche "I only wanted you to be feel better by showing you these beautiful colors!!!"
+    blanche "I only wanted you to feel better by showing you these beautiful colors!!!"
 
 # game/chap/end_neutral.rpy:18
 translate english end_neutral_96df8bff:
 
     # blanche "Mais, tu n'y fais pas du tout attention. Madame Arc-en-Ciel, par-ci, Madame Arc-en-Ciel, par là ! Je le sais ! Les gardiens de Couleurs n'ont pas arrêté de me dire que c'était dangereux ce que je faisais !"
-    blanche "But, you do no pay it attention at all. Lady Rainbow this and that! I know! The Guardiens of Colors didn't stop to warn me that I was doing something dangerous!"
+    blanche "But, you do not even care about it. Lady Rainbow this and that! I know! The Guardians of Colors didn't stop warning me that I was doing something dangerous!"
 
 # game/chap/end_neutral.rpy:19
 translate english end_neutral_e4988cf4:
 
     # blanche "Pourtant... Poutant, j'ai fait tout ça parce que tu es toujours triste, malade et plein d'idées noires."
-    blanche "Despite... Despite it, I made all this because you're always sad, sick and full of dark thoughts."
+    blanche "Despite... Despite it, I did all this because you're always sad, sick and full of dark thoughts."
 
 # game/chap/end_neutral.rpy:20
 translate english end_neutral_a6e14e30:
 
     # blanche "C'est si mal que ça de vouloir voir les couleurs avec toi ? Je pensais qu'en voyant ces jolies choses, tu irais mieux."
-    blanche "Is it so bad to want to see the colors with you? I thought by seeing these pretty things, you would feel better."
+    blanche "Is it so bad to want to see the colors with you? I thought that you would feel better after seeing these pretty things."
 
 # game/chap/end_neutral.rpy:21
 translate english end_neutral_1f7c2863:
@@ -124,13 +124,13 @@ translate english end_neutral_1f7c2863:
 translate english end_neutral_c81cf004:
 
     # noir "Je vais mieux merci…"
-    noir "I am feeling better, thanks you..."
+    noir "I feel better, thank you..."
 
 # game/chap/end_neutral.rpy:24
 translate english end_neutral_5a6c6927:
 
     # "Des particules lumineuses noires apparaissent autour de Noir."
-    "Black particules appears around Noir."
+    "Black particles appear around Noir."
 
 # game/chap/end_neutral.rpy:25
 translate english end_neutral_25f47655:
@@ -154,7 +154,7 @@ translate english end_neutral_31fd0291:
 translate english end_neutral_d2ca849e:
 
     # "Papa sourit et utilise ses dernières forces pour se lever et me prendre dans ses bras."
-    "Daddy smiles and use his last strength to stand up and take me in his arms."
+    "Daddy smiles and musters his last strength to stand up and take me in his arms."
 
 # game/chap/end_neutral.rpy:29
 translate english end_neutral_7969e281:
@@ -172,19 +172,19 @@ translate english end_neutral_e64b0b27:
 translate english end_neutral_25b8d803:
 
     # noir "Même si je perds de plus en plus de luminosité et que je ne deviens qu'une simple ombre qui disparaît à la lumière, sache que j'ai eu une vie merveilleuse."
-    noir "Even if I am losing my brightness and become a simple shadow who disappear in the light, know that I had a wonderful life."
+    noir "Even if I am lose my brightness and become a simple shadow that disappears in the light, know that I had a wonderful life."
 
 # game/chap/end_neutral.rpy:32
 translate english end_neutral_fa542ae6:
 
     # noir "Je ne regrette pas d'avoir vécu à tes côtés."
-    noir "I have no regret to have been able to live by your side."
+    noir "I have no regret to have lived by your side."
 
 # game/chap/end_neutral.rpy:33
 translate english end_neutral_ca59281b:
 
     # "À ces mots, il prend mes mains, les embrasse et les place au niveau de son coeur."
-    "On these words, he take my hands, kiss them and place them on his heart."
+    "After these words, he takes my hands, kisses them and places them on his heart."
 
 # game/chap/end_neutral.rpy:34
 translate english end_neutral_1401006e:
@@ -202,7 +202,7 @@ translate english end_neutral_8f91216d:
 translate english end_neutral_a1167add:
 
     # noir "[player_name], profite de ta vie et ne regrette rien."
-    noir "[player_name], enjoy your life and regret nothing."
+    noir "[player_name], enjoy your life and do not have regrets."
 
 # game/chap/end_neutral.rpy:37
 translate english end_neutral_cb213281:
@@ -214,7 +214,7 @@ translate english end_neutral_cb213281:
 translate english end_neutral_50f2bf2b:
 
     # "Papa pointe mon coeur du bout de son doigt."
-    "Daddy point at my heart with the tip of his finger."
+    "Daddy points at my heart with the tip of his finger."
 
 # game/chap/end_neutral.rpy:39
 translate english end_neutral_de0672d1:
@@ -256,13 +256,13 @@ translate english end_neutral_87f03829:
 translate english end_neutral_f923df05:
 
     # "Le bandeau de Noir tombe, révélant ses yeux arc-en-ciel."
-    "Noir's blindfold fall, revealign his rainbow eyes."
+    "Noir's blindfold falls, revealing his rainbow eyes."
 
 # game/chap/end_neutral.rpy:46
 translate english end_neutral_8162cbaf:
 
     # noir "Merci de m'avoir fait voir l'arc-en-ciel une dernière fois…"
-    noir "Thanks you for showing me the rainbow for a last time..."
+    noir "Thanks you for showing me the rainbow one last time..."
 
 # game/chap/end_neutral.rpy:47
 translate english end_neutral_79521967:

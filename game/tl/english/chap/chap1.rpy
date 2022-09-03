@@ -462,7 +462,7 @@ translate english chap1_2_60c944a4:
 translate english chap1_2_a56099e1:
 
     # "Les gardes parcourent le jardin des violettes et disparaissent par le petit chemin du fond."
-    "The guards rush through the Garden of Violets. After losing sight of Blanche, they vanish in a tiny back alley."
+    "The guards rush through the Garden of Violets and they vanish in a tiny back alley."
 
 translate english strings:
 

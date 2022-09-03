@@ -10,25 +10,25 @@ translate english chap7_c0d57eb5:
 translate english chap7_968cf6b0:
 
     # x "Woosh ! Comme un chat ! Sois plus violent que le cours du torrent !"
-    x "Woosh! Like a cat! Be more violent than the course of the torrent!"
+    x "Woosh! Be a cat! I must be swift as the coursing river!"
 
 # game/chap/chap7.rpy:5
 translate english chap7_a2757113:
 
     # x "Woosh ! Comme un chat ! Sois plus puissant que les ouragans !"
-    x "Woosh! Like a cat! Be stronger than the hurricanes!"
+    x "Woosh! Be a cat! With all the force of a great typhoon!"
 
 # game/chap/chap7.rpy:6
 translate english chap7_f48afdd1:
 
     # x "Woosh ! Comme un chat ! Sois plus ardent que le feu des volcans !"
-    x "Woosh! Like a cat! Be hotter than volcanos' fire!"
+    x "Woosh! Be a cat! With all the strength of a raging fire!"
 
 # game/chap/chap7.rpy:7
 translate english chap7_20b2f0d9:
 
     # x "MIAOU ! Par le pouvoir du prisme Red, transforme-moi !"
-    x "MEOW! By the power of the Rouge prism, transform me!"
+    x "MEOW! By the power of the Red prism, transform me!"
 
 # game/chap/chap7.rpy:8
 translate english chap7_8a2b04fb:
@@ -40,7 +40,7 @@ translate english chap7_8a2b04fb:
 translate english chap7_8bb35cf5:
 
     # x "Miaou… Pourquoi ne suis-je pas plus fort ? Jamais je n'arriverai à battre Jaune en étant comme ça."
-    x "Meow... Why am I not stronger? I never will be able to defeat Yellow like that."
+    x "Meow... Why am I not stronger? I will never be able to defeat Yellow like that."
 
 # game/chap/chap7.rpy:10
 translate english chap7_4a260ee1:
@@ -52,37 +52,37 @@ translate english chap7_4a260ee1:
 translate english chap7_d30869b1:
 
     # x "Qui va là ?! Qui ose perturber l'entraînement de Red ?!"
-    x "Who's there?! Who dare Qui ose disrupt Rouge's training?!"
+    x "Who's there?! Who dares disrupt Rouge's training?!"
 
 # game/chap/chap7.rpy:12
 translate english chap7_91c6bf5e:
 
     # red "Viens te battre ! C'est la guerre !"
-    red "Come to fight! It's war!"
+    red "Fight me! It's war!"
 
 # game/chap/chap7.rpy:13
 translate english chap7_07ecb731:
 
     # blanche " Oh ! Un chat ?! Il se rue vers moi ! Aaaah !"
-    blanche " Oh! A cat?! He dash toward me! Aaaah!"
+    blanche " Oh! A cat?! He dashes toward me! Aaaah!"
 
 # game/chap/chap7.rpy:14
 translate english chap7_33b644c0:
 
     # red "MIAOU ! Oui, la guerre !"
-    red "MEOW! Yes, war!"
+    red "MEOW! In your rear!"
 
 # game/chap/chap7.rpy:15
 translate english chap7_2ec37fd6:
 
     # "Le chat me griffe."
-    "The cat scratch me."
+    "The cat scratches me."
 
 # game/chap/chap7.rpy:16
 translate english chap7_3d7b8871:
 
     # blanche "Aïe ! Aïe ! Mais euh ! Je n'ai rien fait ! Pourquoi tu m'attaques ?"
-    blanche "Ouch! Ouch! Argh ! I haven't done anything! Why are you assaulting me?"
+    blanche "Ouch! Ouch! Argh! I haven't done anything! Why are you assaulting me?"
 
 # game/chap/chap7.rpy:17
 translate english chap7_d0df9958:
@@ -94,7 +94,7 @@ translate english chap7_d0df9958:
 translate english chap7_1f6ad9e1:
 
     # blanche "Mais, je ne veux pas me battre ! Je viens juste ici pour récupérer la dernière boule de cristal : le Red ardent !"
-    blanche "But, I don't want to fight! I come here to get the last ball of color: the burning Rouge!"
+    blanche "But, I don't want to fight! I come here to get the last ball of color: the fiery Red!"
 
 # game/chap/chap7.rpy:19
 translate english chap7_38e0c12d:
@@ -154,13 +154,13 @@ translate english chap7_e9ea8008:
 translate english chap7_f6619920:
 
     # blanche "Bon, c'était plus facile que je le pensais."
-    blanche "Well, it was easier than I thought."
+    blanche "Well, it was easier than I expected."
 
 # game/chap/chap7.rpy:48
 translate english chap7_7a05e509:
 
     # blanche "J'espère que mon papa sera content. Être dans le noir, c'est triste. Lui montrer les couleurs de l'arc-en-ciel va sûrement lui remonter le moral."
-    blanche "I hope daddy will be happy. Being in the dark, it is sad. Showing him the rainbow's colors surely cheer him up."
+    blanche "I hope daddy will be happy. Being in the dark, it is sad. Showing him the rainbow's colors will surely cheer him up."
 
 # game/chap/chap7.rpy:49
 translate english chap7_ca794cd1:
@@ -196,7 +196,7 @@ translate english chap7_08e29f1c:
 translate english chap7_7975484c:
 
     # red "Mais, si c'est pour une nuit pour ensuite être meilleur et lui faire honneur. J'accepte. Dis-moi tout, étranger."
-    red "But, if it is only for night to become stronger and to honnor him... I accept. Tell me all about it, stranger."
+    red "But, if it is only for a night, for me to become stronger and to honor him... I accept. Tell me all about it, stranger."
 
 # game/chap/chap7.rpy:57
 translate english chap7_fa144a32:
@@ -214,7 +214,7 @@ translate english chap7_f034381d:
 translate english chap7_7213c32f:
 
     # blanche "Voilà ! Tu sais tout maintenant !"
-    blanche "There! You know it all now!"
+    blanche "There! You know everything now!"
 
 # game/chap/chap7.rpy:60
 translate english chap7_d640d792:
@@ -226,13 +226,13 @@ translate english chap7_d640d792:
 translate english chap7_8161e88c:
 
     # red "Merci pour cette technique. Voilà ma boule."
-    red "Thanks you for the technique. Here is my ball."
+    red "Thank you for the technique. Here is my ball."
 
 # game/chap/chap7.rpy:62
 translate english chap7_05717ae6:
 
     # blanche "Merci ! Merci Red ! J'en prendrai soin ! Ne t'en fais pas je te la rendrai en temps et en heure !"
-    blanche "Thanks! Thanks you Rouge! I'll take good care of it! Don't worry, I'll bring it back in due time!"
+    blanche "Thanks! Thank you Rouge! I'll take good care of it! Don't worry, I'll bring it back in due time!"
 
 # game/chap/chap7.rpy:63
 translate english chap7_f5370875:
@@ -256,13 +256,13 @@ translate english chap7_cfa44a2a:
 translate english chap7_38b59a26:
 
     # blanche "De ce qu'il m'a dit, c'est parce que ses yeux lui refont penser à ma maman, mais le fait d'être \"Noir\" fait qu'il finira par ne voir que du noir. Il veut s'habituer à voir la couleur noire le plus tôt possible…"
-    blanche "From what he said to me, it's because his eyes remind him of mommy. But being \"Noir\" make it he will end up only seeing dark. He want to get used to seeing the color black as soon as possible..."
+    blanche "From what he said to me, it's because his eyes remind him of mommy. But being \"Noir\" means that he will end up only seeing dark. He wants to get used to seeing the color black as soon as possible..."
 
 # game/chap/chap7.rpy:67
 translate english chap7_b9842d57:
 
     # blanche "Voir mon papa dans cet état me rend triste. C'est pour ça que je veux lui montrer les couleurs de l'arc-en-ciel. Juste une dernière fois…"
-    blanche "To see my daddy in this state make me sad. That is why I want to show him the colors of the rainbow. Juste one last time..."
+    blanche "To see my daddy in this state makes me sad. That is why I want to show him the colors of the rainbow. Just one last time..."
 
 # game/chap/chap7.rpy:68
 translate english chap7_1d4547f8:
@@ -274,19 +274,19 @@ translate english chap7_1d4547f8:
 translate english chap7_cabf0bbc:
 
     # "Red me tapote la tête."
-    "Rouge pat my head."
+    "Rouge pats my head."
 
 # game/chap/chap7.rpy:70
 translate english chap7_4f3ed553:
 
     # red "Vaillant camarade, bon courage pour ta quête."
-    red "Brave comrade, good luck for your quest."
+    red "Brave comrade, good luck in your quest."
 
 # game/chap/chap7.rpy:71
 translate english chap7_abe0fec9:
 
     # blanche "Haha ! Merci Red !"
-    blanche "Haha! Thanks you Rouge!"
+    blanche "Haha! Thank you Rouge!"
 
 # game/chap/chap7.rpy:74
 translate english chap7_cda2f9cd:
@@ -298,19 +298,19 @@ translate english chap7_cda2f9cd:
 translate english chap7_413a27e9:
 
     # red "Est-ce une de tes techniques secrètes ?! Mais, je ne verrai rien, moi !"
-    red "Is that one of your secrets techniques ?! But I won't be seeing anything!"
+    red "Is that one of your secrets techniques?! But I won't be seeing anything!"
 
 # game/chap/chap7.rpy:76
 translate english chap7_76e2c92f:
 
     # blanche "Jaune dort tout le temps. Il doit aussi avoir tout le temps les yeux fermés pour te battre, non ?"
-    blanche "Yellow is always sleeping. He also may have his eyes closes to beat you up, no?"
+    blanche "Yellow is always sleeping. He probably has his eyes closed when he beats you, doesn't he?"
 
 # game/chap/chap7.rpy:77
 translate english chap7_91d345c6:
 
     # red "Maintenant que tu le dis… C'est décidé ! Prochain entraînement, on fait tout ça les yeux bandés !"
-    red "Now you're saying it... It's decided! Next training, we do all this blindfolded!"
+    red "Now that you're saying it... It's decided! Next training, we do it all blindfolded!"
 
 # game/chap/chap7.rpy:78
 translate english chap7_6a5f1594:
@@ -328,7 +328,7 @@ translate english chap7_b33031e8:
 translate english chap7_0217aa70:
 
     # blanche "Mais, là, il ne va pas bien du tout, et être dans le noir, c'est triste. C'est pour ça que je veux lui montrer les couleurs de l'arc-en-ciel. Juste une dernière fois…"
-    blanche "But, for now, he's not fine at all, and being in the dark, it's sad. That is why I want to show him the colors of the rainbow. Just one last time..."
+    blanche "But, for now, he's not fine at all, and being in the dark is sad. That is why I want to show him the colors of the rainbow. Just one last time..."
 
 # game/chap/chap7.rpy:81
 translate english chap7_81d89fde:
@@ -346,7 +346,7 @@ translate english chap7_1d4547f8_1:
 translate english chap7_0b30a507:
 
     # red "Prends la et rends-la moi après avoir réaliser ton souhait."
-    red "Take it and give it back after you realize your wish."
+    red "Take it and give it back after you make your wish come true."
 
 # game/chap/chap7.rpy:84
 translate english chap7_7f5ded8c:
@@ -364,7 +364,7 @@ translate english chap7_50c64d9f:
 translate english chap7_42da407b:
 
     # blanche "Merci ! Merci Red ! J'en prendrai soin !"
-    blanche "Thanks! Thanks you Rouge! I'll take good care of it!"
+    blanche "Thanks! Thank you Rouge! I'll take good care of it!"
 
 # game/chap/chap7.rpy:88
 translate english chap7_3acc916f:

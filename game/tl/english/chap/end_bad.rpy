@@ -46,7 +46,7 @@ translate english end_bad_afd2d15c:
 translate english end_bad_da8a1587:
 
     # maigrichon "Ha ha ! Tu ne peux plus t'échapper maintenant, hein ?"
-    maigrichon "Ha ha! You have can't run now, can you ?"
+    maigrichon "Ha ha! You can't escape anymore, can you ?"
 
 # game/chap/end_bad.rpy:10
 translate english end_bad_0f372d6b:
@@ -64,7 +64,7 @@ translate english end_bad_226c6585:
 translate english end_bad_611bbeba:
 
     # "Le garde m'attrape une main et m'arrache les boules de cristal."
-    "The guard grab one of my hand and pull the crystal balls off me."
+    "The guard grabs one of my hands and takes the crystal balls from me."
 
 # game/chap/end_bad.rpy:13
 translate english end_bad_37985346:
@@ -88,19 +88,19 @@ translate english end_bad_7f47f86b:
 translate english end_bad_a4daf88f:
 
     # grosso "Aucun étranger ne doit s'emparer des boules ! Ce sont les ordres."
-    grosso "No stranger must take over the balls! These are the orders."
+    grosso "No stranger may take over the balls! These are the orders."
 
 # game/chap/end_bad.rpy:17
 translate english end_bad_77984f98:
 
     # grosso "Maigrichon ! Passe-moi les menottes, on l'embarque !"
-    grosso "Slimmy! Give me the handcuffs, we taking them in!"
+    grosso "Slimmy! Give me the handcuffs, we are taking the child in!"
 
 # game/chap/end_bad.rpy:18
 translate english end_bad_15f9e161:
 
     # grosso "Finie la rigolade ! Tu vas voir ce qu'il en coûte de s'opposer aux représentants de Madame Arc-en-Ciel !"
-    grosso "No more childplay! You'll see what happens by going agains the representatives of Lady Rainbow!"
+    grosso "No more childplay! You'll see what happens when going against Lady Rainbow's representatives!"
 
 # game/chap/end_bad.rpy:19
 translate english end_bad_226c6585_1:
@@ -112,7 +112,7 @@ translate english end_bad_226c6585_1:
 translate english end_bad_28f31557:
 
     # "Le garde me menotte les mains."
-    "The guard handcuff me."
+    "The guard handcuffs me."
 
 # game/chap/end_bad.rpy:21
 translate english end_bad_72f325d8:
@@ -160,7 +160,7 @@ translate english end_bad_dfe8cbd1:
 translate english end_bad_c75677f0:
 
     # "Mon papa tourne la tête au-dehors."
-    "Daddy turn his head toward outdoors."
+    "Daddy turns his head toward outdoors."
 
 # game/chap/end_bad.rpy:29
 translate english end_bad_584c3d8c:
@@ -202,11 +202,11 @@ translate english end_bad_76890dd2:
 translate english end_bad_b461fff8:
 
     # "Tels furent les derniers mots de mon papa avant de se transformer en un nuage de poussière noire..."
-    "Thus were the lasts words of daddy, before going up in a cloud of black dust..."
+    "Those were daddy's lasts words before going up in a cloud of black dust..."
 
 # game/chap/end_bad.rpy:36
 translate english end_bad_556604e3:
 
     # "Quant à moi, j'ai fini dans les geôles du palais Arc-en-Ciel sans jamais avoir pu m'expliquer."
-    "As for me, I ended up in Lady Rainbow's cells, beneath her palace, without never having the opportunity to explain myself."
+    "As for me, I ended up in Lady Rainbow's cells, beneath her palace, without ever having the opportunity to explain myself."
 

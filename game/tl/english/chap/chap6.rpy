@@ -28,7 +28,7 @@ translate english chap6_84b17eab:
 translate english chap6_2678fb8e:
 
     # x "Mais de qui oses-tu donc te moquer ? Moi, Orange, votre serviteur, j'étais en train de jouer le Requiem de herr Wolfgang Amadeus Mozart, cette oeuvre à jamais incomplète, mais qui représente tout le génie du grand maître !"
-    x "Whom do you dare mock? I, Orange, your humble servant, was playing Requiem by herr Wolfgang Amadeus Mozart, a forever incomplete artwork, that still showcase the grand master's genius!"
+    x "Whom do you dare to make fun of? I, Orange, your humble servant, was playing Requiem by herr Wolfgang Amadeus Mozart, a forever incomplete artwork, that still showcase the grand master's genius!"
 
 # game/chap/chap6.rpy:8
 translate english chap6_af21402c:
@@ -64,7 +64,7 @@ translate english chap6_5e458061:
 translate english chap6_35efb4ec:
 
     # orange "Il disait que sa vie n'avait plus aucun sens, mais que, dans ce lieu, cela n'avait plus d'importance."
-    orange "He said his life had no purpose anymore, but that in this place, it did not matter."
+    orange "He said his life had no purpose anymore, but in this place, it did not matter."
 
 # game/chap/chap6.rpy:14
 translate english chap6_8623552d:
@@ -88,25 +88,25 @@ translate english chap6_6e925f64:
 translate english chap6_cf2548f4:
 
     # blanche "Mon papa a toujours été comme ça, très empathique."
-    blanche "Dady was always like that, very empathetic."
+    blanche "Daddy was always like that, very empathetic."
 
 # game/chap/chap6.rpy:18
 translate english chap6_3c97ad3b:
 
     # blanche "En fait, ce qui compte le plus pour lui, c'est le bonheur des autres, pas son propre bonheur."
-    blanche "In fact, the most important for him, is others' happiness, not him's."
+    blanche "In fact, the most important for him is others' happiness, not him's."
 
 # game/chap/chap6.rpy:19
 translate english chap6_ce541b5b:
 
     # blanche "Le bien-être des gens lui redonne la santé. C'est comme si le soleil dans la vie des autres, lui rendait le sien !"
-    blanche "Others wellbeing give him strength. It's as if people's flame, light up his own!"
+    blanche "People's wellbeing give him strength. As if people's flame lights up his own!"
 
 # game/chap/chap6.rpy:20
 translate english chap6_adee7a45:
 
     # blanche "Mais, c'est un cadeau à double tranchant..."
-    blanche "But, it's a double edged gift..."
+    blanche "But it's a double-edged gift..."
 
 # game/chap/chap6.rpy:21
 translate english chap6_0cd413e4:
@@ -118,7 +118,7 @@ translate english chap6_0cd413e4:
 translate english chap6_e5135320:
 
     # blanche "Là, mon papa n'est pas bien du tout ! Il est encore plus mal en point que d'habitude."
-    blanche "Now, daddy is not feeling fine at all! He's in even worse shape than usual."
+    blanche "Now, Daddy isn't feeling well at all! He's in even worse shape than usual."
 
 # game/chap/chap6.rpy:23
 translate english chap6_595a64e8:
@@ -142,7 +142,7 @@ translate english chap6_a1e04fcb:
 translate english chap6_702a785d:
 
     # orange "Non pas par le contrat que j'ai passé avec Madame Arc-en-Ciel, je me sens redevable vis-à-vis de ton père de m'avoir tenu compagnie pendant tout ce temps."
-    orange "Not because of the contract with Lady Rainbow, I feel in your father debt for keeping me company all this time."
+    orange "Not because of the contract with Lady Rainbow, I feel indebted to your father for keeping me company all this time."
 
 # game/chap/chap6.rpy:27
 translate english chap6_8632bc58:
@@ -166,7 +166,7 @@ translate english chap6_29d91b3f:
 translate english chap6_4bcbec4d:
 
     # orange "En effet, elle nécessite une certaine maîtrise de soi avant d'être manipulable."
-    orange "Indeed, she require a certain level of self-control to be handled."
+    orange "As a matter of fact, it requires a certain level of self-control to be handled."
 
 # game/chap/chap6.rpy:31
 translate english chap6_0f9e419a:
@@ -178,7 +178,7 @@ translate english chap6_0f9e419a:
 translate english chap6_03f87a72:
 
     # orange "Il faut maîtriser la musique des agrumes. Il faut sentir ton corps vibrer en entendant le jus s'écouler."
-    orange "One must master the agrumes' music. One must feel its body vibrating hearing the juice flows."
+    orange "One must master the agrumes' music. You have to feel your body vibrating when hearing the juice flow."
 
 # game/chap/chap6.rpy:33
 translate english chap6_845f32c3:
@@ -208,19 +208,19 @@ translate english chap6_af703d88:
 translate english chap6_0c991ed6:
 
     # blanche "Tu crois vraiment ce que tu es en train de me raconter ?!"
-    blanche "Do you really believe what you're telling me ?!"
+    blanche "Do you really believe what you're telling me?!"
 
 # game/chap/chap6.rpy:41
 translate english chap6_6d01a69c:
 
     # blanche "Comment des agrumes peuvent produire du son ? Comment est-ce que ça va me permettre de prendre la boule ?"
-    blanche "How can agrumes make sound? How do this will make me able to take the ball?"
+    blanche "How can agrumes make sound? How will this make me able to take the ball?"
 
 # game/chap/chap6.rpy:42
 translate english chap6_a3edc109:
 
     # orange "Eh bien, vas-y, essaye donc puisque tu as tellement confiance en toi !"
-    orange "Oh wel, go on then, try it as you have so much confidence in yourself!"
+    orange "Oh well, go on then, try it as you have so much confidence in yourself!"
 
 # game/chap/chap6.rpy:43
 translate english chap6_6e99d735:
@@ -232,7 +232,7 @@ translate english chap6_6e99d735:
 translate english chap6_8d2a1ae5:
 
     # orange "Après tout, il s'agit d'un art !"
-    orange "After all, it is art!"
+    orange "After all, it is an art!"
 
 # game/chap/chap6.rpy:45
 translate english chap6_a3d3692b:
@@ -244,7 +244,7 @@ translate english chap6_a3d3692b:
 translate english chap6_9fda15db:
 
     # blanche "Bien sûr ! Et moi, je suis Madame Arc-en-Ciel ! Bon, voyons voir…"
-    blanche "Of course! And I, am Lady Rainbow! Well, let's see..."
+    blanche "Of course! And I am Lady Rainbow! Well, let's see..."
 
 # game/chap/chap6.rpy:47
 translate english chap6_0abac118:
@@ -262,7 +262,7 @@ translate english chap6_e2478f70:
 translate english chap6_6db7071f:
 
     # blanche "Mais pourquoi elle m'échappe sans cesse des mains cette boule ?!"
-    blanche "Why does it always slip trough my fingers, this ball?!"
+    blanche "Why does this ball always slip trough my fingers?!"
 
 # game/chap/chap6.rpy:50
 translate english chap6_aa913374:
@@ -310,7 +310,7 @@ translate english chap6_ca8ddaca:
 translate english chap6_0f7b1a94:
 
     # orange "Pour sûr, allons-y."
-    orange "For sure, let's go."
+    orange "Sure, let's go."
 
 # game/chap/chap6.rpy:60
 translate english chap6_ceeb4b8f:
@@ -322,19 +322,19 @@ translate english chap6_ceeb4b8f:
 translate english chap6_cbaef7f3:
 
     # blanche "Je n'ai malheureusement pas beaucoup de temps..."
-    blanche "I sadly do not have much time..."
+    blanche "Unfortunately, I do not have much time..."
 
 # game/chap/chap6.rpy:62
 translate english chap6_6bc4121e:
 
     # orange "Doucement, doucement, si tu t'excites trop tu ne vas pas pouvoir ressentir les émotions des fruits et des fluides."
-    orange "Slow down, slow down, if you get too excited you will not be able to feels the fruits' and fluids' emotions."
+    orange "Easy, easy, if you get too excited you will not be able to feels the fruits' and fluids' emotions."
 
 # game/chap/chap6.rpy:63
 translate english chap6_aa78a3fa:
 
     # orange "Tu n'écouteras que ta frustration."
-    orange "You will only feels frustration."
+    orange "You will only feel your frustration."
 
 # game/chap/chap6.rpy:64
 translate english chap6_88b26d38:
@@ -346,7 +346,7 @@ translate english chap6_88b26d38:
 translate english chap6_6d5d2cb3:
 
     # orange "Ne sois pas bougon, viens je vais te montrer."
-    orange "Don't be grumpy, come here, I will show you."
+    orange "Don't be grumpy, come here. I will show you."
 
 # game/chap/chap6.rpy:66
 translate english chap6_7c78d8d7:
@@ -382,7 +382,7 @@ translate english chap6_e42f8bfe:
 translate english chap6_7a7798e7:
 
     # orange "Que vas-tu donc faire de cette boule maintenant qu'elle est entre tes mains ?"
-    orange "What will you do now that you hold this ball in your hands?"
+    orange "What will you do now that this ball is in your hands?"
 
 # game/chap/chap6.rpy:84
 translate english chap6_81d0431d:
@@ -430,7 +430,7 @@ translate english chap6_5e41ac38:
 translate english chap6_063dda80:
 
     # "Grosso et Maigrichon arrivent essouflés devant Orange."
-    "Biggy and Slimmy arrive breathlessly before Orange."
+    "Biggy and Slimmy arrive breathless before Orange."
 
 # game/chap/chap6.rpy:92
 translate english chap6_a677ff8a:
@@ -448,7 +448,7 @@ translate english chap6_dfb0191c:
 translate english chap6_fd70f745:
 
     # orange "Un petit remontant messieurs ?"
-    orange "A little pick-me-up sirs?"
+    orange "A pick-me-up sirs?"
 
 # game/chap/chap6.rpy:95
 translate english chap6_da1beb31:
@@ -484,7 +484,7 @@ translate english strings:
 
     # game/chap/chap6.rpy:37
     old "Le prendre pour un fou"
-    new "Consider him crazy"
+    new "Take him for a fool"
 
     # game/chap/chap6.rpy:37
     old "Le prendre au sérieux"
