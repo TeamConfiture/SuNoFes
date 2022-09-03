@@ -173,5 +173,5 @@ label chap3_2:
     grosso "Dis-nous au moins où cet enfant est parti, cela nous facilitera la tâche et permettra peut-être d'alléger ta peine."
     cyan "N'y comptez pas."
     maigrichon "Je l'ai vu remonter le cours de la rivière de toute façon. Dépêchons-nous !"
-    "Grosso et maigrichon partent en direction des hautes herbes."
+    "Grosso et Maigrichon partent en direction des hautes herbes."
     jump chap4

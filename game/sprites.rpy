@@ -142,6 +142,27 @@ image cheese_market_exit_fr5:
 image cheese_market_exit_fr5a:
     contains cheese_cupboard_exit("images/items/fromages/Fr5a.png", xalign = 183/414, yalign = 177/304)
 
+# Noir 
+image end_spirited_back = Spirited(
+    sprite_list = ["images/sprites/small_firefly_black.png", "images/sprites/medium_firefly_black.png", "images/sprites/big_firefly_black.png"],
+    initial_count = 100,
+    renewal_rate = 100,
+    speed_range = (30, 40),
+    direction_range = (60, 120),
+    ttl_range = (10, 15),
+    spawn_box = (config.screen_width/2 + 250, config.screen_height/2, -config.screen_width/4, 0),
+)
+
+image end_spirited_front = Spirited(
+    sprite_list = ["images/sprites/small_firefly_black.png", "images/sprites/medium_firefly_black.png", "images/sprites/big_firefly_black.png"],
+    initial_count = 5,
+    renewal_rate = 5,
+    speed_range = (30, 40),
+    direction_range = (60, 120),
+    ttl_range = (10, 15),
+    spawn_box = (config.screen_width/2 + 250, config.screen_height/2, -config.screen_width/4, 0),
+)
+
 # CG
 python:
     nb_cg = 7
