@@ -346,3 +346,47 @@ translate french strings:
     old "Je vous bats aux échecs ?"
     new "Je vous bats aux échecs ?"
 
+# TODO: Translation updated at 2022-09-03 23:38
+
+# game/chap/chap2.rpy:135
+translate french chap2_completed_450cb1dd:
+
+    # grosso "Nous sommes à la poursuite d'un enfant ayant volé la boule Violet, tu ne l'aurais pas vu par hasard ?"
+    grosso "Nous sommes à la poursuite d'un enfant ayant volé la boule Violet, tu ne l'aurais pas vu par hasard ?"
+
+# game/chap/chap2.rpy:136
+translate french chap2_completed_90836a12:
+
+    # indigo "Les voyageurs ont bien changé… Vous n'êtes donc pas venu ici pour voir le paysage et les constellations ?"
+    indigo "Les voyageurs ont bien changé… Vous n'êtes donc pas venu ici pour voir le paysage et les constellations ?"
+
+# game/chap/chap2.rpy:137
+translate french chap2_completed_d10dad7d:
+
+    # maigrichon "Grosso ! La boule Indigo a disparu de l'autel aussi !"
+    maigrichon "Grosso ! La boule Indigo a disparu de l'autel aussi !"
+
+# game/chap/chap2.rpy:138
+translate french chap2_completed_c55cf5f6:
+
+    # indigo "Oh non… J'ai perdu ma boule, comme c'est étrange."
+    indigo "Oh non… J'ai perdu ma boule, comme c'est étrange."
+
+# game/chap/chap2.rpy:139
+translate french chap2_completed_17109fdd:
+
+    # "Indigo feint l'ignorance."
+    "Indigo feint l'ignorance."
+
+# game/chap/chap2.rpy:141
+translate french chap2_completed_bf4b5718:
+
+    # maigrichon "T'es vraiment pas doué… L'enfant est parti par où ?"
+    maigrichon "T'es vraiment pas doué… L'enfant est parti par où ?"
+
+# game/chap/chap2.rpy:143
+translate french chap2_completed_ad9ead6a:
+
+    # maigrichon "Et toi, Indigo, pour l'amour de Madame Arc-en-Ciel, tiens-toi à carreau, ça suffit les bêtises."
+    maigrichon "Et toi, Indigo, pour l'amour de Madame Arc-en-Ciel, tiens-toi à carreau, ça suffit les bêtises."
+

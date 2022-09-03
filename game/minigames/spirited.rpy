@@ -342,6 +342,7 @@ init python:
             """
             Resets sprites context
             """
+            self.image_collection = []
             if len(self.image_collection) == 0:
                 # Create sprite library with different transparency levels
                 for i in range(len(self.base_image_list)):

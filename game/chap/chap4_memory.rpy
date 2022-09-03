@@ -25,4 +25,4 @@ screen chap4_memory_game(next_chapter_label, timeout_label):
     text (format(play_timer, '.0f') if play_timer > 0 else "0"):
         xalign 0.8 yalign 0.5
         size 200
-        color "#34f"
+        color "#fff"

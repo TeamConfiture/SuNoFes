@@ -522,3 +522,65 @@ translate french end_good_70976c35:
     # "C'est ainsi que je pars en direction de Papa et Mam... Madame Arc-en-Ciel."
     "C'est ainsi que je pars en direction de Papa et Mam... Madame Arc-en-Ciel."
 
+# TODO: Translation updated at 2022-09-03 23:38
+
+# game/chap/end_good.rpy:9
+translate french end_good_6780771e:
+
+    # x "Un instant ! C'est donc toi, le petit enfant qui sème la zizanie dans ce royaume." with vpunch
+    x "Un instant ! C'est donc toi, le petit enfant qui sème la zizanie dans ce royaume." with vpunch
+
+# game/chap/end_good.rpy:10
+translate french end_good_9413e970:
+
+    # x "Que fais-tu ? Rends-moi mes boules ! Pourquoi les avoir prises ?!"
+    x "Que fais-tu ? Rends-moi mes boules ! Pourquoi les avoir prises ?!"
+
+# game/chap/end_good.rpy:11
+translate french end_good_882a8b3e:
+
+    # x "Tu ne sais donc pas que cela perturbe l'équilibre de ce monde ?!"
+    x "Tu ne sais donc pas que cela perturbe l'équilibre de ce monde ?!"
+
+# game/chap/end_good.rpy:43
+translate french end_good_29b0ed16:
+
+    # madame "Amène-moi à ton père, tout de suite !" with vpunch
+    madame "Amène-moi à ton père, tout de suite !" with vpunch
+
+# game/chap/end_good.rpy:81
+translate french end_good_d467efef:
+
+    # noir "Urgh… Aaahh !!!" with vpunch
+    noir "Urgh… Aaahh !!!" with vpunch
+
+# game/chap/end_good.rpy:86
+translate french end_good_6236b0dc:
+
+    # blanche "Papa !" with vpunch
+    blanche "Papa !" with vpunch
+
+# game/chap/end_good.rpy:130
+translate french end_good_190bd67a:
+
+    # noir "Huh ? Ciel ? Que fais-tu ?" with vpunch
+    noir "Huh ? Ciel ? Que fais-tu ?" with vpunch
+
+# game/chap/end_good.rpy:206
+translate french end_good_1417cfb2:
+
+    # madame "Hé ! Ne me touche p-" with vpunch
+    madame "Hé ! Ne me touche p-" with vpunch
+
+# game/chap/end_good.rpy:215
+translate french end_good_0c052b1f:
+
+    # "FIN"
+    "FIN"
+
+translate french strings:
+
+    # game/chap/end_good.rpy:2
+    old "Fin heureuse"
+    new "Fin heureuse"
+

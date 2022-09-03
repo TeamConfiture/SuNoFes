@@ -17,12 +17,14 @@ label chap2:
 
     menu:
         "Le prendre de haut":
+            $ bad +=1
             show blanche pout open at left
             blanche "Bien sûr que si je connais, tu me prends pour qui ?"
             show blanche pout close at left
             indigo "Ce n'est pas l'impression que tu me donnais quand tu courais il y a 5 minutes…"
             indigo "Ma foi, comme tu es ici, il est de mon devoir de t'expliquer tout ce qu'il y a à savoir sur ce lieu. "
         "Chercher une excuse":
+            $ neutral +=1
             show blanche pout open at left
             blanche "Non mais j'ai cru que c'étaient des petits sapins, je pensais en ramener un pour Noël…"
             show blanche pout close at left
@@ -30,6 +32,7 @@ label chap2:
             indigo "Ce lieu est connu pour son lac incontournable. Tous les voyageurs qui me rendent visite sont là pour admirer cette vue sublime. Il est donc proscrit de prendre quoi que ce soit de ce paysage."
             indigo "En parlant de ça, il est coutume ici de repartir de mon lac en ayant au moins découvert quelque chose, alors suis-moi. Regarde ! On peut apercevoir un cygne devant et là, des canards… "
         "Admettre son erreur":
+            $ good +=1
             show blanche cry open at left
             blanche "Pardon, je n'avais jamais vu de ronces."
             show blanche cry close at left
@@ -129,13 +132,13 @@ label chap2_completed:
     show indigo at right
     with dissolve
     indigo "Messieurs, bien le bonsoir, que me vaut votre visite impromptue à cette heure aussi tardive ?"
-    grosso "Nous sommes à la poursuite d’un enfant ayant volé la boule Violet, tu ne l’aurais pas vu par hasard ?"
-    indigo "Les voyageurs ont bien changé… Vous n’êtes donc pas venu ici pour voir le paysage et les constellations ?"
-    maigrichon "Grosso ! La boule Indigo a disparu de l’autel aussi !"
-    indigo "Oh non… J’ai perdu ma boule, comme c’est étrange."
-    "Indigo feint l’ignorance."
+    grosso "Nous sommes à la poursuite d'un enfant ayant volé la boule Violet, tu ne l'aurais pas vu par hasard ?"
+    indigo "Les voyageurs ont bien changé… Vous n'êtes donc pas venu ici pour voir le paysage et les constellations ?"
+    maigrichon "Grosso ! La boule Indigo a disparu de l'autel aussi !"
+    indigo "Oh non… J'ai perdu ma boule, comme c'est étrange."
+    "Indigo feint l'ignorance."
     indigo "Les constellations ont détourné mon attention pendant un instant."
-    maigrichon "T’es vraiment pas doué… L’enfant est parti par où ?"
+    maigrichon "T'es vraiment pas doué… L'enfant est parti par où ?"
     grosso "Ah ! Ses traces de pas sont là, allons-y !" with vpunch
-    maigrichon "Et toi, Indigo, pour l’amour de Madame Arc-en-Ciel, tiens-toi à carreau, ça suffit les bêtises."
+    maigrichon "Et toi, Indigo, pour l'amour de Madame Arc-en-Ciel, tiens-toi à carreau, ça suffit les bêtises."
     jump chap3

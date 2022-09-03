@@ -1088,3 +1088,53 @@ translate french chap5_2_399fa703:
     # "Grosso et Maigrichon s'éloignent de la ferme et partent en direction du royaume Agrume..."
     "Grosso et Maigrichon s'éloignent de la ferme et partent en direction du royaume Agrume..."
 
+# TODO: Translation updated at 2022-09-03 23:38
+
+# game/chap/chap5.rpy:12
+translate french chap5_b4d18fff:
+
+    # blanche "Oh ! Une grange !" with vpunch
+    blanche "Oh ! Une grange !" with vpunch
+
+# game/chap/chap5.rpy:20
+translate french chap5_b2f0a0fe:
+
+    # piou "Eh oh, t'es qui toi d'abord ?" with vpunch
+    piou "Eh oh, t'es qui toi d'abord ?" with vpunch
+
+# game/chap/chap5.rpy:103
+translate french chap5_8d470042:
+
+    # jaune "AAAA... AAATTTTTTCHOUM ! AAAATTTTCHOUM ! J'ai faim… ZZZzzzz" with vpunch
+    jaune "AAAA... AAATTTTTTCHOUM ! AAAATTTTCHOUM ! J'ai faim… ZZZzzzz" with vpunch
+
+# game/chap/chap5.rpy:184
+translate french chap5_2_43479f00:
+
+    # piou "Il faudrait que je me saigne aux quatre veines pour les autres ?!" with vpunch
+    piou "Il faudrait que je me saigne aux quatre veines pour les autres ?!" with vpunch
+
+# game/chap/chap5.rpy:201
+translate french chap5_2_d6cfe972:
+
+    # "Grosso et Maigrichon qui n'ont pas perdu de temps arrivent..."
+    "Grosso et Maigrichon qui n'ont pas perdu de temps arrivent..."
+
+# game/chap/chap5.rpy:217
+translate french chap5_2_50784db7:
+
+    # jaune "ROAR !" with vpunch
+    jaune "ROAR !" with vpunch
+
+# game/chap/chap5.rpy:218
+translate french chap5_2_8da47757:
+
+    # maigrichon "Gloups... Pardon ! Pardon ! Pardon ! Pardon cher Gardien de Couleur !"
+    maigrichon "Gloups... Pardon ! Pardon ! Pardon ! Pardon cher Gardien de Couleur !"
+
+# game/chap/chap5.rpy:224
+translate french chap5_2_49ce8be1:
+
+    # "Grosso et Maigrichon s'éloignent de la ferme et partent en direction de l'orangeraie..."
+    "Grosso et Maigrichon s'éloignent de la ferme et partent en direction de l'orangeraie..."
+

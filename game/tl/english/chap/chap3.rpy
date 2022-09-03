@@ -522,10 +522,11 @@ translate english chap3_2_621c7eba:
     # maigrichon "Je l'ai vu remonter le cours de la rivière de toute façon. Dépêchons-nous !"
     maigrichon "I saw them going up the river anyway. Let's hurry!"
 
-# game/chap/chap3.rpy:169
-translate english chap3_2_2d63e8f8:
 
-    # "Grosso et maigrichon partent en direction des hautes herbes."
+# game/chap/chap3.rpy:179
+translate english chap3_2_82ab1efc:
+
+    # "Grosso et Maigrichon partent en direction des hautes herbes."
     "Biggy and Slimmy head for the tall grass."
 
 translate english strings:

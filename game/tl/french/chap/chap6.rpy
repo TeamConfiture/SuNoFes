@@ -646,3 +646,53 @@ translate french chap6_2_4e41fbe5:
     # "Grosso et Maigrichon quittent Orange, le laissant seul devant son piano."
     "Grosso et Maigrichon quittent Orange, le laissant seul devant son piano."
 
+# TODO: Translation updated at 2022-09-03 23:38
+
+# game/chap/chap6.rpy:8
+translate french chap6_6daaac37:
+
+    # blanche "Oh ! On dirait les quatre saisons de Vivaldi !" with vpunch
+    blanche "Oh ! On dirait les quatre saisons de Vivaldi !" with vpunch
+
+# game/chap/chap6.rpy:63
+translate french chap6_2c4107bc:
+
+    # blanche "Tu... Tu es fou ?!" with vpunch
+    blanche "Tu... Tu es fou ?!" with vpunch
+
+# game/chap/chap6.rpy:76
+translate french chap6_7aa3bc42:
+
+    # blanche "Aaaaaaah !" with vpunch
+    blanche "Aaaaaaah !" with vpunch
+
+# game/chap/chap6.rpy:85
+translate french chap6_a38470df:
+
+    # blanche "Vraiment ? Tu peux m'apprendre ?" with vpunch
+    blanche "Vraiment ? Tu peux m'apprendre ?" with vpunch
+
+# game/chap/chap6.rpy:92
+translate french chap6_46be73b9:
+
+    # blanche "C'est vrai ?! Est-ce qu'on pourrait commencer maintenant ?!" with vpunch
+    blanche "C'est vrai ?! Est-ce qu'on pourrait commencer maintenant ?!" with vpunch
+
+# game/chap/chap6.rpy:109
+translate french chap6_425fae10:
+
+    # blanche "Youpi ! On commence par quoi au juste ?" with vpunch
+    blanche "Youpi ! On commence par quoi au juste ?" with vpunch
+
+# game/chap/chap6.rpy:137
+translate french chap6_2_8d896765:
+
+    # blanche "Oh ! Je m'attendais pas du tout à obtenir un son si parfait." with vpunch
+    blanche "Oh ! Je m'attendais pas du tout à obtenir un son si parfait." with vpunch
+
+# game/chap/chap6.rpy:177
+translate french chap6_2_361178b8:
+
+    # maigrichon "Grosso !" with vpunch
+    maigrichon "Grosso !" with vpunch
+
