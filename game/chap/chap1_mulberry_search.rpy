@@ -9,4 +9,4 @@ screen chap1_mulberry_search(success_label = None, fail_label = None):
         if success_label:
             hover "mulberry_button"
             focus_mask True
-            action Jump(success_label)
+            action [Play('sound', renpy.random.choice(sound.Paillete)), Jump(success_label)]
