@@ -1,6 +1,7 @@
 label chap3:
     call titlepage(3)
     scene forest 
+    play music music.Theme_Cyan fadein 1.0
     show blanche surprised open at left
     with dissolve
     blanche "Oh ! C'est... C'est le duo des Cyanmois que je vois au loin !" with vpunch
@@ -177,4 +178,5 @@ label chap3_2:
     cyan "N'y comptez pas."
     maigrichon "Je l'ai vu remonter le cours de la rivière de toute façon. Dépêchons-nous !"
     "Grosso et Maigrichon partent en direction des hautes herbes."
+    stop music fadeout 2.0
     jump chap4

@@ -1,6 +1,7 @@
 label chap4:
     call titlepage(4)
     scene garden
+    play music music.Theme_Green fadein 1.0
     with dissolve
     x "Colchiques dans les prés ! Fleurissent, fleurissent. Colchiques dans les prés ! C'est la fin de l'été."
     "Un chat chantonne tout en arrosant joyeusement de magnifiques fleurs."
@@ -177,4 +178,5 @@ label chap4_2:
     with dissolve
     "Emeraude les voit s'en aller."
     emeraude "Minuit se lève, en haut des tours, les voix se taisent et tout devient aveugle et sourd, la nuit camoufle, pour quelques heures, la zone [player_name] de ces nuisibles visiteurs !"
+    stop music fadeout 2.0
     jump chap5

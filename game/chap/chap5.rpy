@@ -2,6 +2,7 @@ label chap5:
     call titlepage(5)
     scene country
     with dissolve
+    play music music.Theme_Yellow fadein 1.0
     x "Piou, piou ! Réveille-toi Jaune !"
     x "On doit aller traire les vaches ce matin ! C'est important si on veut que la fromagerie tourne cette semaine !"
     show jaune at right with dissolve
@@ -222,4 +223,5 @@ label chap5_2:
     hide grosso at nearLeft
     with dissolve
     "Grosso et Maigrichon s'éloignent de la ferme et partent en direction de l'orangeraie..."
+    stop music fadeout 2.0
     jump chap6
