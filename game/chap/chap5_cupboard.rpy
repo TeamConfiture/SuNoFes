@@ -132,21 +132,22 @@ init python:
                 collected_dict[cheese_label] -= 1
         return generated_list
 
-label cheese_market_fail:
-    "Ce n'est pas le fromage que je t'ai demandé !"
-    call screen cheese_market()
-
-screen cheese_market():
-    # Modifier ces valeurs pour rediriger vers d'autres labels
-    default next_label = 'chap5_2'
-    default fail_scene = 'cheese_market_fail'
+screen cheese_market(next_label, fail_scene):
     # Valeurs internes
     default collected_cheese = set()
     default displayed_cheese = cheese_market_cheese_positions()
     default cheese_request_list = cheese_market_build_request_list({i["base_name"]: len(i["props"]) for i in displayed_cheese})
     default current_index = 0
+    default current_drag = None
+    default last_drag_update = None
     python:
+        def on_dragging(drag):
+            if renpy.current_screen().scope['current_drag'] != drag[0].drag_name:
+                renpy.run(SetScreenVariable('current_drag', drag[0].drag_name))
+                renpy.run(Play('sound', renpy.random.choice(sound.Grab_Cheese)))
+
         def drag_race(drags, drop):
+            renpy.run(SetScreenVariable('current_drag', None))
             if drop:
                 # Manually ensure that images' bytes overlap
                 # This is done by sampling the overlapping area and is
@@ -178,6 +179,7 @@ screen cheese_market():
                         break
                 if is_overlapping:
                     # Only if both images have opaque pixels in common do we check for validity
+                    renpy.run(Play('sound', renpy.random.choice(sound.Cheese_Depot)))
                     cupboard = renpy.current_screen().scope['cupboard']
                     cheese_request_list = renpy.current_screen().scope['cheese_request_list']
                     current_index = renpy.current_screen().scope['current_index']
@@ -210,21 +212,21 @@ screen cheese_market():
                 for index, cheese in enumerate(cheese_group['props']):
                     $ drag_name = cheese_group['base_name'] + "_" + str(cheese.get('angle', 0)) + "_" + str(index)
                     if cheese and cheese.get('layer') == layer and drag_name not in collected_cheese:
-
                         drag:
                             drag_name drag_name
                             child "cheese_market_" + cheese_group['base_name'] + "_" + str(cheese.get('angle', 0))
                             droppable False
                             dragged drag_race
+                            dragging on_dragging
                             drag_offscreen True
                             focus_mask True
                             xpos cheese['x'] ypos cheese['y']
         drag:
             drag_name "cheese_basket"
-            child "images/fish/Boot.png"
+            child "cheese_market_basket"
             drag_offscreen True
             focus_mask True
-            xpos 900 ypos 400
+            xpos 850 ypos 680
     # Show expected cheese
     if current_index < len(cheese_request_list):
         image "cheese_market_entrance_" + cheese_request_list[current_index]:

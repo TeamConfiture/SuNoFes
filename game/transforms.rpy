@@ -138,6 +138,7 @@ transform cheese_cupboard_entrance(child, scale = 1., xalign = 0.5, yalign = 0.5
     yalign yalign
     xzoom scale
     yzoom scale
+    rotate 0
     yoffset -200
     easein 1 yoffset 0
     pause 6
@@ -151,6 +152,22 @@ transform cheese_cupboard_entrance(child, scale = 1., xalign = 0.5, yalign = 0.5
         linear 0.2 rotate 15
         easein 0.2 rotate 0
         pause renpy.random.randint(8, 12)
+        repeat
+
+transform cheese_cupboard_basket(child, scale = 1., xalign = 0.5, yalign = 0.5):
+    child
+    xalign xalign
+    yalign yalign
+    xzoom scale
+    yzoom scale
+    rotate 0
+    pause 1.5
+    parallel: # animate every once in a while
+        ease 0.4 rotate 10
+        ease 0.4 rotate -10
+        ease 0.4 rotate 10
+        ease 0.4 rotate 0
+        pause renpy.random.randint(40, 80)
         repeat
 
 # Used to make a validated cheese disappear
