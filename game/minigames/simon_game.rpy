@@ -30,6 +30,9 @@ init python:
         `simon_len_step`
             The number of additionnal buttons to press at each round
 
+        `generated_len`
+            If `ruleset` is not provided, how long the generated ruleset should be
+
         # Examples
 
         * Create a simon with 3 buttons that has a 5-buttons pattern to complete
@@ -86,7 +89,7 @@ init python:
         def __init__(
                 self, buttons, ruleset = None, completion_action = None, failure_action = None,
                 downtime_duration = 1, uptime_duration = 1, first_simon_len = 3, simon_len_step = 1,
-                **kwargs,
+                generated_len = None, **kwargs,
             ):
             super(SimonGame, self).__init__(**kwargs)
 
@@ -99,7 +102,7 @@ init python:
             if ruleset:
                 self.ruleset = ruleset
             else:
-                generated_len = renpy.random.randint(0, 2*len(buttons))
+                generated_len = generated_len or renpy.random.randint(0, 2*len(buttons))
                 self.ruleset = []
                 for i in range(generated_len):
                     self.ruleset.append(renpy.random.randint(0, len(buttons)-1))
@@ -113,8 +116,10 @@ init python:
             Called on first usage as init does not support creating new displayables
             """
             for i in range(len(self.base_buttons)):
+                button_info = self.base_buttons[i].copy()
+                button_info.pop('action')
                 button = ManageableImageButton(
-                    **self.base_buttons[i],
+                    **button_info,
                     action = Function(SimonGame.on_button_click, self, i)
                 )
                 # Adds buttons to self.children
@@ -135,6 +140,7 @@ init python:
             """
             if not self.is_interactible:
                 return
+            renpy.run(self.base_buttons[button_id].get('action'))
             if self.ruleset[self.ruleset_index] == button_id:
                 if self.current_simon_len > self.ruleset_index+1:
                     self.ruleset_index = self.ruleset_index+1
@@ -242,6 +248,7 @@ init python:
             # True: hovered, False: idle
             button = self.children[button_id]
             if is_hovered:
+                renpy.run(self.base_buttons[button_id].get('action'))
                 button.freeze_state('hover')
             else:
                 button.freeze_state('idle')
