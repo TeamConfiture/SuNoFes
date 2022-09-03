@@ -4,23 +4,23 @@ translate english end_good_27e286e1:
     # blanche "Héhé ! J'ai réussi à avoir les sept boules de cristal ! J'espère que Papa sera content."
     blanche "Hehe! I finally managed to gather the seven crytal balls! I hope Daddy will be happy."
 
-# game/chap/end_good.rpy:3
-translate english end_good_8b36e3a0:
+# game/chap/end_good.rpy:9
+translate english end_good_6780771e:
 
-    # madame "Un instant ! C'est donc toi, le petit enfant qui sème la zizanie dans ce royaume."
-    madame "Wait a minute! So it is you, the little kid who caused havoc in the kingdom."
+    # x "Un instant ! C'est donc toi, le petit enfant qui sème la zizanie dans ce royaume." with vpunch
+    x "Wait a minute! So it is you, the little kid who caused havoc in the kingdom." with vpunch
 
-# game/chap/end_good.rpy:4
-translate english end_good_d57ca607:
+# game/chap/end_good.rpy:10
+translate english end_good_9413e970:
 
-    # madame "Que fais-tu ? Rends-moi mes boules ! Pourquoi les avoir prises ?!"
-    madame "What are you doing? Give my balls back to me! Why did you take them?!"
+    # x "Que fais-tu ? Rends-moi mes boules ! Pourquoi les avoir prises ?!"
+    x "What are you doing? Give my balls back to me! Why did you take them?!"
 
-# game/chap/end_good.rpy:5
-translate english end_good_eb1a98af:
+# game/chap/end_good.rpy:11
+translate english end_good_882a8b3e:
 
-    # madame "Tu ne sais donc pas que cela perturbe l'équilibre de ce monde ?!"
-    madame "Do you not know that it disrupts the balance of this world?!"
+    # x "Tu ne sais donc pas que cela perturbe l'équilibre de ce monde ?!"
+    x "Do you not know that it disrupts the balance of this world?!"
 
 # game/chap/end_good.rpy:6
 translate english end_good_856cfd12:
@@ -100,11 +100,11 @@ translate english end_good_bb94103e:
     # blanche "Hein ?"
     blanche "What?"
 
-# game/chap/end_good.rpy:19
-translate english end_good_9afe6caf:
+# game/chap/end_good.rpy:43
+translate english end_good_29b0ed16:
 
-    # madame "Amène-moi à ton père, tout de suite !"
-    madame "Bring me to your father, right this instant!"
+    # madame "Amène-moi à ton père, tout de suite !" with vpunch
+    madame "Bring me to your father, right this instant!" with vpunch
 
 # game/chap/end_good.rpy:20
 translate english end_good_5f3f6558:
@@ -184,11 +184,11 @@ translate english end_good_02a62797:
     # madame "Ne dis pas de sottises."
     madame "Don't talk nonsense."
 
-# game/chap/end_good.rpy:33
-translate english end_good_2e7cecd0:
+# game/chap/end_good.rpy:81
+translate english end_good_d467efef:
 
-    # noir "Urgh… Aaahh !!!"
-    noir "Urgh... Aaahh!!!"
+    # noir "Urgh… Aaahh !!!" with vpunch
+    noir "Urgh… Aaahh !!!" with vpunch
 
 # game/chap/end_good.rpy:34
 translate english end_good_b872bdfa:
@@ -196,11 +196,11 @@ translate english end_good_b872bdfa:
     # "Noir crie de douleur."
     "Noir cries out in pain."
 
-# game/chap/end_good.rpy:35
-translate english end_good_5f299429:
+# game/chap/end_good.rpy:86
+translate english end_good_6236b0dc:
 
-    # blanche "Papa !"
-    blanche "Daddy!"
+    # blanche "Papa !" with vpunch
+    blanche "Daddy!" with vpunch
 
 # game/chap/end_good.rpy:36
 translate english end_good_7d7b4863:
@@ -304,11 +304,11 @@ translate english end_good_365b2c1a:
     # "Madame Arc-en-Ciel pose sa main au niveau des yeux de Noir."
     "Lady Rainbow puts her hand on Noir's eyes."
 
-# game/chap/end_good.rpy:53
-translate english end_good_4b02e1ec:
+# game/chap/end_good.rpy:130
+translate english end_good_190bd67a:
 
-    # noir "Huh ? Ciel ? Que fais-tu ?"
-    noir "Huh? Sky? What are you doing?"
+    # noir "Huh ? Ciel ? Que fais-tu ?" with vpunch
+    noir "Huh? Sky? What are you doing?" with vpunch
 
 # game/chap/end_good.rpy:54
 translate english end_good_4d079eed:
@@ -490,11 +490,12 @@ translate english end_good_97ec4305:
     # "Noir rit et prend dans ses bras Madame Arc-en-Ciel."
     "Noir laughs and takes Lady Rainbow in his arms."
 
-# game/chap/end_good.rpy:84
-translate english end_good_7f295093:
 
-    # madame "Hé ! Ne me touche p-"
-    madame "Hey! Do not touch m-"
+# game/chap/end_good.rpy:206
+translate english end_good_1417cfb2:
+
+    # madame "Hé ! Ne me touche p-" with vpunch
+    madame "Hey! Do not touch m-" with vpunch
 
 # game/chap/end_good.rpy:85
 translate english end_good_61e3b9b8:
@@ -519,65 +520,16 @@ translate english end_good_70976c35:
 
     # "C'est ainsi que je pars en direction de Papa et Mam... Madame Arc-en-Ciel."
     "That is how I went, towards daddy and Mo... Lady Rainbow."
-# TODO: Translation updated at 2022-09-03 21:49
-
-# game/chap/end_good.rpy:9
-translate english end_good_6780771e:
-
-    # x "Un instant ! C'est donc toi, le petit enfant qui sème la zizanie dans ce royaume." with vpunch
-    x "Un instant ! C'est donc toi, le petit enfant qui sème la zizanie dans ce royaume." with vpunch
-
-# game/chap/end_good.rpy:10
-translate english end_good_9413e970:
-
-    # x "Que fais-tu ? Rends-moi mes boules ! Pourquoi les avoir prises ?!"
-    x "Que fais-tu ? Rends-moi mes boules ! Pourquoi les avoir prises ?!"
-
-# game/chap/end_good.rpy:11
-translate english end_good_882a8b3e:
-
-    # x "Tu ne sais donc pas que cela perturbe l'équilibre de ce monde ?!"
-    x "Tu ne sais donc pas que cela perturbe l'équilibre de ce monde ?!"
-
-# game/chap/end_good.rpy:43
-translate english end_good_29b0ed16:
-
-    # madame "Amène-moi à ton père, tout de suite !" with vpunch
-    madame "Amène-moi à ton père, tout de suite !" with vpunch
-
-# game/chap/end_good.rpy:81
-translate english end_good_d467efef:
-
-    # noir "Urgh… Aaahh !!!" with vpunch
-    noir "Urgh… Aaahh !!!" with vpunch
-
-# game/chap/end_good.rpy:86
-translate english end_good_6236b0dc:
-
-    # blanche "Papa !" with vpunch
-    blanche "Papa !" with vpunch
-
-# game/chap/end_good.rpy:130
-translate english end_good_190bd67a:
-
-    # noir "Huh ? Ciel ? Que fais-tu ?" with vpunch
-    noir "Huh ? Ciel ? Que fais-tu ?" with vpunch
-
-# game/chap/end_good.rpy:206
-translate english end_good_1417cfb2:
-
-    # madame "Hé ! Ne me touche p-" with vpunch
-    madame "Hé ! Ne me touche p-" with vpunch
 
 # game/chap/end_good.rpy:215
 translate english end_good_0c052b1f:
 
     # "FIN"
-    "FIN"
+    "THE END"
 
 translate english strings:
 
     # game/chap/end_good.rpy:2
     old "Fin heureuse"
-    new "Fin heureuse"
+    new "Good end"
 
