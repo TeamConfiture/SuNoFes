@@ -54,6 +54,8 @@ image lake_rainbow_fish:
 image fish_shadow1 = "images/fish/Fish_shadow1.png"
 
 ## Cheese cupboard
+image cheese_market_basket:
+    contains cheese_cupboard_basket("images/items/cheese_basket.png", scale = 0.9)
 # Cheese draggables
 image cheese_market_fr1_0:
     contains cheese_cupboard_angle("images/items/fromages/Fr1.png", 0)

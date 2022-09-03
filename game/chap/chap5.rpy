@@ -63,12 +63,14 @@ label chap5:
     blanche "Je..."
     piou "S'il te plaît."
     blanche "Bon... D'accord."
-    # point and click 
-    # if (echec) : 
-    #     piou "Ca ne ressemble clairement pas à ceux que j'ai déjà en vitrine ! Recommence."
-    #     loop
-    # else :
-    #     piou "Génial, merci ! On va pouvoir manger un bon repas grâce à toi !"
+    call screen cheese_market('chap5_2', 'cheese_market_fail')
+
+label cheese_market_fail:
+    piou "Ca ne ressemble clairement pas à ceux que j'ai déjà en vitrine ! Recommence."
+    call screen cheese_market('chap5_2', 'cheese_market_fail')
+
+label chap5_2:
+    piou "Génial, merci ! On va pouvoir manger un bon repas grâce à toi !"
     blanche "Avec plaisir. À propos de la boule..."
     piou "Bon, c'est pas tout ça mais il faut se remettre au boulot !"
     piou "J'ai des vaches à traire, des veaux à nourrir, et quelques vieilles poules à m'occuper."
