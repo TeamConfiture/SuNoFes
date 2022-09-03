@@ -39,7 +39,10 @@ init python:
             Actions to run when the player fails to match cards
 
         `play_actions`
-            Actions to run when the player turns several cards
+            Actions to run when the player turns all of a round's cards
+
+        `pair_actions`
+            Actions to run when the player succefully turns identical cards
 
         `completion_actions`
             Actions to run when the player successfully reveals all cards
@@ -99,7 +102,7 @@ init python:
 
         def __init__(self, cards = [], cols = 3, rows = None, null_entries = [],
                 reveal_count = 2, failure_reveal_time = 1., failure_overtime = 0.3, turn_time = 0.5,
-                failure_actions = None, play_actions = None, completion_actions = None, **kwargs):
+                failure_actions = None, play_actions = None, pair_actions = None, completion_actions = None, **kwargs):
             rows = rows or math.ceil(len(cards)*reveal_count/cols)
             super(Memory, self).__init__(cols = cols, rows = rows, allow_underfull = True, **kwargs)
             self.null_entries = null_entries
@@ -111,6 +114,7 @@ init python:
             self.failure_reveal_time = failure_reveal_time
             self.failure_actions = failure_actions
             self.play_actions = play_actions
+            self.pair_actions = pair_actions
             self.completion_actions = completion_actions
             # Indicates, for each displayed card, the base index of the card
             self.cards_map = [i for i in range(len(cards))]*self.reveal_count
@@ -150,6 +154,7 @@ init python:
             selected = card_info.pop('selected_image')
             for key in ['selected_idle_image', 'selected_hover_image', 'selected_activate_image', 'selected_insensitive_image']:
                 card_info[key] = card_info.get(key, selected)
+            card_info.pop('action')
             return ManageableImageButton(
                 **card_info,
                 action = Function(self.on_card_click, pos),
@@ -165,10 +170,12 @@ init python:
             """
             card = self.get_child_by_index(i)
             if self.active and len(self.revealed_cards) < self.reveal_count and not card.selected:
+                renpy.run(self.cards_info[self.cards_map[i]].get('action'))
                 card.selected = not card.selected
                 self.revealed_cards.append(i)
                 if len(self.revealed_cards) >= self.reveal_count:
                     if len(set([self.cards_map[i] for i in self.revealed_cards])) == 1:
+                        renpy.run(self.pair_actions)
                         self.revealed_cards = []
                         if len(set([isinstance(c, Null) or c.selected for c in self.children])) == 1:
                             # If all cards are selected, we win
