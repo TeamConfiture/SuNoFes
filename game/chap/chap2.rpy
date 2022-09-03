@@ -95,9 +95,16 @@ label chap2_completed:
     show blanche cry open at left
     blanche "S'il vous plaîîîîîîîîîît !"
     show blanche cry close at left
-    # TODO : <anime boule + Noir gagne une couleur>
     indigo "Bon, bon, ok c'est d'accord. Motus et bouche cousue et je veux revoir la boule sur son autel au plus vite. Si les gardes l'apprennent s'en est fini de moi !"
+    scene noir_colors_1 with dissolve
+    pause 2
+    scene noir_colors_2 with dissolve
+    pause 2
+    scene star
+    show chap2_spirited
+    show indigo at right
     show blanche smile open at left
+    with dissolve
     blanche "Youpi ! Merci beaucoup ! Je vous en serai éternellement reconnaissant !"
     hide blanche smile open at left
     hide indigo at right

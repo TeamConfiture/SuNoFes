@@ -131,7 +131,12 @@ label chap1_2:
     show blanche neutral close at left
     violet "Tout à fait !"
     violet "Tiens, voilà la boule !"
-    # TODO : <anime boule + Noir gagne une couleur>
+    scene noir_colors_0 with dissolve
+    pause 2
+    scene noir_colors_1 with dissolve
+    pause 2
+    scene mulberry_search with dissolve
+    show violet at right
     show blanche smile open at left
     blanche "Youpi !!! Encore six !" with vpunch
     show blanche smile close at left
