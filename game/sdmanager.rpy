@@ -209,11 +209,11 @@ define music.Theme_Menu = ["music/Theme_Menu.ogg"]
 
 define music.Theme_Violet = ["music/Theme_Violet.ogg"]
 define music.Theme_Indigo = ["music/Theme_Indigo.ogg"]
-define music.Theme_Cyan = ["music/.ogg"]
+define music.Theme_Cyan = ["music/Theme_Cyan_Trumpetico.ogg"]
 define music.Theme_Green = ["music/Theme_Green.ogg"]
-define music.Theme_Yellow = ["music/.ogg"]
-define music.Theme_Orange = ["music/.ogg"]
-define music.Theme_Red = ["music/.ogg"]
+define music.Theme_Yellow = ["music/Theme_Yellow_Kikou.ogg"]
+define music.Theme_Orange = ["music/Theme_Orange_Gedine.ogg"]
+define music.Theme_Red = ["music/Theme_Red_CrossingTheChasm.ogg"]
 
 ##=============Musique Générique===============##
 

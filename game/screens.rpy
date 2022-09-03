@@ -123,12 +123,13 @@ init python:
 
     # Music Room initialisation
     musicroom = MusicRoom(fadeout=1.0,loop=True,single_track=True)
-    musicroom.add("music/You Make Me Back.mp3", always_unlocked=True)
-    musicroom.add("music/Diamond.mp3", always_unlocked=True)
-    musicroom.add("music/Yofukashino Uta.mp3", always_unlocked=True)
-    musicroom.add("music/Dorohedoro Zombie Slushi.mp3", always_unlocked=True)
-    musicroom.add("music/Eating food and fighting Wizards.mp3", always_unlocked=True)
-    musicroom.add("music/El Canto del Colibrí.mp3", always_unlocked=True)
+    musicroom.add("music/Theme_Violet.ogg", always_unlocked=True)
+    musicroom.add("music/Theme_Indigo.ogg", always_unlocked=True)
+    musicroom.add("music/Theme_Cyan_Trumpetico.ogg", always_unlocked=True)
+    musicroom.add("music/Theme_Green.ogg", always_unlocked=True)
+    musicroom.add("music/Theme_Yellow_Kikou.ogg", always_unlocked=True)
+    musicroom.add("music/Theme_Orange_Gedine.ogg", always_unlocked=True)
+    musicroom.add("music/Theme_Red_CrossingTheChasm.ogg", always_unlocked=True)
 
 style window is default
 style say_label is default
@@ -732,26 +733,28 @@ screen music():
     use game_menu("Music", "extra"):
         vbox:
             xalign 0.5
-            ypos -25
+            ypos 75
             spacing 50
             hbox:
-                grid 2 3:
-                    xspacing 200
+                grid 4 2:
+                    xspacing 100
                     yspacing 50
                     # The buttons that play each track.
-                    textbutton "Track 1" action musicroom.Play("music/You Make Me Back.mp3"):
+                    textbutton "Track 1" action musicroom.Play("music/Theme_Violet.ogg"):
                         style "music_button"
-                    textbutton "Track 2" action musicroom.Play("music/Diamond.mp3"):
+                    textbutton "Track 2" action musicroom.Play("music/Theme_Indigo.ogg"):
                         style "music_button"
-                    textbutton "Track 3" action musicroom.Play("music/Yofukashino Uta.mp3"):
+                    textbutton "Track 3" action musicroom.Play("music/Theme_Cyan_Trumpetico.ogg"):
                         style "music_button"
-                    textbutton "Track 4" action musicroom.Play("music/Dorohedoro Zombie Slushi.mp3"):
+                    textbutton "Track 4" action musicroom.Play("music/Theme_Green.ogg"):
                         style "music_button"
-                    textbutton "Track 5" action musicroom.Play("music/Eating food and fighting Wizards.mp3"):
+                    textbutton "Track 5" action musicroom.Play("music/Theme_Yellow_Kikou.ogg"):
                         style "music_button"
-                    textbutton "Track 6" action musicroom.Play("music/El Canto del Colibrí.mp3"):
+                    textbutton "Track 6" action musicroom.Play("music/Theme_Orange_Gedine.ogg"):
                         style "music_button"
-                    # null height 20
+                    textbutton "Track 7" action musicroom.Play("music/Theme_Red_CrossingTheChasm.ogg"):
+                        style "music_button"
+                    null
             hbox:
                 xalign 0.5
                 spacing 25
