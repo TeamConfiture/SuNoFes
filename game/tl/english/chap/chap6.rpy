@@ -13,10 +13,10 @@ translate english chap6_4343dab1:
     "A cat is playing."
 
 # game/chap/chap6.rpy:5
-translate english chap6_f387f0f6:
+translate english chap6_6daaac37:
 
-    # blanche "Oh ! On dirait les quatre saisons de Vivaldi !"
-    blanche "Oh! It sounds like the Four Seasons by Vivaldi!"
+    # blanche "Oh ! On dirait les quatre saisons de Vivaldi !" with vpunch
+    blanche "Oh! It sounds like the Four Seasons by Vivaldi!" with vpunch
 
 # game/chap/chap6.rpy:6
 translate english chap6_84b17eab:
@@ -198,11 +198,11 @@ translate english chap6_a5801d2f:
     # orange "Si tu ne l'avais pas remarqué, mon piano est un peu spécial, chaque touche fait chanter une orange ou, pour les notes les plus aiguës, un citron."
     orange "If you have not noticed, my piano is a litte special, each key make an orange sing, or for the higher notes, a citrus."
 
-# game/chap/chap6.rpy:39
-translate english chap6_af703d88:
+# game/chap/chap6.rpy:63
+translate english chap6_2c4107bc:
 
-    # blanche "Tu... Tu es fou ?!"
-    blanche "Are... Are you crazy?!"
+    # blanche "Tu... Tu es fou ?!" with vpunch
+    blanche "Are... Are you crazy?!" with vpunch
 
 # game/chap/chap6.rpy:40
 translate english chap6_0c991ed6:
@@ -252,11 +252,11 @@ translate english chap6_0abac118:
     # "On entend des bruits de verre."
     "We hear glass noise."
 
-# game/chap/chap6.rpy:48
-translate english chap6_e2478f70:
+# game/chap/chap6.rpy:76
+translate english chap6_7aa3bc42:
 
-    # blanche "Aaaaaaah !"
-    blanche "Haaaaaaa!"
+    # blanche "Aaaaaaah !" with vpunch
+    blanche "Haaaaaaa!" with vpunch
 
 # game/chap/chap6.rpy:49
 translate english chap6_6db7071f:
@@ -276,11 +276,11 @@ translate english chap6_bec93512:
     # orange "Tu manques de doigté."
     orange "You lack the right touch."
 
-# game/chap/chap6.rpy:53
-translate english chap6_0e5edfe8:
+# game/chap/chap6.rpy:85
+translate english chap6_a38470df:
 
-    # blanche "Vraiment ? Tu peux m'apprendre ?"
-    blanche "Really? Can you teach me?"
+    # blanche "Vraiment ? Tu peux m'apprendre ?" with vpunch
+    blanche "Really? Can you teach me?" with vpunch
 
 # game/chap/chap6.rpy:54
 translate english chap6_7568e3e3:
@@ -300,11 +300,11 @@ translate english chap6_9d9f6eb2:
     # orange "Cepedant, je peux te donner les bases pour apprendre avec l'eau."
     orange "However, I can teach you the basics to learn with water."
 
-# game/chap/chap6.rpy:57
-translate english chap6_ca8ddaca:
+# game/chap/chap6.rpy:92
+translate english chap6_46be73b9:
 
-    # blanche "C'est vrai ?! Est-ce qu'on pourrait commencer maintenant ?!"
-    blanche "For real?! Can we start right now?!"
+    # blanche "C'est vrai ?! Est-ce qu'on pourrait commencer maintenant ?!" with vpunch
+    blanche "For real?! Can we start right now?!" with vpunch
 
 # game/chap/chap6.rpy:58
 translate english chap6_0f7b1a94:
@@ -348,11 +348,11 @@ translate english chap6_6d5d2cb3:
     # orange "Ne sois pas bougon, viens je vais te montrer."
     orange "Don't be grumpy, come here. I will show you."
 
-# game/chap/chap6.rpy:66
-translate english chap6_7c78d8d7:
+# game/chap/chap6.rpy:109
+translate english chap6_425fae10:
 
-    # blanche "Youpi ! On commence par quoi au juste ?"
-    blanche "Yay! What are we starting with?"
+    # blanche "Youpi ! On commence par quoi au juste ?" with vpunch
+    blanche "Yay! What are we starting with?" with vpunch
 
 # game/chap/chap6.rpy:68
 translate english chap6_a75c9c82:
@@ -366,116 +366,152 @@ translate english chap6_0b40d30a:
     # orange "Montre-moi comment tu te dépatouilles. 1... 2... 3..."
     orange "Show me how you fare. 1... 2... 3..."
 
+# game/chap/chap6.rpy:73
+translate english sprite_cutter_failed_8970d02c:
+
+    # orange "Non, pas comme ça ! Essaye encore !"
+    orange "No, not like that! Try again!"
+
+# game/chap/chap6.rpy:74
+translate english sprite_cutter_failed_85d94354:
+
+    # blanche "Mais, c'est long !"
+    blanche "It's too hard!"
+
+# game/chap/chap6.rpy:75
+translate english sprite_cutter_failed_f145d35c:
+
+    # orange "Mais, non ! Je t'assure ! Tu vas y arriver !"
+    orange "No, no! I promess you! You're about to succeed!"
+
+# game/chap/chap6.rpy:137
+translate english chap6_2_8d896765:
+
+    # blanche "Oh ! Je m'attendais pas du tout à obtenir un son si parfait." with vpunch
+    blanche "Oh ! Je m'attendais pas du tout à obtenir un son si parfait." with vpunch
+
+# game/chap/chap6.rpy:80
+translate english chap6_2_de6011f7:
+
+    # orange "C'est la magie des agrumes, mon enfant. Maintenant, tu devrais tenter de prendre la boule."
+    orange "C'est la magie des agrumes, mon enfant. Maintenant, tu devrais tenter de prendre la boule."
+
 # game/chap/chap6.rpy:81
-translate english chap6_e19d258a:
+translate english chap6_2_e46715f1:
+
+    # orange "Je suis persuadé que tu vas y arriver."
+    orange "Je suis persuadé que tu vas y arriver."
+
+# game/chap/chap6.rpy:81
+translate english chap6_2_e19d258a:
 
     # blanche "Oh ! C'est incroyable, j'ai réussi à l'attraper !"
-    blanche "Oh! It's incredible, I managed to caught it!"
+    blanche "Oh! It's incredible, I managed to catch it!"
 
 # game/chap/chap6.rpy:82
-translate english chap6_e42f8bfe:
+translate english chap6_2_e42f8bfe:
 
     # orange "Tu vois ! Je te l'avais dit !"
-    orange "You see! I told you!"
+    orange "See! I told you!"
 
 # game/chap/chap6.rpy:83
-translate english chap6_7a7798e7:
+translate english chap6_2_7a7798e7:
 
     # orange "Que vas-tu donc faire de cette boule maintenant qu'elle est entre tes mains ?"
     orange "What will you do now that this ball is in your hands?"
 
 # game/chap/chap6.rpy:84
-translate english chap6_81d0431d:
+translate english chap6_2_81d0431d:
 
     # blanche "Je vais repartir pour récupérer la dernière boule de couleur et retrouver mon papa !"
     blanche "I'll go back on my way to get the last color's ball and get back to daddy!"
 
 # game/chap/chap6.rpy:85
-translate english chap6_cbfd2a83:
+translate english chap6_2_cbfd2a83:
 
     # orange "Avant ça, tiens. Je te donne une brique de jus d'orange."
     orange "Before that, here, take this. I will give you an orange juice."
 
 # game/chap/chap6.rpy:86
-translate english chap6_4215f1f9:
+translate english chap6_2_4215f1f9:
 
     # orange "Tu pourras la donner à ton père, je suis sûr que ça lui remontera le moral."
     orange "You can give it to your father, I am sure it will cheer him up."
 
 # game/chap/chap6.rpy:87
-translate english chap6_e4a7a253:
+translate english chap6_2_e4a7a253:
 
     # blanche "Merci ! Je n'oublierai pas ton aide !"
     blanche "Thanks! I'll not forget your help!"
 
 # game/chap/chap6.rpy:88
-translate english chap6_554b8dc4:
+translate english chap6_2_554b8dc4:
 
     # blanche "À bientôt !"
     blanche "See you later!"
 
 # game/chap/chap6.rpy:89
-translate english chap6_5e6b397c:
+translate english chap6_2_5e6b397c:
 
     # "Quelques minutes plus tard..."
     "A few minutes later..."
 
 # game/chap/chap6.rpy:90
-translate english chap6_5e41ac38:
+translate english chap6_2_5e41ac38:
 
     # x "Hmpf, Hmpf..."
     x "Huff, huff..."
 
 # game/chap/chap6.rpy:91
-translate english chap6_063dda80:
+translate english chap6_2_063dda80:
 
     # "Grosso et Maigrichon arrivent essouflés devant Orange."
     "Biggy and Slimmy arrive short of breath before Orange."
 
 # game/chap/chap6.rpy:92
-translate english chap6_a677ff8a:
+translate english chap6_2_a677ff8a:
 
     # grosso "Hmpf, Hmpf... Arrête cet enf... Hmpf, Hmpf..."
     grosso "Huff, huff... Stop this chi... Huff, huff..."
 
 # game/chap/chap6.rpy:93
-translate english chap6_dfb0191c:
+translate english chap6_2_dfb0191c:
 
     # maigrichon "Oui ! Cet enfant ne doit pas s'échapper ! Hmpf, Hmpf..."
     maigrichon "Yes! This child must not get away! Huff, huff..."
 
 # game/chap/chap6.rpy:94
-translate english chap6_fd70f745:
+translate english chap6_2_fd70f745:
 
     # orange "Un petit remontant messieurs ?"
     orange "A pick-me-up sirs?"
 
 # game/chap/chap6.rpy:95
-translate english chap6_da1beb31:
+translate english chap6_2_da1beb31:
 
     # orange "J'ai un de ces jus d'agrumes dont vous me direz des nouvelles."
     orange "I have a citrus juice which you will tell me about."
 
 # game/chap/chap6.rpy:96
-translate english chap6_3756b010:
+translate english chap6_2_3756b010:
 
     # grosso "Pourquoi pas... J'ai la gorge sèche."
     grosso "Why not... My throat is dry."
 
-# game/chap/chap6.rpy:97
-translate english chap6_b52575d7:
+# game/chap/chap6.rpy:177
+translate english chap6_2_361178b8:
 
-    # maigrichon "Grosso !"
-    maigrichon "Biggy!"
+    # maigrichon "Grosso !" with vpunch
+    maigrichon "Biggy!" with vpunch
 
 # game/chap/chap6.rpy:98
-translate english chap6_3a7738b1:
+translate english chap6_2_3a7738b1:
 
     # grosso "Bon, bon, plus tard alors, allons-y !"
     grosso "Okay, okay, later then, let's go!"
 
 # game/chap/chap6.rpy:99
-translate english chap6_4e41fbe5:
+translate english chap6_2_4e41fbe5:
 
     # "Grosso et Maigrichon quittent Orange, le laissant seul devant son piano."
     "Biggy and Slimmy leave Orange, alone with his piano."
@@ -493,206 +529,3 @@ translate english strings:
     # game/chap/chap6.rpy:37
     old "Exiger qu'il démarre l'entraînement"
     new "Demand that he starts the training"
-
-# TODO: Translation updated at 2022-09-03 19:40
-
-# game/chap/chap6.rpy:73
-translate english sprite_cutter_failed_8970d02c:
-
-    # orange "Non, pas comme ça ! Essaye encore !"
-    orange "Non, pas comme ça ! Essaye encore !"
-
-# game/chap/chap6.rpy:74
-translate english sprite_cutter_failed_85d94354:
-
-    # blanche "Mais, c'est long !"
-    blanche "Mais, c'est long !"
-
-# game/chap/chap6.rpy:75
-translate english sprite_cutter_failed_f145d35c:
-
-    # orange "Mais, non ! Je t'assure ! Tu vas y arriver !"
-    orange "Mais, non ! Je t'assure ! Tu vas y arriver !"
-
-# game/chap/chap6.rpy:79
-translate english chap6_2_d3d190d3:
-
-    # blanche "Oh ! Je m'attendais pas du tout à obtenir un son si parfait."
-    blanche "Oh ! Je m'attendais pas du tout à obtenir un son si parfait."
-
-# game/chap/chap6.rpy:80
-translate english chap6_2_de6011f7:
-
-    # orange "C'est la magie des agrumes, mon enfant. Maintenant, tu devrais tenter de prendre la boule."
-    orange "C'est la magie des agrumes, mon enfant. Maintenant, tu devrais tenter de prendre la boule."
-
-# game/chap/chap6.rpy:81
-translate english chap6_2_e46715f1:
-
-    # orange "Je suis persuadé que tu vas y arriver."
-    orange "Je suis persuadé que tu vas y arriver."
-
-# game/chap/chap6.rpy:82
-translate english chap6_2_e19d258a:
-
-    # blanche "Oh ! C'est incroyable, j'ai réussi à l'attraper !"
-    blanche "Oh ! C'est incroyable, j'ai réussi à l'attraper !"
-
-# game/chap/chap6.rpy:83
-translate english chap6_2_e42f8bfe:
-
-    # orange "Tu vois ! Je te l'avais dit !"
-    orange "Tu vois ! Je te l'avais dit !"
-
-# game/chap/chap6.rpy:84
-translate english chap6_2_7a7798e7:
-
-    # orange "Que vas-tu donc faire de cette boule maintenant qu'elle est entre tes mains ?"
-    orange "Que vas-tu donc faire de cette boule maintenant qu'elle est entre tes mains ?"
-
-# game/chap/chap6.rpy:85
-translate english chap6_2_81d0431d:
-
-    # blanche "Je vais repartir pour récupérer la dernière boule de couleur et retrouver mon papa !"
-    blanche "Je vais repartir pour récupérer la dernière boule de couleur et retrouver mon papa !"
-
-# game/chap/chap6.rpy:86
-translate english chap6_2_cbfd2a83:
-
-    # orange "Avant ça, tiens. Je te donne une brique de jus d'orange."
-    orange "Avant ça, tiens. Je te donne une brique de jus d'orange."
-
-# game/chap/chap6.rpy:87
-translate english chap6_2_4215f1f9:
-
-    # orange "Tu pourras la donner à ton père, je suis sûr que ça lui remontera le moral."
-    orange "Tu pourras la donner à ton père, je suis sûr que ça lui remontera le moral."
-
-# game/chap/chap6.rpy:88
-translate english chap6_2_e4a7a253:
-
-    # blanche "Merci ! Je n'oublierai pas ton aide !"
-    blanche "Merci ! Je n'oublierai pas ton aide !"
-
-# game/chap/chap6.rpy:89
-translate english chap6_2_554b8dc4:
-
-    # blanche "À bientôt !"
-    blanche "À bientôt !"
-
-# game/chap/chap6.rpy:90
-translate english chap6_2_5e6b397c:
-
-    # "Quelques minutes plus tard..."
-    "Quelques minutes plus tard..."
-
-# game/chap/chap6.rpy:91
-translate english chap6_2_5e41ac38:
-
-    # x "Hmpf, Hmpf..."
-    x "Hmpf, Hmpf..."
-
-# game/chap/chap6.rpy:92
-translate english chap6_2_063dda80:
-
-    # "Grosso et Maigrichon arrivent essouflés devant Orange."
-    "Grosso et Maigrichon arrivent essouflés devant Orange."
-
-# game/chap/chap6.rpy:93
-translate english chap6_2_a677ff8a:
-
-    # grosso "Hmpf, Hmpf... Arrête cet enf... Hmpf, Hmpf..."
-    grosso "Hmpf, Hmpf... Arrête cet enf... Hmpf, Hmpf..."
-
-# game/chap/chap6.rpy:94
-translate english chap6_2_dfb0191c:
-
-    # maigrichon "Oui ! Cet enfant ne doit pas s'échapper ! Hmpf, Hmpf..."
-    maigrichon "Oui ! Cet enfant ne doit pas s'échapper ! Hmpf, Hmpf..."
-
-# game/chap/chap6.rpy:95
-translate english chap6_2_fd70f745:
-
-    # orange "Un petit remontant messieurs ?"
-    orange "Un petit remontant messieurs ?"
-
-# game/chap/chap6.rpy:96
-translate english chap6_2_da1beb31:
-
-    # orange "J'ai un de ces jus d'agrumes dont vous me direz des nouvelles."
-    orange "J'ai un de ces jus d'agrumes dont vous me direz des nouvelles."
-
-# game/chap/chap6.rpy:97
-translate english chap6_2_3756b010:
-
-    # grosso "Pourquoi pas... J'ai la gorge sèche."
-    grosso "Pourquoi pas... J'ai la gorge sèche."
-
-# game/chap/chap6.rpy:98
-translate english chap6_2_b52575d7:
-
-    # maigrichon "Grosso !"
-    maigrichon "Grosso !"
-
-# game/chap/chap6.rpy:99
-translate english chap6_2_3a7738b1:
-
-    # grosso "Bon, bon, plus tard alors, allons-y !"
-    grosso "Bon, bon, plus tard alors, allons-y !"
-
-# game/chap/chap6.rpy:100
-translate english chap6_2_4e41fbe5:
-
-    # "Grosso et Maigrichon quittent Orange, le laissant seul devant son piano."
-    "Grosso et Maigrichon quittent Orange, le laissant seul devant son piano."
-
-# TODO: Translation updated at 2022-09-03 21:49
-
-# game/chap/chap6.rpy:8
-translate english chap6_6daaac37:
-
-    # blanche "Oh ! On dirait les quatre saisons de Vivaldi !" with vpunch
-    blanche "Oh ! On dirait les quatre saisons de Vivaldi !" with vpunch
-
-# game/chap/chap6.rpy:63
-translate english chap6_2c4107bc:
-
-    # blanche "Tu... Tu es fou ?!" with vpunch
-    blanche "Tu... Tu es fou ?!" with vpunch
-
-# game/chap/chap6.rpy:76
-translate english chap6_7aa3bc42:
-
-    # blanche "Aaaaaaah !" with vpunch
-    blanche "Aaaaaaah !" with vpunch
-
-# game/chap/chap6.rpy:85
-translate english chap6_a38470df:
-
-    # blanche "Vraiment ? Tu peux m'apprendre ?" with vpunch
-    blanche "Vraiment ? Tu peux m'apprendre ?" with vpunch
-
-# game/chap/chap6.rpy:92
-translate english chap6_46be73b9:
-
-    # blanche "C'est vrai ?! Est-ce qu'on pourrait commencer maintenant ?!" with vpunch
-    blanche "C'est vrai ?! Est-ce qu'on pourrait commencer maintenant ?!" with vpunch
-
-# game/chap/chap6.rpy:109
-translate english chap6_425fae10:
-
-    # blanche "Youpi ! On commence par quoi au juste ?" with vpunch
-    blanche "Youpi ! On commence par quoi au juste ?" with vpunch
-
-# game/chap/chap6.rpy:137
-translate english chap6_2_8d896765:
-
-    # blanche "Oh ! Je m'attendais pas du tout à obtenir un son si parfait." with vpunch
-    blanche "Oh ! Je m'attendais pas du tout à obtenir un son si parfait." with vpunch
-
-# game/chap/chap6.rpy:177
-translate english chap6_2_361178b8:
-
-    # maigrichon "Grosso !" with vpunch
-    maigrichon "Grosso !" with vpunch
-
