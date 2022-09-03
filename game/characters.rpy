@@ -26,6 +26,8 @@ image blanche smile close = im.FactorScale("images/blanche/Blanche_smile_close.p
 image blanche smile open = im.FactorScale("images/blanche/Blanche_smile_open.png", blancheSpriteSize)
 image blanche surprised close = im.FactorScale("images/blanche/Blanche_surprised_close.png", blancheSpriteSize)
 image blanche surprised open = im.FactorScale("images/blanche/Blanche_surprised_open.png", blancheSpriteSize)
+image blanche neutralf close = im.Flip(im.FactorScale("images/blanche/Blanche_neutral_close.png", blancheSpriteSize), horizontal="True")
+image blanche neutralf open = im.Flip(im.FactorScale("images/blanche/Blanche_neutral_open.png", blancheSpriteSize), horizontal="True")
 
 image noir bandeau hurt close = im.FactorScale("images/noir/bandeau/hurt_close.png", blancheSpriteSize)
 image noir bandeau hurt open = im.FactorScale("images/noir/bandeau/hurt_open.png", blancheSpriteSize)
@@ -55,7 +57,13 @@ image mme ignore open = im.FactorScale("images/mmeaec/mme_ignore_open.png", blan
 image mme neutral close = im.FactorScale("images/mmeaec/mme_neutral_close.png", blancheSpriteSize)
 image mme neutral open = im.FactorScale("images/mmeaec/mme_neutral_open.png", blancheSpriteSize)
 image mme sad close = im.FactorScale("images/mmeaec/mme_sad_close.png", blancheSpriteSize)
-image mme sad open = im.FactorScale("images/mmeaec/mme_sad_open.png", blancheSpriteSize)
+image mme sad open =  im.FactorScale("images/mmeaec/mme_sad_open.png", blancheSpriteSize)
+
+# Flip
+image mme angryf close = im.Flip(im.FactorScale("images/mmeaec/mme_angry_close.png", blancheSpriteSize), horizontal="True")
+image mme angryf open = im.Flip(im.FactorScale("images/mmeaec/mme_angry_open.png", blancheSpriteSize), horizontal="True")
+image mme neutralf close = im.Flip(im.FactorScale("images/mmeaec/mme_neutral_close.png", blancheSpriteSize), horizontal="True")
+image mme neutralf open = im.Flip(im.FactorScale("images/mmeaec/mme_neutral_open.png", blancheSpriteSize), horizontal="True")
 
 image grosso = im.FactorScale("images/gardes/grosso.png", guardSpriteSize)
 image maigrichon = im.FactorScale("images/gardes/maigrichon.png", guardSpriteSize)
