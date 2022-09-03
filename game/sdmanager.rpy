@@ -161,11 +161,21 @@ define sound.Axo_Full_Question = ["audio/Characters/Axo/Axo_Full_Question_01.ogg
 define sound.Axo_Partial_Happy = ["audio/Characters/Axo/Axo_Partial_Happy_01.ogg"]
 define sound.Axo_Partial_Question = ["audio/Characters/Axo/Axo_Partial_Question_01.ogg"]
 
-## Guards
-define sound.Guards_Speak = ["audio/Characters/Guards/.ogg"]
-define sound.Guards_Angry = ["audio/Characters/Guards/.ogg"]
-define sound.Guards_Happy = ["audio/Characters/Guards/.ogg"]
-define sound.Guards_Cry = ["audio/Characters/Guards/.ogg"]
+## Grosso
+define sound.Grosso_Angry = ["audio/Characters/Grosso/Grosso_Angry_01.ogg","audio/Characters/Grosso/Grosso_Angry_02.ogg","audio/Characters/Grosso/Grosso_Angry_03.ogg","audio/Characters/Grosso/Grosso_Angry_04.ogg"]
+define sound.Grosso_Cry = ["audio/Characters/Grosso/Grosso_Cry_01.ogg","audio/Characters/Grosso/Grosso_Cry_02.ogg","audio/Characters/Grosso/Grosso_Cry_03.ogg"]
+define sound.Grosso_Gasp = ["audio/Characters/Grosso/Grosso_Gasp_01.ogg","audio/Characters/Grosso/Grosso_Gasp_02.ogg","audio/Characters/Grosso/Grosso_Gasp_03.ogg"]
+define sound.Grosso_No = ["audio/Characters/Grosso/Grosso_No_01.ogg","audio/Characters/Grosso/Grosso_No_02.ogg","audio/Characters/Grosso/Grosso_No_03.ogg","audio/Characters/Grosso/Grosso_No_04.ogg"]
+define sound.Grosso_Question = ["audio/Characters/Grosso/Grosso_Question_01.ogg","audio/Characters/Grosso/Grosso_Question_02.ogg","audio/Characters/Grosso/Grosso_Question_03.ogg","audio/Characters/Grosso/Grosso_Question_04.ogg"]
+define sound.Grosso_Sigh = ["audio/Characters/Grosso/Grosso_Sigh_01.ogg","audio/Characters/Grosso/Grosso_Sigh_02.ogg","audio/Characters/Grosso/Grosso_Sigh_03.ogg","audio/Characters/Grosso/Grosso_Sigh_04.ogg"]
+define sound.Grosso_Yes = ["audio/Characters/Grosso/Grosso_Yes_01.ogg","audio/Characters/Grosso/Grosso_Yes_02.ogg","audio/Characters/Grosso/Grosso_Yes_03.ogg","audio/Characters/Grosso/Grosso_Yes_04.ogg"]
+
+#Maigrichon
+define sound.Maigrichon_Angry = ["audio/Characters/Maigrichon/Maigrichon_Angry_01.ogg","audio/Characters/Maigrichon/Maigrichon_Angry_02.ogg"]
+define sound.Maigrichon_Exclamation = ["audio/Characters/Maigrichon/Maigrichon_Exclamation_01.ogg","audio/Characters/Maigrichon/Maigrichon_Exclamation_02.ogg","audio/Characters/Maigrichon/Maigrichon_Exclamation_03.ogg"]
+define sound.Maigrichon_No = ["audio/Characters/Maigrichon/Maigrichon_No_01.ogg","audio/Characters/Maigrichon/Maigrichon_No_02.ogg","audio/Characters/Maigrichon/Maigrichon_No_03.ogg"]
+define sound.Maigrichon_Sigh = ["audio/Characters/Maigrichon/Maigrichon_Sigh_01.ogg","audio/Characters/Maigrichon/Maigrichon_Sigh_02.ogg","audio/Characters/Maigrichon/Maigrichon_Sigh_03.ogg"]
+define sound.Maigrichon_Yes = ["audio/Characters/Maigrichon/Maigrichon_Yes_01.ogg","audio/Characters/Maigrichon/Maigrichon_Yes_02.ogg","audio/Characters/Maigrichon/Maigrichon_Yes_03.ogg"]
 
 ## Chicks
 define sound.Chicks_Speak = ["audio/Birds/Chick_01.ogg","audio/Birds/Chick_02.ogg","audio/Birds/Chick_03.ogg","audio/Birds/Chick_04.ogg"]
