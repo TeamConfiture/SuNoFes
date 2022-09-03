@@ -21,23 +21,22 @@ label chap7:
     blanche "Non ! Non ! Calme-toi ! Je viens en paix ! Je veux juste t'emprunter pour une nuit ta boule de cristal. C'est pour mon papa !"
     red "Bats-toi ! Vile être qui veut piller mes terres !"
     blanche "Zut, il ne m'écoute pas. Je vais devoir essayer de me défendre…"
-    # TODO <illu blanche se bat contre le chat>
-    # mini-jeu : des flèches s'affichent une à une et le joeur doit taper la fleche correspondant
+    call screen chap7_simon_says('chap7_2', 'simon_game_defeat')
 
-    # si echec :
-    # red "Hmpf… Hmpf… Pas mal, pas mal pour un intrus. Mais, Red a gagné ! Il en faut plus que ça pour me battre" loop
+label simon_game_defeat:
+    red "Hmpf… Hmpf… Pas mal, pas mal pour un intrus. Mais, Red a gagné ! Il en faut plus que ça pour me battre"
+    call screen chap7_simon_says('chap7_2', 'simon_game_defeat')
 
-    # si réussi :
-    # red "Hmpf… Hmpf… Etranger, je reconnais ma défaite. D'où vient ta puissance ? Aucun être n'a battu Red en dehors de Jaune. Qui est ton maître ?"
-    # blanche "Je n'ai rien fait ! Rien appris ! Je suis juste rapide."
-    # red "Sacre bleu ! Ainsi, tu es comme Jaune ! Quel est ton secret ? Apprends-moi ! Il faut que je sois le plus fort pour défendre ma boule de cristal !"
-    # blanche "Jaune ? Le chat avec son poussin ? Il t'a battu ? Mais, il ne fait que dormir !"
-    # red "La fourrure ne fait pas le chat. Les apparences sont parfois trompeuses. C'est un Gardien de Couleurs très puissant !"
-    # red "Alors, vas-tu m'apprendre tes techniques ?!"
-    # blanche "Je n'ai aucune technique ! Je suis juste là pour ta boule de cristal…"
-    # red "Mensonge ! Cela ne peut pas être un talent inné ! Je refuse d'y croire !"
-    # blanche "Il ne veut rien savoir… Que faire… Je veux juste récupérer sa boule…"
-
+label chap7_2:
+    red "Hmpf… Hmpf… Etranger, je reconnais ma défaite. D'où vient ta puissance ? Aucun être n'a battu Red en dehors de Jaune. Qui est ton maître ?"
+    blanche "Je n'ai rien fait ! Rien appris ! Je suis juste rapide."
+    red "Sacre bleu ! Ainsi, tu es comme Jaune ! Quel est ton secret ? Apprends-moi ! Il faut que je sois le plus fort pour défendre ma boule de cristal !"
+    blanche "Jaune ? Le chat avec son poussin ? Il t'a battu ? Mais, il ne fait que dormir !"
+    red "La fourrure ne fait pas le chat. Les apparences sont parfois trompeuses. C'est un Gardien de Couleurs très puissant !"
+    red "Alors, vas-tu m'apprendre tes techniques ?!"
+    blanche "Je n'ai aucune technique ! Je suis juste là pour ta boule de cristal…"
+    red "Mensonge ! Cela ne peut pas être un talent inné ! Je refuse d'y croire !"
+    blanche "Il ne veut rien savoir… Que faire… Je veux juste récupérer sa boule…"
     menu:
         "L'assommer et prendre sa boule":
             blanche "Je sais ! Red ferme les yeux !"
