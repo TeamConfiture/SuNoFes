@@ -11,7 +11,7 @@ screen chap3_lake_phishing():
         )
     add PoorMansAnimatedImageButton(
         idle_image = "lake_fish1",
-        action = Jump('lake_phishing_fish1'),
+        action = [Play('sound', renpy.random.choice(sound.Fishing)), Jump('lake_phishing_fish1')],
         focus_mask = True,
         xpos = 0.3,
         ypos = 0.5,
@@ -19,7 +19,7 @@ screen chap3_lake_phishing():
     for f in ["21", "22", "23"]:
         add PoorMansAnimatedImageButton(
             idle_image = "lake_fish"+f,
-            action = Jump('lake_phishing_fish2'),
+            action = [Play('sound', renpy.random.choice(sound.Fishing)), Jump('lake_phishing_fish2')],
             focus_mask = True,
             xpos = 0.35,
             ypos = 0.2,
@@ -29,7 +29,7 @@ screen chap3_lake_phishing():
         # before showing up
         add PoorMansAnimatedImageButton(
             idle_image = "lake_rainbow_fish",
-            action = Jump('chap3_2'),
+            action = [Play('sound', renpy.random.choice(sound.Fishing)), Jump('chap3_2')],
             focus_mask = True,
             xpos = 0.,
             ypos = 0.,
@@ -37,14 +37,14 @@ screen chap3_lake_phishing():
     if not lake_phishing_fished_boot:
         imagebutton:
             idle "lake_boot"
-            action Jump('lake_phishing_boot')
+            action [Play('sound', renpy.random.choice(sound.Fishing)), Jump('lake_phishing_boot')]
             focus_mask True
             xpos 0.72
             ypos 0.55
     if not lake_phishing_fished_axolotl:
         imagebutton:
             idle "lake_axolotl"
-            action Jump('lake_fishing_axolotl')
+            action [Play('sound', renpy.random.choice(sound.Fishing)), Jump('lake_fishing_axolotl')]
             focus_mask True
             xpos 0.31
             ypos 0.75
