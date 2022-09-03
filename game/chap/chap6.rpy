@@ -67,17 +67,18 @@ label chap6:
 
     orange "Tout d'abord il faut couper les agrumes."
     orange "Montre-moi comment tu te dépatouilles. 1... 2... 3..."
+    call screen chap6_sprite_cutter('chap6_2', 'sprite_cutter_failed')
 
-    # if failed:
-    # orange "Non, pas comme ça ! Essaye encore !"
-    # blanche "Mais, c'est long !"
-    # orange "Mais, non ! Je t'assure ! Tu vas y arriver !"
-    # loop
-    # else:
-    # blanche "Oh ! Je m'attendais pas du tout à obtenir un son si parfait."
-    # orange "C'est la magie des agrumes, mon enfant. Maintenant, tu devrais tenter de prendre la boule."
-    # orange "Je suis persuadé que tu vas y arriver."
+label sprite_cutter_failed:
+    orange "Non, pas comme ça ! Essaye encore !"
+    blanche "Mais, c'est long !"
+    orange "Mais, non ! Je t'assure ! Tu vas y arriver !"
+    call screen chap6_sprite_cutter('chap6_2', 'sprite_cutter_failed')
 
+label chap6_2:
+    blanche "Oh ! Je m'attendais pas du tout à obtenir un son si parfait."
+    orange "C'est la magie des agrumes, mon enfant. Maintenant, tu devrais tenter de prendre la boule."
+    orange "Je suis persuadé que tu vas y arriver."
     blanche "Oh ! C'est incroyable, j'ai réussi à l'attraper !"
     orange "Tu vois ! Je te l'avais dit !"
     orange "Que vas-tu donc faire de cette boule maintenant qu'elle est entre tes mains ?"
