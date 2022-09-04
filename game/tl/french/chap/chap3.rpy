@@ -304,7 +304,7 @@ translate french chap3_ee114534:
 translate french chap3_aa5a25bb:
 
     # blanche "À la maison, tout est noir et blanc. Il n'y a pas beaucoup de couleur."
-    blanche "À la maison, tout est noir et blanc. Il n'y a pas beaucoup de couleur."
+    blanche "À la maison, tout est noir et blanc. Il n'y a pas beaucoup de couleurs."
 
 # game/chap/chap3.rpy:104
 translate french chap3_7d9e022a:
