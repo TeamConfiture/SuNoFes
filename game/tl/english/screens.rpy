@@ -96,10 +96,6 @@
     old "images/menu/fr_fr/settings_%s.png"
     new "images/menu/en_us/settings_%s.png"
 
-# TODO: Translation updated at 2022-08-18 21:28
-
-translate english strings:
-
     # game/screens.rpy:310
     old "Nouvelle partie"
     new "New Game"
@@ -183,4 +179,8 @@ translate english strings:
     # game/screens.rpy:997
     old "Avance rapide"
     new "Fast Forward"
+
+    # game/screens.rpy:749
+    old "Piste [id]"
+    new "Track [id]"
 

@@ -182,3 +182,7 @@ translate french strings:
     old "Avance rapide"
     new "Avance rapide"
 
+    # game/screens.rpy:749
+    old "Piste [id]"
+    new "Piste [id]"
+
