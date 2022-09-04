@@ -2,7 +2,7 @@ label chap5:
     call titlepage(5)
     scene country
     with dissolve
-    play music music.Theme_Yellow fadein 1.0
+    play music music.Theme_Yellow fadein 1.0 volume 0.7
     x "Piou, piou ! Réveille-toi Jaune !"
     x "On doit aller traire les vaches ce matin ! C'est important si on veut que la fromagerie tourne cette semaine !"
     show jaune at right with dissolve

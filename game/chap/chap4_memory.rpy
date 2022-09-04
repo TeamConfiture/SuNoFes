@@ -11,13 +11,13 @@ screen chap4_memory_game(next_chapter_label, timeout_label):
         def card_bg(id):
             return {
                 "auto": "images/items/cards/Carte_dos_%s.png",
-                "action": Play('sound', renpy.random.choice(sound.Card_Together)),
+                "action": Play('sound', renpy.random.choice(sound.Card_Select)),
                 }
 
     default memory = Memory(
         cards = [ { "selected_image": "images/items/cards/Carte" + str(i+1) + ".png", **card_bg(i) } for i in range(5) ],
         completion_actions = SetScreenVariable('succeeded', 1),
-        pair_actions = Play('sound', renpy.random.choice(sound.Card_Select)),
+        pair_actions = Play('sound', renpy.random.choice(sound.Card_Together)),
         cols = 4, spacing = 20, null_entries = [6, 7],
         xalign = 0.5, yalign = 0.5,
         )
