@@ -32,6 +32,10 @@
     old "Développeur"
     new "Developer"
 
+    # game/screens.rpy:818
+    old "Développeur en chef"
+    new "Lead Developer"
+
     # game/screens.rpy:834
     old "Sound Designer"
     new "Sound Designer"

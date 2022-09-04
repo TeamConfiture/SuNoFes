@@ -815,7 +815,7 @@ screen credits():
                 vbox:
                     text "Ayowel":
                         style "credits_text_name"
-                    text _("Développeur"):
+                    text _("Développeur en chef"):
                         style "credits_text_role"
                     text "{a=https://github.com/Ayowel}https://github.com/Ayowel{/a}":
                         style "credits_text_link"
