@@ -446,7 +446,9 @@ translate french strings:
     old "Réfléchir avec lui pour combattre Jaune et demander sa boule"
     new "Réfléchir avec lui pour combattre Jaune et demander sa boule"
 
-# TODO: Translation updated at 2022-09-03 19:41
+    # game/chap/chap7_simon.rpy:17
+    old "Remontrer"
+    new "Remontrer"
 
 # game/chap/chap7.rpy:27
 translate french simon_game_defeat_d3b17c61:
@@ -813,8 +815,6 @@ translate french chap7_2_b2f7d320:
 
     # maigrichon "Tu ne nous échapperas pas cette fois !"
     maigrichon "Tu ne nous échapperas pas cette fois !"
-
-# TODO: Translation updated at 2022-09-03 23:38
 
 # game/chap/chap7.rpy:19
 translate french chap7_30aa429f:

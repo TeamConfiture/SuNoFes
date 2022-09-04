@@ -14,6 +14,6 @@ screen chap7_simon_says(next_label, previous_label):
         generated_len = 5,
     )
     add simon
-    textbutton "Remontrer":
+    textbutton _("Remontrer"):
         xpos 120 ypos 120
         action Function(simon.update_simon_demonstration)
