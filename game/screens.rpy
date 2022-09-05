@@ -120,6 +120,7 @@ init python:
     # Gallery's initialisation
     album = Gallery()
     album.locked_button = "gui/slot_lock.png"
+    album.transition = dissolve
     for cg in ['good', 'neutral', 'bad']:
         album.button(cg)
         album.condition("persistent.reached_end_" + cg)
