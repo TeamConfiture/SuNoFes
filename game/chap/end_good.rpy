@@ -215,4 +215,5 @@ label end_good:
     "FIN"
     python:
         persistent.reached_end_good = True
+        persistent.last_reached_end = 'good'
         renpy.save_persistent()

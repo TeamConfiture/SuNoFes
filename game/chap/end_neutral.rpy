@@ -108,4 +108,5 @@ label end_neutral:
     "FIN"
     python:
         persistent.reached_end_neutral = True
+        persistent.last_reached_end = 'neutral'
         renpy.save_persistent()

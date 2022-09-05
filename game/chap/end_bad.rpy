@@ -82,4 +82,5 @@ label end_bad:
     "FIN"
     python:
         persistent.reached_end_bad = True
+        persistent.last_reached_end = 'bad'
         renpy.save_persistent()

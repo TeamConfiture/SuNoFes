@@ -185,6 +185,24 @@ image neutral_end_spirited_final_short = Spirited(
     spawn_box = (config.screen_width/2 - 220, 300, - config.screen_width/2 - 180, -200),
 )
 
+# main menu spiriteds
+image spirited_main_menu_white = Spirited(
+    sprite_list = ["images/sprites/small_firefly.png", "images/sprites/big_firefly.png", "images/sprites/medium_firefly.png"],
+    initial_count = 30,
+    renewal_rate = 50,
+    speed_range = (10, 150),
+    direction_range = (80, 100),
+    ttl_range = (1, 3),
+)
+image spirited_main_menu_black = Spirited(
+    sprite_list = ["images/sprites/small_firefly_black.png", "images/sprites/big_firefly_black.png", "images/sprites/medium_firefly_black.png"],
+    initial_count = 30,
+    renewal_rate = 50,
+    speed_range = (10, 150),
+    direction_range = (80, 100),
+    ttl_range = (1, 3),
+)
+
 # CG
 python:
     nb_cg = 7
