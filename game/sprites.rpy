@@ -142,7 +142,7 @@ image cheese_market_exit_fr5:
 image cheese_market_exit_fr5a:
     contains cheese_cupboard_exit("images/items/fromages/Fr5a.png", xalign = 183/414, yalign = 177/304)
 
-# Noir 
+# Noir
 image end_spirited_back = Spirited(
     sprite_list = ["images/sprites/small_firefly_black.png", "images/sprites/medium_firefly_black.png", "images/sprites/big_firefly_black.png"],
     initial_count = 100,
@@ -161,6 +161,28 @@ image end_spirited_front = Spirited(
     direction_range = (60, 120),
     ttl_range = (10, 15),
     spawn_box = (config.screen_width/2 + 250, config.screen_height/2, -config.screen_width/4, 0),
+)
+
+image neutral_end_spirited_final_long = Spirited(
+    sprite_list = ["images/sprites/small_firefly_black.png", "images/sprites/medium_firefly_black.png", "images/sprites/big_firefly_black.png"],
+    initial_count = 50,
+    renewal_rate = 300,
+    speed_range = (30, 40),
+    roll_range = (0, 20),
+    direction_range = (20, 60),
+    ttl_range = (10, 40),
+    spawn_box = (config.screen_width/2 - 220, 300, - config.screen_width/2 - 180, -200),
+)
+
+image neutral_end_spirited_final_short = Spirited(
+    sprite_list = ["images/sprites/small_firefly_black.png", "images/sprites/medium_firefly_black.png", "images/sprites/big_firefly_black.png"],
+    initial_count = 0,
+    renewal_rate = 200,
+    speed_range = (30, 40),
+    roll_range = (0, 20),
+    direction_range = (0, 70),
+    ttl_range = (10, 30),
+    spawn_box = (config.screen_width/2 - 220, 300, - config.screen_width/2 - 180, -200),
 )
 
 # CG

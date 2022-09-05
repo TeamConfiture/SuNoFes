@@ -97,7 +97,8 @@ label end_neutral:
     hide end_spirited_back behind noir
     scene neutral
     with dissolve
-    #<illu noir qui prend blanche dans ses bras, une partie de son corps est dans un état de paillettes lumineuses noires (exemple)>
+    show neutral_end_spirited_final_short
+    show neutral_end_spirited_final_long
     noir "Merci de m'avoir fait voir l'arc-en-ciel une dernière fois…"
     scene black with dissolve
     "C'est ainsi que Noir, mon père, disparut dans l'obscurité…"
