@@ -125,14 +125,15 @@ init python:
         album.image("images/cg/" + cg + ".png")
 
     # Music Room initialisation
+    musicroom_sounds = [
+        "music/Theme_Violet.ogg", "music/Theme_Indigo.ogg",
+        "music/Theme_Cyan_Trumpetico.ogg", "music/Theme_Green.ogg",
+        "music/Theme_Yellow_Kikou.ogg", "music/Theme_Orange_Gedine.ogg",
+        "music/Theme_Red_CrossingTheChasm.ogg",
+        ]
     musicroom = MusicRoom(fadeout=1.0,loop=True,single_track=True)
-    musicroom.add("music/Theme_Violet.ogg", always_unlocked=True)
-    musicroom.add("music/Theme_Indigo.ogg", always_unlocked=True)
-    musicroom.add("music/Theme_Cyan_Trumpetico.ogg", always_unlocked=True)
-    musicroom.add("music/Theme_Green.ogg", always_unlocked=True)
-    musicroom.add("music/Theme_Yellow_Kikou.ogg", always_unlocked=True)
-    musicroom.add("music/Theme_Orange_Gedine.ogg", always_unlocked=True)
-    musicroom.add("music/Theme_Red_CrossingTheChasm.ogg", always_unlocked=True)
+    for s in musicroom_sounds:
+        musicroom.add(s, always_unlocked=True)
 
 style window is default
 style say_label is default
@@ -741,22 +742,12 @@ screen music():
                 grid 4 2:
                     xspacing 100
                     yspacing 50
+                    allow_underfull True
                     # The buttons that play each track.
-                    textbutton "Track 1" action musicroom.Play("music/Theme_Violet.ogg"):
-                        style "music_button"
-                    textbutton "Track 2" action musicroom.Play("music/Theme_Indigo.ogg"):
-                        style "music_button"
-                    textbutton "Track 3" action musicroom.Play("music/Theme_Cyan_Trumpetico.ogg"):
-                        style "music_button"
-                    textbutton "Track 4" action musicroom.Play("music/Theme_Green.ogg"):
-                        style "music_button"
-                    textbutton "Track 5" action musicroom.Play("music/Theme_Yellow_Kikou.ogg"):
-                        style "music_button"
-                    textbutton "Track 6" action musicroom.Play("music/Theme_Orange_Gedine.ogg"):
-                        style "music_button"
-                    textbutton "Track 7" action musicroom.Play("music/Theme_Red_CrossingTheChasm.ogg"):
-                        style "music_button"
-                    null
+                    for i, s in enumerate(musicroom_sounds):
+                        $ id = i + 1
+                        textbutton _("Piste [id]") action musicroom.Play(s):
+                            style "music_button"
             hbox:
                 xalign 0.5
                 spacing 25
@@ -824,7 +815,7 @@ screen credits():
                 vbox:
                     text "Ayowel":
                         style "credits_text_name"
-                    text _("Développeur"):
+                    text _("Développeur en chef"):
                         style "credits_text_role"
                     text "{a=https://github.com/Ayowel}https://github.com/Ayowel{/a}":
                         style "credits_text_link"

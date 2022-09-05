@@ -154,6 +154,10 @@ translate french strings:
     old "Développeur et scénariste"
     new "Développeur et scénariste"
 
+    # game/screens.rpy:818
+    old "Développeur en chef"
+    new "Développeur en chef"
+
     # game/screens.rpy:822
     old "Développeur"
     new "Développeur"
@@ -181,4 +185,8 @@ translate french strings:
     # game/screens.rpy:1015
     old "Avance rapide"
     new "Avance rapide"
+
+    # game/screens.rpy:749
+    old "Piste [id]"
+    new "Piste [id]"
 
