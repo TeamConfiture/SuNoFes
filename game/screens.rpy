@@ -119,6 +119,7 @@ init python:
 
     # Gallery's initialisation
     album = Gallery()
+    album.locked_button = "gui/slot_lock.png"
     for cg in ['good', 'neutral', 'bad']:
         album.button(cg)
         album.condition("persistent.reached_end_" + cg)
@@ -713,8 +714,11 @@ screen gallery():
         hbox:
             grid 2 2:
                 allow_underfull True
-                for cg in ['good', 'neutral', 'bad']:
-                    add album.make_button(name=cg, unlocked="gui/slot.png", locked="gui/slot_lock.png", xalign=0.5, yalign=0.5)
+                for cg in album.buttons:
+                    if len(album.buttons[cg].images) > 0:
+                        add album.make_button(name=cg,  xalign=0.5, yalign=0.5,
+                            unlocked=im.AlphaMask(im.Scale(album.buttons[cg].images[0].displayables[0], 358, 213), im.Scale("gui/slot.png", 358, 213)),
+                            )
                 spacing 100
 
 ## Écran des musiques #######################################################
