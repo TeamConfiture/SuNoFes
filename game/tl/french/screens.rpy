@@ -142,6 +142,18 @@ translate french strings:
     old "Langue"
     new "Langue"
 
+    # game/screens.rpy:718
+    old "Gallery"
+    new "Galerie"
+
+    # game/screens.rpy:739
+    old "Music"
+    new "Musique"
+
+    # game/screens.rpy:796
+    old "Credits"
+    new "Crédits"
+
     # game/screens.rpy:795
     old "Directrice, UI Designer et Développeuse"
     new "Directrice, UI Designer et Développeuse"

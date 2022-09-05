@@ -119,6 +119,7 @@ init python:
 
     # Gallery's initialisation
     album = Gallery()
+    album.locked_button = "gui/slot_lock.png"
     for cg in ['good', 'neutral', 'bad']:
         album.button(cg)
         album.condition("persistent.reached_end_" + cg)
@@ -709,12 +710,15 @@ screen extra():
 ## Écran des images #######################################################
 screen gallery():
     tag menu
-    use game_menu("Gallery", "extra"):
+    use game_menu(_("Gallery"), "extra"):
         hbox:
             grid 2 2:
                 allow_underfull True
-                for cg in ['good', 'neutral', 'bad']:
-                    add album.make_button(name=cg, unlocked="gui/slot.png", locked="gui/slot_lock.png", xalign=0.5, yalign=0.5)
+                for cg in album.buttons:
+                    if len(album.buttons[cg].images) > 0:
+                        add album.make_button(name=cg,  xalign=0.5, yalign=0.5,
+                            unlocked=im.AlphaMask(im.Scale(album.buttons[cg].images[0].displayables[0], 358, 213), im.Scale("gui/slot.png", 358, 213)),
+                            )
                 spacing 100
 
 ## Écran des musiques #######################################################
@@ -727,7 +731,7 @@ style music_button_text is text:
 
 screen music():
     tag menu
-    use game_menu("Music", "extra"):
+    use game_menu(_("Music"), "extra"):
         vbox:
             xalign 0.5
             ypos 75
@@ -774,7 +778,7 @@ style credits_grid is gui_grid:
 
 screen credits():
     tag menu
-    use game_menu("Credits", "extra"):
+    use game_menu(_("Credits"), "extra"):
         grid 2 3:
             style "credits_grid"
             frame:

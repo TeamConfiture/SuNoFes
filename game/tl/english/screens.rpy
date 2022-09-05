@@ -156,6 +156,18 @@
     old "Plein écran"
     new "Full screen"
 
+    # game/screens.rpy:718
+    old "Gallery"
+    new "Gallery"
+
+    # game/screens.rpy:739
+    old "Music"
+    new "Music"
+
+    # game/screens.rpy:796
+    old "Credits"
+    new "Credits"
+
     # game/screens.rpy:786
     old "Développeuse et artiste des sprites"
     new "Developer and sprite artist"
