@@ -1,7 +1,7 @@
 label chap3:
     call titlepage(3)
     scene forest 
-    play music music.Theme_Cyan fadein 1.0
+    play music music.Theme_Cyan fadein 1.0 volume 0.7
     show blanche surprised open at left
     with dissolve
     blanche "Oh ! C'est... C'est le duo des Cyanmois que je vois au loin !" with vpunch

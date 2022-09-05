@@ -2,7 +2,7 @@ label chap6:
     call titlepage(6)
     scene piano
     with dissolve
-    play music music.Theme_Orange fadein 1.0
+    play music music.Theme_Orange fadein 1.0 volume 0.7
     "On entend au loin du Mozart. Un clavier couleur d'orange est posé là, bien au centre de l'orangeraie."
     "Un chat est en train de jouer."
     show blanche surprised open at left

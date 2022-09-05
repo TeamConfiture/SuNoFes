@@ -14,7 +14,7 @@ label chap7:
     call titlepage(7)
     scene dojo
     with dissolve
-    play music music.Theme_Red fadein 1.0
+    play music music.Theme_Red fadein 1.0 volume 0.7
     "Un chat en position de combat semble s'entraîner avec acharnement."
     show rouge at right with dissolve
     x "Woosh ! Comme un chat ! Sois plus violent que le cours du torrent !" with vpunch
