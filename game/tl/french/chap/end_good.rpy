@@ -274,7 +274,7 @@ translate french end_good_ec2e8b57:
 translate french end_good_18bf4824:
 
     # "Quelque minutes plus tard..."
-    "Quelque minutes plus tard..."
+    "Quelques minutes plus tard..."
 
 # game/chap/end_good.rpy:48
 translate french end_good_e2d88b28_1:
