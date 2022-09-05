@@ -100,7 +100,7 @@ translate french chap7_1f6ad9e1:
 translate french chap7_38e0c12d:
 
     # red "Sacrilège ! Quel outrage à Maîtressse Arc-en-Ciel ! Tu oses me défier, moi, Red, Gardien de Couleur ?! Viens par là !"
-    red "Sacrilège ! Quel outrage à Maîtressse Arc-en-Ciel ! Tu oses me défier, moi, Red, Gardien de Couleur ?! Viens par là !"
+    red "Sacrilège ! Quel outrage à Maîtresse Arc-en-Ciel ! Tu oses me défier, moi, Red, Gardien de Couleur ?! Viens par là !"
 
 # game/chap/chap7.rpy:20
 translate french chap7_531f3153:

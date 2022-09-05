@@ -518,7 +518,7 @@ translate french sprite_cutter_failed_f145d35c:
 translate french chap6_2_d3d190d3:
 
     # blanche "Oh ! Je m'attendais pas du tout à obtenir un son si parfait."
-    blanche "Oh ! Je m'attendais pas du tout à obtenir un son si parfait."
+    blanche "Oh ! Je ne m'attendais pas du tout à obtenir un son si parfait."
 
 # game/chap/chap6.rpy:80
 translate french chap6_2_de6011f7:

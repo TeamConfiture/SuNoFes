@@ -388,19 +388,19 @@ translate english sprite_cutter_failed_f145d35c:
 translate english chap6_2_8d896765:
 
     # blanche "Oh ! Je m'attendais pas du tout à obtenir un son si parfait." with vpunch
-    blanche "Oh ! Je m'attendais pas du tout à obtenir un son si parfait." with vpunch
+    blanche "Oh ! I wasn't expecting at all to get such a perfect sound." with vpunch
 
 # game/chap/chap6.rpy:80
 translate english chap6_2_de6011f7:
 
     # orange "C'est la magie des agrumes, mon enfant. Maintenant, tu devrais tenter de prendre la boule."
-    orange "C'est la magie des agrumes, mon enfant. Maintenant, tu devrais tenter de prendre la boule."
+    orange "It's the citruses' magic, kid. Now, you should try to catch the ball."
 
 # game/chap/chap6.rpy:81
 translate english chap6_2_e46715f1:
 
     # orange "Je suis persuadé que tu vas y arriver."
-    orange "Je suis persuadé que tu vas y arriver."
+    orange "I'm sure you will succeed."
 
 # game/chap/chap6.rpy:81
 translate english chap6_2_e19d258a:
