@@ -199,6 +199,11 @@ init python:
     build.classify('**/.**', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
+    build.classify('game/**.png', 'archive')
+    build.classify('game/**.rpy', None)
+    build.classify('game/**.rpyc', 'archive')
+    build.classify('game/**.ogg', 'archive')
+    build.classify('game/**.ttf', 'archive')
 
     ## Pour archiver les fichiers, choisissez la valeur « archive ».
 
