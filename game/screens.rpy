@@ -710,7 +710,7 @@ screen extra():
 ## Écran des images #######################################################
 screen gallery():
     tag menu
-    use game_menu("Gallery", "extra"):
+    use game_menu(_("Gallery"), "extra"):
         hbox:
             grid 2 2:
                 allow_underfull True
@@ -731,7 +731,7 @@ style music_button_text is text:
 
 screen music():
     tag menu
-    use game_menu("Music", "extra"):
+    use game_menu(_("Music"), "extra"):
         vbox:
             xalign 0.5
             ypos 75
@@ -778,7 +778,7 @@ style credits_grid is gui_grid:
 
 screen credits():
     tag menu
-    use game_menu("Credits", "extra"):
+    use game_menu(_("Credits"), "extra"):
         grid 2 3:
             style "credits_grid"
             frame:
