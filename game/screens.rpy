@@ -208,6 +208,7 @@ style idcard_prompt:
     color "#111"
     size 72
     text_align 0.5
+    caret 'writing_feather'
 
 style idcard_text_head:
     size 50

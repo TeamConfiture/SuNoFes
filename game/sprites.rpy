@@ -10,6 +10,10 @@ image lake_deep = "images/bg/lake_deep.png"
 image cupboard = "images/bg/cupboard.png"
 
 # Individual sprites
+image writing_feather:
+    "images/items/feather.png"
+    zoom 0.6
+    yanchor 0.6
 image mulberry = "images/items/mulberry_base.png"
 image mulberry_button = "images/items/mulberry.png"
 
