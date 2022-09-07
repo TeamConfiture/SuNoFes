@@ -86,7 +86,8 @@ label chap4:
         "Faire les yeux du Chat Potté [encore]":
             $ neutral +=1
             show blanche cry close at left
-            "Cela a marché avec Violet, peut-être que ça marchera aussi avec Émeraude."
+            if encore:
+                "Cela a marché avec Violet, peut-être que ça marchera aussi avec Émeraude."
             "Je lui fais les yeux du Chat Potté."
             emeraude "[player_name] a les yeux revolver. [player_name] a le regard qui tue."
             emeraude "[player_name] m'a touchée, c'est foutu."

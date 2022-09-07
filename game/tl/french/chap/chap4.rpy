@@ -424,7 +424,7 @@ translate french chap4_2_5af5a027:
 translate french chap4_2_5a6a190b:
 
     # emeraude "Libérée, délivrée, je n'ai plus de boules à m'occuper, libérée, délivrée, c'est décidé, c'est fini !"
-    emeraude "Libérée, délivrée, je n'ai plus de boules à m'occuper, libérée, délivrée, c'est décidé, c'est fini !"
+    emeraude "Libérée, délivrée, je n'ai plus de boule à garder, libérée, délivrée, c'est décidé c'est réglé !"
 
 # game/chap/chap4.rpy:135
 translate french chap4_2_6c2a6b6a:
