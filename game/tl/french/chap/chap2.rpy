@@ -220,7 +220,7 @@ translate french chap2_completed_8e3c2138:
 translate french chap2_completed_63639e82:
 
     # indigo "Bon, bon, ok c'est d'accord. Motus et bouche cousue et je veux revoir la boule sur son autel au plus vite. Si les gardes l'apprennent s'en est fini de moi !"
-    indigo "Bon, bon, ok c'est d'accord. Motus et bouche cousue et je veux revoir la boule sur son autel au plus vite. Si les gardes l'apprennent s'en est fini de moi !"
+    indigo "Bon, bon, ok c'est d'accord. Motus et bouche cousue et je veux revoir la boule sur son autel au plus vite. Si les gardes l'apprennent c'en est fini de moi !"
 
 # game/chap/chap2.rpy:101
 translate french chap2_completed_2bc26d8a:

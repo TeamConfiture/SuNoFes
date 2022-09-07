@@ -94,7 +94,7 @@ translate french chap1_b5bc1d71:
 translate french chap1_6933cfcf:
 
     # violet "Je m'appelle Violet Evagaden. Mais, appelle-moi Violet. Souviens-toi-en."
-    violet "Je m'appelle Violet Evagaden. Mais, appelle-moi Violet. Souviens-toi-en."
+    violet "Je m'appelle Violet Evagaden. Mais, appelle-moi Violet. Souviens t'en."
 
 # game/chap/chap1.rpy:37
 translate french chap1_a59a3cd9:
@@ -166,7 +166,7 @@ translate french chap1_0a535b56:
 translate french chap1_8b4fd862:
 
     # violet "Sapristi ! Tu es malade ?!! Si je la perds, pouf, plus violet !"
-    violet "Sapristi ! Tu es malade ?!! Si je la perds, pouf, plus violet !"
+    violet "Sapristi ! Tu es malade ?!! Si je la perds, pouf, plus de violet !"
 
 # game/chap/chap1.rpy:60
 translate french chap1_fec8d0b8:
@@ -364,7 +364,7 @@ translate french chap1_2_e45d882f:
 translate french chap1_2_9a5c1998:
 
     # violet "Six ? Attends ?! Ne me dis pas que tu veuilles récupérer toutes les boules ?!"
-    violet "Six ? Attends ?! Ne me dis pas que tu veuilles récupérer toutes les boules ?!"
+    violet "Six ? Attends ?! Ne me dis pas que tu veux récupérer toutes les boules ?!"
 
 # game/chap/chap1.rpy:140
 translate french chap1_2_ab02b979:

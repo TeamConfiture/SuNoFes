@@ -298,7 +298,7 @@ translate french chap6_ccc09b2a:
 translate french chap6_9d9f6eb2:
 
     # orange "Cepedant, je peux te donner les bases pour apprendre avec l'eau."
-    orange "Cepedant, je peux te donner les bases pour apprendre avec l'eau."
+    orange "Cependant, je peux te donner les bases pour apprendre avec l'eau."
 
 # game/chap/chap6.rpy:57
 translate french chap6_ca8ddaca:
