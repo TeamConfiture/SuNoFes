@@ -204,6 +204,8 @@ init python:
     build.classify('game/**.rpyc', 'archive')
     build.classify('game/**.ogg', 'archive')
     build.classify('game/**.ttf', 'archive')
+    build.classify('docs/**', None)
+    build.classify('*.md', None)
 
     ## Pour archiver les fichiers, choisissez la valeur « archive ».
 
