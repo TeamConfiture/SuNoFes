@@ -102,7 +102,7 @@ init python:
                 l = [(
                     renpy.random.randint(0, len(image_reference) - 1),
                     renpy.random.choice([-1, 1]),
-                    ) for i in range(math.floor(self.density * 10))]
+                    ) for i in range(math.floor(self.density * 3))]
                 return {
                     i * (self.duration) / (len(image_reference) + 3): [ImageCutterImage(
                         image = image_reference[j[0]]['list'][0],
@@ -117,7 +117,7 @@ init python:
                 l = [(
                     renpy.random.randint(0, len(image_reference) - 1),
                     renpy.random.choice([-1, 1]),
-                    ) for i in range(math.floor(self.density * 10))]
+                    ) for i in range(math.floor(self.density * 3))]
                 return {
                     i * (self.duration) / (len(image_reference) + 3): [ImageCutterImage(
                         image = image_reference[j[0]]['list'][0],
