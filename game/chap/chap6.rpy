@@ -15,7 +15,6 @@ label chap6:
     play sound renpy.random.choice(sound.Orange_Irritated)
     x "Mais de qui oses-tu donc te moquer ? Moi, Orange, votre serviteur, j'étais en train de jouer le Requiem de herr Wolfgang Amadeus Mozart, cette oeuvre à jamais incomplète, mais qui représente tout le génie du grand maître !"
     show blanche cry open at left
-    play sound renpy.random.choice(sound.Blanche_Speak)
     blanche "Excuse-moi, je ne m'y connais pas trop dans l'art musical."
     show blanche neutral open at left
     blanche "Mon papa était plutôt adepte de la pêche."
@@ -30,7 +29,6 @@ label chap6:
     orange "Mais ce qui lui a véritablement redonné le sourire, c'est quand je me suis arrêté, triomphant, après avoir réussi à jouer le Requiem sans aucune erreur."
     orange "Paradoxalement, cela a été aussi la dernière fois que je l'ai vu dans mon antre d'agrumes..."
     show blanche neutral open at left
-    play sound renpy.random.choice(sound.Blanche_Speak)
     blanche "Mon papa a toujours été comme ça, très empathique."
     show blanche smile open at left
     blanche "En fait, ce qui compte le plus pour lui, c'est le bonheur des autres, pas son propre bonheur."

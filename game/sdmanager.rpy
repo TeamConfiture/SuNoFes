@@ -124,11 +124,9 @@ define sound.Blanche_Gasp = ["audio/Characters/Blanche/Blanche_Gasp_01.ogg","aud
 define sound.Blanche_Laugh = ["audio/Characters/Blanche/Blanche_Laugh_01.ogg","audio/Characters/Blanche/Blanche_Laugh_02.ogg","audio/Characters/Blanche/Blanche_Laugh_03.ogg"]
 define sound.Blanche_Moan = ["audio/Characters/Blanche/Blanche_Moan_01.ogg","audio/Characters/Blanche/Blanche_Moan_02.ogg"]
 define sound.Blanche_No = ["audio/Characters/Blanche/Blanche_No_01.ogg","audio/Characters/Blanche/Blanche_No_02.ogg"]
-# FIXME : Les fichiers Question sont des copier-coller de Sniffing
 define sound.Blanche_Question = ["audio/Characters/Blanche/Blanche_Question_01.ogg","audio/Characters/Blanche/Blanche_Question_02.ogg","audio/Characters/Blanche/Blanche_Question_03.ogg","audio/Characters/Blanche/Blanche_Question_04.ogg","audio/Characters/Blanche/Blanche_Question_05.ogg","audio/Characters/Blanche/Blanche_Question_06.ogg"]
 define sound.Blanche_Sigh = ["audio/Characters/Blanche/Blanche_Sigh_01.ogg","audio/Characters/Blanche/Blanche_Sigh_02.ogg","audio/Characters/Blanche/Blanche_Sigh_03.ogg","audio/Characters/Blanche/Blanche_Sigh_04.ogg"]
 define sound.Blanche_Sniffing = ["audio/Characters/Blanche/Blanche_Sniffing_01.ogg","audio/Characters/Blanche/Blanche_Sniffing_02.ogg","audio/Characters/Blanche/Blanche_Sniffing_03.ogg"]
-define sound.Blanche_Speak = ["<silence 1>"]
 define sound.Blanche_Yes = ["audio/Characters/Blanche/Blanche_Yes_01.ogg","audio/Characters/Blanche/Blanche_Yes_02.ogg"]
 define sound.Blanche_Yes_Haughty = ["audio/Characters/Blanche/Blanche_YesHaughty_01.ogg","audio/Characters/Blanche/Blanche_YesHaughty_02.ogg","audio/Characters/Blanche/Blanche_YesHaughty_03.ogg","audio/Characters/Blanche/Blanche_YesHaughty_04.ogg"]
 
@@ -259,5 +257,7 @@ define music.Theme_Red = ["music/Theme_Red_CrossingTheChasm.ogg"]
 
 ##=============Musique Générique===============##
 
+define music.Theme_Prologue = ["music/.ogg"]
 define music.Theme_Bad_End = ["music/.ogg"]
+define music.Theme_Neutral_End = ["music/.ogg"]
 define music.Theme_Good_End = ["music/.ogg"]

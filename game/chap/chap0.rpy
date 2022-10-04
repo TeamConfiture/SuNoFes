@@ -46,6 +46,7 @@ label start:
     blanche "Je n'ai jamais connu ma maman. Mais, ce n'est pas grave, car mon papa s'occupe bien de moi !"
     blanche "Aujourd'hui, pendant que mon papa dormait, j'ai décidé de fuguer et de faire un tour du royaume !"
     show blanche smile open at left
+    play sound renpy.random.choice(sound.Blanche_Yes)
     blanche "Je vais aller récupérer toutes les boules de cristal ! Héhé !"
     show blanche neutral open at left
     blanche "D'après mon papa, elles sont très jolies !"

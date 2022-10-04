@@ -18,7 +18,6 @@ label chap3:
     cyan "Bonjour à toutes et tous !"
     cyan "Bienvenue dans Jean Racine et des Saules, l'émission d'Art et Culture la plus connue du Monde 2 ! "
     show blanche neutral open at left
-    play sound renpy.random.choice(sound.Blanche_Speak)
     blanche "Bonjour. Désolé de te déranger, je voudrais savoir…"
     hide blanche neutral close at left
     hide cyan at right
@@ -154,7 +153,6 @@ label chap3_2:
     show cyan at center
     with dissolve 
     # TODO : illu pêche
-    play sound renpy.random.choice(sound.Blanche_Speak)
     blanche "Voilà ta truite Arc-en-Ciel !"
     show blanche neutral open at farLeft
     blanche "Ça faisait longtemps que je n'en avais pas pêché d'aussi grosse."

@@ -28,7 +28,7 @@ label chap5:
     piou "On ne me prend pas dans les bras comme ça !"
     piou "Je suis l'un des super fromagers de Couleurs !"
     show blanche surprised open at left
-    play sound renpy.random.choice(sound.Blanche_Speak)
+    play sound renpy.random.choice(sound.Blanche_Amazement)
     blanche "Un poussin qui parle et qui fait du fromage ?! Après les chats qui parlent, les poussins fromagers ?"
     show blanche neutral open at left
     blanche "Ce monde cache pleins de surprises !"
@@ -212,7 +212,6 @@ label chap5_2:
     show jaune at right
     show blanche neutral open at left
     with dissolve
-    play sound renpy.random.choice(sound.Blanche_Speak)
     blanche "Merci Piou !"
     show blanche neutral close at left
     piou "Maintenant, laisse-moi tranquille ! J'ai besoin de prendre l'air."
