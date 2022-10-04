@@ -13,12 +13,14 @@
 
 # Le jeu commence ici
 label start:
-    show screen konami_trigger
+    if config.developer:
+        show screen konami_trigger
     call titlepage("", _("Prologue"))
     scene world with dissolve
     $ renpy.pause (2.5)
     "Il était une fois, dans un royaume lointain nommé Couleurs, sept boules de cristal."
-    hide screen konami_trigger
+    if config.developer:
+        hide screen konami_trigger
     show screen hidden_balls
     "Chacune d'elles représentait une couleur de l'arc-en-ciel. Elles étaient les fondations du royaume."
     "Sans elles, il n'y aurait plus de couleurs dans le monde."
@@ -87,8 +89,8 @@ label fast_chapter_jump:
 
 screen fast_chapter_jump_screen():
     $ labels = sorted([l for l in renpy.get_all_labels() if l.startswith("start") or l.startswith("chap") or l.startswith("end")])
-    $ lines_count = 5
-    $ columns_count = math.floor((len(labels)+lines_count-1)/lines_count)
+    $ columns_count = 3
+    $ lines_count = math.floor((len(labels)+columns_count-1)/columns_count)
     modal True
     frame:
         background "gui/main_menu.png"
@@ -96,7 +98,7 @@ screen fast_chapter_jump_screen():
         ysize 1.
 
         hbox:
-            yalign 0.1
+            yalign 0.05
             xalign 0.5
             text _("Cheat - Voyage rapide"):
                 size 125
@@ -105,7 +107,8 @@ screen fast_chapter_jump_screen():
                 xalign 0.5
         grid columns_count lines_count:
             xalign 0.5
-            yalign 0.5
+            yanchor 0.
+            yalign 0.22
             spacing 30
             for l in labels:
                 textbutton l action Jump(l) style "navigation_button"
