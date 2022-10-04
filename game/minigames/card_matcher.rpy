@@ -13,6 +13,7 @@ init python:
                 defaults = {},
                 ):
             self.name = name
+            self.group = group
             self.pos = (xpos, ypos)
             self.size = (0, 0)
             # 0 is idle, hover is 1, disabled is 2
@@ -22,14 +23,9 @@ init python:
             self.hover_button = renpy.displayable(hover_button or defaults["hover_button"] or self.idle_button)
             self.disabled_button = renpy.displayable(disabled_button or defaults["disabled_button"] or self.idle_button)
             self.linked_button = renpy.displayable(linked_button or defaults["linked_button"] or self.disabled_button)
-            if is_receiver is None:
-                self.is_receiver = defaults["is_receiver"]
-            else:
-                self.is_receiver = is_receiver
-            if is_emitter is None:
-                self.is_emitter = defaults["is_emitter"]
-            else:
-                self.is_emitter = is_emitter
+            self.is_receiver = defaults["is_receiver"] if is_receiver is None else is_receiver
+            self.is_emitter = defaults["is_emitter"] if is_emitter is None else is_emitter
+            self.target_groups = defaults.get('target_groups', [])
 
         def center(self):
             """
@@ -333,6 +329,7 @@ init python:
             """
             Returns whether a specific anchor is under the cursor
             """
+            # TODO: handle transparency
             return (anchor.pos[0] <= self.cursor_pos[0] <= anchor.pos[0] + anchor.size[0] and
                     anchor.pos[1] <= self.cursor_pos[1] <= anchor.pos[1] + anchor.size[1])
 
@@ -341,10 +338,14 @@ init python:
             Returns whether a specific anchor should be interractible
             """
             return (
-                (
+                ( # Ensure anchor is available in the current context
                     (self.dragged_anchor is None and anchor.is_emitter) or
                     (self.dragged_anchor is not None and self.dragged_anchor != anchor.name and anchor.is_receiver)
-                ) and anchor.state != 3
+                ) and ( # Ensure anchor is a valid potential target for the dragged anchor
+                    self.dragged_anchor is None or
+                    len(self.anchors[self.dragged_anchor].target_groups) == 0 or
+                    anchor.group in self.anchors[self.dragged_anchor].target_groups
+                ) and anchor.state != 3 # Ensure anchor is not already associated
             )
 
         def add_static_rope(self, start, end, index = 0):
@@ -402,6 +403,7 @@ init python:
                     if self.bind_callback:
                         self.bind_callback(self.dragged_anchor, self.hovered_anchor)
                     self.dragged_anchor = None
+                    self.hovered_anchor = None
                     renpy.redraw(self, 0)
                     # Check if all links were created, if so terminate processing
                     if len(self.anchor_links) == len(self.anchor_rules):
@@ -417,6 +419,7 @@ init python:
                     self.release_callback(self.dragged_anchor, self.hovered_anchor)
                 self.anchors[self.dragged_anchor].state = 0
                 self.dragged_anchor = None
+                self.on_mousemove() # redetect button's hover state
                 renpy.redraw(self, 0)
 
         def on_mousemove(self):
@@ -430,7 +433,6 @@ init python:
                 if self.is_cursor_on_anchor(anchor):
                     return
             # Collision detection on all anchors & set hover state if possible
-            # TODO: handle transparency
             for k in self.anchors:
                 anchor = self.anchors[k]
                 if self.is_cursor_on_anchor(anchor):

@@ -22,8 +22,8 @@ screen chap2_match_screen():
             {"rope": "images/sprites/line_pull.png", "start_token": "images/sprites/buzzer_disabled.png"},
             ],
         rule_groups = {
-            1: { "is_receiver": False },
-            2: { "is_emitter": False },
+            1: { "target_groups": [2] },
+            2: { "target_groups": [1] },
         },
         rope_transforms = {1: 0},
         rope_pull_list = [1],
