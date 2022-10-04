@@ -3,19 +3,23 @@ label chap4:
     scene garden
     play music music.Theme_Green fadein 1.0
     with dissolve
+    play sound renpy.random.choice(sound.Emeraude_Speak)
     x "Colchiques dans les prés ! Fleurissent, fleurissent. Colchiques dans les prés ! C'est la fin de l'été."
     "Un chat chantonne tout en arrosant joyeusement de magnifiques fleurs."
     show emeraude at right
     show blanche surprised open at left
     with dissolve
+    play sound renpy.random.choice(sound.Blanche_Amazement)
     blanche "C'est… C'est si joli ! Ça brille de partout ! C'est si vert !" with vpunch
     show blanche surprised close at left
     x "Ho, ho, il en faut peu pour être heureux, vraiment très peu pour être heureux."
     x "Émeraude est satisfaite du nécessaire !"
+    play sound renpy.random.choice(sound.Emeraude_Speak)
     emeraude "Un peu d'eau fraîche et de verdure !"
     "Le chat tournoie sur lui-même, faisant répandre l'eau autour de lui."
     emeraude "Que nous prodigue la nature. Quelques rayons de miel et de soleil."
     show blanche smile open at left
+    play sound renpy.random.choice(sound.Blanche_Laugh)
     blanche "Haha, tu es marrante, Émeraude !"
     show blanche neutral open at left
     blanche "Moi, je m'appelle [player_name] !"
@@ -28,6 +32,7 @@ label chap4:
     show blanche neutral open at left
     blanche "Je viens pour récupérer la boule Vert… C'est pour mon papa…"
     show blanche neutral close at left
+    play sound renpy.random.choice(sound.Emeraude_Speak)
     emeraude "Ça ne tient pas à toi ! Ça ne tient pas à moi !"
     emeraude "Quand Madame Arc-en-Ciel nous dit ce que l'on peut être !"
     emeraude "Moi, je m'appelle Émeraude, gardien de Couleurs."
@@ -60,6 +65,7 @@ label chap4:
     show blanche neutral open at left
     blanche "C'est pour ça que je veux lui remonter le moral ! Une dernière fois…"
     show blanche neutral close at left
+    play sound renpy.random.choice(sound.Emeraude_No)
     emeraude "Non, non, non, non ! Je ne peux pas m'en passer ! Non, non, non, non !"
     show blanche cry open at left
     hide crystal_green at crystal_position with dissolve
@@ -69,6 +75,7 @@ label chap4:
         "Tirer une de ses oreilles et lui crier de dessus d'arrêter de chanter":
             $ bad +=1
             show blanche pout open at left
+            play sound renpy.random.choice(sound.Blanche_Angry)
             blanche "Arrête de chanter et écoute-moi !!!" with vpunch
             show blanche pout close at left
             emeraude "Est-ce que tu m'entends ? Hé ho !"
@@ -81,18 +88,22 @@ label chap4:
             show blanche cry open at left
             blanche "S'il te plaît…"
             show blanche cry close at left
+            play sound renpy.random.choice(sound.Blanche_Cry)
             "Je commence à pleurer."
             emeraude "..."
         "Faire les yeux du Chat Potté [encore]":
             $ neutral +=1
             show blanche cry close at left
-            "Cela a marché avec Violet, peut-être que ça marchera aussi avec Émeraude."
+            if encore:
+                "Cela a marché avec Violet, peut-être que ça marchera aussi avec Émeraude."
             "Je lui fais les yeux du Chat Potté."
+            play sound renpy.random.choice(sound.Emeraude_Speak)
             emeraude "[player_name] a les yeux revolver. [player_name] a le regard qui tue."
             emeraude "[player_name] m'a touchée, c'est foutu."
         "Demander en chantant":
             $ good +=1
             show blanche neutral open at left
+            play sound renpy.random.choice(sound.Blanche_Question)
             blanche "Comment puis-je oublier ce coin de paradis ?"
             show blanche smile open at left
             blanche "Ce petit bout de terre où vit encore mon père ?"
@@ -104,8 +115,10 @@ label chap4:
             "J'ai mordu ma langue."
             emeraude "Ho ho. Je… Je t'aime comme une chanson d'amour, baby. Ho ho."
 
+    play sound renpy.random.choice(sound.Emeraude_Exclamation)
     emeraude "À l'aide ! J'ai besoin de quelqu'un ! À l'aide ! Pas n'importe qui ! À l'aide ! Tu sais, j'ai besoin de [player_name] !"
     show blanche surprised open at left
+    play sound renpy.random.choice(sound.Blanche_Exclamation)
     blanche "Que ? Quoi ?! Qu'est-ce qui se passe ?!"
     show blanche surprised close at left
     emeraude "Je troque ma boule de cristal contre une aide."
@@ -133,6 +146,7 @@ label chap4_2:
     show emeraude at right
     show blanche neutral close at left
     with dissolve
+    play sound renpy.random.choice(sound.Emeraude_Happy)
     emeraude "Yeah ! Bravo ! Oui, viens danser ! Oui, c'est la vie, la la la la la !"
     emeraude "Voilà, voilà, voilà, voilà la boule de cristal."
     scene noir_colors_3 with dissolve
@@ -145,12 +159,14 @@ label chap4_2:
     with dissolve
     emeraude "Et si mon heure sonne, oh oh. Pleure pas rigole, oh oh. On m'appelle l'Émeraude."
     show blanche neutral open at left
+    play sound renpy.random.choice(sound.Blanche_Amazement)
     blanche "Merci ! Merci Émeraude ! Tu me sauves !"
     show blanche surprised open at left
     blanche "Zut, il ne me reste plus beaucoup de temps."
     show blanche neutral open at left
     blanche "Il faut que je me dépêche."
     hide blanche neutral close at left with dissolve
+    play sound renpy.random.choice(sound.Emeraude_Speak)
     emeraude "Libérée, délivrée, je n'ai plus de boules à m'occuper, libérée, délivrée, c'est décidé, c'est fini !"
     emeraude "J'ai laissé mon contrat en été, perdu avec [player_name] !"
     emeraude "La boule Vert est pour moi le prix de la liberté !" 
@@ -161,6 +177,7 @@ label chap4_2:
     show maigrichon at farLeft
     show grosso at nearLeft
     with dissolve
+    play sound renpy.random.choice(sound.Grosso_Angry)
     grosso "Émeraude !" with vpunch
     grosso "Dis-moi as-tu vu un enfant de cette taille ?"
     emeraude "Je ne sais pas."
@@ -169,6 +186,7 @@ label chap4_2:
     grosso "Ah oui…"
     grosso "C'est vrai qu'il faut chanter…"
     grosso "C'est oui ou bien c'est non ?"
+    play sound renpy.random.choice(sound.Maigrichon_Exclamation)
     maigrichon "Ah !" with vpunch
     maigrichon "La boule Vert n'est plus là !"
     grosso "Encore une de perdue ?!"

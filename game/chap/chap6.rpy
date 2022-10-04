@@ -6,19 +6,23 @@ label chap6:
     "On entend au loin du Mozart. Un clavier couleur d'orange est posé là, bien au centre de l'orangeraie."
     "Un chat est en train de jouer."
     show blanche surprised open at left
+    play sound renpy.random.choice(sound.Blanche_Amazement)
     blanche "Oh ! On dirait les quatre saisons de Vivaldi !" with vpunch
     show blanche neutral open at left
     blanche "À moins que ça ne soit le Menuet de Bach ?"
     show blanche neutral close at left
     show orange at right with dissolve
+    play sound renpy.random.choice(sound.Orange_Irritated)
     x "Mais de qui oses-tu donc te moquer ? Moi, Orange, votre serviteur, j'étais en train de jouer le Requiem de herr Wolfgang Amadeus Mozart, cette oeuvre à jamais incomplète, mais qui représente tout le génie du grand maître !"
     show blanche cry open at left
+    play sound renpy.random.choice(sound.Blanche_Speak)
     blanche "Excuse-moi, je ne m'y connais pas trop dans l'art musical."
     show blanche neutral open at left
     blanche "Mon papa était plutôt adepte de la pêche."
     show blanche smile open at left
     blanche "Il était très connu ! Tu en as peut-être entendu parlé ? Il s'appelle Noir !"
     show blanche smile close at left
+    play sound renpy.random.choice(sound.Orange_Speak)
     orange "Noir... Je connais très bien ce nom."
     orange "Ton père venait souvent ici après sa rupture..."
     orange "Il disait que sa vie n'avait plus aucun sens, mais que, dans ce lieu, cela n'avait plus d'importance."
@@ -26,6 +30,7 @@ label chap6:
     orange "Mais ce qui lui a véritablement redonné le sourire, c'est quand je me suis arrêté, triomphant, après avoir réussi à jouer le Requiem sans aucune erreur."
     orange "Paradoxalement, cela a été aussi la dernière fois que je l'ai vu dans mon antre d'agrumes..."
     show blanche neutral open at left
+    play sound renpy.random.choice(sound.Blanche_Speak)
     blanche "Mon papa a toujours été comme ça, très empathique."
     show blanche smile open at left
     blanche "En fait, ce qui compte le plus pour lui, c'est le bonheur des autres, pas son propre bonheur."
@@ -40,6 +45,7 @@ label chap6:
     blanche "Je veux récupérer la boule Orange pour lui rendre le sourire !"
     show blanche neutral close at left
     show crystal_orange at crystal_position with dissolve
+    play sound renpy.random.choice(sound.Orange_Speak)
     orange "C'est que je suis bien embêté..."
     orange "Non pas par le contrat que j'ai passé avec Madame Arc-en-Ciel, je me sens redevable vis-à-vis de ton père de m'avoir tenu compagnie pendant tout ce temps."
     orange "Mais, tu ne peux pas prendre la boule comme ça. Elle t'échapperait des mains."

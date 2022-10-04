@@ -124,9 +124,11 @@ define sound.Blanche_Gasp = ["audio/Characters/Blanche/Blanche_Gasp_01.ogg","aud
 define sound.Blanche_Laugh = ["audio/Characters/Blanche/Blanche_Laugh_01.ogg","audio/Characters/Blanche/Blanche_Laugh_02.ogg","audio/Characters/Blanche/Blanche_Laugh_03.ogg"]
 define sound.Blanche_Moan = ["audio/Characters/Blanche/Blanche_Moan_01.ogg","audio/Characters/Blanche/Blanche_Moan_02.ogg"]
 define sound.Blanche_No = ["audio/Characters/Blanche/Blanche_No_01.ogg","audio/Characters/Blanche/Blanche_No_02.ogg"]
-define sound.Blanche_Question = ["audio/Characters/Blanche/Blanche_Question_01.ogg","audio/Characters/Blanche/Blanche_Question_02.ogg","audio/Characters/Blanche/Blanche_Question_03.ogg"]
+# FIXME : Les fichiers Question sont des copier-coller de Sniffing
+define sound.Blanche_Question = ["audio/Characters/Blanche/Blanche_Question_01.ogg","audio/Characters/Blanche/Blanche_Question_02.ogg","audio/Characters/Blanche/Blanche_Question_03.ogg","audio/Characters/Blanche/Blanche_Question_04.ogg","audio/Characters/Blanche/Blanche_Question_05.ogg","audio/Characters/Blanche/Blanche_Question_06.ogg"]
 define sound.Blanche_Sigh = ["audio/Characters/Blanche/Blanche_Sigh_01.ogg","audio/Characters/Blanche/Blanche_Sigh_02.ogg","audio/Characters/Blanche/Blanche_Sigh_03.ogg","audio/Characters/Blanche/Blanche_Sigh_04.ogg"]
 define sound.Blanche_Sniffing = ["audio/Characters/Blanche/Blanche_Sniffing_01.ogg","audio/Characters/Blanche/Blanche_Sniffing_02.ogg","audio/Characters/Blanche/Blanche_Sniffing_03.ogg"]
+define sound.Blanche_Speak = ["<silence 1>"]
 define sound.Blanche_Yes = ["audio/Characters/Blanche/Blanche_Yes_01.ogg","audio/Characters/Blanche/Blanche_Yes_02.ogg"]
 define sound.Blanche_Yes_Haughty = ["audio/Characters/Blanche/Blanche_YesHaughty_01.ogg","audio/Characters/Blanche/Blanche_YesHaughty_02.ogg","audio/Characters/Blanche/Blanche_YesHaughty_03.ogg","audio/Characters/Blanche/Blanche_YesHaughty_04.ogg"]
 
@@ -183,24 +185,54 @@ define sound.Chicks_Speak = ["audio/Birds/Chick_01.ogg","audio/Birds/Chick_02.og
 ##=============Sons des chats===============##
 
 ## Violet
-define sound.Violet_Speak = ["audio/Meow/CatMeow_04.ogg"]
-define sound.Violet_Angry = ["audio/Hiss/CatHiss_01.ogg"]
-define sound.Violet_Happy = ["audio/Purr/CatPurr_04.ogg"]
+define sound.Violet_Speak = ["audio/Cats/Meow/CatMeow_04.ogg"]
+define sound.Violet_Angry = ["audio/Cats/Hiss/CatHiss_01.ogg"]
+define sound.Violet_Angry_Short = ["<from 2.3>audio/Cats/Hiss/CatHiss_01.ogg"]
+define sound.Violet_Patronizing = ["<to 2.3>audio/Cats/Hiss/CatHiss_01.ogg"]
+define sound.Violet_Happy = ["audio/Cats/Purr/CatPurr_04.ogg"]
 
 ## Indigo
-define sound.Indigo_Speak = ["audio/Meow/CatMeow_05.ogg"]
-define sound.Indigo_Angry = ["audio/Hiss/CatHiss_03.ogg"]
-define sound.Indigo_Happy = ["audio/Purr/CatPurr_03.ogg"]
+define sound.Indigo_Speak = ["audio/Cats/Meow/CatMeow_05.ogg"]
+define sound.Indigo_Angry = ["audio/Cats/Hiss/CatHiss_03.ogg"]
+define sound.Indigo_Happy = ["audio/Cats/Purr/CatPurr_03.ogg"]
 
 ## Green
-define sound.Green_Speak = ["audio/Meow/CatMeow_01.ogg"]
-define sound.Green_Angry = ["audio/Hiss/CatHiss_01.ogg"]
-define sound.Green_Happy = ["audio/Purr/CatPurr_02.ogg"]
+define sound.Green_Speak = ["audio/Cats/Meow/CatMeow_01.ogg"]
+define sound.Green_Angry = ["audio/Cats/Hiss/CatHiss_01.ogg"]
+define sound.Green_Happy = ["audio/Cats/Purr/CatPurr_02.ogg"]
 
 ## Red
-define sound.Red_Speak = ["audio/Meow/CatMeow_02.ogg"]
-define sound.Red_Angry = ["audio/Hiss/CatHiss_02.ogg"]
-define sound.Red_Happy = ["audio/Purr/CatPurr_05.ogg"]
+define sound.Red_Speak = ["audio/Cats/Meow/CatMeow_02.ogg"]
+define sound.Red_Angry = ["audio/Cats/Hiss/CatHiss_02.ogg"]
+define sound.Red_Happy = ["audio/Cats/Purr/CatPurr_05.ogg"]
+
+# TODO: Following cats did not go through audio work and re-use previous cat's sounds as placeholders
+## Cyan/Cameraman
+define sound.Cyan_Speak = ["<silence 1>"]
+define sound.Cyan_Happy = ["<silence 1>"]
+define sound.Cyan_Exclamation = ["<silence 1>"]
+define sound.Cameraman_Speak = ["<silence 1>"]
+define sound.Cameraman_Angry_Low = ["<silence 1>"]
+define sound.Cameraman_Angry = ["<silence 1>"]
+define sound.Cameraman_Embarassed = ["<silence 1>"]
+
+## Emeraude - this cat always has a 'singing' voice
+define sound.Emeraude_Speak = ["<silence 1>"]
+define sound.Emeraude_Happy = ["<silence 1>"]
+define sound.Emeraude_No = ["<silence 1>"]
+define sound.Emeraude_Exclamation = ["<silence 1>"]
+
+## Piou & Jaune
+define sound.Piou_Speak = ["<silence 1>"]
+define sound.Piou_Angry = ["<silence 1>"]
+define sound.Piou_Cry = ["<silence 1>"]
+define sound.Jaune_Speak = ["<silence 1>"]
+define sound.Jaune_Sleepy = ["<silence 1>"]
+define sound.Jaune_Angry = ["<silence 1>"]
+
+## Orange
+define sound.Orange_Speak = ["<silence 1>"]
+define sound.Orange_Irritated = ["<silence 1>"]
 
 
 ##    .-.     .-.     .-.     .-.     .-.     .-.     .-.     .-.     .-.
