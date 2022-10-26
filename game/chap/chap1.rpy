@@ -162,7 +162,8 @@ label chap1_2:
     violet "Tout à fait !"
     violet "Tiens, voilà la boule !"
     scene noir_colors_0 with dissolve
-    pause 2
+    play sound sound.Unlock_Puzzle
+    pause 1
     scene noir_colors_1 with dissolve
     pause 2
     scene mulberry_search with dissolve

@@ -79,18 +79,21 @@ label chap5:
     piou "Tu sais, nous sommes comme deux frères depuis que j'ai perdu ma mère... Jaune est très protecteur quand il ne dort pas."
     piou "Alors si d'aventure j'envisageais de donner mon autorisation, Jaune ne céderait pas un seul morceau de cette boule, tu m'entends ?"
     show blanche neutral open at left
+    play sound renpy.random.choice(sound.Blanche_Yes)
     blanche "Moi aussi, je n'ai pas connu ma mère !"
     show blanche smile open at left
     blanche "Mais, ce n'est pas grave car mon papa m'aime beaucoup !"
     show blanche neutral open at left
     blanche "Ça fait déjà 8 ans qu'il m'élève tout seul comme un grand !"
     show blanche cry open at left
+    play sound renpy.random.choice(sound.Blanche_Moan)
     blanche "Même si parfois, il me dit qu'il rêverait de revoir Maman et qu'ils s'occupent de moi tous les deux comme une vraie famille."
     show blanche neutral open at left
     blanche "Je sais juste qu'elle s'appelle Ciel et que mon papa pense souvent à elle."
     show blanche smile open at left
     blanche "Mais moi je m'en fiche ! Pour moi, elle n'existe pas !"
     show blanche neutral open at left
+    play sound renpy.random.choice(sound.Blanche_Laugh)
     blanche "Moi, j'aimerais juste faire une surprise à mon papa !"
     show blanche cry open at left
     blanche "S'il te plaît tu ne peux vraiment pas faire un geste ?"
@@ -205,7 +208,8 @@ label chap5_2:
     piou "Il faudrait que je me saigne aux quatre veines pour les autres ?!" with vpunch
     piou "Tiens, prends cette boule, fais honneur à ton père et reviens vite."
     scene noir_colors_4 with dissolve
-    pause 2
+    play sound sound.Unlock_Puzzle
+    pause 1
     scene noir_colors_5 with dissolve
     pause 2
     scene country

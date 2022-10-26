@@ -120,7 +120,8 @@ label chap2_completed:
     show blanche cry close at left
     indigo "Bon, bon, ok c'est d'accord. Motus et bouche cousue et je veux revoir la boule sur son autel au plus vite. Si les gardes l'apprennent s'en est fini de moi !"
     scene noir_colors_1 with dissolve
-    pause 2
+    play sound sound.Unlock_Puzzle
+    pause 1
     scene noir_colors_2 with dissolve
     pause 2
     scene star

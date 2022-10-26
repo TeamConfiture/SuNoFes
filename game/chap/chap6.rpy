@@ -48,6 +48,7 @@ label chap6:
     orange "Non pas par le contrat que j'ai passé avec Madame Arc-en-Ciel, je me sens redevable vis-à-vis de ton père de m'avoir tenu compagnie pendant tout ce temps."
     orange "Mais, tu ne peux pas prendre la boule comme ça. Elle t'échapperait des mains."
     show blanche surprised open at left
+    play sound renpy.random.choice(sound.Blanche_Exclamation)
     blanche "Ah bon ?"
     show blanche surprised close at left
     orange "Cette boule est un peu particulière..."
@@ -65,10 +66,12 @@ label chap6:
         "Le prendre pour un fou":
             $ bad +=1
             show blanche pout open at left
+            play sound renpy.random.choice(sound.Blanche_Angry)
             blanche "Tu... Tu es fou ?!" with vpunch
             blanche "Tu crois vraiment ce que tu es en train de me raconter ?!"
             blanche "Comment des agrumes peuvent produire du son ? Comment est-ce que ça va me permettre de prendre la boule ?"
             show blanche pout close at left
+            play sound renpy.random.choice(sound.Orange_Irritated)
             orange "Eh bien, vas-y, essaye donc puisque tu as tellement confiance en toi !"
             orange "Mais je te garantis qu'après ça, tu reviendras me supplier de t'apprendre."
             orange "Après tout, il s'agit d'un art !"
@@ -80,8 +83,10 @@ label chap6:
             show blanche surprised open at left
             blanche "Aaaaaaah !" with vpunch
             show blanche surprised open at left
+            play sound renpy.random.choice(sound.Blanche_Moan)
             blanche "Mais pourquoi elle m'échappe sans cesse des mains cette boule ?!"
             show blanche surprised close at left
+            play sound renpy.random.choice(sound.Orange_Speak)
             orange "Je viens de te le dire, mais tu ne veux pas m'écouter."
             orange "Tu manques de doigté."
         "Le prendre au sérieux":
@@ -146,7 +151,8 @@ label chap6_2:
     show blanche smile open at left
     blanche "Oh ! C'est incroyable, j'ai réussi à l'attraper !"
     scene noir_colors_5 with dissolve
-    pause 2
+    play sound sound.Unlock_Puzzle
+    pause 1
     scene noir_colors_6 with dissolve
     pause 2
     scene piano

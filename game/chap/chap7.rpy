@@ -1,6 +1,7 @@
 label win_noir_color_7(red = True):
     scene noir_colors_6 with dissolve
-    pause 2
+    play sound sound.Unlock_Puzzle
+    pause 1
     scene noir_colors_7 with dissolve
     pause 2
     scene dojo

@@ -177,9 +177,6 @@ define sound.Maigrichon_No = ["audio/Characters/Maigrichon/Maigrichon_No_01.ogg"
 define sound.Maigrichon_Sigh = ["audio/Characters/Maigrichon/Maigrichon_Sigh_01.ogg","audio/Characters/Maigrichon/Maigrichon_Sigh_02.ogg","audio/Characters/Maigrichon/Maigrichon_Sigh_03.ogg"]
 define sound.Maigrichon_Yes = ["audio/Characters/Maigrichon/Maigrichon_Yes_01.ogg","audio/Characters/Maigrichon/Maigrichon_Yes_02.ogg","audio/Characters/Maigrichon/Maigrichon_Yes_03.ogg"]
 
-## Chicks
-define sound.Chicks_Speak = ["audio/Birds/Chick_01.ogg","audio/Birds/Chick_02.ogg","audio/Birds/Chick_03.ogg","audio/Birds/Chick_04.ogg"]
-
 ##=============Sons des chats===============##
 
 ## Violet
@@ -194,43 +191,37 @@ define sound.Indigo_Speak = ["audio/Cats/Meow/CatMeow_05.ogg"]
 define sound.Indigo_Angry = ["audio/Cats/Hiss/CatHiss_03.ogg"]
 define sound.Indigo_Happy = ["audio/Cats/Purr/CatPurr_03.ogg"]
 
-## Green
-define sound.Green_Speak = ["audio/Cats/Meow/CatMeow_01.ogg"]
-define sound.Green_Angry = ["audio/Cats/Hiss/CatHiss_01.ogg"]
-define sound.Green_Happy = ["audio/Cats/Purr/CatPurr_02.ogg"]
+## Cyan/Cameraman
+define sound.Cyan_Speak = ["audio/Cats/Meow/CatMeow_01.ogg"]
+define sound.Cyan_Happy = ["audio/Cats/Purr/CatPurr_02.ogg"]
+define sound.Cyan_Exclamation = ["audio/Cats/Purr/CatPurr_04.ogg"]
+define sound.Cameraman_Speak = ["audio/Cats/Meow/CatMeow_02.ogg"]
+define sound.Cameraman_Angry_Low = ["audio/Cats/Hiss/CatHiss_02.ogg"]
+define sound.Cameraman_Angry = ["<to 2.3>audio/Cats/Hiss/CatHiss_01.ogg"]
+define sound.Cameraman_Embarassed = ["audio/Cats/Meow/CatMeow_02.ogg"]
+
+## Emeraude - this cat always has a 'singing' voice
+define sound.Emeraude_Speak = ["audio/Cats/Meow/CatMeow_04.ogg"]
+define sound.Emeraude_Happy = ["audio/Cats/Purr/CatPurr_04.ogg"]
+define sound.Emeraude_No = ["audio/Cats/Hiss/CatHiss_01.ogg"]
+define sound.Emeraude_Exclamation = ["audio/Cats/Purr/CatPurr_04.ogg"]
+
+## Piou & Jaune
+define sound.Piou_Speak = ["audio/Birds/Chick_04.ogg"]
+define sound.Piou_Angry = ["audio/Birds/Chick_01.ogg", "audio/Birds/Chick_03.ogg"]
+define sound.Piou_Cry = ["audio/Birds/Chick_02.ogg"]
+define sound.Jaune_Speak = ["audio/Cats/Meow/CatMeow_02.ogg"]
+define sound.Jaune_Sleepy = ["audio/Cats/Meow/CatMeow_03.ogg"]
+define sound.Jaune_Angry = ["audio/Cats/Hiss/CatHiss_02.ogg"]
+
+## Orange
+define sound.Orange_Speak = ["audio/Cats/Meow/CatMeow_02.ogg"]
+define sound.Orange_Irritated = ["audio/Cats/Hiss/CatHiss_01.ogg"]
 
 ## Red
 define sound.Red_Speak = ["audio/Cats/Meow/CatMeow_02.ogg"]
 define sound.Red_Angry = ["audio/Cats/Hiss/CatHiss_02.ogg"]
 define sound.Red_Happy = ["audio/Cats/Purr/CatPurr_05.ogg"]
-
-# TODO: Following cats did not go through audio work and re-use previous cat's sounds as placeholders
-## Cyan/Cameraman
-define sound.Cyan_Speak = ["<silence 1>"]
-define sound.Cyan_Happy = ["<silence 1>"]
-define sound.Cyan_Exclamation = ["<silence 1>"]
-define sound.Cameraman_Speak = ["<silence 1>"]
-define sound.Cameraman_Angry_Low = ["<silence 1>"]
-define sound.Cameraman_Angry = ["<silence 1>"]
-define sound.Cameraman_Embarassed = ["<silence 1>"]
-
-## Emeraude - this cat always has a 'singing' voice
-define sound.Emeraude_Speak = ["<silence 1>"]
-define sound.Emeraude_Happy = ["<silence 1>"]
-define sound.Emeraude_No = ["<silence 1>"]
-define sound.Emeraude_Exclamation = ["<silence 1>"]
-
-## Piou & Jaune
-define sound.Piou_Speak = ["<silence 1>"]
-define sound.Piou_Angry = ["<silence 1>"]
-define sound.Piou_Cry = ["<silence 1>"]
-define sound.Jaune_Speak = ["<silence 1>"]
-define sound.Jaune_Sleepy = ["<silence 1>"]
-define sound.Jaune_Angry = ["<silence 1>"]
-
-## Orange
-define sound.Orange_Speak = ["<silence 1>"]
-define sound.Orange_Irritated = ["<silence 1>"]
 
 
 ##    .-.     .-.     .-.     .-.     .-.     .-.     .-.     .-.     .-.
@@ -257,7 +248,7 @@ define music.Theme_Red = ["music/Theme_Red_CrossingTheChasm.ogg"]
 
 ##=============Musique Générique===============##
 
-define music.Theme_Prologue = ["music/.ogg"]
+define music.Theme_Prologue = ["music/Theme_Prologue_AlmostALoveStory.mp3"]
 define music.Theme_Bad_End = ["music/.ogg"]
 define music.Theme_Neutral_End = ["music/.ogg"]
 define music.Theme_Good_End = ["music/.ogg"]

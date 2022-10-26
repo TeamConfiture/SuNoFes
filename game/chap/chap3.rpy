@@ -162,7 +162,8 @@ label chap3_2:
     cyan "Je ne m'attendais pas à présenter une perle rare dans mon émission !"
     cyan "Tu as bien mérité ta récompense, voici la boule Cyan. Je compte sur toi pour me la rendre au plus vite car Madame Arc-en-Ciel ne voit pas toujours d'un très bon oeil ce genre d'arrangement."
     scene noir_colors_2 with dissolve
-    pause 2
+    play sound sound.Unlock_Puzzle
+    pause 1
     scene noir_colors_3 with dissolve
     pause 2
     scene forest

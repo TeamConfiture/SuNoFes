@@ -17,6 +17,7 @@ label start:
     call titlepage("", _("Prologue"))
     scene world with dissolve
     $ renpy.pause (2.5)
+    play music music.Theme_Prologue fadein 1.0 volume 0.5
     "Il était une fois, dans un royaume lointain nommé Couleurs, sept boules de cristal."
     hide screen konami_trigger
     show screen hidden_balls

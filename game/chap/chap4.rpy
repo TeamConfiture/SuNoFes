@@ -150,7 +150,8 @@ label chap4_2:
     emeraude "Yeah ! Bravo ! Oui, viens danser ! Oui, c'est la vie, la la la la la !"
     emeraude "Voilà, voilà, voilà, voilà la boule de cristal."
     scene noir_colors_3 with dissolve
-    pause 2
+    play sound sound.Unlock_Puzzle
+    pause 1
     scene noir_colors_4 with dissolve
     pause 2
     scene garden
