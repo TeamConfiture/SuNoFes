@@ -109,6 +109,10 @@ define sound.Wood_Depot = ["audio/Interactions/Wood_Depot_01.ogg"]
 
 define sound.Fishing = ["audio/Interactions/Fishing_01.ogg"]
 
+##============Giffle================##
+
+define sound.Slap = ["audio/Interactions/Slap_01.ogg"]
+
 ##=========================================================================##
 ##                     Voice acting (Channel Voice)                        ##
 ##=========================================================================##

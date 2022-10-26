@@ -41,6 +41,7 @@ label chap5:
     piou "Je parle, je parle mais, qu'est-ce qui t'amène ici ?"
     piou "Tu veux nous acheter un fromage ?"
     show blanche surprised open at left
+    play sound renpy.random.choice(sound.Blanche_Gasp)
     blanche "Oh non, non du tout ! Je viens ici pour mon papa."
     show blanche cry open at left
     blanche "J'aimerais lui donner le sourire ! Une dernière fois... J'ai si peur de le voir s'en aller..."
@@ -51,11 +52,13 @@ label chap5:
             $ bad +=1
             show blanche pout open at left
             show crystal_yellow at crystal_position with dissolve
+            play sound renpy.random.choice(sound.Blanche_Angry)
             blanche "Lui ramener la boule de Jaune, tu crois vraiment que je viendrais pour un bête fromage ?"
             show blanche pout close at left
             play sound renpy.random.choice(sound.Piou_Angry)
             piou "Non, mais tu te prends pour qui ?! C'est toi l'étranger et tu te permets de me critiquer sur mes propres terres ?! Tu vas le regretter !"
             show blanche surprised open at left
+            play sound renpy.random.choice(sound.Blanche_Gasp)
             blanche "Je dois vraiment récupérer cette boule pour mon papa ! C'est important !"
             hide crystal_yellow at crystal_position with dissolve
             show blanche surprised close at left
@@ -86,7 +89,7 @@ label chap5:
     show blanche neutral open at left
     blanche "Ça fait déjà 8 ans qu'il m'élève tout seul comme un grand !"
     show blanche cry open at left
-    play sound renpy.random.choice(sound.Blanche_Moan)
+    play sound renpy.random.choice(sound.Blanche_Sniffing)
     blanche "Même si parfois, il me dit qu'il rêverait de revoir Maman et qu'ils s'occupent de moi tous les deux comme une vraie famille."
     show blanche neutral open at left
     blanche "Je sais juste qu'elle s'appelle Ciel et que mon papa pense souvent à elle."
@@ -122,6 +125,7 @@ label chap5:
     "Piou me regarde."
     piou "Dis... Tu ne veux pas m'aider ? Je ne suis pas capable de faire la différence entre du Comté, du Gruyère, du Cantal, du Salers, du Beaufort ou de l'Abondance, d'habitude c'est Jaune qui s'en occupe."
     show blanche surprised open at left
+    play sound renpy.random.choice(sound.Blanche_Gasp)
     blanche "Je..."
     show blanche surprised close at left
     piou "S'il te plaît."
@@ -139,6 +143,7 @@ label chap5_2:
     play sound renpy.random.choice(sound.Piou_Speak)
     piou "Génial, merci ! On va pouvoir manger un bon repas grâce à toi !"
     show blanche neutral open at left
+    play sound renpy.random.choice(sound.Blanche_Yes)
     blanche "Avec plaisir. À propos de la boule..."
     show blanche neutral close at left
     piou "Bon, c'est pas tout ça mais il faut se remettre au boulot !"
@@ -151,6 +156,7 @@ label chap5_2:
             show blanche neutral close at left
             piou "Tu vas un peu vite en affaires, je ne te dois rien du tout. Tu es libre de partir quand tu veux, je ne lâcherai pas cette boule."
             show blanche cry open at left
+            play sound renpy.random.choice(sound.Blanche_Sniffing)
             blanche "Mais, Piou…"
             show blanche cry close at left
             piou "Ce n'est pas la peine, ma décision est définitive."
@@ -192,6 +198,7 @@ label chap5_2:
             piou "J'ai appris ça sur le tas, avec l'aide de Jaune."
             piou "Mon père était trop vieux pour m'enseigner les rudiments de cet art."
             show blanche neutral open at left
+            play sound renpy.random.choice(sound.Blanche_Question)
             blanche "Comment il va maintenant ?"
             show blanche neutral close at left
             piou "Comment dire..."
@@ -216,6 +223,7 @@ label chap5_2:
     show jaune at right
     show blanche neutral open at left
     with dissolve
+    play sound renpy.random.choice(sound.Blanche_Yes)
     blanche "Merci Piou !"
     show blanche neutral close at left
     piou "Maintenant, laisse-moi tranquille ! J'ai besoin de prendre l'air."
