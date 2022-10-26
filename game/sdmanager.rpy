@@ -135,14 +135,12 @@ define sound.Blanche_Yes = ["audio/Characters/Blanche/Blanche_Yes_01.ogg","audio
 define sound.Blanche_Yes_Haughty = ["audio/Characters/Blanche/Blanche_YesHaughty_01.ogg","audio/Characters/Blanche/Blanche_YesHaughty_02.ogg","audio/Characters/Blanche/Blanche_YesHaughty_03.ogg","audio/Characters/Blanche/Blanche_YesHaughty_04.ogg"]
 
 ## Noir
-define sound.Noir_Speak = ["audio/Characters/Noir/Noir_Reflexion.ogg"]
-define sound.Noir_Angry = ["audio/Characters/Noire/Noir_Angry_01.ogg","Noir_Angry_02.ogg","Noir_annoying_01.ogg"]
-define sound.Noir_Happy = ["audio/Characters/Noir/.ogg"]
-define sound.Noir_Cry = ["audio/Characters/Noir/.ogg"]
-define sound.Noir_Yes = ["audio/Characters/Noir/Noir_DoubleYes_01.ogg","audio/Characters/Noir/ShortYes_01.ogg","audio/Characters/Noir/Noir_ShortYes_02.ogg","audio/Characters/Noir/NoirShortYes_03.ogg","audio/Characters/Noir/NoirShortYes_04.ogg"]
-define sound.Noir_No = ["audio/Characters/Noir/NoirNo_01.ogg"]
-define sound.Noir_Gasp = ["audio/Characters/Noir/NoirGaps_01.ogg"]
-define sound.Noir_Exlamation = ["audio/Characters/Noir/NoirExclamation_01.ogg"]
+define sound.Noir_Speak = ["audio/Characters/Noir/Noir_Reflexion_01.ogg"]
+define sound.Noir_Angry = ["audio/Characters/Noir/Noir_Angry_01.ogg","audio/Characters/Noir/Noir_Angry_02.ogg","audio/Characters/Noir/Noir_annoying_01.ogg"]
+define sound.Noir_Yes = ["audio/Characters/Noir/Noir_DoubleYes_01.ogg","audio/Characters/Noir/Noir_ShortYes_01.ogg","audio/Characters/Noir/Noir_ShortYes_02.ogg","audio/Characters/Noir/Noir_ShortYes_03.ogg"]
+define sound.Noir_No = ["audio/Characters/Noir/Noir_No_01.ogg"]
+define sound.Noir_Gasp = ["audio/Characters/Noir/Noir_Gasp_01.ogg"]
+define sound.Noir_Exclamation = ["audio/Characters/Noir/Noir_Exclamation_01.ogg"]
 
 ## Arc-en-Ciel
 define sound.ArcEnCiel_Angry = ["audio/Characters/ArcEnCiel/ArcEnCiel_Angry_01.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Angry_02.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Angry_03.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Angry_04.ogg","audio/Characters/ArcEnCiel/ArcEnCiel_Angry_05.ogg"]
@@ -253,6 +251,6 @@ define music.Theme_Red = ["music/Theme_Red_CrossingTheChasm.ogg"]
 ##=============Musique Générique===============##
 
 define music.Theme_Prologue = ["music/Theme_Prologue_AlmostALoveStory.mp3"]
-define music.Theme_Bad_End = ["music/.ogg"]
-define music.Theme_Neutral_End = ["music/.ogg"]
-define music.Theme_Good_End = ["music/.ogg"]
+define music.Theme_Bad_End = ["music/Theme_Prologue_AlmostALoveStory.mp3"]
+define music.Theme_Neutral_End = ["music/Theme_Prologue_AlmostALoveStory.mp3"]
+define music.Theme_Good_End = ["music/Theme_Prologue_AlmostALoveStory.mp3"]
