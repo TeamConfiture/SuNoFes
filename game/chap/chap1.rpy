@@ -5,53 +5,67 @@
     show screen chap1_mulberry_search()
     show blanche surprised open at left
     with dissolve 
+    play sound renpy.random.choice(sound.Blanche_Amazement)
     blanche "Woah ! Tout est violet ! Il y a pleins de fleurs !!!" with vpunch
     show blanche smile open at left 
     blanche "Je vais en cueillir une pour mon papa."
-    show blanche smile close at left 
+    show blanche smile close at left
+    play sound renpy.random.choice(sound.Violet_Angry_Short)
     show violet at right with dissolve
     x "MIAAOOOUUU !" with vpunch
     show blanche cry open at left 
+    play sound renpy.random.choice(sound.Blanche_Gasp)
     blanche "Aïeeeuuuuhhh" with vpunch
     show blanche cry close at left 
     "Un chat vient de me griffer au moment où j'allais cueillir une fleur."
     show blanche cry open at left
+    play sound renpy.random.choice(sound.Blanche_Sniffing)
     blanche "Méchant ! Méchant chat ! Tu m'as fait mal !"
-    show blanche cry close at left 
+    show blanche cry close at left
+    play sound renpy.random.choice(sound.Violet_Angry)
     x "Eh toi, tu n'as aucun respect pour les lieux ! On ne cueille pas des fleurs sans autorisation."
     show blanche surprised open at left
+    play sound renpy.random.choice(sound.Blanche_Exclamation)
     blanche "Un chat qui parle ! C'est la première fois que j'en vois un !"
     show blanche surprised close at left
+    play sound renpy.random.choice(sound.Violet_Speak)
     x "Comment ça ? Bien sûr que je parle et tout le monde le sait !"
     x "Toi, tu n'as pas dû sortir souvent pour dire de telles âneries."
     show blanche neutral open at left
     blanche "Oh ! Il y a de la lavande ici ! Oh ! Il y a des lilas là-bas !"
     show blanche neutral close at left
+    play sound renpy.random.choice(sound.Violet_Speak)
     x "Eh tu m'écoutes ?!" with vpunch
     show blanche surprised open at left
     blanche "Ah ! Oui… Pardon, monsieur le chat."
     show blanche neutral close at left
     x "Monsieur le chat ?! Vraiment ?!"
     x "Tss, la jeunesse n'a plus aucun respect envers les gardiens de Couleurs. Ça donne des surnoms à tout va, maintenant."
+    play sound renpy.random.choice(sound.Violet_Patronizing)
     violet "Je m'appelle Violet Evagaden. Mais, appelle-moi Violet. Souviens-toi-en."
     show blanche surprised open at left
+    play sound renpy.random.choice(sound.Blanche_Exclamation)
     blanche "Tu es un gardien de Couleurs ?!" with vpunch
     show blanche surprised close at left
     violet "En effet. Je suis le gardien du Violet."
     show blanche neutral open at left
+    play sound renpy.random.choice(sound.Blanche_Laugh)
     blanche "Trop bien ! Moi aussi ! Je suis le gardien de [player_name] !"
     show blanche neutral close at left
     violet "Non, mais j'hallucine ! C'est que cet enfant se moque de moi, ma parole !"
     violet "Toi, un gardien de Couleurs ? Il y en a que sept et ce sont tous des chats !"
     violet "Tu ne peux pas être un gardien, c'est impossible !"
     show blanche cry open at left
+    play sound renpy.random.choice(sound.Blanche_Sigh)
     blanche "Oh, vraiment ? C'est dommage. Je voulais aussi être gardien…"
     show blanche cry close at left
     violet "Eh… Ne pleure pas ! Tu sais, c'est une vraie corvée ce métier. On doit constamment surveiller cette boule en mousse que tu vois là."
     show crystal_purple at crystal_position with dissolve
     show blanche surprised open at left
+    play sound renpy.random.choice(sound.Blanche_Amazement)
     blanche "Oh ! Mais ! C'est une des sept boules de cristal !" with vpunch
     show blanche surprised close at left
+    play sound renpy.random.choice(sound.Violet_Happy)
     violet "En effet ! Elle est jolie, hein ?"
     show blanche smile open at left
     hide crystal_purple at crystal_position with dissolve
@@ -73,15 +87,18 @@
             "Je lui fais les yeux du chat potté."
             violet "Oh nooooooooooon pas ces yeeeuuxxx. Ils sont trop mignons."
             show blanche cry open at left
+            play sound renpy.random.choice(sound.Blanche_Sniffing)
             blanche "S'il te plaaaîîîîîîît !"
             show blanche cry close at left
         "Demander poliment.":
             $ neutral +=1
             show blanche neutral open at left
+            play sound renpy.random.choice(sound.Blanche_Question)
             blanche "Est-ce que je peux récupérer ta boule de cristal, s'il te plaît ?"
             show blanche neutral close at left
             violet "Non, c'est ma propriété !"
             show blanche cry open at left
+            play sound renpy.random.choice(sound.Blanche_Sniffing)
             blanche "Mais, j'ai vraiment besoin de cette boule de cristal."
             show blanche cry close at left
             "Je commence à pleurer."
@@ -89,11 +106,14 @@
             $ bad +=1
             show blanche pout close at left
             "J'essaye de lui arracher la boule des mains."
+            play sound renpy.random.choice(sound.Violet_Angry_Short)
             violet "MIAAOOOUUU !" with vpunch
             show blanche cry open at left
+            play sound renpy.random.choice(sound.Blanche_Gasp)
             blanche "Aïeeeuuuuhhh"
             show blanche cry close at left
             "Mais, Violet me griffe."
+            play sound renpy.random.choice(sound.Violet_Patronizing)
             violet "Vilain enfant ! On ne t'a jamais appris les bonnes manières ?!" with vpunch
             show blanche cry open at left
             blanche "Pardon… Mais, j'ai vraiment besoin de cette boule de cristal."
@@ -102,6 +122,7 @@
 
     violet "Bon, ok, ok ! Je te la prête… Mais, pour une journée et seulement si tu m'aides !"
     show blanche surprised open at left
+    play sound renpy.random.choice(sound.Blanche_Question)
     blanche "C'est vrai ?!" with vpunch
     show blanche surprised close at left
     violet "J'ai besoin que tu me cueilles une mûre spéciale ! Elle est quelque part dans le jardin. J'en ai besoin pour écrire des lettres."
@@ -117,31 +138,38 @@
 label onclick_mulberry_background:
     show screen chap1_mulberry_search()
     show violet at right
+    play sound renpy.random.choice(sound.Violet_Speak)
     violet "Alors tu as trouvé ?"
     show blanche pout close at left
+    play sound renpy.random.choice(sound.Blanche_No)
     blanche "Pas encore…"
     hide blanche
     hide violet
     call screen  chap1_mulberry_search("chap1_2", "onclick_mulberry_background")
 
 label chap1_2:
+    scene mulberry_search
     show violet at right
     show blanche smile close at left
     with dissolve
+    play sound renpy.random.choice(sound.Violet_Happy)
     violet "C'est bien ça ! Félicitations, tu as trouvé la mûre que je voulais !"
     violet "Il faudra que tu me rendes la boule avant minuit ! Sinon, plus de violet…"
     show blanche neutral open at left
+    play sound renpy.random.choice(sound.Blanche_Yes)
     blanche "Plus de mûre, plus de manger pour toi… et Madame Arc-en-Ciel, pas contente !"
     show blanche neutral close at left
     violet "Tout à fait !"
     violet "Tiens, voilà la boule !"
     scene noir_colors_0 with dissolve
-    pause 2
+    play sound sound.Unlock_Puzzle
+    pause 1
     scene noir_colors_1 with dissolve
     pause 2
     scene mulberry_search with dissolve
     show violet at right
     show blanche smile open at left
+    play sound renpy.random.choice(sound.Blanche_Moan)
     blanche "Youpi !!! Encore six !" with vpunch
     show blanche smile close at left
     violet "Six ? Attends ?! Ne me dis pas que tu veuilles récupérer toutes les boules ?!"
@@ -161,22 +189,28 @@ label chap1_2:
     show blanche neutral close at left
     violet "Bon, prends soin de toi."
     # scene cg1 with dissolve
-    "Violet me fait un signe d'au revoir."
     show blanche neutral open at left
+    play sound renpy.random.choice(sound.Blanche_Yes)
     blanche "Oui ! Merci Violet ! Je te promets que je te rendrai la boule !"
+    play sound renpy.random.choice(sound.Violet_Speak)
+    "Violet me fait un signe d'au revoir."
     scene mulberry_search with dissolve
     "Quelque part dans le jardin des violettes…"
+    play sound renpy.random.choice(sound.Grosso_Sigh)
     x "Maigrichon, j'en ai marre de ces patrouilles nocturnes… Il ne se passe jamais rien."
     show maigrichon at left
     show grosso at right
     with dissolve
     maigrichon "Grosso, ne m'en parle pas, j'ai tellement sommeil… zzzz"
+    play sound renpy.random.choice(sound.Grosso_Gasp)
     grosso "AAAHHH" with vpunch
     maigrichon "Que ? Quoi ?! Ça ne va pas de crier comme ça ?!!!"
     grosso "Là-bas ! Au vol !"
+    play sound renpy.random.choice(sound.Maigrichon_Angry)
     maigrichon "Quoi ?! Un enfant ? Avec…"
     grosso_maigrichon "UNE BOULE DE CRISTAL ???!!!" with vpunch
     maigrichon "Vite, suivons-le !!!"
+    play sound renpy.random.choice(sound.Grosso_Yes)
     grosso "Et prévenons Madame Arc-en-Ciel !"
     hide maigrichon
     hide grosso

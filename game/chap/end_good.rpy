@@ -1,16 +1,20 @@
 label end_good:
     call titlepage("", _("Fin heureuse"))
+    play music music.Theme_Good_End fadein 1.0 volume 0.5
     scene monochrome
     show blanche smile open at left
     with dissolve
+    play sound renpy.random.choice(sound.Blanche_Laugh)
     blanche "Héhé ! J'ai réussi à avoir les sept boules de cristal ! J'espère que Papa sera content."
     show blanche smile close at left
     show mme angryf open at right with dissolve
+    play sound renpy.random.choice(sound.ArcEnCiel_Hey)
     x "Un instant ! C'est donc toi, le petit enfant qui sème la zizanie dans ce royaume." with vpunch
     x "Que fais-tu ? Rends-moi mes boules ! Pourquoi les avoir prises ?!"
     x "Tu ne sais donc pas que cela perturbe l'équilibre de ce monde ?!"
     show mme angryf close at right
     show blanche surprised open at left
+    play sound renpy.random.choice(sound.Blanche_Gasp)
     blanche "Ah ! Euh…" with vpunch
     blanche "C'est Madame Arc-en-Ciel ?"
     blanche  "Oh non ! Vite ! Fuyons !" with vpunch
@@ -18,28 +22,35 @@ label end_good:
     show blanche surprised close at left
     "Mais, à peine ai-je pu faire un pas, que Madame Arc-en-Ciel m'attrape."
     show blanche cry open at left
+    play sound renpy.random.choice(sound.Blanche_Sniffing)
     blanche "Ne me faites pas de mal. C'est… C'est que mon papa… Mon papa Noir… Il… Il est malade et je voulais lui montrer les couleurs pour le voir sourire."
     show blanche cry close at left
     show mme neutralf open at right
+    play sound renpy.random.choice(sound.ArcEnCiel_Question)
     madame "Un instant… Papa ? Noir ? Il… Il est malade ?"
     madame "Tu… Tu serais donc son enfant ?"
     show mme neutralf close at right
     show blanche neutral open at left
+    play sound renpy.random.choice(sound.Blanche_Yes)
     blanche "Oui, Madame Arc-en-Ciel…"
     show blanche neutral close at left
     madame "..."
     show blanche surprised open at left
     blanche "Je vous promets, Madame Arc-en-Ciel, je vous emprunte les boules juste pour un instant ! Après, je vous les rendrai !"
     show blanche cry open at left
+    play sound renpy.random.choice(sound.Blanche_Moan)
     blanche "Laissez-moi juste les montrer à mon papa !"
     show blanche cry close at left
     show mme neutralf open at right
+    play sound renpy.random.choice(sound.ArcEnCiel_Sigh)
     madame "Amène-moi à ton père."
     show mme neutralf close at right
     show blanche surprised open at left
+    play sound renpy.random.choice(sound.Blanche_Question)
     blanche "Hein ?"
     show blanche surprised close at left
     show mme angryf open at right
+    play sound renpy.random.choice(sound.ArcEnCiel_Angry)
     madame "Amène-moi à ton père, tout de suite !" with vpunch
     show mme angryf close at right
     show blanche surprised open at left
@@ -58,10 +69,12 @@ label end_good:
     show mme sad close at farLeft
     "En voyant la scène, Madame Arc-en-Ciel, qui était connue pour n'exprimer aucun sentiment, autre que la colère, s'effondre et commence à murmurer."
     show mme sad open at farLeft
+    play sound renpy.random.choice(sound.ArcEnCiel_Sigh)
     madame "Mon vieil ami, Noir… Que s'est-il passé depuis tout ce temps…"
     madame "Est-ce le poids de la noirceur de ce monde qui t'a mis dans cet état-là ?"
     show mme sad close at farLeft
     show noir bandeau hurt open at right
+    play sound renpy.random.choice(sound.Noir_Gasp)
     noir "Urgh… Urgh…"
     show noir bandeau hurt close at right
     "Noir gémit."
@@ -69,21 +82,26 @@ label end_good:
     noir "Ciel… Est-ce toi ?"
     show noir bandeau sigh close at right
     show mme ignore open at farLeft
+    play sound renpy.random.choice(sound.ArcEnCiel_No)
     madame "Repose-toi… Garde tes forces."
     show mme ignore close at farLeft
     show noir bandeau sigh open at right
+    play sound renpy.random.choice(sound.Noir_Speak)
     noir "Je suis désolé… Je ne mérite pas d'être ton partenaire de route. Je n'ai pas réussi à faire honneur à la tâche que tu m'as confiée."
     show noir bandeau sigh close at right
     show mme ignore open at farLeft
     madame "Ne dis pas de sottises."
     show mme ignore close at farLeft
     show noir bandeau hurt open at right
+    play sound renpy.random.choice(sound.Noir_Angry)
     noir "Urgh… Aaahh !!!" with vpunch
     show noir bandeau hurt close at right
     "Noir crie de douleur."
     show blanche cry open at nearLeft
     show mme sad close at farLeft
+    play sound renpy.random.choice(sound.Blanche_Gasp)
     blanche "Papa !" with vpunch
+    play sound renpy.random.choice(sound.Blanche_Cry)
     blanche "Papa ! Tu vas bien ?! Regarde, je t'ai amené les sept boules de Cristal ! Tu as vu leur couleur ?"
     show blanche cry close at nearLeft
     show noir bandeau hurt open at right
@@ -91,17 +109,21 @@ label end_good:
     show noir bandeau smile close at right
     "Noir se tait un instant puis sourit."
     show noir bandeau smile open at right
+    play sound renpy.random.choice(sound.Noir_Yes)
     noir "C'est très joli mon enfant. Mais, n'oublie pas de rendre ça à Mam- Madame Arc-en-Ciel."
     show noir bandeau smile close at right
     show blanche smile open at nearLeft
+    play sound renpy.random.choice(sound.Blanche_Yes)
     blanche "Oui !"
     show blanche smile close at nearLeft
     "Je lui souris jusqu'aux oreilles."
     show noir bandeau smile open at right
+    play sound renpy.random.choice(sound.Noir_Speak)
     noir "Peux-tu me laisser un instant avec Madame Arc-en-Ciel ? J'aimerais discuter avec elle."
     noir "En attendant, tu pourrais me ramener des fleurs ?"
     show noir bandeau smile close at right
     show blanche neutral open at nearLeft
+    play sound renpy.random.choice(sound.Blanche_Question)
     blanche "Des fleurs ? Oh ! D'accord Papa !"
     hide blanche neutral close at nearLeft with easeoutleft
     "Je m'éloigne de lui et de Madame Arc-en-Ciel."
@@ -123,13 +145,16 @@ label end_good:
     noir "Ne lui en tiens pas rigueur. L'enfant est encore jeune…"
     show noir bandeau smile close at right
     show mme blush open at left
+    play sound renpy.random.choice(sound.ArcEnCiel_Sigh)
     madame "Montrez mes boules de cristal à quelqu'un qui ne peut voir… C'est insensé."
     show mme blush close at left
     "Madame Arc-en-Ciel pose sa main au niveau des yeux de Noir."
     show noir bandeau surprised open at right
+    play sound renpy.random.choice(sound.Noir_Exclamation)
     noir "Huh ? Ciel ? Que fais-tu ?" with vpunch
     show noir bandeau surprised close at right
     show mme angry open at left
+    play sound renpy.random.choice(sound.ArcEnCiel_Exasperate)
     madame "Ne discute pas."
     show mme angry close at left
     "Madame Arc-en-Ciel émet une lumière et concentre cette énergie sur Noir."
@@ -139,6 +164,7 @@ label end_good:
     with dissolve
     show noir bandeau surprised open at right
     noir "Que… Que se passe-t-il ? Je sens comme une force revenir en moi."
+    play sound renpy.random.choice(sound.Noir_Gasp)
     noir "Oh !"
     show noir bandeau surprised close at right with dissolve
     "Son bandeau tombe et révèle ses yeux… arc-en-ciel."
@@ -151,41 +177,51 @@ label end_good:
     madame "..."
     show mme blush close at left
     show noir smile open at right
+    play sound renpy.random.choice(sound.Noir_Speak)
     noir "Je croyais… Je croyais que tu me haïssais… C'est pour cette raison que tu ne voulais plus me voir."
     show noir smile close at right
     show mme ignore open at left
+    play sound renpy.random.choice(sound.ArcEnCiel_Exasperate)
     madame "Tsss… Avec mes responsabilités au sein du royaume, j'ai très peu de temps pour moi ou pour qui que ce soit."
     show mme blush open at left
+    play sound renpy.random.choice(sound.ArcEnCiel_Angry)
     madame "Je ne t'ai guéri que pour le bien de Couleurs."
     show mme blush close at left
     show noir neutral open at right
+    play sound renpy.random.choice(sound.Noir_Speak)
     noir "Couleurs n'a pas besoin d'un moins que rien comme moi."
     show noir neutral close at right
     show mme sad open at left
     madame "Mais, [player_name] a besoin de toi."
     show mme sad close at left
     show noir smile open at right
+    play sound renpy.random.choice(sound.Noir_Yes)
     noir "C'est vrai. Tu n'as pas tort..."
     show noir smile close at right
     "Noir sourit."
     show mme blush open at left
+    play sound renpy.random.choice(sound.ArcEnCiel_Yes)
     madame "Et moi aussi…"
     show mme blush close at left
     show noir surprised open at right
+    play sound renpy.random.choice(sound.Noir_Gasp)
     noir "Hum ?"
     show noir surprised close at right
     show mme blush open at left
+    play sound renpy.random.choice(sound.ArcEnCiel_Angry)
     madame "Moi aussi, j'ai besoin de toi."
     show mme blush close at left
     show noir smile open at right
     noir "Oh ? Vraiment ?"
     show noir smile close at right
     show mme angry open at left
+    play sound renpy.random.choice(sound.ArcEnCiel_Exasperate)
     madame "Tss… Ce n'est pas ce que tu crois. Je suis le soleil qui illumine ce monde et toi, tu es la lune qui le protège de l'obscurité..."
     show mme blush open at left
     madame "Il était évident qu'il fallait que je te sauve. C'est tout ce que je voulais dire."
     show mme blush close at left
     show noir smile open at right
+    play sound renpy.random.choice(sound.Noir_Speak)
     noir "Oh… Oui, je vois."
     show noir smile close at right
     show mme blush close at left
@@ -193,8 +229,10 @@ label end_good:
     noir "..."
     "Madame Arc-en-Ciel et Noir se regardent les yeux dans les yeux."
     show mme angry open at left
+    play sound renpy.random.choice(sound.ArcEnCiel_Exasperate)
     madame "Disons que pour Couleurs, je suis peut-être quelqu'un, mais sans toi, je ne suis rien."
     show mme blush open at left
+    play sound renpy.random.choice(sound.ArcEnCiel_Sigh)
     madame "C'est pour ça que je t'ai sauvé."
     show mme blush close at left
     show noir smile open at right
@@ -203,10 +241,12 @@ label end_good:
     "Noir rit et prend dans ses bras Madame Arc-en-Ciel."
     show mme blush open at left
     show noir smile close at center with ease
+    play sound renpy.random.choice(sound.ArcEnCiel_Hey)
     madame "Hé ! Ne me touche p-" with vpunch
     show blanche neutralf open at right with easeinright
     blanche "Papa ! Je t'ai ramené pleins de fleurs !"
     show blanche neutralf open at right
+    play sound renpy.random.choice(sound.Blanche_Exclamation)
     blanche "Oh ! Papa, tu es debout ! Trop bien ! Tu n'es plus malade !"
     blanche "Hein ? Mais pourquoi vous vous faites un câlin ? Moi aussi, j'en veux un !"
     show blanche neutralf close at right
