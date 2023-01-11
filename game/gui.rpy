@@ -112,8 +112,8 @@ define gui.textbox_yalign = 0.92
 ## L’emplacement relatif à la zone de texte du nom du personnage en train de
 ## parler. La valeur peut être un nombre entier de pixels depuis la gauche ou le
 ## haut ou 0.5 pour le centre.
-define gui.name_xpos = 0.135
-define gui.name_ypos = 0.015
+define gui.name_xpos = 0.215
+define gui.name_ypos = 0.11
 
 ## L’alignement horizontal du nom du personnage. La valeur peut être 0.0 pour un
 ## alignement à gauche, 0.5 pour le centrer et 1.0 pour un alignement à droite.
@@ -136,11 +136,11 @@ define gui.namebox_tile = False
 
 ## L’emplacement du dialogue relatif à la zone de texte. La valeur peut être un
 ## nombre entier de pixels depuis la gauche ou le haut ou 0.5 pour le centre.
-define gui.dialogue_xpos = 0.05
-define gui.dialogue_ypos = 0.32
+define gui.dialogue_xpos = 0.09
+define gui.dialogue_ypos = 0.36
 
 ## La largeur maximale en pixels de la zone de dialogue.
-define gui.dialogue_width = 1706
+define gui.dialogue_width = 1600
 
 ## L’alignement horizontal de la zone de dialogue. La valeur peut être 0.0 pour
 ## un alignement à gauche, 0.5 pour le centrer et 1.0 pour un alignement à

@@ -9,6 +9,43 @@ image lake_transparent = "images/bg/lake_transparent.png"
 image lake_deep = "images/bg/lake_deep.png"
 image cupboard = "images/bg/cupboard.png"
 
+# GUI images
+image textbox:
+    "gui/textbox_noname.png"
+    xalign 0.5 yalign 1.0
+
+layeredimage char_textbox:
+    xalign 0.5 yalign 1.0
+    always:
+        "gui/textbox_message.png"
+    group character:
+        attribute white default:
+            "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#999"))
+        attribute unknown:
+            "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#666"))
+        attribute axolotl:
+            "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#dab6ca"))
+        attribute cameraman:
+            "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#215c77"))
+        attribute cyan:
+            "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#216d77"))
+        attribute emeraude:
+            "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#50C878"))
+        attribute indigo:
+            "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#202A7F"))
+        attribute jaune:
+            "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#ffee00"))
+        attribute noir:
+            "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#000"))
+        attribute orange:
+            "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#ff7b00"))
+        attribute piou:
+            "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#ffd000"))
+        attribute red:
+            "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#af1212"))
+        attribute violet:
+            "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#753799"))
+
 # Individual sprites
 image writing_feather:
     "images/items/feather.png"
