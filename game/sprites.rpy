@@ -23,6 +23,8 @@ layeredimage char_textbox:
             "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#999"))
         attribute unknown:
             "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#666"))
+        attribute arcenciel:
+            AlphaMask("gui/textbox_rainbow.png", "gui/textbox_namebox.png")
         attribute axolotl:
             "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#dab6ca"))
         attribute cameraman:
