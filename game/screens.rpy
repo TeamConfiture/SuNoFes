@@ -619,13 +619,13 @@ screen preferences():
             xspacing 100
             yspacing 50
             xpos 75
-            ypos -60
+            ypos -100
             vbox:
                 hbox:
                     xoffset 25
                     text _("Volume du jeu"):
                         style "preferences_text_option_name"
-                grid 2 2:
+                grid 2 3:
                     xoffset -150
                     if config.has_music:
                         text _("Musique"):
@@ -637,6 +637,12 @@ screen preferences():
                         text _("Son"):
                             style "preferences_text_suboption_name"
                         bar value Preference("sound volume"):
+                            xoffset 50
+                            style "bar"
+                    if config.has_voice:
+                        text _("Voix"):
+                            style "preferences_text_suboption_name"
+                        bar value Preference("voice volume"):
                             xoffset 50
                             style "bar"
             vbox:
