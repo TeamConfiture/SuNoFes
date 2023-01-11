@@ -4,7 +4,7 @@ label chap3:
     play music music.Theme_Cyan fadein 1.0 volume 0.7
     show blanche surprised open at left
     with dissolve
-    play sound renpy.random.choice(sound.Blanche_Amazement)
+    play voice renpy.random.choice(audio.Blanche_Amazement)
     blanche "Oh ! C'est... C'est le duo des Cyanmois que je vois au loin !" with vpunch
     show blanche neutral open at left
     blanche "Le présentateur Cyan est très connu du grand public pour son émission Jean Racine et des Saules."
@@ -14,7 +14,7 @@ label chap3:
     blanche "Il faut que j'aille leur parler !"
     show blanche neutral close at left
     show cyan at right with dissolve
-    play sound renpy.random.choice(sound.Cyan_Speak)
+    play voice renpy.random.choice(audio.Cyan_Speak)
     cyan "Bonjour à toutes et tous !"
     cyan "Bienvenue dans Jean Racine et des Saules, l'émission d'Art et Culture la plus connue du Monde 2 ! "
     show blanche neutral open at left
@@ -22,43 +22,43 @@ label chap3:
     hide blanche neutral close at left
     hide cyan at right
     show cyan2
-    play sound renpy.random.choice(sound.Cameraman_Angry_Low)
+    play voice renpy.random.choice(audio.Cameraman_Angry_Low)
     cameraman "Chuuuuuuuuuut !" with vpunch
     show cyan2 at right with move
     show cyan at left with dissolve
-    play sound renpy.random.choice(sound.Cyan_Speak)
+    play voice renpy.random.choice(audio.Cyan_Speak)
     cyan "Nous voici donc dans la forêt Arc-en-Ciel, très connue pour sa rivière, mais surtout pour ses truites."
     cyan "Admirez donc ces magnifiques chênes centenaires, ces hêtres majestueux et ces petits sapins."
     cyan "Tous sont le fruit d'une collaboration entre l'être humain et la nature."
     cyan "Observons maintenant les truites."
-    play sound renpy.random.choice(sound.Cameraman_Embarassed)
+    play voice renpy.random.choice(audio.Cameraman_Embarassed)
     cameraman "Je suis désolé chaton, mais nous n'avons pas réussi à trouver de truites Arc-en-Ciel dans la rivière. Nous avons seulement quelques truites farios."
     cameraman "Un simple amateur de poisson verra la différence. Je coupe la bande vidéo le temps de trouver une solution."
-    play sound renpy.random.choice(sound.Cyan_Exclamation)
+    play voice renpy.random.choice(audio.Cyan_Exclamation)
     cyan "Mais c'est horrible ! Qu'allons-nous dire à nos téléspectateurs ?!" with vpunch
     cyan "Nous ne pouvons pas les décevoir."
     cyan "Présenter la forêt Arc-en-Ciel sans ses truites, c'est comme présenter des crêpes sans oeufs."
     cyan "C'est impensable ! Inimaginable !" with vpunch
-    play sound renpy.random.choice(sound.Cameraman_Speak)
+    play voice renpy.random.choice(audio.Cameraman_Speak)
     cameraman "Cela peut prendre plusieurs heures : les truites Arc-en-Ciel se font de plus en plus rares dans la rivière depuis les sécheresses des dernières années et leur pêche intensive."
     show cyan2 at farRight
     show cyan at center
     with move
     show blanche neutral open at farLeft with dissolve
-    play sound renpy.random.choice(sound.Blanche_Question)
+    play voice renpy.random.choice(audio.Blanche_Question)
     blanche "Excuse-moi, j'ai une question à te poser : je cherche la bou..."
     show blanche neutral close at farLeft
-    play sound renpy.random.choice(sound.Cameraman_Angry)
+    play voice renpy.random.choice(audio.Cameraman_Angry)
     cameraman "Ça suffit comme ça ! On est en plein tournage, ouste !" with vpunch
 
     menu:
         "Le traiter de méchant":
             $ bad +=1
             show blanche pout open at farLeft
-            play sound renpy.random.choice(sound.Blanche_Sniffing)
+            play voice renpy.random.choice(audio.Blanche_Sniffing)
             blanche "Méchant ! T'es trop méchant ! Je boude."
             show blanche pout close at farLeft
-            play sound renpy.random.choice(sound.Cameraman_Speak)
+            play voice renpy.random.choice(audio.Cameraman_Speak)
             cameraman "Ce n'est pas ce que j'ai voulu dire, mais tu m'as compris. Tu nous gênes."
             show blanche cry open at farLeft
             blanche "Pourquoi t'es aussi méchant ? Qu'est-ce que j'ai fait ?"
@@ -70,7 +70,7 @@ label chap3:
             cyan "Ah oui ? Comment pourrais-tu nous aider ?"
         "Partir chercher la boule ailleurs":
             $ neutral +=1
-            play sound renpy.random.choice(sound.Cyan_Happy)
+            play voice renpy.random.choice(audio.Cyan_Happy)
             cyan "Oh que vois-je ? Un visiteur venu d'ailleurs ! Ne t'en va pas !"
             cyan "Que viens-tu faire ici ?"
             show blanche cry open at farLeft
@@ -80,11 +80,11 @@ label chap3:
         "Lui répondre poliment":
             $ good +=1
             show blanche pout open at farLeft
-            play sound renpy.random.choice(sound.Blanche_Yes_Haughty)
+            play voice renpy.random.choice(audio.Blanche_Yes_Haughty)
             blanche "Excuse-moi, mais j'ai l'impression que je ne gêne plus tant que ça."
             blanche "Poser une simple question ne devrait pas être un problème."
             show blanche pout close at farLeft
-            play sound renpy.random.choice(sound.Cameraman_Embarassed)
+            play voice renpy.random.choice(audio.Cameraman_Embarassed)
             cameraman "Bon, OK, mais pas longtemps alors."
             show blanche neutral open at farLeft
             blanche "Merci."
@@ -95,7 +95,7 @@ label chap3:
     blanche "Je recherche actuellement la boule Cyan."
     blanche "Je vous propose un marché : je vous pêche une truite Arc-en-Ciel et en échange vous m'aidez à trouver la boule Cyan. Ça vous va ?"
     show blanche neutral close at farLeft
-    play sound renpy.random.choice(sound.Cameraman_Angry)
+    play voice renpy.random.choice(audio.Cameraman_Angry)
     cameraman "Mais, c'est que ce gosse est cinglé ?!" with vpunch
     cyan "Hum... Pourquoi je devrais te croire ?"
     show blanche cry open at farLeft
@@ -108,18 +108,18 @@ label chap3:
     show blanche smile open at farLeft
     blanche "Croyez-moi ! Je suis un expert de la pêche ! Mon papa Noir m'a appris quand j'étais jeune !" with vpunch
     show blanche cry open at farLeft
-    play sound renpy.random.choice(sound.Blanche_Sniffing)
+    play voice renpy.random.choice(audio.Blanche_Sniffing)
     blanche "Mais maintenant il est très malade, il ne peut plus se lever..."
     show blanche neutral open at farLeft
     blanche "Il m'a raconté qu'il aimerait voir les couleurs de l'arc-en-ciel une dernière fois."
     show blanche smile open at farLeft
     blanche "C'est pour ça que j'aimerais lui faire une surprise !"
     show blanche neutral close at farLeft
-    play sound renpy.random.choice(sound.Cyan_Exclamation)
+    play voice renpy.random.choice(audio.Cyan_Exclamation)
     cyan "L'enfant de Noir ?!" with vpunch
     cyan "C'est une légende vivante en matière de pêche !"
     show blanche smile open at farLeft
-    play sound renpy.random.choice(sound.Blanche_Yes)
+    play voice renpy.random.choice(audio.Blanche_Yes)
     blanche "Oui ! Noir est mon papa ! Je ne pensais pas que mon papa était si connu !"
     show blanche cry open at farLeft
     blanche "À la maison, tout est noir et blanc. Il n'y a pas beaucoup de couleur."
@@ -157,7 +157,7 @@ label chap3_2:
     show blanche neutral open at farLeft
     blanche "Ça faisait longtemps que je n'en avais pas pêché d'aussi grosse."
     show blanche neutral close at farLeft
-    play sound renpy.random.choice(sound.Cyan_Happy)
+    play voice renpy.random.choice(audio.Cyan_Happy)
     cyan "Mais, c'est extraordinaire !" with vpunch
     cyan "Je ne m'attendais pas à présenter une perle rare dans mon émission !"
     cyan "Tu as bien mérité ta récompense, voici la boule Cyan. Je compte sur toi pour me la rendre au plus vite car Madame Arc-en-Ciel ne voit pas toujours d'un très bon oeil ce genre d'arrangement."
@@ -178,11 +178,11 @@ label chap3_2:
     show cyan2 at right
     show cyan at left
     with move 
-    play sound renpy.random.choice(sound.Cyan_Speak)
+    play voice renpy.random.choice(audio.Cyan_Speak)
     cyan "Voyez donc chers téléspectateurs !"
     cyan "Un admirateur exceptionnel de l'émission nous a donné cette truite Arc-en-Ciel fraîchement pêchée dans la rivière."
     cyan "Un véritable exemple…"
-    play sound renpy.random.choice(sound.Grosso_Angry)
+    play voice renpy.random.choice(audio.Grosso_Angry)
     x "Coupe cette caméra, s'il te plaît." with vpunch
     show cyan2 at farRight
     show cyan at nearRight
@@ -198,7 +198,7 @@ label chap3_2:
     grosso "Pfff… Pathétique."
     grosso "Dis-nous au moins où cet enfant est parti, cela nous facilitera la tâche et permettra peut-être d'alléger ta peine."
     cyan "N'y comptez pas."
-    play sound renpy.random.choice(sound.Maigrichon_Exclamation)
+    play voice renpy.random.choice(audio.Maigrichon_Exclamation)
     maigrichon "Je l'ai vu remonter le cours de la rivière de toute façon. Dépêchons-nous !"
     "Grosso et Maigrichon partent en direction des hautes herbes."
     stop music fadeout 2.0
