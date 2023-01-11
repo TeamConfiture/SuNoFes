@@ -265,27 +265,27 @@ screen quick_menu():
     zorder 100
     if quick_menu:
         hbox:
-            xalign 0.95
+            xpos 0.92 xanchor 1.
             yalign 0.65
             spacing 30
             # Le _ sert uniquement à flagger pour la génération des fichiers de traduction,
             # le vrai travail est effectué par __
-            imagebutton:
+            imagebutton at Transform(zoom=0.85):
                 auto __(_("images/menu/fr_fr/back_%s.png"))
                 action Rollback()
-            imagebutton:
+            imagebutton at Transform(zoom=0.85):
                 auto __(_("images/menu/fr_fr/history_%s.png"))
                 action ShowMenu('history')
-            imagebutton:
+            imagebutton at Transform(zoom=0.85):
                 auto __(_("images/menu/fr_fr/skip_%s.png"))
                 action Skip() alternate Skip(fast=True, confirm=True)
-            imagebutton:
+            imagebutton at Transform(zoom=0.85):
                 auto __(_("images/menu/fr_fr/auto_%s.png"))
                 action Preference("auto-forward", "toggle")
-            imagebutton:
+            imagebutton at Transform(zoom=0.85):
                 auto __(_("images/menu/fr_fr/save_%s.png"))
                 action ShowMenu('save')
-            imagebutton:
+            imagebutton at Transform(zoom=0.85):
                 auto __(_("images/menu/fr_fr/settings_%s.png"))
                 action ShowMenu('preferences')
 
@@ -872,7 +872,7 @@ style history_text:
     text_align gui.history_text_xalign
     layout ("subtitle" if gui.history_text_xalign else "tex")
     color "#666666"
-    size 48
+    size 35
 style history_label is gui_label
 style history_label:
     xfill True
@@ -1188,16 +1188,16 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            imagebutton:
+            imagebutton at Transform(zoom=0.85):
                 auto __(_("images/menu/fr_fr/back_%s.png"))
                 action Rollback()
-            imagebutton:
+            imagebutton at Transform(zoom=0.85):
                 auto __(_("images/menu/fr_fr/skip_%s.png"))
                 action Skip() alternate Skip(fast=True, confirm=True)
-            imagebutton:
+            imagebutton at Transform(zoom=0.85):
                 auto __(_("images/menu/fr_fr/auto_%s.png"))
                 action Preference("auto-forward", "toggle")
-            imagebutton:
+            imagebutton at Transform(zoom=0.85):
                 auto __(_("images/menu/fr_fr/settings_%s.png"))
                 action ShowMenu('preferences')
 

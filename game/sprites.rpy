@@ -26,17 +26,17 @@ layeredimage char_textbox:
         attribute arcenciel:
             AlphaMask("gui/textbox_rainbow.png", "gui/textbox_namebox.png")
         attribute axolotl:
-            "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#dab6ca"))
+            "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#ff48a4"))
         attribute cameraman:
             "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#215c77"))
         attribute cyan:
             "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#216d77"))
         attribute emeraude:
-            "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#50C878"))
+            "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#26a269"))
         attribute indigo:
             "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#202A7F"))
         attribute jaune:
-            "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#ffee00"))
+            "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#986a44"))
         attribute noir:
             "gui/textbox_namebox.png" at Transform(matrixcolor = TintMatrix("#000"))
         attribute orange:
