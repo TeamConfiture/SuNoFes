@@ -114,6 +114,10 @@ translate french strings:
     old "Son"
     new "Son"
 
+    # game/screens.rpy:643
+    old "Voix"
+    new "Voix"
+
     # game/screens.rpy:642
     old "Mode de la fenêtre"
     new "Mode de la fenêtre"

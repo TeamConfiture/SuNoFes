@@ -56,6 +56,10 @@
     old "Son"
     new "Sound"
 
+    # game/screens.rpy:643
+    old "Voix"
+    new "Voices"
+
     # game/screens.rpy:595
     old "Mode de la fenêtre"
     new "Window Mode"

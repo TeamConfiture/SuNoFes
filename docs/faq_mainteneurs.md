@@ -49,7 +49,7 @@ label play_music:
 
 # On veut un unique son pour les réactions de personnage
 label disappointed:
-    play sound renpy.random.choice(sound.Blanche_No) fadein 1.0
+    play voice renpy.random.choice(sound.Blanche_No) fadein 1.0
     blanche "Ce n'est pas ce que je cherche"
 
 # On veut un unique son pour les interactions dans les mini-jeux
