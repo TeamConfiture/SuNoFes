@@ -46,36 +46,15 @@ jobs:
     - name: Show current information
       run: ls target; cat release.md
 
-    - name: Push windows version to itch.io
-      uses: manleydev/butler-publish-itchio-action@master
+    - name: Push to itch.io
+      uses: Ayowel/butler-to-itch@v1.0.0
       if: inputs.itch_release
-      env:
-        BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
-        ITCH_GAME: colors
-        ITCH_USER: kiminako
-        CHANNEL: win
-        PACKAGE: target/Colors-${{ inputs.version_number }}-win.zip
-        VERSION: ${{ inputs.version_number }}
-    - name: Push linux version to itch.io
-      uses: manleydev/butler-publish-itchio-action@master
-      if: inputs.itch_release
-      env:
-        BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
-        ITCH_GAME: colors
-        ITCH_USER: kiminako
-        CHANNEL: linux
-        PACKAGE: target/Colors-${{ inputs.version_number }}-linux.tar.bz2
-        VERSION: ${{ inputs.version_number }}
-    - name: Push mac version to itch.io
-      uses: manleydev/butler-publish-itchio-action@master
-      if: inputs.itch_release
-      env:
-        BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
-        ITCH_GAME: colors
-        ITCH_USER: kiminako
-        CHANNEL: mac
-        PACKAGE: target/Colors-${{ inputs.version_number }}-mac.zip
-        VERSION: ${{ inputs.version_number }}
+      with:
+        butler_key: ${{ secrets.BUTLER_CREDENTIALS }}
+        itch_game: colors
+        itch_user: kiminako
+        files: target/*
+        version: ${{ inputs.version_number }}
 
     - name: Create GitHub release
       uses: softprops/action-gh-release@v0.1.14
