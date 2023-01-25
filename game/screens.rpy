@@ -113,10 +113,45 @@ screen say(who, what):
         add SideImage() xalign 0.0 yalign 1.0
     use quick_menu
 
-## Rendre la boîte du nom personnalisable à travers l'objet Character.
-init python:
-    config.character_id_prefixes.append('namebox')
+style window is default
+style say_label is default
+style say_dialogue is default
+style say_thought is say_dialogue
 
+style namebox is default
+style namebox_label is say_label
+
+style window:
+    xalign 0.5
+    xfill True
+    yalign gui.textbox_yalign
+    ysize gui.textbox_height
+    background "char_textbox"
+
+style namebox:
+    xpos gui.name_xpos
+    xanchor gui.name_xalign
+    xsize gui.namebox_width
+    ypos gui.name_ypos
+    ysize gui.namebox_height
+
+    padding gui.namebox_borders.padding
+
+style say_label:
+    properties gui.text_properties("name", accent=True)
+    xalign gui.name_xalign
+    yalign 0.5
+    color "#fff"
+
+style say_dialogue:
+    properties gui.text_properties("dialogue")
+    xpos gui.dialogue_xpos
+    xsize gui.dialogue_width
+    ypos gui.dialogue_ypos
+    adjust_spacing False
+
+# Extras init
+init python:
     # Gallery's initialisation
     album = Gallery()
     album.locked_button = "gui/slot_lock.png"
@@ -136,43 +171,6 @@ init python:
     musicroom = MusicRoom(fadeout=1.0,loop=True,single_track=True)
     for s in musicroom_sounds:
         musicroom.add(s, always_unlocked=True)
-
-style window is default
-style say_label is default
-style say_dialogue is default
-style say_thought is say_dialogue
-
-style namebox is default
-style namebox_label is say_label
-
-style window:
-    xalign 0.5
-    xfill True
-    yalign gui.textbox_yalign
-    ysize gui.textbox_height
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
-
-style namebox:
-    xpos gui.name_xpos
-    xanchor gui.name_xalign
-    xsize gui.namebox_width
-    ypos gui.name_ypos
-    ysize gui.namebox_height
-
-    background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
-    padding gui.namebox_borders.padding
-
-style say_label:
-    properties gui.text_properties("name", accent=True)
-    xalign gui.name_xalign
-    yalign 0.5
-
-style say_dialogue:
-    properties gui.text_properties("dialogue")
-    xpos gui.dialogue_xpos
-    xsize gui.dialogue_width
-    ypos gui.dialogue_ypos
-    adjust_spacing False
 
 ## Écran de saisie #############################################################
 ##
@@ -267,27 +265,27 @@ screen quick_menu():
     zorder 100
     if quick_menu:
         hbox:
-            xalign 0.95
+            xpos 0.92 xanchor 1.
             yalign 0.65
             spacing 30
             # Le _ sert uniquement à flagger pour la génération des fichiers de traduction,
             # le vrai travail est effectué par __
-            imagebutton:
+            imagebutton at Transform(zoom=0.85):
                 auto __(_("images/menu/fr_fr/back_%s.png"))
                 action Rollback()
-            imagebutton:
+            imagebutton at Transform(zoom=0.85):
                 auto __(_("images/menu/fr_fr/history_%s.png"))
                 action ShowMenu('history')
-            imagebutton:
+            imagebutton at Transform(zoom=0.85):
                 auto __(_("images/menu/fr_fr/skip_%s.png"))
                 action Skip() alternate Skip(fast=True, confirm=True)
-            imagebutton:
+            imagebutton at Transform(zoom=0.85):
                 auto __(_("images/menu/fr_fr/auto_%s.png"))
                 action Preference("auto-forward", "toggle")
-            imagebutton:
+            imagebutton at Transform(zoom=0.85):
                 auto __(_("images/menu/fr_fr/save_%s.png"))
                 action ShowMenu('save')
-            imagebutton:
+            imagebutton at Transform(zoom=0.85):
                 auto __(_("images/menu/fr_fr/settings_%s.png"))
                 action ShowMenu('preferences')
 
@@ -880,7 +878,7 @@ style history_text:
     text_align gui.history_text_xalign
     layout ("subtitle" if gui.history_text_xalign else "tex")
     color "#666666"
-    size 48
+    size 35
 style history_label is gui_label
 style history_label:
     xfill True
@@ -1196,16 +1194,16 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            imagebutton:
+            imagebutton at Transform(zoom=0.85):
                 auto __(_("images/menu/fr_fr/back_%s.png"))
                 action Rollback()
-            imagebutton:
+            imagebutton at Transform(zoom=0.85):
                 auto __(_("images/menu/fr_fr/skip_%s.png"))
                 action Skip() alternate Skip(fast=True, confirm=True)
-            imagebutton:
+            imagebutton at Transform(zoom=0.85):
                 auto __(_("images/menu/fr_fr/auto_%s.png"))
                 action Preference("auto-forward", "toggle")
-            imagebutton:
+            imagebutton at Transform(zoom=0.85):
                 auto __(_("images/menu/fr_fr/settings_%s.png"))
                 action ShowMenu('preferences')
 
