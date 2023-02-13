@@ -6,27 +6,27 @@ label end_bad:
     show grosso at nearRight
     show blanche neutral close at left
     with dissolve
-    play voice renpy.random.choice(audio.Grosso_Angry)
+    voice renpy.random.choice(audio.Grosso_Angry)
     grosso "On te tient maintenant ! Rends-nous les boules tout de suite !" with vpunch
     show blanche surprised open at left
-    play voice renpy.random.choice(audio.Blanche_Gasp)
+    voice renpy.random.choice(audio.Blanche_Gasp)
     blanche "Oh non ! Les gardes de Madame Arc-en-Ciel ! Fuyons !" with vpunch
     hide blanche surprised close at left with easeoutleft
     "Je cours de toutes mes forces."
-    play voice renpy.random.choice(audio.Grosso_Gasp)
+    voice renpy.random.choice(audio.Grosso_Gasp)
     grosso "Pas si vite !"
     hide grosso at nearRight with easeoutleft
     hide maigrichon at farRight behind grosso with easeoutleft
     show blanche cry open at left with easeinright
     blanche "Hmpf... Hmpf..."
     show blanche surprised open at left
-    play voice renpy.random.choice(audio.Blanche_Gasp)
+    voice renpy.random.choice(audio.Blanche_Gasp)
     blanche "Ah !" with vpunch
     blanche "Oh non ! Une impasse !"
     show blanche surprised close at left
     show grosso at nearRight with easeinright
     show maigrichon at farRight behind grosso with easeinright
-    play voice renpy.random.choice(audio.Grosso_Yes)
+    voice renpy.random.choice(audio.Grosso_Yes)
     grosso "Ha ha ! Tu ne peux plus t'échapper maintenant, hein ?"
     grosso "Viens là !"
     show blanche cry open at left
@@ -36,11 +36,11 @@ label end_bad:
     show blanche cry close at left
     "Le garde m'attrape une main et m'arrache les boules de cristal."
     show blanche cry open at left
-    play voice renpy.random.choice(audio.Blanche_Cry)
+    voice renpy.random.choice(audio.Blanche_Cry)
     blanche "Non ! Non ! Pas les boules de cristal !" with vpunch
     blanche "S'il vous plaît ! C'est pour mon père !"
     show blanche cry close at left
-    play voice renpy.random.choice(audio.Grosso_Angry)
+    voice renpy.random.choice(audio.Grosso_Angry)
     grosso "Madame Arc-en-Ciel a bien été formelle à ce sujet."
     grosso "Aucun étranger ne doit s'emparer des boules ! Ce sont les ordres."
     grosso "Maigrichon ! Passe-moi les menottes, on l'embarque !"
@@ -52,16 +52,16 @@ label end_bad:
     show blanche cry open at left
     blanche "S'il vous plaît ! Je peux tout vous expliquer !"
     show blanche cry close at left
-    play voice renpy.random.choice(audio.Grosso_No)
+    voice renpy.random.choice(audio.Grosso_No)
     grosso "On n'a pas que ça à faire. Tu iras t'expliquer avec les chauves-souris dans ta cellule."
     show blanche cry open at left
-    play voice renpy.random.choice(audio.Blanche_Cry)
+    voice renpy.random.choice(audio.Blanche_Cry)
     blanche "S'il vous plaît ! S'il vous plaît !"
     blanche "Pitié, juste cinq minutes ! Il faut que je montre ces boules à mon papa !"
     show blanche cry close at left
     "Nous passons devant la maison."
     show blanche cry open at left
-    play voice renpy.random.choice(audio.Blanche_Sniffing)
+    voice renpy.random.choice(audio.Blanche_Sniffing)
     blanche "Oh non, Papa !"
     hide maigrichon at farRight
     hide grosso at center
@@ -69,7 +69,7 @@ label end_bad:
     show end_spirited_back behind noir
     with dissolve
     show blanche cry close at left
-    play voice renpy.random.choice(audio.Noir_Angry)
+    voice renpy.random.choice(audio.Noir_Angry)
     noir "Kof, kof…" with vpunch
     show noir bandeau hurt close at right
     "Mon papa tourne la tête au-dehors."

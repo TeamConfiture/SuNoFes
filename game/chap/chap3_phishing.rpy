@@ -93,10 +93,10 @@ label lake_phishing_boot:
 label lake_fishing_axolotl:
     $ lake_phishing_fished_axolotl = True
     cyan "Picaru ! Comment vas-tu depuis le temps ?"
-    play voice renpy.random.choice(audio.Axo_Partial_Happy)
+    voice renpy.random.choice(audio.Axo_Partial_Happy)
     axolotl "Pica !"
     cyan "Tu m'as manqué petit farceur, reste me tenir compagnie veux-tu ?"
-    play voice renpy.random.choice(audio.Axo_Full_Happy)
+    voice renpy.random.choice(audio.Axo_Full_Happy)
     axolotl "Picaruuuu."
     call screen chap3_lake_phishing
 
@@ -105,13 +105,13 @@ label lake_fishing_axolotl_revealed:
         show axolotl at axolotl_position
     $ lake_phishing_talked_axolotl += 1
     if lake_phishing_talked_axolotl == 1:
-        play voice renpy.random.choice(audio.Axo_Full_Question)
+        voice renpy.random.choice(audio.Axo_Full_Question)
         axolotl "Picaru ?"
     elif lake_phishing_talked_axolotl == 2:
-        play voice renpy.random.choice(audio.Axo_Full_Angry)
+        voice renpy.random.choice(audio.Axo_Full_Angry)
         axolotl "Picaru !"
     elif lake_phishing_talked_axolotl == 3:
-        play voice renpy.random.choice(audio.Axo_Full_Attack)
+        voice renpy.random.choice(audio.Axo_Full_Attack)
         axolotl "Pi. Ca. Ruuuuuuuuuuuuuuu !"
         cyan "Laisse Picaru tranquille, veux-tu ?"
     else:
