@@ -126,3 +126,13 @@ translate english start_45e455cc:
     # "Jusqu'au jour où un petit enfant décide de faire un voeu assez particulier…"
     "Until one day, a young child chose to make a very peculiar wish…"
 
+# TODO: Translation updated at 2023-02-13 20:44
+
+# game/chap/chap0.rpy:52
+translate english start_60a560f6:
+
+    # voice renpy.random.choice(audio.Blanche_Yes)
+    # blanche "Je vais aller récupérer toutes les boules de cristal ! Héhé !"
+    voice renpy.random.choice(audio.Blanche_Yes)
+    blanche "Je vais aller récupérer toutes les boules de cristal ! Héhé !"
+

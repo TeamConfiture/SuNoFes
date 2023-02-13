@@ -550,3 +550,181 @@ translate french chap3_2_82ab1efc:
     # "Grosso et Maigrichon partent en direction des hautes herbes."
     "Grosso et Maigrichon partent en direction des hautes herbes."
 
+# TODO: Translation updated at 2023-02-13 20:44
+
+# game/chap/chap3.rpy:7
+translate french chap3_b4a65bc6:
+
+    # voice renpy.random.choice(audio.Blanche_Amazement)
+    # blanche "Oh ! C'est... C'est le duo des Cyanmois que je vois au loin !" with vpunch
+    voice renpy.random.choice(audio.Blanche_Amazement)
+    blanche "Oh ! C'est... C'est le duo des Cyanmois que je vois au loin !" with vpunch
+
+# game/chap/chap3.rpy:17
+translate french chap3_3062c024:
+
+    # voice renpy.random.choice(audio.Cyan_Speak)
+    # cyan "Bonjour à toutes et tous !"
+    voice renpy.random.choice(audio.Cyan_Speak)
+    cyan "Bonjour à toutes et tous !"
+
+# game/chap/chap3.rpy:25
+translate french chap3_fdb37278:
+
+    # voice renpy.random.choice(audio.Cameraman_Angry_Low)
+    # cameraman "Chuuuuuuuuuut !" with vpunch
+    voice renpy.random.choice(audio.Cameraman_Angry_Low)
+    cameraman "Chuuuuuuuuuut !" with vpunch
+
+# game/chap/chap3.rpy:29
+translate french chap3_81601925:
+
+    # voice renpy.random.choice(audio.Cyan_Speak)
+    # cyan "Nous voici donc dans la forêt Arc-en-Ciel, très connue pour sa rivière, mais surtout pour ses truites."
+    voice renpy.random.choice(audio.Cyan_Speak)
+    cyan "Nous voici donc dans la forêt Arc-en-Ciel, très connue pour sa rivière, mais surtout pour ses truites."
+
+# game/chap/chap3.rpy:34
+translate french chap3_1e637184:
+
+    # voice renpy.random.choice(audio.Cameraman_Embarassed)
+    # cameraman "Je suis désolé chaton, mais nous n'avons pas réussi à trouver de truites Arc-en-Ciel dans la rivière. Nous avons seulement quelques truites farios."
+    voice renpy.random.choice(audio.Cameraman_Embarassed)
+    cameraman "Je suis désolé chaton, mais nous n'avons pas réussi à trouver de truites Arc-en-Ciel dans la rivière. Nous avons seulement quelques truites farios."
+
+# game/chap/chap3.rpy:37
+translate french chap3_d4540081:
+
+    # voice renpy.random.choice(audio.Cyan_Exclamation)
+    # cyan "Mais c'est horrible ! Qu'allons-nous dire à nos téléspectateurs ?!" with vpunch
+    voice renpy.random.choice(audio.Cyan_Exclamation)
+    cyan "Mais c'est horrible ! Qu'allons-nous dire à nos téléspectateurs ?!" with vpunch
+
+# game/chap/chap3.rpy:42
+translate french chap3_cef4d9f2:
+
+    # voice renpy.random.choice(audio.Cameraman_Speak)
+    # cameraman "Cela peut prendre plusieurs heures : les truites Arc-en-Ciel se font de plus en plus rares dans la rivière depuis les sécheresses des dernières années et leur pêche intensive."
+    voice renpy.random.choice(audio.Cameraman_Speak)
+    cameraman "Cela peut prendre plusieurs heures : les truites Arc-en-Ciel se font de plus en plus rares dans la rivière depuis les sécheresses des dernières années et leur pêche intensive."
+
+# game/chap/chap3.rpy:48
+translate french chap3_15f8475f:
+
+    # voice renpy.random.choice(audio.Blanche_Question)
+    # blanche "Excuse-moi, j'ai une question à te poser : je cherche la bou..."
+    voice renpy.random.choice(audio.Blanche_Question)
+    blanche "Excuse-moi, j'ai une question à te poser : je cherche la bou..."
+
+# game/chap/chap3.rpy:51
+translate french chap3_eba3bfee:
+
+    # voice renpy.random.choice(audio.Cameraman_Angry)
+    # cameraman "Ça suffit comme ça ! On est en plein tournage, ouste !" with vpunch
+    voice renpy.random.choice(audio.Cameraman_Angry)
+    cameraman "Ça suffit comme ça ! On est en plein tournage, ouste !" with vpunch
+
+# game/chap/chap3.rpy:58
+translate french chap3_f9479329:
+
+    # voice renpy.random.choice(audio.Blanche_Sniffing)
+    # blanche "Méchant ! T'es trop méchant ! Je boude."
+    voice renpy.random.choice(audio.Blanche_Sniffing)
+    blanche "Méchant ! T'es trop méchant ! Je boude."
+
+# game/chap/chap3.rpy:61
+translate french chap3_408e0597:
+
+    # voice renpy.random.choice(audio.Cameraman_Speak)
+    # cameraman "Ce n'est pas ce que j'ai voulu dire, mais tu m'as compris. Tu nous gênes."
+    voice renpy.random.choice(audio.Cameraman_Speak)
+    cameraman "Ce n'est pas ce que j'ai voulu dire, mais tu m'as compris. Tu nous gênes."
+
+# game/chap/chap3.rpy:73
+translate french chap3_44aea5c9:
+
+    # voice renpy.random.choice(audio.Cyan_Happy)
+    # cyan "Oh que vois-je ? Un visiteur venu d'ailleurs ! Ne t'en va pas !"
+    voice renpy.random.choice(audio.Cyan_Happy)
+    cyan "Oh que vois-je ? Un visiteur venu d'ailleurs ! Ne t'en va pas !"
+
+# game/chap/chap3.rpy:83
+translate french chap3_f810cb36:
+
+    # voice renpy.random.choice(audio.Blanche_Yes_Haughty)
+    # blanche "Excuse-moi, mais j'ai l'impression que je ne gêne plus tant que ça."
+    voice renpy.random.choice(audio.Blanche_Yes_Haughty)
+    blanche "Excuse-moi, mais j'ai l'impression que je ne gêne plus tant que ça."
+
+# game/chap/chap3.rpy:87
+translate french chap3_5bde3b04:
+
+    # voice renpy.random.choice(audio.Cameraman_Embarassed)
+    # cameraman "Bon, OK, mais pas longtemps alors."
+    voice renpy.random.choice(audio.Cameraman_Embarassed)
+    cameraman "Bon, OK, mais pas longtemps alors."
+
+# game/chap/chap3.rpy:98
+translate french chap3_f68cd1a9:
+
+    # voice renpy.random.choice(audio.Cameraman_Angry)
+    # cameraman "Mais, c'est que ce gosse est cinglé ?!" with vpunch
+    voice renpy.random.choice(audio.Cameraman_Angry)
+    cameraman "Mais, c'est que ce gosse est cinglé ?!" with vpunch
+
+# game/chap/chap3.rpy:111
+translate french chap3_4730864b:
+
+    # voice renpy.random.choice(audio.Blanche_Sniffing)
+    # blanche "Mais maintenant il est très malade, il ne peut plus se lever..."
+    voice renpy.random.choice(audio.Blanche_Sniffing)
+    blanche "Mais maintenant il est très malade, il ne peut plus se lever..."
+
+# game/chap/chap3.rpy:118
+translate french chap3_56e5913a:
+
+    # voice renpy.random.choice(audio.Cyan_Exclamation)
+    # cyan "L'enfant de Noir ?!" with vpunch
+    voice renpy.random.choice(audio.Cyan_Exclamation)
+    cyan "L'enfant de Noir ?!" with vpunch
+
+# game/chap/chap3.rpy:122
+translate french chap3_81104de3:
+
+    # voice renpy.random.choice(audio.Blanche_Yes)
+    # blanche "Oui ! Noir est mon papa ! Je ne pensais pas que mon papa était si connu !"
+    voice renpy.random.choice(audio.Blanche_Yes)
+    blanche "Oui ! Noir est mon papa ! Je ne pensais pas que mon papa était si connu !"
+
+# game/chap/chap3.rpy:160
+translate french chap3_2_2a46ce6c:
+
+    # voice renpy.random.choice(audio.Cyan_Happy)
+    # cyan "Mais, c'est extraordinaire !" with vpunch
+    voice renpy.random.choice(audio.Cyan_Happy)
+    cyan "Mais, c'est extraordinaire !" with vpunch
+
+# game/chap/chap3.rpy:181
+translate french chap3_2_9328ef4f:
+
+    # voice renpy.random.choice(audio.Cyan_Speak)
+    # cyan "Voyez donc chers téléspectateurs !"
+    voice renpy.random.choice(audio.Cyan_Speak)
+    cyan "Voyez donc chers téléspectateurs !"
+
+# game/chap/chap3.rpy:185
+translate french chap3_2_e1c1e905:
+
+    # voice renpy.random.choice(audio.Grosso_Angry)
+    # x "Coupe cette caméra, s'il te plaît." with vpunch
+    voice renpy.random.choice(audio.Grosso_Angry)
+    x "Coupe cette caméra, s'il te plaît." with vpunch
+
+# game/chap/chap3.rpy:201
+translate french chap3_2_cf833ea4:
+
+    # voice renpy.random.choice(audio.Maigrichon_Exclamation)
+    # maigrichon "Je l'ai vu remonter le cours de la rivière de toute façon. Dépêchons-nous !"
+    voice renpy.random.choice(audio.Maigrichon_Exclamation)
+    maigrichon "Je l'ai vu remonter le cours de la rivière de toute façon. Dépêchons-nous !"
+

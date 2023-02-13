@@ -349,3 +349,213 @@ translate english strings:
     # game/chap/chap2.rpy:67
     old "Je vous bats aux échecs ?"
     new "Should I beat you at chess?"
+# TODO: Translation updated at 2023-02-13 20:44
+
+# game/chap/chap2.rpy:8
+translate english chap2_289336fc:
+
+    # voice renpy.random.choice(audio.Indigo_Speak)
+    # indigo "Aaaah… Ces étoiles sont si belles ! Un voyageur m'a autrefois dit que chacun de ces ensembles de points lumineux avaient des noms dans la langue de Molière."
+    voice renpy.random.choice(audio.Indigo_Speak)
+    indigo "Aaaah… Ces étoiles sont si belles ! Un voyageur m'a autrefois dit que chacun de ces ensembles de points lumineux avaient des noms dans la langue de Molière."
+
+# game/chap/chap2.rpy:12
+translate english chap2_a8201cea:
+
+    # voice renpy.random.choice(audio.Blanche_Moan)
+    # blanche "Oh ! Il m'a l'air chouette ce lac ! Je vais mettre les pieds dans l'eau !"
+    voice renpy.random.choice(audio.Blanche_Moan)
+    blanche "Oh ! Il m'a l'air chouette ce lac ! Je vais mettre les pieds dans l'eau !"
+
+# game/chap/chap2.rpy:15
+translate english chap2_ab6aa061:
+
+    # voice renpy.random.choice(audio.Indigo_Angry)
+    # indigo "Non ! MIAOUUUUUU !" with vpunch
+    voice renpy.random.choice(audio.Indigo_Angry)
+    indigo "Non ! MIAOUUUUUU !" with vpunch
+
+# game/chap/chap2.rpy:18
+translate english chap2_7b7dcd59:
+
+    # voice renpy.random.choice(audio.Blanche_Gasp)
+    # blanche "Ah ! Mais, c'est quoi ça ?"
+    voice renpy.random.choice(audio.Blanche_Gasp)
+    blanche "Ah ! Mais, c'est quoi ça ?"
+
+# game/chap/chap2.rpy:21
+translate english chap2_39d16f5a:
+
+    # voice renpy.random.choice(audio.Indigo_Speak)
+    # indigo "Ce sont des ronces. Tu ne connais pas ? Quand on s'approche trop, elles te griffent aussi durement que si j'avais voulu t'attaquer."
+    voice renpy.random.choice(audio.Indigo_Speak)
+    indigo "Ce sont des ronces. Tu ne connais pas ? Quand on s'approche trop, elles te griffent aussi durement que si j'avais voulu t'attaquer."
+
+# game/chap/chap2.rpy:28
+translate english chap2_a9dcd2fc:
+
+    # voice renpy.random.choice(audio.Blanche_Yes_Haughty)
+    # blanche "Bien sûr que si je connais, tu me prends pour qui ?"
+    voice renpy.random.choice(audio.Blanche_Yes_Haughty)
+    blanche "Bien sûr que si je connais, tu me prends pour qui ?"
+
+# game/chap/chap2.rpy:31
+translate english chap2_608ed300:
+
+    # voice renpy.random.choice(audio.Indigo_Speak)
+    # indigo "Ce n'est pas l'impression que tu me donnais quand tu courais il y a 5 minutes…"
+    voice renpy.random.choice(audio.Indigo_Speak)
+    indigo "Ce n'est pas l'impression que tu me donnais quand tu courais il y a 5 minutes…"
+
+# game/chap/chap2.rpy:37
+translate english chap2_a66e0568:
+
+    # voice renpy.random.choice(audio.Blanche_Yes)
+    # blanche "Non mais j'ai cru que c'étaient des petits sapins, je pensais en ramener un pour Noël…"
+    voice renpy.random.choice(audio.Blanche_Yes)
+    blanche "Non mais j'ai cru que c'étaient des petits sapins, je pensais en ramener un pour Noël…"
+
+# game/chap/chap2.rpy:40
+translate english chap2_43b9700f:
+
+    # voice renpy.random.choice(audio.Indigo_Speak)
+    # indigo "Tu pourrais éviter de me prendre pour une courge, s'il te plaît ?"
+    voice renpy.random.choice(audio.Indigo_Speak)
+    indigo "Tu pourrais éviter de me prendre pour une courge, s'il te plaît ?"
+
+# game/chap/chap2.rpy:47
+translate english chap2_91f69294:
+
+    # voice renpy.random.choice(audio.Blanche_Sniffing)
+    # blanche "Pardon, je n'avais jamais vu de ronces."
+    voice renpy.random.choice(audio.Blanche_Sniffing)
+    blanche "Pardon, je n'avais jamais vu de ronces."
+
+# game/chap/chap2.rpy:54
+translate english chap2_305ec028:
+
+    # voice renpy.random.choice(audio.Indigo_Speak)
+    # indigo "Ne discute pas, c'est la coutume de repartir de mon lac en ayant découvert quelque chose. Tu vois là-bas ? Ce sont des roseaux ! On peut apercevoir un cygne devant et là, ce sont des canards, tu te rends compte de tout ce qui peut vivre ici ? Sans oublier les…"
+    voice renpy.random.choice(audio.Indigo_Speak)
+    indigo "Ne discute pas, c'est la coutume de repartir de mon lac en ayant découvert quelque chose. Tu vois là-bas ? Ce sont des roseaux ! On peut apercevoir un cygne devant et là, ce sont des canards, tu te rends compte de tout ce qui peut vivre ici ? Sans oublier les…"
+
+# game/chap/chap2.rpy:61
+translate english chap2_cfa4f68b:
+
+    # voice renpy.random.choice(audio.Indigo_Speak)
+    # indigo "Vraiment ? Si tu n'es pas là pour admirer la beauté du paysage, alors que veux-tu exactement ?! Sache que sur mon chemin, nul n'est venu avec un autre objectif !"
+    voice renpy.random.choice(audio.Indigo_Speak)
+    indigo "Vraiment ? Si tu n'es pas là pour admirer la beauté du paysage, alors que veux-tu exactement ?! Sache que sur mon chemin, nul n'est venu avec un autre objectif !"
+
+# game/chap/chap2.rpy:70
+translate english chap2_397f4bcf:
+
+    # voice renpy.random.choice(audio.Blanche_Sniffing)
+    # blanche "Pardon ! Je ne voulais pas vous froisser ! Mais…"
+    voice renpy.random.choice(audio.Blanche_Sniffing)
+    blanche "Pardon ! Je ne voulais pas vous froisser ! Mais…"
+
+# game/chap/chap2.rpy:77
+translate english chap2_e4836699:
+
+    # voice renpy.random.choice(audio.Blanche_Question)
+    # blanche "Vous ne pourriez pas faire une toute petite exception pour moi ?"
+    voice renpy.random.choice(audio.Blanche_Question)
+    blanche "Vous ne pourriez pas faire une toute petite exception pour moi ?"
+
+# game/chap/chap2.rpy:91
+translate english chap2_45fdaffd:
+
+    # voice renpy.random.choice(audio.Indigo_Speak)
+    # indigo "Non, non et encore non, je ne suis qu'un chat, je n'ai pas besoin de voir tout ça. Moi, ce qui m'intéresse, c'est de connaître le nom de ces ensembles de points lumineux."
+    voice renpy.random.choice(audio.Indigo_Speak)
+    indigo "Non, non et encore non, je ne suis qu'un chat, je n'ai pas besoin de voir tout ça. Moi, ce qui m'intéresse, c'est de connaître le nom de ces ensembles de points lumineux."
+
+# game/chap/chap2.rpy:94
+translate english chap2_fcdeaafc:
+
+    # voice renpy.random.choice(audio.Blanche_Question)
+    # blanche "Tu parles des étoiles qui forment des constellations ?"
+    voice renpy.random.choice(audio.Blanche_Question)
+    blanche "Tu parles des étoiles qui forment des constellations ?"
+
+# game/chap/chap2.rpy:101
+translate english chap2_35741850:
+
+    # voice renpy.random.choice(audio.Indigo_Happy)
+    # indigo "Vraiment ? Montre moi donc."
+    voice renpy.random.choice(audio.Indigo_Happy)
+    indigo "Vraiment ? Montre moi donc."
+
+# game/chap/chap2.rpy:115
+translate english chap2_completed_559ef58e:
+
+    # voice renpy.random.choice(audio.Indigo_Speak)
+    # indigo "Génial, merci ! Bon, je vais réfléchir..."
+    voice renpy.random.choice(audio.Indigo_Speak)
+    indigo "Génial, merci ! Bon, je vais réfléchir..."
+
+# game/chap/chap2.rpy:118
+translate english chap2_completed_d3c05f56:
+
+    # voice renpy.random.choice(audio.Blanche_Sniffing)
+    # blanche "S'il vous plaîîîîîîîîîît !"
+    voice renpy.random.choice(audio.Blanche_Sniffing)
+    blanche "S'il vous plaîîîîîîîîîît !"
+
+# game/chap/chap2.rpy:132
+translate english chap2_completed_16dfbce7:
+
+    # voice renpy.random.choice(audio.Blanche_Moan)
+    # blanche "Youpi ! Merci beaucoup ! Je vous en serai éternellement reconnaissant !"
+    voice renpy.random.choice(audio.Blanche_Moan)
+    blanche "Youpi ! Merci beaucoup ! Je vous en serai éternellement reconnaissant !"
+
+# game/chap/chap2.rpy:142
+translate english chap2_completed_3368a696:
+
+    # voice renpy.random.choice(audio.Grosso_Angry)
+    # grosso "Il s'enfuit, il s'enfuit ! Rame plus vite, Maigrichon !" with vpunch
+    voice renpy.random.choice(audio.Grosso_Angry)
+    grosso "Il s'enfuit, il s'enfuit ! Rame plus vite, Maigrichon !" with vpunch
+
+# game/chap/chap2.rpy:150
+translate english chap2_completed_7e512456:
+
+    # voice renpy.random.choice(audio.ArcEnCiel_Angry)
+    # madame "Quoi ?! On me vole mes sept boules de cristal et vous ne faites rien ??! Vous n'êtes qu'une bande d'incapables ! Vous, comme les autres chats gardiens, je vous ai confié une mission et vous n'êtes même pas capables de la tenir !" with vpunch
+    voice renpy.random.choice(audio.ArcEnCiel_Angry)
+    madame "Quoi ?! On me vole mes sept boules de cristal et vous ne faites rien ??! Vous n'êtes qu'une bande d'incapables ! Vous, comme les autres chats gardiens, je vous ai confié une mission et vous n'êtes même pas capables de la tenir !" with vpunch
+
+# game/chap/chap2.rpy:158
+translate english chap2_completed_bb6632b8:
+
+    # voice renpy.random.choice(audio.Indigo_Speak)
+    # indigo "Messieurs, bien le bonsoir, que me vaut votre visite impromptue à cette heure aussi tardive ?"
+    voice renpy.random.choice(audio.Indigo_Speak)
+    indigo "Messieurs, bien le bonsoir, que me vaut votre visite impromptue à cette heure aussi tardive ?"
+
+# game/chap/chap2.rpy:160
+translate english chap2_completed_9c79b2a6:
+
+    # voice renpy.random.choice(audio.Grosso_Question)
+    # grosso "Nous sommes à la poursuite d'un enfant ayant volé la boule Violet, tu ne l'aurais pas vu par hasard ?"
+    voice renpy.random.choice(audio.Grosso_Question)
+    grosso "Nous sommes à la poursuite d'un enfant ayant volé la boule Violet, tu ne l'aurais pas vu par hasard ?"
+
+# game/chap/chap2.rpy:163
+translate english chap2_completed_773821ac:
+
+    # voice renpy.random.choice(audio.Maigrichon_Exclamation)
+    # maigrichon "Grosso ! La boule Indigo a disparu de l'autel aussi !"
+    voice renpy.random.choice(audio.Maigrichon_Exclamation)
+    maigrichon "Grosso ! La boule Indigo a disparu de l'autel aussi !"
+
+# game/chap/chap2.rpy:168
+translate english chap2_completed_886f9db5:
+
+    # voice renpy.random.choice(audio.Maigrichon_Sigh)
+    # maigrichon "T'es vraiment pas doué… L'enfant est parti par où ?"
+    voice renpy.random.choice(audio.Maigrichon_Sigh)
+    maigrichon "T'es vraiment pas doué… L'enfant est parti par où ?"
+

@@ -220,3 +220,93 @@ translate english strings:
     old "Fin triste"
     new "Bad end"
 
+# TODO: Translation updated at 2023-02-13 20:44
+
+# game/chap/end_bad.rpy:9
+translate english end_bad_c8ad070f:
+
+    # voice renpy.random.choice(audio.Grosso_Angry)
+    # grosso "On te tient maintenant ! Rends-nous les boules tout de suite !" with vpunch
+    voice renpy.random.choice(audio.Grosso_Angry)
+    grosso "On te tient maintenant ! Rends-nous les boules tout de suite !" with vpunch
+
+# game/chap/end_bad.rpy:12
+translate english end_bad_de3b978e:
+
+    # voice renpy.random.choice(audio.Blanche_Gasp)
+    # blanche "Oh non ! Les gardes de Madame Arc-en-Ciel ! Fuyons !" with vpunch
+    voice renpy.random.choice(audio.Blanche_Gasp)
+    blanche "Oh non ! Les gardes de Madame Arc-en-Ciel ! Fuyons !" with vpunch
+
+# game/chap/end_bad.rpy:16
+translate english end_bad_d6f8e82e:
+
+    # voice renpy.random.choice(audio.Grosso_Gasp)
+    # grosso "Pas si vite !"
+    voice renpy.random.choice(audio.Grosso_Gasp)
+    grosso "Pas si vite !"
+
+# game/chap/end_bad.rpy:23
+translate english end_bad_a9dd532a:
+
+    # voice renpy.random.choice(audio.Blanche_Gasp)
+    # blanche "Ah !" with vpunch
+    voice renpy.random.choice(audio.Blanche_Gasp)
+    blanche "Ah !" with vpunch
+
+# game/chap/end_bad.rpy:29
+translate english end_bad_c3228899:
+
+    # voice renpy.random.choice(audio.Grosso_Yes)
+    # grosso "Ha ha ! Tu ne peux plus t'échapper maintenant, hein ?"
+    voice renpy.random.choice(audio.Grosso_Yes)
+    grosso "Ha ha ! Tu ne peux plus t'échapper maintenant, hein ?"
+
+# game/chap/end_bad.rpy:39
+translate english end_bad_4b68391a:
+
+    # voice renpy.random.choice(audio.Blanche_Cry)
+    # blanche "Non ! Non ! Pas les boules de cristal !" with vpunch
+    voice renpy.random.choice(audio.Blanche_Cry)
+    blanche "Non ! Non ! Pas les boules de cristal !" with vpunch
+
+# game/chap/end_bad.rpy:43
+translate english end_bad_f1969143:
+
+    # voice renpy.random.choice(audio.Grosso_Angry)
+    # grosso "Madame Arc-en-Ciel a bien été formelle à ce sujet."
+    voice renpy.random.choice(audio.Grosso_Angry)
+    grosso "Madame Arc-en-Ciel a bien été formelle à ce sujet."
+
+# game/chap/end_bad.rpy:55
+translate english end_bad_42209f51:
+
+    # voice renpy.random.choice(audio.Grosso_No)
+    # grosso "On n'a pas que ça à faire. Tu iras t'expliquer avec les chauves-souris dans ta cellule."
+    voice renpy.random.choice(audio.Grosso_No)
+    grosso "On n'a pas que ça à faire. Tu iras t'expliquer avec les chauves-souris dans ta cellule."
+
+# game/chap/end_bad.rpy:58
+translate english end_bad_5818a86d:
+
+    # voice renpy.random.choice(audio.Blanche_Cry)
+    # blanche "S'il vous plaît ! S'il vous plaît !"
+    voice renpy.random.choice(audio.Blanche_Cry)
+    blanche "S'il vous plaît ! S'il vous plaît !"
+
+# game/chap/end_bad.rpy:64
+translate english end_bad_ed584975:
+
+    # voice renpy.random.choice(audio.Blanche_Sniffing)
+    # blanche "Oh non, Papa !"
+    voice renpy.random.choice(audio.Blanche_Sniffing)
+    blanche "Oh non, Papa !"
+
+# game/chap/end_bad.rpy:72
+translate english end_bad_2946ce2b:
+
+    # voice renpy.random.choice(audio.Noir_Angry)
+    # noir "Kof, kof…" with vpunch
+    voice renpy.random.choice(audio.Noir_Angry)
+    noir "Kof, kof…" with vpunch
+

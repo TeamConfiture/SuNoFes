@@ -548,3 +548,141 @@ translate english strings:
     old "Demander en chantant"
     new "Ask while singing"
 
+# TODO: Translation updated at 2023-02-13 20:44
+
+# game/chap/chap4.rpy:6
+translate english chap4_d757bf64:
+
+    # voice renpy.random.choice(audio.Emeraude_Speak)
+    # x "Colchiques dans les prés ! Fleurissent, fleurissent. Colchiques dans les prés ! C'est la fin de l'été."
+    voice renpy.random.choice(audio.Emeraude_Speak)
+    x "Colchiques dans les prés ! Fleurissent, fleurissent. Colchiques dans les prés ! C'est la fin de l'été."
+
+# game/chap/chap4.rpy:12
+translate english chap4_ef2b4d04:
+
+    # voice renpy.random.choice(audio.Blanche_Amazement)
+    # blanche "C'est… C'est si joli ! Ça brille de partout ! C'est si vert !" with vpunch
+    voice renpy.random.choice(audio.Blanche_Amazement)
+    blanche "C'est… C'est si joli ! Ça brille de partout ! C'est si vert !" with vpunch
+
+# game/chap/chap4.rpy:17
+translate english chap4_bb286c1a:
+
+    # voice renpy.random.choice(audio.Emeraude_Speak)
+    # emeraude "Un peu d'eau fraîche et de verdure !"
+    voice renpy.random.choice(audio.Emeraude_Speak)
+    emeraude "Un peu d'eau fraîche et de verdure !"
+
+# game/chap/chap4.rpy:22
+translate english chap4_2ee2040b:
+
+    # voice renpy.random.choice(audio.Blanche_Laugh)
+    # blanche "Haha, tu es marrante, Émeraude !"
+    voice renpy.random.choice(audio.Blanche_Laugh)
+    blanche "Haha, tu es marrante, Émeraude !"
+
+# game/chap/chap4.rpy:35
+translate english chap4_23fa0617:
+
+    # voice renpy.random.choice(audio.Emeraude_Speak)
+    # emeraude "Ça ne tient pas à toi ! Ça ne tient pas à moi !"
+    voice renpy.random.choice(audio.Emeraude_Speak)
+    emeraude "Ça ne tient pas à toi ! Ça ne tient pas à moi !"
+
+# game/chap/chap4.rpy:68
+translate english chap4_5d09a8a8:
+
+    # voice renpy.random.choice(audio.Emeraude_No)
+    # emeraude "Non, non, non, non ! Je ne peux pas m'en passer ! Non, non, non, non !"
+    voice renpy.random.choice(audio.Emeraude_No)
+    emeraude "Non, non, non, non ! Je ne peux pas m'en passer ! Non, non, non, non !"
+
+# game/chap/chap4.rpy:78
+translate english chap4_00a0ae41:
+
+    # voice renpy.random.choice(audio.Blanche_Angry)
+    # blanche "Arrête de chanter et écoute-moi !!!" with vpunch
+    voice renpy.random.choice(audio.Blanche_Angry)
+    blanche "Arrête de chanter et écoute-moi !!!" with vpunch
+
+# game/chap/chap4.rpy:91
+translate english chap4_7da9d36c:
+
+    # voice renpy.random.choice(audio.Blanche_Cry)
+    # "Je commence à pleurer."
+    voice renpy.random.choice(audio.Blanche_Cry)
+    "Je commence à pleurer."
+
+# game/chap/chap4.rpy:100
+translate english chap4_48a75f0d:
+
+    # voice renpy.random.choice(audio.Emeraude_Speak)
+    # emeraude "[player_name] a les yeux revolver. [player_name] a le regard qui tue."
+    voice renpy.random.choice(audio.Emeraude_Speak)
+    emeraude "[player_name] a les yeux revolver. [player_name] a le regard qui tue."
+
+# game/chap/chap4.rpy:106
+translate english chap4_6f516f30:
+
+    # voice renpy.random.choice(audio.Blanche_Question)
+    # blanche "Comment puis-je oublier ce coin de paradis ?"
+    voice renpy.random.choice(audio.Blanche_Question)
+    blanche "Comment puis-je oublier ce coin de paradis ?"
+
+# game/chap/chap4.rpy:118
+translate english chap4_15dee3c2:
+
+    # voice renpy.random.choice(audio.Emeraude_Exclamation)
+    # emeraude "À l'aide ! J'ai besoin de quelqu'un ! À l'aide ! Pas n'importe qui ! À l'aide ! Tu sais, j'ai besoin de [player_name] !"
+    voice renpy.random.choice(audio.Emeraude_Exclamation)
+    emeraude "À l'aide ! J'ai besoin de quelqu'un ! À l'aide ! Pas n'importe qui ! À l'aide ! Tu sais, j'ai besoin de [player_name] !"
+
+# game/chap/chap4.rpy:121
+translate english chap4_0a2023e1:
+
+    # voice renpy.random.choice(audio.Blanche_Exclamation)
+    # blanche "Que ? Quoi ?! Qu'est-ce qui se passe ?!"
+    voice renpy.random.choice(audio.Blanche_Exclamation)
+    blanche "Que ? Quoi ?! Qu'est-ce qui se passe ?!"
+
+# game/chap/chap4.rpy:149
+translate english chap4_2_4b5a5cf4:
+
+    # voice renpy.random.choice(audio.Emeraude_Happy)
+    # emeraude "Yeah ! Bravo ! Oui, viens danser ! Oui, c'est la vie, la la la la la !"
+    voice renpy.random.choice(audio.Emeraude_Happy)
+    emeraude "Yeah ! Bravo ! Oui, viens danser ! Oui, c'est la vie, la la la la la !"
+
+# game/chap/chap4.rpy:163
+translate english chap4_2_6ecd8300:
+
+    # voice renpy.random.choice(audio.Blanche_Amazement)
+    # blanche "Merci ! Merci Émeraude ! Tu me sauves !"
+    voice renpy.random.choice(audio.Blanche_Amazement)
+    blanche "Merci ! Merci Émeraude ! Tu me sauves !"
+
+# game/chap/chap4.rpy:170
+translate english chap4_2_06d92ccf:
+
+    # voice renpy.random.choice(audio.Emeraude_Speak)
+    # emeraude "Libérée, délivrée, je n'ai plus de boules à m'occuper, libérée, délivrée, c'est décidé, c'est fini !"
+    voice renpy.random.choice(audio.Emeraude_Speak)
+    emeraude "Libérée, délivrée, je n'ai plus de boules à m'occuper, libérée, délivrée, c'est décidé, c'est fini !"
+
+# game/chap/chap4.rpy:181
+translate english chap4_2_a4c4fa41:
+
+    # voice renpy.random.choice(audio.Grosso_Angry)
+    # grosso "Émeraude !" with vpunch
+    voice renpy.random.choice(audio.Grosso_Angry)
+    grosso "Émeraude !" with vpunch
+
+# game/chap/chap4.rpy:190
+translate english chap4_2_9227f856:
+
+    # voice renpy.random.choice(audio.Maigrichon_Exclamation)
+    # maigrichon "Ah !" with vpunch
+    voice renpy.random.choice(audio.Maigrichon_Exclamation)
+    maigrichon "Ah !" with vpunch
+

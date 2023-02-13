@@ -87,3 +87,45 @@ translate english lake_fishing_axolotl_revealed_510771a6:
 
     # cyan "..."
     cyan "..."
+# TODO: Translation updated at 2023-02-13 20:44
+
+# game/chap/chap3_phishing.rpy:96
+translate english lake_fishing_axolotl_89d93dbe:
+
+    # voice renpy.random.choice(audio.Axo_Partial_Happy)
+    # axolotl "Pica !"
+    voice renpy.random.choice(audio.Axo_Partial_Happy)
+    axolotl "Pica !"
+
+# game/chap/chap3_phishing.rpy:99
+translate english lake_fishing_axolotl_ce7d4c86:
+
+    # voice renpy.random.choice(audio.Axo_Full_Happy)
+    # axolotl "Picaruuuu."
+    voice renpy.random.choice(audio.Axo_Full_Happy)
+    axolotl "Picaruuuu."
+
+# game/chap/chap3_phishing.rpy:108
+translate english lake_fishing_axolotl_revealed_7cc8657e:
+
+    # voice renpy.random.choice(audio.Axo_Full_Question)
+    # axolotl "Picaru ?"
+    voice renpy.random.choice(audio.Axo_Full_Question)
+    axolotl "Picaru ?"
+
+# game/chap/chap3_phishing.rpy:111
+translate english lake_fishing_axolotl_revealed_996012c9:
+
+    # voice renpy.random.choice(audio.Axo_Full_Angry)
+    # axolotl "Picaru !"
+    voice renpy.random.choice(audio.Axo_Full_Angry)
+    axolotl "Picaru !"
+
+# game/chap/chap3_phishing.rpy:114
+translate english lake_fishing_axolotl_revealed_968c5b4d:
+
+    # voice renpy.random.choice(audio.Axo_Full_Attack)
+    # axolotl "Pi. Ca. Ruuuuuuuuuuuuuuu !"
+    voice renpy.random.choice(audio.Axo_Full_Attack)
+    axolotl "Pi. Ca. Ruuuuuuuuuuuuuuu !"
+

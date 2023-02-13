@@ -320,3 +320,157 @@ translate french strings:
     old "Fin neutre"
     new "Fin neutre"
 
+# TODO: Translation updated at 2023-02-13 20:44
+
+# game/chap/end_neutral.rpy:7
+translate french end_neutral_dbc2ce68:
+
+    # voice renpy.random.choice(audio.Noir_Angry)
+    # noir "Urgh… Aaahh !!!" with vpunch
+    voice renpy.random.choice(audio.Noir_Angry)
+    noir "Urgh… Aaahh !!!" with vpunch
+
+# game/chap/end_neutral.rpy:12
+translate french end_neutral_3aadbdb2:
+
+    # voice renpy.random.choice(audio.Blanche_Gasp)
+    # blanche "Papa ! Hmpf… Hmpf…"
+    voice renpy.random.choice(audio.Blanche_Gasp)
+    blanche "Papa ! Hmpf… Hmpf…"
+
+# game/chap/end_neutral.rpy:20
+translate french end_neutral_8978faff:
+
+    # voice renpy.random.choice(audio.Noir_Gasp)
+    # noir "Urgh… [player_name], c'est toi ?"
+    voice renpy.random.choice(audio.Noir_Gasp)
+    noir "Urgh… [player_name], c'est toi ?"
+
+# game/chap/end_neutral.rpy:24
+translate french end_neutral_3b4a003b:
+
+    # voice renpy.random.choice(audio.Blanche_Yes)
+    # blanche "Je voulais te faire une surprise et te montrer l'Arc-en-Ciel ! Comme tu es tout le temps malade, j'ai décidé de t'amener les sept boules de l'Arc-en-Ciel ! Regarde ! Tada !"
+    voice renpy.random.choice(audio.Blanche_Yes)
+    blanche "Je voulais te faire une surprise et te montrer l'Arc-en-Ciel ! Comme tu es tout le temps malade, j'ai décidé de t'amener les sept boules de l'Arc-en-Ciel ! Regarde ! Tada !"
+
+# game/chap/end_neutral.rpy:28
+translate french end_neutral_f57ee76a:
+
+    # voice renpy.random.choice(audio.Noir_Speak)
+    # noir "Ah… [player_name], pourquoi as-tu fait ça ? Kof, kof."
+    voice renpy.random.choice(audio.Noir_Speak)
+    noir "Ah… [player_name], pourquoi as-tu fait ça ? Kof, kof."
+
+# game/chap/end_neutral.rpy:35
+translate french end_neutral_cb2bc521:
+
+    # voice renpy.random.choice(audio.Blanche_Sigh)
+    # blanche "Je voulais seulement te faire une surprise…"
+    voice renpy.random.choice(audio.Blanche_Sigh)
+    blanche "Je voulais seulement te faire une surprise…"
+
+# game/chap/end_neutral.rpy:39
+translate french end_neutral_863073bc:
+
+    # voice renpy.random.choice(audio.Noir_Angry)
+    # noir "On risque d'avoir des ennuis si Madame Arc-en-Ciel découvre que tu as volé ses boules."
+    voice renpy.random.choice(audio.Noir_Angry)
+    noir "On risque d'avoir des ennuis si Madame Arc-en-Ciel découvre que tu as volé ses boules."
+
+# game/chap/end_neutral.rpy:43
+translate french end_neutral_8911c03b:
+
+    # voice renpy.random.choice(audio.Blanche_Moan)
+    # blanche "Mais, regarde Papa ! Ces couleurs sont jolies, non ? Tu… Tu n'aimes pas mon cadeau ?"
+    voice renpy.random.choice(audio.Blanche_Moan)
+    blanche "Mais, regarde Papa ! Ces couleurs sont jolies, non ? Tu… Tu n'aimes pas mon cadeau ?"
+
+# game/chap/end_neutral.rpy:48
+translate french end_neutral_89de391a:
+
+    # voice renpy.random.choice(audio.Blanche_Sniffing)
+    # blanche "J'ai fait tout le royaume pour te montrer l'Arc-en-Ciel. Il fait si noir ici, c'est si triste."
+    voice renpy.random.choice(audio.Blanche_Sniffing)
+    blanche "J'ai fait tout le royaume pour te montrer l'Arc-en-Ciel. Il fait si noir ici, c'est si triste."
+
+# game/chap/end_neutral.rpy:51
+translate french end_neutral_e235250d:
+
+    # voice renpy.random.choice(audio.Blanche_Cry)
+    # blanche "Mais, tu n'y fais pas du tout attention. Madame Arc-en-Ciel, par-ci, Madame Arc-en-Ciel, par là ! Je le sais ! Les gardiens de Couleurs n'ont pas arrêté de me dire que c'était dangereux ce que je faisais !"
+    voice renpy.random.choice(audio.Blanche_Cry)
+    blanche "Mais, tu n'y fais pas du tout attention. Madame Arc-en-Ciel, par-ci, Madame Arc-en-Ciel, par là ! Je le sais ! Les gardiens de Couleurs n'ont pas arrêté de me dire que c'était dangereux ce que je faisais !"
+
+# game/chap/end_neutral.rpy:64
+translate french end_neutral_89ac91e8:
+
+    # voice renpy.random.choice(audio.Blanche_Sniffing)
+    # blanche "Tu mens. Tu es en train de disparaître."
+    voice renpy.random.choice(audio.Blanche_Sniffing)
+    blanche "Tu mens. Tu es en train de disparaître."
+
+# game/chap/end_neutral.rpy:69
+translate french end_neutral_f7bef059:
+
+    # voice renpy.random.choice(audio.Noir_Speak)
+    # noir "Viens là…"
+    voice renpy.random.choice(audio.Noir_Speak)
+    noir "Viens là…"
+
+# game/chap/end_neutral.rpy:74
+translate french end_neutral_081cc441:
+
+    # voice renpy.random.choice(audio.Blanche_Sniffing)
+    # blanche "Sniff… Sniff…"
+    voice renpy.random.choice(audio.Blanche_Sniffing)
+    blanche "Sniff… Sniff…"
+
+# game/chap/end_neutral.rpy:78
+translate french end_neutral_b68f4d3a:
+
+    # voice renpy.random.choice(audio.Noir_Angry)
+    # noir "Ne pleure pas..."
+    voice renpy.random.choice(audio.Noir_Angry)
+    noir "Ne pleure pas..."
+
+# game/chap/end_neutral.rpy:85
+translate french end_neutral_e36b241d:
+
+    # voice renpy.random.choice(audio.Blanche_Sniffing)
+    # blanche "Ton coeur, il bat faiblement…"
+    voice renpy.random.choice(audio.Blanche_Sniffing)
+    blanche "Ton coeur, il bat faiblement…"
+
+# game/chap/end_neutral.rpy:95
+translate french end_neutral_5b9b40ab:
+
+    # voice renpy.random.choice(audio.Noir_Speak)
+    # noir "Je serai toujours là à tes côtés dans cette petite place au fond de ton coeur."
+    voice renpy.random.choice(audio.Noir_Speak)
+    noir "Je serai toujours là à tes côtés dans cette petite place au fond de ton coeur."
+
+# game/chap/end_neutral.rpy:99
+translate french end_neutral_abb287ed:
+
+    # voice renpy.random.choice(audio.Blanche_Moan)
+    # blanche "Papa…"
+    voice renpy.random.choice(audio.Blanche_Moan)
+    blanche "Papa…"
+
+# game/chap/end_neutral.rpy:106
+translate french end_neutral_6b192f90:
+
+    # voice renpy.random.choice(audio.Blanche_Cry)
+    # blanche "PAPA ! Non, ne me laisse pas !!!"
+    voice renpy.random.choice(audio.Blanche_Cry)
+    blanche "PAPA ! Non, ne me laisse pas !!!"
+
+# game/chap/end_neutral.rpy:113
+translate french end_neutral_4a8ea757:
+
+    # voice renpy.random.choice(audio.Blanche_Cry)
+    # blanche "PAPA !!!"
+    voice renpy.random.choice(audio.Blanche_Cry)
+    blanche "PAPA !!!"
+

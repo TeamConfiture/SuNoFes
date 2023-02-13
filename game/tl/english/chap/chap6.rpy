@@ -529,3 +529,291 @@ translate english strings:
     # game/chap/chap6.rpy:37
     old "Exiger qu'il démarre l'entraînement"
     new "Demand that he starts the training"
+# TODO: Translation updated at 2023-02-13 20:44
+
+# game/chap/chap6.rpy:9
+translate english chap6_0bd0b614:
+
+    # voice renpy.random.choice(audio.Blanche_Amazement)
+    # blanche "Oh ! On dirait les quatre saisons de Vivaldi !" with vpunch
+    voice renpy.random.choice(audio.Blanche_Amazement)
+    blanche "Oh ! On dirait les quatre saisons de Vivaldi !" with vpunch
+
+# game/chap/chap6.rpy:15
+translate english chap6_88c18bf2:
+
+    # voice renpy.random.choice(audio.Orange_Irritated)
+    # x "Mais de qui oses-tu donc te moquer ? Moi, Orange, votre serviteur, j'étais en train de jouer le Requiem de herr Wolfgang Amadeus Mozart, cette oeuvre à jamais incomplète, mais qui représente tout le génie du grand maître !"
+    voice renpy.random.choice(audio.Orange_Irritated)
+    x "Mais de qui oses-tu donc te moquer ? Moi, Orange, votre serviteur, j'étais en train de jouer le Requiem de herr Wolfgang Amadeus Mozart, cette oeuvre à jamais incomplète, mais qui représente tout le génie du grand maître !"
+
+# game/chap/chap6.rpy:18
+translate english chap6_6463dab7:
+
+    # voice renpy.random.choice(audio.Blanche_Sniffing)
+    # blanche "Excuse-moi, je ne m'y connais pas trop dans l'art musical."
+    voice renpy.random.choice(audio.Blanche_Sniffing)
+    blanche "Excuse-moi, je ne m'y connais pas trop dans l'art musical."
+
+# game/chap/chap6.rpy:25
+translate english chap6_01f8eaab:
+
+    # voice renpy.random.choice(audio.Orange_Speak)
+    # orange "Noir... Je connais très bien ce nom."
+    voice renpy.random.choice(audio.Orange_Speak)
+    orange "Noir... Je connais très bien ce nom."
+
+# game/chap/chap6.rpy:33
+translate english chap6_821f9d8d:
+
+    # voice renpy.random.choice(audio.Blanche_Laugh)
+    # blanche "Mon papa a toujours été comme ça, très empathique."
+    voice renpy.random.choice(audio.Blanche_Laugh)
+    blanche "Mon papa a toujours été comme ça, très empathique."
+
+# game/chap/chap6.rpy:40
+translate english chap6_f8889e5a:
+
+    # voice renpy.random.choice(audio.Blanche_Moan)
+    # blanche "Mais, c'est un cadeau à double tranchant..."
+    voice renpy.random.choice(audio.Blanche_Moan)
+    blanche "Mais, c'est un cadeau à double tranchant..."
+
+# game/chap/chap6.rpy:49
+translate english chap6_21c564b7:
+
+    # voice renpy.random.choice(audio.Orange_Speak)
+    # orange "C'est que je suis bien embêté..."
+    voice renpy.random.choice(audio.Orange_Speak)
+    orange "C'est que je suis bien embêté..."
+
+# game/chap/chap6.rpy:54
+translate english chap6_875bef51:
+
+    # voice renpy.random.choice(audio.Blanche_Exclamation)
+    # blanche "Ah bon ?"
+    voice renpy.random.choice(audio.Blanche_Exclamation)
+    blanche "Ah bon ?"
+
+# game/chap/chap6.rpy:61
+translate english chap6_ab7f657f:
+
+    # voice renpy.random.choice(audio.Blanche_Question)
+    # blanche "C'est vrai ? Comment on fait ça ?"
+    voice renpy.random.choice(audio.Blanche_Question)
+    blanche "C'est vrai ? Comment on fait ça ?"
+
+# game/chap/chap6.rpy:64
+translate english chap6_9be20b69:
+
+    # voice renpy.random.choice(audio.Orange_Speak)
+    # orange "Il faut maîtriser la musique des agrumes. Il faut sentir ton corps vibrer en entendant le jus s'écouler."
+    voice renpy.random.choice(audio.Orange_Speak)
+    orange "Il faut maîtriser la musique des agrumes. Il faut sentir ton corps vibrer en entendant le jus s'écouler."
+
+# game/chap/chap6.rpy:74
+translate english chap6_84e77527:
+
+    # voice renpy.random.choice(audio.Blanche_Angry)
+    # blanche "Tu... Tu es fou ?!" with vpunch
+    voice renpy.random.choice(audio.Blanche_Angry)
+    blanche "Tu... Tu es fou ?!" with vpunch
+
+# game/chap/chap6.rpy:79
+translate english chap6_20f77225:
+
+    # voice renpy.random.choice(audio.Orange_Irritated)
+    # orange "Eh bien, vas-y, essaye donc puisque tu as tellement confiance en toi !"
+    voice renpy.random.choice(audio.Orange_Irritated)
+    orange "Eh bien, vas-y, essaye donc puisque tu as tellement confiance en toi !"
+
+# game/chap/chap6.rpy:85
+translate english chap6_a3c003b1:
+
+    # voice renpy.random.choice(audio.Blanche_Yes_Haughty)
+    # blanche "Bien sûr ! Et moi, je suis Madame Arc-en-Ciel ! Bon, voyons voir…"
+    voice renpy.random.choice(audio.Blanche_Yes_Haughty)
+    blanche "Bien sûr ! Et moi, je suis Madame Arc-en-Ciel ! Bon, voyons voir…"
+
+# game/chap/chap6.rpy:90
+translate english chap6_4fdb4c4c:
+
+    # voice renpy.random.choice(audio.Blanche_Gasp)
+    # blanche "Aaaaaaah !" with vpunch
+    voice renpy.random.choice(audio.Blanche_Gasp)
+    blanche "Aaaaaaah !" with vpunch
+
+# game/chap/chap6.rpy:95
+translate english chap6_4d3bf4fa:
+
+    # voice renpy.random.choice(audio.Orange_Speak)
+    # orange "Je viens de te le dire, mais tu ne veux pas m'écouter."
+    voice renpy.random.choice(audio.Orange_Speak)
+    orange "Je viens de te le dire, mais tu ne veux pas m'écouter."
+
+# game/chap/chap6.rpy:101
+translate english chap6_f93e7bfd:
+
+    # voice renpy.random.choice(audio.Blanche_Exclamation)
+    # blanche "Vraiment ? Tu peux m'apprendre ?" with vpunch
+    voice renpy.random.choice(audio.Blanche_Exclamation)
+    blanche "Vraiment ? Tu peux m'apprendre ?" with vpunch
+
+# game/chap/chap6.rpy:106
+translate english chap6_490fd7a8:
+
+    # voice renpy.random.choice(audio.Orange_Speak)
+    # orange "Navré, je ne traite que les agrumes."
+    voice renpy.random.choice(audio.Orange_Speak)
+    orange "Navré, je ne traite que les agrumes."
+
+# game/chap/chap6.rpy:110
+translate english chap6_9e195825:
+
+    # voice renpy.random.choice(audio.Blanche_Exclamation)
+    # blanche "C'est vrai ?! Est-ce qu'on pourrait commencer maintenant ?!" with vpunch
+    voice renpy.random.choice(audio.Blanche_Exclamation)
+    blanche "C'est vrai ?! Est-ce qu'on pourrait commencer maintenant ?!" with vpunch
+
+# game/chap/chap6.rpy:113
+translate english chap6_0613d2f0:
+
+    # voice renpy.random.choice(audio.Orange_Speak)
+    # orange "Pour sûr, allons-y."
+    voice renpy.random.choice(audio.Orange_Speak)
+    orange "Pour sûr, allons-y."
+
+# game/chap/chap6.rpy:120
+translate english chap6_f4ad704c:
+
+    # voice renpy.random.choice(audio.Blanche_Sigh)
+    # blanche "Je n'ai malheureusement pas beaucoup de temps..."
+    voice renpy.random.choice(audio.Blanche_Sigh)
+    blanche "Je n'ai malheureusement pas beaucoup de temps..."
+
+# game/chap/chap6.rpy:123
+translate english chap6_161a72b3:
+
+    # voice renpy.random.choice(audio.Orange_Speak)
+    # orange "Doucement, doucement, si tu t'excites trop tu ne vas pas pouvoir ressentir les émotions des fruits et des fluides."
+    voice renpy.random.choice(audio.Orange_Speak)
+    orange "Doucement, doucement, si tu t'excites trop tu ne vas pas pouvoir ressentir les émotions des fruits et des fluides."
+
+# game/chap/chap6.rpy:126
+translate english chap6_9e9d2b26:
+
+    # voice renpy.random.choice(audio.Blanche_Moan)
+    voice renpy.random.choice(audio.Blanche_Moan)
+
+# game/chap/chap6.rpy:146
+translate english sprite_cutter_failed_375ba492:
+
+    # voice renpy.random.choice(audio.Orange_Irritated)
+    # orange "Non, pas comme ça ! Essaye encore !"
+    voice renpy.random.choice(audio.Orange_Irritated)
+    orange "Non, pas comme ça ! Essaye encore !"
+
+# game/chap/chap6.rpy:149
+translate english sprite_cutter_failed_fc7f0696:
+
+    # voice renpy.random.choice(audio.Blanche_Moan)
+    # blanche "Mais, c'est long !"
+    voice renpy.random.choice(audio.Blanche_Moan)
+    blanche "Mais, c'est long !"
+
+# game/chap/chap6.rpy:152
+translate english sprite_cutter_failed_e4fa367f:
+
+    # voice renpy.random.choice(audio.Orange_Speak)
+    # orange "Mais, non ! Je t'assure ! Tu vas y arriver !"
+    voice renpy.random.choice(audio.Orange_Speak)
+    orange "Mais, non ! Je t'assure ! Tu vas y arriver !"
+
+# game/chap/chap6.rpy:163
+translate english chap6_2_e046714e:
+
+    # voice renpy.random.choice(audio.Blanche_Exclamation)
+    # blanche "Oh ! Je m'attendais pas du tout à obtenir un son si parfait." with vpunch
+    voice renpy.random.choice(audio.Blanche_Exclamation)
+    blanche "Oh ! Je m'attendais pas du tout à obtenir un son si parfait." with vpunch
+
+# game/chap/chap6.rpy:166
+translate english chap6_2_12ee8f17:
+
+    # voice renpy.random.choice(audio.Orange_Speak)
+    # orange "C'est la magie des agrumes, mon enfant. Maintenant, tu devrais tenter de prendre la boule."
+    voice renpy.random.choice(audio.Orange_Speak)
+    orange "C'est la magie des agrumes, mon enfant. Maintenant, tu devrais tenter de prendre la boule."
+
+# game/chap/chap6.rpy:170
+translate english chap6_2_4db3aef3:
+
+    # voice renpy.random.choice(audio.Blanche_Laugh)
+    # blanche "Oh ! C'est incroyable, j'ai réussi à l'attraper !"
+    voice renpy.random.choice(audio.Blanche_Laugh)
+    blanche "Oh ! C'est incroyable, j'ai réussi à l'attraper !"
+
+# game/chap/chap6.rpy:181
+translate english chap6_2_4ce5a67c:
+
+    # voice renpy.random.choice(audio.Orange_Speak)
+    # orange "Tu vois ! Je te l'avais dit !"
+    voice renpy.random.choice(audio.Orange_Speak)
+    orange "Tu vois ! Je te l'avais dit !"
+
+# game/chap/chap6.rpy:190
+translate english chap6_2_eb8253ab:
+
+    # voice renpy.random.choice(audio.Blanche_Laugh)
+    # blanche "Merci ! Je n'oublierai pas ton aide !"
+    voice renpy.random.choice(audio.Blanche_Laugh)
+    blanche "Merci ! Je n'oublierai pas ton aide !"
+
+# game/chap/chap6.rpy:198
+translate english chap6_2_225fb88c:
+
+    # voice renpy.random.choice(audio.Grosso_Gasp)
+    # x "Hmpf, Hmpf..."
+    voice renpy.random.choice(audio.Grosso_Gasp)
+    x "Hmpf, Hmpf..."
+
+# game/chap/chap6.rpy:205
+translate english chap6_2_9a81401a:
+
+    # voice renpy.random.choice(audio.Grosso_Angry)
+    # grosso "Hmpf, Hmpf... Arrête cet enf... Hmpf, Hmpf..."
+    voice renpy.random.choice(audio.Grosso_Angry)
+    grosso "Hmpf, Hmpf... Arrête cet enf... Hmpf, Hmpf..."
+
+# game/chap/chap6.rpy:207
+translate english chap6_2_2bc5252b:
+
+    # voice renpy.random.choice(audio.Maigrichon_Angry)
+    # maigrichon "Oui ! Cet enfant ne doit pas s'échapper ! Hmpf, Hmpf..."
+    voice renpy.random.choice(audio.Maigrichon_Angry)
+    maigrichon "Oui ! Cet enfant ne doit pas s'échapper ! Hmpf, Hmpf..."
+
+# game/chap/chap6.rpy:209
+translate english chap6_2_8c281458:
+
+    # voice renpy.random.choice(audio.Orange_Speak)
+    # orange "Un petit remontant messieurs ?"
+    voice renpy.random.choice(audio.Orange_Speak)
+    orange "Un petit remontant messieurs ?"
+
+# game/chap/chap6.rpy:212
+translate english chap6_2_91f9bf16:
+
+    # voice renpy.random.choice(audio.Grosso_Yes)
+    # grosso "Pourquoi pas... J'ai la gorge sèche."
+    voice renpy.random.choice(audio.Grosso_Yes)
+    grosso "Pourquoi pas... J'ai la gorge sèche."
+
+# game/chap/chap6.rpy:214
+translate english chap6_2_3eb043b5:
+
+    # voice renpy.random.choice(audio.Maigrichon_Angry)
+    # maigrichon "Grosso !" with vpunch
+    voice renpy.random.choice(audio.Maigrichon_Angry)
+    maigrichon "Grosso !" with vpunch
+

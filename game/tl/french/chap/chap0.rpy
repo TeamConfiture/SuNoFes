@@ -110,3 +110,13 @@ translate french strings:
     old "Cheat - Voyage rapide"
     new "Cheat - Voyage rapide"
 
+# TODO: Translation updated at 2023-02-13 20:44
+
+# game/chap/chap0.rpy:52
+translate french start_60a560f6:
+
+    # voice renpy.random.choice(audio.Blanche_Yes)
+    # blanche "Je vais aller récupérer toutes les boules de cristal ! Héhé !"
+    voice renpy.random.choice(audio.Blanche_Yes)
+    blanche "Je vais aller récupérer toutes les boules de cristal ! Héhé !"
+
