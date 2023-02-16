@@ -60,13 +60,13 @@ define gui.interface_text_color = u'#404040'
 ## Polices et tailles de police ################################################
 
 ## Les polices utilisées pour le texte du jeu.
-define gui.text_font = "gui/font/augie.ttf"
+define gui.text_font = gui.preference("font", "gui/font/augie.ttf")
 
 ## Les polices utilisées pour le nom des personnages.
-define gui.name_text_font = "gui/font/augie.ttf"
+define gui.name_text_font = gui.text_font
 
 ## Les polices utilisées pour les textes « hors du jeu ».
-define gui.interface_text_font = "gui/font/augie.ttf"
+define gui.interface_text_font = gui.text_font
 
 ## La taille normale pour les dialogues.
 define gui.text_size = 30
@@ -78,7 +78,7 @@ define gui.name_text_size = 55
 define gui.interface_text_size = 33
 
 ## La taille des libellés dans l’interface de jeu.
-define gui.label_text_size = 72
+define gui.label_text_size = gui.preference("label_text_size", default = 75)
 
 ## La taille du texte dans la zone de notification.
 define gui.notify_text_size = 24

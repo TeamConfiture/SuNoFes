@@ -118,17 +118,29 @@ translate french strings:
     old "Voix"
     new "Voix"
 
-    # game/screens.rpy:642
-    old "Mode de la fenêtre"
-    new "Mode de la fenêtre"
+    # game/screens.rpy:666
+    old "Affichage"
+    new "Affichage"
 
-    # game/screens.rpy:646
-    old "Fenêtre"
-    new "Fenêtre"
+    # game/screens.rpy:667
+    old "Fenêtré"
+    new "Fenêtré"
 
     # game/screens.rpy:648
     old "Plein écran"
     new "Plein écran"
+
+    # game/screens.rpy:677
+    old "Police"
+    new "Police"
+
+    # game/screens.rpy:678
+    old "Défaut"
+    new "Défaut"
+
+    # game/screens.rpy:680
+    old "OpenDyslexic"
+    new "OpenDyslexic"
 
     # game/screens.rpy:653
     old "Vitesse de lecture"

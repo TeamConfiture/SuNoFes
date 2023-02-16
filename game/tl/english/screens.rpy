@@ -60,9 +60,9 @@
     old "Voix"
     new "Voices"
 
-    # game/screens.rpy:595
-    old "Mode de la fenêtre"
-    new "Window Mode"
+    # game/screens.rpy:666
+    old "Affichage"
+    new "Display"
 
     # game/screens.rpy:606
     old "Vitesse de lecture"
@@ -152,13 +152,25 @@
     old "Emplacement vide"
     new "Empty slot"
 
-    # game/screens.rpy:628
-    old "Fenêtre"
+    # game/screens.rpy:667
+    old "Fenêtré"
     new "Windowed"
 
     # game/screens.rpy:630
     old "Plein écran"
     new "Full screen"
+
+    # game/screens.rpy:677
+    old "Police"
+    new "Font"
+
+    # game/screens.rpy:678
+    old "Défaut"
+    new "Default"
+
+    # game/screens.rpy:680
+    old "OpenDyslexic"
+    new "OpenDyslexic"
 
     # game/screens.rpy:718
     old "Gallery"
