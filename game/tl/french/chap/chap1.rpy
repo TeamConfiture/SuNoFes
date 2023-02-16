@@ -1,9 +1,10 @@
-﻿# TODO: Translation updated at 2022-09-01 21:05
+﻿
+# game/chap/chap1.rpy:8
+translate french chap1_bc22ae30:
 
-# game/chap/chap1.rpy:7
-translate french chap1_3ee1c5e0:
-
+    # voice renpy.random.choice(audio.Blanche_Amazement)
     # blanche "Woah ! Tout est violet ! Il y a pleins de fleurs !!!" with vpunch
+    voice renpy.random.choice(audio.Blanche_Amazement)
     blanche "Woah ! Tout est violet ! Il y a pleins de fleurs !!!" with vpunch
 
 # game/chap/chap1.rpy:9
@@ -12,16 +13,24 @@ translate french chap1_7e100132:
     # blanche "Je vais en cueillir une pour mon papa."
     blanche "Je vais en cueillir une pour mon papa."
 
+# game/chap/chap1.rpy:13
+translate french chap1_65c72bad:
+
+    # voice renpy.random.choice(audio.Violet_Angry_Short)
+    voice renpy.random.choice(audio.Violet_Angry_Short)
+
 # game/chap/chap1.rpy:12
 translate french chap1_076031b0:
 
     # x "MIAAOOOUUU !" with vpunch
     x "MIAAOOOUUU !" with vpunch
 
-# game/chap/chap1.rpy:14
-translate french chap1_23cbf469:
+# game/chap/chap1.rpy:17
+translate french chap1_6479cea3:
 
+    # voice renpy.random.choice(audio.Blanche_Gasp)
     # blanche "Aïeeeuuuuhhh" with vpunch
+    voice renpy.random.choice(audio.Blanche_Gasp)
     blanche "Aïeeeuuuuhhh" with vpunch
 
 # game/chap/chap1.rpy:16
@@ -30,28 +39,36 @@ translate french chap1_dd7bcb82:
     # "Un chat vient de me griffer au moment où j'allais cueillir une fleur."
     "Un chat vient de me griffer au moment où j'allais cueillir une fleur."
 
-# game/chap/chap1.rpy:18
-translate french chap1_122facfe:
+# game/chap/chap1.rpy:22
+translate french chap1_f6ce2607:
 
+    # voice renpy.random.choice(audio.Blanche_Sniffing)
     # blanche "Méchant ! Méchant chat ! Tu m'as fait mal !"
+    voice renpy.random.choice(audio.Blanche_Sniffing)
     blanche "Méchant ! Méchant chat ! Tu m'as fait mal !"
 
-# game/chap/chap1.rpy:20
-translate french chap1_5702b632:
+# game/chap/chap1.rpy:25
+translate french chap1_ecc7a7df:
 
+    # voice renpy.random.choice(audio.Violet_Angry)
     # x "Eh toi, tu n'as aucun respect pour les lieux ! On ne cueille pas des fleurs sans autorisation."
+    voice renpy.random.choice(audio.Violet_Angry)
     x "Eh toi, tu n'as aucun respect pour les lieux ! On ne cueille pas des fleurs sans autorisation."
 
-# game/chap/chap1.rpy:22
-translate french chap1_21fc22a0:
+# game/chap/chap1.rpy:28
+translate french chap1_a3ab890c:
 
+    # voice renpy.random.choice(audio.Blanche_Exclamation)
     # blanche "Un chat qui parle ! C'est la première fois que j'en vois un !"
+    voice renpy.random.choice(audio.Blanche_Exclamation)
     blanche "Un chat qui parle ! C'est la première fois que j'en vois un !"
 
-# game/chap/chap1.rpy:24
-translate french chap1_90c127ba:
+# game/chap/chap1.rpy:31
+translate french chap1_0eb45db3:
 
+    # voice renpy.random.choice(audio.Violet_Speak)
     # x "Comment ça ? Bien sûr que je parle et tout le monde le sait !"
+    voice renpy.random.choice(audio.Violet_Speak)
     x "Comment ça ? Bien sûr que je parle et tout le monde le sait !"
 
 # game/chap/chap1.rpy:25
@@ -66,10 +83,12 @@ translate french chap1_d2a28415:
     # blanche "Oh ! Il y a de la lavande ici ! Oh ! Il y a des lilas là-bas !"
     blanche "Oh ! Il y a de la lavande ici ! Oh ! Il y a des lilas là-bas !"
 
-# game/chap/chap1.rpy:29
-translate french chap1_1b099836:
+# game/chap/chap1.rpy:37
+translate french chap1_487a3193:
 
+    # voice renpy.random.choice(audio.Violet_Speak)
     # x "Eh tu m'écoutes ?!" with vpunch
+    voice renpy.random.choice(audio.Violet_Speak)
     x "Eh tu m'écoutes ?!" with vpunch
 
 # game/chap/chap1.rpy:31
@@ -90,16 +109,20 @@ translate french chap1_b5bc1d71:
     # x "Tss, la jeunesse n'a plus aucun respect envers les gardiens de Couleurs. Ça donne des surnoms à tout va, maintenant."
     x "Tss, la jeunesse n'a plus aucun respect envers les gardiens de Couleurs. Ça donne des surnoms à tout va, maintenant."
 
-# game/chap/chap1.rpy:35
-translate french chap1_6933cfcf:
+# game/chap/chap1.rpy:44
+translate french chap1_fa57325d:
 
+    # voice renpy.random.choice(audio.Violet_Patronizing)
     # violet "Je m'appelle Violet Evagaden. Mais, appelle-moi Violet. Souviens-toi-en."
+    voice renpy.random.choice(audio.Violet_Patronizing)
     violet "Je m'appelle Violet Evagaden. Mais, appelle-moi Violet. Souviens t'en."
 
-# game/chap/chap1.rpy:37
-translate french chap1_a59a3cd9:
+# game/chap/chap1.rpy:47
+translate french chap1_da6c778c:
 
+    # voice renpy.random.choice(audio.Blanche_Exclamation)
     # blanche "Tu es un gardien de Couleurs ?!" with vpunch
+    voice renpy.random.choice(audio.Blanche_Exclamation)
     blanche "Tu es un gardien de Couleurs ?!" with vpunch
 
 # game/chap/chap1.rpy:39
@@ -108,10 +131,12 @@ translate french chap1_196ed286:
     # violet "En effet. Je suis le gardien du Violet."
     violet "En effet. Je suis le gardien du Violet."
 
-# game/chap/chap1.rpy:41
-translate french chap1_399a1a58:
+# game/chap/chap1.rpy:52
+translate french chap1_a45bd362:
 
+    # voice renpy.random.choice(audio.Blanche_Laugh)
     # blanche "Trop bien ! Moi aussi ! Je suis le gardien de [player_name] !"
+    voice renpy.random.choice(audio.Blanche_Laugh)
     blanche "Trop bien ! Moi aussi ! Je suis le gardien de [player_name] !"
 
 # game/chap/chap1.rpy:43
@@ -132,10 +157,12 @@ translate french chap1_1ba18ebf:
     # violet "Tu ne peux pas être un gardien, c'est impossible !"
     violet "Tu ne peux pas être un gardien, c'est impossible !"
 
-# game/chap/chap1.rpy:47
-translate french chap1_e80bb007:
+# game/chap/chap1.rpy:59
+translate french chap1_97cd3cec:
 
+    # voice renpy.random.choice(audio.Blanche_Sigh)
     # blanche "Oh, vraiment ? C'est dommage. Je voulais aussi être gardien…"
+    voice renpy.random.choice(audio.Blanche_Sigh)
     blanche "Oh, vraiment ? C'est dommage. Je voulais aussi être gardien…"
 
 # game/chap/chap1.rpy:49
@@ -144,16 +171,20 @@ translate french chap1_03f2efdd:
     # violet "Eh… Ne pleure pas ! Tu sais, c'est une vraie corvée ce métier. On doit constamment surveiller cette boule en mousse que tu vois là."
     violet "Eh… Ne pleure pas ! Tu sais, c'est une vraie corvée ce métier. On doit constamment surveiller cette boule en mousse que tu vois là."
 
-# game/chap/chap1.rpy:52
-translate french chap1_bf38d49b:
+# game/chap/chap1.rpy:65
+translate french chap1_cb65453c:
 
+    # voice renpy.random.choice(audio.Blanche_Amazement)
     # blanche "Oh ! Mais ! C'est une des sept boules de cristal !" with vpunch
+    voice renpy.random.choice(audio.Blanche_Amazement)
     blanche "Oh ! Mais ! C'est une des sept boules de cristal !" with vpunch
 
-# game/chap/chap1.rpy:54
-translate french chap1_a7d86947:
+# game/chap/chap1.rpy:68
+translate french chap1_5fa171ef:
 
+    # voice renpy.random.choice(audio.Violet_Happy)
     # violet "En effet ! Elle est jolie, hein ?"
+    voice renpy.random.choice(audio.Violet_Happy)
     violet "En effet ! Elle est jolie, hein ?"
 
 # game/chap/chap1.rpy:57
@@ -210,16 +241,20 @@ translate french chap1_24e33e87:
     # violet "Oh nooooooooooon pas ces yeeeuuxxx. Ils sont trop mignons."
     violet "Oh nooooooooooon pas ces yeeeuuxxx. Ils sont trop mignons."
 
-# game/chap/chap1.rpy:74
-translate french chap1_b7b859bf:
+# game/chap/chap1.rpy:90
+translate french chap1_8fd114eb:
 
+    # voice renpy.random.choice(audio.Blanche_Sniffing)
     # blanche "S'il te plaaaîîîîîîît !"
+    voice renpy.random.choice(audio.Blanche_Sniffing)
     blanche "S'il te plaaaîîîîîîît !"
 
-# game/chap/chap1.rpy:78
-translate french chap1_2c13157c:
+# game/chap/chap1.rpy:96
+translate french chap1_87d57da5:
 
+    # voice renpy.random.choice(audio.Blanche_Question)
     # blanche "Est-ce que je peux récupérer ta boule de cristal, s'il te plaît ?"
+    voice renpy.random.choice(audio.Blanche_Question)
     blanche "Est-ce que je peux récupérer ta boule de cristal, s'il te plaît ?"
 
 # game/chap/chap1.rpy:80
@@ -228,10 +263,12 @@ translate french chap1_df0275a3:
     # violet "Non, c'est ma propriété !"
     violet "Non, c'est ma propriété !"
 
-# game/chap/chap1.rpy:82
-translate french chap1_83276d5a:
+# game/chap/chap1.rpy:101
+translate french chap1_83bf294d:
 
+    # voice renpy.random.choice(audio.Blanche_Sniffing)
     # blanche "Mais, j'ai vraiment besoin de cette boule de cristal."
+    voice renpy.random.choice(audio.Blanche_Sniffing)
     blanche "Mais, j'ai vraiment besoin de cette boule de cristal."
 
 # game/chap/chap1.rpy:84
@@ -246,16 +283,20 @@ translate french chap1_a093f653:
     # "J'essaye de lui arracher la boule des mains."
     "J'essaye de lui arracher la boule des mains."
 
-# game/chap/chap1.rpy:88
-translate french chap1_a07294a0:
+# game/chap/chap1.rpy:109
+translate french chap1_d7ad555a:
 
+    # voice renpy.random.choice(audio.Violet_Angry_Short)
     # violet "MIAAOOOUUU !" with vpunch
+    voice renpy.random.choice(audio.Violet_Angry_Short)
     violet "MIAAOOOUUU !" with vpunch
 
-# game/chap/chap1.rpy:90
-translate french chap1_5037a8d7:
+# game/chap/chap1.rpy:112
+translate french chap1_350c9faa:
 
+    # voice renpy.random.choice(audio.Blanche_Gasp)
     # blanche "Aïeeeuuuuhhh"
+    voice renpy.random.choice(audio.Blanche_Gasp)
     blanche "Aïeeeuuuuhhh"
 
 # game/chap/chap1.rpy:92
@@ -264,10 +305,12 @@ translate french chap1_ce88acd6:
     # "Mais, Violet me griffe."
     "Mais, Violet me griffe."
 
-# game/chap/chap1.rpy:93
-translate french chap1_4e1941d6:
+# game/chap/chap1.rpy:116
+translate french chap1_5eb8b77c:
 
+    # voice renpy.random.choice(audio.Violet_Patronizing)
     # violet "Vilain enfant ! On ne t'a jamais appris les bonnes manières ?!" with vpunch
+    voice renpy.random.choice(audio.Violet_Patronizing)
     violet "Vilain enfant ! On ne t'a jamais appris les bonnes manières ?!" with vpunch
 
 # game/chap/chap1.rpy:95
@@ -288,10 +331,12 @@ translate french chap1_6098a35d:
     # violet "Bon, ok, ok ! Je te la prête… Mais, pour une journée et seulement si tu m'aides !"
     violet "Bon, ok, ok ! Je te la prête… Mais, pour une journée et seulement si tu m'aides !"
 
-# game/chap/chap1.rpy:101
-translate french chap1_9b69aef9:
+# game/chap/chap1.rpy:125
+translate french chap1_8b4bbce3:
 
+    # voice renpy.random.choice(audio.Blanche_Question)
     # blanche "C'est vrai ?!" with vpunch
+    voice renpy.random.choice(audio.Blanche_Question)
     blanche "C'est vrai ?!" with vpunch
 
 # game/chap/chap1.rpy:103
@@ -312,22 +357,28 @@ translate french chap1_25aceaaa:
     # violet "C'est une mûre qui brille de mille feux, tu ne vas pas la rater."
     violet "C'est une mûre qui brille de mille feux, tu ne vas pas la rater."
 
-# game/chap/chap1.rpy:116
-translate french onclick_mulberry_background_6d1ecaf7:
+# game/chap/chap1.rpy:141
+translate french onclick_mulberry_background_00e2abfb:
 
+    # voice renpy.random.choice(audio.Violet_Speak)
     # violet "Alors tu as trouvé ?"
+    voice renpy.random.choice(audio.Violet_Speak)
     violet "Alors tu as trouvé ?"
 
-# game/chap/chap1.rpy:118
-translate french onclick_mulberry_background_dd72e6e7:
+# game/chap/chap1.rpy:144
+translate french onclick_mulberry_background_a7ac74fd:
 
+    # voice renpy.random.choice(audio.Blanche_No)
     # blanche "Pas encore…"
+    voice renpy.random.choice(audio.Blanche_No)
     blanche "Pas encore…"
 
-# game/chap/chap1.rpy:127
-translate french chap1_2_ea0183cb:
+# game/chap/chap1.rpy:155
+translate french chap1_2_7960ee69:
 
+    # voice renpy.random.choice(audio.Violet_Happy)
     # violet "C'est bien ça ! Félicitations, tu as trouvé la mûre que je voulais !"
+    voice renpy.random.choice(audio.Violet_Happy)
     violet "C'est bien ça ! Félicitations, tu as trouvé la mûre que je voulais !"
 
 # game/chap/chap1.rpy:128
@@ -336,10 +387,12 @@ translate french chap1_2_119fd160:
     # violet "Il faudra que tu me rendes la boule avant minuit ! Sinon, plus de violet…"
     violet "Il faudra que tu me rendes la boule avant minuit ! Sinon, plus de violet…"
 
-# game/chap/chap1.rpy:130
-translate french chap1_2_1881e55c:
+# game/chap/chap1.rpy:159
+translate french chap1_2_4f2d4e5d:
 
+    # voice renpy.random.choice(audio.Blanche_Yes)
     # blanche "Plus de mûre, plus de manger pour toi… et Madame Arc-en-Ciel, pas contente !"
+    voice renpy.random.choice(audio.Blanche_Yes)
     blanche "Plus de mûre, plus de manger pour toi… et Madame Arc-en-Ciel, pas contente !"
 
 # game/chap/chap1.rpy:132
@@ -354,10 +407,12 @@ translate french chap1_2_d87cd5bc:
     # violet "Tiens, voilà la boule !"
     violet "Tiens, voilà la boule !"
 
-# game/chap/chap1.rpy:136
-translate french chap1_2_e45d882f:
+# game/chap/chap1.rpy:172
+translate french chap1_2_e281d288:
 
+    # voice renpy.random.choice(audio.Blanche_Moan)
     # blanche "Youpi !!! Encore six !" with vpunch
+    voice renpy.random.choice(audio.Blanche_Moan)
     blanche "Youpi !!! Encore six !" with vpunch
 
 # game/chap/chap1.rpy:138
@@ -420,16 +475,20 @@ translate french chap1_2_0e3d8f37:
     # violet "Bon, prends soin de toi."
     violet "Bon, prends soin de toi."
 
-# game/chap/chap1.rpy:155
-translate french chap1_2_2c2cc7a2:
+# game/chap/chap1.rpy:195
+translate french chap1_2_10a1d08e:
 
+    # voice renpy.random.choice(audio.Violet_Speak)
     # "Violet me fait un signe d'au revoir."
+    voice renpy.random.choice(audio.Violet_Speak)
     "Violet me fait un signe d'au revoir."
 
-# game/chap/chap1.rpy:157
-translate french chap1_2_e54a3996:
+# game/chap/chap1.rpy:193
+translate french chap1_2_6f52b1af:
 
+    # voice renpy.random.choice(audio.Blanche_Yes)
     # blanche "Oui ! Merci Violet ! Je te promets que je te rendrai la boule !"
+    voice renpy.random.choice(audio.Blanche_Yes)
     blanche "Oui ! Merci Violet ! Je te promets que je te rendrai la boule !"
 
 # game/chap/chap1.rpy:159
@@ -438,10 +497,12 @@ translate french chap1_2_8be0c7d3:
     # "Quelque part dans le jardin des violettes…"
     "Quelque part dans le jardin des violettes…"
 
-# game/chap/chap1.rpy:160
-translate french chap1_2_eac58e0d:
+# game/chap/chap1.rpy:199
+translate french chap1_2_7bb8d576:
 
+    # voice renpy.random.choice(audio.Grosso_Sigh)
     # x "Maigrichon, j'en ai marre de ces patrouilles nocturnes… Il ne se passe jamais rien."
+    voice renpy.random.choice(audio.Grosso_Sigh)
     x "Maigrichon, j'en ai marre de ces patrouilles nocturnes… Il ne se passe jamais rien."
 
 # game/chap/chap1.rpy:164
@@ -450,10 +511,12 @@ translate french chap1_2_057df1c8:
     # maigrichon "Grosso, ne m'en parle pas, j'ai tellement sommeil… zzzz"
     maigrichon "Grosso, ne m'en parle pas, j'ai tellement sommeil… zzzz"
 
-# game/chap/chap1.rpy:165
-translate french chap1_2_ed4b9a83:
+# game/chap/chap1.rpy:205
+translate french chap1_2_24b7027e:
 
+    # voice renpy.random.choice(audio.Grosso_Gasp)
     # grosso "AAAHHH" with vpunch
+    voice renpy.random.choice(audio.Grosso_Gasp)
     grosso "AAAHHH" with vpunch
 
 # game/chap/chap1.rpy:166
@@ -468,10 +531,12 @@ translate french chap1_2_4217014a:
     # grosso "Là-bas ! Au vol !"
     grosso "Là-bas ! Au vol !"
 
-# game/chap/chap1.rpy:168
-translate french chap1_2_5d673e2b:
+# game/chap/chap1.rpy:209
+translate french chap1_2_5f8046b4:
 
+    # voice renpy.random.choice(audio.Maigrichon_Angry)
     # maigrichon "Quoi ?! Un enfant ? Avec…"
+    voice renpy.random.choice(audio.Maigrichon_Angry)
     maigrichon "Quoi ?! Un enfant ? Avec…"
 
 # game/chap/chap1.rpy:169
@@ -486,10 +551,12 @@ translate french chap1_2_08d0eca4:
     # maigrichon "Vite, suivons-le !!!"
     maigrichon "Vite, suivons-le !!!"
 
-# game/chap/chap1.rpy:171
-translate french chap1_2_60c944a4:
+# game/chap/chap1.rpy:213
+translate french chap1_2_09414bde:
 
+    # voice renpy.random.choice(audio.Grosso_Yes)
     # grosso "Et prévenons Madame Arc-en-Ciel !"
+    voice renpy.random.choice(audio.Grosso_Yes)
     grosso "Et prévenons Madame Arc-en-Ciel !"
 
 # game/chap/chap1.rpy:175
@@ -515,260 +582,4 @@ translate french strings:
     # game/chap/chap1.rpy:70
     old "(encore)"
     new "(encore)"
-
-# TODO: Translation updated at 2023-02-13 20:44
-
-# game/chap/chap1.rpy:8
-translate french chap1_bc22ae30:
-
-    # voice renpy.random.choice(audio.Blanche_Amazement)
-    # blanche "Woah ! Tout est violet ! Il y a pleins de fleurs !!!" with vpunch
-    voice renpy.random.choice(audio.Blanche_Amazement)
-    blanche "Woah ! Tout est violet ! Il y a pleins de fleurs !!!" with vpunch
-
-# game/chap/chap1.rpy:13
-translate french chap1_65c72bad:
-
-    # voice renpy.random.choice(audio.Violet_Angry_Short)
-    voice renpy.random.choice(audio.Violet_Angry_Short)
-
-# game/chap/chap1.rpy:17
-translate french chap1_6479cea3:
-
-    # voice renpy.random.choice(audio.Blanche_Gasp)
-    # blanche "Aïeeeuuuuhhh" with vpunch
-    voice renpy.random.choice(audio.Blanche_Gasp)
-    blanche "Aïeeeuuuuhhh" with vpunch
-
-# game/chap/chap1.rpy:22
-translate french chap1_f6ce2607:
-
-    # voice renpy.random.choice(audio.Blanche_Sniffing)
-    # blanche "Méchant ! Méchant chat ! Tu m'as fait mal !"
-    voice renpy.random.choice(audio.Blanche_Sniffing)
-    blanche "Méchant ! Méchant chat ! Tu m'as fait mal !"
-
-# game/chap/chap1.rpy:25
-translate french chap1_ecc7a7df:
-
-    # voice renpy.random.choice(audio.Violet_Angry)
-    # x "Eh toi, tu n'as aucun respect pour les lieux ! On ne cueille pas des fleurs sans autorisation."
-    voice renpy.random.choice(audio.Violet_Angry)
-    x "Eh toi, tu n'as aucun respect pour les lieux ! On ne cueille pas des fleurs sans autorisation."
-
-# game/chap/chap1.rpy:28
-translate french chap1_a3ab890c:
-
-    # voice renpy.random.choice(audio.Blanche_Exclamation)
-    # blanche "Un chat qui parle ! C'est la première fois que j'en vois un !"
-    voice renpy.random.choice(audio.Blanche_Exclamation)
-    blanche "Un chat qui parle ! C'est la première fois que j'en vois un !"
-
-# game/chap/chap1.rpy:31
-translate french chap1_0eb45db3:
-
-    # voice renpy.random.choice(audio.Violet_Speak)
-    # x "Comment ça ? Bien sûr que je parle et tout le monde le sait !"
-    voice renpy.random.choice(audio.Violet_Speak)
-    x "Comment ça ? Bien sûr que je parle et tout le monde le sait !"
-
-# game/chap/chap1.rpy:37
-translate french chap1_487a3193:
-
-    # voice renpy.random.choice(audio.Violet_Speak)
-    # x "Eh tu m'écoutes ?!" with vpunch
-    voice renpy.random.choice(audio.Violet_Speak)
-    x "Eh tu m'écoutes ?!" with vpunch
-
-# game/chap/chap1.rpy:44
-translate french chap1_fa57325d:
-
-    # voice renpy.random.choice(audio.Violet_Patronizing)
-    # violet "Je m'appelle Violet Evagaden. Mais, appelle-moi Violet. Souviens-toi-en."
-    voice renpy.random.choice(audio.Violet_Patronizing)
-    violet "Je m'appelle Violet Evagaden. Mais, appelle-moi Violet. Souviens-toi-en."
-
-# game/chap/chap1.rpy:47
-translate french chap1_da6c778c:
-
-    # voice renpy.random.choice(audio.Blanche_Exclamation)
-    # blanche "Tu es un gardien de Couleurs ?!" with vpunch
-    voice renpy.random.choice(audio.Blanche_Exclamation)
-    blanche "Tu es un gardien de Couleurs ?!" with vpunch
-
-# game/chap/chap1.rpy:52
-translate french chap1_a45bd362:
-
-    # voice renpy.random.choice(audio.Blanche_Laugh)
-    # blanche "Trop bien ! Moi aussi ! Je suis le gardien de [player_name] !"
-    voice renpy.random.choice(audio.Blanche_Laugh)
-    blanche "Trop bien ! Moi aussi ! Je suis le gardien de [player_name] !"
-
-# game/chap/chap1.rpy:59
-translate french chap1_97cd3cec:
-
-    # voice renpy.random.choice(audio.Blanche_Sigh)
-    # blanche "Oh, vraiment ? C'est dommage. Je voulais aussi être gardien…"
-    voice renpy.random.choice(audio.Blanche_Sigh)
-    blanche "Oh, vraiment ? C'est dommage. Je voulais aussi être gardien…"
-
-# game/chap/chap1.rpy:65
-translate french chap1_cb65453c:
-
-    # voice renpy.random.choice(audio.Blanche_Amazement)
-    # blanche "Oh ! Mais ! C'est une des sept boules de cristal !" with vpunch
-    voice renpy.random.choice(audio.Blanche_Amazement)
-    blanche "Oh ! Mais ! C'est une des sept boules de cristal !" with vpunch
-
-# game/chap/chap1.rpy:68
-translate french chap1_5fa171ef:
-
-    # voice renpy.random.choice(audio.Violet_Happy)
-    # violet "En effet ! Elle est jolie, hein ?"
-    voice renpy.random.choice(audio.Violet_Happy)
-    violet "En effet ! Elle est jolie, hein ?"
-
-# game/chap/chap1.rpy:90
-translate french chap1_8fd114eb:
-
-    # voice renpy.random.choice(audio.Blanche_Sniffing)
-    # blanche "S'il te plaaaîîîîîîît !"
-    voice renpy.random.choice(audio.Blanche_Sniffing)
-    blanche "S'il te plaaaîîîîîîît !"
-
-# game/chap/chap1.rpy:96
-translate french chap1_87d57da5:
-
-    # voice renpy.random.choice(audio.Blanche_Question)
-    # blanche "Est-ce que je peux récupérer ta boule de cristal, s'il te plaît ?"
-    voice renpy.random.choice(audio.Blanche_Question)
-    blanche "Est-ce que je peux récupérer ta boule de cristal, s'il te plaît ?"
-
-# game/chap/chap1.rpy:101
-translate french chap1_83bf294d:
-
-    # voice renpy.random.choice(audio.Blanche_Sniffing)
-    # blanche "Mais, j'ai vraiment besoin de cette boule de cristal."
-    voice renpy.random.choice(audio.Blanche_Sniffing)
-    blanche "Mais, j'ai vraiment besoin de cette boule de cristal."
-
-# game/chap/chap1.rpy:109
-translate french chap1_d7ad555a:
-
-    # voice renpy.random.choice(audio.Violet_Angry_Short)
-    # violet "MIAAOOOUUU !" with vpunch
-    voice renpy.random.choice(audio.Violet_Angry_Short)
-    violet "MIAAOOOUUU !" with vpunch
-
-# game/chap/chap1.rpy:112
-translate french chap1_350c9faa:
-
-    # voice renpy.random.choice(audio.Blanche_Gasp)
-    # blanche "Aïeeeuuuuhhh"
-    voice renpy.random.choice(audio.Blanche_Gasp)
-    blanche "Aïeeeuuuuhhh"
-
-# game/chap/chap1.rpy:116
-translate french chap1_5eb8b77c:
-
-    # voice renpy.random.choice(audio.Violet_Patronizing)
-    # violet "Vilain enfant ! On ne t'a jamais appris les bonnes manières ?!" with vpunch
-    voice renpy.random.choice(audio.Violet_Patronizing)
-    violet "Vilain enfant ! On ne t'a jamais appris les bonnes manières ?!" with vpunch
-
-# game/chap/chap1.rpy:125
-translate french chap1_8b4bbce3:
-
-    # voice renpy.random.choice(audio.Blanche_Question)
-    # blanche "C'est vrai ?!" with vpunch
-    voice renpy.random.choice(audio.Blanche_Question)
-    blanche "C'est vrai ?!" with vpunch
-
-# game/chap/chap1.rpy:141
-translate french onclick_mulberry_background_00e2abfb:
-
-    # voice renpy.random.choice(audio.Violet_Speak)
-    # violet "Alors tu as trouvé ?"
-    voice renpy.random.choice(audio.Violet_Speak)
-    violet "Alors tu as trouvé ?"
-
-# game/chap/chap1.rpy:144
-translate french onclick_mulberry_background_a7ac74fd:
-
-    # voice renpy.random.choice(audio.Blanche_No)
-    # blanche "Pas encore…"
-    voice renpy.random.choice(audio.Blanche_No)
-    blanche "Pas encore…"
-
-# game/chap/chap1.rpy:155
-translate french chap1_2_7960ee69:
-
-    # voice renpy.random.choice(audio.Violet_Happy)
-    # violet "C'est bien ça ! Félicitations, tu as trouvé la mûre que je voulais !"
-    voice renpy.random.choice(audio.Violet_Happy)
-    violet "C'est bien ça ! Félicitations, tu as trouvé la mûre que je voulais !"
-
-# game/chap/chap1.rpy:159
-translate french chap1_2_4f2d4e5d:
-
-    # voice renpy.random.choice(audio.Blanche_Yes)
-    # blanche "Plus de mûre, plus de manger pour toi… et Madame Arc-en-Ciel, pas contente !"
-    voice renpy.random.choice(audio.Blanche_Yes)
-    blanche "Plus de mûre, plus de manger pour toi… et Madame Arc-en-Ciel, pas contente !"
-
-# game/chap/chap1.rpy:172
-translate french chap1_2_e281d288:
-
-    # voice renpy.random.choice(audio.Blanche_Moan)
-    # blanche "Youpi !!! Encore six !" with vpunch
-    voice renpy.random.choice(audio.Blanche_Moan)
-    blanche "Youpi !!! Encore six !" with vpunch
-
-# game/chap/chap1.rpy:193
-translate french chap1_2_6f52b1af:
-
-    # voice renpy.random.choice(audio.Blanche_Yes)
-    # blanche "Oui ! Merci Violet ! Je te promets que je te rendrai la boule !"
-    voice renpy.random.choice(audio.Blanche_Yes)
-    blanche "Oui ! Merci Violet ! Je te promets que je te rendrai la boule !"
-
-# game/chap/chap1.rpy:195
-translate french chap1_2_10a1d08e:
-
-    # voice renpy.random.choice(audio.Violet_Speak)
-    # "Violet me fait un signe d'au revoir."
-    voice renpy.random.choice(audio.Violet_Speak)
-    "Violet me fait un signe d'au revoir."
-
-# game/chap/chap1.rpy:199
-translate french chap1_2_7bb8d576:
-
-    # voice renpy.random.choice(audio.Grosso_Sigh)
-    # x "Maigrichon, j'en ai marre de ces patrouilles nocturnes… Il ne se passe jamais rien."
-    voice renpy.random.choice(audio.Grosso_Sigh)
-    x "Maigrichon, j'en ai marre de ces patrouilles nocturnes… Il ne se passe jamais rien."
-
-# game/chap/chap1.rpy:205
-translate french chap1_2_24b7027e:
-
-    # voice renpy.random.choice(audio.Grosso_Gasp)
-    # grosso "AAAHHH" with vpunch
-    voice renpy.random.choice(audio.Grosso_Gasp)
-    grosso "AAAHHH" with vpunch
-
-# game/chap/chap1.rpy:209
-translate french chap1_2_5f8046b4:
-
-    # voice renpy.random.choice(audio.Maigrichon_Angry)
-    # maigrichon "Quoi ?! Un enfant ? Avec…"
-    voice renpy.random.choice(audio.Maigrichon_Angry)
-    maigrichon "Quoi ?! Un enfant ? Avec…"
-
-# game/chap/chap1.rpy:213
-translate french chap1_2_09414bde:
-
-    # voice renpy.random.choice(audio.Grosso_Yes)
-    # grosso "Et prévenons Madame Arc-en-Ciel !"
-    voice renpy.random.choice(audio.Grosso_Yes)
-    grosso "Et prévenons Madame Arc-en-Ciel !"
 

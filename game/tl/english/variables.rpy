@@ -1,6 +1,4 @@
-﻿# TODO: Translation updated at 2022-08-27 12:18
-
-translate english strings:
+﻿translate english strings:
 
     # game/variables.rpy:2
     old "Pisces"

@@ -1,6 +1,4 @@
-﻿# TODO: Translation updated at 2022-09-01 21:05
-
-translate french strings:
+﻿translate french strings:
 
     # game/characters.rpy:45
     old "Arc-en-Ciel"
@@ -61,10 +59,6 @@ translate french strings:
     # game/characters.rpy:59
     old "Picaru"
     new "Picaru"
-
-# TODO: Translation updated at 2022-09-03 19:33
-
-translate french strings:
 
     # game/characters.rpy:58
     old "Red"
