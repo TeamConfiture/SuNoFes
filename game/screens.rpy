@@ -18,7 +18,7 @@ style input:
 
 style hyperlink_text:
     properties gui.text_properties("hyperlink", accent=True)
-    font "gui/font/augie.ttf"
+    font gui.text_font
     bold True
     color "#666666"
     hover_color "#666666"
@@ -575,18 +575,18 @@ style slot_button_text:
     properties gui.button_text_properties("slot_button")
 style slot_time_text is slot_button_text
 style slot_time_text:
-    font "gui/font/augie.ttf"
+    font gui.text_font
     size 18
     color u"#939393"
 style slot_empty_text is slot_button_text
 style slot_empty_text:
-    font "gui/font/augie.ttf"
+    font gui.text_font
     size 48
     color u"#fff"
     yoffset -50
 style slot_name_text is slot_button_text
 style slot_name_text:
-    font "gui/font/augie.ttf"
+    font gui.text_font
     size 24
     color u"#000000"
 
@@ -598,88 +598,87 @@ style slot_name_text:
 ## https://www.renpy.org/doc/html/screen_special.html#preferences
 
 style preferences_text_option_name is gui_text:
-    size 75
+    size gui.label_text_size
     color u"#F233A7"
-    xalign 0.5
 style preferences_text_suboption_name is gui_text:
-    size 48
+    size gui.label_text_size*48/72
     color u"#666666"
-    xalign 1.0
+
+style preferences_radio_text is preferences_text_option_name
 style preferences_radio_button is gui_button
 style preferences_radio_button_text is gui_button_text
 style preferences_radio_button_text:
     properties gui.button_text_properties("radio_button")
+style preferences_radio_vbox is vbox
+style preferences_radio_vbox:
+    spacing -15
+
+style preferences_slider_slider is bar
+style preferences_slider_text is preferences_text_suboption_name
+style preferences_slider_hbox is hbox
+style preferences_slider_hbox:
+    spacing 50 xalign 1.
+style preferences_slider_vbox is vbox
+style preferences_slider_vbox:
+    xsize 779
 
 screen preferences():
+
     tag menu
     use game_menu(_("Options"), "preferences"):
-        grid 2 2:
-            xspacing 100
-            yspacing 50
-            xpos 75
+        hbox:
+            xalign 0.5
             ypos -100
+            spacing 60
             vbox:
-                hbox:
-                    xoffset 25
+                vbox:
+                    ysize 360
+                    style_prefix "preferences_slider"
                     text _("Volume du jeu"):
                         style "preferences_text_option_name"
-                grid 2 3:
-                    xoffset -150
                     if config.has_music:
-                        text _("Musique"):
-                            style "preferences_text_suboption_name"
-                        bar value Preference("music volume"):
-                            xoffset 50
-                            style "bar"
+                        hbox:
+                            text _("Musique")
+                            bar value Preference("music volume")
                     if config.has_sound:
-                        text _("Son"):
-                            style "preferences_text_suboption_name"
-                        bar value Preference("sound volume"):
-                            xoffset 50
-                            style "bar"
+                        hbox:
+                            text _("Son")
+                            bar value Preference("sound volume")
                     if config.has_voice:
-                        text _("Voix"):
-                            style "preferences_text_suboption_name"
-                        bar value Preference("voice volume"):
-                            xoffset 50
-                            style "bar"
-            vbox:
-                hbox:
-                    text _("Mode de la fenêtre"):
-                        style "preferences_text_option_name"
-                grid 1 2:
-                    yspacing -15
-                    textbutton _("Fenêtre") action Preference("display", "window"):
-                        style "preferences_radio_button"
-                    textbutton _("Plein écran") action Preference("display", "fullscreen"):
-                        style "preferences_radio_button"
-            vbox:
-                hbox:
-                    xoffset 25
+                        hbox:
+                            text _("Voix")
+                            bar value Preference("voice volume")
+                vbox:
+                    style_prefix "preferences_slider"
                     text _("Vitesse de lecture"):
                         style "preferences_text_option_name"
-                grid 2 2:
-                    xoffset -150
-                    text _("Manuelle"):
-                        style "preferences_text_suboption_name"
-                    bar value Preference("text speed"):
-                            xoffset 50
-                            style "bar"
-                    text _("Automatique"):
-                        style "preferences_text_suboption_name"
-                    bar value Preference("auto-forward time"):
-                            xoffset 50
-                            style "bar"
+                    hbox:
+                        text _("Manuelle")
+                        bar value Preference("text speed")
+                    hbox:
+                        text _("Automatique")
+                        bar value Preference("auto-forward time")
             vbox:
-                hbox:
-                    text _("Langue"):
-                        style "preferences_text_option_name"
-                grid 1 2:
-                    yspacing -15
-                    textbutton "English" action [Language("english"), SetVariable('persistent.lang', "english")]:
-                        style "preferences_radio_button"
-                    textbutton "Français" action [Language('french'), SetVariable('persistent.lang', 'french')]:
-                        style "preferences_radio_button"
+                spacing 100
+                vbox:
+                    ysize 260
+                    style_prefix "preferences_radio"
+                    text _("Affichage")
+                    textbutton _("Fenêtré") action Preference("display", "window")
+                    textbutton _("Plein écran") action Preference("display", "fullscreen")
+                vbox:
+                    style_prefix "preferences_radio"
+                    text _("Langue")
+                    textbutton "English" action [Language("english"), SetVariable('persistent.lang', "english")]
+                    textbutton "Français" action [Language('french'), SetVariable('persistent.lang', 'french')]
+            vbox:
+                vbox:
+                    style_prefix "preferences_radio"
+                    text _("Police")
+                    textbutton _("Défaut"):
+                        action [gui.SetPreference("font", "gui/font/augie.ttf"), gui.SetPreference("label_text_size", 72)]
+                    textbutton _("OpenDyslexic"):
+                        action [gui.SetPreference("font", "gui/font/OpenDyslexic-Regular.otf"), gui.SetPreference("label_text_size", 63)]
 
 ## Écran des extras #######################################################
 ##
@@ -688,7 +687,7 @@ screen preferences():
 style secondary_menu_title is secondary_menu_text
 style secondary_menu_title:
     properties gui.text_properties("title")
-    font "gui/font/augie.ttf"
+    font gui.interface_text_font
     size 128
     xalign 0.5
     yalign 0.0
