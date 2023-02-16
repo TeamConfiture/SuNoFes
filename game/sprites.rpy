@@ -53,6 +53,18 @@ image writing_feather:
     "images/items/feather.png"
     zoom 0.6
     yanchor 0.6
+    block:
+        alpha 1.
+        pause 0.6
+        ease 0.2 alpha 0.
+        alpha 0.
+        pause 0.6
+        ease 0.2 alpha 1.
+        repeat
+
+image continue_button_idle = "gui/button/continue_button_idle.png"
+image continue_button_hover = "gui/button/continue_button_hover.png"
+
 image mulberry = "images/items/mulberry_base.png"
 image mulberry_button = "images/items/mulberry.png"
 

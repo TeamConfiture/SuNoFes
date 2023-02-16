@@ -184,6 +184,7 @@ init python:
 
 # Dans notre cas, cet écran est uniquement utilisé pour demander le nom du personnage principal
 screen input(prompt):
+    text prompt align (0.5, 0.14) size 62
     window:
         xalign 0
         yalign 0
@@ -201,6 +202,10 @@ screen input(prompt):
             text _("Quartier des Monochromes") style "idcard_text_body_value"
             text _("Adresse :") style "idcard_text_body"
             text _("50 rue des nuances") style "idcard_text_body_value"
+    imagebutton:
+        align (0.99, 0.5)
+        auto "continue_button_%s"
+        action Return(renpy.get_widget('input', 'input').content)
 
 style idcard_prompt:
     min_width 600
