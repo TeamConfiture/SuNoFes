@@ -1,5 +1,4 @@
-﻿
-translate french strings:
+﻿translate french strings:
 
     # renpy/common/00accessibility.rpy:28
     old "Self-voicing disabled."

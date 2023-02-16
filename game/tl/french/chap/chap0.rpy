@@ -1,6 +1,4 @@
-﻿# TODO: Translation updated at 2022-09-01 21:05
-
-# game/chap/chap0.rpy:20
+﻿# game/chap/chap0.rpy:20
 translate french start_6e79fe01:
 
     # "Il était une fois, dans un royaume lointain nommé Couleurs, sept boules de cristal."
@@ -54,10 +52,12 @@ translate french start_0afc42c4:
     # blanche "Aujourd'hui, pendant que mon papa dormait, j'ai décidé de fuguer et de faire un tour du royaume !"
     blanche "Aujourd'hui, pendant que mon papa dormait, j'ai décidé de fuguer et de faire un tour du royaume !"
 
-# game/chap/chap0.rpy:49
-translate french start_8a764600:
+# game/chap/chap0.rpy:52
+translate french start_60a560f6:
 
+    # voice renpy.random.choice(audio.Blanche_Yes)
     # blanche "Je vais aller récupérer toutes les boules de cristal ! Héhé !"
+    voice renpy.random.choice(audio.Blanche_Yes)
     blanche "Je vais aller récupérer toutes les boules de cristal ! Héhé !"
 
 # game/chap/chap0.rpy:51
@@ -109,14 +109,4 @@ translate french strings:
     # game/chap/chap0.rpy:101
     old "Cheat - Voyage rapide"
     new "Cheat - Voyage rapide"
-
-# TODO: Translation updated at 2023-02-13 20:44
-
-# game/chap/chap0.rpy:52
-translate french start_60a560f6:
-
-    # voice renpy.random.choice(audio.Blanche_Yes)
-    # blanche "Je vais aller récupérer toutes les boules de cristal ! Héhé !"
-    voice renpy.random.choice(audio.Blanche_Yes)
-    blanche "Je vais aller récupérer toutes les boules de cristal ! Héhé !"
 

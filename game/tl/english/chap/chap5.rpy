@@ -1,9 +1,9 @@
-﻿# TODO: Translation updated at 2022-09-01 22:37
+﻿# game/chap/chap5.rpy:6
+translate english chap5_554e3c8e:
 
-# game/chap/chap5.rpy:3
-translate english chap5_5121b799:
-
+    # voice renpy.random.choice(audio.Piou_Speak)
     # x "Piou, piou ! Réveille-toi Jaune !"
+    voice renpy.random.choice(audio.Piou_Speak)
     x "Chirp, Chirp! Wake up Yellow!"
 
 # game/chap/chap5.rpy:4
@@ -12,16 +12,20 @@ translate english chap5_b7a1fd16:
     # x "On doit aller traire les vaches ce matin ! C'est important si on veut que la fromagerie tourne cette semaine !"
     x "We have to go milk the cows this morning! It's important if we want the cheese factory to be up and running this week!"
 
-# game/chap/chap5.rpy:5
-translate english chap5_25390352:
+# game/chap/chap5.rpy:10
+translate english chap5_74176426:
 
+    # voice renpy.random.choice(audio.Jaune_Sleepy)
     # jaune "Zzzzz. Mais Piou, tu vois bien que je dors ! Zzzzz."
+    voice renpy.random.choice(audio.Jaune_Sleepy)
     jaune "Zzzzz. But Chirp, I'm sleeping! Zzzzz."
 
-# game/chap/chap5.rpy:6
-translate english chap5_ed9f3123:
+# game/chap/chap5.rpy:12
+translate english chap5_edd03679:
 
+    # voice renpy.random.choice(audio.Piou_Speak)
     # piou "Quel vieux celui-là alors... Je vais encore devoir traire les vaches tout seul."
+    voice renpy.random.choice(audio.Piou_Speak)
     piou "What an old cat this one... I'll have to milk the cows alone again."
 
 # game/chap/chap5.rpy:7
@@ -30,10 +34,12 @@ translate english chap5_1608f31e:
     # piou "Bon... Commençons maintenant, je finirai peut-être ma journée plus tôt !"
     piou "Well... Let's get started now, and maybe I'll be able to rest early today!"
 
-# game/chap/chap5.rpy:12
-translate english chap5_b4d18fff:
+# game/chap/chap5.rpy:16
+translate english chap5_18e26636:
 
+    # voice renpy.random.choice(audio.Blanche_Amazement)
     # blanche "Oh ! Une grange !" with vpunch
+    voice renpy.random.choice(audio.Blanche_Amazement)
     blanche "Oh! A barn!" with vpunch
 
 # game/chap/chap5.rpy:9
@@ -42,10 +48,12 @@ translate english chap5_873f095d:
     # "Je passe ma tête à travers la porte de la grange."
     "I put my head beside the barn's door."
 
-# game/chap/chap5.rpy:10
-translate english chap5_07e273d5:
+# game/chap/chap5.rpy:21
+translate english chap5_b0cf4c86:
 
+    # voice renpy.random.choice(audio.Blanche_Exclamation)
     # blanche "Un petit poussin !!!!" with vpunch
+    voice renpy.random.choice(audio.Blanche_Exclamation)
     blanche "A small chick!!!!" with vpunch
 
 # game/chap/chap5.rpy:11
@@ -54,10 +62,12 @@ translate english chap5_13a2a18b:
     # blanche "Je peux te prendre dans mes bras ?"
     blanche "Can I hug you?"
 
-# game/chap/chap5.rpy:20
-translate english chap5_b2f0a0fe:
+# game/chap/chap5.rpy:26
+translate english chap5_e36522f4:
 
+    # voice renpy.random.choice(audio.Piou_Speak)
     # piou "Eh oh, t'es qui toi d'abord ?" with vpunch
+    voice renpy.random.choice(audio.Piou_Speak)
     piou "Hey ho, first, who are you?" with vpunch
 
 # game/chap/chap5.rpy:13
@@ -72,10 +82,12 @@ translate english chap5_155730d2:
     # piou "Je suis l'un des super fromagers de Couleurs !"
     piou "I'm one of the super cheesemongers of Colors!"
 
-# game/chap/chap5.rpy:15
-translate english chap5_9ff1dd05:
+# game/chap/chap5.rpy:31
+translate english chap5_747bbdba:
 
+    # voice renpy.random.choice(audio.Blanche_Amazement)
     # blanche "Un poussin qui parle et qui fait du fromage ?! Après les chats qui parlent, les poussins fromagers ?"
+    voice renpy.random.choice(audio.Blanche_Amazement)
     blanche "A talking chick that makes cheese?! First talking cats, now a cheese making chick?"
 
 # game/chap/chap5.rpy:16
@@ -84,10 +96,12 @@ translate english chap5_7a4e3a22:
     # blanche "Ce monde cache pleins de surprises !"
     blanche "This world sure is full of wonders!"
 
-# game/chap/chap5.rpy:17
-translate english chap5_ef207bfd:
+# game/chap/chap5.rpy:36
+translate english chap5_e9e7f09d:
 
+    # voice renpy.random.choice(audio.Piou_Speak)
     # piou "Bien sûr, nous sommes fromagers de père en fils depuis 1848. Je suis accompagné par mon fidèle lieutenant Jaune !"
+    voice renpy.random.choice(audio.Piou_Speak)
     piou "Of course! We are cheesemongers from generations since 1848. I'm supported by my faithful lieutenant Yellow!"
 
 # game/chap/chap5.rpy:18
@@ -120,10 +134,12 @@ translate english chap5_782f4d83:
     # piou "Tu veux nous acheter un fromage ?"
     piou "Do you want to buy some cheese?"
 
-# game/chap/chap5.rpy:23
-translate english chap5_9af012d3:
+# game/chap/chap5.rpy:44
+translate english chap5_717b17e7:
 
+    # voice renpy.random.choice(audio.Blanche_Gasp)
     # blanche "Oh non, non du tout ! Je viens ici pour mon papa."
+    voice renpy.random.choice(audio.Blanche_Gasp)
     blanche "Oh no, no at all! I came here for Daddy."
 
 # game/chap/chap5.rpy:24
@@ -138,22 +154,28 @@ translate english chap5_0d41aee7:
     # piou "Hum... Et que comptes-tu faire ?"
     piou "Hum... What are you going to do?"
 
-# game/chap/chap5.rpy:28
-translate english chap5_10c9a2d0:
+# game/chap/chap5.rpy:55
+translate english chap5_2d312ac9:
 
+    # voice renpy.random.choice(audio.Blanche_Angry)
     # blanche "Lui ramener la boule de Jaune, tu crois vraiment que je viendrais pour un bête fromage ?"
+    voice renpy.random.choice(audio.Blanche_Angry)
     blanche "To bring him Yellow's ball. Do you really think I would come for a stupid cheese?"
 
-# game/chap/chap5.rpy:29
-translate english chap5_48dfa6c7:
+# game/chap/chap5.rpy:58
+translate english chap5_acf71444:
 
+    # voice renpy.random.choice(audio.Piou_Angry)
     # piou "Non, mais tu te prends pour qui ?! C'est toi l'étranger et tu te permets de me critiquer sur mes propres terres ?! Tu vas le regretter !"
+    voice renpy.random.choice(audio.Piou_Angry)
     piou "Who do you think you are?! You're the stranger and you dare question me on my own land?! You will regret it!"
 
-# game/chap/chap5.rpy:30
-translate english chap5_989a411a:
+# game/chap/chap5.rpy:61
+translate english chap5_b1fe3775:
 
+    # voice renpy.random.choice(audio.Blanche_Gasp)
     # blanche "Je dois vraiment récupérer cette boule pour mon papa ! C'est important !"
+    voice renpy.random.choice(audio.Blanche_Gasp)
     blanche "I really need to get this ball for Daddy! It's important!"
 
 # game/chap/chap5.rpy:32
@@ -186,10 +208,12 @@ translate english chap5_c461ed15:
     # blanche "Je promets de vous la rendre à la nuit tombée !"
     blanche "I promise to give it back at nightfall!"
 
-# game/chap/chap5.rpy:37
-translate english chap5_6f1b65aa:
+# game/chap/chap5.rpy:79
+translate english chap5_cc03c395:
 
+    # voice renpy.random.choice(audio.Piou_Speak)
     # piou "Ce n'est pas de cette façon que tu auras cette boule !"
+    voice renpy.random.choice(audio.Piou_Speak)
     piou "That is not how you'll get this ball!"
 
 # game/chap/chap5.rpy:38
@@ -210,10 +234,12 @@ translate english chap5_5287aac5:
     # piou "Alors si d'aventure j'envisageais de donner mon autorisation, Jaune ne céderait pas un seul morceau de cette boule, tu m'entends ?"
     piou "So, even if I were to give my permission, Yellow would not yield a single piece of this ball, understood?"
 
-# game/chap/chap5.rpy:41
-translate english chap5_d482aac3:
+# game/chap/chap5.rpy:85
+translate english chap5_858a22c1:
 
+    # voice renpy.random.choice(audio.Blanche_Yes)
     # blanche "Moi aussi, je n'ai pas connu ma mère !"
+    voice renpy.random.choice(audio.Blanche_Yes)
     blanche "Me too, I didn't know Mommy!"
 
 # game/chap/chap5.rpy:42
@@ -228,10 +254,12 @@ translate english chap5_06fbc2c2:
     # blanche "Ça fait déjà 8 ans qu'il m'élève tout seul comme un grand !"
     blanche "It's already been 8 years since he's raising me all alone like a boss!"
 
-# game/chap/chap5.rpy:44
-translate english chap5_ff08d967:
+# game/chap/chap5.rpy:92
+translate english chap5_661dc0fa:
 
+    # voice renpy.random.choice(audio.Blanche_Sniffing)
     # blanche "Même si parfois, il me dit qu'il rêverait de revoir Maman et qu'ils s'occupent de moi tous les deux comme une vraie famille."
+    voice renpy.random.choice(audio.Blanche_Sniffing)
     blanche "Even if sometimes, he told me he would love to see Mommy again and that they would both raise me together like a family."
 
 # game/chap/chap5.rpy:45
@@ -246,10 +274,12 @@ translate english chap5_e3e7448d:
     # blanche "Mais moi je m'en fiche ! Pour moi, elle n'existe pas !"
     blanche "But I don't care! To me, she doesn't exist!"
 
-# game/chap/chap5.rpy:47
-translate english chap5_ee437499:
+# game/chap/chap5.rpy:99
+translate english chap5_7cb6a6c2:
 
+    # voice renpy.random.choice(audio.Blanche_Laugh)
     # blanche "Moi, j'aimerais juste faire une surprise à mon papa !"
+    voice renpy.random.choice(audio.Blanche_Laugh)
     blanche "My only wish is to surprise Daddy!"
 
 # game/chap/chap5.rpy:48
@@ -282,10 +312,12 @@ translate english chap5_4cca165d:
     # "Nous sortons de la grange et débarquons dans la cuisine."
     "We leave the barn and go to the kitchen."
 
-# game/chap/chap5.rpy:53
-translate english chap5_cbc3d15c:
+# game/chap/chap5.rpy:115
+translate english chap5_f4d6443c:
 
+    # voice renpy.random.choice(audio.Piou_Speak)
     # piou "Ici, c'est le coin cuisine."
+    voice renpy.random.choice(audio.Piou_Speak)
     piou "Here is the kitchen."
 
 # game/chap/chap5.rpy:54
@@ -312,10 +344,12 @@ translate english chap5_b7694d24:
     # piou "Alors, voyons voir qu'avons-nous là…"
     piou "So, let's see what we have here..."
 
-# game/chap/chap5.rpy:103
-translate english chap5_8d470042:
+# game/chap/chap5.rpy:121
+translate english chap5_66f4d737:
 
+    # voice renpy.random.choice(audio.Jaune_Sleepy)
     # jaune "AAAA... AAATTTTTTCHOUM ! AAAATTTTCHOUM ! J'ai faim… ZZZzzzz" with vpunch
+    voice renpy.random.choice(audio.Jaune_Sleepy)
     jaune "AAAA... AAACCCCCHOOOOOO ! AAACCCCCHOOOOOO ! I'm hungry... ZZZzzzz" with vpunch
 
 # game/chap/chap5.rpy:59
@@ -342,10 +376,12 @@ translate english chap5_8529bab5:
     # piou "Dis... Tu ne veux pas m'aider ? Je ne suis pas capable de faire la différence entre du Comté, du Gruyère, du Cantal, du Salers, du Beaufort ou de l'Abondance, d'habitude c'est Jaune qui s'en occupe."
     piou "Tell me... Can you help me? I can't make up the differences between Comté, Gruyère, Cantal, Salers, Beaufort or Abondance. Yellow usually takes care of it."
 
-# game/chap/chap5.rpy:63
-translate english chap5_5464dfa5:
+# game/chap/chap5.rpy:128
+translate english chap5_e7cfde93:
 
+    # voice renpy.random.choice(audio.Blanche_Gasp)
     # blanche "Je..."
+    voice renpy.random.choice(audio.Blanche_Gasp)
     blanche "I..."
 
 # game/chap/chap5.rpy:64
@@ -360,10 +396,12 @@ translate english chap5_88b26d38:
     # blanche "Bon... D'accord."
     blanche "Well... Okay."
 
-# game/chap/chap5.rpy:124
-translate english chap5_2_30e28ff5:
+# game/chap/chap5.rpy:146
+translate english chap5_2_9ab1dbd8:
 
+    # voice renpy.random.choice(audio.Blanche_Yes)
     # blanche "Avec plaisir. À propos de la boule..."
+    voice renpy.random.choice(audio.Blanche_Yes)
     blanche "You're welcome. About the ball..."
 
 # game/chap/chap5.rpy:126
@@ -390,10 +428,12 @@ translate english chap5_2_030daf5b:
     # piou "Tu vas un peu vite en affaires, je ne te dois rien du tout. Tu es libre de partir quand tu veux, je ne lâcherai pas cette boule."
     piou "Hold your horses, I don't owe you anything. You're free to leave and go whenever you want, I will not let this ball go."
 
-# game/chap/chap5.rpy:136
-translate english chap5_2_92297768:
+# game/chap/chap5.rpy:159
+translate english chap5_2_2956ab27:
 
+    # voice renpy.random.choice(audio.Blanche_Sniffing)
     # blanche "Mais, Piou…"
+    voice renpy.random.choice(audio.Blanche_Sniffing)
     blanche "But Chirp..."
 
 # game/chap/chap5.rpy:138
@@ -402,12 +442,13 @@ translate english chap5_2_ca5f2fd8:
     # piou "Ce n'est pas la peine, ma décision est définitive."
     piou "Don't bother me, my decision is final."
 
-# game/chap/chap5.rpy:140
-translate english chap5_2_4257a23e:
+# game/chap/chap5.rpy:164
+translate english chap5_2_ccb70567:
 
+    # voice renpy.random.choice(audio.Blanche_Sniffing)
     # blanche "Mais... Mon papa est très malade. Il ne va pas bien du tout..."
+    voice renpy.random.choice(audio.Blanche_Sniffing)
     blanche "But... Daddy is very sick. He's not fine at all..."
-
 
 # game/chap/chap5.rpy:142
 translate english chap5_2_35a3c8e4:
@@ -433,10 +474,12 @@ translate english chap5_2_6b52fcd3:
     # blanche "Est-ce que je peux emprunter ta boule de cristal ?"
     blanche "Can I borrow your crystal ball?"
 
-# game/chap/chap5.rpy:150
-translate english chap5_2_b6631087:
+# game/chap/chap5.rpy:175
+translate english chap5_2_5608cdd5:
 
+    # voice renpy.random.choice(audio.Piou_Speak)
     # piou "J'ai bien peur que ça soit impossible pour le moment."
+    voice renpy.random.choice(audio.Piou_Speak)
     piou "I'm afraid that's impossible right now."
 
 # game/chap/chap5.rpy:151
@@ -445,17 +488,18 @@ translate english chap5_2_6456a0f5:
     # piou "Je te l'ai déjà dit. Il vaut mieux attendre le réveil de Jaune."
     piou "I already told you. You'd better wait for Yellow to wake up."
 
-
 # game/chap/chap5.rpy:152
 translate english chap5_2_924e38da:
 
     # piou "Je ne peux rien dire sans son accord, sinon il rentrerait dans une colère noire. J'espère que tu me comprends..."
     piou "I can't say anything without his agreement, otherwise he'll be enraged. I hope you understand..."
 
-# game/chap/chap5.rpy:154
-translate english chap5_2_38aad055:
+# game/chap/chap5.rpy:180
+translate english chap5_2_e173df70:
 
+    # voice renpy.random.choice(audio.Blanche_Question)
     # blanche "On ne peut vraiment pas le réveiller maintenant ?"
+    voice renpy.random.choice(audio.Blanche_Question)
     blanche "We really can't wake him up now?"
 
 # game/chap/chap5.rpy:156
@@ -464,10 +508,12 @@ translate english chap5_2_75a85096:
     # piou "Non, c'est très risqué pour ta vie, il est capable de n'importe quoi quand on le dérange dans son sommeil."
     piou "No, you'll risk your life. He's capable of anything when his sleep is bothered."
 
-# game/chap/chap5.rpy:158
-translate english chap5_2_4257a23e_1:
+# game/chap/chap5.rpy:185
+translate english chap5_2_ccb70567_1:
 
+    # voice renpy.random.choice(audio.Blanche_Sniffing)
     # blanche "Mais... Mon papa est très malade. Il ne va pas bien du tout..."
+    voice renpy.random.choice(audio.Blanche_Sniffing)
     blanche "But... Daddy is very ill. He's not fine at all."
 
 # game/chap/chap5.rpy:163
@@ -518,10 +564,12 @@ translate english chap5_2_8081b29f:
     # piou "Mon père était trop vieux pour m'enseigner les rudiments de cet art."
     piou "My father was too old to teach me the basics of this art."
 
-# game/chap/chap5.rpy:173
-translate english chap5_2_47ebd9a0:
+# game/chap/chap5.rpy:201
+translate english chap5_2_11211ba8:
 
+    # voice renpy.random.choice(audio.Blanche_Question)
     # blanche "Comment il va maintenant ?"
+    voice renpy.random.choice(audio.Blanche_Question)
     blanche "How is he doing now?"
 
 # game/chap/chap5.rpy:175
@@ -536,10 +584,12 @@ translate english chap5_2_7bc367c8:
     # piou "Mon père est mort."
     piou "My father passed away."
 
-# game/chap/chap5.rpy:178
-translate english chap5_2_f9a7de44:
+# game/chap/chap5.rpy:207
+translate english chap5_2_bdea87bd:
 
+    # voice renpy.random.choice(audio.Piou_Cry)
     # "Piou se met à pleurer."
+    voice renpy.random.choice(audio.Piou_Cry)
     "Chirp starts to shed tears."
 
 # game/chap/chap5.rpy:179
@@ -560,10 +610,12 @@ translate english chap5_2_21345011:
     # piou "Je sais qu'il en sera de même pour tout le monde et même pour Jaune d'ici peu de temps."
     piou "I know it will be the same for everyone and for Yellow too before long."
 
-# game/chap/chap5.rpy:182
-translate english chap5_2_5cc95096:
+# game/chap/chap5.rpy:212
+translate english chap5_2_0efef5fc:
 
+    # voice renpy.random.choice(audio.Piou_Cry)
     # piou "Mais que puis-je y faire ?"
+    voice renpy.random.choice(audio.Piou_Cry)
     piou "But what can I do?"
 
 # game/chap/chap5.rpy:183
@@ -584,10 +636,12 @@ translate english chap5_2_350341be:
     # piou "Tiens, prends cette boule, fais honneur à ton père et reviens vite."
     piou "Here, take this ball, honor your dad and come back quickly."
 
-# game/chap/chap5.rpy:194
-translate english chap5_2_4d1c0175:
+# game/chap/chap5.rpy:226
+translate english chap5_2_71f07227:
 
+    # voice renpy.random.choice(audio.Blanche_Yes)
     # blanche "Merci Piou !"
+    voice renpy.random.choice(audio.Blanche_Yes)
     blanche "Thanks Chirp!"
 
 # game/chap/chap5.rpy:196
@@ -614,10 +668,12 @@ translate english chap5_2_d6cfe972:
     # "Grosso et Maigrichon qui n'ont pas perdu de temps arrivent..."
     "Biggy and Slimmy, who hasted themselves, arrive with straw hats."
 
-# game/chap/chap5.rpy:206
-translate english chap5_2_6df74938:
+# game/chap/chap5.rpy:239
+translate english chap5_2_631e6c58:
 
+    # voice renpy.random.choice(audio.Grosso_Sigh)
     # grosso "Mais quel pleurnichard celui-là !" with vpunch
+    voice renpy.random.choice(audio.Grosso_Sigh)
     grosso "What a crybaby this one!" with vpunch
 
 # game/chap/chap5.rpy:207
@@ -626,22 +682,28 @@ translate english chap5_2_ad656f06:
     # grosso "Tu veux bien arrêter de chouiner et nous expliquer ce qui te prend de lui donner ta boule ?!"
     grosso "Could you please stop whining and explain why in the rainbow did you give them your ball?!"
 
-# game/chap/chap5.rpy:208
-translate english chap5_2_6a2b5c4b:
+# game/chap/chap5.rpy:242
+translate english chap5_2_187f510e:
 
+    # voice renpy.random.choice(audio.Maigrichon_Exclamation)
     # maigrichon "Et justifie ça bien, sinon tu auras affaire à Madame Arc-en-Ciel !"
+    voice renpy.random.choice(audio.Maigrichon_Exclamation)
     maigrichon "And explain it swiftly or you'll have to deal with Lady Rainbow!"
 
-# game/chap/chap5.rpy:209
-translate english chap5_2_0b9e216f:
+# game/chap/chap5.rpy:244
+translate english chap5_2_809dcfd0:
 
+    # voice renpy.random.choice(audio.Piou_Cry)
     # piou "Il… Il… Il veut faire plaisir à son père une dernière fois... Sniff... Sniff..."
+    voice renpy.random.choice(audio.Piou_Cry)
     piou "They... They... They want to make their dad happy one last time... Sob... Sob..."
 
-# game/chap/chap5.rpy:210
-translate english chap5_2_636a4f97:
+# game/chap/chap5.rpy:246
+translate english chap5_2_78a86eb1:
 
+    # voice renpy.random.choice(audio.Grosso_Sigh)
     # grosso "Bon, on tirera rien de lui."
+    voice renpy.random.choice(audio.Grosso_Sigh)
     grosso "We'll get nothing out of him"
 
 # game/chap/chap5.rpy:211
@@ -662,10 +724,12 @@ translate english chap5_2_6f865754:
     # maigrichon "Tu sais où est parti l'enfant ?!"
     maigrichon "Do you know where the kid went?!"
 
-# game/chap/chap5.rpy:214
-translate english chap5_2_f392fb14:
+# game/chap/chap5.rpy:251
+translate english chap5_2_46a0c140:
 
+    # voice renpy.random.choice(audio.Jaune_Sleepy)
     # jaune "..."
+    voice renpy.random.choice(audio.Jaune_Sleepy)
     jaune "..."
 
 # game/chap/chap5.rpy:215
@@ -674,28 +738,36 @@ translate english chap5_2_9948cf71:
     # maigrichon "Eh oh, je te parle !"
     maigrichon "Hey ho, I'm talking to you!"
 
-# game/chap/chap5.rpy:216
-translate english chap5_2_f392fb14_1:
+# game/chap/chap5.rpy:254
+translate english chap5_2_46a0c140_1:
 
+    # voice renpy.random.choice(audio.Jaune_Sleepy)
     # jaune "..."
+    voice renpy.random.choice(audio.Jaune_Sleepy)
     jaune "..."
 
-# game/chap/chap5.rpy:217
-translate english chap5_2_50784db7:
+# game/chap/chap5.rpy:256
+translate english chap5_2_e23cad5a:
 
+    # voice renpy.random.choice(audio.Jaune_Angry)
     # jaune "ROAR !" with vpunch
+    voice renpy.random.choice(audio.Jaune_Angry)
     jaune "ROAR!" with vpunch
 
-# game/chap/chap5.rpy:218
-translate english chap5_2_8da47757:
+# game/chap/chap5.rpy:258
+translate english chap5_2_dfb04d42:
 
+    # voice renpy.random.choice(audio.Maigrichon_Exclamation)
     # maigrichon "Gloups... Pardon ! Pardon ! Pardon ! Pardon cher Gardien de Couleur !"
+    voice renpy.random.choice(audio.Maigrichon_Exclamation)
     grosso "Gloups... Sorry! Sorry! Sorry! Sorry, noble Guardian of Color!"
 
-# game/chap/chap5.rpy:219
-translate english chap5_2_d0f93133:
+# game/chap/chap5.rpy:260
+translate english chap5_2_2fd3e0d2:
 
+    # voice renpy.random.choice(audio.Jaune_Sleepy)
     # jaune "Zzzzz"
+    voice renpy.random.choice(audio.Jaune_Sleepy)
     jaune "Zzzzz"
 
 # game/chap/chap5.rpy:220
@@ -732,179 +804,13 @@ translate english strings:
     old "Broder pour attendre un moment plus propice"
     new "Adlib waiting for a better opportunity"
 
-# game/chap/chap5.rpy:117
-translate english cheese_market_fail_d0ddc8d7:
-
-    # piou "Ca ne ressemble clairement pas à ceux que j'ai déjà en vitrine ! Recommence."
-    piou "It clearly doesn't look like the ones I already have on display! Do it again."
-
-# game/chap/chap5.rpy:122
-translate english chap5_2_e3a16681:
-
-    # piou "Génial, merci ! On va pouvoir manger un bon repas grâce à toi !"
-    piou "Great, thanks! We'll be able to eat a good meal thanks to you!"
-
-# TODO: Translation updated at 2023-02-13 20:44
-
-# game/chap/chap5.rpy:6
-translate english chap5_554e3c8e:
-
-    # voice renpy.random.choice(audio.Piou_Speak)
-    # x "Piou, piou ! Réveille-toi Jaune !"
-    voice renpy.random.choice(audio.Piou_Speak)
-    x "Piou, piou ! Réveille-toi Jaune !"
-
-# game/chap/chap5.rpy:10
-translate english chap5_74176426:
-
-    # voice renpy.random.choice(audio.Jaune_Sleepy)
-    # jaune "Zzzzz. Mais Piou, tu vois bien que je dors ! Zzzzz."
-    voice renpy.random.choice(audio.Jaune_Sleepy)
-    jaune "Zzzzz. Mais Piou, tu vois bien que je dors ! Zzzzz."
-
-# game/chap/chap5.rpy:12
-translate english chap5_edd03679:
-
-    # voice renpy.random.choice(audio.Piou_Speak)
-    # piou "Quel vieux celui-là alors... Je vais encore devoir traire les vaches tout seul."
-    voice renpy.random.choice(audio.Piou_Speak)
-    piou "Quel vieux celui-là alors... Je vais encore devoir traire les vaches tout seul."
-
-# game/chap/chap5.rpy:16
-translate english chap5_18e26636:
-
-    # voice renpy.random.choice(audio.Blanche_Amazement)
-    # blanche "Oh ! Une grange !" with vpunch
-    voice renpy.random.choice(audio.Blanche_Amazement)
-    blanche "Oh ! Une grange !" with vpunch
-
-# game/chap/chap5.rpy:21
-translate english chap5_b0cf4c86:
-
-    # voice renpy.random.choice(audio.Blanche_Exclamation)
-    # blanche "Un petit poussin !!!!" with vpunch
-    voice renpy.random.choice(audio.Blanche_Exclamation)
-    blanche "Un petit poussin !!!!" with vpunch
-
-# game/chap/chap5.rpy:26
-translate english chap5_e36522f4:
-
-    # voice renpy.random.choice(audio.Piou_Speak)
-    # piou "Eh oh, t'es qui toi d'abord ?" with vpunch
-    voice renpy.random.choice(audio.Piou_Speak)
-    piou "Eh oh, t'es qui toi d'abord ?" with vpunch
-
-# game/chap/chap5.rpy:31
-translate english chap5_747bbdba:
-
-    # voice renpy.random.choice(audio.Blanche_Amazement)
-    # blanche "Un poussin qui parle et qui fait du fromage ?! Après les chats qui parlent, les poussins fromagers ?"
-    voice renpy.random.choice(audio.Blanche_Amazement)
-    blanche "Un poussin qui parle et qui fait du fromage ?! Après les chats qui parlent, les poussins fromagers ?"
-
-# game/chap/chap5.rpy:36
-translate english chap5_e9e7f09d:
-
-    # voice renpy.random.choice(audio.Piou_Speak)
-    # piou "Bien sûr, nous sommes fromagers de père en fils depuis 1848. Je suis accompagné par mon fidèle lieutenant Jaune !"
-    voice renpy.random.choice(audio.Piou_Speak)
-    piou "Bien sûr, nous sommes fromagers de père en fils depuis 1848. Je suis accompagné par mon fidèle lieutenant Jaune !"
-
-# game/chap/chap5.rpy:44
-translate english chap5_717b17e7:
-
-    # voice renpy.random.choice(audio.Blanche_Gasp)
-    # blanche "Oh non, non du tout ! Je viens ici pour mon papa."
-    voice renpy.random.choice(audio.Blanche_Gasp)
-    blanche "Oh non, non du tout ! Je viens ici pour mon papa."
-
-# game/chap/chap5.rpy:55
-translate english chap5_2d312ac9:
-
-    # voice renpy.random.choice(audio.Blanche_Angry)
-    # blanche "Lui ramener la boule de Jaune, tu crois vraiment que je viendrais pour un bête fromage ?"
-    voice renpy.random.choice(audio.Blanche_Angry)
-    blanche "Lui ramener la boule de Jaune, tu crois vraiment que je viendrais pour un bête fromage ?"
-
-# game/chap/chap5.rpy:58
-translate english chap5_acf71444:
-
-    # voice renpy.random.choice(audio.Piou_Angry)
-    # piou "Non, mais tu te prends pour qui ?! C'est toi l'étranger et tu te permets de me critiquer sur mes propres terres ?! Tu vas le regretter !"
-    voice renpy.random.choice(audio.Piou_Angry)
-    piou "Non, mais tu te prends pour qui ?! C'est toi l'étranger et tu te permets de me critiquer sur mes propres terres ?! Tu vas le regretter !"
-
-# game/chap/chap5.rpy:61
-translate english chap5_b1fe3775:
-
-    # voice renpy.random.choice(audio.Blanche_Gasp)
-    # blanche "Je dois vraiment récupérer cette boule pour mon papa ! C'est important !"
-    voice renpy.random.choice(audio.Blanche_Gasp)
-    blanche "Je dois vraiment récupérer cette boule pour mon papa ! C'est important !"
-
-# game/chap/chap5.rpy:79
-translate english chap5_cc03c395:
-
-    # voice renpy.random.choice(audio.Piou_Speak)
-    # piou "Ce n'est pas de cette façon que tu auras cette boule !"
-    voice renpy.random.choice(audio.Piou_Speak)
-    piou "Ce n'est pas de cette façon que tu auras cette boule !"
-
-# game/chap/chap5.rpy:85
-translate english chap5_858a22c1:
-
-    # voice renpy.random.choice(audio.Blanche_Yes)
-    # blanche "Moi aussi, je n'ai pas connu ma mère !"
-    voice renpy.random.choice(audio.Blanche_Yes)
-    blanche "Moi aussi, je n'ai pas connu ma mère !"
-
-# game/chap/chap5.rpy:92
-translate english chap5_661dc0fa:
-
-    # voice renpy.random.choice(audio.Blanche_Sniffing)
-    # blanche "Même si parfois, il me dit qu'il rêverait de revoir Maman et qu'ils s'occupent de moi tous les deux comme une vraie famille."
-    voice renpy.random.choice(audio.Blanche_Sniffing)
-    blanche "Même si parfois, il me dit qu'il rêverait de revoir Maman et qu'ils s'occupent de moi tous les deux comme une vraie famille."
-
-# game/chap/chap5.rpy:99
-translate english chap5_7cb6a6c2:
-
-    # voice renpy.random.choice(audio.Blanche_Laugh)
-    # blanche "Moi, j'aimerais juste faire une surprise à mon papa !"
-    voice renpy.random.choice(audio.Blanche_Laugh)
-    blanche "Moi, j'aimerais juste faire une surprise à mon papa !"
-
-# game/chap/chap5.rpy:115
-translate english chap5_f4d6443c:
-
-    # voice renpy.random.choice(audio.Piou_Speak)
-    # piou "Ici, c'est le coin cuisine."
-    voice renpy.random.choice(audio.Piou_Speak)
-    piou "Ici, c'est le coin cuisine."
-
-# game/chap/chap5.rpy:121
-translate english chap5_66f4d737:
-
-    # voice renpy.random.choice(audio.Jaune_Sleepy)
-    # jaune "AAAA... AAATTTTTTCHOUM ! AAAATTTTCHOUM ! J'ai faim… ZZZzzzz" with vpunch
-    voice renpy.random.choice(audio.Jaune_Sleepy)
-    jaune "AAAA... AAATTTTTTCHOUM ! AAAATTTTCHOUM ! J'ai faim… ZZZzzzz" with vpunch
-
-# game/chap/chap5.rpy:128
-translate english chap5_e7cfde93:
-
-    # voice renpy.random.choice(audio.Blanche_Gasp)
-    # blanche "Je..."
-    voice renpy.random.choice(audio.Blanche_Gasp)
-    blanche "Je..."
-
 # game/chap/chap5.rpy:137
 translate english cheese_market_fail_a06756d7:
 
     # voice renpy.random.choice(audio.Piou_Speak)
     # piou "Ca ne ressemble clairement pas à ceux que j'ai déjà en vitrine ! Recommence."
     voice renpy.random.choice(audio.Piou_Speak)
-    piou "Ca ne ressemble clairement pas à ceux que j'ai déjà en vitrine ! Recommence."
+    piou "It clearly doesn't look like the ones I already have on display! Do it again."
 
 # game/chap/chap5.rpy:143
 translate english chap5_2_eb98e7ee:
@@ -912,157 +818,5 @@ translate english chap5_2_eb98e7ee:
     # voice renpy.random.choice(audio.Piou_Speak)
     # piou "Génial, merci ! On va pouvoir manger un bon repas grâce à toi !"
     voice renpy.random.choice(audio.Piou_Speak)
-    piou "Génial, merci ! On va pouvoir manger un bon repas grâce à toi !"
-
-# game/chap/chap5.rpy:146
-translate english chap5_2_9ab1dbd8:
-
-    # voice renpy.random.choice(audio.Blanche_Yes)
-    # blanche "Avec plaisir. À propos de la boule..."
-    voice renpy.random.choice(audio.Blanche_Yes)
-    blanche "Avec plaisir. À propos de la boule..."
-
-# game/chap/chap5.rpy:159
-translate english chap5_2_2956ab27:
-
-    # voice renpy.random.choice(audio.Blanche_Sniffing)
-    # blanche "Mais, Piou…"
-    voice renpy.random.choice(audio.Blanche_Sniffing)
-    blanche "Mais, Piou…"
-
-# game/chap/chap5.rpy:164
-translate english chap5_2_ccb70567:
-
-    # voice renpy.random.choice(audio.Blanche_Sniffing)
-    # blanche "Mais... Mon papa est très malade. Il ne va pas bien du tout..."
-    voice renpy.random.choice(audio.Blanche_Sniffing)
-    blanche "Mais... Mon papa est très malade. Il ne va pas bien du tout..."
-
-# game/chap/chap5.rpy:175
-translate english chap5_2_5608cdd5:
-
-    # voice renpy.random.choice(audio.Piou_Speak)
-    # piou "J'ai bien peur que ça soit impossible pour le moment."
-    voice renpy.random.choice(audio.Piou_Speak)
-    piou "J'ai bien peur que ça soit impossible pour le moment."
-
-# game/chap/chap5.rpy:180
-translate english chap5_2_e173df70:
-
-    # voice renpy.random.choice(audio.Blanche_Question)
-    # blanche "On ne peut vraiment pas le réveiller maintenant ?"
-    voice renpy.random.choice(audio.Blanche_Question)
-    blanche "On ne peut vraiment pas le réveiller maintenant ?"
-
-# game/chap/chap5.rpy:185
-translate english chap5_2_ccb70567_1:
-
-    # voice renpy.random.choice(audio.Blanche_Sniffing)
-    # blanche "Mais... Mon papa est très malade. Il ne va pas bien du tout..."
-    voice renpy.random.choice(audio.Blanche_Sniffing)
-    blanche "Mais... Mon papa est très malade. Il ne va pas bien du tout..."
-
-# game/chap/chap5.rpy:201
-translate english chap5_2_11211ba8:
-
-    # voice renpy.random.choice(audio.Blanche_Question)
-    # blanche "Comment il va maintenant ?"
-    voice renpy.random.choice(audio.Blanche_Question)
-    blanche "Comment il va maintenant ?"
-
-# game/chap/chap5.rpy:207
-translate english chap5_2_bdea87bd:
-
-    # voice renpy.random.choice(audio.Piou_Cry)
-    # "Piou se met à pleurer."
-    voice renpy.random.choice(audio.Piou_Cry)
-    "Piou se met à pleurer."
-
-# game/chap/chap5.rpy:212
-translate english chap5_2_0efef5fc:
-
-    # voice renpy.random.choice(audio.Piou_Cry)
-    # piou "Mais que puis-je y faire ?"
-    voice renpy.random.choice(audio.Piou_Cry)
-    piou "Mais que puis-je y faire ?"
-
-# game/chap/chap5.rpy:226
-translate english chap5_2_71f07227:
-
-    # voice renpy.random.choice(audio.Blanche_Yes)
-    # blanche "Merci Piou !"
-    voice renpy.random.choice(audio.Blanche_Yes)
-    blanche "Merci Piou !"
-
-# game/chap/chap5.rpy:239
-translate english chap5_2_631e6c58:
-
-    # voice renpy.random.choice(audio.Grosso_Sigh)
-    # grosso "Mais quel pleurnichard celui-là !" with vpunch
-    voice renpy.random.choice(audio.Grosso_Sigh)
-    grosso "Mais quel pleurnichard celui-là !" with vpunch
-
-# game/chap/chap5.rpy:242
-translate english chap5_2_187f510e:
-
-    # voice renpy.random.choice(audio.Maigrichon_Exclamation)
-    # maigrichon "Et justifie ça bien, sinon tu auras affaire à Madame Arc-en-Ciel !"
-    voice renpy.random.choice(audio.Maigrichon_Exclamation)
-    maigrichon "Et justifie ça bien, sinon tu auras affaire à Madame Arc-en-Ciel !"
-
-# game/chap/chap5.rpy:244
-translate english chap5_2_809dcfd0:
-
-    # voice renpy.random.choice(audio.Piou_Cry)
-    # piou "Il… Il… Il veut faire plaisir à son père une dernière fois... Sniff... Sniff..."
-    voice renpy.random.choice(audio.Piou_Cry)
-    piou "Il… Il… Il veut faire plaisir à son père une dernière fois... Sniff... Sniff..."
-
-# game/chap/chap5.rpy:246
-translate english chap5_2_78a86eb1:
-
-    # voice renpy.random.choice(audio.Grosso_Sigh)
-    # grosso "Bon, on tirera rien de lui."
-    voice renpy.random.choice(audio.Grosso_Sigh)
-    grosso "Bon, on tirera rien de lui."
-
-# game/chap/chap5.rpy:251
-translate english chap5_2_46a0c140:
-
-    # voice renpy.random.choice(audio.Jaune_Sleepy)
-    # jaune "..."
-    voice renpy.random.choice(audio.Jaune_Sleepy)
-    jaune "..."
-
-# game/chap/chap5.rpy:254
-translate english chap5_2_46a0c140_1:
-
-    # voice renpy.random.choice(audio.Jaune_Sleepy)
-    # jaune "..."
-    voice renpy.random.choice(audio.Jaune_Sleepy)
-    jaune "..."
-
-# game/chap/chap5.rpy:256
-translate english chap5_2_e23cad5a:
-
-    # voice renpy.random.choice(audio.Jaune_Angry)
-    # jaune "ROAR !" with vpunch
-    voice renpy.random.choice(audio.Jaune_Angry)
-    jaune "ROAR !" with vpunch
-
-# game/chap/chap5.rpy:258
-translate english chap5_2_dfb04d42:
-
-    # voice renpy.random.choice(audio.Maigrichon_Exclamation)
-    # maigrichon "Gloups... Pardon ! Pardon ! Pardon ! Pardon cher Gardien de Couleur !"
-    voice renpy.random.choice(audio.Maigrichon_Exclamation)
-    maigrichon "Gloups... Pardon ! Pardon ! Pardon ! Pardon cher Gardien de Couleur !"
-
-# game/chap/chap5.rpy:260
-translate english chap5_2_2fd3e0d2:
-
-    # voice renpy.random.choice(audio.Jaune_Sleepy)
-    # jaune "Zzzzz"
-    voice renpy.random.choice(audio.Jaune_Sleepy)
-    jaune "Zzzzz"
+    piou "Great, thanks! We'll be able to eat a good meal thanks to you!"
 
