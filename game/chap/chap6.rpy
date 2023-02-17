@@ -185,6 +185,8 @@ label chap6_2:
     show blanche neutral open at left
     blanche "Je vais repartir pour récupérer la dernière boule de couleur et retrouver mon papa !"
     show blanche neutral close at left
+    $ achievement.grant("achievement_chap6_minigame_done")
+    $ achievement.sync()
     orange "Avant ça, tiens. Je te donne une brique de jus d'orange."
     orange "Tu pourras la donner à ton père, je suis sûr que ça lui remontera le moral."
     show blanche smile open at left

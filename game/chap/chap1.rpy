@@ -148,6 +148,8 @@ label onclick_mulberry_background:
     call screen  chap1_mulberry_search("chap1_2", "onclick_mulberry_background")
 
 label chap1_2:
+    $ achievement.grant("achievement_chap1_minigame_done")
+    $ achievement.sync()
     scene mulberry_search
     show violet at right
     show blanche smile close at left

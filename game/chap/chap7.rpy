@@ -75,6 +75,8 @@ label simon_game_defeat:
     call screen chap7_simon_says('chap7_2', 'simon_game_defeat')
 
 label chap7_2:
+    $ achievement.grant("achievement_chap7_minigame_done")
+    $ achievement.sync()
     show rouge at right
     show blanche neutral close at left
     with dissolve

@@ -81,6 +81,9 @@ label lake_phishing_boot:
     $ lake_phishing_fished_boot = True
     cyan "Oh merveilleux ! Je ne voulais pas me mouiller pour aller la récupérer."
     cyan "Picaru l'avait soutirée à Maigrichon pendant qu'il marchait un peu trop près du bassin pendant une ronde."
+    if tutorial_boot_found:
+        $ achievement.grant("achievement_walk")
+        $ achievement.sync()
     call screen chap3_lake_phishing
 
 label lake_fishing_axolotl:
@@ -91,6 +94,8 @@ label lake_fishing_axolotl:
     cyan "Tu m'as manqué petit farceur, reste me tenir compagnie veux-tu ?"
     voice renpy.random.choice(audio.Axo_Full_Happy)
     axolotl "Picaruuuu."
+    $ achievement.grant("achievement_new_friend")
+    $ achievement.sync()
     call screen chap3_lake_phishing
 
 label lake_fishing_axolotl_revealed:

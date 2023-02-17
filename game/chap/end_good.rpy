@@ -1,5 +1,7 @@
 label end_good:
     call titlepage("", _("Fin heureuse"))
+    $ achievement.grant("achievement_ending_good")
+    $ achievement.sync()
     play music music.Theme_Good_End fadein 1.0 volume 0.5
     scene monochrome
     show blanche smile open at left
@@ -256,4 +258,7 @@ label end_good:
     python:
         persistent.reached_end_good = True
         persistent.last_reached_end = 'good'
+        if persistent.reached_end_good and persistent.reached_end_neutral and persistent.reached_end_neutral:
+            achievement.grant("achievement_ending_all")
+            achievement.sync()
         renpy.save_persistent()

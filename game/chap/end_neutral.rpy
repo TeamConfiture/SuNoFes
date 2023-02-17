@@ -1,5 +1,7 @@
 label end_neutral:
     call titlepage("", _("Fin neutre"))
+    $ achievement.grant("achievement_ending_neutral")
+    $ achievement.sync()
     play music music.Theme_Neutral_End fadein 1.0 volume 0.5
     scene room
     show noir bandeau hurt open at right
@@ -129,4 +131,7 @@ label end_neutral:
     python:
         persistent.reached_end_neutral = True
         persistent.last_reached_end = 'neutral'
+        if persistent.reached_end_good and persistent.reached_end_neutral and persistent.reached_end_neutral:
+            achievement.grant("achievement_ending_all")
+            achievement.sync()
         renpy.save_persistent()

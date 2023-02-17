@@ -360,7 +360,7 @@ screen main_menu():
     ## Ceci assure que tout autre screen de menu est remplacé.
     tag menu
     add gui.main_menu_background
-    if getattr(persistent, 'last_reached_end', None) in ['bad', 'neutral']:
+    if persistent.last_reached_end in ['bad', 'neutral']:
         add 'spirited_main_menu_black'
     else:
         add 'spirited_main_menu_white'

@@ -147,6 +147,8 @@ label chap3:
     call screen chap3_lake_phishing
 
 label chap3_2:
+    $ achievement.grant("achievement_chap3_minigame_done")
+    $ achievement.sync()
     scene forest
     show blanche smile open at farLeft
     show cyan2 at farRight
