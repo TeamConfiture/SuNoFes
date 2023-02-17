@@ -2,8 +2,7 @@
 init python:
     import math
 # lake transform - Fish 1
-transform lake_wavy_patrol(child, xrange, yrange, image_width, speed_factor = 1):
-    child
+transform lake_wavy_patrol(xrange, yrange, image_width, speed_factor = 1):
     parallel: # up-down motion
         yoffset 0
         yzoom 1
@@ -30,8 +29,7 @@ transform lake_wavy_patrol(child, xrange, yrange, image_width, speed_factor = 1)
             xoffset 0
         repeat
 # lake transform - Fish 2
-transform lake_love_patrol(child, heart_height, heart_width, speed_factor = 1, initial_delay = 0):
-    child
+transform lake_love_patrol(heart_height, heart_width, speed_factor = 1, initial_delay = 0):
     xzoom -1
     rotate -90
     xoffset 0
@@ -70,8 +68,7 @@ transform lake_love_patrol(child, heart_height, heart_width, speed_factor = 1, i
         yzoom -1
         repeat
 # lake transform - Rainbow Fish
-transform lake_rainbow_patrol(child, speed_factor = 1):
-    child
+transform lake_rainbow_patrol(speed_factor = 1):
     xoffset 0
     yoffset 0
     parallel:

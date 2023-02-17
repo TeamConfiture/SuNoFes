@@ -9,31 +9,24 @@ screen chap3_lake_phishing():
         speed_range = (0, 100),
         spawn_box = (100, 100, -100, -100),
         )
-    add PoorMansAnimatedImageButton(
-        idle_image = "lake_fish1",
-        action = [Play('sound', renpy.random.choice(sound.Fishing)), Jump('lake_phishing_fish1')],
-        focus_mask = True,
-        xpos = 0.3,
-        ypos = 0.5,
-        )
-    for f in ["21", "22", "23"]:
-        add PoorMansAnimatedImageButton(
-            idle_image = "lake_fish"+f,
-            action = [Play('sound', renpy.random.choice(sound.Fishing)), Jump('lake_phishing_fish2')],
-            focus_mask = True,
-            xpos = 0.35,
-            ypos = 0.2,
-            )
+    imagebutton at lake_wavy_patrol(500, 60, 212):
+        pos (0.3, 0.5)
+        idle "lake_fish1"
+        action [Play('sound', renpy.random.choice(sound.Fishing)), Jump('lake_phishing_fish1')]
+        focus_mask True
+    for f in [("21", (360, 500, 2)), ("22", (300, 400, 2, 0.5)), ("23", (450, 600, 2, 1.2))]:
+        imagebutton at lake_love_patrol(*f[1]):
+            pos (0.35, 0.2)
+            idle "lake_fish"+f[0]
+            action [Play('sound', renpy.random.choice(sound.Fishing)), Jump('lake_phishing_fish2')]
+            focus_mask True
     if lake_phishing_fished_fish1 or lake_phishing_fished_fish2:
         # The king of the lake waits to see whether there is danger
         # before showing up
-        add PoorMansAnimatedImageButton(
-            idle_image = "lake_rainbow_fish",
-            action = [Play('sound', renpy.random.choice(sound.Fishing)), Jump('chap3_2')],
-            focus_mask = True,
-            xpos = 0.,
-            ypos = 0.,
-            )
+        imagebutton at lake_rainbow_patrol():
+            idle "lake_rainbow_fish"
+            action [Play('sound', renpy.random.choice(sound.Fishing)), Jump('chap3_2')]
+            focus_mask True
     if not lake_phishing_fished_boot:
         imagebutton:
             idle "lake_boot"
