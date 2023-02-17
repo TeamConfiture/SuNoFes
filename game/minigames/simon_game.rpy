@@ -104,8 +104,13 @@ init python:
             else:
                 generated_len = generated_len or renpy.random.randint(0, 2*len(buttons))
                 self.ruleset = []
+                last_value = len(buttons)
                 for i in range(generated_len):
-                    self.ruleset.append(renpy.random.randint(0, len(buttons)-1))
+                    current_value = renpy.random.randint(0, len(buttons)-2)
+                    if current_value >= last_value:
+                        current_value += 1
+                    self.ruleset.append(current_value)
+                    last_value = current_value
 
             self.first_simon_len = min(first_simon_len, len(self.ruleset))
             self.simon_len_step = simon_len_step
