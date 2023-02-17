@@ -110,3 +110,10 @@ translate french strings:
     old "Cheat - Voyage rapide"
     new "Cheat - Voyage rapide"
 
+    # game/chap/chap0.rpy:16
+    old "Lancer le tutoriel"
+    new "Lancer le tutoriel"
+
+    # game/chap/chap0.rpy:16
+    old "Commencer la partie"
+    new "Commencer la partie"

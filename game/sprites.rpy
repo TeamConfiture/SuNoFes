@@ -84,6 +84,44 @@ image crystal_yellow = "images/boules/Boules_5.png"
 image crystal_orange = "images/boules/Boules_6.png"
 image crystal_red = "images/boules/Boules_7.png"
 
+# Tutorial
+
+transform tutorial_pointer_effect(yoffset_range=[0, 0], alpha_range=[0, 1]):
+    parallel:
+        ease 1 yoffset yoffset_range[0]
+        ease 1 yoffset yoffset_range[1]
+        repeat
+    parallel:
+        ease 1.3 alpha alpha_range[0]
+        ease 1.3 alpha alpha_range[1]
+        repeat
+
+layeredimage tutorial_arrow:
+    always:
+        "images/items/arrows/Fl_bottom_idle.png"
+        zoom 0.5
+        anchor (0.5, 1.)
+        yoffset -30
+    at tutorial_pointer_effect([30, 0], [0.95, 0.7])
+
+image tutorial_button_idle:
+    "images/items/nighttable_item.png"
+    xzoom -1
+    matrixcolor BrightnessMatrix(0)
+image tutorial_button_hover:
+    "images/items/nighttable_item.png"
+    xzoom -1
+    matrixcolor BrightnessMatrix(0.2)
+
+layeredimage tutorial_boot:
+    always:
+        "lake_boot"
+    at Transform(zoom = 0.7)
+
+image tutorial_basket:
+    "cheese_market_basket"
+    zoom 0.7
+
 # Chap 2 - Sky images
 
 image chap2_spirited = Spirited(

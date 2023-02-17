@@ -110,3 +110,11 @@ translate english strings:
     old "Chapitre {}"
     new "Chapter {}"
 
+    # game/chap/chap0.rpy:16
+    old "Lancer le tutoriel"
+    new "Start tutorial"
+
+    # game/chap/chap0.rpy:16
+    old "Commencer la partie"
+    new "Start game"
+
