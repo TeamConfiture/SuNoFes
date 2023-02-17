@@ -119,7 +119,7 @@ init python:
             ]
         return cheese_market_info
 
-    def cheese_market_build_request_list(cheese_index, request_count = 10, guaranteed_rainbows = 2):
+    def cheese_market_build_request_list(cheese_index, request_count = 8, guaranteed_rainbows = 2):
         request_count = min(request_count, sum([cheese_index[i] for i in cheese_index]))
         generated_list = []
         collected_dict = cheese_index.copy()
