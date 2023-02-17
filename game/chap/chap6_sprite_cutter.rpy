@@ -10,6 +10,7 @@ screen chap6_sprite_cutter(next_label, fail_label):
         min_opaque_pixels = 80,
         completion_action = SetScreenVariable('succeeded', 1),
         missed_action = Jump(fail_label),
-        cutting_action = Play('sound', renpy.random.choice(sound.Cut_Fruit))
+        cutting_action = Play('sound', renpy.random.choice(sound.Cut_Fruit)),
+        time_factor = image_cutter_time_factor,
         )
     add game

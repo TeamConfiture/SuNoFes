@@ -434,7 +434,7 @@ translate french sprite_cutter_failed_e4fa367f:
     # voice renpy.random.choice(audio.Orange_Speak)
     # orange "Mais, non ! Je t'assure ! Tu vas y arriver !"
     voice renpy.random.choice(audio.Orange_Speak)
-    orange "Mais, non ! Je t'assure ! Tu vas y arriver !"
+    orange "Mais, non ! Je t'assure ! Tu vas y arriver ! Réessaie plus lentement."
 
 # game/chap/chap6.rpy:163
 translate french chap6_2_e046714e:

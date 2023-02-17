@@ -11,6 +11,8 @@ define lake_phishing_fished_boot = False
 define lake_phishing_fished_fish1 = False
 define lake_phishing_fished_fish2 = False
 
+default image_cutter_time_factor = 1.
+
 transform crystal_position:
     xalign 0.5
     yalign 0.5

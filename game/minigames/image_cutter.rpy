@@ -343,7 +343,7 @@ init python:
         pattern_start = 0
         finalized = False
 
-        def __init__(self, images, cutting_action = None, completion_action = None, missed_action = None, min_opaque_pixels = 40, cut_frequency = 0.1, patterns = None, **kwargs):
+        def __init__(self, images, cutting_action = None, completion_action = None, missed_action = None, min_opaque_pixels = 40, cut_frequency = 0.1, patterns = None, time_factor = 1., **kwargs):
             super(ImageCutter, self).__init__(**kwargs)
             self.image_info = []
             for v in images:
@@ -355,11 +355,13 @@ init python:
             self.completion_action = completion_action
             self.missed_cutable_actions = missed_action
             self.min_opaque_pixels = min_opaque_pixels
+            self.time_factor = time_factor
             self.cut_frequency = cut_frequency
             self.cursor_pos = renpy.get_mouse_pos()
             self.patterns = patterns or ([ImageCutterPattern(kind = 'start_bump')] + [ImageCutterPattern(kind = renpy.random.choice(ImageCutterPattern.patterns)) for i in range(8)])
 
         def render(self, width, height, st, at):
+            st *= self.time_factor
             self.update_cycle(st)
             render = renpy.Render(width, height)
             for c in self.expired_cutables:

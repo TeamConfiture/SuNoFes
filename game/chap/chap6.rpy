@@ -151,6 +151,7 @@ label sprite_cutter_failed:
     show blanche cry close at left
     voice renpy.random.choice(audio.Orange_Speak)
     orange "Mais, non ! Je t'assure ! Tu vas y arriver !"
+    $ image_cutter_time_factor *= 0.8
     hide blanche neutral close at left
     hide orange at right
     with dissolve
