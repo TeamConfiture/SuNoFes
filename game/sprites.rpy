@@ -99,16 +99,11 @@ image chap2_spirited = Spirited(
 image lake_mousehole = "images/items/hole_alpha.png"
 image lake_axolotl = "images/fish/Axolotl.png"
 image lake_boot = "images/fish/Boot.png"
-image lake_fish1:
-    contains lake_wavy_patrol("images/fish/Fish1.png", 500, 60, 212)
-image lake_fish21:
-    contains lake_love_patrol("images/fish/Fish2_1.png", 360, 500, 2)
-image lake_fish22:
-    contains lake_love_patrol("images/fish/Fish2_2.png", 300, 400, 2, 0.5)
-image lake_fish23:
-    contains lake_love_patrol("images/fish/Fish2_3.png", 450, 600, 2, 1.2)
-image lake_rainbow_fish:
-    contains lake_rainbow_patrol("images/fish/RainbowFish.png")
+image lake_fish1 = "images/fish/Fish1.png"
+image lake_fish21 = "images/fish/Fish2_1.png"
+image lake_fish22 = "images/fish/Fish2_2.png"
+image lake_fish23 = "images/fish/Fish2_3.png"
+image lake_rainbow_fish = "images/fish/RainbowFish.png"
 image fish_shadow1 = "images/fish/Fish_shadow1.png"
 
 ## Cheese cupboard
