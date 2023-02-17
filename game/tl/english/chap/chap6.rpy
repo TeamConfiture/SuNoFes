@@ -434,7 +434,7 @@ translate english sprite_cutter_failed_e4fa367f:
     # voice renpy.random.choice(audio.Orange_Speak)
     # orange "Mais, non ! Je t'assure ! Tu vas y arriver !"
     voice renpy.random.choice(audio.Orange_Speak)
-    orange "No, no! I promess you! You're about to succeed!"
+    orange "No, no! I promess you! You're about to succeed! Retry a bit more slowly."
 
 # game/chap/chap6.rpy:163
 translate english chap6_2_e046714e:
