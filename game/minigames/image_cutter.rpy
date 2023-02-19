@@ -2,7 +2,7 @@ init python:
     # This is bugged, good luck everyone
     import math
 
-    renpy.register_shader("half_slice",
+    renpy.register_shader("image_cutter_half_slice",
         variables = """
             attribute vec4 a_position;
             uniform vec2 u_line_point;
@@ -18,68 +18,11 @@ init python:
     )
 
 transform image_cutter_half(point = (0, 0), angle = 0):
-    shader "half_slice"
+    shader "image_cutter_half_slice"
     u_line_point point
     u_line_angle angle
 
 init python:
-    def get_rope_from_line_and_square(start, end, corner1, corner2):
-        """
-        Returns the starting and ending point where a line crosses a square as a tuple
-        of tuples (or None if there is no match).
-
-        The first tuple is guaranteed to be the left-most point of the rope.
-
-        # Parameters
-
-        `start`
-            A point of the line as a tuple
-
-        `end`
-            A different point of the line as a tuple
-
-        `corner1`
-            Tuple of a corner of the square
-
-        `corner2`
-            Tuple of the opposite corner of the square
-        """
-        topleft = (min(corner1[0], corner2[0]), max(corner1[1], corner2[1]))
-        bottomright = (max(corner1[0], corner2[0]), min(corner1[1], corner2[1]))
-        if start[0] == end[0]:
-            # Horizontal line
-            if topleft[0] < start[0] < bottomright[0]:
-                return (start[0], bottomright[1]), (start[0], topleft[1])
-        elif start[1] == end[1]:
-            # Vertical line
-            if topleft[1] < start[1] < bottomright[1]:
-                return (topleft[0], start[1]), (bottomright[0], start[1])
-        else:
-            # no special case, we can use regular processing
-            # Get factors in f(x) = ax + b (line's equation)
-            a = (end[1] - start[1]) / (end[0] - start[0])
-            b = start[1] - start[0] * a
-            entrypoint = None
-            f_left = a * topleft[0] + b
-            if bottomright[1] <= f_left <= topleft[1]:
-                entrypoint = (topleft[0], f_left)
-            else:
-                f_target = bottomright[1] if a > 0 else topleft[1]
-                x_target = (f_target - b) / a
-                if topleft[0] <= x_target <= bottomright[0]:
-                    entrypoint = (x_target, f_target)
-            if entrypoint:
-                f_right = a * bottomright[0] + b
-                if bottomright[1] <= f_right <= topleft[1]:
-                    exitpoint = (bottomright[0], f_right)
-                else:
-                    # exitpoint is guaranteed to exist as there was an entrypoint
-                    f_target = topleft[1] if a > 0 else bottomright[1]
-                    x_target = (f_target - b) / a
-                    exitpoint = (x_target, f_target)
-                return entrypoint, exitpoint
-        return None
-
     class ImageCutterPattern:
         """
         Helper class used to generate different patterns when spawning the images
@@ -163,8 +106,6 @@ init python:
         """
         Helper class used by ImageCutter to handle individual sprites
         """
-        processed_image = None
-        last_render = None
         def __init__(self,
                 image, speed = (100, 50), rotation = 0, rotation_speed = 0.3, position = (-60, 500),
                 acceleration = (0, 150), size = (0, 0), fresh = 0, timeout = 0,
@@ -180,6 +121,7 @@ init python:
             self.timeout = timeout
             self.fade_out_base_st = None
             self.fade_out_time = 1
+            self.processed_image = None
 
         def split(self, line_start, line_end):
             cursor_angle = math.atan(
@@ -221,9 +163,9 @@ init python:
             )
 
         def render(self, width, height, st, at):
-            self.last_render = self.processed_image.render(width, height, st, at)
-            self.size = self.last_render.get_size()
-            return self.last_render
+            render = self.processed_image.render(width, height, st, at)
+            self.size = render.get_size()
+            return render
 
     class ImageCutter(renpy.Displayable):
         """
@@ -272,10 +214,6 @@ init python:
         add game
         ```
         """
-        is_cutting = False
-        st = 0
-        cutables = []
-        expired_cutables = []
         last_create = 0
         last_cut = 0
         current_pattern_index = -1
@@ -285,6 +223,11 @@ init python:
 
         def __init__(self, images, cutting_action = None, completion_action = None, missed_action = None, min_opaque_pixels = 40, cut_frequency = 0.1, patterns = None, time_factor = 1., **kwargs):
             super(ImageCutter, self).__init__(**kwargs)
+            self.is_cutting = False
+            self.cutables = []
+            self.expired_cutables = []
+            self.st = 0
+
             self.image_info = images
             self.cutting_actions = cutting_action
             self.completion_action = completion_action
@@ -293,6 +236,7 @@ init python:
             self.time_factor = time_factor
             self.cut_frequency = cut_frequency
             self.cursor_pos = renpy.get_mouse_pos()
+
             if patterns:
                 self.patterns = patterns
             else:
@@ -386,53 +330,27 @@ init python:
                 The next position of the mouse cursor
             """
             relevant_point = None
-            range_len = 10
+            first_relevant_point = None
+            range_len = 30
+            asset_render = asset.processed_image.render(0, 0, 0, 0)
+            cursor_vec = (end[0] - start[0], end[1] - start[1]) # vector end -> start
+
             for i in range(range_len):
-                p = (end[0] + (start[0] - end[0]) * i / range_len, end[1] + (start[1] - end[1]) * i / range_len)
-                if asset.last_render.is_pixel_opaque(p[0] - asset.pos[0], p[1] - asset.pos[1]):
+                p = (end[0] - cursor_vec[0] * i / range_len, end[1] - cursor_vec[1] * i / range_len)
+                if asset_render.is_pixel_opaque(p[0] - asset.pos[0], p[1] - asset.pos[1]):
                     relevant_point = p
-                    break
-            if not relevant_point:
-                return False
-            # Ensure that we cut through a significant-enough section that the split would be visible
-            # we do this by ensuring there is enough opaque pixels along the section
-            a = (end[1] - start[1]) / (end[0] - start[0]) if end[0] != start[0] else 999999
-            accumulator = 0
-            # Prepare exploration
-            # The lambda is probably very expensive to run here, but w/e
-            if a == 999999:
-                x_or_y = relevant_point[1]
-                get_pos = lambda y: (relevant_point[0], y)
-            elif a == 0:
-                x_or_y = relevant_point[0]
-                get_pos = lambda x: (x, relevant_point[1])
-            elif abs(a) > 1:
-                x_or_y = relevant_point[1]
-                get_pos = lambda y: ((y - relevant_point[1]) / a + relevant_point[0], y)
-            else:
-                x_or_y = relevant_point[0]
-                get_pos = lambda x: (x, (x - relevant_point[0]) * a + relevant_point[1])
-            # Count opaque pixels
-            # TODO: Only check pixels "behind" the cursor movement to make it look like the cut occurs only
-            # after the mouse cursor has sufficiently penetrated the sprite
-            # TODO: use approximated sampling instead of raw validation, it will make the code easier to maintain and faster at a small precision cost
-            tmp_x_or_y = x_or_y
-            while accumulator < self.min_opaque_pixels:
-                tmp_x_or_y += 1
-                new_pos = get_pos(tmp_x_or_y)
-                if asset.last_render.is_pixel_opaque(new_pos[0]-asset.pos[0], new_pos[1]-asset.pos[1]):
-                    accumulator += 1
-                else:
-                    break
-            tmp_x_or_y = x_or_y
-            while accumulator < self.min_opaque_pixels:
-                tmp_x_or_y -= 1
-                new_pos = get_pos(tmp_x_or_y)
-                if asset.last_render.is_pixel_opaque(new_pos[0]-asset.pos[0], new_pos[1]-asset.pos[1]):
-                    accumulator += 1
-                else:
-                    break
-            return accumulator >= self.min_opaque_pixels
+                    if first_relevant_point is None:
+                        first_relevant_point = relevant_point
+            if relevant_point and relevant_point != first_relevant_point:
+                relevant_segment = (
+                    relevant_point[0] - first_relevant_point[0],
+                    relevant_point[1] - first_relevant_point[1],
+                    )
+                squared_relevant_segment_len = math.pow(relevant_segment[0], 2) + math.pow(relevant_segment[1], 2)
+                squared_opaque_dist = self.min_opaque_pixels * self.min_opaque_pixels
+                if squared_relevant_segment_len >= squared_opaque_dist:
+                    return True
+            return False
 
         def process_collisions(self, start, end):
             """
@@ -443,22 +361,21 @@ init python:
             if (start[0] == end[0] and start[1] == end[1]):
                 return
             deletion_list = []
-            addition_list = []
-            for c in self.cutables:
+            for i in range(len(self.cutables)):
+                c = self.cutables[i]
                 # If cursor in image area
-                if (c.timeout < self.st and c.last_render):
-                    rope = get_rope_from_line_and_square(start, end, c.pos, (c.pos[0] + c.size[0], c.pos[1] + c.size[1]))
-                    if rope and self.is_colliding(c, start, end):
+                if (c.timeout < self.st and c.size[0]):
+                    if self.is_colliding(c, start, end):
                         # Split if enough opaque pixel on the line
                         c.timeout = self.st + 0.5
-                        addition_list += c.split((start[0] - c.pos[0], start[1] - c.pos[1]), (end[0] - c.pos[0], end[1] - c.pos[1]))
+                        self.expired_cutables += c.split(
+                            (start[0] - c.pos[0], start[1] - c.pos[1]),
+                            (end[0] - c.pos[0], end[1] - c.pos[1])
+                            )
                         renpy.run(self.cutting_actions)
-                        deletion_list.append(c) # We're going to split this, it's ok it'll survive... somewhat
-            for c in deletion_list:
-                # TODO: remove by index with pop instead of by value
-                self.cutables.remove(c)
-            for c in addition_list:
-                self.expired_cutables.append(c)
+                        deletion_list.append(i)
+            for c in reversed(deletion_list):
+                self.cutables.pop(c)
 
         def event(self, ev, x, y, at):
             if ev.type == 1025: # mousedown
