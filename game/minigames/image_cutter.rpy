@@ -2,6 +2,27 @@ init python:
     # This is bugged, good luck everyone
     import math
 
+    renpy.register_shader("half_slice",
+        variables = """
+            attribute vec4 a_position;
+            uniform vec2 u_line_point;
+            uniform float u_line_angle;
+            varying vec2 st;
+        """, vertex_300 = """
+            st = a_position.xy - u_line_point.xy;
+        """, fragment_300 = """
+            float rotated_xpos = st.x * sin(u_line_angle) + st.y * cos(u_line_angle);
+            float v_alpha_factor = smoothstep(-1, 1, rotated_xpos);
+            gl_FragColor *= v_alpha_factor;
+        """
+    )
+
+transform image_cutter_half(point = (0, 0), angle = 0):
+    shader "half_slice"
+    u_line_point point
+    u_line_angle angle
+
+init python:
     def get_rope_from_line_and_square(start, end, corner1, corner2):
         """
         Returns the starting and ending point where a line crosses a square as a tuple
@@ -72,26 +93,23 @@ init python:
             return self.duration
         def get_schedule(self, image_reference):
             if self.kind == 'start_bump':
-                i = [renpy.random.randint(0, len(image_reference) - 1) for i in range(3)]
+                i = [renpy.random.randrange(len(image_reference)) for _ in range(3)]
                 return {
                     0.1 * self.duration: [ImageCutterImage(
-                        image = image_reference[i[0]]['list'][0],
-                        base_images = image_reference[i[0]]['list'],
+                        image = image_reference[i[0]],
                         position = (config.screen_width / 2, config.screen_height),
                         speed = (0, -500),
                         rotation_speed = renpy.random.uniform(0, math.pi / 2),
                         rotation = renpy.random.uniform(0,2) * math.pi,
                     )],
                     0.75 * self.duration:[ImageCutterImage(
-                        image = image_reference[i[0]]['list'][0],
-                        base_images = image_reference[i[0]]['list'],
+                        image = image_reference[i[0]],
                         position = (config.screen_width / 3, config.screen_height),
                         speed = (0, -500),
                         rotation_speed = renpy.random.uniform(0, math.pi / 2),
                         rotation = renpy.random.uniform(0,2) * math.pi,
                     ), ImageCutterImage(
-                        image = image_reference[i[0]]['list'][0],
-                        base_images = image_reference[i[0]]['list'],
+                        image = image_reference[i[0]],
                         position = (config.screen_width * 2 / 3, config.screen_height),
                         speed = (0, -500),
                         rotation_speed = renpy.random.uniform(0, math.pi / 2),
@@ -105,8 +123,7 @@ init python:
                     ) for i in range(math.floor(self.density * 3))]
                 return {
                     i * (self.duration) / (len(image_reference) + 3): [ImageCutterImage(
-                        image = image_reference[j[0]]['list'][0],
-                        base_images = image_reference[j[0]]['list'],
+                        image = image_reference[j[0]],
                         position = (0 if j[1] < 0 else config.screen_width, config.screen_height),
                         speed = (500 * -j[1], renpy.random.uniform(-500, -700)),
                         rotation_speed = renpy.random.uniform(0, math.pi / 2),
@@ -120,8 +137,7 @@ init python:
                     ) for i in range(math.floor(self.density * 3))]
                 return {
                     i * (self.duration) / (len(image_reference) + 3): [ImageCutterImage(
-                        image = image_reference[j[0]]['list'][0],
-                        base_images = image_reference[j[0]]['list'],
+                        image = image_reference[j[0]],
                         position = (0 if j[1] < 0 else config.screen_width, renpy.random.uniform(0, config.screen_height * 2 / 3)),
                         speed = (500 * -j[1], renpy.random.uniform(-100, -300)),
                         rotation_speed = renpy.random.uniform(0, math.pi / 2),
@@ -132,8 +148,7 @@ init python:
                 i = [renpy.random.randint(0, len(image_reference) - 1) for i in range(3)]
                 return {
                     0.1 * self.duration: [ImageCutterImage(
-                        image = image_reference[j]['list'][0],
-                        base_images = image_reference[j]['list'],
+                        image = image_reference[j],
                         position = (renpy.random.uniform(config.screen_width / 5, config.screen_width * 2 / 3 ), config.screen_height),
                         speed = (0, -500),
                         rotation_speed = renpy.random.uniform(0, math.pi / 2),
@@ -151,11 +166,10 @@ init python:
         processed_image = None
         last_render = None
         def __init__(self,
-                image, base_images = None, speed = (100, 50), rotation = 0, rotation_speed = 0.3, position = (-60, 500),
+                image, speed = (100, 50), rotation = 0, rotation_speed = 0.3, position = (-60, 500),
                 acceleration = (0, 150), size = (0, 0), fresh = 0, timeout = 0,
                 ):
             self.image = image
-            self.base_images = base_images
             self.speed = speed
             self.rotation_speed = rotation_speed # radians/s
             self.rotation = rotation
@@ -168,104 +182,34 @@ init python:
             self.fade_out_time = 1
 
         def split(self, line_start, line_end):
-            # Select which image to use
-            min_angle_diff = math.pi/2
             cursor_angle = math.atan(
                 (line_end[1] - line_start[1]) / (line_end[0] - line_start[0]) if line_end[0] != line_start[0] else 0
-                ) % (math.pi / 2)
-            target_image_angle = 0
-            for k in self.base_images:
-                # Test all provided image angles
-                current_angle_diff = abs((cursor_angle - self.rotation) % (math.pi / 2) - math.radians(k))
-                if current_angle_diff < min_angle_diff:
-                    min_angle_diff = current_angle_diff
-                    target_image_angle = k
-            # Additionnal test for 90°
-            current_angle_diff = abs((cursor_angle - self.rotation) % (math.pi / 2) - math.pi / 2)
-            if current_angle_diff < min_angle_diff:
-                min_angle_diff = current_angle_diff
-                target_image_angle = k
-
-            effective_rotation = self.rotation - math.radians(target_image_angle)
-            size = renpy.easy.displayable(self.image).render(0, 0, 0, 0).get_size()
-            displayed_size = self.last_render.get_size()
-            rot_circle = (math.cos(effective_rotation), math.sin(effective_rotation))
-            # Displace line in a referential that uses the image's center as (0,0) coordinate
-            line_start_corrected = (line_start[0] - self.size[0] / 2, line_start[1] - self.size[1] / 2)
-            line_end_corrected = (line_end[0] - self.size[0] / 2, line_end[1] - self.size[1] / 2)
-            # Project line in pre-rotation target image referential
-            start = (
-                line_start_corrected[0] * rot_circle[0] + line_start_corrected[1] * rot_circle[1] + self.size[0] / 2,
-                line_start_corrected[1] * rot_circle[0] + line_start_corrected[0] * rot_circle[1] + self.size[1] / 2)
-            end = (
-                line_end_corrected[0] * rot_circle[0] + line_end_corrected[1] * rot_circle[1] + self.size[0] / 2,
-                line_end_corrected[1] * rot_circle[0] + line_end_corrected[0] * rot_circle[1] + self.size[1] / 2)
-            if start[0] == end[0] or abs((end[1] - start[1]) / (end[0] - start[0])) > 1:
-                # Vertical cut
-                is_cutting_x = True
-                x_factor = (start[0] + end[0]) / (2 * self.size[0])
-                pleft_size = (size[0] * x_factor, size[1])
-                pright_size = (size[0] * (1 - x_factor), size[1])
-                crop_left = (0, 0, size[0]*x_factor, size[1])
-                crop_right = (size[0] * x_factor, 0, size[0] * (1 - x_factor), size[1])
-            else:
-                # Horizontal cut
-                is_cutting_x = False
-                y_factor = (start[1] + end[1]) / (2 * self.size[1])
-                pleft_size = (size[0], size[1] * y_factor)
-                pright_size = (size[0], size[1] * (1 - y_factor))
-                crop_left = (0, 0, size[0], size[1] * y_factor)
-                crop_right = (0, size[0] * y_factor, size[0], size[1] * (1 - y_factor))
-
-            # Compute new image's post-rotation size
-            pleft_hyp = math.sqrt(pleft_size[0] ** 2 + pleft_size[1] ** 2)
-            pright_hyp = math.sqrt(pright_size[0] ** 2 + pright_size[1] ** 2)
-
-            # Get new image's center displacement
-            if is_cutting_x:
-                pleft_displacement = (
-                    size[0] * (0.5 - x_factor / 2) * math.cos(effective_rotation + math.pi),
-                    size[0] * (0.5 - x_factor / 2) * math.sin(effective_rotation + math.pi),
-                    )
-                pright_displacement = (
-                    size[0] * (x_factor / 2) * math.cos(effective_rotation),
-                    size[0] * (x_factor / 2) * math.sin(effective_rotation),
-                    )
-            else:
-                pleft_displacement = (
-                    size[0] * (0.5 - y_factor / 2) * math.sin(-effective_rotation + math.pi),
-                    size[0] * (0.5 - y_factor / 2) * math.cos(-effective_rotation + math.pi),
-                    )
-                pright_displacement = (
-                    size[0] * (y_factor / 2) * math.sin(-effective_rotation),
-                    size[0] * (y_factor / 2) * math.cos(-effective_rotation),
-                    )
-
+                )
+            images = [
+                image_cutter_half(line_start, cursor_angle),
+                image_cutter_half(line_start, cursor_angle + math.pi),
+            ]
+            images[0].add(self.image)
+            images[1].add(self.image)
             return [
-                ImageCutterImage(im.Crop(self.base_images[target_image_angle], *crop_left),
-                    speed = (self.speed[0], self.speed[1]),
-                    rotation = effective_rotation,
+                ImageCutterImage(images[0],
+                    speed = [*self.speed],
+                    rotation = self.rotation,
                     rotation_speed = self.rotation_speed + math.pi / 4,
-                    position = (
-                        self.pos[0] + pleft_displacement[0] + (displayed_size[0] - pleft_hyp) / 2,
-                        self.pos[1] + pleft_displacement[1] + (displayed_size[1] - pleft_hyp) / 2,
-                        ),
+                    position = [*self.pos],
                     acceleration = self.acceleration,
                     fresh = self.fresh + 1,
                     timeout = self.timeout,
-                ), ImageCutterImage(im.Crop(self.base_images[target_image_angle], *crop_right),
-                    speed = (self.speed[0], self.speed[1]),
-                    rotation = effective_rotation,
+                ), ImageCutterImage(images[1],
+                    speed = [*self.speed],
+                    rotation = self.rotation,
                     rotation_speed = self.rotation_speed - math.pi / 4,
-                    position = (
-                        self.pos[0] + pright_displacement[0] + (displayed_size[0] - pright_hyp) / 2,
-                        self.pos[1] + pright_displacement[1] + (displayed_size[1] - pright_hyp) / 2,
-                        ),
+                    position = [*self.pos],
                     acceleration = self.acceleration,
                     fresh = self.fresh + 1,
                     timeout = self.timeout,
                 ),
-                ]
+            ]
 
         def move(self, st_diff):
             self.speed = (self.speed[0] + self.acceleration[0] * st_diff, self.speed[1] + self.acceleration[1] * st_diff)
@@ -277,13 +221,9 @@ init python:
             )
 
         def render(self, width, height, st, at):
-            try:
-                self.last_render = self.processed_image.render(width, height, st, at)
-                self.size = self.last_render.get_size()
-                return self.last_render
-            except:
-                # Transform of a crop may not work if the crop is not properly done
-                return renpy.Render(width, height)
+            self.last_render = self.processed_image.render(width, height, st, at)
+            self.size = self.last_render.get_size()
+            return self.last_render
 
     class ImageCutter(renpy.Displayable):
         """
@@ -345,12 +285,7 @@ init python:
 
         def __init__(self, images, cutting_action = None, completion_action = None, missed_action = None, min_opaque_pixels = 40, cut_frequency = 0.1, patterns = None, time_factor = 1., **kwargs):
             super(ImageCutter, self).__init__(**kwargs)
-            self.image_info = []
-            for v in images:
-                if isinstance(v, str):
-                    self.image_info.append({ 'list': { 0: v } })
-                else:
-                    self.image_info.append(v)
+            self.image_info = images
             self.cutting_actions = cutting_action
             self.completion_action = completion_action
             self.missed_cutable_actions = missed_action
@@ -358,7 +293,13 @@ init python:
             self.time_factor = time_factor
             self.cut_frequency = cut_frequency
             self.cursor_pos = renpy.get_mouse_pos()
-            self.patterns = patterns or ([ImageCutterPattern(kind = 'start_bump')] + [ImageCutterPattern(kind = renpy.random.choice(ImageCutterPattern.patterns)) for i in range(8)])
+            if patterns:
+                self.patterns = patterns
+            else:
+                self.patterns = [ImageCutterPattern(kind = 'start_bump')]
+                for i in range(8):
+                    random_pattern = renpy.random.choice(ImageCutterPattern.patterns)
+                    self.patterns.append(ImageCutterPattern(kind = random_pattern))
 
         def render(self, width, height, st, at):
             st *= self.time_factor
