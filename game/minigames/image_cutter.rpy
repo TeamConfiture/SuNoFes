@@ -1,17 +1,19 @@
 init python:
-    # This is bugged, good luck everyone
     import math
 
+    # This shader draws a line and makes everything at its left invisible
     renpy.register_shader("image_cutter_half_slice",
         variables = """
+            uniform vec2 u_model_size;
             attribute vec4 a_position;
             uniform vec2 u_line_point;
             uniform float u_line_angle;
             varying vec2 st;
         """, vertex_300 = """
-            st = a_position.xy - u_line_point.xy;
+            // translate to use u_line_point as center
+            st = a_position.xy - u_line_point.xy * u_model_size;
         """, fragment_300 = """
-            float rotated_xpos = st.x * sin(u_line_angle) + st.y * cos(u_line_angle);
+            float rotated_xpos = st.x * cos(u_line_angle) - st.y * sin(u_line_angle);
             float v_alpha_factor = smoothstep(-1, 1, rotated_xpos);
             gl_FragColor *= v_alpha_factor;
         """
@@ -124,12 +126,38 @@ init python:
             self.processed_image = None
 
         def split(self, line_start, line_end):
-            cursor_angle = math.atan(
-                (line_end[1] - line_start[1]) / (line_end[0] - line_start[0]) if line_end[0] != line_start[0] else 0
+            base_size = self.image.render(0, 0, 0, 0).get_size()
+            displayed_size = self.size
+            # Translate coordinates to displayed image center
+            line_start = (line_start[0] - displayed_size[0]/2, line_start[1] - displayed_size[1]/2)
+            line_end = (line_end[0] - displayed_size[0]/2, line_end[1] - displayed_size[1]/2)
+            # Rotate coordinates around displayed image
+            rot_sin = math.sin(-self.rotation)
+            rot_cos = math.cos(-self.rotation)
+            line_start = (
+                line_start[0]*rot_cos - line_start[1]*rot_sin,
+                line_start[0]*rot_sin + line_start[1]*rot_cos,
                 )
+            line_end = (
+                line_end[0]*rot_cos - line_end[1]*rot_sin,
+                line_end[0]*rot_sin + line_end[1]*rot_cos,
+                )
+            # Translate coordinates to base image top-left
+            line_start = (line_start[0] + base_size[0]/2, line_start[1] + base_size[1]/2)
+            line_end = (line_end[0] + base_size[0]/2, line_end[1] + base_size[1]/2)
+
+            # Calculate cut angle
+            line_vec = (line_end[0] - line_start[0], line_end[1] - line_start[1])
+            cursor_angle = math.atan(
+                line_vec[0] / line_vec[1] if line_vec[1] != 0 else math.inf
+                )
+            # Express coordinates as a fraction of the image's size
+            # This is required because Ren'Py provides a weird model_size in
+            #   shaders that makes it impossible to rely on a pixel offset
+            reference_point = (line_start[0] / base_size[0], line_start[1] / base_size[1])
             images = [
-                image_cutter_half(line_start, cursor_angle),
-                image_cutter_half(line_start, cursor_angle + math.pi),
+                image_cutter_half(reference_point, cursor_angle),
+                image_cutter_half(reference_point, cursor_angle + math.pi),
             ]
             images[0].add(self.image)
             images[1].add(self.image)
@@ -177,12 +205,7 @@ init python:
 
         `images`
             The base fruit images to use as an array of
-            * Strings if there is no rotated version or additional information
-            * Dicts with:
-                * A 'list' subdict which's keys are counter-clockwise rotations in degrees (0 to 90) and values are images. The 0 key is mandatory
-                * An optional 'actions' subdict with the following optional subkeys:
-                    * on_cut: Action to run if this sprite is cut
-                    * on_fall: Action tu run if this sprite "falls" below the screen
+            * Strings or Displayable if there is no rotated version or additional information
 
         `completion_action`
             What to do once no valid cut target is on the screen or scheduled
@@ -228,7 +251,7 @@ init python:
             self.expired_cutables = []
             self.st = 0
 
-            self.image_info = images
+            self.image_info = [renpy.easy.displayable(i) if isinstance(i, str) else i for i in images]
             self.cutting_actions = cutting_action
             self.completion_action = completion_action
             self.missed_cutable_actions = missed_action
