@@ -380,13 +380,13 @@ init python:
         def event(self, ev, x, y, at):
             if ev.type == 1025: # mousedown
                 self.is_cutting = True
-            elif ev.type == 1026: # mouseup
-                self.is_cutting = False
-            elif ev.type == 1024: # mousemove
-                pass
-            if self.st > self.last_cut + self.cut_frequency:
+                self.cursor_pos = (x, y)
+                self.last_cut = self.st
+            if self.st > self.last_cut + self.cut_frequency or ev.type == 1026:
                 self.last_cut = self.st
                 if self.is_cutting:
                     self.process_collisions(self.cursor_pos, (x, y))
-                self.cursor_pos = (x, y)  
+                self.cursor_pos = (x, y)
+            if ev.type == 1026: # mouseup
+                self.is_cutting = False
             return super(ImageCutter, self).event(ev, x, y , at)
