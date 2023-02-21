@@ -13,6 +13,13 @@
 
 # Le jeu commence ici
 label start:
+    scene world with dissolve
+    menu:
+        with dissolve
+        "Lancer le tutoriel":
+            call tutorial
+        "Commencer la partie":
+            pass
     if config.developer:
         show screen konami_trigger
     call titlepage("", _("Prologue"))

@@ -1,6 +1,23 @@
 
 init python:
     import math
+
+# Tutorial
+
+transform tutorial_button_blink:
+    alpha 1
+    pause 0.5
+    ease 0.5 alpha 0.8
+    ease 0.5 alpha 1
+    ease 0.5 alpha 0.8
+    ease 0.5 alpha 1
+    pause 0.5
+    ease 0.3 alpha 0.2
+    ease 0.3 alpha 1
+    ease 0.3 alpha 0.2
+    ease 0.3 alpha 1
+    repeat
+
 # lake transform - Fish 1
 transform lake_wavy_patrol(xrange, yrange, image_width, speed_factor = 1):
     parallel: # up-down motion
