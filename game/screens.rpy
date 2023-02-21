@@ -133,6 +133,7 @@ style namebox:
     xanchor gui.name_xalign
     xsize gui.namebox_width
     ypos gui.name_ypos
+    yanchor gui.name_yalign
     ysize gui.namebox_height
 
     padding gui.namebox_borders.padding
