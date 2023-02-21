@@ -106,6 +106,8 @@ label chap2:
     call screen chap2_match_screen
 
 label chap2_completed:
+    $ achievement.grant("achievement_chap2_minigame_done")
+    $ achievement.sync()
     scene star
     show chap2_spirited
     show blanche smile close at left

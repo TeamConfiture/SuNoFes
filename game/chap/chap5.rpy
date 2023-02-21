@@ -139,6 +139,8 @@ label cheese_market_fail:
     call screen cheese_market('chap5_2', 'cheese_market_fail')
 
 label chap5_2:
+    $ achievement.grant("achievement_chap5_minigame_done")
+    $ achievement.sync()
     show blanche neutral close at left
     voice renpy.random.choice(audio.Piou_Speak)
     piou "Génial, merci ! On va pouvoir manger un bon repas grâce à toi !"

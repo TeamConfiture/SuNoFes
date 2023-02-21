@@ -1,5 +1,7 @@
 label end_bad:
     call titlepage("", _("Fin triste"))
+    $ achievement.grant("achievement_ending_bad")
+    $ achievement.sync()
     play music music.Theme_Bad_End fadein 1.0 volume 0.5
     scene monochrome 
     show maigrichon at farRight
@@ -95,4 +97,7 @@ label end_bad:
     python:
         persistent.reached_end_bad = True
         persistent.last_reached_end = 'bad'
+        if persistent.reached_end_good and persistent.reached_end_neutral and persistent.reached_end_neutral:
+            achievement.grant("achievement_ending_all")
+            achievement.sync()
         renpy.save_persistent()

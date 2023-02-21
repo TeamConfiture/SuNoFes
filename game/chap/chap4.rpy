@@ -137,11 +137,15 @@ label chap4:
 
 label memory_game_timeout:
     show emeraude at right with dissolve
+    $ achievement.grant("achievement_later")
+    $ achievement.sync()
     emeraude "Oh non ! Encore une fois !"
     hide emeraude at right with dissolve
     call screen chap4_memory_game('chap4_2', 'memory_game_timeout')
 
 label chap4_2:
+    $ achievement.grant("achievement_chap4_minigame_done")
+    $ achievement.sync()
     scene garden
     show emeraude at right
     show blanche neutral close at left

@@ -66,6 +66,7 @@ label tutorial:
         x "Quelqu'un a laissé trainer une botte dans la chambre, mettez-la dans le panier en appuyant sur l'écran en continu, puis appuyez n'importe où pour vous lancer dans l'aventure."
     call screen tutorial_dragdrop(_("Déplacez la botte dans le panier")) with dissolve
 
+    $ tutorial_boot_found = True
     x "Merci, j'ai de plus en plus de mal à atteindre des points aussi hauts. Je vais ranger ça pendant que vous jouez. Je me demande où peut bien être passée l'autre."
     x "Je vous ai appris tout ce que je pouvais, vous en apprendrez plus lors de votre aventure. Prenez les bonnes décisions par la suite."
     x "Bonne partie."
