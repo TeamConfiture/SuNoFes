@@ -183,6 +183,10 @@ init python:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#input
 
+init python:
+    def return_input_content(screen = 'input', id = 'input'):
+        return renpy.get_widget('input', 'input').content
+
 # Dans notre cas, cet écran est uniquement utilisé pour demander le nom du personnage principal
 screen input(prompt):
     text prompt align (0.5, 0.14) size 62
@@ -206,7 +210,7 @@ screen input(prompt):
     imagebutton:
         align (0.99, 0.5)
         auto "continue_button_%s"
-        action Return(renpy.get_widget('input', 'input').content)
+        action Function(return_input_content)
 
 style idcard_prompt:
     min_width 600
