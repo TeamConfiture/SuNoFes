@@ -328,7 +328,7 @@ translate english onclick_mulberry_background_00e2abfb:
     # voice renpy.random.choice(audio.Violet_Speak)
     # violet "Alors tu as trouvé ?"
     voice renpy.random.choice(audio.Violet_Speak)
-    violet "Have you found it?"
+    violet "Have you found the mulberry? It's big and shiny."
 
 # game/chap/chap1.rpy:144
 translate english onclick_mulberry_background_a7ac74fd:
