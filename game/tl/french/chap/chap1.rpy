@@ -363,7 +363,7 @@ translate french onclick_mulberry_background_00e2abfb:
     # voice renpy.random.choice(audio.Violet_Speak)
     # violet "Alors tu as trouvé ?"
     voice renpy.random.choice(audio.Violet_Speak)
-    violet "Alors tu as trouvé ?"
+    violet "Alors, tu as trouvé la mûre ? Elle est brillante et bien grosse."
 
 # game/chap/chap1.rpy:144
 translate french onclick_mulberry_background_a7ac74fd:
