@@ -165,16 +165,16 @@ init python:
                 self.toggle_buttons(False)
                 self.show_is_uptime = False
                 self.show_ruleset_index = 0
-                self.next_auto_update = self.time_draw + self.downtime_duration
-                renpy.redraw(self, self.downtime_duration)
+                self.next_auto_update = self.time_draw + self.uptime_duration
+                renpy.redraw(self, self.uptime_duration)
             elif self.show_is_uptime:
                 # A button was lit, shut it down
                 self.show_is_uptime = False
                 self.toggle_image(self.ruleset[self.show_ruleset_index], is_hovered = False)
                 self.show_ruleset_index = self.show_ruleset_index + 1
-                self.next_auto_update = self.time_draw + self.uptime_duration
+                self.next_auto_update = self.time_draw + self.downtime_duration
 
-                renpy.redraw(self, self.uptime_duration)
+                renpy.redraw(self, self.downtime_duration)
             else:
                 # No button was lit
                 if self.current_simon_len <= self.show_ruleset_index:
@@ -187,8 +187,8 @@ init python:
                     # Light it up
                     self.toggle_image(self.ruleset[self.show_ruleset_index], is_hovered = True)
                     self.show_is_uptime = True
-                    self.next_auto_update = self.time_draw + self.downtime_duration
-                    renpy.redraw(self, self.downtime_duration)
+                    self.next_auto_update = self.time_draw + self.uptime_duration
+                    renpy.redraw(self, self.uptime_duration)
 
         def goto_next_ruleset(self):
             """
