@@ -12,6 +12,7 @@ screen chap7_simon_says(next_label, previous_label):
         completion_action = Jump(next_label),
         failure_action = Jump(previous_label),
         generated_len = 5,
+        downtime_duration = 0.3,
     )
     add simon
     textbutton _("Remontrer"):
