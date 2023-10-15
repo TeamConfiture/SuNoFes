@@ -224,9 +224,10 @@ screen cheese_market(next_label, fail_scene):
         drag:
             drag_name "cheese_basket"
             child "cheese_market_basket"
+            draggable False
             drag_offscreen True
             focus_mask True
-            xpos 850 ypos 680
+            xpos 840 ypos 650
     # Show expected cheese
     if current_index < len(cheese_request_list):
         image "cheese_market_entrance_" + cheese_request_list[current_index]:
