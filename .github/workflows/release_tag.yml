@@ -15,6 +15,16 @@ jobs:
     - uses: actions/checkout@v3
     - name: Update recorded version
       run: sed -i -Ee 's/(config.version\s*=\s*")[^"]+"/\1${{ inputs.version_number }}"/g' game/options.rpy
+    - name: Update android version
+      run: |
+        python3 - <<EOF
+        import json
+        with open("android.json", "r") as f:
+            content = json.loads(f.read())
+        content["version"] = "${{ inputs.version_number }}"
+        with open("android.json", "w") as f:
+            f.write(json.dumps(content, sort_keys=True, indent=4))
+        EOF
     - run: git diff
     - name: Commit files changes
       uses: EndBug/add-and-commit@v9
