@@ -30,7 +30,7 @@
 
     # game/characters.rpy:52
     old "Caméraman"
-    new "Chaméraman"
+    new "Chatméraman"
 
     # game/characters.rpy:53
     old "Cyan"
