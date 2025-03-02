@@ -86,7 +86,7 @@ translate french tutorial_5caaad4f:
 translate french tutorial_f5eeab8d:
 
     # x "Lorsqu'un personnage parle dans l'histoire, son nom apparaîtra dans la boîte là où se trouvent les points d'interrogation."
-    x "Lorsqu'un personnage parle dans l'histoire, son nom apparaîtra dans la boîte là où se trouvent les points d'interrogation."
+    x "Lorsqu'un personnage parle dans l'histoire, son nom apparaît dans la boîte là où se trouvent les points d'interrogation."
 
 # game/chap/tutorial.rpy:37
 translate french tutorial_169544e6:
