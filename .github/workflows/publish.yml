@@ -16,6 +16,9 @@ on:
         default: true
         type: boolean
 
+env:
+  RENPY_VERSION: ${{ vars.RENPY_VERSION || '8.3.6' }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -30,10 +33,14 @@ jobs:
       uses: actions/cache@v3
       with:
         path: renpy
-        key: ${{ runner.os }}-renpy
-    - name: "Download Ren'Py"
+        key: ${{ runner.os }}-renpy-${{ env.RENPY_VERSION }}-core
+    - name: "Install Ren'Py"
+      uses: Ayowel/renpy-setup-action@v2
       if: steps.cache-renpy.outputs.cache-hit != 'true'
-      run: mkdir renpy && curl https://www.renpy.org/dl/8.0.2/renpy-8.0.2-sdk.tar.bz2 | tar -xjC renpy --strip-components 1
+      with:
+        action: install
+        install_dir: renpy
+        version: ${{ env.RENPY_VERSION }}
     - name: Build distribution
       run: ./renpy/renpy.sh "" distribute project --package mac --package win --package linux --destination target
 
