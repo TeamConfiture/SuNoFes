@@ -42,6 +42,9 @@ define gui.about = _p("""
 
 define build.name = "Colors"
 
+## Validation lors de l'exécution du linter
+
+define config.check_conflicting_properties = True
 
 ## Sons et musiques ############################################################
 
