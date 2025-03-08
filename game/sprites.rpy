@@ -65,8 +65,36 @@ image writing_feather:
 image continue_button_idle = "gui/button/continue_button_idle.png"
 image continue_button_hover = "gui/button/continue_button_hover.png"
 
-image mulberry = "images/items/mulberry_base.png"
-image mulberry_button = "images/items/mulberry.png"
+transform mulberry_stars_blinker(wait=0, period=5, xrange=(0, 116), yrange=(0, 109), zoom = 1.):
+    anchor (0.5, 0.5)
+    zoom zoom
+    pos (int(renpy.random.uniform(*xrange)), int(renpy.random.uniform(*yrange)))
+    rotate renpy.random.random()*360
+    alpha 0.
+    pause wait
+    block:
+        linear 0.2 alpha 1.
+        pause 0.1
+        linear 0.2 alpha 0.
+        pause period
+        repeat
+layeredimage mulberry_stars:
+    always:
+        "images/items/mulberry_star.png"
+        at mulberry_stars_blinker(0., 6, (35, 81), (30, 79))
+    always:
+        "images/items/mulberry_star.png"
+        at mulberry_stars_blinker(0.1, 15, (35, 81), (30, 79), zoom = 0.8)
+    always:
+        "images/items/mulberry_star.png"
+        at mulberry_stars_blinker(0.2, 10, (35, 81), (30, 79), zoom = 0.6)
+layeredimage mulberry_star:
+    always:
+        "images/items/mulberry_star.png"
+        at mulberry_stars_blinker(0.3, 7, (35, 81), (30, 79))
+image mulberry = "images/items/mulberry_base.png" # 116*109
+image mulberry_blinking = Fixed("mulberry", "mulberry_stars", fit_first = True)
+image mulberry_button = Fixed("images/items/mulberry.png", "mulberry_star", fit_first = True)
 
 image star_card = "images/items/star_card.png"
 image star_leo = "images/items/star_leo.png"
