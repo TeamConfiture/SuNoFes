@@ -550,13 +550,13 @@ screen file_slots(title,returnFrom="main_menu"):
                         action FileAction(slot)
                         has vbox
                         add AlphaMask(FileScreenshot(slot), "gui/slot_mask.png")
-                        if FileTime(slot, format=_("{#file_time}%A %d %B %Y, %H:%M"), empty=_("emplacement vide")) == "emplacement vide":
+                        if FileTime(slot, format=__("{#file_time}%A %d %B %Y, %H:%M"), empty=_("emplacement vide")) == "emplacement vide":
                             yanchor 0.5
                             ypos 0.25
                             text _("Emplacement vide"):
                                 style "slot_empty_text"
                         else:
-                            text FileTime(slot, format=_("{#file_time}%A %d %B %Y, %H:%M"), empty=_("emplacement vide")):
+                            text FileTime(slot, format=__("{#file_time}%A %d %B %Y, %H:%M"), empty=_("emplacement vide")):
                                 style "slot_time_text"
                         text FileSaveName(slot):
                             style "slot_name_text"
