@@ -320,7 +320,7 @@ image spirited_main_menu_black = Spirited(
 )
 
 # CG
-python:
+init python:
     nb_cg = 7
     for i in range(1, nb_cg):
         renpy.image("cg"+str(i), Image("images/cg/cg"+str(i)+".png"))
