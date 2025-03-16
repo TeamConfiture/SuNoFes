@@ -117,7 +117,7 @@ screen fast_chapter_jump_screen():
         grid columns_count lines_count:
             xalign 0.5
             yanchor 0.
-            yalign 0.22
+            ypos 0.22
             spacing 30
             for l in labels:
                 textbutton l action Jump(l) style "navigation_button"
