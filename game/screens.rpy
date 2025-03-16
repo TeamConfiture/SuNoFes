@@ -552,7 +552,7 @@ screen file_slots(title,returnFrom="main_menu"):
                         add AlphaMask(FileScreenshot(slot), "gui/slot_mask.png")
                         if FileTime(slot, format=_("{#file_time}%A %d %B %Y, %H:%M"), empty=_("emplacement vide")) == "emplacement vide":
                             yanchor 0.5
-                            yalign 0.25
+                            ypos 0.25
                             text _("Emplacement vide"):
                                 style "slot_empty_text"
                         else:
